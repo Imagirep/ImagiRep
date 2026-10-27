@@ -69,14 +69,10 @@ Notes:
 
 ## Third-party code
 
-Not redistributed. Each folder gives the upstream repository, the exact commit and our changes as a patch:
-MindJourney (`06_*/base_code/upstream_*`), AVIC (same), HY-World 2.0 (`03_*/generation_code/hyworld2_upstream/`);
-VGGT-Ω, Stable Virtual Camera and MoGe-2 for Cross-view Integration (`04_*/generation_code/README.md`).
-
-## License
-
-Code: MIT (`LICENSE`). Questions, model outputs and other result files: CC BY-NC 4.0. The benchmark data on Hugging
-Face is derived from Matterport3D and subject to the Matterport3D Terms of Use.
+The upstream repositories are not included. Each folder gives the upstream repository, the exact commit and our
+changes as a patch: MindJourney (`06_*/base_code/upstream_*`), AVIC (same), HY-World 2.0
+(`03_*/generation_code/hyworld2_upstream/`); VGGT-Ω, Stable Virtual Camera and MoGe-2 for Cross-view Integration
+(`04_*/generation_code/README.md`).
 
 ## Citation
 
