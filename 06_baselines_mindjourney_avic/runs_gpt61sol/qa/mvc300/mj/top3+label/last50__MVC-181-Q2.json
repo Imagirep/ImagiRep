@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-181-Q2", "method": "mj", "variant": "top3+label", "prediction": "white statue", "gold": "fireplace", "correct": false, "n_imagined": 3, "category": "cross_view_farthest", "stored_result": "wrong"}

@@ -1,0 +1,149 @@
+{
+  "row_index": 226,
+  "question_id": "FOB4-0172-Q6",
+  "trajectory_id": "FOB4-0172",
+  "scan_id": "x8F5xyUWy9e",
+  "route_variant": "new_straight",
+  "question_type": 6,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "final_image_kind": "lookback",
+  "question": "If I walk to the wooden table, then turn to face my starting point, where is the black telephone relative to me?",
+  "answer_choices": {
+    "B": "right",
+    "A": "left",
+    "C": "front",
+    "D": "behind"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "B": "C",
+    "A": "B",
+    "C": "A",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0172\\start_view.png",
+      "sha256": "2a2d5c5a12a9e10f6bd0ff696d9068e15c51dab9f12ea05a7b2b0ae33c02c7a8"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0172\\step_01_rgb.png",
+      "sha256": "b090f24d90232c7ebac2d4a9da6e4477dcc591acd802ec64757043c19483a088"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0172\\step_02_rgb.png",
+      "sha256": "fbc61d33c8e6c5281ccc63aa5a304adffec49a7b6c9e912a2b0f78f94b61b44f"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0172\\oracle_lookback.png",
+      "sha256": "660bc74060bccd64077c34a662abcc81068a97e1e2d16e917968e7862a30fb32"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "category": "object_relative_direction",
+  "category_label": "Object-relative direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0172\\oracle_lookback_depth.png",
+      "sha256": "e82b5323a9958187fbe65a235107861127e728e7d95b96a61d3d57a5ec7a472c",
+      "color_scale": {
+        "near_m": 0.96375,
+        "far_m": 8.28825
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0172\\oracle_lookback_surface_normals.png",
+      "sha256": "10f15b0f554a00c65c735348c1898c8bd9e37aa68a4990574a0d5b6c65aa5a48"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0172\\oracle_lookback_panorama.png",
+      "sha256": "abf8175dc5116e8ceb950d7ad2e16f4f6d8e441320d37c5c26cf9e76e910ef9e"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0172\\topdown_lookback_with_path.png",
+      "sha256": "c93af6c44a684dc2345db6fdd09b156c1dc688f6a7b567a1ff071afeee0f228b"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0172\\trajectory_lookback.txt",
+      "sha256": "9884afbd9e1835b96a2c8ca1e2ee2abfa31b694a6e284f937c76e0fbda2d6621"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0172\\trajectory_lookback.mp4",
+      "sha256": "6e03e5bb55d247c15b73b4a348db19621d06e50fb3b87e135eb9eb79caef9494"
+    }
+  },
+  "condition": "start_final_text",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch4_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "B",
+  "correct": true,
+  "input_signature": "05888fbc9930d816affa7a243e042e50ec105491ab2231d51f405e1df1929d66",
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2584,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 456
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 1881,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4465,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T20:55:11.524-04:00",
+  "request_duration_seconds": 8.23133080000116,
+  "completed_at": "2026-10-04T20:55:19.756-04:00",
+  "request_part_count": 6,
+  "request_mime_types": [
+    "image/png",
+    "image/png"
+  ]
+}

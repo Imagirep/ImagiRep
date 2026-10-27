@@ -1,0 +1,314 @@
+{
+  "question_id": "FO-0001-Q2",
+  "motion_text": "I walk forward into the room, then walk to the brown chair and face the brown chair.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "forward",
+      "amount": "default"
+    },
+    {
+      "op": "go",
+      "target": "the brown chair on the right",
+      "relation": "to"
+    },
+    {
+      "op": "face",
+      "target": "the brown chair on the right"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FO-0001-Q2",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.0,
+        "y": 0.0,
+        "yaw": 0.5246997950902945,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -5.53279423075805,
+        "y": 2.044849234814169,
+        "yaw": 0.5246997950902945,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -5.53279423075805,
+        "y": 2.044849234814169,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -5.6327942307580505,
+        "y": 2.044849234814169,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.0,
+        0.0
+      ],
+      [
+        -5.53279423075805,
+        2.044849234814169
+      ],
+      [
+        -5.6327942307580505,
+        2.044849234814169
+      ]
+    ],
+    "x": -5.6327942307580505,
+    "y": 2.044849234814169,
+    "yaw": 0.5126826807881812,
+    "pitch": 0.0,
+    "travel_yaw": 0.5126826807881812
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.0,
+      0.0
+    ],
+    [
+      -5.53279423075805,
+      2.044849234814169
+    ],
+    [
+      -5.6327942307580505,
+      2.044849234814169
+    ]
+  ],
+  "final": {
+    "x": -5.6327942307580505,
+    "y": 2.044849234814169,
+    "yaw_deg": 17.90434030476318,
+    "pitch_deg": -25.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "forward",
+        "amount": "default"
+      },
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "target": "the brown chair on the right",
+        "relation": "to"
+      },
+      "x": -5.6327942307580505,
+      "y": 2.044849234814169,
+      "yaw": 0.5126826807881812,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face",
+        "target": "the brown chair on the right"
+      },
+      "x": -5.6327942307580505,
+      "y": 2.044849234814169,
+      "yaw": 0.3124896887156425,
+      "pitch": -0.4363323129985824
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": 0.5246997950902945,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -5.53279423075805,
+      "y": 2.044849234814169,
+      "yaw": 0.5246997950902945,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -5.53279423075805,
+      "y": 2.044849234814169,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -5.6327942307580505,
+      "y": 2.044849234814169,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -5.6327942307580505,
+      "y": 2.044849234814169,
+      "yaw": 0.5126826807881812,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -5.6327942307580505,
+      "y": 2.044849234814169,
+      "yaw": 0.3124896887156425,
+      "pitch": -0.4363323129985824
+    }
+  ],
+  "events": [
+    {
+      "move_yaw_deg": 0.0,
+      "requested_m": 2.0,
+      "end": [
+        -2.0,
+        0.0
+      ],
+      "blocked": false
+    },
+    {
+      "ground": "the brown chair on the right",
+      "method": "initial_photo",
+      "box": [
+        535,
+        668,
+        730,
+        770
+      ],
+      "point_m": [
+        -6.566918545893544,
+        2.3385842219013124,
+        -1.2894225414622618
+      ]
+    },
+    {
+      "overlap": "the brown chair on the right",
+      "n_points": 162,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 5.6000000000000005,
+          "stop_m": 0.9792182998527136,
+          "visible_frac": 0.8703703703703703,
+          "center_deg": 2.7721206827827274,
+          "width_deg": 41.4462300960346,
+          "distance_m": 0.9883902412328123
+        },
+        {
+          "sector": 4,
+          "path_m": 6.300000000000001,
+          "stop_m": 0.5341610566165964,
+          "visible_frac": 0.25308641975308643,
+          "center_deg": 11.432165838669064,
+          "width_deg": 61.76147139067935,
+          "distance_m": 0.7375980981834404
+        }
+      ],
+      "chosen_sector": 3
+    },
+    {
+      "ground": "the brown chair on the right",
+      "method": "initial_photo",
+      "box": [
+        533,
+        672,
+        730,
+        769
+      ],
+      "point_m": [
+        -6.563461157708155,
+        2.345524318934293,
+        -1.2847621733126897
+      ]
+    }
+  ],
+  "m_per_unit": 2.3822376075298504,
+  "seconds": 8.645718336105347
+}

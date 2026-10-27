@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FO-0027-Q6",
+  "motion_text": "I walk past the kitchen counter and stop near the windows, then turn to face my starting point.",
+  "view_variant": "lookback",
+  "frames": 196,
+  "fps": 12,
+  "total_distance_m": 6.498879343076826,
+  "depth_display_range_scene_units": [
+    0.9153340113162994,
+    5.929858207702637
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.0659321266615556,
+    "far_m": 6.905486185363378
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 0.9532553183972112 m over generated floor distance",
+  "m_per_unit": 1.7375094890594482,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 30.89619779586792
+}

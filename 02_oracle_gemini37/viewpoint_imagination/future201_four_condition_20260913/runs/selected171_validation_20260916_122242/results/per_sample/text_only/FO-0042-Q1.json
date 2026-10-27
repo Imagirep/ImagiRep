@@ -1,0 +1,78 @@
+{
+  "row_index": 118,
+  "question_id": "FO-0042-Q1",
+  "trajectory_id": "FO-0042",
+  "scan_id": "cV4RVeZvu5T",
+  "question_type": 1,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk forward till I'm near the black chair, then face the way I move, which direction would have the most open space?",
+  "answer_choices": {
+    "A": "left",
+    "B": "front",
+    "C": "right",
+    "D": "behind"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "A": "B",
+    "B": "A",
+    "C": "C",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0042\\image_1.png"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0042\\modalities\\step_01_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "condition": "text_only",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": true,
+  "image_count": 0,
+  "evidence_kinds": [],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 84,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 84
+      }
+    ],
+    "thoughts_token_count": 725,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 809,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-16T12:33:56-04:00"
+}

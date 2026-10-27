@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "row_index": 23,
+  "question_id": "MVC-212-Q2",
+  "condition": "oracle_rgb",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "response_format": "dynamic option enum",
+  "system_prompt": "Solve this multi-view spatial reasoning multiple-choice question using the provided evidence. Reason carefully. Return only A, B, C, or D.",
+  "condition_prompt": "Use the numbered images together with Oracle RGB to answer the question. Oracle RGB is an additional view of the same scene; it supplies evidence but does not replace the reference viewpoint named in the question. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.",
+  "prompt_hash": "8ad600dde1cc7cac1b81ca727a9c4b0a792a2f0016357c04ab896ccb9d83ab12",
+  "question": "Which object in Image 1 is farthest from hallway in Image 2?",
+  "answer_choices": {
+    "A": "tall potted plant",
+    "B": "white bottle carrier",
+    "C": "pool table",
+    "D": "tv"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "image_paths": [
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-212\\image_2.png",
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-212\\image_1.png",
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-212\\oracle.png"
+  ],
+  "image_count": 3,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3427,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 235
+      }
+    ],
+    "thoughts_token_count": 1186,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4614,
+    "traffic_type": null
+  },
+  "completed_at": "2026-10-01T12:15:46"
+}

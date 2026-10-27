@@ -1,0 +1,1 @@
+{"qid": "FOB4-0217-Q4", "method": "avic", "variant": "label", "prediction": "stove", "gold": "stove", "correct": true, "n_imagined": 2, "category": "nearest_object", "stored_result": "wrong"}

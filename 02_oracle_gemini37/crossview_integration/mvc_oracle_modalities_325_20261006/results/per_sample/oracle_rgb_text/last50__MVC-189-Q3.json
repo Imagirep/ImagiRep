@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-189-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-189-Q3",
+  "resource_id": "MVC-189",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "refrigerator, large black painting, sink, black armchair",
+    "B": "large black painting, sink, refrigerator, black armchair",
+    "C": "black armchair, sink, refrigerator, large black painting",
+    "D": "black armchair, refrigerator, large black painting, sink"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "66981137824dfb9371ab25a47fe5d11c0976a22bb2a82aebeca82e2c6c1e53cc",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-189\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3592,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 400
+      }
+    ],
+    "thoughts_token_count": 1413,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5006,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.659558499988634,
+  "completed_at": "2026-10-06T17:32:34-04:00"
+}

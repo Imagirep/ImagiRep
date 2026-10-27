@@ -1,0 +1,140 @@
+{
+  "row_index": 64,
+  "question_id": "FOB4-0212-Q8",
+  "trajectory_id": "FOB4-0212",
+  "scan_id": "i5noydFURQK",
+  "route_variant": "new_straight",
+  "question_type": 8,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk near the large counter, facing the direction I go, which object(s) would be in front of me and on my right?",
+  "answer_choices": {
+    "D": "microwave",
+    "A": "white cups",
+    "B": "refrigerator",
+    "C": "wooden chairs"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "microwave",
+    "B": "refrigerator",
+    "C": "white cups",
+    "D": "wooden chairs"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "D": "A",
+    "A": "C",
+    "B": "B",
+    "C": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0212\\start_view.png",
+      "sha256": "cc86b43240b84bde82b792737140e5c874179c71edab2ab21f9c7fc940129a7b"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0212\\step_01_rgb.png",
+      "sha256": "41751c2eeec53b72b682bafa0bd8ac85572e8bd122884ec82779450a4f509523"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "category": "object_selection_by_direction",
+  "category_label": "Object selection by direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0212\\step_01_depth.png",
+      "sha256": "b1c27af2aafcbc3e1beb17c7130e2495b9496e740aa4568b3c3d78c36123dffa",
+      "color_scale": {
+        "near_m": 1.4135,
+        "far_m": 2.63425
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0212\\step_01_surface_normals.png",
+      "sha256": "b1c748c360aaf88151146f9c21fd0573cfa955916d5410129d2c2a588badb451"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0212\\step_01_panorama.png",
+      "sha256": "8afa2bca2f4ba2e3b16d271dfb71ef06ba18abd20080e43654653e40e1cf06bd"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0212\\topdown_with_path.png",
+      "sha256": "30e9dd52621f353a0e12a6426fa7620a027c1d50d55be27d113f6e400d15f242"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0212\\trajectory.txt",
+      "sha256": "26385baf66da23dd24b7fae3087c12d52d3d37033d5e8603a95e5ac2b3d5326d"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0212\\trajectory.mp4",
+      "sha256": "1b1e8c38380e785c50a9a75b9d721c1a41337972d630a94dde094020648dfd93"
+    }
+  },
+  "condition": "start_final_panorama",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT PANORAMA (360-degree RGB at the FINAL VIEW position):\nThe panorama is centered on the final camera's facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. This is one position, not a sequence of movement frames. Combine it with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch4_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "C",
+  "correct": false,
+  "input_signature": "58f824cb529c9760170c57ff910b5af2a65ceeb0166243a8bde7a80b7c36f076",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "panorama"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3461,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 252
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3209
+      }
+    ],
+    "thoughts_token_count": 1464,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4926,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_started_at": "2026-10-05T00:45:38.846-04:00",
+  "request_duration_seconds": 8.910205299995141,
+  "completed_at": "2026-10-05T00:45:47.756-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

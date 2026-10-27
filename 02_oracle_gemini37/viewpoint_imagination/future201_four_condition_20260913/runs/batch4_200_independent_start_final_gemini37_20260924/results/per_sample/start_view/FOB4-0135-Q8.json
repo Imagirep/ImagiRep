@@ -1,0 +1,90 @@
+{
+  "row_index": 222,
+  "question_id": "FOB4-0135-Q8",
+  "trajectory_id": "FOB4-0135",
+  "scan_id": "Vt2qJdWjCF2",
+  "route_variant": "old_straight",
+  "question_type": 8,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I take a step back and to the left, facing the same direction, which object(s) would be in front of me and on my right?",
+  "answer_choices": {
+    "D": "wooden table",
+    "A": "gray cabinet",
+    "B": "doors",
+    "C": "gray basket"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "wooden table",
+    "B": "gray basket",
+    "C": "gray cabinet",
+    "D": "doors"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "D": "A",
+    "A": "C",
+    "B": "D",
+    "C": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0135\\start_view.png",
+      "sha256": "35790b0a9dc235eb56cc0628bef970478ea52390718363c639c18b7d24388ad4"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0135\\step_01_rgb.png",
+      "sha256": "752ffe639d0383a6a82121d305e2a1eacd09d431b537b72677a0edaab1b6a8b4"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "B",
+  "correct": false,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1157,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 93
+      }
+    ],
+    "thoughts_token_count": 3145,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4303,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "completed_at": "2026-09-24T17:34:15-04:00"
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-216-Q2",
+  "cohort": "last50",
+  "question_id": "MVC-216-Q2",
+  "resource_id": "MVC-216",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is farthest from small marble table in Image 1?",
+  "answer_choices": {
+    "A": "dining table",
+    "B": "ovens",
+    "C": "stoves",
+    "D": "small framed painting"
+  },
+  "gold_answer": "B",
+  "prediction": "A",
+  "correct": false,
+  "signature": "10263a00f1c971b53356f1ff426d51b4363f93d72fef468d4e9d7ee91840bb68",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-216\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3553,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 361
+      }
+    ],
+    "thoughts_token_count": 3104,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6658,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 13.763934599992353,
+  "completed_at": "2026-10-06T17:32:56-04:00"
+}

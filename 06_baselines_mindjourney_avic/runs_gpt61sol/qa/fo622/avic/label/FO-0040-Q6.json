@@ -1,0 +1,1 @@
+{"qid": "FO-0040-Q6", "method": "avic", "variant": "label", "prediction": "left", "gold": "left", "correct": true, "n_imagined": 4, "category": "object_relative_direction", "stored_result": "correct"}

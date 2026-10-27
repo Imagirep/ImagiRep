@@ -1,0 +1,8 @@
+All observed images were taken from the same position; between them there is no movement, only rotation in place.
+Your view is tilted 15.0° below level throughout.
+
+Start facing as in Image 1.
+Turn right 98.5° in place to face as in Image 2.
+Turn right 98.5° in place to face as in Image 3.
+
+The oracle view was taken from a different position, 2.29 m away, located 100.8° to the left of the Image 1 viewing direction.

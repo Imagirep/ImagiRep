@@ -1,0 +1,249 @@
+{
+  "question_id": "FOB2-0122-Q4",
+  "motion_text": "I walk to the glass container and face the way I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "glass container on the round table in the center",
+      "relation": "to"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0122-Q4",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.758572118170113,
+        "y": -0.033504163842070334,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -4.758572118170113,
+        -0.033504163842070334
+      ]
+    ],
+    "x": -4.758572118170113,
+    "y": -0.033504163842070334,
+    "yaw": -0.007040685607735289,
+    "pitch": 0.0,
+    "travel_yaw": -0.007040685607735289
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -4.758572118170113,
+      -0.033504163842070334
+    ]
+  ],
+  "final": {
+    "x": -4.758572118170113,
+    "y": -0.033504163842070334,
+    "yaw_deg": -0.4034015702017331,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "glass container on the round table in the center",
+        "relation": "to"
+      },
+      "x": -4.758572118170113,
+      "y": -0.033504163842070334,
+      "yaw": -0.007040685607735289,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -4.758572118170113,
+      "y": -0.033504163842070334,
+      "yaw": -0.007040685607735289,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.758572118170113,
+      "y": -0.033504163842070334,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.758572118170113,
+      "y": -0.033504163842070334,
+      "yaw": -0.007040685607735289,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "glass container on the round table in the center",
+      "method": "initial_photo",
+      "box": [
+        542,
+        493,
+        654,
+        550
+      ],
+      "point_m": [
+        -5.786343970812645,
+        0.19276659107371272,
+        -0.7306682437590807
+      ]
+    },
+    {
+      "overlap": "glass container on the round table in the center",
+      "n_points": 212,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 4.800000000000001,
+          "stop_m": 1.0523846424261525,
+          "visible_frac": 1.0,
+          "center_deg": 0.4100993079519618,
+          "width_deg": 19.51145505759036,
+          "distance_m": 1.082739560174252
+        },
+        {
+          "sector": 4,
+          "path_m": 5.1000000000000005,
+          "stop_m": 1.0304130155743139,
+          "visible_frac": 1.0,
+          "center_deg": -0.1468639686099345,
+          "width_deg": 19.83688261084103,
+          "distance_m": 1.057448085946456
+        },
+        {
+          "sector": 2,
+          "path_m": 5.7,
+          "stop_m": 0.9599826604768328,
+          "visible_frac": 0.9905660377358491,
+          "center_deg": 1.3852435401246321,
+          "width_deg": 19.18317975325253,
+          "distance_m": 0.966259182293579
+        },
+        {
+          "sector": 5,
+          "path_m": 6.1000000000000005,
+          "stop_m": 1.0622188165332678,
+          "visible_frac": 0.9716981132075472,
+          "center_deg": -0.8654649204529927,
+          "width_deg": 17.949352887420584,
+          "distance_m": 1.0626560136510992
+        },
+        {
+          "sector": 1,
+          "path_m": 6.7,
+          "stop_m": 1.0288092960632222,
+          "visible_frac": 0.8679245283018868,
+          "center_deg": 0.7956880133676767,
+          "width_deg": 15.308640912451533,
+          "distance_m": 0.9985466611372501
+        },
+        {
+          "sector": 6,
+          "path_m": 7.1000000000000005,
+          "stop_m": 0.9764043977794095,
+          "visible_frac": 0.7641509433962265,
+          "center_deg": -1.4859940230750022,
+          "width_deg": 15.236975879697887,
+          "distance_m": 0.9257086069700342
+        },
+        {
+          "sector": 0,
+          "path_m": 7.5,
+          "stop_m": 1.0600969394433173,
+          "visible_frac": 0.47641509433962265,
+          "center_deg": 3.9429965302111447,
+          "width_deg": 15.335077437272187,
+          "distance_m": 0.9650701180952398
+        },
+        {
+          "sector": 7,
+          "path_m": 7.9,
+          "stop_m": 1.02481579186354,
+          "visible_frac": 0.3915094339622642,
+          "center_deg": -6.058554538272093,
+          "width_deg": 15.889341828121157,
+          "distance_m": 0.9310194634978004
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 3.2016428630937246,
+  "seconds": 7.84404730796814
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB3-0116-Q6",
+  "motion_text": "I walk out of this room, then turn around to face where I come from.",
+  "view_variant": "endpoint",
+  "frames": 121,
+  "fps": 12,
+  "total_distance_m": 3.2124530935391125,
+  "depth_display_range_scene_units": [
+    1.2759726285934447,
+    6.195978641510009
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.129410071621585,
+    "far_m": 5.484287456062113
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.2718625385806206 m over generated floor distance",
+  "m_per_unit": 1.711534023284912,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 25.757790327072144
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-205-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-205-Q3",
+  "resource_id": "MVC-205",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "stove, yellow pot, fireplace, pillows",
+    "B": "fireplace, pillows, yellow pot, stove",
+    "C": "pillows, yellow pot, fireplace, stove",
+    "D": "yellow pot, fireplace, stove, pillows"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "af116db6706a85e44a1c4e9d16ddb17c99f5982e50e77707bb2be471c4b8aaa2",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-205\\order_21\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4628,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 347
+      }
+    ],
+    "thoughts_token_count": 646,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5275,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 5.683182199994917,
+  "completed_at": "2026-10-06T17:29:57-04:00"
+}

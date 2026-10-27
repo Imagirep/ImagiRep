@@ -1,0 +1,96 @@
+{
+  "row_index": 231,
+  "question_id": "FOB4-0069-Q7",
+  "trajectory_id": "FOB4-0069",
+  "scan_id": "oLBMNvg9in8",
+  "route_variant": "old_bent",
+  "question_type": 7,
+  "question_set": "lookback",
+  "endpoint_is_lookback": true,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk to the other side of the dining table, then turn around, where is the fireplace relatie to me?",
+  "answer_choices": {
+    "A": "front",
+    "B": "behind",
+    "C": "left",
+    "D": "right"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "A": "A",
+    "B": "D",
+    "C": "B",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0069\\start_view.png",
+      "sha256": "d4457b2583f441de1c9fbb4fd1adb61cf324f170b5dc07da773769f5e0d35529"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0069\\step_01_rgb.png",
+      "sha256": "bb7990055023ad62ee45bcd75f3afcd611bfd4686f9cf57cff77e546ecd81dba"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0069\\step_02_rgb.png",
+      "sha256": "68a23abb7eacca2b997c1f282be3b478d6704054aba1cb34b66b5ef03e569417"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": false,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1147,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 83
+      }
+    ],
+    "thoughts_token_count": 511,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1659,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-24T17:34:18-04:00"
+}

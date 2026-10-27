@@ -1,0 +1,76 @@
+{
+  "question_id": "FOB2-0288-Q3",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk into the room with blue wall paper and stop, then turn back to face where I come from, would the black box on the wall still be directly visible?",
+  "answer_choices": {
+    "C": "outside of view",
+    "A": "completely blocked",
+    "B": "clearly visible",
+    "D": "partially visible"
+  },
+  "gold_answer": "C",
+  "show_lookback": true,
+  "prediction": "A",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_old40_20260917/items/FOB2-0288/start_view.png",
+      "sha256": "fa9eb85eb14fed4d44320f58acf97c08cffc1bbde277224ddea330d5053f1b74"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_old40_20260917/items/FOB2-0288/step_01_rgb.png",
+      "sha256": "03e569f167c7c080ff79c78da76b1dde33977435869a4f58b404713061534d1e"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_old40_20260917/items/FOB2-0288/step_02_rgb.png",
+      "sha256": "a1a04a997696a77bf811e3e1a1b24e17d586e262fb4da006c081e18808c4e3a8"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_old40_20260917/items/FOB2-0288/oracle_lookback.png",
+      "sha256": "1077d3da756a8c9136970dc313646b7076d0e14d8026fe152a30fa94e889eaee"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4419,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 163
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 3462,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7881,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_duration_seconds": 16.066650299995672,
+  "completed_at": "2026-10-06T14:38:15-04:00"
+}

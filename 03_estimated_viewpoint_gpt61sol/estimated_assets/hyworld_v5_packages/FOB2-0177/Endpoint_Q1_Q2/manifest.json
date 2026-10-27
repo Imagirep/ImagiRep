@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB2-0177-Q1",
+  "motion_text": "I walk upstairs, walk near the coffee table and face the way I go.",
+  "view_variant": "endpoint",
+  "frames": 132,
+  "fps": 12,
+  "total_distance_m": 2.896021851312969,
+  "depth_display_range_scene_units": [
+    0.4894847822189331,
+    1.1492691564559938
+  ],
+  "depth_color_scale_m": {
+    "near_m": 0.9882874412735033,
+    "far_m": 2.3204159051065982
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.096574488900501 m over generated floor distance",
+  "m_per_unit": 2.7107505798339844,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 34.0243501663208
+}

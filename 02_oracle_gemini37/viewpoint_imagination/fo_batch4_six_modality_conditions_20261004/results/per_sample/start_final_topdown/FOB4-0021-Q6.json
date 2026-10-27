@@ -1,0 +1,146 @@
+{
+  "row_index": 210,
+  "question_id": "FOB4-0021-Q6",
+  "trajectory_id": "FOB4-0021",
+  "scan_id": "gYvKGZ5eRqb",
+  "route_variant": "old_straight",
+  "question_type": 6,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "final_image_kind": "lookback",
+  "question": "If I take a step back and to the left, then turn to face my starting point, where is the framed painting relative to me?",
+  "answer_choices": {
+    "B": "front",
+    "A": "behind",
+    "C": "left",
+    "D": "right"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "B": "A",
+    "A": "D",
+    "C": "B",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0021\\start_view.png",
+      "sha256": "3cd1f61823a06094c0843e079b49d28211c79548f78c34d2e03ea1848c7a6b6a"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0021\\step_01_rgb.png",
+      "sha256": "8342f1add97c0e36a1c9549fab6ba4bc0a6057154a1e98f8a4fc33252700d734"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0021\\oracle_lookback.png",
+      "sha256": "f08e1bb8d17d5e5ff900b91456121976223b27b6aa2731323efbfdb572cc9595"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "category": "object_relative_direction",
+  "category_label": "Object-relative direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0021\\oracle_lookback_depth.png",
+      "sha256": "71b9575aea4cb42065ba589c5a6bc21469ac8a6475ebb0a4760cf4406128a535",
+      "color_scale": {
+        "near_m": 1.542,
+        "far_m": 9.6375
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0021\\oracle_lookback_surface_normals.png",
+      "sha256": "17e37420da2e351e9a19e8bef3cea4ef7f98160a903d5cb2b27aaaafdcf8a537"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0021\\oracle_lookback_panorama.png",
+      "sha256": "6b18ed2706d58ce6abe5e1f5697a6113bd11f096e4b6ae1f4bdabdb4e82a202f"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0021\\topdown_lookback_with_path.png",
+      "sha256": "d73e89d21e2f6681ca19329a5e4e16c20094015c68e27fe822c8b52634bc34eb"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0021\\trajectory_lookback.txt",
+      "sha256": "df26d9806a131796a032deaf0ce10bc911bfd7a7e897f032cfca770c7f346d65"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0021\\trajectory_lookback.mp4",
+      "sha256": "1bc99925eb0bada7f9d4c94fd93b1070d73082234732833e3abc4d81a20e8918"
+    }
+  },
+  "condition": "start_final_topdown",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch4_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "B",
+  "correct": true,
+  "input_signature": "ab8685ba84d55f48186cd52faa5602d42c325cab565b1c4f81e15440547f1504",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "topdown"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3405,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3217
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 188
+      }
+    ],
+    "thoughts_token_count": 6999,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 10404,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T20:22:35.032-04:00",
+  "request_duration_seconds": 24.80909910000628,
+  "completed_at": "2026-10-04T20:22:59.841-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

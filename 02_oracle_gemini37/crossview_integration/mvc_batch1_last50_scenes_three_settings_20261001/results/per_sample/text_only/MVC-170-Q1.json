@@ -1,0 +1,44 @@
+{
+  "status": "ok",
+  "row_index": 26,
+  "question_id": "MVC-170-Q1",
+  "condition": "text_only",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "response_format": "dynamic option enum",
+  "system_prompt": "Solve this spatial reasoning multiple-choice question from the provided text. Reason carefully. Return only A, B, C, or D.",
+  "condition_prompt": "No images are provided. Choose the best answer using only the question and answer choices. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.",
+  "prompt_hash": "dc613eda7ba83fe311455ec3eb77a65ac167969a226239708f330640a76b0e91",
+  "question": "Which object in Image 2 is closest to sink in Image 1?",
+  "answer_choices": {
+    "A": "ovens",
+    "B": "microwave",
+    "C": "refrigerator",
+    "D": "clock"
+  },
+  "gold_answer": "C",
+  "prediction": "B",
+  "correct": false,
+  "image_paths": [],
+  "image_count": 0,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 191,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 191
+      }
+    ],
+    "thoughts_token_count": 1849,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2041,
+    "traffic_type": null
+  },
+  "completed_at": "2026-10-01T12:55:39"
+}

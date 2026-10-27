@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-082-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-082-Q1",
+  "resource_id": "MVC-082",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to round table in Image 2?",
+  "answer_choices": {
+    "A": "blender",
+    "B": "silver wall decoration",
+    "C": "sink",
+    "D": "refrigerator"
+  },
+  "gold_answer": "A",
+  "prediction": "B",
+  "correct": false,
+  "signature": "c18eac8bb9a0201388c3734871528fce36865953ff118e5bb19dcd57d8c425bd",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-082\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3551,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 359
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1820,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5372,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.308663700008765,
+  "completed_at": "2026-10-06T17:31:02-04:00"
+}

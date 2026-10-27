@@ -1,0 +1,17 @@
+{
+  "status": "complete_verified",
+  "questions": 200,
+  "trajectories": 50,
+  "result_rows": 400,
+  "frozen_hashes_checked": 180,
+  "conditions": {
+    "start_view": {
+      "questions": 200,
+      "sample_files": 200
+    },
+    "start_final": {
+      "questions": 200,
+      "sample_files": 200
+    }
+  }
+}

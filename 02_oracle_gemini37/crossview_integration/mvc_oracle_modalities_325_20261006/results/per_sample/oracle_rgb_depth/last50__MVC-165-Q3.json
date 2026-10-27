@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-165-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-165-Q3",
+  "resource_id": "MVC-165",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "white sofa, fireplace, round table, red armchair",
+    "B": "round table, fireplace, red armchair, white sofa",
+    "C": "fireplace, red armchair, white sofa, round table",
+    "D": "fireplace, red armchair, round table, white sofa"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "d110962662408fbfb35d4a9225f48244a821e9a93fbf593a7792ecd60f1d8081",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.106 m (near/red) to 3.704 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-165\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4642,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 386
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 1538,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6181,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.129267500000424,
+  "completed_at": "2026-10-06T17:39:02-04:00"
+}

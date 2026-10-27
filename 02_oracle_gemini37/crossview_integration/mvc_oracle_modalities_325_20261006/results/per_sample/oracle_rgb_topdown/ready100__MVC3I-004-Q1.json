@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC3I-004-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC3I-004-Q1",
+  "resource_id": "MVC3I-004",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Images 1 and 3 is closest to podium  in Image 2?",
+  "answer_choices": {
+    "A": "framed black and white painting",
+    "B": "piles of books",
+    "C": "white pillar",
+    "D": "black desk"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "e2ba1ac01714053c4e8bc6e4353d4ce99ae02ee48f3c15491d323ba5b198cb13",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC3I-004\\order_213\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 5673,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 5345
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 328
+      }
+    ],
+    "thoughts_token_count": 1101,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6775,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.876565300000948,
+  "completed_at": "2026-10-06T17:29:15-04:00"
+}

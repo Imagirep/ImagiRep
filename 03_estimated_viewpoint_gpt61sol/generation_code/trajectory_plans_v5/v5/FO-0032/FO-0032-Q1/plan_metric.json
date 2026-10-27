@@ -1,0 +1,257 @@
+{
+  "question_id": "FO-0032-Q1",
+  "motion_text": "I walk to the window on the right and turn right.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the window on the right with white curtains",
+      "relation": "to"
+    },
+    {
+      "op": "turn",
+      "direction": "right"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FO-0032-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.1458012979425978,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.058843935504394,
+        "y": 0.3023274544845891,
+        "yaw": 0.1458012979425978,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.058843935504394,
+        "y": 0.3023274544845891,
+        "yaw": 0.46364760900080654,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.7929868674464013,
+        "y": 0.6693989204555931,
+        "yaw": 0.46364760900080654,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.243534707943798,
+        0.32944805849711134
+      ],
+      [
+        -3.043534707943798,
+        0.7294480584971117
+      ]
+    ],
+    "x": -3.043534707943798,
+    "y": 0.7294480584971117,
+    "yaw": 0.23523420253145264,
+    "pitch": 0.0,
+    "travel_yaw": 0.23523420253145264
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.058843935504394,
+      0.3023274544845891
+    ],
+    [
+      -2.7929868674464013,
+      0.6693989204555931
+    ]
+  ],
+  "final": {
+    "x": -2.7929868674464013,
+    "y": 0.6693989204555931,
+    "yaw_deg": 93.47792700217785,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the window on the right with white curtains",
+        "relation": "to"
+      },
+      "x": -3.043534707943798,
+      "y": 0.7294480584971117,
+      "yaw": 0.23523420253145264,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "right"
+      },
+      "x": -3.043534707943798,
+      "y": 0.7294480584971117,
+      "yaw": 1.631497604126916,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.1458012979425978,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.058843935504394,
+      "y": 0.3023274544845891,
+      "yaw": 0.1458012979425978,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.058843935504394,
+      "y": 0.3023274544845891,
+      "yaw": 0.46364760900080654,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.7929868674464013,
+      "y": 0.6693989204555931,
+      "yaw": 0.46364760900080654,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.7929868674464013,
+      "y": 0.6693989204555931,
+      "yaw": 0.23523420253145264,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.7929868674464013,
+      "y": 0.6693989204555931,
+      "yaw": 1.631497604126916,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the window on the right with white curtains",
+      "method": "initial_photo",
+      "box": [
+        260,
+        642,
+        608,
+        865
+      ],
+      "point_m": [
+        -3.7077964571913657,
+        1.5596897521625757,
+        0.427046689785876
+      ]
+    },
+    {
+      "overlap": "the window on the right with white curtains",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 2,
+          "path_m": 3.7,
+          "stop_m": 1.063270869258599,
+          "visible_frac": 1.0,
+          "center_deg": 0.4731732673110682,
+          "width_deg": 48.63931066692903,
+          "distance_m": 1.02082965202419
+        },
+        {
+          "sector": 3,
+          "path_m": 3.7,
+          "stop_m": 1.0570472801773618,
+          "visible_frac": 1.0,
+          "center_deg": 0.4969810486341113,
+          "width_deg": 49.50125367313605,
+          "distance_m": 1.0280113798621624
+        }
+      ],
+      "chosen_sector": 2
+    }
+  ],
+  "m_per_unit": 1.7476893067359924,
+  "seconds": 5.503355503082275,
+  "planning_m_per_unit": 1.9044676241591043,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.9176786649275093
+}

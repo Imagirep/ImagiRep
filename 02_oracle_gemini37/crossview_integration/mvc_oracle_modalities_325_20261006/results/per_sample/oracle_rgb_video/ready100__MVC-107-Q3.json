@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-107-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-107-Q3",
+  "resource_id": "MVC-107",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "ovens, silver cans, stove, sink",
+    "B": "sink, stove, ovens, silver cans",
+    "C": "ovens, sink, stove, silver cans",
+    "D": "sink, stove, silver cans, ovens"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "b53d871b2d6ccbc4245ca18db56cd6c7a11affd237325e0ac630cba83de2c886",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-107\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7919,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 317
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      }
+    ],
+    "thoughts_token_count": 2648,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 10568,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 12.248254100006307,
+  "completed_at": "2026-10-06T17:34:47-04:00"
+}

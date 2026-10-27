@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-217-Q1",
+  "cohort": "last50",
+  "question_id": "MVC-217-Q1",
+  "resource_id": "MVC-217",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to blue vase in Image 2?",
+  "answer_choices": {
+    "A": "refrigerator",
+    "B": "white bowl",
+    "C": "sink",
+    "D": "painting"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "217c7419a9b86da345de665f8be4503efc79b93618de789c8e841a637d52b3c9",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-217\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3550,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 358
+      }
+    ],
+    "thoughts_token_count": 887,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4438,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 5.383572699996876,
+  "completed_at": "2026-10-06T17:32:49-04:00"
+}

@@ -1,0 +1,90 @@
+{
+  "row_index": 76,
+  "question_id": "FOB4-0112-Q2",
+  "trajectory_id": "FOB4-0112",
+  "scan_id": "s8pcmisQ38h",
+  "route_variant": "new_straight",
+  "question_type": 2,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk near the wooden table, facing the direction I go, which direction would have the closest obstacle, besides the wooden table?",
+  "answer_choices": {
+    "D": "right",
+    "A": "behind",
+    "B": "front",
+    "C": "left"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "D": "C",
+    "A": "D",
+    "B": "A",
+    "C": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0112\\start_view.png",
+      "sha256": "78143a94730a040dd4eb00ddb41b6faff03520f5d4daead213310b185c5842be"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0112\\step_01_rgb.png",
+      "sha256": "d57f77fbe46f2e33f6a24dae01fb7d7874b298a3ea747fd9356b2c19a46b1fb3"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "B",
+  "correct": false,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1149,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 85
+      }
+    ],
+    "thoughts_token_count": 3167,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4317,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "completed_at": "2026-09-24T17:30:15-04:00"
+}

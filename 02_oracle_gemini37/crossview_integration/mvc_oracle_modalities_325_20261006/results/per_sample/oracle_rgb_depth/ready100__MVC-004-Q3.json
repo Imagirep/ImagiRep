@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-004-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-004-Q3",
+  "resource_id": "MVC-004",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "white pillar with trophies on it, monitor, white bowl, wooden cabinet",
+    "B": "monitor, white pillar with trophies on it, white bowl, wooden cabinet",
+    "C": "white pillar with trophies on it, monitor, wooden cabinet, white bowl",
+    "D": "white bowl, monitor, wooden cabinet, white pillar with trophies on it"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "28a8abd209be3d38ede10893797407de1646eb92a453b598323d427ffa2990c2",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.756 m (near/red) to 5.163 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-004\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4658,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 402
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 3062,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7721,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 14.034988699990208,
+  "completed_at": "2026-10-06T17:36:21-04:00"
+}

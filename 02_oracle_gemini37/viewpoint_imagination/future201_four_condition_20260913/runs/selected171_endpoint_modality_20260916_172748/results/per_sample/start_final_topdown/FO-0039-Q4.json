@@ -1,0 +1,129 @@
+{
+  "row_index": 58,
+  "question_id": "FO-0039-Q4",
+  "trajectory_id": "FO-0039",
+  "scan_id": "7y3sRwLe3Va",
+  "question_type": 4,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk to the oven, move forward and turn right, which object(s) would be closest to me?",
+  "answer_choices": {
+    "C": "cabinets",
+    "A": "white vases",
+    "B": "glass vase",
+    "D": "white bowls"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "cabinets",
+    "B": "glass vase",
+    "C": "white bowls",
+    "D": "white vases"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "C": "A",
+    "A": "D",
+    "B": "B",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\step_02_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "8ec6dbdb2735156f02ab76b7d6ff91a8a784723595f77bfd05abdec4b0ab09b4",
+    "27e1ae3322bad54f6005ab0be77e6481470e98f1c3fbabcf5ba132a8b8019994"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\topdown_with_path.png",
+      "sha256": "4eaded065d7afefcca0d6f5e62860223c58110d6a8ea6100ccf860b295f6493d"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\trajectory.txt",
+      "sha256": "5d6d8e553d005df2b6121412fb35852466fa79c252a73a760e48fd0edf238c7d"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\trajectory.mp4",
+      "sha256": "186065035c8d1e3b6ef6b2608f3d3eebe2e12d5c4c10c2bfe20cd545b7125a58",
+      "frame_count": 74,
+      "fps": 12.0,
+      "duration_seconds": 6.166666666666667,
+      "bytes": 330227,
+      "final_rgb_correlation": 0.9994019896955948
+    }
+  },
+  "condition": "start_final_topdown",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+  ],
+  "modality_prompt": "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": true,
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "topdown"
+  ],
+  "additional_modality": {
+    "kind": "topdown",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\topdown_with_path.png",
+    "sha256": "4eaded065d7afefcca0d6f5e62860223c58110d6a8ea6100ccf860b295f6493d"
+  },
+  "input_signature": "a8a339ca8be7412897a3dc88b4628ac0520933a1e27e3d67dd9fae9e2a17c9af",
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3404,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3217
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 187
+      }
+    ],
+    "thoughts_token_count": 1693,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5098,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-16T17:37:07-04:00"
+}

@@ -1,0 +1,1 @@
+{"qid": "FOB3-0004-Q4", "method": "avic", "variant": "label", "prediction": "lamp", "gold": "sofa", "correct": false, "n_imagined": 3, "category": "nearest_object", "stored_result": "wrong"}

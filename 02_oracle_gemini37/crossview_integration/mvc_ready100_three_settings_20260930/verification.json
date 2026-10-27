@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "model_calls": 0,
+  "seeds": [
+    20260926,
+    20260928,
+    20260930,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "questions_per_seed": 210,
+  "resources": 100,
+  "emitted_requests_checked": 630,
+  "all_three_image_permutations_checked": 6,
+  "reference_list_questions": 10,
+  "gold_counts": {
+    "A": 49,
+    "B": 49,
+    "D": 56,
+    "C": 56
+  },
+  "live_source_hashes_match_snapshot": true
+}

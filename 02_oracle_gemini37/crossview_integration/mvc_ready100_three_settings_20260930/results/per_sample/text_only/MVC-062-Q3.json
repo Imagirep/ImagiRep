@@ -1,0 +1,44 @@
+{
+  "status": "ok",
+  "row_index": 85,
+  "question_id": "MVC-062-Q3",
+  "condition": "text_only",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "response_format": "dynamic option enum",
+  "system_prompt": "Solve this spatial reasoning multiple-choice question from the provided text. Reason carefully. Return only A, B, C, or D.",
+  "condition_prompt": "No images are provided. Choose the best answer using only the question and answer choices. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.",
+  "prompt_hash": "e0874bd2d6174ab5a7614cd2acdd26d57eed9c0e409df9357254144cbacf0150",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "sink, trash can, blue purse, orange purse",
+    "B": "blue purse, orange purse, sink, trash can",
+    "C": "orange purse, sink, blue purse, trash can",
+    "D": "orange purse, blue purse, sink, trash can"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "image_paths": [],
+  "image_count": 0,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 235,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 235
+      }
+    ],
+    "thoughts_token_count": 1964,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2200,
+    "traffic_type": null
+  },
+  "completed_at": "2026-09-30T18:45:48"
+}

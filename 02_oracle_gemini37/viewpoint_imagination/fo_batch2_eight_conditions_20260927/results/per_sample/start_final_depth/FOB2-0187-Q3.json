@@ -1,0 +1,156 @@
+{
+  "row_index": 185,
+  "question_id": "FOB2-0187-Q3",
+  "trajectory_id": "FOB2-0187",
+  "scan_id": "WYY7iVyf5p8",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk past the counter, then walk to the refrigerator, then turn back to face where I come from, would the round table still be directly visible?",
+  "answer_choices": {
+    "B": "partially visible",
+    "A": "clearly visible",
+    "C": "outside of view",
+    "D": "completely blocked"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "B": "B",
+    "A": "A",
+    "C": "D",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0187\\start_view.png",
+      "sha256": "f2a3f49d13b53a696b2f67ac2749175686454b0ba0f314ec7948f64c562b75a3"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0187\\step_01_rgb.png",
+      "sha256": "91441a4bbcbf3b30833a56b69717dab25538d02d2ff542be5bcee1b8b11d4dfe"
+    },
+    {
+      "label": "Step 2",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0187\\step_02_rgb.png",
+      "sha256": "82a685f28340f058381f01a399c22cd51c45583bec50335d91e3dee4c216a3e3"
+    },
+    {
+      "label": "Step 3 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0187\\step_03_rgb.png",
+      "sha256": "b250f511506e652635db7f499e4a6f988adaffc5b3a4825b49a613b37eef7801"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0187\\oracle_lookback.png",
+      "sha256": "6bfbb7dd27f05680d41a9488a44701b4269616fc109326253857410b2c7aa6ca"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "category": "visibility",
+  "category_label": "Visibility (incl. object selection by visibility)",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0187\\oracle_lookback_depth.png",
+      "sha256": "201c5ffcacebb5820d31a6509db0fab2923bdf9d334aaf6eacf2a352d2e6a70a",
+      "color_scale": {
+        "near_m": 0.6425,
+        "far_m": 6.87475
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0187\\oracle_lookback_surface_normals.png",
+      "sha256": "c492308274a29f901cbb65b4263d9aaf2fc739511f5eaf291072d07adbb0f0fe"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0187\\oracle_lookback_panorama.png",
+      "sha256": "00e71181bdc16594f746d03e2168886bf66579cc0f080cfb69beab9c393a384a"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0187\\topdown_lookback_with_path.png",
+      "sha256": "0850c396f899612bfa8013560eafd38e9c47149a414edbcd9fb3dab676532a25"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0187\\trajectory_lookback.txt",
+      "sha256": "c8983d7c5ff1d51c4a45469fabb4bc7241f7dbb979d808c029b66ff3ed69ef52"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0187\\trajectory_lookback.mp4",
+      "sha256": "dab48fb459e2a0dc223d1d879f0cd35c730169d2a0c58e7b87d8607e118c30c5"
+    }
+  },
+  "condition": "start_final_depth",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT DEPTH MAP (same camera pose and field of view as FINAL VIEW):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.642 m (near/red) to 6.875 m (far/purple), with values outside this range clipped. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "B",
+  "correct": true,
+  "input_signature": "854109251aeba34d4459cd6dd72f0e882087f726924c4718ddcfc498e3369651",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "depth"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3456,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 264
+      }
+    ],
+    "thoughts_token_count": 1237,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4694,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_started_at": "2026-09-28T02:41:46.659-04:00",
+  "request_duration_seconds": 6.89505900000222,
+  "completed_at": "2026-09-28T02:41:53.555-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

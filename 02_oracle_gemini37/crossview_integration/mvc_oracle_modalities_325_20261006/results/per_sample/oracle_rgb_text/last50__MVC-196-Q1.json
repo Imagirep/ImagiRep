@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-196-Q1",
+  "cohort": "last50",
+  "question_id": "MVC-196-Q1",
+  "resource_id": "MVC-196",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to bed in Image 2?",
+  "answer_choices": {
+    "A": "white cup set",
+    "B": "fireplace",
+    "C": "tv",
+    "D": "white chair"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "7e77595772f74d4ad1c541f9da4b294344114472b2599b38036cb4893285efb1",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-196\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3551,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 359
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1873,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5424,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.86919699999271,
+  "completed_at": "2026-10-06T17:32:41-04:00"
+}

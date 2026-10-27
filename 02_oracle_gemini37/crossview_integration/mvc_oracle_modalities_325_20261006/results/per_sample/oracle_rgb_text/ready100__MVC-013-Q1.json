@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-013-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-013-Q1",
+  "resource_id": "MVC-013",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to gray doors in Image 2?",
+  "answer_choices": {
+    "A": "stove",
+    "B": "stools",
+    "C": "tall plant",
+    "D": "cabinet with bowls in it"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "01fc81a35318bcc38e1936943f5a63d585032185eacf922ef2c176a9a863481b",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-013\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3554,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 362
+      }
+    ],
+    "thoughts_token_count": 2458,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6013,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 12.329305500010378,
+  "completed_at": "2026-10-06T17:30:30-04:00"
+}

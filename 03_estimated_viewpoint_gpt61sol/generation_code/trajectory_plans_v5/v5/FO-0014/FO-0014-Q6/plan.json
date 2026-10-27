@@ -1,0 +1,253 @@
+{
+  "question_id": "FO-0014-Q6",
+  "motion_text": "I walk to the right till I'm near the bed, and face the glass door.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the large bed with blue striped bedding on the right",
+      "relation": "near"
+    },
+    {
+      "op": "face",
+      "target": "the glass door on the left"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FO-0014-Q6",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.5848725041854889,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.1634973691625223,
+        "y": 0.7704153821271227,
+        "yaw": 0.5848725041854889,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -1.1634973691625223,
+        0.7704153821271227
+      ]
+    ],
+    "x": -1.1634973691625223,
+    "y": 0.7704153821271227,
+    "yaw": 0.5848725041854889,
+    "pitch": 0.0,
+    "travel_yaw": 0.5848725041854889
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.1634973691625223,
+      0.7704153821271227
+    ]
+  ],
+  "final": {
+    "x": -1.1634973691625223,
+    "y": 0.7704153821271227,
+    "yaw_deg": -36.07751815674241,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the large bed with blue striped bedding on the right",
+        "relation": "near"
+      },
+      "x": -1.1634973691625223,
+      "y": 0.7704153821271227,
+      "yaw": 0.5848725041854889,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face",
+        "target": "the glass door on the left"
+      },
+      "x": -1.1634973691625223,
+      "y": 0.7704153821271227,
+      "yaw": -0.6296714777831907,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.5848725041854889,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.1634973691625223,
+      "y": 0.7704153821271227,
+      "yaw": 0.5848725041854889,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.1634973691625223,
+      "y": 0.7704153821271227,
+      "yaw": -0.6296714777831907,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the large bed with blue striped bedding on the right",
+      "method": "initial_photo",
+      "box": [
+        565,
+        416,
+        1000,
+        1000
+      ],
+      "point_m": [
+        -2.4497019048747704,
+        0.7171983255612321,
+        -0.9938056619729846
+      ]
+    },
+    {
+      "overlap": "the large bed with blue striped bedding on the right",
+      "n_points": 170,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 1.5,
+          "stop_m": 1.2370465435316178,
+          "visible_frac": 0.8705882352941177,
+          "center_deg": 4.532109592483382,
+          "width_deg": 57.30423874384134,
+          "distance_m": 1.5304118555486395
+        },
+        {
+          "sector": 2,
+          "path_m": 1.8,
+          "stop_m": 1.0141801760220788,
+          "visible_frac": 0.8,
+          "center_deg": 6.243513544582548,
+          "width_deg": 63.71424324195574,
+          "distance_m": 1.2011319195130845
+        },
+        {
+          "sector": 4,
+          "path_m": 2.0,
+          "stop_m": 1.2873049999111696,
+          "visible_frac": 0.9823529411764705,
+          "center_deg": -1.5689615791724953,
+          "width_deg": 54.859119670204294,
+          "distance_m": 1.61561694078329
+        },
+        {
+          "sector": 1,
+          "path_m": 2.6,
+          "stop_m": 0.846895311196047,
+          "visible_frac": 0.5705882352941176,
+          "center_deg": 11.334503696785289,
+          "width_deg": 59.52155940948096,
+          "distance_m": 1.1910709089284715
+        },
+        {
+          "sector": 5,
+          "path_m": 3.3000000000000003,
+          "stop_m": 1.1602141688453358,
+          "visible_frac": 0.5235294117647059,
+          "center_deg": -9.669930814838384,
+          "width_deg": 59.7815921021393,
+          "distance_m": 1.062010490967264
+        }
+      ],
+      "chosen_sector": 4
+    },
+    {
+      "ground": "the glass door on the left",
+      "method": "initial_photo",
+      "box": [
+        418,
+        148,
+        781,
+        357
+      ],
+      "point_m": [
+        -5.261516116223228,
+        -2.215448951543138,
+        -0.5797248498617577
+      ]
+    }
+  ],
+  "m_per_unit": 2.1435528766777647,
+  "seconds": 10.26429271697998
+}

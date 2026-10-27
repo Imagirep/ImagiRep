@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-005-Q3", "method": "avic", "variant": "label", "prediction": "black chair, white ottoman, shelf, curtains", "gold": "white ottoman, shelf, curtains, black chair", "correct": false, "n_imagined": 2, "category": "ordering", "stored_result": "wrong"}

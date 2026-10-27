@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-026-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-026-Q3",
+  "resource_id": "MVC-026",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "microwave, silver pot, ovens, sink",
+    "B": "microwave, silver pot, sink, ovens",
+    "C": "sink, silver pot, ovens, microwave",
+    "D": "ovens, microwave, sink, silver pot"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "41105d3c62f4c9b87d6e138f3e5afd9eb01d910cf584f1fde0c90c5482aa971a",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-026\\order_21\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4628,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      }
+    ],
+    "thoughts_token_count": 3773,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8402,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 18.702820599995903,
+  "completed_at": "2026-10-06T16:47:57-04:00"
+}

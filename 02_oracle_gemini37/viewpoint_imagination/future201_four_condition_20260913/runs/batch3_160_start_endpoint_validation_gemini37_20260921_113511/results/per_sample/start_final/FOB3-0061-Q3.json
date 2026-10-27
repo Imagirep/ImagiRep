@@ -1,0 +1,102 @@
+{
+  "row_index": 178,
+  "question_id": "FOB3-0061-Q3",
+  "trajectory_id": "FOB3-0061",
+  "scan_id": "rPc6DW4iMge",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk to the sink, then turn to face my starting point, would the two-tier tray still be directly visible?",
+  "answer_choices": {
+    "A": "partially visible",
+    "B": "outside of view",
+    "C": "clearly visible",
+    "D": "completely blocked"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "A": "B",
+    "B": "D",
+    "C": "A",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0061\\start_view.png",
+      "sha256": "28e462d88daaf6218edb9f16206ec911fe388c05b612b7094085518b56ec18dd"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0061\\step_01_rgb.png",
+      "sha256": "92f5f87c97189431d46cb5f4f5e7e62255a3114752dd92982443b3d42fe909e3"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0061\\step_02_rgb.png",
+      "sha256": "d9342b6b0add81fae354c8c085239243851a9634893d41af075d8cb46814442c"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0061\\oracle_lookback.png",
+      "sha256": "b34cc1e2822a294d35e68c8a03cd1d78e1384d8a7deb00457289912bf6d779ea"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": false,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2270,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 142
+      }
+    ],
+    "thoughts_token_count": 1253,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3524,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-21T11:42:54-04:00"
+}

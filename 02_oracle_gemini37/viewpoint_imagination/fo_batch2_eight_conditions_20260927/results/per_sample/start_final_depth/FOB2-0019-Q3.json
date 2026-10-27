@@ -1,0 +1,144 @@
+{
+  "row_index": 245,
+  "question_id": "FOB2-0019-Q3",
+  "trajectory_id": "FOB2-0019",
+  "scan_id": "JF19kD82Mey",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk forward and stop near the sofa, then turn back to face where I come from, would the little statue still be directly visible?",
+  "answer_choices": {
+    "B": "outside of view",
+    "A": "completely blocked",
+    "C": "clearly visible",
+    "D": "partially visible"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "B": "D",
+    "A": "C",
+    "C": "A",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0019\\start_view.png",
+      "sha256": "91ba16544508df200c780e8df7d0123cd54059191349312aaa24bd98a68c969c"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0019\\step_01_rgb.png",
+      "sha256": "8c093730fd982ef02550cacb6bcb0bdf6d3584be7f3fdb6e3137fe234fa7d1d4"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0019\\oracle_lookback.png",
+      "sha256": "1be9938f1d8e12411772ecdc8687748128b5630398bb416f4ee155f65afb8aec"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "category": "visibility",
+  "category_label": "Visibility (incl. object selection by visibility)",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0019\\oracle_lookback_depth.png",
+      "sha256": "280a445d0f047b9353480b2d5a0988fcc60be355addd9d305e3865ec156676cf",
+      "color_scale": {
+        "near_m": 2.056,
+        "far_m": 7.90275
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0019\\oracle_lookback_surface_normals.png",
+      "sha256": "fa4b171cedd265a003458899675cb2b6761c26b670b3de2de5c637e82d7638b6"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0019\\oracle_lookback_panorama.png",
+      "sha256": "62cd372dd8bb38b82e8dd17fbbc2c09092feafbebd458af6066b3de175a6d14d"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0019\\topdown_lookback_with_path.png",
+      "sha256": "3cb6ce2e6b2060bf2071fed9a466ebe555f6471415acd30f920200c5165bdd4c"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0019\\trajectory_lookback.txt",
+      "sha256": "e171e4d0e5e61e2f5d9e831e94f6df13f7198fe9703345d02c677116b2b4e6fe"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0019\\trajectory_lookback.mp4",
+      "sha256": "91b63392ac7882caf1f8573b102546a6663228ff6c238a9d6ffaf3b5eba0b9c3"
+    }
+  },
+  "condition": "start_final_depth",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT DEPTH MAP (same camera pose and field of view as FINAL VIEW):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 2.056 m (near/red) to 7.903 m (far/purple), with values outside this range clipped. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": false,
+  "input_signature": "897880eddf94acaf1e96ba75e6dfa1eb19d13b5c73a77ba33a212e13d9f89f27",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "depth"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3453,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 261
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 2719,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6173,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-09-28T03:00:59.413-04:00",
+  "request_duration_seconds": 13.504049000097439,
+  "completed_at": "2026-09-28T03:01:12.917-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

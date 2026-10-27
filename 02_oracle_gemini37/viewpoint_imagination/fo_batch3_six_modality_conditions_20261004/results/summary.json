@@ -1,0 +1,997 @@
+{
+  "status": "complete",
+  "question_count": 160,
+  "condition_count": 8,
+  "reused_conditions": [
+    "start_view",
+    "start_final"
+  ],
+  "successful_results": 960,
+  "by_condition": {
+    "start_view": {
+      "n": 160,
+      "correct": 91,
+      "accuracy": 0.56875,
+      "reused": true,
+      "by_category": {
+        "farthest_object": {
+          "n": 17,
+          "correct": 12,
+          "accuracy": 0.7058823529411765
+        },
+        "nearest_object": {
+          "n": 25,
+          "correct": 16,
+          "accuracy": 0.64
+        },
+        "nearest_obstacle_direction": {
+          "n": 5,
+          "correct": 2,
+          "accuracy": 0.4
+        },
+        "object_relative_direction": {
+          "n": 43,
+          "correct": 27,
+          "accuracy": 0.627906976744186
+        },
+        "object_selection_by_direction": {
+          "n": 29,
+          "correct": 18,
+          "accuracy": 0.6206896551724138
+        },
+        "open_space_direction": {
+          "n": 20,
+          "correct": 10,
+          "accuracy": 0.5
+        },
+        "visibility": {
+          "n": 21,
+          "correct": 6,
+          "accuracy": 0.2857142857142857
+        }
+      }
+    },
+    "start_final": {
+      "n": 160,
+      "correct": 99,
+      "accuracy": 0.61875,
+      "reused": true,
+      "by_category": {
+        "farthest_object": {
+          "n": 17,
+          "correct": 14,
+          "accuracy": 0.8235294117647058
+        },
+        "nearest_object": {
+          "n": 25,
+          "correct": 17,
+          "accuracy": 0.68
+        },
+        "nearest_obstacle_direction": {
+          "n": 5,
+          "correct": 2,
+          "accuracy": 0.4
+        },
+        "object_relative_direction": {
+          "n": 43,
+          "correct": 32,
+          "accuracy": 0.7441860465116279
+        },
+        "object_selection_by_direction": {
+          "n": 29,
+          "correct": 20,
+          "accuracy": 0.6896551724137931
+        },
+        "open_space_direction": {
+          "n": 20,
+          "correct": 9,
+          "accuracy": 0.45
+        },
+        "visibility": {
+          "n": 21,
+          "correct": 5,
+          "accuracy": 0.23809523809523808
+        }
+      }
+    },
+    "start_final_topdown": {
+      "n": 160,
+      "correct": 97,
+      "accuracy": 0.60625,
+      "by_category": {
+        "farthest_object": {
+          "n": 17,
+          "correct": 10,
+          "accuracy": 0.5882352941176471
+        },
+        "nearest_object": {
+          "n": 25,
+          "correct": 18,
+          "accuracy": 0.72
+        },
+        "nearest_obstacle_direction": {
+          "n": 5,
+          "correct": 3,
+          "accuracy": 0.6
+        },
+        "object_relative_direction": {
+          "n": 43,
+          "correct": 33,
+          "accuracy": 0.7674418604651163
+        },
+        "object_selection_by_direction": {
+          "n": 29,
+          "correct": 19,
+          "accuracy": 0.6551724137931034
+        },
+        "open_space_direction": {
+          "n": 20,
+          "correct": 8,
+          "accuracy": 0.4
+        },
+        "visibility": {
+          "n": 21,
+          "correct": 6,
+          "accuracy": 0.2857142857142857
+        }
+      }
+    },
+    "start_final_text": {
+      "n": 160,
+      "correct": 94,
+      "accuracy": 0.5875,
+      "by_category": {
+        "farthest_object": {
+          "n": 17,
+          "correct": 13,
+          "accuracy": 0.7647058823529411
+        },
+        "nearest_object": {
+          "n": 25,
+          "correct": 18,
+          "accuracy": 0.72
+        },
+        "nearest_obstacle_direction": {
+          "n": 5,
+          "correct": 2,
+          "accuracy": 0.4
+        },
+        "object_relative_direction": {
+          "n": 43,
+          "correct": 32,
+          "accuracy": 0.7441860465116279
+        },
+        "object_selection_by_direction": {
+          "n": 29,
+          "correct": 17,
+          "accuracy": 0.5862068965517241
+        },
+        "open_space_direction": {
+          "n": 20,
+          "correct": 6,
+          "accuracy": 0.3
+        },
+        "visibility": {
+          "n": 21,
+          "correct": 6,
+          "accuracy": 0.2857142857142857
+        }
+      }
+    },
+    "start_final_video": {
+      "n": 160,
+      "correct": 98,
+      "accuracy": 0.6125,
+      "by_category": {
+        "farthest_object": {
+          "n": 17,
+          "correct": 14,
+          "accuracy": 0.8235294117647058
+        },
+        "nearest_object": {
+          "n": 25,
+          "correct": 16,
+          "accuracy": 0.64
+        },
+        "nearest_obstacle_direction": {
+          "n": 5,
+          "correct": 2,
+          "accuracy": 0.4
+        },
+        "object_relative_direction": {
+          "n": 43,
+          "correct": 36,
+          "accuracy": 0.8372093023255814
+        },
+        "object_selection_by_direction": {
+          "n": 29,
+          "correct": 18,
+          "accuracy": 0.6206896551724138
+        },
+        "open_space_direction": {
+          "n": 20,
+          "correct": 6,
+          "accuracy": 0.3
+        },
+        "visibility": {
+          "n": 21,
+          "correct": 6,
+          "accuracy": 0.2857142857142857
+        }
+      }
+    },
+    "start_final_depth": {
+      "n": 160,
+      "correct": 106,
+      "accuracy": 0.6625,
+      "by_category": {
+        "farthest_object": {
+          "n": 17,
+          "correct": 13,
+          "accuracy": 0.7647058823529411
+        },
+        "nearest_object": {
+          "n": 25,
+          "correct": 18,
+          "accuracy": 0.72
+        },
+        "nearest_obstacle_direction": {
+          "n": 5,
+          "correct": 2,
+          "accuracy": 0.4
+        },
+        "object_relative_direction": {
+          "n": 43,
+          "correct": 33,
+          "accuracy": 0.7674418604651163
+        },
+        "object_selection_by_direction": {
+          "n": 29,
+          "correct": 19,
+          "accuracy": 0.6551724137931034
+        },
+        "open_space_direction": {
+          "n": 20,
+          "correct": 12,
+          "accuracy": 0.6
+        },
+        "visibility": {
+          "n": 21,
+          "correct": 9,
+          "accuracy": 0.42857142857142855
+        }
+      }
+    },
+    "start_final_surface_normals": {
+      "n": 160,
+      "correct": 100,
+      "accuracy": 0.625,
+      "by_category": {
+        "farthest_object": {
+          "n": 17,
+          "correct": 14,
+          "accuracy": 0.8235294117647058
+        },
+        "nearest_object": {
+          "n": 25,
+          "correct": 18,
+          "accuracy": 0.72
+        },
+        "nearest_obstacle_direction": {
+          "n": 5,
+          "correct": 2,
+          "accuracy": 0.4
+        },
+        "object_relative_direction": {
+          "n": 43,
+          "correct": 32,
+          "accuracy": 0.7441860465116279
+        },
+        "object_selection_by_direction": {
+          "n": 29,
+          "correct": 20,
+          "accuracy": 0.6896551724137931
+        },
+        "open_space_direction": {
+          "n": 20,
+          "correct": 10,
+          "accuracy": 0.5
+        },
+        "visibility": {
+          "n": 21,
+          "correct": 4,
+          "accuracy": 0.19047619047619047
+        }
+      }
+    },
+    "start_final_panorama": {
+      "n": 160,
+      "correct": 83,
+      "accuracy": 0.51875,
+      "by_category": {
+        "farthest_object": {
+          "n": 17,
+          "correct": 13,
+          "accuracy": 0.7647058823529411
+        },
+        "nearest_object": {
+          "n": 25,
+          "correct": 14,
+          "accuracy": 0.56
+        },
+        "nearest_obstacle_direction": {
+          "n": 5,
+          "correct": 1,
+          "accuracy": 0.2
+        },
+        "object_relative_direction": {
+          "n": 43,
+          "correct": 28,
+          "accuracy": 0.6511627906976745
+        },
+        "object_selection_by_direction": {
+          "n": 29,
+          "correct": 15,
+          "accuracy": 0.5172413793103449
+        },
+        "open_space_direction": {
+          "n": 20,
+          "correct": 6,
+          "accuracy": 0.3
+        },
+        "visibility": {
+          "n": 21,
+          "correct": 6,
+          "accuracy": 0.2857142857142857
+        }
+      }
+    }
+  },
+  "strict_serial": true,
+  "batch1_fixed_mapping": {
+    "mapping": {
+      "open_space_direction": "start_view",
+      "nearest_obstacle_direction": "start_final_text",
+      "visibility": "start_final_depth",
+      "nearest_object": "start_final",
+      "farthest_object": "start_view",
+      "object_relative_direction": "start_final_surface_normals",
+      "object_selection_by_direction": "start_final"
+    },
+    "correct": 102,
+    "n": 160,
+    "accuracy": 0.6375,
+    "selection_on_evaluation_data": false,
+    "paired_vs_final_rgb": {
+      "wrong_to_correct": 13,
+      "correct_to_wrong": 10,
+      "both_correct": 89,
+      "both_wrong": 48,
+      "n": 160,
+      "net_correct_gain": 3,
+      "gain_percentage_points": 1.875
+    }
+  },
+  "batch3_retrospective_best_mapping": {
+    "mapping": {
+      "farthest_object": "start_final",
+      "nearest_object": "start_final_topdown",
+      "nearest_obstacle_direction": "start_final_topdown",
+      "object_relative_direction": "start_final_video",
+      "object_selection_by_direction": "start_final",
+      "open_space_direction": "start_final_depth",
+      "visibility": "start_final_depth"
+    },
+    "correct": 112,
+    "n": 160,
+    "accuracy": 0.7,
+    "selection_on_evaluation_data": true,
+    "paired_vs_final_rgb": {
+      "wrong_to_correct": 16,
+      "correct_to_wrong": 3,
+      "both_correct": 96,
+      "both_wrong": 45,
+      "n": 160,
+      "net_correct_gain": 13,
+      "gain_percentage_points": 8.125
+    }
+  },
+  "paired_vs_final_rgb": {
+    "start_view": {
+      "wrong_to_correct": 12,
+      "correct_to_wrong": 20,
+      "both_correct": 79,
+      "both_wrong": 49,
+      "n": 160,
+      "net_correct_gain": -8,
+      "gain_percentage_points": -5.0
+    },
+    "start_final": {
+      "wrong_to_correct": 0,
+      "correct_to_wrong": 0,
+      "both_correct": 99,
+      "both_wrong": 61,
+      "n": 160,
+      "net_correct_gain": 0,
+      "gain_percentage_points": 0.0
+    },
+    "start_final_topdown": {
+      "wrong_to_correct": 17,
+      "correct_to_wrong": 19,
+      "both_correct": 80,
+      "both_wrong": 44,
+      "n": 160,
+      "net_correct_gain": -2,
+      "gain_percentage_points": -1.25
+    },
+    "start_final_text": {
+      "wrong_to_correct": 13,
+      "correct_to_wrong": 18,
+      "both_correct": 81,
+      "both_wrong": 48,
+      "n": 160,
+      "net_correct_gain": -5,
+      "gain_percentage_points": -3.125
+    },
+    "start_final_video": {
+      "wrong_to_correct": 10,
+      "correct_to_wrong": 11,
+      "both_correct": 88,
+      "both_wrong": 51,
+      "n": 160,
+      "net_correct_gain": -1,
+      "gain_percentage_points": -0.625
+    },
+    "start_final_depth": {
+      "wrong_to_correct": 13,
+      "correct_to_wrong": 6,
+      "both_correct": 93,
+      "both_wrong": 48,
+      "n": 160,
+      "net_correct_gain": 7,
+      "gain_percentage_points": 4.375
+    },
+    "start_final_surface_normals": {
+      "wrong_to_correct": 10,
+      "correct_to_wrong": 9,
+      "both_correct": 90,
+      "both_wrong": 51,
+      "n": 160,
+      "net_correct_gain": 1,
+      "gain_percentage_points": 0.625
+    },
+    "start_final_panorama": {
+      "wrong_to_correct": 12,
+      "correct_to_wrong": 28,
+      "both_correct": 71,
+      "both_wrong": 49,
+      "n": 160,
+      "net_correct_gain": -16,
+      "gain_percentage_points": -10.0
+    }
+  },
+  "any_modality_union": {
+    "correct": 132,
+    "n": 160
+  },
+  "paired_by_category_vs_final_rgb": {
+    "farthest_object": {
+      "start_view": {
+        "wrong_to_correct": 2,
+        "correct_to_wrong": 4,
+        "both_correct": 10,
+        "both_wrong": 1,
+        "n": 17,
+        "net_correct_gain": -2,
+        "gain_percentage_points": -11.764705882352942
+      },
+      "start_final": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "both_correct": 14,
+        "both_wrong": 3,
+        "n": 17,
+        "net_correct_gain": 0,
+        "gain_percentage_points": 0.0
+      },
+      "start_final_topdown": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 5,
+        "both_correct": 9,
+        "both_wrong": 2,
+        "n": 17,
+        "net_correct_gain": -4,
+        "gain_percentage_points": -23.529411764705884
+      },
+      "start_final_text": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 2,
+        "both_correct": 12,
+        "both_wrong": 2,
+        "n": 17,
+        "net_correct_gain": -1,
+        "gain_percentage_points": -5.882352941176471
+      },
+      "start_final_video": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 1,
+        "both_correct": 13,
+        "both_wrong": 2,
+        "n": 17,
+        "net_correct_gain": 0,
+        "gain_percentage_points": 0.0
+      },
+      "start_final_depth": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 2,
+        "both_correct": 12,
+        "both_wrong": 2,
+        "n": 17,
+        "net_correct_gain": -1,
+        "gain_percentage_points": -5.882352941176471
+      },
+      "start_final_surface_normals": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 1,
+        "both_correct": 13,
+        "both_wrong": 2,
+        "n": 17,
+        "net_correct_gain": 0,
+        "gain_percentage_points": 0.0
+      },
+      "start_final_panorama": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 2,
+        "both_correct": 12,
+        "both_wrong": 2,
+        "n": 17,
+        "net_correct_gain": -1,
+        "gain_percentage_points": -5.882352941176471
+      }
+    },
+    "nearest_object": {
+      "start_view": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 2,
+        "both_correct": 15,
+        "both_wrong": 7,
+        "n": 25,
+        "net_correct_gain": -1,
+        "gain_percentage_points": -4.0
+      },
+      "start_final": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "both_correct": 17,
+        "both_wrong": 8,
+        "n": 25,
+        "net_correct_gain": 0,
+        "gain_percentage_points": 0.0
+      },
+      "start_final_topdown": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 0,
+        "both_correct": 17,
+        "both_wrong": 7,
+        "n": 25,
+        "net_correct_gain": 1,
+        "gain_percentage_points": 4.0
+      },
+      "start_final_text": {
+        "wrong_to_correct": 2,
+        "correct_to_wrong": 1,
+        "both_correct": 16,
+        "both_wrong": 6,
+        "n": 25,
+        "net_correct_gain": 1,
+        "gain_percentage_points": 4.0
+      },
+      "start_final_video": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 1,
+        "both_correct": 16,
+        "both_wrong": 8,
+        "n": 25,
+        "net_correct_gain": -1,
+        "gain_percentage_points": -4.0
+      },
+      "start_final_depth": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 0,
+        "both_correct": 17,
+        "both_wrong": 7,
+        "n": 25,
+        "net_correct_gain": 1,
+        "gain_percentage_points": 4.0
+      },
+      "start_final_surface_normals": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 0,
+        "both_correct": 17,
+        "both_wrong": 7,
+        "n": 25,
+        "net_correct_gain": 1,
+        "gain_percentage_points": 4.0
+      },
+      "start_final_panorama": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 3,
+        "both_correct": 14,
+        "both_wrong": 8,
+        "n": 25,
+        "net_correct_gain": -3,
+        "gain_percentage_points": -12.0
+      }
+    },
+    "nearest_obstacle_direction": {
+      "start_view": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "both_correct": 2,
+        "both_wrong": 3,
+        "n": 5,
+        "net_correct_gain": 0,
+        "gain_percentage_points": 0.0
+      },
+      "start_final": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "both_correct": 2,
+        "both_wrong": 3,
+        "n": 5,
+        "net_correct_gain": 0,
+        "gain_percentage_points": 0.0
+      },
+      "start_final_topdown": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 0,
+        "both_correct": 2,
+        "both_wrong": 2,
+        "n": 5,
+        "net_correct_gain": 1,
+        "gain_percentage_points": 20.0
+      },
+      "start_final_text": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "both_correct": 2,
+        "both_wrong": 3,
+        "n": 5,
+        "net_correct_gain": 0,
+        "gain_percentage_points": 0.0
+      },
+      "start_final_video": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 1,
+        "both_correct": 1,
+        "both_wrong": 2,
+        "n": 5,
+        "net_correct_gain": 0,
+        "gain_percentage_points": 0.0
+      },
+      "start_final_depth": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "both_correct": 2,
+        "both_wrong": 3,
+        "n": 5,
+        "net_correct_gain": 0,
+        "gain_percentage_points": 0.0
+      },
+      "start_final_surface_normals": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "both_correct": 2,
+        "both_wrong": 3,
+        "n": 5,
+        "net_correct_gain": 0,
+        "gain_percentage_points": 0.0
+      },
+      "start_final_panorama": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 2,
+        "both_correct": 0,
+        "both_wrong": 2,
+        "n": 5,
+        "net_correct_gain": -1,
+        "gain_percentage_points": -20.0
+      }
+    },
+    "object_relative_direction": {
+      "start_view": {
+        "wrong_to_correct": 3,
+        "correct_to_wrong": 8,
+        "both_correct": 24,
+        "both_wrong": 8,
+        "n": 43,
+        "net_correct_gain": -5,
+        "gain_percentage_points": -11.627906976744185
+      },
+      "start_final": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "both_correct": 32,
+        "both_wrong": 11,
+        "n": 43,
+        "net_correct_gain": 0,
+        "gain_percentage_points": 0.0
+      },
+      "start_final_topdown": {
+        "wrong_to_correct": 5,
+        "correct_to_wrong": 4,
+        "both_correct": 28,
+        "both_wrong": 6,
+        "n": 43,
+        "net_correct_gain": 1,
+        "gain_percentage_points": 2.3255813953488373
+      },
+      "start_final_text": {
+        "wrong_to_correct": 4,
+        "correct_to_wrong": 4,
+        "both_correct": 28,
+        "both_wrong": 7,
+        "n": 43,
+        "net_correct_gain": 0,
+        "gain_percentage_points": 0.0
+      },
+      "start_final_video": {
+        "wrong_to_correct": 5,
+        "correct_to_wrong": 1,
+        "both_correct": 31,
+        "both_wrong": 6,
+        "n": 43,
+        "net_correct_gain": 4,
+        "gain_percentage_points": 9.30232558139535
+      },
+      "start_final_depth": {
+        "wrong_to_correct": 2,
+        "correct_to_wrong": 1,
+        "both_correct": 31,
+        "both_wrong": 9,
+        "n": 43,
+        "net_correct_gain": 1,
+        "gain_percentage_points": 2.3255813953488373
+      },
+      "start_final_surface_normals": {
+        "wrong_to_correct": 4,
+        "correct_to_wrong": 4,
+        "both_correct": 28,
+        "both_wrong": 7,
+        "n": 43,
+        "net_correct_gain": 0,
+        "gain_percentage_points": 0.0
+      },
+      "start_final_panorama": {
+        "wrong_to_correct": 4,
+        "correct_to_wrong": 8,
+        "both_correct": 24,
+        "both_wrong": 7,
+        "n": 43,
+        "net_correct_gain": -4,
+        "gain_percentage_points": -9.30232558139535
+      }
+    },
+    "object_selection_by_direction": {
+      "start_view": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 3,
+        "both_correct": 17,
+        "both_wrong": 8,
+        "n": 29,
+        "net_correct_gain": -2,
+        "gain_percentage_points": -6.896551724137931
+      },
+      "start_final": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "both_correct": 20,
+        "both_wrong": 9,
+        "n": 29,
+        "net_correct_gain": 0,
+        "gain_percentage_points": 0.0
+      },
+      "start_final_topdown": {
+        "wrong_to_correct": 2,
+        "correct_to_wrong": 3,
+        "both_correct": 17,
+        "both_wrong": 7,
+        "n": 29,
+        "net_correct_gain": -1,
+        "gain_percentage_points": -3.4482758620689653
+      },
+      "start_final_text": {
+        "wrong_to_correct": 3,
+        "correct_to_wrong": 6,
+        "both_correct": 14,
+        "both_wrong": 6,
+        "n": 29,
+        "net_correct_gain": -3,
+        "gain_percentage_points": -10.344827586206897
+      },
+      "start_final_video": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 2,
+        "both_correct": 18,
+        "both_wrong": 9,
+        "n": 29,
+        "net_correct_gain": -2,
+        "gain_percentage_points": -6.896551724137931
+      },
+      "start_final_depth": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 1,
+        "both_correct": 19,
+        "both_wrong": 9,
+        "n": 29,
+        "net_correct_gain": -1,
+        "gain_percentage_points": -3.4482758620689653
+      },
+      "start_final_surface_normals": {
+        "wrong_to_correct": 2,
+        "correct_to_wrong": 2,
+        "both_correct": 18,
+        "both_wrong": 7,
+        "n": 29,
+        "net_correct_gain": 0,
+        "gain_percentage_points": 0.0
+      },
+      "start_final_panorama": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 5,
+        "both_correct": 15,
+        "both_wrong": 9,
+        "n": 29,
+        "net_correct_gain": -5,
+        "gain_percentage_points": -17.24137931034483
+      }
+    },
+    "open_space_direction": {
+      "start_view": {
+        "wrong_to_correct": 3,
+        "correct_to_wrong": 2,
+        "both_correct": 7,
+        "both_wrong": 8,
+        "n": 20,
+        "net_correct_gain": 1,
+        "gain_percentage_points": 5.0
+      },
+      "start_final": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "both_correct": 9,
+        "both_wrong": 11,
+        "n": 20,
+        "net_correct_gain": 0,
+        "gain_percentage_points": 0.0
+      },
+      "start_final_topdown": {
+        "wrong_to_correct": 5,
+        "correct_to_wrong": 6,
+        "both_correct": 3,
+        "both_wrong": 6,
+        "n": 20,
+        "net_correct_gain": -1,
+        "gain_percentage_points": -5.0
+      },
+      "start_final_text": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 4,
+        "both_correct": 5,
+        "both_wrong": 10,
+        "n": 20,
+        "net_correct_gain": -3,
+        "gain_percentage_points": -15.0
+      },
+      "start_final_video": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 4,
+        "both_correct": 5,
+        "both_wrong": 10,
+        "n": 20,
+        "net_correct_gain": -3,
+        "gain_percentage_points": -15.0
+      },
+      "start_final_depth": {
+        "wrong_to_correct": 5,
+        "correct_to_wrong": 2,
+        "both_correct": 7,
+        "both_wrong": 6,
+        "n": 20,
+        "net_correct_gain": 3,
+        "gain_percentage_points": 15.0
+      },
+      "start_final_surface_normals": {
+        "wrong_to_correct": 2,
+        "correct_to_wrong": 1,
+        "both_correct": 8,
+        "both_wrong": 9,
+        "n": 20,
+        "net_correct_gain": 1,
+        "gain_percentage_points": 5.0
+      },
+      "start_final_panorama": {
+        "wrong_to_correct": 4,
+        "correct_to_wrong": 7,
+        "both_correct": 2,
+        "both_wrong": 7,
+        "n": 20,
+        "net_correct_gain": -3,
+        "gain_percentage_points": -15.0
+      }
+    },
+    "visibility": {
+      "start_view": {
+        "wrong_to_correct": 2,
+        "correct_to_wrong": 1,
+        "both_correct": 4,
+        "both_wrong": 14,
+        "n": 21,
+        "net_correct_gain": 1,
+        "gain_percentage_points": 4.761904761904762
+      },
+      "start_final": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "both_correct": 5,
+        "both_wrong": 16,
+        "n": 21,
+        "net_correct_gain": 0,
+        "gain_percentage_points": 0.0
+      },
+      "start_final_topdown": {
+        "wrong_to_correct": 2,
+        "correct_to_wrong": 1,
+        "both_correct": 4,
+        "both_wrong": 14,
+        "n": 21,
+        "net_correct_gain": 1,
+        "gain_percentage_points": 4.761904761904762
+      },
+      "start_final_text": {
+        "wrong_to_correct": 2,
+        "correct_to_wrong": 1,
+        "both_correct": 4,
+        "both_wrong": 14,
+        "n": 21,
+        "net_correct_gain": 1,
+        "gain_percentage_points": 4.761904761904762
+      },
+      "start_final_video": {
+        "wrong_to_correct": 2,
+        "correct_to_wrong": 1,
+        "both_correct": 4,
+        "both_wrong": 14,
+        "n": 21,
+        "net_correct_gain": 1,
+        "gain_percentage_points": 4.761904761904762
+      },
+      "start_final_depth": {
+        "wrong_to_correct": 4,
+        "correct_to_wrong": 0,
+        "both_correct": 5,
+        "both_wrong": 12,
+        "n": 21,
+        "net_correct_gain": 4,
+        "gain_percentage_points": 19.047619047619047
+      },
+      "start_final_surface_normals": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 1,
+        "both_correct": 4,
+        "both_wrong": 16,
+        "n": 21,
+        "net_correct_gain": -1,
+        "gain_percentage_points": -4.761904761904762
+      },
+      "start_final_panorama": {
+        "wrong_to_correct": 2,
+        "correct_to_wrong": 1,
+        "both_correct": 4,
+        "both_wrong": 14,
+        "n": 21,
+        "net_correct_gain": 1,
+        "gain_percentage_points": 4.761904761904762
+      }
+    }
+  }
+}

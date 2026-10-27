@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB2-0002-Q5",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk forward and walk near the short stool, facing the way I go, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "D": "lamp",
+    "A": "flowers",
+    "B": "vase",
+    "C": "wall sconce"
+  },
+  "gold_answer": "D",
+  "show_lookback": false,
+  "prediction": "C",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0002/start_view.png",
+      "sha256": "b7395ee5b449d4e7e7e4642c8fdc67a20c47282bd6b05d43ac3c0f69301b0c09"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0002/step_01_rgb.png",
+      "sha256": "ac9a66b2ec866cb21035406151c6f4a25bfaac3bc02db361a018b8d5143d5af9"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0002/step_02_rgb.png",
+      "sha256": "a035952370fdf24220d08d9a24e434a7f3d9a27ae2655ae6e1294b11664ab808"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3338,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 146
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1195,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4534,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_duration_seconds": 7.697364499996183,
+  "completed_at": "2026-10-06T14:14:13-04:00"
+}

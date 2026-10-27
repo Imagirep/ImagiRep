@@ -1,0 +1,25 @@
+[
+ {
+  "database_idx": "ready100__MVC-012-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 2 is closest to dining table in Image 1?",
+  "answer_choices": [
+   "black table",
+   "gray armchair",
+   "fireplace",
+   "painting"
+  ],
+  "correct_answer": "black table",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-012-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-012-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-012"
+  },
+  "camera_pitch_deg": -15.0
+ }
+]

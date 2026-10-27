@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC3I-012-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC3I-012-Q3",
+  "resource_id": "MVC3I-012",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "lamp, wooden desk, black chair, gray doorway",
+    "B": "lamp, wooden desk, gray doorway, black chair",
+    "C": "black chair, lamp, gray doorway, wooden desk",
+    "D": "gray doorway, wooden desk, black chair, lamp"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "bd7a53fc647c116ea6dcf256981864167dcb2a2d11d2e6aaaa2dbd60d0f01aaf",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.312 m (near/red) to 5.886 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC3I-012\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 5711,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 5320
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 391
+      }
+    ],
+    "thoughts_token_count": 7865,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 13577,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 30.361716799990973,
+  "completed_at": "2026-10-06T17:39:11-04:00"
+}

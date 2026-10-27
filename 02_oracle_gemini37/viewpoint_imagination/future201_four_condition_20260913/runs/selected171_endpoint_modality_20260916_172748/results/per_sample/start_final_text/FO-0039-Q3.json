@@ -1,0 +1,132 @@
+{
+  "row_index": 26,
+  "question_id": "FO-0039-Q3",
+  "trajectory_id": "FO-0039",
+  "scan_id": "7y3sRwLe3Va",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk to the oven, then turn back to face where I come from, would both white bowl on dining table still be directly visible?",
+  "answer_choices": {
+    "C": "partially visible",
+    "A": "outside of view",
+    "B": "completely blocked",
+    "D": "clearly visible"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "C": "B",
+    "A": "D",
+    "B": "C",
+    "D": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\step_02_rgb.png"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\oracle_lookback.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "8ec6dbdb2735156f02ab76b7d6ff91a8a784723595f77bfd05abdec4b0ab09b4",
+    "2f3a73d4a7ce371a5137c636727f5d4bee936bebdedbe60a7f6ea8f5d827c0bb"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\topdown_lookback_with_path.png",
+      "sha256": "87a527269a68c4f92a2b0fd2305c09c545237744e32f0a37126c9b4a78752d5c"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\trajectory_lookback.txt",
+      "sha256": "e552210e88a5305d07a86c6f0d2a01a2e71995d724595082ffe4a6ef04d73742"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\trajectory_lookback.mp4",
+      "sha256": "6f0499c510e095d33ba9beae40a624d7850ee6e7265cd6a1bd34cdcec1072872",
+      "frame_count": 89,
+      "fps": 12.0,
+      "duration_seconds": 7.416666666666667,
+      "bytes": 476084,
+      "final_rgb_correlation": 0.9989275702386368
+    }
+  },
+  "condition": "start_final_text",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "modality_prompt": "ADDITIONAL TEXT TRAJECTORY:\nThe description gives the movement and camera poses from start to final state. Headings are in degrees: 0 faces +Y; positive rotation is clockwise toward +X. Use it together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": false,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "additional_modality": {
+    "kind": "text",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\trajectory_lookback.txt",
+    "sha256": "e552210e88a5305d07a86c6f0d2a01a2e71995d724595082ffe4a6ef04d73742"
+  },
+  "input_signature": "9ca521bb973ea02c0195cc343c71839603a29ece29a66ba4aae7007aa49ff707",
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2654,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 526
+      }
+    ],
+    "thoughts_token_count": 1355,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4010,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-16T17:35:01-04:00"
+}

@@ -1,0 +1,64 @@
+{
+  "question_id": "FOB4-0099-Q6",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk near the sink, then stop and turn left, where is the blue curtain relative to me?",
+  "answer_choices": {
+    "D": "right",
+    "A": "front",
+    "B": "behind",
+    "C": "left"
+  },
+  "gold_answer": "D",
+  "show_lookback": false,
+  "prediction": "B",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0099/start_view.png",
+      "sha256": "7a4e4ac6a3481c1ce996e06eef9009928079db61763142064e7d09623fdef9da"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0099/step_01_rgb.png",
+      "sha256": "61314d701aef6a08dc01b943cae86c9bc0dc04bc8e69e360d616e07cb0acf820"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2261,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 133
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 590,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2852,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 4.752954199997475,
+  "completed_at": "2026-10-06T15:09:38-04:00"
+}

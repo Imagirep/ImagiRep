@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB4-0198-Q1",
+  "motion_text": "I walk forward, then turn left, walk a few steps and turn around.",
+  "view_variant": "endpoint",
+  "frames": 88,
+  "fps": 12,
+  "total_distance_m": 2.0393691870389703,
+  "depth_display_range_scene_units": [
+    1.4591025114059448,
+    6.213860263824463
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.6780891724491833,
+    "far_m": 7.146455815354971
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.4870400322159156 m over generated floor distance",
+  "m_per_unit": 1.8731449842453003,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 34.665878772735596
+}

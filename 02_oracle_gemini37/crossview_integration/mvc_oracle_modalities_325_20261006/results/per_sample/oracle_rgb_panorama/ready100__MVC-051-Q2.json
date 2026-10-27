@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-051-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-051-Q2",
+  "resource_id": "MVC-051",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is farthest from painting in Image 1?",
+  "answer_choices": {
+    "A": "decorative small paintings",
+    "B": "long black sofa",
+    "C": "black armchair",
+    "D": "wooden cabinet"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "150c8c276f8df57b2ef2c9283f50a307036124151833b11c14bb0fcf8556a0e8",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-051\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4600,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 327
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      }
+    ],
+    "thoughts_token_count": 1524,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6125,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.046812499989755,
+  "completed_at": "2026-10-06T17:43:53-04:00"
+}

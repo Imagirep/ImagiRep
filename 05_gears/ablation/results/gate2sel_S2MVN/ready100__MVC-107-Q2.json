@@ -1,0 +1,1 @@
+{"uid": "ready100__MVC-107-Q2", "category": "cross_view_farthest", "reason": "Depth would help compare the objects\u2019 distances from the ovens across views.", "choice": "depth", "usage": {"input_tokens": 3420, "input_tokens_details": {"cache_write_tokens": 3417, "cached_tokens": 0}, "output_tokens": 92, "output_tokens_details": {"reasoning_tokens": 60}, "total_tokens": 3512}}

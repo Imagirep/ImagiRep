@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-086-Q3", "method": "avic", "variant": "label", "prediction": "curtain, bed, white armchair, potted plant", "gold": "curtain, potted plant, bed, white armchair", "correct": false, "n_imagined": 2, "category": "ordering", "stored_result": "wrong"}

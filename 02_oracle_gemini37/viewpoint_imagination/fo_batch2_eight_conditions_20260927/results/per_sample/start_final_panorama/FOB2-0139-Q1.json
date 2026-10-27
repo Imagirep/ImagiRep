@@ -1,0 +1,138 @@
+{
+  "row_index": 167,
+  "question_id": "FOB2-0139-Q1",
+  "trajectory_id": "FOB2-0139",
+  "scan_id": "B6ByNegPMKs",
+  "question_type": 1,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk near the chair and slightly turn right, which direction would have the most open space?",
+  "answer_choices": {
+    "A": "behind",
+    "B": "front",
+    "C": "right",
+    "D": "left"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "A": "D",
+    "B": "A",
+    "C": "C",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0139\\start_view.png",
+      "sha256": "53ae9177772e4ccb16c93f9e6430d6868a9748ca58b9dea49efa0cf5f3d4c324"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0139\\step_01_rgb.png",
+      "sha256": "2acef1f9296752610d3309d32db2ec8caeec017d62c1099665b2e1afc10ba79d"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "category": "open_space_direction",
+  "category_label": "Open-space direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0139\\step_01_depth.png",
+      "sha256": "e52fcfb32d837552ba2cfe79e0455721e8a29d2f9caddb346b1751de5f52f11d",
+      "color_scale": {
+        "near_m": 1.028,
+        "far_m": 2.24875
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0139\\step_01_surface_normals.png",
+      "sha256": "a8fd61c516101804713cd68110169a091703742b4d881701c83df05a355cb7be"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0139\\step_01_panorama.png",
+      "sha256": "fd9f7e6fad1382f3204648e2d878db16e9971501bb1a1326a17587f3ab7c9db7"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0139\\topdown_with_path.png",
+      "sha256": "fe25c6ca77fb69afc8d5d9c4f937f2822fe81290ac3fde76241ee78c5fc72374"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0139\\trajectory.txt",
+      "sha256": "54a6a888b17e082a06a3e8243816c32d28745ec13b488d9daa6a13c631a935a0"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0139\\trajectory.mp4",
+      "sha256": "79def2b9895658de9469ffa54a84c57c41b6abc1ae7b08430913c554f2a06953"
+    }
+  },
+  "condition": "start_final_panorama",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT PANORAMA (360-degree RGB at the FINAL VIEW position):\nThe panorama is centered on the final camera's facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. This is one position, not a sequence of movement frames. Combine it with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "C",
+  "correct": false,
+  "input_signature": "f99db37bde33622172818e4a94db407e49fb61b39012323a78414168fa011ce9",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "panorama"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3449,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3209
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 240
+      }
+    ],
+    "thoughts_token_count": 2252,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5702,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_started_at": "2026-09-28T03:55:40.734-04:00",
+  "request_duration_seconds": 16.067506299936213,
+  "completed_at": "2026-09-28T03:55:56.801-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

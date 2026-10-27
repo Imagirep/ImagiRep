@@ -1,0 +1,202 @@
+{
+  "question_id": "FOB3-0181-Q2",
+  "motion_text": "I walk near the glass console table on the right, facing the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the glass console table on the right",
+      "relation": "near"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0181-Q2",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.4136379918627841,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.8476184834981293,
+        "y": 1.25,
+        "yaw": 0.4136379918627841,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.8476184834981293,
+        1.25
+      ]
+    ],
+    "x": -2.8476184834981293,
+    "y": 1.25,
+    "yaw": 0.4136379918627841,
+    "pitch": 0.0,
+    "travel_yaw": 0.4136379918627841
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.8476184834981293,
+      1.25
+    ]
+  ],
+  "final": {
+    "x": -2.8476184834981293,
+    "y": 1.25,
+    "yaw_deg": 23.69971118000422,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the glass console table on the right",
+        "relation": "near"
+      },
+      "x": -2.8476184834981293,
+      "y": 1.25,
+      "yaw": 0.4136379918627841,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -2.8476184834981293,
+      "y": 1.25,
+      "yaw": 0.4136379918627841,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.4136379918627841,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.8476184834981293,
+      "y": 1.25,
+      "yaw": 0.4136379918627841,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the glass console table on the right",
+      "method": "initial_photo",
+      "box": [
+        667,
+        888,
+        996,
+        1000
+      ],
+      "point_m": [
+        -3.5490479366741843,
+        2.3120669970659655,
+        -1.3764883376746824
+      ]
+    },
+    {
+      "overlap": "the glass console table on the right",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 2,
+          "path_m": 4.0,
+          "stop_m": 1.2727881143535154,
+          "visible_frac": 0.8933333333333333,
+          "center_deg": -0.9640019896197431,
+          "width_deg": 14.116564288063824,
+          "distance_m": 1.419164033940767
+        },
+        {
+          "sector": 3,
+          "path_m": 4.0,
+          "stop_m": 1.2472908908845655,
+          "visible_frac": 0.9022222222222223,
+          "center_deg": -0.7607445719735316,
+          "width_deg": 14.91491155636448,
+          "distance_m": 1.3947983586148254
+        }
+      ],
+      "chosen_sector": 2
+    }
+  ],
+  "m_per_unit": 2.625375249972906,
+  "seconds": 7.662877082824707
+}

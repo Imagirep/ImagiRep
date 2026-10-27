@@ -1,0 +1,210 @@
+{
+  "question_id": "FOB2-0031-Q2",
+  "motion_text": "I walk forward till I'm near the brown chair and keep facing forward.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the brown chair",
+      "relation": "near"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0031-Q2",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.0536909558994942,
+        "y": -0.027551018242212066,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.0536909558994942,
+        -0.027551018242212066
+      ]
+    ],
+    "x": -2.0536909558994942,
+    "y": -0.027551018242212066,
+    "yaw": -0.01341456246708928,
+    "pitch": 0.0,
+    "travel_yaw": -0.01341456246708928
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.0536909558994942,
+      -0.027551018242212066
+    ]
+  ],
+  "final": {
+    "x": -2.0536909558994942,
+    "y": -0.027551018242212066,
+    "yaw_deg": -0.768597813378817,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the brown chair",
+        "relation": "near"
+      },
+      "x": -2.0536909558994942,
+      "y": -0.027551018242212066,
+      "yaw": -0.01341456246708928,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.0536909558994942,
+      "y": -0.027551018242212066,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.0536909558994942,
+      "y": -0.027551018242212066,
+      "yaw": -0.01341456246708928,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the brown chair",
+      "method": "initial_photo",
+      "box": [
+        647,
+        395,
+        996,
+        579
+      ],
+      "point_m": [
+        -3.313432360115195,
+        -0.06633320197987796,
+        -1.3911495836474406
+      ]
+    },
+    {
+      "overlap": "the brown chair",
+      "n_points": 158,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 2.1,
+          "stop_m": 1.2603382336780902,
+          "visible_frac": 0.9873417721518988,
+          "center_deg": -1.497029342091773,
+          "width_deg": 28.88204067941995,
+          "distance_m": 1.3000276494018066
+        },
+        {
+          "sector": 3,
+          "path_m": 2.2,
+          "stop_m": 1.2612279835633504,
+          "visible_frac": 0.9746835443037974,
+          "center_deg": -0.8431982162613283,
+          "width_deg": 27.611625912800186,
+          "distance_m": 1.2828569411068627
+        },
+        {
+          "sector": 5,
+          "path_m": 3.4000000000000004,
+          "stop_m": 0.7082714170876533,
+          "visible_frac": 0.4240506329113924,
+          "center_deg": 3.134689545990418,
+          "width_deg": 54.09350926923524,
+          "distance_m": 0.9980990405230205
+        },
+        {
+          "sector": 6,
+          "path_m": 4.3,
+          "stop_m": 0.9396450090527725,
+          "visible_frac": 0.5886075949367089,
+          "center_deg": -10.7426105028044,
+          "width_deg": 37.67023163904012,
+          "distance_m": 1.04761509696791
+        },
+        {
+          "sector": 7,
+          "path_m": 5.0,
+          "stop_m": 1.1872615800846622,
+          "visible_frac": 0.37341772151898733,
+          "center_deg": -0.6380590965658536,
+          "width_deg": 44.34489384298861,
+          "distance_m": 1.15587043881634
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 2.4372747336234695,
+  "seconds": 8.377389430999756
+}

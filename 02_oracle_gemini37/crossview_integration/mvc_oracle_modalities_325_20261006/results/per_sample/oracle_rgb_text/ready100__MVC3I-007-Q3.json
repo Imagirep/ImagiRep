@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC3I-007-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC3I-007-Q3",
+  "resource_id": "MVC3I-007",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "black statue, fireplace, white pot, yellow painting",
+    "B": "black statue, fireplace, yellow painting, white pot",
+    "C": "black statue, yellow painting, fireplace, white pot",
+    "D": "white pot, fireplace, black statue, yellow painting"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "934a4edeb949111c3b32be3b8a7a100a95901766d266ee85df95f4f04cd0dc56",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC3I-007\\order_312\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4699,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 443
+      }
+    ],
+    "thoughts_token_count": 1527,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6227,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 14.994693400003598,
+  "completed_at": "2026-10-06T17:31:56-04:00"
+}

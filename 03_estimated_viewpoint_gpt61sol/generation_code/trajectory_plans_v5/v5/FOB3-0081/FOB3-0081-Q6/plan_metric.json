@@ -1,0 +1,187 @@
+{
+  "question_id": "FOB3-0081-Q6",
+  "motion_text": "I walk past the dining table and turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the dining table on the right",
+      "relation": "past"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0081-Q6",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.0500429863274089,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.1288625983987384,
+        "y": -0.1066236626645294,
+        "yaw": -0.0500429863274089,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.900762370449475,
+        -0.14528411025183274
+      ]
+    ],
+    "x": -2.900762370449475,
+    "y": -0.14528411025183274,
+    "yaw": -0.0500429863274089,
+    "pitch": 0.0,
+    "travel_yaw": -0.0500429863274089
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.1288625983987384,
+      -0.1066236626645294
+    ]
+  ],
+  "final": {
+    "x": -2.1288625983987384,
+    "y": -0.1066236626645294,
+    "yaw_deg": 177.1327480892086,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the dining table on the right",
+        "relation": "past"
+      },
+      "x": -2.900762370449475,
+      "y": -0.14528411025183274,
+      "yaw": -0.0500429863274089,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -2.900762370449475,
+      "y": -0.14528411025183274,
+      "yaw": 3.0915496672623846,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.0500429863274089,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.1288625983987384,
+      "y": -0.1066236626645294,
+      "yaw": -0.0500429863274089,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.1288625983987384,
+      "y": -0.1066236626645294,
+      "yaw": 3.0915496672623846,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the dining table on the right",
+      "method": "initial_photo",
+      "box": [
+        638,
+        614,
+        999,
+        723
+      ],
+      "point_m": [
+        -2.568883527993944,
+        0.6588077938204525,
+        -0.9251012246314195
+      ]
+    }
+  ],
+  "m_per_unit": 1.9514963626861572,
+  "seconds": 8.095671892166138,
+  "planning_m_per_unit": 2.6590852877057056,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.7338976194967911
+}

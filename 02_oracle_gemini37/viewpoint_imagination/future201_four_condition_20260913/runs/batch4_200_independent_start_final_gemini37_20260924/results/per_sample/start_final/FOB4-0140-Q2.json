@@ -1,0 +1,98 @@
+{
+  "row_index": 188,
+  "question_id": "FOB4-0140-Q2",
+  "trajectory_id": "FOB4-0140",
+  "scan_id": "Vt2qJdWjCF2",
+  "route_variant": "new_straight",
+  "question_type": 2,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk past the white pillar and slightly turn left, which direction would have the closest obstacle?",
+  "answer_choices": {
+    "D": "left",
+    "A": "front",
+    "B": "behind",
+    "C": "right"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "D": "B",
+    "A": "A",
+    "B": "D",
+    "C": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0140\\start_view.png",
+      "sha256": "0430532fbf0c5b33ec729ea3aa825810adc5ec746d1735c8fedecc377df78314"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0140\\step_01_rgb.png",
+      "sha256": "b614bc9054d20c7632b471b043c9a948a182185f7d5b76c9a08812c8c84fa833"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0140\\step_02_rgb.png",
+      "sha256": "df3442d3f0184e48bf55ca51f1b7f508c782ece89bd6c611f298386d482deed2"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": false,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2259,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 131
+      }
+    ],
+    "thoughts_token_count": 3046,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5306,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-24T17:33:13-04:00"
+}

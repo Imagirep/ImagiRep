@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC3I-004-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC3I-004-Q1",
+  "resource_id": "MVC3I-004",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Images 1 and 3 is closest to podium  in Image 2?",
+  "answer_choices": {
+    "A": "framed black and white painting",
+    "B": "piles of books",
+    "C": "white pillar",
+    "D": "black desk"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "c708acca824df815834d67d37fe5f44694648ca91b3575a44f0abc0ac842a1fc",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC3I-004\\order_213\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4668,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 412
+      }
+    ],
+    "thoughts_token_count": 1108,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5777,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 31.024103300005663,
+  "completed_at": "2026-10-06T17:32:09-04:00"
+}

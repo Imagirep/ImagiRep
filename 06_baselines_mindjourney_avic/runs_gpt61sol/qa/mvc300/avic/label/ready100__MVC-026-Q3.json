@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-026-Q3", "method": "avic", "variant": "label", "prediction": "sink, silver pot, ovens, microwave", "gold": "sink, silver pot, ovens, microwave", "correct": true, "n_imagined": 2, "category": "ordering", "stored_result": "correct"}

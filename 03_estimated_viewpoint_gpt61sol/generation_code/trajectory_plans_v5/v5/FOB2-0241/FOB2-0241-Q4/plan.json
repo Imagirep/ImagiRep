@@ -1,0 +1,291 @@
+{
+  "question_id": "FOB2-0241-Q4",
+  "motion_text": "I walk into the room, then walk to the bed and face the way I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the room",
+      "relation": "into"
+    },
+    {
+      "op": "go",
+      "target": "the bed on the right",
+      "relation": "to"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0241-Q4",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.13426463625919582,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.4011783954686017,
+        "y": 0.4594219690642154,
+        "yaw": 0.13426463625919582,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.392178431579001,
+        "y": 0.5932835708370389,
+        "yaw": 0.13426463625919582,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -4.392178431579001,
+        "y": 0.5932835708370389,
+        "yaw": 1.3934551570473344,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.601178395468602,
+        "y": 1.7594219690642143,
+        "yaw": 1.3934551570473344,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -3.4011783954686017,
+        0.4594219690642154
+      ],
+      [
+        -4.392178431579001,
+        0.5932835708370389
+      ],
+      [
+        -4.601178395468602,
+        1.7594219690642143
+      ]
+    ],
+    "x": -4.601178395468602,
+    "y": 1.7594219690642143,
+    "yaw": 1.3934551570473344,
+    "pitch": 0.0,
+    "travel_yaw": 1.3934551570473344
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -3.4011783954686017,
+      0.4594219690642154
+    ],
+    [
+      -4.392178431579001,
+      0.5932835708370389
+    ],
+    [
+      -4.601178395468602,
+      1.7594219690642143
+    ]
+  ],
+  "final": {
+    "x": -4.601178395468602,
+    "y": 1.7594219690642143,
+    "yaw_deg": 79.83909943955157,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the room",
+        "relation": "into"
+      },
+      "x": -4.392178431579001,
+      "y": 0.5932835708370389,
+      "yaw": 0.13426463625919582,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "target": "the bed on the right",
+        "relation": "to"
+      },
+      "x": -4.601178395468602,
+      "y": 1.7594219690642143,
+      "yaw": 1.3934551570473344,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -4.601178395468602,
+      "y": 1.7594219690642143,
+      "yaw": 1.3934551570473344,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.13426463625919582,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.4011783954686017,
+      "y": 0.4594219690642154,
+      "yaw": 0.13426463625919582,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.392178431579001,
+      "y": 0.5932835708370389,
+      "yaw": 0.13426463625919582,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.392178431579001,
+      "y": 0.5932835708370389,
+      "yaw": 1.3934551570473344,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.601178395468602,
+      "y": 1.7594219690642143,
+      "yaw": 1.3934551570473344,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the room",
+      "method": "initial_photo",
+      "box": [
+        0,
+        273,
+        1000,
+        960
+      ],
+      "point_m": [
+        -3.6310262640832214,
+        0.46513293977746,
+        -0.7216415879392608
+      ]
+    },
+    {
+      "move_yaw_deg": 7.692796995511082,
+      "requested_m": 1.0,
+      "end": [
+        -4.392178431579001,
+        0.5932835708370389
+      ],
+      "blocked": false
+    },
+    {
+      "ground": "the bed on the right",
+      "method": "initial_photo",
+      "box": [
+        577,
+        765,
+        755,
+        882
+      ],
+      "point_m": [
+        -5.956327438935328,
+        2.8987208583470525,
+        -1.009479212943834
+      ]
+    },
+    {
+      "overlap": "the bed on the right",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 1.4000000000000001,
+          "stop_m": 1.770432401739725,
+          "visible_frac": 0.8577777777777778,
+          "center_deg": -7.429201537527916,
+          "width_deg": 19.74688290786537,
+          "distance_m": 1.8801042273790953
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 2.36490388391079,
+  "seconds": 11.483962297439575
+}

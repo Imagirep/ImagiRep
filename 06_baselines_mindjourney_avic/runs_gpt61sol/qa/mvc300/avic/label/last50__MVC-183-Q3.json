@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-183-Q3", "method": "avic", "variant": "label", "prediction": "shower stall, hanged towel, mirror, toilet", "gold": "shower stall, hanged towel, mirror, toilet", "correct": true, "n_imagined": 2, "category": "ordering", "stored_result": "correct"}

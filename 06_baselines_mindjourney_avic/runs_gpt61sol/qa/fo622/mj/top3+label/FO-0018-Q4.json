@@ -1,0 +1,1 @@
+{"qid": "FO-0018-Q4", "method": "mj", "variant": "top3+label", "prediction": "ottomans", "gold": "potted plant", "correct": false, "n_imagined": 3, "category": "nearest_object", "stored_result": "correct"}

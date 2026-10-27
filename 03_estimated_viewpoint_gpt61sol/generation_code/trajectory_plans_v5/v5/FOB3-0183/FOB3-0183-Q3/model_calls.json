@@ -1,0 +1,37 @@
+[
+  {
+    "purpose": "parse",
+    "model": "gemini-3.7-flash",
+    "inputs": [
+      {
+        "image_sha256": "b38bd92a03b58b4833396fdad2feed4d127f4eee6940da6fe05e375db13e1a86",
+        "kind": "initial"
+      },
+      {
+        "text": "You will control a camera that starts at the viewpoint of this photo, at standing eye height. Convert the movement instruction into primitive steps, in order. Use ONLY what the instruction says.\nInstruction: \"I walk into the room and walk to the right side of the bed, then turn left, then turn to face my starting point.\"\nPrimitives (JSON objects):\n- {\"op\":\"forward\",\"amount\":\"default|few_steps\"}  walk straight ahead without a named target\n- {\"op\":\"back\",\"direction\":\"left|right|null\"}  step backwards (optionally back-left/right)\n- {\"op\":\"turn\",\"direction\":\"left|right\",\"amount\":\"slight|normal|around\"}  turn in place; \"turn around\" is amount around\n- {\"op\":\"go\",\"target\":\"...\",\"relation\":\"to|near|next_to|beside|into|through|past\",\"side\":\"left|right|null\"}  walk to/near/past/through a target\n- {\"op\":\"face\",\"target\":\"...\"}  turn in place to face an object (also \"look at\"/\"look through\")\n- {\"op\":\"face_start\"}  turn in place to face the starting point\n- {\"op\":\"face_motion\"}  keep facing the walking direction\nTarget descriptions must uniquely identify the object as seen in the photo when possible: include color, material, relative position in the photo (left/right/center, near/far) exactly as implied by the instruction. If the target is not visible in the photo, still describe it from the instruction. Return {\"steps\":[...]}"
+      }
+    ],
+    "response": {
+      "steps": [
+        {
+          "op": "go",
+          "target": "room through sliding glass doors",
+          "relation": "into"
+        },
+        {
+          "op": "go",
+          "target": "bed",
+          "relation": "to",
+          "side": "right"
+        },
+        {
+          "op": "turn",
+          "direction": "left"
+        },
+        {
+          "op": "face_start"
+        }
+      ]
+    }
+  }
+]

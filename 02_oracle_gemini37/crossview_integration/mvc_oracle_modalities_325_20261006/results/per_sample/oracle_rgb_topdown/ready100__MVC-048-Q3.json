@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-048-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-048-Q3",
+  "resource_id": "MVC-048",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "wooden cabinet, lamp, tv, alarm clock",
+    "B": "alarm clock, lamp, wooden cabinet, tv",
+    "C": "tv, lamp, wooden cabinet, alarm clock",
+    "D": "tv, wooden cabinet, alarm clock, lamp"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "67431f46a20a543fff5c9a11ea21caf4aff0fcd0c82209b6f69f961cb2e3e531",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-048\\order_12\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4632,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 351
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      }
+    ],
+    "thoughts_token_count": 847,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5480,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 7.840849500003969,
+  "completed_at": "2026-10-06T16:52:43-04:00"
+}

@@ -1,0 +1,168 @@
+% Tables for "A Controlled Study of Imagined Representations" (2026-10-06).
+% Preamble: \usepackage{booktabs,multirow,makecell,graphicx}   (optional: \usepackage[section]{placeins})
+% Single-view: 622-question freeze; Multi-view (MVC): 325 questions / 150 view sets.
+% Evaluator: Gemini 3.7 Flash, temperature 0, high thinking budget, constrained A--D answer, shuffled options.
+% "Pending" marks conditions that have not been evaluated yet.
+
+% Requires \usepackage[table]{xcolor} (or \usepackage{xcolor}) in the preamble.
+\newcommand{\imagUp}[1]{\textcolor{green!55!black}{$\uparrow$\,#1}}
+\newcommand{\imagDown}[1]{\textcolor{red!80!black}{$\downarrow$\,#1}}
+
+%% ===================================================================
+%% \subsection{Does Imagining the Correct Future State Help?}
+%% ===================================================================
+
+\begin{table}[!tb]
+\centering
+\caption{Effect of providing the correct future state. Accuracy (\%) on the single-view
+and multi-view tasks; $\Delta$ is the change relative to the no-imagination setting
+that uses the observed view(s).}
+\label{tab:oracle_imagination}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+& \multicolumn{2}{c}{Single-view ($n{=}622$)} & \multicolumn{2}{c}{Multi-view ($n{=}325$)} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Setting & Acc. & $\Delta$ & Acc. & $\Delta$ \\
+\midrule
+\multicolumn{5}{l}{\emph{No imagination}} \\
+\quad Random selection          & 25.0    & \imagDown{28.7} & 25.0 & \imagDown{43.3} \\
+\quad Question only             & 31.7    & \imagDown{22.0} & 32.0 & \imagDown{36.3} \\
+\quad Observed view(s)          & 53.7    & --      & 68.3 & --      \\
+\midrule
+\multicolumn{5}{l}{\emph{Oracle imagination}} \\
+\quad + Oracle endpoint RGB     & 63.7    & \imagUp{10.0} & 80.6 & \imagUp{12.3} \\
+\quad + Oracle trajectory RGB   & 62.2    & \imagUp{8.5} & Pending & Pending \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+
+%% ===================================================================
+%% \subsection{Which Representation Best Supports Reasoning?}
+%% ===================================================================
+
+% ---- Task breakdown
+\begin{table*}[!tb]
+\centering
+\caption{Task breakdown: accuracy (\%) by question type for the observed view(s), the observed view(s) with the
+oracle endpoint RGB, and each additional representation added to the endpoint RGB (single-view $n{=}622$;
+multi-view $n{=}325$). Best representation per single-view row in bold.}
+\label{tab:task_breakdown}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+& & & & & \multicolumn{6}{c}{Endpoint RGB + additional representation} \\
+\cmidrule(lr){6-11}
+Task & Question type & $n$ & Observed view & + Endpoint RGB & Top-down & Text & Video & Depth & Normals & Panorama \\
+\midrule
+\multirow{7}{*}{Single-view}
+ & Open-space direction       &  91 & 52.7 & 58.2 & 44.0 & 51.6 & 47.3 & \textbf{61.5} & 56.0 & 40.7 \\
+ & Closest-obstacle direction &  55 & 36.4 & 45.5 & 50.9 & 45.5 & 49.1 & 47.3 & \textbf{52.7} & 41.8 \\
+ & Visibility                 & 104 & 32.7 & 49.0 & \textbf{52.9} & 51.9 & 47.1 & 50.0 & 42.3 & 44.2 \\
+ & Closest object             & 104 & 51.9 & 65.4 & 66.3 & 64.4 & 61.5 & \textbf{67.3} & 65.4 & 58.7 \\
+ & Farthest object            &  98 & 66.3 & 65.3 & 61.2 & 56.1 & 59.2 & \textbf{67.3} & 62.2 & 58.2 \\
+ & Object relative direction  & 170 & 66.5 & 79.4 & 77.6 & 73.5 & \textbf{81.8} & 80.0 & 77.6 & 74.1 \\
+ \cmidrule(l){2-11}
+ & All                        & 622 & 53.7 & 63.7 & 61.7 & 60.0 & 61.1 & \textbf{65.3} & 61.9 & 56.3 \\
+\midrule
+\multirow{4}{*}{Multi-view}
+ & Cross-view closest   &  90 & 64.4 & 77.8 & Pending & Pending & Pending & Pending & Pending & Pending \\
+ & Cross-view farthest  &  87 & 63.2 & 65.5 & Pending & Pending & Pending & Pending & Pending & Pending \\
+ & Left--right ordering & 148 & 73.6 & 91.2 & Pending & Pending & Pending & Pending & Pending & Pending \\
+ \cmidrule(l){2-11}
+ & All                  & 325 & 68.3 & 80.6 & Pending & Pending & Pending & Pending & Pending & Pending \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}
+
+% ---- Positive-only (rescue) task breakdown
+\begin{table*}[!tb]
+\centering
+\caption{Positive-only task breakdown: accuracy (\%) when an additional representation is consulted only for
+questions answered incorrectly with the observed view(s) and the oracle endpoint RGB; a question counts as correct
+if it is answered correctly with the endpoint RGB alone or with the endpoint RGB plus the representation
+(single-view $n{=}622$; multi-view $n{=}325$). Best representation per single-view row in bold.}
+\label{tab:task_breakdown_positive}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+& & & & & \multicolumn{6}{c}{Endpoint RGB + additional representation (positive only)} \\
+\cmidrule(lr){6-11}
+Task & Question type & $n$ & Observed view & + Endpoint RGB & Top-down & Text & Video & Depth & Normals & Panorama \\
+\midrule
+\multirow{7}{*}{Single-view}
+ & Open-space direction       &  91 & 52.7 & 58.2 & 67.0 & 63.7 & 63.7 & 69.2 & 63.7 & \textbf{74.7} \\
+ & Closest-obstacle direction &  55 & 36.4 & 45.5 & \textbf{61.8} & 54.5 & 56.4 & 52.7 & 52.7 & 56.4 \\
+ & Visibility                 & 104 & 32.7 & 49.0 & \textbf{57.7} & \textbf{57.7} & 55.8 & 56.7 & 51.9 & 55.8 \\
+ & Closest object             & 104 & 51.9 & 65.4 & \textbf{75.0} & 70.2 & 68.3 & 71.2 & 69.2 & 70.2 \\
+ & Farthest object            &  98 & 66.3 & 65.3 & \textbf{75.5} & 68.4 & 69.4 & 73.5 & 69.4 & 71.4 \\
+ & Object relative direction  & 170 & 66.5 & 79.4 & 86.5 & 84.1 & \textbf{87.6} & 84.1 & 82.9 & 87.1 \\
+ \cmidrule(l){2-11}
+ & All                        & 622 & 53.7 & 63.7 & \textbf{73.0} & 69.3 & 69.9 & 70.7 & 67.8 & 72.0 \\
+\midrule
+\multirow{4}{*}{Multi-view}
+ & Cross-view closest   &  90 & 64.4 & 77.8 & Pending & Pending & Pending & Pending & Pending & Pending \\
+ & Cross-view farthest  &  87 & 63.2 & 65.5 & Pending & Pending & Pending & Pending & Pending & Pending \\
+ & Left--right ordering & 148 & 73.6 & 91.2 & Pending & Pending & Pending & Pending & Pending & Pending \\
+ \cmidrule(l){2-11}
+ & All                  & 325 & 68.3 & 80.6 & Pending & Pending & Pending & Pending & Pending & Pending \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}
+
+
+% ---- Modality breakdown
+\begin{table}[!tb]
+\centering
+\caption{Modality breakdown: overall accuracy (\%) when each representation is added to the
+oracle endpoint RGB, change relative to the endpoint RGB alone, and the number of
+single-view question types (of six) for which it is the best representation.}
+\label{tab:modality_breakdown}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrcc}
+\toprule
+& \multicolumn{3}{c}{Single-view ($n{=}622$)} & Multi-view ($n{=}325$) \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-5}
+Representation & Acc. & $\Delta$ & Best for & Acc. \\
+\midrule
+Endpoint RGB only     & 63.7 & --      & --  & 80.6 \\
+\midrule
++ Top-down            & 61.7 & \imagDown{1.9}  & 1/6 & Pending \\
++ Text                & 60.0 & \imagDown{3.7}  & 0/6 & Pending \\
++ Video               & 61.1 & \imagDown{2.6}  & 1/6 & Pending \\
++ Depth               & \textbf{65.3} & \imagUp{1.6} & 3/6 & Pending \\
++ Surface normals     & 61.9 & \imagDown{1.8}  & 1/6 & Pending \\
++ Panorama            & 56.3 & \imagDown{7.4}  & 0/6 & Pending \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+% ---- Per-type representation selection
+\begin{table}[!tb]
+\centering
+\caption{Selecting one additional representation per question type (single-view, $n{=}622$).
+Rescued: questions answered incorrectly with the endpoint RGB alone and correctly with the
+selected representation.}
+\label{tab:per_type_selection}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrrrr}
+\toprule
+Question type & Representation & Endpoint correct & Rescued & Total & Gain (pp) \\
+\midrule
+Open-space direction       & Panorama &  53 & 15 &  68/91  & 16.5 \\
+Closest-obstacle direction & Top-down &  25 &  9 &  34/55  & 16.4 \\
+Visibility                 & Text     &  51 &  9 &  60/104 &  8.7 \\
+Closest object             & Top-down &  68 & 10 &  78/104 &  9.6 \\
+Farthest object            & Top-down &  64 & 10 &  74/98  & 10.2 \\
+Object relative direction  & Video    & 135 & 14 & 149/170 &  8.2 \\
+\midrule
+All                        &          & 396 & 67 & 463/622 & 10.8 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

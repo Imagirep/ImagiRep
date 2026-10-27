@@ -1,0 +1,46 @@
+{
+ "FO622|ALL": {
+  "n": 622,
+  "acc": 31.0
+ },
+ "FO622|open_space_direction": {
+  "n": 91,
+  "acc": 45.1
+ },
+ "FO622|object_relative_direction": {
+  "n": 170,
+  "acc": 29.4
+ },
+ "FO622|nearest_obstacle_direction": {
+  "n": 55,
+  "acc": 34.5
+ },
+ "FO622|nearest_object": {
+  "n": 104,
+  "acc": 26.9
+ },
+ "FO622|visibility": {
+  "n": 104,
+  "acc": 24.0
+ },
+ "FO622|farthest_object": {
+  "n": 98,
+  "acc": 30.6
+ },
+ "MVC300|ALL": {
+  "n": 300,
+  "acc": 31.0
+ },
+ "MVC300|cross_view_farthest": {
+  "n": 82,
+  "acc": 36.6
+ },
+ "MVC300|cross_view_closest": {
+  "n": 81,
+  "acc": 33.3
+ },
+ "MVC300|ordering": {
+  "n": 137,
+  "acc": 26.3
+ }
+}

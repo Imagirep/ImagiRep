@@ -1,0 +1,51 @@
+[
+  {
+    "repo": "tencent/HY-World-2.0",
+    "path": "<external>/hyworld2_nlp25_setup_20260930/cache/huggingface/hub/models--tencent--HY-World-2.0/snapshots/d78a16c91c7a56488894a1c8de4f5c7cc28aa8b0",
+    "revision": "d78a16c91c7a56488894a1c8de4f5c7cc28aa8b0",
+    "bytes": 174486194945
+  },
+  {
+    "repo": "hanshanxue/WorldStereo",
+    "path": "<external>/hyworld2_nlp25_setup_20260930/cache/huggingface/hub/models--hanshanxue--WorldStereo/snapshots/ac2ad97ecb043fe80c2f19cd1898006becb9d66e",
+    "revision": "ac2ad97ecb043fe80c2f19cd1898006becb9d66e",
+    "bytes": 34863755608
+  },
+  {
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P-Diffusers",
+    "path": "<external>/hyworld2_nlp25_setup_20260930/cache/huggingface/hub/models--Wan-AI--Wan2.1-I2V-14B-480P-Diffusers/snapshots/b184e23a8a16b20f108f727c902e769e873ffc73",
+    "revision": "b184e23a8a16b20f108f727c902e769e873ffc73",
+    "bytes": 90104322037
+  },
+  {
+    "repo": "Qwen/Qwen3-VL-8B-Instruct",
+    "path": "<external>/hyworld2_nlp25_setup_20260930/cache/huggingface/hub/models--Qwen--Qwen3-VL-8B-Instruct/snapshots/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "bytes": 17545915883
+  },
+  {
+    "repo": "Ruicheng/moge-2-vitl-normal",
+    "path": "<external>/hyworld2_nlp25_setup_20260930/cache/huggingface/hub/models--Ruicheng--moge-2-vitl-normal/snapshots/cb0e8bbd6b1e243589717c78e750b1ba4c093acf",
+    "revision": "cb0e8bbd6b1e243589717c78e750b1ba4c093acf",
+    "bytes": 1323817510
+  },
+  {
+    "repo": "IDEA-Research/grounding-dino-tiny",
+    "path": "<external>/hyworld2_nlp25_setup_20260930/cache/huggingface/hub/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71",
+    "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+    "bytes": 690305545
+  },
+  {
+    "repo": "naver-iv/zim-anything-vitl",
+    "path": "<external>/hyworld2_nlp25_setup_20260930/cache/huggingface/hub/models--naver-iv--zim-anything-vitl/snapshots/667e2d7c233f6f1cacd12ccc64bdf6cc7b5aa16d",
+    "revision": "667e2d7c233f6f1cacd12ccc64bdf6cc7b5aa16d",
+    "bytes": 1255022286
+  },
+  {
+    "repo": "facebook/sam3",
+    "complete": true,
+    "revision": "3c879f39826c281e95690f02c7821c4de09afae7",
+    "bytes": 3444996474,
+    "path": "<external>/hyworld2_nlp25_setup_20260930/cache/huggingface/hub/models--facebook--sam3/snapshots/3c879f39826c281e95690f02c7821c4de09afae7"
+  }
+]

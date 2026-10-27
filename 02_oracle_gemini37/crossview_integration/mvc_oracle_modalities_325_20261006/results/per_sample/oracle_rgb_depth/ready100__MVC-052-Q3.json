@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-052-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-052-Q3",
+  "resource_id": "MVC-052",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "sink, ovens, refrigerator, white bowls",
+    "B": "sink, refrigerator, ovens, white bowls",
+    "C": "sink, white bowls, ovens, refrigerator",
+    "D": "refrigerator, ovens, white bowls, sink"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "ca21e8a9707aaa7825724e9e1bd2257658d251a8274b28f2a834263385e11385",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.698 m (near/red) to 4.999 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-052\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4634,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 378
+      }
+    ],
+    "thoughts_token_count": 2718,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7352,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 36.459835200003,
+  "completed_at": "2026-10-06T17:37:35-04:00"
+}

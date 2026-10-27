@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-065-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-065-Q3",
+  "resource_id": "MVC-065",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "potted plant, bed, wooden desk, black chair",
+    "B": "potted plant, bed, black chair, wooden desk",
+    "C": "black chair, potted plant, bed, wooden desk",
+    "D": "bed, wooden desk, black chair, potted plant"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "bb7eaf9964b7b87d43922e29de3fb4c0c279a67646c6c8019ebf1e9be67c3bfd",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.645 m (near/red) to 3.801 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-065\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4642,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 386
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 3112,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7754,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 14.65452369999548,
+  "completed_at": "2026-10-06T17:37:30-04:00"
+}

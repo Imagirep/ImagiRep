@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-062-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-062-Q3",
+  "resource_id": "MVC-062",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "sink, trash can, blue purse, orange purse",
+    "B": "blue purse, orange purse, sink, trash can",
+    "C": "orange purse, sink, blue purse, trash can",
+    "D": "orange purse, blue purse, sink, trash can"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "7574192dc39b489e4faf431d52d14ab16b4c8cf77f8d0e1cb8a798a79a6a945e",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.706 m (near/red) to 1.670 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-062\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4642,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 386
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 2739,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7382,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 53.664887000006274,
+  "completed_at": "2026-10-06T17:38:05-04:00"
+}

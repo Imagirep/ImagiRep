@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-138-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-138-Q3",
+  "resource_id": "MVC-138",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "bed, sink, window, yellow chair",
+    "B": "yellow chair, window, sink, bed",
+    "C": "yellow chair, sink, bed, window",
+    "D": "sink, yellow chair, bed, window"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "2483a690fbf2f479ed015a06241be88d0c5fe5aaf0eb95949a38042fd3873336",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.877 m (near/red) to 3.826 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-138\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4634,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 378
+      }
+    ],
+    "thoughts_token_count": 1211,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5846,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.611519100013538,
+  "completed_at": "2026-10-06T17:38:28-04:00"
+}

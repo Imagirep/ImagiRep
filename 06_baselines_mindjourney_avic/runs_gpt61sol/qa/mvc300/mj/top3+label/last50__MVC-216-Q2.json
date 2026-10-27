@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-216-Q2", "method": "mj", "variant": "top3+label", "prediction": "stoves", "gold": "ovens", "correct": false, "n_imagined": 2, "category": "cross_view_farthest", "stored_result": "wrong"}

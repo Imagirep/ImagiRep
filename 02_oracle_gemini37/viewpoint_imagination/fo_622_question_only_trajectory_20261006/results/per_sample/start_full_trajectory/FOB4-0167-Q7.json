@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB4-0167-Q7",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk forward, walk near the stove and turn around, where is the wooden plate relative to me?",
+  "answer_choices": {
+    "C": "left",
+    "A": "behind",
+    "B": "front",
+    "D": "right"
+  },
+  "gold_answer": "C",
+  "show_lookback": false,
+  "prediction": "C",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0167/start_view.png",
+      "sha256": "e3499488a609b3b7f93f2214f83dcd89dacb4d0ada0f146f5d567f5688807a9e"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0167/step_01_rgb.png",
+      "sha256": "a624e50ecc6bd0e79c7bf29350b87ae3638aa58ac5bf88e1a5b62c4d12e5f76d"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0167/step_02_back180_rgb.png",
+      "sha256": "015f4d153f1f62e6d76553c9b11de221b4be08e0b78c62b6aa5a023ae03066e8"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3330,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 138
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 2179,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5510,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_duration_seconds": 8.49949899999774,
+  "completed_at": "2026-10-06T15:18:10-04:00"
+}

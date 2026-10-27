@@ -1,0 +1,1 @@
+{"uid": "ready100__MVC3I-014-Q2", "category": "cross_view_farthest", "reason": "Depth would help compare distances from the poster across the different views.", "choice": "depth", "usage": {"input_tokens": 4869, "input_tokens_details": {"cache_write_tokens": 4866, "cached_tokens": 0}, "output_tokens": 133, "output_tokens_details": {"reasoning_tokens": 102}, "total_tokens": 5002}}

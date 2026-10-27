@@ -1,0 +1,324 @@
+{
+  "question_id": "FOB3-0183-Q1",
+  "motion_text": "I walk into the room and walk to the right side of the bed, then turn left.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the bedroom through the sliding glass door",
+      "relation": "into"
+    },
+    {
+      "op": "go",
+      "target": "the right side of the bed inside the room",
+      "relation": "to"
+    },
+    {
+      "op": "turn",
+      "direction": "left"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0183-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.24802896086615273,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.8920117953217832,
+        "y": 0.479139546733769,
+        "yaw": 0.24802896086615273,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -1.8920117953217832,
+        "y": 0.479139546733769,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.069918825929821,
+        "y": 0.479139546733769,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -4.069918825929821,
+        "y": 0.479139546733769,
+        "yaw": 0.4636476090008061,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.244151388378464,
+        "y": 0.5662558279580903,
+        "yaw": 0.4636476090008061,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.171823416623944,
+        0.5500000000000007
+      ],
+      [
+        -4.671823416623944,
+        0.5500000000000007
+      ],
+      [
+        -4.871823416623943,
+        0.6500000000000004
+      ]
+    ],
+    "x": -4.871823416623943,
+    "y": 0.6500000000000004,
+    "yaw": 0.13263695032554906,
+    "pitch": 0.0,
+    "travel_yaw": 0.13263695032554906
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.8920117953217832,
+      0.479139546733769
+    ],
+    [
+      -4.069918825929821,
+      0.479139546733769
+    ],
+    [
+      -4.244151388378464,
+      0.5662558279580903
+    ]
+  ],
+  "final": {
+    "x": -4.244151388378464,
+    "y": 0.5662558279580903,
+    "yaw_deg": -72.40046253885968,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the bedroom through the sliding glass door",
+        "relation": "into"
+      },
+      "x": -4.871823416623943,
+      "y": 0.6500000000000004,
+      "yaw": 0.13263695032554906,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "target": "the right side of the bed inside the room",
+        "relation": "to"
+      },
+      "x": -4.871823416623943,
+      "y": 0.6500000000000004,
+      "yaw": 0.13263695032554906,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left"
+      },
+      "x": -4.871823416623943,
+      "y": 0.6500000000000004,
+      "yaw": -1.2636264512699145,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.24802896086615273,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.8920117953217832,
+      "y": 0.479139546733769,
+      "yaw": 0.24802896086615273,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.8920117953217832,
+      "y": 0.479139546733769,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.069918825929821,
+      "y": 0.479139546733769,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.069918825929821,
+      "y": 0.479139546733769,
+      "yaw": 0.4636476090008061,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.244151388378464,
+      "y": 0.5662558279580903,
+      "yaw": 0.4636476090008061,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.244151388378464,
+      "y": 0.5662558279580903,
+      "yaw": 0.13263695032554906,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.244151388378464,
+      "y": 0.5662558279580903,
+      "yaw": -1.2636264512699145,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the bedroom through the sliding glass door",
+      "method": "initial_photo",
+      "box": [
+        284,
+        452,
+        879,
+        681
+      ],
+      "point_m": [
+        -5.361198523928233,
+        0.7298419665799001,
+        -0.8918767929027803
+      ]
+    },
+    {
+      "move_yaw_deg": 26.56505117707799,
+      "requested_m": 1.0,
+      "end": [
+        -4.871823416623943,
+        0.6500000000000004
+      ],
+      "blocked": true
+    },
+    {
+      "ground": "the right side of the bed inside the room",
+      "method": "initial_photo",
+      "box": [
+        582,
+        721,
+        715,
+        799
+      ],
+      "point_m": [
+        -3.671264590661647,
+        1.514138971197514,
+        -0.5274533519333261
+      ]
+    },
+    {
+      "overlap": "the right side of the bed inside the room",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 0,
+          "path_m": 0.0,
+          "stop_m": 1.4792152163016254,
+          "visible_frac": 0.0,
+          "center_deg": null,
+          "width_deg": null,
+          "distance_m": null
+        }
+      ],
+      "chosen_sector": null
+    }
+  ],
+  "m_per_unit": 2.2840505838394165,
+  "seconds": 12.794378757476807,
+  "planning_m_per_unit": 2.621841235346195,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.8711628122432152
+}

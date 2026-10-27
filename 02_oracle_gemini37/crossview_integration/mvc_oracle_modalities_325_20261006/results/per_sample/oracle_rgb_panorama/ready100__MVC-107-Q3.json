@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-107-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-107-Q3",
+  "resource_id": "MVC-107",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "ovens, silver cans, stove, sink",
+    "B": "sink, stove, ovens, silver cans",
+    "C": "ovens, sink, stove, silver cans",
+    "D": "sink, stove, silver cans, ovens"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "a204163c3a498ecdbba9d066090677a1d4b9fa08621b13da67f01aa4b044e6ef",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-107\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4630,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 357
+      }
+    ],
+    "thoughts_token_count": 1439,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6070,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.319182999999612,
+  "completed_at": "2026-10-06T17:44:47-04:00"
+}

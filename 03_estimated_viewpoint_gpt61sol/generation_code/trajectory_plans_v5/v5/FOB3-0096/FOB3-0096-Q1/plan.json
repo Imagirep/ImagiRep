@@ -1,0 +1,283 @@
+{
+  "question_id": "FOB3-0096-Q1",
+  "motion_text": "I walk near the stool and slightly turn left.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the small wooden stool in the center",
+      "relation": "near"
+    },
+    {
+      "op": "turn",
+      "direction": "left",
+      "amount": "slight"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0096-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.03462708996502408,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.0289779989696957,
+        "y": 0.10492663393978852,
+        "yaw": 0.03462708996502408,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -3.0289779989696957,
+        "y": 0.10492663393978852,
+        "yaw": -0.10308160852270046,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -5.928977998969696,
+        "y": -0.1950733660602122,
+        "yaw": -0.10308160852270046,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -5.928977998969696,
+        "y": -0.1950733660602122,
+        "yaw": -0.4636476090008052,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -6.3289779989696955,
+        "y": -0.3950733660602115,
+        "yaw": -0.4636476090008052,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -3.0289779989696957,
+        0.10492663393978852
+      ],
+      [
+        -5.928977998969696,
+        -0.1950733660602122
+      ],
+      [
+        -6.3289779989696955,
+        -0.3950733660602115
+      ]
+    ],
+    "x": -6.3289779989696955,
+    "y": -0.3950733660602115,
+    "yaw": -0.06234204194411313,
+    "pitch": 0.0,
+    "travel_yaw": -0.06234204194411313
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -3.0289779989696957,
+      0.10492663393978852
+    ],
+    [
+      -5.928977998969696,
+      -0.1950733660602122
+    ],
+    [
+      -6.3289779989696955,
+      -0.3950733660602115
+    ]
+  ],
+  "final": {
+    "x": -6.3289779989696955,
+    "y": -0.3950733660602115,
+    "yaw_deg": -38.57193588962522,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the small wooden stool in the center",
+        "relation": "near"
+      },
+      "x": -6.3289779989696955,
+      "y": -0.3950733660602115,
+      "yaw": -0.06234204194411313,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left",
+        "amount": "slight"
+      },
+      "x": -6.3289779989696955,
+      "y": -0.3950733660602115,
+      "yaw": -0.6732072801421283,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.03462708996502408,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.0289779989696957,
+      "y": 0.10492663393978852,
+      "yaw": 0.03462708996502408,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.0289779989696957,
+      "y": 0.10492663393978852,
+      "yaw": -0.10308160852270046,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -5.928977998969696,
+      "y": -0.1950733660602122,
+      "yaw": -0.10308160852270046,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -5.928977998969696,
+      "y": -0.1950733660602122,
+      "yaw": -0.4636476090008052,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -6.3289779989696955,
+      "y": -0.3950733660602115,
+      "yaw": -0.4636476090008052,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -6.3289779989696955,
+      "y": -0.3950733660602115,
+      "yaw": -0.06234204194411313,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -6.3289779989696955,
+      "y": -0.3950733660602115,
+      "yaw": -0.6732072801421283,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the small wooden stool in the center",
+      "method": "initial_photo",
+      "box": [
+        580,
+        391,
+        719,
+        444
+      ],
+      "point_m": [
+        -7.457831653410711,
+        -0.8385904272709508,
+        -1.467295050527287
+      ]
+    },
+    {
+      "overlap": "the small wooden stool in the center",
+      "n_points": 167,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 6.9,
+          "stop_m": 1.2128552909270942,
+          "visible_frac": 0.7125748502994012,
+          "center_deg": 6.676363621898808,
+          "width_deg": 33.19077548672863,
+          "distance_m": 1.2842094194322655
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 3.7779450423340957,
+  "seconds": 12.157590389251709
+}

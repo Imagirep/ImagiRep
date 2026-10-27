@@ -1,0 +1,227 @@
+{
+  "question_id": "FOB2-0009-Q1",
+  "motion_text": "I walk forward till I'm near the sink, then stop and keep facing forward.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "kitchen sink on the counter to the right",
+      "relation": "near"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0009-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.09070700645966948,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -0.6388673488409468,
+        "y": 0.058109201765457245,
+        "yaw": 0.09070700645966948,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -0.6388673488409468,
+        "y": 0.058109201765457245,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.0935369355754836,
+        "y": 0.058109201765457245,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -0.8783676439886055,
+        0.0798933342600523
+      ],
+      [
+        -2.8783676439886055,
+        0.0798933342600523
+      ]
+    ],
+    "x": -2.8783676439886055,
+    "y": 0.0798933342600523,
+    "yaw": 0.02774934839089189,
+    "pitch": 0.0,
+    "travel_yaw": 0.02774934839089189
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -0.6388673488409468,
+      0.058109201765457245
+    ],
+    [
+      -2.0935369355754836,
+      0.058109201765457245
+    ]
+  ],
+  "final": {
+    "x": -2.0935369355754836,
+    "y": 0.058109201765457245,
+    "yaw_deg": 1.5899205470362474,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "kitchen sink on the counter to the right",
+        "relation": "near"
+      },
+      "x": -2.8783676439886055,
+      "y": 0.0798933342600523,
+      "yaw": 0.02774934839089189,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.09070700645966948,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -0.6388673488409468,
+      "y": 0.058109201765457245,
+      "yaw": 0.09070700645966948,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -0.6388673488409468,
+      "y": 0.058109201765457245,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.0935369355754836,
+      "y": 0.058109201765457245,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.0935369355754836,
+      "y": 0.058109201765457245,
+      "yaw": 0.02774934839089189,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "kitchen sink on the counter to the right",
+      "method": "initial_photo",
+      "box": [
+        526,
+        484,
+        635,
+        575
+      ],
+      "point_m": [
+        -4.788564788897847,
+        0.2432862845010095,
+        -0.5479494647723148
+      ]
+    },
+    {
+      "overlap": "kitchen sink on the counter to the right",
+      "n_points": 192,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 3.0,
+          "stop_m": 1.9171724983964955,
+          "visible_frac": 1.0,
+          "center_deg": 0.44614285373124396,
+          "width_deg": 15.61585042399366,
+          "distance_m": 2.3222494413222083
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 0.9723661541938782,
+  "seconds": 6.942345380783081,
+  "planning_m_per_unit": 1.336889370701232,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.7273347933672685
+}

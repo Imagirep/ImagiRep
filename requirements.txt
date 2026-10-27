@@ -1,0 +1,10 @@
+# 07_verification/scripts/verify_from_raw.py needs only the Python standard library.
+# Packages used by the paper's run scripts:
+openai>=1.40
+google-genai>=1.0
+numpy
+pillow
+opencv-python
+huggingface_hub
+# Optional: estimation pipelines (see 03_*/generation_code and 04_*/generation_code; upstream models have their own setup)
+# scipy, torch, openpyxl

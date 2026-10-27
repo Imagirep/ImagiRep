@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-155-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-155-Q3",
+  "resource_id": "MVC-155",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "painting, tall potted plant, lamp, tv",
+    "B": "tall potted plant, painting, lamp, tv",
+    "C": "tv, painting, tall potted plant, lamp",
+    "D": "tv, tall potted plant, painting, lamp"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "f366fd632210696fe018a928ecb1fbe475ce3004f50cf0ed98abc6b16b464b8a",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-155\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3588,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 396
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1860,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5449,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 12.438316699990537,
+  "completed_at": "2026-10-06T17:31:48-04:00"
+}

@@ -1,0 +1,254 @@
+{
+  "question_id": "FO-0005-Q5",
+  "motion_text": "I walk to the refrigerator and turn right.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "stainless steel refrigerator",
+      "relation": "to"
+    },
+    {
+      "op": "turn",
+      "direction": "right"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FO-0005-Q5",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.3076858526751125,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.2654091535154404,
+        "y": 0.40211892333963206,
+        "yaw": 0.3076858526751125,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -1.2654091535154404,
+        "y": 0.40211892333963206,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.6654091535154407,
+        "y": 0.40211892333963206,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -1.2654091535154404,
+        0.40211892333963206
+      ],
+      [
+        -3.6654091535154407,
+        0.40211892333963206
+      ]
+    ],
+    "x": -3.6654091535154407,
+    "y": 0.40211892333963206,
+    "yaw": 0.1092694493355576,
+    "pitch": 0.0,
+    "travel_yaw": 0.1092694493355576
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.2654091535154404,
+      0.40211892333963206
+    ],
+    [
+      -3.6654091535154407,
+      0.40211892333963206
+    ]
+  ],
+  "final": {
+    "x": -3.6654091535154407,
+    "y": 0.40211892333963206,
+    "yaw_deg": 86.26067827664603,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "stainless steel refrigerator",
+        "relation": "to"
+      },
+      "x": -3.6654091535154407,
+      "y": 0.40211892333963206,
+      "yaw": 0.1092694493355576,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "right"
+      },
+      "x": -3.6654091535154407,
+      "y": 0.40211892333963206,
+      "yaw": 1.5055328509310213,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.3076858526751125,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.2654091535154404,
+      "y": 0.40211892333963206,
+      "yaw": 0.3076858526751125,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.2654091535154404,
+      "y": 0.40211892333963206,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.6654091535154407,
+      "y": 0.40211892333963206,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.6654091535154407,
+      "y": 0.40211892333963206,
+      "yaw": 0.1092694493355576,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.6654091535154407,
+      "y": 0.40211892333963206,
+      "yaw": 1.5055328509310213,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "stainless steel refrigerator",
+      "method": "initial_photo",
+      "box": [
+        382,
+        528,
+        788,
+        662
+      ],
+      "point_m": [
+        -4.7426508779265655,
+        0.5243594221558248,
+        -0.46044767939872294
+      ]
+    },
+    {
+      "overlap": "stainless steel refrigerator",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 4.1000000000000005,
+          "stop_m": 1.084155188320881,
+          "visible_frac": 1.0,
+          "center_deg": -0.13394171720102716,
+          "width_deg": 34.494019089191134,
+          "distance_m": 1.1552870424683674
+        },
+        {
+          "sector": 4,
+          "path_m": 4.4,
+          "stop_m": 0.9803305197505497,
+          "visible_frac": 1.0,
+          "center_deg": -0.3277966495992339,
+          "width_deg": 41.357976860953,
+          "distance_m": 1.0237272188712176
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 1.5352274066597833,
+  "seconds": 5.987703323364258
+}

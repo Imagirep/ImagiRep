@@ -1,0 +1,132 @@
+{
+  "row_index": 108,
+  "question_id": "FO-0001-Q7",
+  "trajectory_id": "FO-0001",
+  "scan_id": "2azQ1b91cZZ",
+  "question_type": 7,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk forward into the room, then walk to the brown chair and face the brown chair, where is the chair covered in grey and white fabric relative to me?",
+  "answer_choices": {
+    "D": "behind",
+    "A": "front",
+    "B": "left",
+    "C": "right"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "D": "D",
+    "A": "A",
+    "B": "B",
+    "C": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0001\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0001\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0001\\modalities\\step_02_rgb.png"
+    },
+    {
+      "label": "Step 3 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0001\\modalities\\step_03_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "760179a33f3dd8440717927e400f0c90bf34177a2187e28fabb83e19401069e6",
+    "ba920b336102764f874f73b8da1fc56f78e8f3bf196b3b76f5dd7d05a8d3a021"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0001\\modalities\\topdown_with_path.png",
+      "sha256": "308187a2fa011021a123a7bdb38f91ef777291ab4d92f7da5e1004697179a701"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0001\\modalities\\trajectory.txt",
+      "sha256": "4d3e68d7a16b93f78293888ea081b928e27467ab776758f89942512643833d3d"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0001\\modalities\\trajectory.mp4",
+      "sha256": "2d1f68c4477abe2884db730d2f7f682bd68770bdb7b32e9d2dc53223ec490c21",
+      "frame_count": 95,
+      "fps": 12.0,
+      "duration_seconds": 7.916666666666667,
+      "bytes": 692060,
+      "final_rgb_correlation": 0.9995074930867383
+    }
+  },
+  "condition": "start_final_text",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "modality_prompt": "ADDITIONAL TEXT TRAJECTORY:\nThe description gives the movement and camera poses from start to final state. Headings are in degrees: 0 faces +Y; positive rotation is clockwise toward +X. Use it together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "B",
+  "correct": false,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "additional_modality": {
+    "kind": "text",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0001\\modalities\\trajectory.txt",
+    "sha256": "4d3e68d7a16b93f78293888ea081b928e27467ab776758f89942512643833d3d"
+  },
+  "input_signature": "8f1d7907b1060075acf049380f3105c6b34b74a0b5da1c06a546aa660c76ed5d",
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2716,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 588
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 2083,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4800,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "completed_at": "2026-09-16T17:40:24-04:00"
+}

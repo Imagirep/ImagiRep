@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FO-0014-Q6",
+  "motion_text": "I walk to the right till I'm near the bed, and face the glass door.",
+  "view_variant": "endpoint",
+  "frames": 57,
+  "fps": 12,
+  "total_distance_m": 1.2580711073825945,
+  "depth_display_range_scene_units": [
+    1.4690441846847535,
+    4.641072301864624
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.5042629216811574,
+    "far_m": 4.752336963938585
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.5777224232899059 m over generated floor distance",
+  "m_per_unit": 1.932532250881195,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 18.092918157577515
+}

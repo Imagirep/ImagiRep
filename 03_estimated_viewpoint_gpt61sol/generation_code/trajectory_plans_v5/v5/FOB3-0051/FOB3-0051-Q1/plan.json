@@ -1,0 +1,346 @@
+{
+  "question_id": "FOB3-0051-Q1",
+  "motion_text": "I walk forward and walk near the vanity table, then slightly turn right.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "forward",
+      "amount": "default"
+    },
+    {
+      "op": "go",
+      "target": "wooden vanity table with arched mirror in the background",
+      "relation": "near"
+    },
+    {
+      "op": "turn",
+      "direction": "right",
+      "amount": "slight"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0051-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -0.4,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -0.4,
+        "y": 0.0,
+        "yaw": -0.7846144310359705,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -0.5815032253723107,
+        "y": -0.18121894820844542,
+        "yaw": -0.7846144310359705,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -0.5815032253723107,
+        "y": -0.18121894820844542,
+        "yaw": -0.46364760900080965,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -0.78150322537231,
+        "y": -0.28121894820844595,
+        "yaw": -0.46364760900080965,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -0.78150322537231,
+        "y": -0.28121894820844595,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.981503225372311,
+        "y": -0.28121894820844595,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -0.4,
+        0.0
+      ],
+      [
+        -0.5815032253723107,
+        -0.18121894820844542
+      ],
+      [
+        -0.78150322537231,
+        -0.28121894820844595
+      ],
+      [
+        -4.981503225372311,
+        -0.28121894820844595
+      ]
+    ],
+    "x": -4.981503225372311,
+    "y": -0.28121894820844595,
+    "yaw": -0.06130445627438356,
+    "pitch": 0.0,
+    "travel_yaw": -0.06130445627438356
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -0.4,
+      0.0
+    ],
+    [
+      -0.5815032253723107,
+      -0.18121894820844542
+    ],
+    [
+      -0.78150322537231,
+      -0.28121894820844595
+    ],
+    [
+      -4.981503225372311,
+      -0.28121894820844595
+    ]
+  ],
+  "final": {
+    "x": -4.981503225372311,
+    "y": -0.28121894820844595,
+    "yaw_deg": 31.48751339013352,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "forward",
+        "amount": "default"
+      },
+      "x": -0.4,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "target": "wooden vanity table with arched mirror in the background",
+        "relation": "near"
+      },
+      "x": -4.981503225372311,
+      "y": -0.28121894820844595,
+      "yaw": -0.06130445627438356,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "right",
+        "amount": "slight"
+      },
+      "x": -4.981503225372311,
+      "y": -0.28121894820844595,
+      "yaw": 0.5495607819236317,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -0.4,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -0.4,
+      "y": 0.0,
+      "yaw": -0.7846144310359705,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -0.5815032253723107,
+      "y": -0.18121894820844542,
+      "yaw": -0.7846144310359705,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -0.5815032253723107,
+      "y": -0.18121894820844542,
+      "yaw": -0.46364760900080965,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -0.78150322537231,
+      "y": -0.28121894820844595,
+      "yaw": -0.46364760900080965,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -0.78150322537231,
+      "y": -0.28121894820844595,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.981503225372311,
+      "y": -0.28121894820844595,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.981503225372311,
+      "y": -0.28121894820844595,
+      "yaw": -0.06130445627438356,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.981503225372311,
+      "y": -0.28121894820844595,
+      "yaw": 0.5495607819236317,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "move_yaw_deg": 0.0,
+      "requested_m": 2.0,
+      "end": [
+        -0.4,
+        0.0
+      ],
+      "blocked": true
+    },
+    {
+      "ground": "wooden vanity table with arched mirror in the background",
+      "method": "initial_photo",
+      "box": [
+        315,
+        472,
+        776,
+        603
+      ],
+      "point_m": [
+        -6.163322651734018,
+        0.2439746741876787,
+        -0.6766815676231981
+      ]
+    },
+    {
+      "overlap": "wooden vanity table with arched mirror in the background",
+      "n_points": 224,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 4.9,
+          "stop_m": 1.29326157351538,
+          "visible_frac": 0.84375,
+          "center_deg": -5.859498749533422,
+          "width_deg": 28.860158221508136,
+          "distance_m": 1.7799604044134583
+        },
+        {
+          "sector": 2,
+          "path_m": 5.6000000000000005,
+          "stop_m": 0.9953810929127699,
+          "visible_frac": 0.7098214285714286,
+          "center_deg": -13.4178973724082,
+          "width_deg": 36.33001370394184,
+          "distance_m": 1.4957406002329117
+        },
+        {
+          "sector": 4,
+          "path_m": 5.6000000000000005,
+          "stop_m": 1.084402722877339,
+          "visible_frac": 0.84375,
+          "center_deg": -1.6370459186285677,
+          "width_deg": 35.5620976628019,
+          "distance_m": 1.6631555726264668
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 2.48791978696856,
+  "seconds": 7.7632973194122314
+}

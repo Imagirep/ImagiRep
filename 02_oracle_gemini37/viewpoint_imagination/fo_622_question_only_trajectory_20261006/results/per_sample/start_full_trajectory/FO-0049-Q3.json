@@ -1,0 +1,76 @@
+{
+  "question_id": "FO-0049-Q3",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the round table, turn left and walk a few steps, then turn to face my starting point, would the round table still be directly visible?",
+  "answer_choices": {
+    "C": "partially visible",
+    "A": "completely blocked",
+    "B": "outside of view",
+    "D": "clearly visible"
+  },
+  "gold_answer": "C",
+  "show_lookback": true,
+  "prediction": "B",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "benchmark_release/items/FO-0049/image_1.png",
+      "sha256": "294b3a8910362e83e29d646f74b8863e748ae068c6d94e2b626992f60e5a236f"
+    },
+    {
+      "path": "benchmark_release/items/FO-0049/modalities/step_01_rgb.png",
+      "sha256": "a0caf1655019aee4cb81d69b8652839a7728842fb2d8342ae165cc68b344ae2e"
+    },
+    {
+      "path": "benchmark_release/items/FO-0049/modalities/step_02_rgb.png",
+      "sha256": "32238b942446004b05e45293471d9e33c2621e3714d68828584e22db28640923"
+    },
+    {
+      "path": "benchmark_release/items/FO-0049/modalities/oracle_lookback.png",
+      "sha256": "ba3e18dce16f4e5c28b270d59c08fd14d86203aff32ed65c64886e0b6520b8c5"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4417,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 161
+      }
+    ],
+    "thoughts_token_count": 3207,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7625,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 16.487823599993135,
+  "completed_at": "2026-10-06T14:12:40-04:00"
+}

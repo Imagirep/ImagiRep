@@ -1,0 +1,168 @@
+{
+  "question_id": "FOB2-0024-Q3",
+  "motion_text": "I walk to the cabinet and turn right, then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the wooden cabinet against the stone wall",
+      "relation": "to"
+    },
+    {
+      "op": "turn",
+      "direction": "right"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "shared_walk_from": "FOB2-0024-Q5",
+  "walk_state": {
+    "question_id": "FOB2-0024-Q3",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.7527180910552578,
+        "y": 0.04967082229827896,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -4.85,
+        0.06419440051221947
+      ]
+    ],
+    "x": -4.85,
+    "y": 0.06419440051221947,
+    "yaw": 0.013235186011178764,
+    "pitch": 0.0,
+    "travel_yaw": 0.013235186011178764
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -3.7527180910552578,
+      0.04967082229827896
+    ]
+  ],
+  "final": {
+    "x": -3.7527180910552578,
+    "y": 0.04967082229827896,
+    "yaw_deg": -179.24167970048887,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "turn",
+        "direction": "right"
+      },
+      "x": -4.85,
+      "y": 0.06419440051221947,
+      "yaw": 1.4094985876066426,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -4.85,
+      "y": 0.06419440051221947,
+      "yaw": -3.1283574675786143,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.7527180910552578,
+      "y": 0.04967082229827896,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.7527180910552578,
+      "y": 0.04967082229827896,
+      "yaw": 1.4094985876066426,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.7527180910552578,
+      "y": 0.04967082229827896,
+      "yaw": -3.1283574675786143,
+      "pitch": 0.0
+    }
+  ],
+  "events": [],
+  "m_per_unit": 2.690886616706848,
+  "seconds": 5.598492383956909,
+  "planning_m_per_unit": 3.477692641537683,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.7737563074340739
+}

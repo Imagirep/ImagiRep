@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-064-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-064-Q1",
+  "resource_id": "MVC-064",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to fireplace in Image 2?",
+  "answer_choices": {
+    "A": "white armchair",
+    "B": "wooden cabinet",
+    "C": "wooden table",
+    "D": "blue sofa"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "5a29a8cf8c2315bf80b845b7268d25fc3e8fd9fd7598aff475ca2816385189c6",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-064\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3552,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 360
+      }
+    ],
+    "thoughts_token_count": 2741,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6294,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 12.291045799996937,
+  "completed_at": "2026-10-06T17:30:56-04:00"
+}

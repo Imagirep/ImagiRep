@@ -1,0 +1,5 @@
+s = open('controlled_study_tables.tex', encoding='utf-8').read()
+a = s.index(chr(92) + 'begin{table}[!tb]')
+b = s.index('%% ===', s.index('tab:oracle_by_type'))
+open('table1_only.tex', 'w', encoding='utf-8').write(s[a:b])
+print(s[a:b].count('begin{table}'))

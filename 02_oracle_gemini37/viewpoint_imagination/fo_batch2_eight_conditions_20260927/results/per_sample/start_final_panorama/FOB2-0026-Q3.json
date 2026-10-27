@@ -1,0 +1,144 @@
+{
+  "row_index": 222,
+  "question_id": "FOB2-0026-Q3",
+  "trajectory_id": "FOB2-0026",
+  "scan_id": "Pm6F8kyY3z2",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk to the two chairs side by side, facing the way I go, then turn back to face where I come from, would the round table still be directly visible?",
+  "answer_choices": {
+    "D": "partially visible",
+    "A": "clearly visible",
+    "B": "completely blocked",
+    "C": "outside of view"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "D": "B",
+    "A": "A",
+    "B": "C",
+    "C": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0026\\start_view.png",
+      "sha256": "d77b27dc2c7209975f859ced012329ac6b9ec0df80d5f726cea45654dbc191b8"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0026\\step_01_rgb.png",
+      "sha256": "37a293d288ad38b5362f4622a9502019f5d92d20258fbf6c40c51fa8c15e20ce"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0026\\oracle_lookback.png",
+      "sha256": "158f410fc9bf987f5b60a9277cfa77e77580fbcddeb0d23519c50c45fe5ddb3a"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "category": "visibility",
+  "category_label": "Visibility (incl. object selection by visibility)",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0026\\oracle_lookback_depth.png",
+      "sha256": "4de33decd538cb3b7a867e5585b85fb87ec2597e05f7cd94fdd6980387ad575b",
+      "color_scale": {
+        "near_m": 1.285,
+        "far_m": 8.0955
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0026\\oracle_lookback_surface_normals.png",
+      "sha256": "5dd4a177e7f3a8362836b17fbf72c6980f827085b4e7120b53bdfc8ffefc976c"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0026\\oracle_lookback_panorama.png",
+      "sha256": "4a1f447c633a1c6f6f577906daf781dffa46207bed92edca440dd5046485cef9"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0026\\topdown_lookback_with_path.png",
+      "sha256": "246d06c599fe580a1da64490215f57f8a9552eb3142c729a7a0b1a1c2557339f"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0026\\trajectory_lookback.txt",
+      "sha256": "6be5452ede848f764da946055668b0c13f9da843b1025b048c4f334d8b5240b3"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0026\\trajectory_lookback.mp4",
+      "sha256": "06e59c51c56392614e0da1548f782ce73d6c1271a859dbfc712b57b5a95d55b4"
+    }
+  },
+  "condition": "start_final_panorama",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT PANORAMA (360-degree RGB at the FINAL VIEW position):\nThe panorama is centered on the final camera's facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. This is one position, not a sequence of movement frames. Combine it with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": false,
+  "input_signature": "b4415d719dd4b90ce4e873fc7d796d45cd9bdb613702f16eb76388b931eb3d2f",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "panorama"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3470,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3209
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 261
+      }
+    ],
+    "thoughts_token_count": 1925,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5396,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-09-28T04:03:07.155-04:00",
+  "request_duration_seconds": 9.867835700046271,
+  "completed_at": "2026-09-28T04:03:17.023-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

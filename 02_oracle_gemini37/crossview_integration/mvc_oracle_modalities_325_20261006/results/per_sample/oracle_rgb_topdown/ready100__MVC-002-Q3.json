@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-002-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-002-Q3",
+  "resource_id": "MVC-002",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "yellow sofa, white potted plant, lamp, black potted plant",
+    "B": "lamp, black potted plant, yellow sofa, white potted plant",
+    "C": "white potted plant, yellow sofa, black potted plant, lamp",
+    "D": "white potted plant, lamp, yellow sofa, black potted plant"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "de79572a9cb0acd25545a9b4d81357b2c3440b91ff7544a3481f614ce456d439",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-002\\order_12\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4644,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 363
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      }
+    ],
+    "thoughts_token_count": 1814,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6459,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.970536099994206,
+  "completed_at": "2026-10-06T16:40:25-04:00"
+}

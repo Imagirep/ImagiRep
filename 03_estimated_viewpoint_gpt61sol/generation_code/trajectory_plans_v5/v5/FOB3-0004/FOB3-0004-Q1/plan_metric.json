@@ -1,0 +1,248 @@
+{
+  "question_id": "FOB3-0004-Q1",
+  "motion_text": "I walk to the bed and face the same direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the bed with patterned bedding in the bedroom",
+      "relation": "to"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0004-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.06781879710527193,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.674950720397832,
+        "y": -0.18169058085720582,
+        "yaw": -0.06781879710527193,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.674950720397832,
+        "y": -0.18169058085720582,
+        "yaw": -0.4636476090008061,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.502014790369132,
+        "y": -0.5952226158428557,
+        "yaw": -0.4636476090008061,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -3.2342726730840283,
+        -0.21968138558299444
+      ],
+      [
+        -4.234272673084028,
+        -0.7196813855829944
+      ]
+    ],
+    "x": -4.234272673084028,
+    "y": -0.7196813855829944,
+    "yaw": -0.16835688160574225,
+    "pitch": 0.0,
+    "travel_yaw": -0.16835688160574225
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.674950720397832,
+      -0.18169058085720582
+    ],
+    [
+      -3.502014790369132,
+      -0.5952226158428557
+    ]
+  ],
+  "final": {
+    "x": -3.502014790369132,
+    "y": -0.5952226158428557,
+    "yaw_deg": -9.646138767992714,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the bed with patterned bedding in the bedroom",
+        "relation": "to"
+      },
+      "x": -4.234272673084028,
+      "y": -0.7196813855829944,
+      "yaw": -0.16835688160574225,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -4.234272673084028,
+      "y": -0.7196813855829944,
+      "yaw": -0.16835688160574225,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.06781879710527193,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.674950720397832,
+      "y": -0.18169058085720582,
+      "yaw": -0.06781879710527193,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.674950720397832,
+      "y": -0.18169058085720582,
+      "yaw": -0.4636476090008061,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.502014790369132,
+      "y": -0.5952226158428557,
+      "yaw": -0.4636476090008061,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.502014790369132,
+      "y": -0.5952226158428557,
+      "yaw": -0.16835688160574225,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the bed with patterned bedding in the bedroom",
+      "method": "initial_photo",
+      "box": [
+        507,
+        304,
+        825,
+        446
+      ],
+      "point_m": [
+        -5.266286760879529,
+        -1.0060109424865884,
+        -1.2088569651065257
+      ]
+    },
+    {
+      "overlap": "the bed with patterned bedding in the bedroom",
+      "n_points": 175,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 4.9,
+          "stop_m": 1.0709984559115797,
+          "visible_frac": 0.6857142857142857,
+          "center_deg": 0.947963317645165,
+          "width_deg": 34.4754741210804,
+          "distance_m": 1.1676495374398392
+        },
+        {
+          "sector": 3,
+          "path_m": 5.2,
+          "stop_m": 1.0321046257152575,
+          "visible_frac": 0.6628571428571428,
+          "center_deg": -6.8694480784373315,
+          "width_deg": 35.7416619723302,
+          "distance_m": 1.0965852196379702
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 1.6142227053642273,
+  "seconds": 6.0584728717803955,
+  "planning_m_per_unit": 1.951750491857593,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.8270640699712999
+}

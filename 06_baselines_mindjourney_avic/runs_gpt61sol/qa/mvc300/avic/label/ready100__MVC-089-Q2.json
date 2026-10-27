@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-089-Q2", "method": "avic", "variant": "label", "prediction": "mirror", "gold": "mirror", "correct": true, "n_imagined": 3, "category": "cross_view_farthest", "stored_result": "correct"}

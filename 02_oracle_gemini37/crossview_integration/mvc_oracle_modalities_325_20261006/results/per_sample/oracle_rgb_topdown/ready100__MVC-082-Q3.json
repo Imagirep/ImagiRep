@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-082-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-082-Q3",
+  "resource_id": "MVC-082",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "sink, refrigerator, silver wall decoration, blender",
+    "B": "silver wall decoration, refrigerator, blender, sink",
+    "C": "blender, sink, refrigerator, silver wall decoration",
+    "D": "sink, blender, silver wall decoration, refrigerator"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "b6b986d8a5ff85f89d158ccbd3ff5b8256b7dccb50a2070786445b2b06f353e1",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-082\\order_21\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4632,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 351
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      }
+    ],
+    "thoughts_token_count": 5019,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9652,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 23.799054700008128,
+  "completed_at": "2026-10-06T17:02:42-04:00"
+}

@@ -1,0 +1,1 @@
+{"qid": "FO-0090-Q5", "method": "avic", "variant": "label", "prediction": "two chairs next to each other", "gold": "the little yellow sofa", "correct": false, "n_imagined": 4, "category": "farthest_object", "stored_result": "wrong"}

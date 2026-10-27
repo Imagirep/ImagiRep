@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-088-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-088-Q2",
+  "resource_id": "MVC-088",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from colorful painting in Image 2?",
+  "answer_choices": {
+    "A": "white ottoman",
+    "B": "tv",
+    "C": "black and white painting",
+    "D": "white armchair"
+  },
+  "gold_answer": "B",
+  "prediction": "D",
+  "correct": false,
+  "signature": "db081fa4353ddcf2072236b983976baa810187bdb83c8816aaa8f1bbd80b79c6",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-088\\order_21\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7889,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 287
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 6566,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 14456,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 25.489028800002416,
+  "completed_at": "2026-10-06T17:34:38-04:00"
+}

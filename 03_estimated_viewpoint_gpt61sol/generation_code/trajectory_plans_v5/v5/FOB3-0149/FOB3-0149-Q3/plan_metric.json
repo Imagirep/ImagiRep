@@ -1,0 +1,274 @@
+{
+  "question_id": "FOB3-0149-Q3",
+  "motion_text": "I enter the room on the right, walk forward and turn to face my starting point, then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "relation": "into",
+      "target": "the room on the right"
+    },
+    {
+      "op": "forward",
+      "amount": "default"
+    },
+    {
+      "op": "face_start"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0149-Q3",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.02740528890507708,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.5655030138391863,
+        "y": 0.042913806383420704,
+        "yaw": 0.02740528890507708,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -1.5655030138391863,
+        "y": 0.042913806383420704,
+        "yaw": 0.43662715981354094,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.731890905297203,
+        "y": 0.5872281557304945,
+        "yaw": 0.43662715981354094,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.0132706606062225,
+        0.05518808112339535
+      ],
+      [
+        -3.5132706606062225,
+        0.7551880811233946
+      ]
+    ],
+    "x": -3.5132706606062225,
+    "y": 0.7551880811233946,
+    "yaw": 0.21173123965726123,
+    "pitch": 0.0,
+    "travel_yaw": 0.21173123965726123
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.5655030138391863,
+      0.042913806383420704
+    ],
+    [
+      -2.731890905297203,
+      0.5872281557304945
+    ]
+  ],
+  "final": {
+    "x": -2.731890905297203,
+    "y": 0.5872281557304945,
+    "yaw_deg": -167.868693576566,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "relation": "into",
+        "target": "the room on the right"
+      },
+      "x": -3.5132706606062225,
+      "y": 0.7551880811233946,
+      "yaw": 0.21173123965726123,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "forward",
+        "amount": "default"
+      },
+      "x": -3.5132706606062225,
+      "y": 0.7551880811233946,
+      "yaw": 0.21173123965726123,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -3.5132706606062225,
+      "y": 0.7551880811233946,
+      "yaw": -2.929861413932532,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -3.5132706606062225,
+      "y": 0.7551880811233946,
+      "yaw": -2.929861413932532,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.02740528890507708,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.5655030138391863,
+      "y": 0.042913806383420704,
+      "yaw": 0.02740528890507708,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.5655030138391863,
+      "y": 0.042913806383420704,
+      "yaw": 0.43662715981354094,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.731890905297203,
+      "y": 0.5872281557304945,
+      "yaw": 0.43662715981354094,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.731890905297203,
+      "y": 0.5872281557304945,
+      "yaw": 0.21173123965726123,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.731890905297203,
+      "y": 0.5872281557304945,
+      "yaw": -2.929861413932532,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the room on the right",
+      "method": "initial_photo",
+      "box": [
+        107,
+        622,
+        902,
+        806
+      ],
+      "point_m": [
+        -3.947031496197777,
+        0.9709635776050584,
+        -0.020582666440639077
+      ]
+    },
+    {
+      "move_yaw_deg": 25.016893478100002,
+      "requested_m": 1.0,
+      "end": [
+        -3.5132706606062225,
+        0.7551880811233946
+      ],
+      "blocked": true
+    },
+    {
+      "move_yaw_deg": 12.131306423434031,
+      "requested_m": 2.0,
+      "end": [
+        -3.5132706606062225,
+        0.7551880811233946
+      ],
+      "blocked": true
+    }
+  ],
+  "m_per_unit": 1.520962655544281,
+  "seconds": 9.354273080825806,
+  "planning_m_per_unit": 1.9559907986223648,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.7775919276386776
+}

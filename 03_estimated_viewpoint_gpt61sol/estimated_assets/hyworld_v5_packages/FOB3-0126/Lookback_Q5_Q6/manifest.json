@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB3-0126-Q5",
+  "motion_text": "I walk near the black counter and turn to face my starting point.",
+  "view_variant": "lookback",
+  "frames": 105,
+  "fps": 12,
+  "total_distance_m": 3.8235026181122898,
+  "depth_display_range_scene_units": [
+    1.708035514354706,
+    5.418765840530395
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.8126699202141454,
+    "far_m": 5.7507199125916735
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.3151916179674998 m over generated floor distance",
+  "m_per_unit": 2.003214716911316,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 25.692792415618896
+}

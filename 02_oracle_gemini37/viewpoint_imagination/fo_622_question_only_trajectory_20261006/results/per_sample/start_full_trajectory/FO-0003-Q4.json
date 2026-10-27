@@ -1,0 +1,70 @@
+{
+  "question_id": "FO-0003-Q4",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk past the fireplace and walk next to the chair, then face the chair, which object(s) would be closest to me?",
+  "answer_choices": {
+    "A": "black pillar",
+    "B": "door",
+    "C": "painting",
+    "D": "grey sofa"
+  },
+  "gold_answer": "A",
+  "show_lookback": false,
+  "prediction": "D",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "benchmark_release/items/FO-0003/image_1.png",
+      "sha256": "5e73318ca6f38a0b949a815a8eb92de606ec4ed77a93b419ec51d3609e216430"
+    },
+    {
+      "path": "benchmark_release/items/FO-0003/modalities/step_01_rgb.png",
+      "sha256": "18d77e088fb3f2c5912a4142605125786c477cb09353845f64ac0045f96e0d7a"
+    },
+    {
+      "path": "benchmark_release/items/FO-0003/modalities/step_02_rgb.png",
+      "sha256": "59064f818e998c8979cb51675a83803b63289a1082c030ef2438aadcbfa9e80d"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3339,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 147
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 2661,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6001,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 17.70438660000218,
+  "completed_at": "2026-10-06T14:11:27-04:00"
+}

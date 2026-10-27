@@ -1,0 +1,1 @@
+{"qid": "FOB3-0182-Q6", "method": "mj", "variant": "top3+label", "prediction": "behind", "gold": "behind", "correct": true, "n_imagined": 3, "category": "object_relative_direction", "stored_result": "correct"}

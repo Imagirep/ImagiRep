@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-091-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-091-Q1",
+  "resource_id": "MVC-091",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to fireplace in Image 2?",
+  "answer_choices": {
+    "A": "painting",
+    "B": "microwave",
+    "C": "tv",
+    "D": "flowers in white vase"
+  },
+  "gold_answer": "D",
+  "prediction": "B",
+  "correct": false,
+  "signature": "2d47322d8f7f37654fe20989c86f9b092a90c44f89a516ddacdae1b3fae8593d",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-091\\order_12\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4595,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 314
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      }
+    ],
+    "thoughts_token_count": 2058,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6654,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 11.683763699998963,
+  "completed_at": "2026-10-06T17:07:04-04:00"
+}

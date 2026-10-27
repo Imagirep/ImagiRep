@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FO-0046-Q1",
+  "motion_text": "I walk into the tub on the left and turn slightly right.",
+  "view_variant": "endpoint",
+  "frames": 72,
+  "fps": 12,
+  "total_distance_m": 1.0147172623769718,
+  "depth_display_range_scene_units": [
+    1.1222442150115968,
+    6.159395503997803
+  ],
+  "depth_color_scale_m": {
+    "near_m": 0.9868750208028977,
+    "far_m": 5.416426732106873
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 2.013942641377561 m over generated floor distance",
+  "m_per_unit": 1.640674889087677,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 22.53598189353943
+}

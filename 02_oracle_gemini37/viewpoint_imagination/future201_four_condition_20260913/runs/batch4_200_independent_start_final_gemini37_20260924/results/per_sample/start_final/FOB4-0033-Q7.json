@@ -1,0 +1,104 @@
+{
+  "row_index": 50,
+  "question_id": "FOB4-0033-Q7",
+  "trajectory_id": "FOB4-0033",
+  "scan_id": "HxpKQynjfin",
+  "route_variant": "old_bent",
+  "question_type": 7,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "final_image_kind": "lookback",
+  "question": "If I walk to the door in front of me and to my right, then turn to face my starting point, where is the marble counter relative to me?",
+  "answer_choices": {
+    "B": "front",
+    "A": "behind",
+    "C": "left",
+    "D": "right"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "B": "A",
+    "A": "D",
+    "C": "B",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0033\\start_view.png",
+      "sha256": "250364c8a001806f94ed5a2f7cdaf0e4d2f227f6f04c8aa5c6fe533c6f9d56e2"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0033\\step_01_rgb.png",
+      "sha256": "94be7f9c663697fee4196f992cf890494eca6aee8c7f666c6e6523d1ed45f8b8"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0033\\step_02_back180_rgb.png",
+      "sha256": "c971939104d2bee713ee4880a01eba9bdedc00f25d2ab13a69c628bac9b84ec5"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0033\\oracle_lookback.png",
+      "sha256": "9ff80d9806fa6407b712de9ead32c12cee67b8cb2beaae03e65abea7adfb0dc0"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": false,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2271,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 143
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 3140,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5412,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-24T17:29:29-04:00"
+}

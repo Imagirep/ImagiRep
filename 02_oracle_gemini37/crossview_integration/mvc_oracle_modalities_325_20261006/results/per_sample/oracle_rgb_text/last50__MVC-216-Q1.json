@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-216-Q1",
+  "cohort": "last50",
+  "question_id": "MVC-216-Q1",
+  "resource_id": "MVC-216",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to small marble table in Image 1?",
+  "answer_choices": {
+    "A": "stoves",
+    "B": "dining table",
+    "C": "small framed painting",
+    "D": "ovens"
+  },
+  "gold_answer": "B",
+  "prediction": "C",
+  "correct": false,
+  "signature": "add7e8f769e22efb393ebc23d586c4b881f4c9e46eec7c10d2f86d860c004f8f",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-216\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3553,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 361
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 3566,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7119,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 14.92229000000225,
+  "completed_at": "2026-10-06T17:32:56-04:00"
+}

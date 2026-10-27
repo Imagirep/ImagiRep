@@ -1,0 +1,43 @@
+{
+  "status": "complete_verified",
+  "designation": "User-designated Batch3 160-question independent result",
+  "questions": 160,
+  "trajectories": 50,
+  "scores": {
+    "text_only": {
+      "correct": 42,
+      "n": 160,
+      "accuracy": 0.2625,
+      "source_run": "batch3_180_gap_validation_gemini37_20260921_104002"
+    },
+    "start_view": {
+      "correct": 91,
+      "n": 160,
+      "accuracy": 0.56875,
+      "source_run": "batch3_160_start_endpoint_validation_gemini37_20260921_113511"
+    },
+    "start_final": {
+      "correct": 105,
+      "n": 160,
+      "accuracy": 0.65625,
+      "source_run": "batch3_180_gap_validation_gemini37_20260921_104002"
+    }
+  },
+  "deltas": {
+    "text_to_start": {
+      "net_correct": 49,
+      "percentage_points": 30.625
+    },
+    "start_to_final": {
+      "net_correct": 14,
+      "percentage_points": 8.75
+    }
+  },
+  "provenance": {
+    "manifest_sha256": "7226155c4b951849885a139a3f3f32d35fd3530ae900b526b03bb45df4e6b654",
+    "first_validation_results_sha256": "767bbc11cf15f97b416849eb28fda96e942c4454f91436b4325c3f44dfdf2c0d",
+    "current_validation_results_sha256": "0cd3b3a47631c8a4c2148fd35ccba3aca5dc39ea133d8b6fcf3da8d9bc89e2bd",
+    "mixed_run_composite": true,
+    "note": "This requested reporting record combines condition outputs from two API rounds; raw outputs remain unchanged."
+  }
+}

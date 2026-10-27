@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-103-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-103-Q1",
+  "resource_id": "MVC-103",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to statue in Image 1?",
+  "answer_choices": {
+    "A": "lamp",
+    "B": "wooden desk",
+    "C": "red bowl",
+    "D": "dark blue armchair"
+  },
+  "gold_answer": "C",
+  "prediction": "D",
+  "correct": false,
+  "signature": "fb09696cfb3187b080d170b1e7d2d6a20389af0b651c93affbaeb0c6b3f64cce",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.335 m (near/red) to 8.372 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-103\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4602,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 346
+      }
+    ],
+    "thoughts_token_count": 1709,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6312,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.05524630000582,
+  "completed_at": "2026-10-06T17:38:06-04:00"
+}

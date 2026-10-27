@@ -1,0 +1,146 @@
+{
+  "row_index": 217,
+  "question_id": "FOB4-0132-Q5",
+  "trajectory_id": "FOB4-0132",
+  "scan_id": "Vt2qJdWjCF2",
+  "route_variant": "new_straight",
+  "question_type": 5,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk to the table and slightly turn left, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "D": "potted plant",
+    "A": "monitor",
+    "B": "weighing scale",
+    "C": "chair"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "weighing scale",
+    "B": "monitor",
+    "C": "potted plant",
+    "D": "chair"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "D": "C",
+    "A": "B",
+    "B": "A",
+    "C": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0132\\start_view.png",
+      "sha256": "c7960694ced171317e33ed7df7a870bbf3bad6dc696f0189feef068a3d96434b"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0132\\step_01_rgb.png",
+      "sha256": "a7d0e37ae7ce933541a53213ca1e29dd0b1e63c96304c2c434d9b28a355a32e1"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0132\\step_02_rgb.png",
+      "sha256": "2de4d46c0cc9a5fd6daff04c3d1e76f277a72b32d36efb2a260c8bb52513efbb"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "category": "farthest_object",
+  "category_label": "Farthest object",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0132\\step_02_depth.png",
+      "sha256": "b913ddf31d8b58a34b615f39c9e896dcda61e23d3f1a36e8089eea24c7bccfc2",
+      "color_scale": {
+        "near_m": 1.028,
+        "far_m": 2.76275
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0132\\step_02_surface_normals.png",
+      "sha256": "eeda18c1bed147007dbb82f2437be6d22dc3afac0fbf489e4ec2172d079c03de"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0132\\step_02_panorama.png",
+      "sha256": "234adb0ff13a45d78db1d2d6d1528515122d9908e2871f13b838c6761c7bd2f6"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0132\\topdown_with_path.png",
+      "sha256": "66196ec79b1a8499dcb92c720fcaf96c8bae56bc025235bf4bb237b318047129"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0132\\trajectory.txt",
+      "sha256": "ad4e21006702c5b109e6b091ae9dde91b473b491063a0b2e60e69472979ba26f"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0132\\trajectory.mp4",
+      "sha256": "37390bb14a91163060cb782d8b62f8d68447b6a3b107ea24d9e10cb5698388ad"
+    }
+  },
+  "condition": "start_final_topdown",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch4_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "D",
+  "correct": true,
+  "input_signature": "76a140ce280bf082345f8578cb2bf1f8157a9b52a0883c8357be80ffaf584cf0",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "topdown"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3401,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3217
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 184
+      }
+    ],
+    "thoughts_token_count": 1947,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5349,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T20:24:50.900-04:00",
+  "request_duration_seconds": 8.499463200001628,
+  "completed_at": "2026-10-04T20:24:59.400-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

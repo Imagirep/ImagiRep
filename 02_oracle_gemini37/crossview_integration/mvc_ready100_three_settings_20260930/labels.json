@@ -1,0 +1,5077 @@
+{
+  "schema_version": 1,
+  "items": {
+    "MVC-002": {
+      "id": "MVC-002",
+      "revision": 5,
+      "saved_at": "2026-09-28T18:54:15.254567+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to lamp in Image 1?",
+          "options": {
+            "A": "plant in white pot",
+            "B": "patterned white pillow",
+            "C": "painting",
+            "D": "gray sofa"
+          },
+          "answer": "B",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from lamp in Image 1?",
+          "options": {
+            "A": "plant in white pot",
+            "B": "patterned white pillow",
+            "C": "painting",
+            "D": "gray sofa"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "white potted plant, yellow sofa, black potted plant, lamp",
+            "B": "black potted plant, lamp, white potted plant, yellow sofa",
+            "C": "lamp, black potted plant, yellow sofa, white potted plant",
+            "D": "black potted plant, yellow sofa, lamp, white potted plant"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315142+00:00"
+    },
+    "MVC-001": {
+      "id": "MVC-001",
+      "revision": 3,
+      "saved_at": "2026-09-28T18:51:26.042450+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to lamp in Image 1?",
+          "options": {
+            "A": "table",
+            "B": "gray chair",
+            "C": "painting",
+            "D": "potted plant"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": "lam"
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from lamp in Image 1?",
+          "options": {
+            "A": "table",
+            "B": "gray chair",
+            "C": "laptop",
+            "D": "potted plant"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315177+00:00"
+    },
+    "MVC-003": {
+      "id": "MVC-003",
+      "revision": 4,
+      "saved_at": "2026-09-28T18:56:58.432931+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to statue in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "long sofa, white lamp, table, cabinet",
+            "B": "long sofa, cabinet, white lamp, table",
+            "C": "cabinet, white lamp, long sofa, table",
+            "D": "table, cabinet, long sofa, white lamp"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315194+00:00"
+    },
+    "MVC-004": {
+      "id": "MVC-004",
+      "revision": 5,
+      "saved_at": "2026-09-28T18:59:30.875929+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to small white pillar in Image 2?",
+          "options": {
+            "A": "wooden cabinet",
+            "B": "round table",
+            "C": "white bowl",
+            "D": "potted flower"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from small white pillar in Image 2?",
+          "options": {
+            "A": "wooden cabinet",
+            "B": "framed painting",
+            "C": "white bowl",
+            "D": "potted flower"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "white bowl, wooden cabinet, monitor, white pillar with trophies on it",
+            "B": "wooden cabinet, white bowl, monitor, white pillar with trophies on it",
+            "C": "wooden cabinet, white bowl, white pillar with trophies on it, monitor",
+            "D": "white pillar with trophies on it, wooden cabinet, monitor, white bowl"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315206+00:00"
+    },
+    "MVC-005": {
+      "id": "MVC-005",
+      "revision": 4,
+      "saved_at": "2026-09-28T19:02:38.427253+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to white ottoman in Image 2?",
+          "options": {
+            "A": "black chairs",
+            "B": "wooden box",
+            "C": "framed paintings",
+            "D": "fireplace"
+          },
+          "answer": "B",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from white ottoman in Image 2?",
+          "options": {
+            "A": "black chairs",
+            "B": "wooden box",
+            "C": "framed paintings",
+            "D": "laptop"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "black chair, curtains, shelf, white ottoman",
+            "B": "curtains, white ottoman, black chair, shelf",
+            "C": "curtains, shelf, white ottoman, black chair",
+            "D": "black chair, curtains, white ottoman, shelf"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315219+00:00"
+    },
+    "MVC-006": {
+      "id": "MVC-006",
+      "revision": 3,
+      "saved_at": "2026-09-28T19:13:23.062528+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to tall potted plant in Image 1?",
+          "options": {
+            "A": "white flower",
+            "B": "wooden cabinet",
+            "C": "small white table",
+            "D": "patterned yellow armchair"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from potted plant in Image 1?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "small white table, small potted plant, painting, large potted plant",
+            "B": "painting, large potted plant, small white table, small potted plant",
+            "C": "small potted plant, small white table, painting, large potted plant",
+            "D": "small white table, painting, large potted plant, small potted plant"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315229+00:00"
+    },
+    "MVC-007": {
+      "id": "MVC-007",
+      "revision": 5,
+      "saved_at": "2026-09-28T19:30:37.304292+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to refrigerator in Image 2?",
+          "options": {
+            "A": "sink",
+            "B": "glass vase",
+            "C": "white vases",
+            "D": "white bowls"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from refrigerator in Image 2?",
+          "options": {
+            "A": "sink",
+            "B": "glass vase",
+            "C": "white vases",
+            "D": "white bowls"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "refrigerator, stove, glass vase, dishwasher",
+            "B": "stove, refrigerator, dishwasher, glass vase",
+            "C": "dishwasher, refrigerator, glass vase, stove",
+            "D": "refrigerator, stove, dishwasher, glass vase"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315240+00:00"
+    },
+    "MVC-009": {
+      "id": "MVC-009",
+      "revision": 4,
+      "saved_at": "2026-09-28T19:32:46.781398+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to mirror in Image 1?",
+          "options": {
+            "A": "fireplace",
+            "B": "black ottoman",
+            "C": "white decorative vase",
+            "D": "painting"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from mirror in Image 1?",
+          "options": {
+            "A": "fireplace",
+            "B": "black ottoman",
+            "C": "white decorative vase",
+            "D": "painting"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "mirror, white carpet, fireplace, decorative floor lamp",
+            "B": "fireplace, mirror, white carpet, decorative floor lamp",
+            "C": "fireplace, mirror, decorative floor lamp, white carpet",
+            "D": "decorative floor lamp, white carpet, fireplace, mirror"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315250+00:00"
+    },
+    "MVC-010": {
+      "id": "MVC-010",
+      "revision": 2,
+      "saved_at": "2026-09-26T19:31:09.816017+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "sink, dishwasher, refrigerator, stove",
+            "B": "stove, dishwasher, sink, refrigerator",
+            "C": "sink, dishwasher, stove, refrigerator",
+            "D": "sink, stove, refrigerator, dishwasher"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315261+00:00"
+    },
+    "MVC-012": {
+      "id": "MVC-012",
+      "revision": 4,
+      "saved_at": "2026-09-28T19:36:24.078943+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to dining table in Image 1?",
+          "options": {
+            "A": "black table",
+            "B": "gray armchair",
+            "C": "painting",
+            "D": "fireplace"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from dining table in Image 1?",
+          "options": {
+            "A": "black table",
+            "B": "gray armchair",
+            "C": "white chairs",
+            "D": "fireplace"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "dining table, potted plant, white chairs, brown ottomans",
+            "B": "potted plant, dining table, brown ottomans, white chairs",
+            "C": "white chairs, dining table, brown ottomans, potted plant",
+            "D": "dining table, white chairs, potted plant, brown ottomans"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315272+00:00"
+    },
+    "MVC-013": {
+      "id": "MVC-013",
+      "revision": 3,
+      "saved_at": "2026-09-28T19:39:32.064467+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to gray doors in Image 2?",
+          "options": {
+            "A": "tall plant",
+            "B": "stools",
+            "C": "cabinet with bowls in it",
+            "D": "stove"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from gray doors in Image 2?",
+          "options": {
+            "A": "tall plant",
+            "B": "stools",
+            "C": "cabinet with bowls in it",
+            "D": "stove"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "yellow pot, stools, sofa, wooden chair",
+            "B": "stools, yellow pot, sofa, wooden chair",
+            "C": "stools, yellow pot, wooden chair, sofa",
+            "D": "wooden chair, stools, sofa, yellow pot"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315283+00:00"
+    },
+    "MVC-015": {
+      "id": "MVC-015",
+      "revision": 9,
+      "saved_at": "2026-09-28T19:44:12.189423+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to shelf in Image 2?",
+          "options": {
+            "A": "bed",
+            "B": "framed painting",
+            "C": "black armchairs",
+            "D": "lamp with a wooden stem"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from shelf in Image 2?",
+          "options": {
+            "A": "bed",
+            "B": "framed painting",
+            "C": "black armchairs",
+            "D": "lamp with a wooden stem"
+          },
+          "answer": "B",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "sofa, bed, small lamp, shelf",
+            "B": "shelf, small lamp, bed, sofa",
+            "C": "shelf, bed, small lamp, sofa",
+            "D": "bed, shelf, sofa, small lamp"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315293+00:00"
+    },
+    "MVC-017": {
+      "id": "MVC-017",
+      "revision": 3,
+      "saved_at": "2026-09-28T19:45:32.505809+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to stove in Image 1?",
+          "options": {
+            "A": "sink",
+            "B": "refrigerator",
+            "C": "dining table",
+            "D": "white chairs"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from stove in Image 2?",
+          "options": {
+            "A": "sink",
+            "B": "refrigerator",
+            "C": "dining table",
+            "D": "white cabinet"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "stove, sink, refrigerator, round table",
+            "B": "sink, round table, stove, refrigerator",
+            "C": "refrigerator, round table, stove, sink",
+            "D": "sink, stove, round table, refrigerator"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315303+00:00"
+    },
+    "MVC-019": {
+      "id": "MVC-019",
+      "revision": 2,
+      "saved_at": "2026-09-26T19:51:17.575690+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "red cabinet, lamp, sofa, black cabinet",
+            "B": "sofa, black cabinet, red cabinet, lamp",
+            "C": "black cabinet, red cabinet, sofa, lamp",
+            "D": "red cabinet, sofa, black cabinet, lamp"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315313+00:00"
+    },
+    "MVC-020": {
+      "id": "MVC-020",
+      "revision": 4,
+      "saved_at": "2026-09-28T19:59:54.217107+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to white chair in Image 2?",
+          "options": {
+            "A": "black table",
+            "B": "white chair",
+            "C": "tv",
+            "D": "potted plant"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from white chair in Image 2?",
+          "options": {
+            "A": "black table",
+            "B": "white chair",
+            "C": "small glass table",
+            "D": "potted plant"
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "chandelier, cup set, glass door, tv",
+            "B": "chandelier, tv, glass door, cup set",
+            "C": "glass door, cup set, chandelier, tv",
+            "D": "tv, glass door, cup set, chandelier"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315323+00:00"
+    },
+    "MVC-021": {
+      "id": "MVC-021",
+      "revision": 3,
+      "saved_at": "2026-09-28T20:02:24.010658+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to pool table in Image 1?",
+          "options": {
+            "A": "long sofa",
+            "B": "white armchair",
+            "C": "stools",
+            "D": "large dining table"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from pool table in Image 1?",
+          "options": {
+            "A": "long sofa",
+            "B": "white armchair",
+            "C": "stools",
+            "D": "large dining table"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "pool table, fireplace, glass table, white stools",
+            "B": "fireplace, pool table, glass table, white stools",
+            "C": "white stools, pool table, glass table, fireplace",
+            "D": "glass table, fireplace, pool table, white stools"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315334+00:00"
+    },
+    "MVC-025": {
+      "id": "MVC-025",
+      "revision": 2,
+      "saved_at": "2026-09-26T19:58:20.212509+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "green decorative cup, piano, dining table, purple sofa",
+            "B": "piano, dining table, purple sofa, green decorative cup",
+            "C": "green decorative cup, piano, purple sofa, dining table",
+            "D": "piano, purple sofa, dining table, green decorative cup"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315344+00:00"
+    },
+    "MVC-026": {
+      "id": "MVC-026",
+      "revision": 6,
+      "saved_at": "2026-09-29T16:04:52.490639+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to silver pot in Image 2?",
+          "options": {
+            "A": "microwave",
+            "B": "ovens",
+            "C": "black pot",
+            "D": "yellow clock"
+          },
+          "answer": "B",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from silver pot in Image 2?",
+          "options": {
+            "A": "hallway",
+            "B": "ovens",
+            "C": "black pot",
+            "D": "yellow clock"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "sink, silver pot, ovens, microwave",
+            "B": "ovens, microwave, sink, silver pot",
+            "C": "microwave, silver pot, ovens, sink",
+            "D": "microwave, silver pot, sink, ovens"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315355+00:00"
+    },
+    "MVC-032": {
+      "id": "MVC-032",
+      "revision": 4,
+      "saved_at": "2026-09-28T20:12:35.933791+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to silver pot in Image 2?",
+          "options": {
+            "A": "black cabinet",
+            "B": "potted flower",
+            "C": "round table",
+            "D": "framed painting under the light"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from silver pot in Image 2?",
+          "options": {
+            "A": "black cabinet",
+            "B": "potted flower",
+            "C": "black chairs",
+            "D": "framed painting under the light"
+          },
+          "answer": "B",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "book shelf, decorative metal pot, dining table, painting under the light",
+            "B": "painting under the light, dining table, book shelf, decorative metal pot",
+            "C": "decorative metal pot, painting under the light, dining table, book shelf",
+            "D": "dining table, painting under the light, decorative metal pot, book shelf"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315365+00:00"
+    },
+    "MVC-034": {
+      "id": "MVC-034",
+      "revision": 5,
+      "saved_at": "2026-09-28T20:23:54.167104+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to gray chair in Image 2?",
+          "options": {
+            "A": "lamp",
+            "B": "globe",
+            "C": "framed painting",
+            "D": "potted plant"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from gray chair in Image 2?",
+          "options": {
+            "A": "lamp",
+            "B": "globe",
+            "C": "framed painting",
+            "D": "potted plant"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "gray armchair, round desk, white armchair, globe",
+            "B": "white armchair, gray armchair, globe, round desk",
+            "C": "round desk, white armchair, gray armchair, globe",
+            "D": "globe, white armchair, round desk, gray armchair"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ],
+      "template_schema": 3,
+      "template_migrated_at": "2026-09-28T15:12:11.315375+00:00"
+    },
+    "MVC-038": {
+      "id": "MVC-038",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T03:05:40.523179+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to piano in Image 2?",
+          "options": {
+            "A": "monitor",
+            "B": "podium",
+            "C": "white pillar",
+            "D": "wooden desk"
+          },
+          "answer": "B",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from piano in Image 2?",
+          "options": {
+            "A": "monitor",
+            "B": "podium",
+            "C": "white pillar",
+            "D": "piles of books"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "piano, lamp, podium, monitor",
+            "B": "podium, piano, lamp, monitor",
+            "C": "lamp, piano, monitor, podium",
+            "D": "podium, lamp, monitor, piano"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-039": {
+      "id": "MVC-039",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T03:08:34.871149+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "door, safe, white cabinet, white shelf",
+            "B": "white shelf, safe, door, white cabinet",
+            "C": "white shelf, door, safe, white cabinet",
+            "D": "door, white shelf, white cabinet, safe"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-040": {
+      "id": "MVC-040",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T03:09:57.633246+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "wooden box, window, potted plant, mirror",
+            "B": "mirror, wooden box, window, potted plant",
+            "C": "window, mirror, potted plant, wooden box",
+            "D": "potted plant, window, wooden box, mirror"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-041": {
+      "id": "MVC-041",
+      "template_schema": 3,
+      "revision": 3,
+      "saved_at": "2026-09-29T16:05:25.105394+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to sink in Image 2?",
+          "options": {
+            "A": "microwave",
+            "B": "refrigerator",
+            "C": "wooden desk",
+            "D": "green bottles"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from sink in Image 2?",
+          "options": {
+            "A": "microwave",
+            "B": "refrigerator",
+            "C": "wooden desk",
+            "D": "green bottles"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "microwave, refrigerator, wooden desk, green bottles",
+            "B": "green bottles, refrigerator, microwave, wooden desk",
+            "C": "green bottles, microwave, refrigerator, wooden desk",
+            "D": "wooden desk, refrigerator, microwave, green bottles"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-042": {
+      "id": "MVC-042",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T03:15:31.465592+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to shelf in Image 2?",
+          "options": {
+            "A": "bed",
+            "B": "white lamp",
+            "C": "sofa",
+            "D": "framed painting"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from shelf in Image 2?",
+          "options": {
+            "A": "bed",
+            "B": "white lamp",
+            "C": "sofa",
+            "D": "framed painting"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "bed, white lamp, sofa, framed painting",
+            "B": "white lamp, framed painting, bed, sofa",
+            "C": "bed, sofa, framed painting, white lamp",
+            "D": "sofa, bed, framed painting, white lamp"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-044": {
+      "id": "MVC-044",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T03:19:00.497238+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to stools in Image 2?",
+          "options": {
+            "A": "round table",
+            "B": "fireplace",
+            "C": "framed painting",
+            "D": "potted plant"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from stools in Image 2?",
+          "options": {
+            "A": "round table",
+            "B": "fireplace",
+            "C": "framed painting",
+            "D": "potted plant"
+          },
+          "answer": "B",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "round table, fireplace, framed painting, potted plant",
+            "B": "round table, potted plant, fireplace, framed painting",
+            "C": "round table, potted plant, framed painting, fireplace",
+            "D": "framed painting, round table, fireplace, potted plant"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-048": {
+      "id": "MVC-048",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T03:24:25.985775+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to alarm clock in Image 2?",
+          "options": {
+            "A": "wooden cabinet",
+            "B": "lamp",
+            "C": "tv",
+            "D": "fireplace"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from alarm clock in Image 2?",
+          "options": {
+            "A": "wooden cabinet",
+            "B": "lamp",
+            "C": "tv",
+            "D": "yellow basket"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "wooden cabinet, lamp, tv, alarm clock",
+            "B": "alarm clock, lamp, wooden cabinet, tv",
+            "C": "tv, lamp, wooden cabinet, alarm clock",
+            "D": "tv, wooden cabinet, alarm clock, lamp"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-049": {
+      "id": "MVC-049",
+      "template_schema": 3,
+      "revision": 2,
+      "saved_at": "2026-09-29T03:29:16.086526+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to black and white painting in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from black and white painting in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "black and white painting, wheelchair, window, gray long ottoman",
+            "B": "black and white painting, window, gray long ottoman, wheelchair",
+            "C": "black and white painting, window, wheelchair, gray long ottoman",
+            "D": "wheelchair, window, black and white painting, gray long ottoman"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-051": {
+      "id": "MVC-051",
+      "template_schema": 3,
+      "revision": 2,
+      "saved_at": "2026-09-29T03:36:49.876720+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to painting in Image 2?",
+          "options": {
+            "A": "black armchair",
+            "B": "long black sofa",
+            "C": "sink",
+            "D": "decorative paintings"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from painting in Image 2?",
+          "options": {
+            "A": "black armchair",
+            "B": "long black sofa",
+            "C": "wooden cabinet",
+            "D": "decorative small paintings"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "black long sofa, black armchair, hallway, large painting",
+            "B": "hallway, large painting, black armchair, black long sofa",
+            "C": "large painting, black long sofa, hallway, black armchair",
+            "D": "hallway, black long sofa, large painting, black armchair"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-052": {
+      "id": "MVC-052",
+      "template_schema": 3,
+      "revision": 4,
+      "saved_at": "2026-09-29T03:45:55.115577+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to white vases in Image 1?",
+          "options": {
+            "A": "sink",
+            "B": "white bowls",
+            "C": "refrigerator",
+            "D": "ovens"
+          },
+          "answer": "B",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from white vases in Image 1?",
+          "options": {
+            "A": "sink",
+            "B": "white bowls",
+            "C": "refrigerator",
+            "D": "ovens"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "white bowls, refrigerator, ovens, sink",
+            "B": "white bowls, ovens, refrigerator, sink",
+            "C": "sink, white bowls, ovens, refrigerator",
+            "D": "refrigerator, ovens, white bowls, sink"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-053": {
+      "id": "MVC-053",
+      "template_schema": 3,
+      "revision": 7,
+      "saved_at": "2026-09-29T03:51:44.877339+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to lamp closest to me in Image 1?",
+          "options": {
+            "A": "piano",
+            "B": "bookshelf",
+            "C": "lamps",
+            "D": "round table"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from closest lamp in Image 1?",
+          "options": {
+            "A": "piano",
+            "B": "bookshelf",
+            "C": "podium",
+            "D": "round table"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "piano, podium, monitor, framed painting",
+            "B": "podium, monitor, piano, framed painting",
+            "C": "podium, framed painting, monitor, piano",
+            "D": "podium, framed painting, piano, monitor"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-054": {
+      "id": "MVC-054",
+      "template_schema": 3,
+      "revision": 3,
+      "saved_at": "2026-09-29T03:58:31.699100+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to bed in Image 1?",
+          "options": {
+            "A": "metal pot",
+            "B": "white basin",
+            "C": "doorway",
+            "D": "chair"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from bed in Image 1?",
+          "options": {
+            "A": "metal pot",
+            "B": "white basin",
+            "C": "doorway",
+            "D": "chair"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "bed, metal pot, white basin, chair",
+            "B": "metal pot, bed, white basin, chair",
+            "C": "chair, bed, metal pot, white basin",
+            "D": "chair, metal pot, bed, white basin"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-055": {
+      "id": "MVC-055",
+      "template_schema": 3,
+      "revision": 2,
+      "saved_at": "2026-09-29T04:03:28.919364+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to tv in Image 2?",
+          "options": {
+            "A": "pool table",
+            "B": "potted flowers",
+            "C": "sofa",
+            "D": "wooden cabinet"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from tv in Image 2?",
+          "options": {
+            "A": "pool table",
+            "B": "potted flowers",
+            "C": "sofa",
+            "D": "wooden cabinet"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "tv, wooden cabinet, pool table, potted plant",
+            "B": "potted plant, tv, pool table, wooden cabinet",
+            "C": "tv, potted plant, pool table, wooden cabinet",
+            "D": "pool table, wooden cabinet, tv, potted plant"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-056": {
+      "id": "MVC-056",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T04:04:50.520201+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "white chair, black chair, potted plant, white sofa",
+            "B": "black chair, potted plant, white sofa, white chair",
+            "C": "white chair, white sofa, black chair, potted plant",
+            "D": "white sofa, white chair, potted plant, black chair"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-057": {
+      "id": "MVC-057",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T04:05:48.669306+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "fireplace, bed, door, sink",
+            "B": "fireplace, sink, door, bed",
+            "C": "door, bed, sink, fireplace",
+            "D": "bed, door, fireplace, sink"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-062": {
+      "id": "MVC-062",
+      "template_schema": 3,
+      "revision": 3,
+      "saved_at": "2026-09-29T04:14:45.787533+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to trash can in Image 1?",
+          "options": {
+            "A": "blue purse",
+            "B": "pink purse",
+            "C": "orange purse",
+            "D": "doorway"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from trash can in Image 1?",
+          "options": {
+            "A": "blue purse",
+            "B": "pink purse",
+            "C": "orange purse",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "trash can, sink, blue purse, orange purse",
+            "B": "orange purse, blue purse, trash can, sink",
+            "C": "trash can, blue purse, sink, orange purse",
+            "D": "trash can, sink, orange purse, blue purse"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-063": {
+      "id": "MVC-063",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T04:15:44.125123+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "white box, glass table, white vase, potted plant",
+            "B": "white box, white vase, glass table, potted plant",
+            "C": "glass table, white vase, white box, potted plant",
+            "D": "glass table, white box, potted plant, white vase"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-064": {
+      "id": "MVC-064",
+      "template_schema": 3,
+      "revision": 3,
+      "saved_at": "2026-09-29T04:24:49.860591+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to fireplace in Image 2?",
+          "options": {
+            "A": "blue sofa",
+            "B": "wooden table",
+            "C": "white armchair",
+            "D": "wooden cabinet"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from fireplace in Image 2?",
+          "options": {
+            "A": "blue sofa",
+            "B": "wooden table",
+            "C": "white armchair",
+            "D": "wooden cabinet"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "blue sofa, wooden table, wooden cabinet, fireplace",
+            "B": "fireplace, wooden table, blue sofa, wooden cabinet",
+            "C": "blue sofa, wooden table, fireplace, wooden cabinet",
+            "D": "blue sofa, wooden cabinet, fireplace, wooden table"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-065": {
+      "id": "MVC-065",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T15:08:22.409825+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "potted plant, bed, black chair, wooden desk",
+            "B": "bed, wooden desk, black chair, potted plant",
+            "C": "black chair, potted plant, bed, wooden desk",
+            "D": "potted plant, bed, wooden desk, black chair"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-067": {
+      "id": "MVC-067",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T15:10:27.809516+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "black armchair, potted plant, tv, lamp",
+            "B": "black armchair, tv, lamp, potted plant",
+            "C": "potted plant, lamp, tv, black armchair",
+            "D": "lamp, potted plant, black armchair, tv"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-068": {
+      "id": "MVC-068",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T15:14:19.237519+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to toilet in Image 1?",
+          "options": {
+            "A": "framed black painting",
+            "B": "bed",
+            "C": "wooden door",
+            "D": "framed white paper"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from toilet in Image 1?",
+          "options": {
+            "A": "framed black painting",
+            "B": "bed",
+            "C": "wooden door",
+            "D": "framed white paper"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "framed black painting, bed, framed white paper, wooden door",
+            "B": "framed white paper, bed, framed black painting, wooden door",
+            "C": "bed, framed black painting, wooden door, framed white paper",
+            "D": "wooden door, framed black painting, framed white paper, bed"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-069": {
+      "id": "MVC-069",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T15:17:22.036216+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to white statue in Image 1?",
+          "options": {
+            "A": "red statue",
+            "B": "potted plant",
+            "C": "yellow armchair",
+            "D": "refrigerator"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from white statue in Image 1?",
+          "options": {
+            "A": "red statue",
+            "B": "potted plant",
+            "C": "yellow armchair",
+            "D": "refrigerator"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "red statue, potted plant, refrigerator, white statue",
+            "B": "potted plant, red statue, white statue, refrigerator",
+            "C": "refrigerator, white statue, potted plant, red statue",
+            "D": "white statue, potted plant, red statue, refrigerator"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-071": {
+      "id": "MVC-071",
+      "template_schema": 3,
+      "revision": 2,
+      "saved_at": "2026-09-29T15:19:33.896131+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "white carpet, tv, lamp, black box",
+            "B": "black box, lamp, tv, white carpet",
+            "C": "tv, white carpet, lamp, black box",
+            "D": "white carpet, black box, tv, lamp"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-072": {
+      "id": "MVC-072",
+      "template_schema": 3,
+      "revision": 2,
+      "saved_at": "2026-09-29T16:09:36.435745+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to round table in Image 1?",
+          "options": {
+            "A": "potted tall plant",
+            "B": "black pillows",
+            "C": "yellow painting",
+            "D": "fireplace"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from round table in Image 1?",
+          "options": {
+            "A": "potted tall plant",
+            "B": "black pillows",
+            "C": "yellow painting",
+            "D": "fireplace"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "refrigerator, stove, potted tall plant, black pillows",
+            "B": "potted tall plant, refrigerator, stove, black pillows",
+            "C": "refrigerator, black pillows, potted tall plant, stove",
+            "D": "refrigerator, stove, black pillows, potted tall plant"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-075": {
+      "id": "MVC-075",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T15:31:27.126278+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to towel in Image 2?",
+          "options": {
+            "A": "glass cup",
+            "B": "tissue box",
+            "C": "sink",
+            "D": "painting"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from towel in Image 2?",
+          "options": {
+            "A": "glass cup",
+            "B": "tissue box",
+            "C": "sink",
+            "D": "painting"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "hanging towel, trash can, painting, glass cup",
+            "B": "painting, glass cup, trash can, hanging towel",
+            "C": "glass cup, painting, hanging towel, trash can",
+            "D": "trash can, painting, hanging towel, glass cup"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-076": {
+      "id": "MVC-076",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T15:37:23.413874+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to pink statue in Image 2?",
+          "options": {
+            "A": "round table",
+            "B": "wooden small table",
+            "C": "fireplace",
+            "D": "deer-shaped statue"
+          },
+          "answer": "B",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from pink statue in Image 2?",
+          "options": {
+            "A": "round table",
+            "B": "wooden small table",
+            "C": "fireplace",
+            "D": "deer-shaped statue"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "pink statue, round table, fireplace, deer-shaped statue",
+            "B": "pink statue, deer-shaped statue, fireplace, round table",
+            "C": "fireplace, pink statue, round table, deer-shaped statue",
+            "D": "fireplace, deer-shaped statue, pink statue, round table"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-078": {
+      "id": "MVC-078",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T15:44:48.836065+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "decorative glass cup,",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-082": {
+      "id": "MVC-082",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T16:13:32.926087+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to round table in Image 1?",
+          "options": {
+            "A": "silver wall decoration",
+            "B": "refrigerator",
+            "C": "blender",
+            "D": "sink"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from round table in Image 1?",
+          "options": {
+            "A": "silver wall decoration",
+            "B": "refrigerator",
+            "C": "blender",
+            "D": "sink"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "silver wall decoration, refrigerator, blender, sink",
+            "B": "blender, sink, refrigerator, silver wall decoration",
+            "C": "sink, refrigerator, silver wall decoration, blender",
+            "D": "sink, blender, silver wall decoration, refrigerator"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-084": {
+      "id": "MVC-084",
+      "template_schema": 3,
+      "revision": 3,
+      "saved_at": "2026-09-29T16:15:53.500314+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to lamp in Image 2?",
+          "options": {
+            "A": "black armchair",
+            "B": "painting",
+            "C": "white armchair",
+            "D": "tv"
+          },
+          "answer": "B",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from lamp in Image 2?",
+          "options": {
+            "A": "black armchair",
+            "B": "painting",
+            "C": "white armchair",
+            "D": "tv"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "painting, white armchair, tv, black chair",
+            "B": "white armchair, black chair, tv, painting",
+            "C": "tv, painting, white armchair, black chair",
+            "D": "white armchair, tv, painting, black chair"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC3I-002": {
+      "id": "MVC3I-002",
+      "template_schema": 3,
+      "revision": 2,
+      "saved_at": "2026-09-29T18:29:28.561041+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2,3 is closest to white decorative cabinet in Image 1?",
+          "options": {
+            "A": "bed",
+            "B": "lamp",
+            "C": "toilet",
+            "D": "sink"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2,3 is farthest from decorative cabinet in Image 1?",
+          "options": {
+            "A": "bed",
+            "B": "alarm clock",
+            "C": "toilet",
+            "D": "sink"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "bed, lamp, toilet, decorative white cabinet",
+            "B": "decorative white cabinet, toilet, bed, lamp",
+            "C": "bed, decorative white cabinet, toilet, lamp",
+            "D": "bed, toilet, lamp, decorative white cabinet"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC3I-004": {
+      "id": "MVC3I-004",
+      "template_schema": 3,
+      "revision": 3,
+      "saved_at": "2026-09-29T18:34:55.415104+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2,3 is closest to podium  in Image 1?",
+          "options": {
+            "A": "white pillar",
+            "B": "piles of books",
+            "C": "framed black and white painting",
+            "D": "black desk"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2,3 is farthest from podium in Image 1?",
+          "options": {
+            "A": "white pillar",
+            "B": "piles of books",
+            "C": "bull statue",
+            "D": "black desk"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "podium, bull statue, white pillar, framed black and white painting",
+            "B": "framed black and white painting, white pillar, podium, bull statue",
+            "C": "bull statue, framed black and white painting, podium, white pillar",
+            "D": "framed black and white painting, bull statue, podium, white pillar"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC3I-007": {
+      "id": "MVC3I-007",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T18:37:52.954785+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1,2 is closest to red sofa in Image 3?",
+          "options": {
+            "A": "yellow painting",
+            "B": "black statue",
+            "C": "fireplace",
+            "D": "white pot"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1,2 is farthest from red sofa in Image 3?",
+          "options": {
+            "A": "yellow painting",
+            "B": "black statue",
+            "C": "fireplace",
+            "D": "white pot"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "yellow painting, black statue, fireplace, white pot",
+            "B": "white pot, yellow painting, fireplace, black statue",
+            "C": "white pot, fireplace, yellow painting, black statue",
+            "D": "yellow painting, white pot, fireplace, black statue"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC3I-012": {
+      "id": "MVC3I-012",
+      "template_schema": 3,
+      "revision": 2,
+      "saved_at": "2026-09-29T18:41:53.455837+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2,3 is closest to deer statue in Image 1?",
+          "options": {
+            "A": "lamp",
+            "B": "black chair",
+            "C": "wooden desk",
+            "D": "gray doorway"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2,3 is farthest from deer statue in Image 1?",
+          "options": {
+            "A": "lamp",
+            "B": "black chair",
+            "C": "wooden desk",
+            "D": "gray doorway"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "lamp, black chair, wooden desk, gray doorway",
+            "B": "black chair, gray doorway, wooden desk, lamp",
+            "C": "wooden desk, gray doorway, lamp, black chair",
+            "D": "gray doorway, black chair, wooden desk, lamp"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC3I-014": {
+      "id": "MVC3I-014",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T18:46:45.730664+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2,3 is closest to poster in Image 1?",
+          "options": {
+            "A": "glass water pitcher",
+            "B": "sink",
+            "C": "tissue box",
+            "D": "ovens"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2,3 is farthest from poster in Image 1?",
+          "options": {
+            "A": "glass water pitcher",
+            "B": "sink",
+            "C": "tissue box",
+            "D": "ovens"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "ovens, tissue box, sink, glass water pitcher",
+            "B": "tissue box, ovens, sink, glass water pitcher",
+            "C": "glass water pitcher, ovens, sink, tissue box",
+            "D": "glass water pitcher, ovens, tissue box, sink"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-085": {
+      "id": "MVC-085",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T18:50:41.994507+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to fireplace in Image 1?",
+          "options": {
+            "A": "brown armchair",
+            "B": "potted plant",
+            "C": "white lamp",
+            "D": "white armchair"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from fireplace in Image 1?",
+          "options": {
+            "A": "brown armchair",
+            "B": "potted plant",
+            "C": "white lamp",
+            "D": "white armchair"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "brown armchair, potted plant, white lamp, white armchair",
+            "B": "white armchair, white lamp, brown armchair, potted plant",
+            "C": "potted plant, white armchair, white lamp, brown armchair",
+            "D": "brown armchair, white armchair, white lamp, potted plant"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-086": {
+      "id": "MVC-086",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T18:53:25.079620+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to tv in Image 1?",
+          "options": {
+            "A": "white ottoman",
+            "B": "white armchair",
+            "C": "bed",
+            "D": "potted plant"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from tv in Image 1?",
+          "options": {
+            "A": "white ottoman",
+            "B": "white armchair",
+            "C": "bed",
+            "D": "potted plant"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "white armchair, bed, potted plant, curtain",
+            "B": "potted plant, white armchair, bed, curtain",
+            "C": "bed, white armchair, potted plant, curtain",
+            "D": "bed, curtain, potted plant, white armchair"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-088": {
+      "id": "MVC-088",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T18:55:42.857330+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to colorful painting in Image 1?",
+          "options": {
+            "A": "black and white painting",
+            "B": "white ottoman",
+            "C": "white armchair",
+            "D": "tv"
+          },
+          "answer": "B",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from colorful painting in Image 1?",
+          "options": {
+            "A": "black and white painting",
+            "B": "white ottoman",
+            "C": "white armchair",
+            "D": "tv"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "colorful painting, white ottoman, white armchair, tv",
+            "B": "colorful painting, tv, white armchair, white ottoman",
+            "C": "white ottoman, tv, colorful painting, white armchair",
+            "D": "white ottoman, white armchair, colorful painting, tv"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-089": {
+      "id": "MVC-089",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T18:58:43.859443+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to large potted plant in Image 1?",
+          "options": {
+            "A": "small wooden desk",
+            "B": "framed painting",
+            "C": "low hallway",
+            "D": "white armchair"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from large potted plant in Image 1?",
+          "options": {
+            "A": "small wooden desk",
+            "B": "framed painting",
+            "C": "low hallway",
+            "D": "mirror"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "mirror, low hallway, framed painting, small wooden desk",
+            "B": "framed painting, mirror, low hallway, small wooden desk",
+            "C": "framed painting, low hallway, mirror, small wooden desk",
+            "D": "framed painting, mirror, small wooden desk, low hallway"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-091": {
+      "id": "MVC-091",
+      "template_schema": 3,
+      "revision": 2,
+      "saved_at": "2026-09-29T20:55:19.944998+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to fireplace in Image 2?",
+          "options": {
+            "A": "painting",
+            "B": "flowers in white vase",
+            "C": "tv",
+            "D": "microwave"
+          },
+          "answer": "B",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from fireplace in Image 2?",
+          "options": {
+            "A": "painting",
+            "B": "flowers in white vase",
+            "C": "tv",
+            "D": "microwave"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "painting, flowers in white vase, tv, fireplace",
+            "B": "fireplace, flowers in white vase, tv, painting",
+            "C": "flowers in white vase, tv, painting, fireplace",
+            "D": "painting, tv, flowers in white vase, fireplace"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-093": {
+      "id": "MVC-093",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T20:58:54.975679+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to tablet in Image 2?",
+          "options": {
+            "A": "orange armchair",
+            "B": "yellow painting",
+            "C": "fireplace",
+            "D": "white pot"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from tablet in Image 2?",
+          "options": {
+            "A": "orange armchair",
+            "B": "yellow painting",
+            "C": "fireplace",
+            "D": "white pot"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "orange armchair, yellow painting, fireplace, tablet",
+            "B": "fireplace, tablet, yellow painting, orange armchair",
+            "C": "orange armchair, yellow painting, tablet, fireplace",
+            "D": "orange armchair, fireplace, tablet, yellow painting"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-094": {
+      "id": "MVC-094",
+      "template_schema": 3,
+      "revision": 2,
+      "saved_at": "2026-09-29T21:01:54.283952+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to white armchair in Image 2?",
+          "options": {
+            "A": "bed",
+            "B": "lamp",
+            "C": "potted plant",
+            "D": "white ottoman"
+          },
+          "answer": "B",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from white armchair in Image 2?",
+          "options": {
+            "A": "bed",
+            "B": "lamp",
+            "C": "potted plant",
+            "D": "white ottoman"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-095": {
+      "id": "MVC-095",
+      "template_schema": 3,
+      "revision": 2,
+      "saved_at": "2026-09-29T21:04:55.075276+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to vase in Image 2?",
+          "options": {
+            "A": "white potted flowers",
+            "B": "gray armchair",
+            "C": "green potted flowers",
+            "D": "white armchair"
+          },
+          "answer": "B",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from vase in Image 2?",
+          "options": {
+            "A": "white potted flowers",
+            "B": "gray armchair",
+            "C": "green potted flowers",
+            "D": "white armchair"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "tall plant in a vase, gray armchair, green potted flowers, white armchair",
+            "B": "white armchair, tall plant in a vase, green potted flowers, gray armchair",
+            "C": "tall plant in a vase, white armchair, gray armchair, green potted flowers",
+            "D": "green potted flowers, gray armchair, tall plant in a vase, white armchair"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-097": {
+      "id": "MVC-097",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-29T21:17:09.377381+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to white chair in Image 2?",
+          "options": {
+            "A": "potted plant",
+            "B": "bed",
+            "C": "white door",
+            "D": "white ottoman near me"
+          },
+          "answer": "B",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from white chair in Image 2?",
+          "options": {
+            "A": "potted plant",
+            "B": "bed",
+            "C": "white ottoman near me",
+            "D": "framed paintings"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "potted plant, white ottoman near me, bed, white chair",
+            "B": "white chair, potted plant, white ottoman near me, bed",
+            "C": "white ottoman near me, white chair, bed, potted plant",
+            "D": "white chair, white ottoman near me, potted plant, bed"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-099": {
+      "id": "MVC-099",
+      "template_schema": 3,
+      "revision": 2,
+      "saved_at": "2026-09-30T19:51:22.614156+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to potted plant in Image 1?",
+          "options": {
+            "A": "gray chair",
+            "B": "wooden desk",
+            "C": "lamp",
+            "D": "bed"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from potted plant in Image 1?",
+          "options": {
+            "A": "gray chair",
+            "B": "wooden desk",
+            "C": "lamp",
+            "D": "bed"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "tall potted plant, yellow and red painting, wooden desk, bed",
+            "B": "wooden desk, bed, yellow and red painting, tall potted plant",
+            "C": "yellow and red painting, tall potted plant, bed, wooden desk",
+            "D": "bed, yellow and red painting, wooden desk, tall potted plant"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-100": {
+      "id": "MVC-100",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T20:13:07.716679+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to potted plant in Image 1?",
+          "options": {
+            "A": "gramophone",
+            "B": "framed picture",
+            "C": "wooden door",
+            "D": "wooden cabinet"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from potted plant in Image 1?",
+          "options": {
+            "A": "gramophone",
+            "B": "framed picture",
+            "C": "wooden door",
+            "D": "wooden cabinet"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "gramophone, framed picture, wooden door, wooden cabinet",
+            "B": "wooden door, wooden cabinet, framed picture, gramophone",
+            "C": "wooden door, gramophone, wooden cabinet, framed picture",
+            "D": "gramophone, wooden door, wooden cabinet, framed picture"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-101": {
+      "id": "MVC-101",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T20:21:54.355645+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to yellow pillow in Image 1?",
+          "options": {
+            "A": "plant in a blue pot",
+            "B": "white and brown box",
+            "C": "metal cup",
+            "D": "yellow bottles"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from yellow pillow in Image 1?",
+          "options": {
+            "A": "plant in a blue pot",
+            "B": "white and brown box",
+            "C": "metal cup",
+            "D": "yellow bottles"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "yellow pillow, glass large table, plant in a blue pot, yellow bottles",
+            "B": "yellow bottles, glass large table, yellow pillow, plant in a blue pot",
+            "C": "yellow pillow, yellow bottles, glass large table, plant in a blue pot",
+            "D": "yellow bottles, plant in a blue pot, yellow pillow, glass large table"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-103": {
+      "id": "MVC-103",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T20:24:04.531368+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to statue in Image 2?",
+          "options": {
+            "A": "lamp",
+            "B": "dark blue armchair",
+            "C": "wooden desk",
+            "D": "red bowl"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from statue in Image 2?",
+          "options": {
+            "A": "lamp",
+            "B": "dark blue armchair",
+            "C": "wooden desk",
+            "D": "red bowl"
+          },
+          "answer": "C",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "lamp, wooden desk, red bowl, statue",
+            "B": "lamp, wooden desk, statue, red bowl",
+            "C": "lamp, red bowl, wooden desk, statue",
+            "D": "lamp, statue, wooden desk, red bowl"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-104": {
+      "id": "MVC-104",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T20:29:52.808586+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to silver pot in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "silver pot, sink, stove, ovens",
+            "B": "stove, ovens, silver pot, sink",
+            "C": "ovens, stove, silver pot, sink",
+            "D": "sink, silver pot, stove, ovens"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-105": {
+      "id": "MVC-105",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T20:31:47.970209+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to round table in Image 2?",
+          "options": {
+            "A": "tv",
+            "B": "flowers in a vase",
+            "C": "empty vase",
+            "D": "white sofa"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from round table in Image 2?",
+          "options": {
+            "A": "blue cup",
+            "B": "flowers in a vase",
+            "C": "empty vase",
+            "D": "white sofa"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "tv, flowers in a vase, empty vase, round table",
+            "B": "round table, flowers in a vase, tv, empty vase",
+            "C": "round table, empty vase, tv, flowers in a vase",
+            "D": "round table, tv, empty vase, flowers in a vase"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-106": {
+      "id": "MVC-106",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T20:37:54.170870+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to black and white plate in Image 1?",
+          "options": {
+            "A": "hanged silver pot",
+            "B": "red purse",
+            "C": "mirror",
+            "D": "wooden shelf"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from black and white plate in Image 1?",
+          "options": {
+            "A": "hanged silver pot",
+            "B": "red purse",
+            "C": "mirror",
+            "D": "wooden shelf"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "black and white plate, red purse, mirror, wooden shelf",
+            "B": "wooden shelf, red purse, black and white plate, mirror",
+            "C": "mirror, black and white plate, red purse, wooden shelf",
+            "D": "black and white plate, mirror, red purse, wooden shelf"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-107": {
+      "id": "MVC-107",
+      "template_schema": 3,
+      "revision": 2,
+      "saved_at": "2026-09-30T20:42:37.676165+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to ovens in Image 1?",
+          "options": {
+            "A": "silver cans",
+            "B": "stove",
+            "C": "yellow bottle",
+            "D": "fruits"
+          },
+          "answer": "D",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from ovens in Image 1?",
+          "options": {
+            "A": "silver cans",
+            "B": "stove",
+            "C": "yellow bottle",
+            "D": "fruits"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "ovens, sink, stove, silver cans",
+            "B": "sink, stove, ovens, silver cans",
+            "C": "ovens, silver cans, stove, sink",
+            "D": "sink, stove, silver cans, ovens"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-108": {
+      "id": "MVC-108",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T20:44:01.179702+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "framed painting, sink, fireplace, ovens",
+            "B": "framed painting, ovens, fireplace, sink",
+            "C": "fireplace, sink, framed painting, ovens",
+            "D": "fireplace, framed painting, sink, ovens"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-109": {
+      "id": "MVC-109",
+      "template_schema": 3,
+      "revision": 2,
+      "saved_at": "2026-09-30T20:48:04.765921+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to round table in Image 2?",
+          "options": {
+            "A": "white flower",
+            "B": "painting",
+            "C": "fireplace",
+            "D": "lamp"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from round table in Image 2?",
+          "options": {
+            "A": "white flower",
+            "B": "painting",
+            "C": "white bowl",
+            "D": "lamp"
+          },
+          "answer": "B",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "round table, white flower, painting, white bowl",
+            "B": "white bowl, white flower, painting, round table",
+            "C": "white flower, round table, painting, white bowl",
+            "D": "white bowl, painting, white flower, round table"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-111": {
+      "id": "MVC-111",
+      "template_schema": 3,
+      "revision": 3,
+      "saved_at": "2026-09-30T20:49:47.416385+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "white pillow, silver plate, framed painting, armchair",
+            "B": "armchair, framed painting, white pillow, silver plate",
+            "C": "framed painting, white pillow, armchair, silver plate",
+            "D": "framed painting, armchair, white pillow, silver plate"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-112": {
+      "id": "MVC-112",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T20:50:23.641465+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "curtain, armchair, wooden table, long sofa",
+            "B": "wooden table, armchair, curtain, long sofa",
+            "C": "armchair, long sofa, curtain, wooden table",
+            "D": "long sofa, wooden table, curtain, armchair"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-115": {
+      "id": "MVC-115",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T20:54:10.023577+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "fireplace, small potted plant, tall potted plant, lamp",
+            "B": "lamp, small potted plant, tall potted plant, fireplace",
+            "C": "lamp, fireplace, tall potted plant, small potted plant",
+            "D": "tall potted plant, small potted plant, lamp, fireplace"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-116": {
+      "id": "MVC-116",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T20:55:05.717402+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "armchair, bed, wooden cabinet, round table",
+            "B": "armchair, wooden cabinet, bed, round table",
+            "C": "wooden cabinet, round table, bed, armchair",
+            "D": "round table, bed, wooden cabinet, armchair"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-117": {
+      "id": "MVC-117",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T20:55:51.819094+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "bed, wooden cabinet, wooden table, fireplace",
+            "B": "fireplace, bed, wooden table, wooden cabinet",
+            "C": "wooden cabinet, fireplace, bed, wooden table",
+            "D": "wooden table, bed, wooden cabinet, fireplace"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-120": {
+      "id": "MVC-120",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T20:59:11.600342+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "framed painting, window, fireplace, glass door",
+            "B": "window, fireplace, glass door, framed painting",
+            "C": "fireplace, framed painting, glass door, window",
+            "D": "window, fireplace, framed painting, glass door"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-121": {
+      "id": "MVC-121",
+      "template_schema": 3,
+      "revision": 2,
+      "saved_at": "2026-09-30T21:00:16.345530+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "bed, wooden table, lamp, tall potted plant",
+            "B": "bed, lamp, tall potted plant, wooden table",
+            "C": "lamp, tall potted plant, bed, wooden table",
+            "D": "tall potted plant, lamp, wooden table, bed"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-125": {
+      "id": "MVC-125",
+      "template_schema": 3,
+      "revision": 2,
+      "saved_at": "2026-09-30T21:08:26.927569+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "long sofa, armchair, painting, bed",
+            "B": "bed, armchair, long sofa, painting",
+            "C": "long sofa, bed, armchair, painting",
+            "D": "long sofa, armchair, bed, painting"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-129": {
+      "id": "MVC-129",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:10:12.288242+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "white cabinet, potted green plant, white desk, bed",
+            "B": "potted green plant, white desk, white cabinet, bed",
+            "C": "white desk, white cabinet, potted green plant, bed",
+            "D": "bed, white desk, potted green plant, white cabinet"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-130": {
+      "id": "MVC-130",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:10:49.830293+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "sink, fireplace, black chair, telephone",
+            "B": "sink, fireplace, telephone, black chair",
+            "C": "sink, telephone, fireplace, black chair",
+            "D": "telephone, fireplace, sink, black chair"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-132": {
+      "id": "MVC-132",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:12:27.782920+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 2 is closest to [object A] in Image 1?",
+          "options": {
+            "A": "sink",
+            "B": "glass can",
+            "C": "glass pot",
+            "D": "chair"
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 2 is farthest from [object A] in Image 1?",
+          "options": {
+            "A": "sink",
+            "B": "glass can",
+            "C": "glass pot",
+            "D": "chair"
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "sink, glass can, glass pot, chair",
+            "B": "chair, glass pot, glass can, sink",
+            "C": "glass can, sink, glass pot, chair",
+            "D": "glass can, chair, glass pot, sink"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-133": {
+      "id": "MVC-133",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:14:59.746859+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to glass table in Image 2?",
+          "options": {
+            "A": "chairs",
+            "B": "statue",
+            "C": "fireplace",
+            "D": "potted plant"
+          },
+          "answer": "A",
+          "ready": true,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from glass table in Image 2?",
+          "options": {
+            "A": "chairs",
+            "B": "statue",
+            "C": "fireplace",
+            "D": "potted plant"
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "glass table, statue, fireplace, tall potted plant",
+            "B": "statue, tall potted plant, fireplace, glass table",
+            "C": "glass table, fireplace, statue, tall potted plant",
+            "D": "statue, fireplace, glass table, tall potted plant"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-134": {
+      "id": "MVC-134",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:19:10.963460+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "doorway, window, large painting, fireplace",
+            "B": "large painting, fireplace, doorway, window",
+            "C": "large painting, fireplace, window, doorway",
+            "D": "fireplace, doorway, window, large painting"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-137": {
+      "id": "MVC-137",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:25:15.137130+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "blue pot, chair, doorway, framed painting",
+            "B": "framed painting, blue pot, doorway, chair",
+            "C": "doorway, chair, framed painting, blue pot",
+            "D": "doorway, framed painting, chair, blue pot"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-138": {
+      "id": "MVC-138",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:28:05.455814+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "yellow chair, sink, bed, window",
+            "B": "sink, yellow chair, bed, window",
+            "C": "yellow chair, window, sink, bed",
+            "D": "bed, sink, window, yellow chair"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-139": {
+      "id": "MVC-139",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:29:03.225455+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "framed painting, armchairs, doorway, bed",
+            "B": "armchairs, bed, framed painting, doorway",
+            "C": "armchairs, bed, doorway, framed painting",
+            "D": "framed painting, bed, armchairs, doorway"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-140": {
+      "id": "MVC-140",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:29:35.492825+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "long sofa, hallway, fireplace, tall potted painting",
+            "B": "long sofa, fireplace, hallway, tall potted painting",
+            "C": "hallway, tall potted painting, long sofa, fireplace",
+            "D": "hallway, fireplace, long sofa, tall potted painting"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-142": {
+      "id": "MVC-142",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:37:12.770627+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "lamp, blue pot, dining table, gray doors",
+            "B": "gray doors, dining table, lamp, blue pot",
+            "C": "gray doors, lamp, blue pot, dining table",
+            "D": "lamp, dining table, blue pot, gray doors"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-146": {
+      "id": "MVC-146",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:38:46.792138+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "white table, green umbrella, swing, campfire",
+            "B": "campfire, green umbrella, white table, swing",
+            "C": "white table, green umbrella, campfire, swing",
+            "D": "swing, campfire, green umbrella, white table"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-147": {
+      "id": "MVC-147",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:39:44.924536+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "wooden stool, refrigerator, yellow pot, wooden cabinet",
+            "B": "wooden stool, wooden cabinet, yellow pot, refrigerator",
+            "C": "wooden cabinet, refrigerator, wooden stool, yellow pot",
+            "D": "yellow pot, wooden stool, refrigerator, wooden cabinet"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-148": {
+      "id": "MVC-148",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:41:07.430808+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "fireplace, yellow sofa, red and yellow potted plant, green and white potted plant",
+            "B": "yellow sofa, green and white potted plant, red and yellow potted plant, fireplace",
+            "C": "fireplace, red and yellow potted plant, green and white potted plant, yellow sofa",
+            "D": "red and yellow potted plant, fireplace, green and white potted plant, yellow sofa"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-151": {
+      "id": "MVC-151",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:41:59.791093+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "black and white paintings, window, wooden cabinet, round table",
+            "B": "black and white paintings, round table, window, wooden cabinet",
+            "C": "round table, black and white paintings, wooden cabinet, window",
+            "D": "wooden cabinet, window, black and white paintings, round table"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-152": {
+      "id": "MVC-152",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:42:31.196439+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "wooden cabinet, large screen, monitor, white pillar",
+            "B": "monitor, wooden cabinet, white pillar, large screen",
+            "C": "monitor, white pillar, large screen, wooden cabinet",
+            "D": "white pillar, wooden cabinet, large screen, monitor"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-154": {
+      "id": "MVC-154",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:43:18.530713+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "mirror, window, bed, white ottoman",
+            "B": "window, bed, white ottoman, mirror",
+            "C": "bed, white ottoman, mirror, window",
+            "D": "bed, white ottoman, window, mirror"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-155": {
+      "id": "MVC-155",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:43:47.637626+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "tv, lamp, tall potted plant, painting",
+            "B": "lamp, painting, tall potted plant, tv",
+            "C": "tv, lamp, painting, tall potted plant",
+            "D": "lamp, tall potted plant, painting, tv"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-156": {
+      "id": "MVC-156",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:44:23.439146+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "blue and white flowers, stove, green armchair, sink",
+            "B": "blue and white flowers, stove, sink, green armchair",
+            "C": "blue and white flowers, sink, stove, green armchair",
+            "D": "green armchair, blue and white flowers, stove, sink"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-157": {
+      "id": "MVC-157",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T21:45:15.618802+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "ovens, hallway, tv, dark red vase",
+            "B": "dark red vase, hallway, tv, ovens",
+            "C": "dark red vase, hallway, ovens, tv",
+            "D": "dark red vase, tv, ovens, hallway"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    },
+    "MVC-159": {
+      "id": "MVC-159",
+      "template_schema": 3,
+      "revision": 1,
+      "saved_at": "2026-09-30T22:25:34.740841+00:00",
+      "questions": [
+        {
+          "slot": 1,
+          "type": "cross_view_closest",
+          "question": "Which object in Image 1 is closest to [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 2,
+          "type": "cross_view_farthest",
+          "question": "Which object in Image 1 is farthest from [object A] in Image 2?",
+          "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+          },
+          "answer": "",
+          "ready": false,
+          "reference_object": ""
+        },
+        {
+          "slot": 3,
+          "type": "ordering",
+          "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+          "options": {
+            "A": "bed, painting, white armchair, tv",
+            "B": "painting, bed, tv, white armchair",
+            "C": "bed, tv, white armchair, painting",
+            "D": "tv, painting, white armchair, bed"
+          },
+          "answer": "A",
+          "ready": true,
+          "order_direction": "left_to_right"
+        }
+      ]
+    }
+  },
+  "updated_at": "2026-09-30T22:25:34.740841+00:00",
+  "template_schema": 3
+}

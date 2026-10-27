@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-042-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-042-Q1",
+  "resource_id": "MVC-042",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to shelf in Image 2?",
+  "answer_choices": {
+    "A": "framed painting",
+    "B": "sofa",
+    "C": "bed",
+    "D": "white lamp"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "206d29020320d1d5d9d4613138cdd1213a3257c00c8bba9b9a7a42a5758eec6b",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-042\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4596,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 323
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      }
+    ],
+    "thoughts_token_count": 1520,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6117,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.942872300001909,
+  "completed_at": "2026-10-06T17:43:47-04:00"
+}

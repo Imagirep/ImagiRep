@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-178-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-178-Q3",
+  "resource_id": "MVC-178",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "plant in a white pot, wooden shelf, framed black painting, white painting",
+    "B": "framed black painting, wooden shelf, plant in a white pot, white painting",
+    "C": "framed black painting, white painting, wooden shelf, plant in a white pot",
+    "D": "wooden shelf, plant in a white pot, white painting, framed black painting"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "5f397918f36c4bc09f928b2c2987cc43ce29ebf775a9dcb45f1d509de95560a8",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-178\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3612,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 420
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1166,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4779,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 6.68381769998814,
+  "completed_at": "2026-10-06T17:32:18-04:00"
+}

@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-041-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-041-Q2",
+  "resource_id": "MVC-041",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from sink in Image 2?",
+  "answer_choices": {
+    "A": "microwave",
+    "B": "refrigerator",
+    "C": "wooden desk",
+    "D": "green bottles"
+  },
+  "gold_answer": "C",
+  "prediction": "D",
+  "correct": false,
+  "signature": "30789f443b0559bc97a2cc8d3574c0174fddef758817a2af4c9eaed750f79eff",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-041\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7885,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 283
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 2769,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 10655,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 14.221942200005287,
+  "completed_at": "2026-10-06T17:33:49-04:00"
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-188-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-188-Q3",
+  "resource_id": "MVC-188",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "brown armchair, long sofa, fireplace, wooden round table",
+    "B": "brown armchair, fireplace, long sofa, wooden round table",
+    "C": "fireplace, wooden round table, brown armchair, long sofa",
+    "D": "fireplace, brown armchair, long sofa, wooden round table"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "fd408461f56bb8e85e85dbfda5b95c4a12e0dbe9489e87d1b18cdf753dcc9c5f",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.311 m (near/red) to 6.258 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-188\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4646,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 390
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 1203,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5850,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.251081399997929,
+  "completed_at": "2026-10-06T17:39:28-04:00"
+}

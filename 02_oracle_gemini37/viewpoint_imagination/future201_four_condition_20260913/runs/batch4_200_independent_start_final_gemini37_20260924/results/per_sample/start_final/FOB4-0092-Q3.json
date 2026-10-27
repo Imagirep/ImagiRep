@@ -1,0 +1,104 @@
+{
+  "row_index": 33,
+  "question_id": "FOB4-0092-Q3",
+  "trajectory_id": "FOB4-0092",
+  "scan_id": "r47D5H71a5s",
+  "route_variant": "new_straight",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "final_image_kind": "lookback",
+  "question": "If I walk through the door and turn to face my starting point, then turn to face my starting point, would the glass shelf still be directly visible?",
+  "answer_choices": {
+    "C": "completely blocked",
+    "A": "clearly visible",
+    "B": "partially visible",
+    "D": "outside of view"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "C": "C",
+    "A": "A",
+    "B": "B",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0092\\start_view.png",
+      "sha256": "b7a913ae582210cc00c8133dca8c4500f56d542b836e7c876dcca7ed08eba8be"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0092\\step_01_rgb.png",
+      "sha256": "641eeb336a4acb956e9376d802cab69a20b57d0d282acb3578ce909d120bb902"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0092\\step_02_rgb.png",
+      "sha256": "8d68fb08026974b0aad7510e92fd518c0a363f711220eb26b045b1da60e5285f"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0092\\oracle_lookback.png",
+      "sha256": "e0fac27ad317083fbec6c3d9ccf799dc07633e24a64947da5106070f622634d9"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2275,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 147
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 3796,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6072,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-24T17:29:09-04:00"
+}

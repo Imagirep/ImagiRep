@@ -1,0 +1,1 @@
+{"uid": "last50__MVC-180-Q2", "category": "cross_view_farthest", "reason": "An estimated depth map would help compare distances from the plant across the views.", "choice": "depth", "usage": {"input_tokens": 3424, "input_tokens_details": {"cache_write_tokens": 3421, "cached_tokens": 0}, "output_tokens": 96, "output_tokens_details": {"reasoning_tokens": 63}, "total_tokens": 3520}}

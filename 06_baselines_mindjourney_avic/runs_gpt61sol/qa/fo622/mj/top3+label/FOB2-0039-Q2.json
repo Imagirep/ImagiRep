@@ -1,0 +1,1 @@
+{"qid": "FOB2-0039-Q2", "method": "mj", "variant": "top3+label", "prediction": "behind", "gold": "right", "correct": false, "n_imagined": 3, "category": "nearest_obstacle_direction", "stored_result": "wrong"}

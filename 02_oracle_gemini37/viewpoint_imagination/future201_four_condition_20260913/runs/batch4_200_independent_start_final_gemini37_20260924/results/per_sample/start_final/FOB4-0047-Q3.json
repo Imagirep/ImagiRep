@@ -1,0 +1,104 @@
+{
+  "row_index": 53,
+  "question_id": "FOB4-0047-Q3",
+  "trajectory_id": "FOB4-0047",
+  "scan_id": "i5noydFURQK",
+  "route_variant": "old_bent",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": true,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "final_image_kind": "lookback",
+  "question": "If I walk forward, walk through the first doorway on the right, then turn around, then turn to face my starting point, would the framed photos still be directly visible?",
+  "answer_choices": {
+    "C": "clearly visible",
+    "A": "outside of view",
+    "B": "completely blocked",
+    "D": "partially visible"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "C": "A",
+    "A": "D",
+    "B": "C",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0047\\start_view.png",
+      "sha256": "0e18561bb3405eaabd199d1dde4fab1ed213a28a418e4235e282df9b2c09a170"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0047\\step_01_rgb.png",
+      "sha256": "5658d483c675272ecdfe71a2c3238ede91c28ca12b836587b025872a79ff78ec"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0047\\step_02_rgb.png",
+      "sha256": "0349ffddeac9028bd49727665f87fd11896950c01a6450f5be10f9d3e143c2cd"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0047\\oracle_lookback.png",
+      "sha256": "a3faa66c3570ed250cece71e47beb053cd5b205dee1b2f298793bee2ed823bbe"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "B",
+  "correct": false,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2279,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 151
+      }
+    ],
+    "thoughts_token_count": 1951,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4230,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "completed_at": "2026-09-24T17:29:31-04:00"
+}

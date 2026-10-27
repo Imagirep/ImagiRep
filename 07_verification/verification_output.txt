@@ -1,0 +1,556 @@
+FO622 uids: 622 | MVC300 uids: 300 | benchmark MVC == final set: True
+
+GPT oracle run models: Counter({'gpt-6.1-sol': 7376}) file mtimes {'observed': ('2026-10-07T10:03', '2026-10-07T11:49'), 'oracle_video': ('2026-10-07T13:23', '2026-10-07T14:10')}
+
+### T1 GPT oracle VI
+| type | Observed view | + Endpoint RGB | Top-down | Text | Video | Depth | Normals | Panorama | Oracle selection |
+|---|---|---|---|---|---|---|---|---|---|
+| open_space_direction | 60.4 [55/91] | 57.1 [52/91] | 74.7 [68/91] | 69.2 [63/91] | 65.9 [60/91] | 64.8 [59/91] | 61.5 [56/91] | 73.6 [67/91] | 89.0 [81/91] |
+| nearest_obstacle_direction | 38.2 [21/55] | 49.1 [27/55] | 61.8 [34/55] | 58.2 [32/55] | 60.0 [33/55] | 63.6 [35/55] | 58.2 [32/55] | 65.5 [36/55] | 81.8 [45/55] |
+| visibility | 39.4 [41/104] | 64.4 [67/104] | 73.1 [76/104] | 71.2 [74/104] | 76.0 [79/104] | 73.1 [76/104] | 75.0 [78/104] | 76.9 [80/104] | 80.8 [84/104] |
+| nearest_object | 51.0 [53/104] | 64.4 [67/104] | 76.9 [80/104] | 73.1 [76/104] | 76.0 [79/104] | 76.9 [80/104] | 71.2 [74/104] | 80.8 [84/104] | 87.5 [91/104] |
+| farthest_object | 68.4 [67/98] | 58.2 [57/98] | 75.5 [74/98] | 67.3 [66/98] | 72.4 [71/98] | 70.4 [69/98] | 67.3 [66/98] | 71.4 [70/98] | 87.8 [86/98] |
+| object_relative_direction | 70.0 [119/170] | 82.9 [141/170] | 88.2 [150/170] | 87.6 [149/170] | 89.4 [152/170] | 86.5 [147/170] | 85.9 [146/170] | 91.8 [156/170] | 92.4 [157/170] |
+| ALL | 57.2 [356/622] | 66.1 [411/622] | 77.5 [482/622] | 74.0 [460/622] | 76.2 [474/622] | 74.9 [466/622] | 72.7 [452/622] | 79.3 [493/622] | 87.5 [544/622] |
+
+### T1 GPT oracle CV
+| type | Observed view | + Endpoint RGB | Top-down | Text | Video | Depth | Normals | Panorama | Oracle selection |
+|---|---|---|---|---|---|---|---|---|---|
+| cross_view_closest | 56.8 [46/81] | 74.1 [60/81] | 79.0 [64/81] | 79.0 [64/81] | 77.8 [63/81] | 84.0 [68/81] | 80.2 [65/81] | 76.5 [62/81] | 87.7 [71/81] |
+| cross_view_farthest | 59.8 [49/82] | 54.9 [45/82] | 70.7 [58/82] | 67.1 [55/82] | 69.5 [57/82] | 69.5 [57/82] | 59.8 [49/82] | 64.6 [53/82] | 85.4 [70/82] |
+| ordering | 79.6 [109/137] | 89.1 [122/137] | 92.0 [126/137] | 95.6 [131/137] | 94.2 [129/137] | 94.2 [129/137] | 92.7 [127/137] | 95.6 [131/137] | 97.8 [134/137] |
+| ALL | 68.0 [204/300] | 75.7 [227/300] | 82.7 [248/300] | 83.3 [250/300] | 83.0 [249/300] | 84.7 [254/300] | 80.3 [241/300] | 82.0 [246/300] | 91.7 [275/300] |
+
+GPT question-only models Counter({'gpt-6.1-sol': 922}) ('2026-10-09T12:07', '2026-10-09T12:11')
+
+Gemini VI batches (question counts by source batch): {1: 145, 2: 171, 3: 131, 4: 175}
+
+### T7 Gemini oracle VI
+| type | Observed view | + Endpoint RGB | Top-down | Text | Video | Depth | Normals | Panorama | Oracle selection |
+|---|---|---|---|---|---|---|---|---|---|
+| open_space_direction | 52.7 [48/91] | 58.2 [53/91] | 67.0 [61/91] | 63.7 [58/91] | 63.7 [58/91] | 69.2 [63/91] | 63.7 [58/91] | 74.7 [68/91] | 85.7 [78/91] |
+| nearest_obstacle_direction | 36.4 [20/55] | 45.5 [25/55] | 61.8 [34/55] | 54.5 [30/55] | 56.4 [31/55] | 52.7 [29/55] | 52.7 [29/55] | 56.4 [31/55] | 74.5 [41/55] |
+| visibility | 32.7 [34/104] | 49.0 [51/104] | 57.7 [60/104] | 57.7 [60/104] | 55.8 [58/104] | 56.7 [59/104] | 51.9 [54/104] | 55.8 [58/104] | 69.2 [72/104] |
+| nearest_object | 51.9 [54/104] | 65.4 [68/104] | 75.0 [78/104] | 70.2 [73/104] | 68.3 [71/104] | 71.2 [74/104] | 69.2 [72/104] | 70.2 [73/104] | 80.8 [84/104] |
+| farthest_object | 66.3 [65/98] | 65.3 [64/98] | 75.5 [74/98] | 68.4 [67/98] | 69.4 [68/98] | 73.5 [72/98] | 69.4 [68/98] | 71.4 [70/98] | 80.6 [79/98] |
+| object_relative_direction | 66.5 [113/170] | 79.4 [135/170] | 86.5 [147/170] | 84.1 [143/170] | 87.6 [149/170] | 84.1 [143/170] | 82.9 [141/170] | 87.1 [148/170] | 93.5 [159/170] |
+| ALL | 53.7 [334/622] | 63.7 [396/622] | 73.0 [454/622] | 69.3 [431/622] | 69.9 [435/622] | 70.7 [440/622] | 67.8 [422/622] | 72.0 [448/622] | 82.5 [513/622] |
+
+### T9 per-type best representation (Gemini VI): endpoint correct / rescued per representation
+open_space_direction: n=91 endpoint=53 rescued={'topdown': 8, 'text': 5, 'video': 5, 'depth': 10, 'surface_normals': 5, 'panorama': 15} best=['panorama'] | paper panorama 53+15=68 gain 16.5
+nearest_obstacle_direction: n=55 endpoint=25 rescued={'topdown': 9, 'text': 5, 'video': 6, 'depth': 4, 'surface_normals': 4, 'panorama': 6} best=['topdown'] | paper topdown 25+9=34 gain 16.4
+visibility: n=104 endpoint=51 rescued={'topdown': 9, 'text': 9, 'video': 7, 'depth': 8, 'surface_normals': 3, 'panorama': 7} best=['topdown', 'text'] | paper text 51+9=60 gain 8.7
+nearest_object: n=104 endpoint=68 rescued={'topdown': 10, 'text': 5, 'video': 3, 'depth': 6, 'surface_normals': 4, 'panorama': 5} best=['topdown'] | paper topdown 68+10=78 gain 9.6
+farthest_object: n=98 endpoint=64 rescued={'topdown': 10, 'text': 3, 'video': 4, 'depth': 8, 'surface_normals': 4, 'panorama': 6} best=['topdown'] | paper topdown 64+10=74 gain 10.2
+object_relative_direction: n=170 endpoint=135 rescued={'topdown': 12, 'text': 8, 'video': 14, 'depth': 8, 'surface_normals': 6, 'panorama': 13} best=['video'] | paper video 135+14=149 gain 8.2
+
+Gemini MVC models {('text_only', 'gemini-3.7-flash'): 300, ('original_only', 'gemini-3.7-flash'): 300, ('oracle_rgb', 'gemini-3.7-flash'): 300, ('oracle', 'gemini-3.7-flash'): 1800} completed_at range 2026-09-30T18:33:34 2026-10-06T19:42:42-04:00
+Gemini MVC final-set missing records: 0
+
+### T7 Gemini oracle CV
+| type | Observed view | + Endpoint RGB | Top-down | Text | Video | Depth | Normals | Panorama | Oracle selection | Question only |
+|---|---|---|---|---|---|---|---|---|---|---|
+| cross_view_closest | 60.5 [49/81] | 75.3 [61/81] | 80.2 [65/81] | 80.2 [65/81] | 80.2 [65/81] | 81.5 [66/81] | 79.0 [64/81] | 80.2 [65/81] | 84.0 [68/81] | 30.9 [25/81] |
+| cross_view_farthest | 59.8 [49/82] | 62.2 [51/82] | 73.2 [60/82] | 65.9 [54/82] | 72.0 [59/82] | 68.3 [56/82] | 68.3 [56/82] | 69.5 [57/82] | 79.3 [65/82] | 36.6 [30/82] |
+| ordering | 73.7 [101/137] | 90.5 [124/137] | 94.9 [130/137] | 95.6 [131/137] | 96.4 [132/137] | 94.9 [130/137] | 95.6 [131/137] | 93.4 [128/137] | 97.8 [134/137] | 24.8 [34/137] |
+| ALL | 66.3 [199/300] | 78.7 [236/300] | 85.0 [255/300] | 83.3 [250/300] | 85.3 [256/300] | 84.0 [252/300] | 83.7 [251/300] | 83.3 [250/300] | 89.0 [267/300] | 29.7 [89/300] |
+
+GPT estimated VI models Counter({'gpt-6.1-sol': 4976}) ('2026-10-09T22:04', '2026-10-09T22:35')
+
+### T4 GPT estimated VI
+| type | Observed view | + Est. endpoint RGB | Top-down | Text | Video | Depth | Normals | Panorama |
+|---|---|---|---|---|---|---|---|---|
+| open_space_direction | 60.4 [55/91] | 52.7 [48/91] | 63.7 [58/91] | 60.4 [55/91] | 62.6 [57/91] | 57.1 [52/91] | 57.1 [52/91] | 70.3 [64/91] |
+| nearest_obstacle_direction | 38.2 [21/55] | 45.5 [25/55] | 56.4 [31/55] | 54.5 [30/55] | 61.8 [34/55] | 54.5 [30/55] | 52.7 [29/55] | 60.0 [33/55] |
+| visibility | 39.4 [41/104] | 47.1 [49/104] | 50.0 [52/104] | 51.9 [54/104] | 54.8 [57/104] | 52.9 [55/104] | 52.9 [55/104] | 56.7 [59/104] |
+| nearest_object | 51.0 [53/104] | 49.0 [51/104] | 57.7 [60/104] | 56.7 [59/104] | 59.6 [62/104] | 61.5 [64/104] | 58.7 [61/104] | 59.6 [62/104] |
+| farthest_object | 68.4 [67/98] | 53.1 [52/98] | 62.2 [61/98] | 69.4 [68/98] | 70.4 [69/98] | 66.3 [65/98] | 67.3 [66/98] | 63.3 [62/98] |
+| object_relative_direction | 70.0 [119/170] | 67.6 [115/170] | 72.4 [123/170] | 73.5 [125/170] | 72.4 [123/170] | 71.2 [121/170] | 71.2 [121/170] | 75.3 [128/170] |
+| ALL | 57.2 [356/622] | 54.7 [340/622] | 61.9 [385/622] | 62.9 [391/622] | 64.6 [402/622] | 62.2 [387/622] | 61.7 [384/622] | 65.6 [408/622] |
+
+GPT estimated CV models Counter({'gpt-6.1-sol': 600}) ('2026-10-10T18:30', '2026-10-10T18:34')
+
+### T5 GPT estimated CV
+| type | Observed view | + Est. RGB | + Est. depth |
+|---|---|---|---|
+| cross_view_closest | 56.8 [46/81] | 74.1 [60/81] | 79.0 [64/81] |
+| cross_view_farthest | 59.8 [49/82] | 54.9 [45/82] | 65.9 [54/82] |
+| ordering | 79.6 [109/137] | 89.8 [123/137] | 93.4 [128/137] |
+| ALL | 68.0 [204/300] | 76.0 [228/300] | 82.0 [246/300] |
+
+Gate-2 choices: S2 Counter({'panorama': 105, 'start_only': 78, 'topdown': 63}) | S2MV Counter({'est_rgb': 43, 'depth': 21}) | S2NE Counter({'start_only': 268, 'panorama': 250, 'topdown': 104}) | S2MVN Counter({'est_rgb': 216, 'depth': 82, 'start_only': 2})
+gate-1 disagreements VI 246 covered by S2: True | CV 64 covered by S2MV: True
+
+### T10a gating ablation VI
+| type | No gate | +Gating | +Routing | Gating+Routing |
+|---|---|---|---|---|
+| open_space_direction | 52.7 [48/91] | 60.4 [55/91] | 56.0 [51/91] | 63.7 [58/91] |
+| nearest_obstacle_direction | 49.1 [27/55] | 52.7 [29/55] | 49.1 [27/55] | 54.5 [30/55] |
+| visibility | 44.2 [46/104] | 44.2 [46/104] | 43.3 [45/104] | 48.1 [50/104] |
+| nearest_object | 54.8 [57/104] | 54.8 [57/104] | 52.9 [55/104] | 55.8 [58/104] |
+| farthest_object | 58.2 [57/98] | 63.3 [62/98] | 68.4 [67/98] | 68.4 [67/98] |
+| object_relative_direction | 61.8 [105/170] | 68.8 [117/170] | 70.0 [119/170] | 70.0 [119/170] |
+| ALL | 54.7 [340/622] | 58.8 [366/622] | 58.5 [364/622] | 61.4 [382/622] |
+
+### T10b gating ablation CV
+| type | No gate | +Gating | +Routing | Gating+Routing |
+|---|---|---|---|---|
+| cross_view_closest | 72.8 [59/81] | 71.6 [58/81] | 74.1 [60/81] | 74.1 [60/81] |
+| cross_view_farthest | 61.0 [50/82] | 61.0 [50/82] | 61.0 [50/82] | 61.0 [50/82] |
+| ordering | 89.8 [123/137] | 88.3 [121/137] | 89.8 [123/137] | 89.8 [123/137] |
+| ALL | 77.3 [232/300] | 76.3 [229/300] | 77.7 [233/300] | 77.7 [233/300] |
+
+MJ/AVIC final-QA record counts {('fo622', 'mj'): 622, ('fo622', 'avic'): 622, ('mvc300', 'mj'): 300, ('mvc300', 'avic'): 300} | raw pipeline counts {('fo622', 'mj'): 0, ('fo622', 'avic'): 0, ('mvc300', 'mj'): 0, ('mvc300', 'avic'): 0}
+
+### T6 baselines VI
+| type | MindJourney | AVIC | GEARS |
+|---|---|---|---|
+| open_space_direction | 53.8 [49/91] | 51.6 [47/91] | 63.7 [58/91] |
+| nearest_obstacle_direction | 52.7 [29/55] | 49.1 [27/55] | 54.5 [30/55] |
+| visibility | 45.2 [47/104] | 46.2 [48/104] | 48.1 [50/104] |
+| nearest_object | 53.8 [56/104] | 51.0 [53/104] | 55.8 [58/104] |
+| farthest_object | 69.4 [68/98] | 63.3 [62/98] | 68.4 [67/98] |
+| object_relative_direction | 67.1 [114/170] | 62.4 [106/170] | 70.0 [119/170] |
+| ALL | 58.4 [363/622] | 55.1 [343/622] | 61.4 [382/622] |
+
+### T6 baselines CV
+| type | MindJourney | AVIC | GEARS |
+|---|---|---|---|
+| cross_view_closest | 61.7 [50/81] | 59.3 [48/81] | 74.1 [60/81] |
+| cross_view_farthest | 62.2 [51/82] | 51.2 [42/82] | 61.0 [50/82] |
+| ordering | 81.8 [112/137] | 85.4 [117/137] | 89.8 [123/137] |
+| ALL | 71.0 [213/300] | 69.0 [207/300] | 77.7 [233/300] |
+MVC resources without a local manifest copy: []
+
+Nav plans: n=622; oracle route length min 0.89 m, max 8.31 m, median 4.22; points-1 per route {3: 46, 2: 435, 1: 141}
+
+
+## ALL CHECKS (paper vs recomputed)
+| item | paper | recomputed | status |
+|---|---|---|---|
+| T1 GPT oracle VI | Observed view | open_space_direction | 60.4 | 60.4 | OK |
+| T1 GPT oracle VI | + Endpoint RGB | open_space_direction | 57.1 | 57.1 | OK |
+| T1 GPT oracle VI | Top-down | open_space_direction | 74.7 | 74.7 | OK |
+| T1 GPT oracle VI | Text | open_space_direction | 69.2 | 69.2 | OK |
+| T1 GPT oracle VI | Video | open_space_direction | 65.9 | 65.9 | OK |
+| T1 GPT oracle VI | Depth | open_space_direction | 64.8 | 64.8 | OK |
+| T1 GPT oracle VI | Normals | open_space_direction | 61.5 | 61.5 | OK |
+| T1 GPT oracle VI | Panorama | open_space_direction | 73.6 | 73.6 | OK |
+| T1 GPT oracle VI | Oracle selection | open_space_direction | 89.0 | 89.0 | OK |
+| T1 GPT oracle VI | Observed view | nearest_obstacle_direction | 38.2 | 38.2 | OK |
+| T1 GPT oracle VI | + Endpoint RGB | nearest_obstacle_direction | 49.1 | 49.1 | OK |
+| T1 GPT oracle VI | Top-down | nearest_obstacle_direction | 61.8 | 61.8 | OK |
+| T1 GPT oracle VI | Text | nearest_obstacle_direction | 58.2 | 58.2 | OK |
+| T1 GPT oracle VI | Video | nearest_obstacle_direction | 60.0 | 60.0 | OK |
+| T1 GPT oracle VI | Depth | nearest_obstacle_direction | 63.6 | 63.6 | OK |
+| T1 GPT oracle VI | Normals | nearest_obstacle_direction | 58.2 | 58.2 | OK |
+| T1 GPT oracle VI | Panorama | nearest_obstacle_direction | 65.5 | 65.5 | OK |
+| T1 GPT oracle VI | Oracle selection | nearest_obstacle_direction | 81.8 | 81.8 | OK |
+| T1 GPT oracle VI | Observed view | visibility | 39.4 | 39.4 | OK |
+| T1 GPT oracle VI | + Endpoint RGB | visibility | 64.4 | 64.4 | OK |
+| T1 GPT oracle VI | Top-down | visibility | 73.1 | 73.1 | OK |
+| T1 GPT oracle VI | Text | visibility | 71.2 | 71.2 | OK |
+| T1 GPT oracle VI | Video | visibility | 76.0 | 76.0 | OK |
+| T1 GPT oracle VI | Depth | visibility | 73.1 | 73.1 | OK |
+| T1 GPT oracle VI | Normals | visibility | 75.0 | 75.0 | OK |
+| T1 GPT oracle VI | Panorama | visibility | 76.9 | 76.9 | OK |
+| T1 GPT oracle VI | Oracle selection | visibility | 80.8 | 80.8 | OK |
+| T1 GPT oracle VI | Observed view | nearest_object | 51.0 | 51.0 | OK |
+| T1 GPT oracle VI | + Endpoint RGB | nearest_object | 64.4 | 64.4 | OK |
+| T1 GPT oracle VI | Top-down | nearest_object | 76.9 | 76.9 | OK |
+| T1 GPT oracle VI | Text | nearest_object | 73.1 | 73.1 | OK |
+| T1 GPT oracle VI | Video | nearest_object | 76.0 | 76.0 | OK |
+| T1 GPT oracle VI | Depth | nearest_object | 76.9 | 76.9 | OK |
+| T1 GPT oracle VI | Normals | nearest_object | 71.2 | 71.2 | OK |
+| T1 GPT oracle VI | Panorama | nearest_object | 80.8 | 80.8 | OK |
+| T1 GPT oracle VI | Oracle selection | nearest_object | 87.5 | 87.5 | OK |
+| T1 GPT oracle VI | Observed view | farthest_object | 68.4 | 68.4 | OK |
+| T1 GPT oracle VI | + Endpoint RGB | farthest_object | 58.2 | 58.2 | OK |
+| T1 GPT oracle VI | Top-down | farthest_object | 75.5 | 75.5 | OK |
+| T1 GPT oracle VI | Text | farthest_object | 67.3 | 67.3 | OK |
+| T1 GPT oracle VI | Video | farthest_object | 72.4 | 72.4 | OK |
+| T1 GPT oracle VI | Depth | farthest_object | 70.4 | 70.4 | OK |
+| T1 GPT oracle VI | Normals | farthest_object | 67.3 | 67.3 | OK |
+| T1 GPT oracle VI | Panorama | farthest_object | 71.4 | 71.4 | OK |
+| T1 GPT oracle VI | Oracle selection | farthest_object | 87.8 | 87.8 | OK |
+| T1 GPT oracle VI | Observed view | object_relative_direction | 70.0 | 70.0 | OK |
+| T1 GPT oracle VI | + Endpoint RGB | object_relative_direction | 82.9 | 82.9 | OK |
+| T1 GPT oracle VI | Top-down | object_relative_direction | 88.2 | 88.2 | OK |
+| T1 GPT oracle VI | Text | object_relative_direction | 87.6 | 87.6 | OK |
+| T1 GPT oracle VI | Video | object_relative_direction | 89.4 | 89.4 | OK |
+| T1 GPT oracle VI | Depth | object_relative_direction | 86.5 | 86.5 | OK |
+| T1 GPT oracle VI | Normals | object_relative_direction | 85.9 | 85.9 | OK |
+| T1 GPT oracle VI | Panorama | object_relative_direction | 91.8 | 91.8 | OK |
+| T1 GPT oracle VI | Oracle selection | object_relative_direction | 92.4 | 92.4 | OK |
+| T1 GPT oracle VI | Observed view | ALL | 57.2 | 57.2 | OK |
+| T1 GPT oracle VI | + Endpoint RGB | ALL | 66.1 | 66.1 | OK |
+| T1 GPT oracle VI | Top-down | ALL | 77.5 | 77.5 | OK |
+| T1 GPT oracle VI | Text | ALL | 74.0 | 74.0 | OK |
+| T1 GPT oracle VI | Video | ALL | 76.2 | 76.2 | OK |
+| T1 GPT oracle VI | Depth | ALL | 74.9 | 74.9 | OK |
+| T1 GPT oracle VI | Normals | ALL | 72.7 | 72.7 | OK |
+| T1 GPT oracle VI | Panorama | ALL | 79.3 | 79.3 | OK |
+| T1 GPT oracle VI | Oracle selection | ALL | 87.5 | 87.5 | OK |
+| T1 GPT oracle CV | Observed view | cross_view_closest | 56.8 | 56.8 | OK |
+| T1 GPT oracle CV | + Endpoint RGB | cross_view_closest | 74.1 | 74.1 | OK |
+| T1 GPT oracle CV | Top-down | cross_view_closest | 79.0 | 79.0 | OK |
+| T1 GPT oracle CV | Text | cross_view_closest | 79.0 | 79.0 | OK |
+| T1 GPT oracle CV | Video | cross_view_closest | 77.8 | 77.8 | OK |
+| T1 GPT oracle CV | Depth | cross_view_closest | 84.0 | 84.0 | OK |
+| T1 GPT oracle CV | Normals | cross_view_closest | 80.2 | 80.2 | OK |
+| T1 GPT oracle CV | Panorama | cross_view_closest | 76.5 | 76.5 | OK |
+| T1 GPT oracle CV | Oracle selection | cross_view_closest | 87.7 | 87.7 | OK |
+| T1 GPT oracle CV | Observed view | cross_view_farthest | 59.8 | 59.8 | OK |
+| T1 GPT oracle CV | + Endpoint RGB | cross_view_farthest | 54.9 | 54.9 | OK |
+| T1 GPT oracle CV | Top-down | cross_view_farthest | 70.7 | 70.7 | OK |
+| T1 GPT oracle CV | Text | cross_view_farthest | 67.1 | 67.1 | OK |
+| T1 GPT oracle CV | Video | cross_view_farthest | 69.5 | 69.5 | OK |
+| T1 GPT oracle CV | Depth | cross_view_farthest | 69.5 | 69.5 | OK |
+| T1 GPT oracle CV | Normals | cross_view_farthest | 59.8 | 59.8 | OK |
+| T1 GPT oracle CV | Panorama | cross_view_farthest | 64.6 | 64.6 | OK |
+| T1 GPT oracle CV | Oracle selection | cross_view_farthest | 85.4 | 85.4 | OK |
+| T1 GPT oracle CV | Observed view | ordering | 79.6 | 79.6 | OK |
+| T1 GPT oracle CV | + Endpoint RGB | ordering | 89.1 | 89.1 | OK |
+| T1 GPT oracle CV | Top-down | ordering | 92.0 | 92.0 | OK |
+| T1 GPT oracle CV | Text | ordering | 95.6 | 95.6 | OK |
+| T1 GPT oracle CV | Video | ordering | 94.2 | 94.2 | OK |
+| T1 GPT oracle CV | Depth | ordering | 94.2 | 94.2 | OK |
+| T1 GPT oracle CV | Normals | ordering | 92.7 | 92.7 | OK |
+| T1 GPT oracle CV | Panorama | ordering | 95.6 | 95.6 | OK |
+| T1 GPT oracle CV | Oracle selection | ordering | 97.8 | 97.8 | OK |
+| T1 GPT oracle CV | Observed view | ALL | 68.0 | 68.0 | OK |
+| T1 GPT oracle CV | + Endpoint RGB | ALL | 75.7 | 75.7 | OK |
+| T1 GPT oracle CV | Top-down | ALL | 82.7 | 82.7 | OK |
+| T1 GPT oracle CV | Text | ALL | 83.3 | 83.3 | OK |
+| T1 GPT oracle CV | Video | ALL | 83.0 | 83.0 | OK |
+| T1 GPT oracle CV | Depth | ALL | 84.7 | 84.7 | OK |
+| T1 GPT oracle CV | Normals | ALL | 80.3 | 80.3 | OK |
+| T1 GPT oracle CV | Panorama | ALL | 82.0 | 82.0 | OK |
+| T1 GPT oracle CV | Oracle selection | ALL | 91.7 | 91.7 | OK |
+| T2 GPT question-only VI | 31.0 | 31.0 | OK |
+| T2 GPT question-only CV | 31.0 | 31.0 | OK |
+| T2 GPT observed VI | 57.2 | 57.2 | OK |
+| T2 GPT observed CV | 68.0 | 68.0 | OK |
+| T2 GPT +oracle RGB VI | 66.1 | 66.1 | OK |
+| T2 GPT +oracle RGB CV | 75.7 | 75.7 | OK |
+| T7 Gemini oracle VI | Observed view | open_space_direction | 52.7 | 52.7 | OK |
+| T7 Gemini oracle VI | + Endpoint RGB | open_space_direction | 58.2 | 58.2 | OK |
+| T7 Gemini oracle VI | Top-down | open_space_direction | 67.0 | 67.0 | OK |
+| T7 Gemini oracle VI | Text | open_space_direction | 63.7 | 63.7 | OK |
+| T7 Gemini oracle VI | Video | open_space_direction | 63.7 | 63.7 | OK |
+| T7 Gemini oracle VI | Depth | open_space_direction | 69.2 | 69.2 | OK |
+| T7 Gemini oracle VI | Normals | open_space_direction | 63.7 | 63.7 | OK |
+| T7 Gemini oracle VI | Panorama | open_space_direction | 74.7 | 74.7 | OK |
+| T7 Gemini oracle VI | Oracle selection | open_space_direction | 85.7 | 85.7 | OK |
+| T7 Gemini oracle VI | Observed view | nearest_obstacle_direction | 36.4 | 36.4 | OK |
+| T7 Gemini oracle VI | + Endpoint RGB | nearest_obstacle_direction | 45.5 | 45.5 | OK |
+| T7 Gemini oracle VI | Top-down | nearest_obstacle_direction | 61.8 | 61.8 | OK |
+| T7 Gemini oracle VI | Text | nearest_obstacle_direction | 54.5 | 54.5 | OK |
+| T7 Gemini oracle VI | Video | nearest_obstacle_direction | 56.4 | 56.4 | OK |
+| T7 Gemini oracle VI | Depth | nearest_obstacle_direction | 52.7 | 52.7 | OK |
+| T7 Gemini oracle VI | Normals | nearest_obstacle_direction | 52.7 | 52.7 | OK |
+| T7 Gemini oracle VI | Panorama | nearest_obstacle_direction | 56.4 | 56.4 | OK |
+| T7 Gemini oracle VI | Oracle selection | nearest_obstacle_direction | 74.5 | 74.5 | OK |
+| T7 Gemini oracle VI | Observed view | visibility | 32.7 | 32.7 | OK |
+| T7 Gemini oracle VI | + Endpoint RGB | visibility | 49.0 | 49.0 | OK |
+| T7 Gemini oracle VI | Top-down | visibility | 57.7 | 57.7 | OK |
+| T7 Gemini oracle VI | Text | visibility | 57.7 | 57.7 | OK |
+| T7 Gemini oracle VI | Video | visibility | 55.8 | 55.8 | OK |
+| T7 Gemini oracle VI | Depth | visibility | 56.7 | 56.7 | OK |
+| T7 Gemini oracle VI | Normals | visibility | 51.9 | 51.9 | OK |
+| T7 Gemini oracle VI | Panorama | visibility | 55.8 | 55.8 | OK |
+| T7 Gemini oracle VI | Oracle selection | visibility | 69.2 | 69.2 | OK |
+| T7 Gemini oracle VI | Observed view | nearest_object | 51.9 | 51.9 | OK |
+| T7 Gemini oracle VI | + Endpoint RGB | nearest_object | 65.4 | 65.4 | OK |
+| T7 Gemini oracle VI | Top-down | nearest_object | 75.0 | 75.0 | OK |
+| T7 Gemini oracle VI | Text | nearest_object | 70.2 | 70.2 | OK |
+| T7 Gemini oracle VI | Video | nearest_object | 68.3 | 68.3 | OK |
+| T7 Gemini oracle VI | Depth | nearest_object | 71.2 | 71.2 | OK |
+| T7 Gemini oracle VI | Normals | nearest_object | 69.2 | 69.2 | OK |
+| T7 Gemini oracle VI | Panorama | nearest_object | 70.2 | 70.2 | OK |
+| T7 Gemini oracle VI | Oracle selection | nearest_object | 80.8 | 80.8 | OK |
+| T7 Gemini oracle VI | Observed view | farthest_object | 66.3 | 66.3 | OK |
+| T7 Gemini oracle VI | + Endpoint RGB | farthest_object | 65.3 | 65.3 | OK |
+| T7 Gemini oracle VI | Top-down | farthest_object | 75.5 | 75.5 | OK |
+| T7 Gemini oracle VI | Text | farthest_object | 68.4 | 68.4 | OK |
+| T7 Gemini oracle VI | Video | farthest_object | 69.4 | 69.4 | OK |
+| T7 Gemini oracle VI | Depth | farthest_object | 73.5 | 73.5 | OK |
+| T7 Gemini oracle VI | Normals | farthest_object | 69.4 | 69.4 | OK |
+| T7 Gemini oracle VI | Panorama | farthest_object | 71.4 | 71.4 | OK |
+| T7 Gemini oracle VI | Oracle selection | farthest_object | 80.6 | 80.6 | OK |
+| T7 Gemini oracle VI | Observed view | object_relative_direction | 66.5 | 66.5 | OK |
+| T7 Gemini oracle VI | + Endpoint RGB | object_relative_direction | 79.4 | 79.4 | OK |
+| T7 Gemini oracle VI | Top-down | object_relative_direction | 86.5 | 86.5 | OK |
+| T7 Gemini oracle VI | Text | object_relative_direction | 84.1 | 84.1 | OK |
+| T7 Gemini oracle VI | Video | object_relative_direction | 87.6 | 87.6 | OK |
+| T7 Gemini oracle VI | Depth | object_relative_direction | 84.1 | 84.1 | OK |
+| T7 Gemini oracle VI | Normals | object_relative_direction | 82.9 | 82.9 | OK |
+| T7 Gemini oracle VI | Panorama | object_relative_direction | 87.1 | 87.1 | OK |
+| T7 Gemini oracle VI | Oracle selection | object_relative_direction | 93.5 | 93.5 | OK |
+| T7 Gemini oracle VI | Observed view | ALL | 53.7 | 53.7 | OK |
+| T7 Gemini oracle VI | + Endpoint RGB | ALL | 63.7 | 63.7 | OK |
+| T7 Gemini oracle VI | Top-down | ALL | 73.0 | 73.0 | OK |
+| T7 Gemini oracle VI | Text | ALL | 69.3 | 69.3 | OK |
+| T7 Gemini oracle VI | Video | ALL | 69.9 | 69.9 | OK |
+| T7 Gemini oracle VI | Depth | ALL | 70.7 | 70.7 | OK |
+| T7 Gemini oracle VI | Normals | ALL | 67.8 | 67.8 | OK |
+| T7 Gemini oracle VI | Panorama | ALL | 72.0 | 72.0 | OK |
+| T7 Gemini oracle VI | Oracle selection | ALL | 82.5 | 82.5 | OK |
+| T9 open_space_direction endpoint correct | 53 | 53 | OK |
+| T9 open_space_direction rescued (panorama) | 15 | 15 | OK |
+| T9 open_space_direction gain pp | 16.5 | 16.5 | OK |
+| T9 nearest_obstacle_direction endpoint correct | 25 | 25 | OK |
+| T9 nearest_obstacle_direction rescued (topdown) | 9 | 9 | OK |
+| T9 nearest_obstacle_direction gain pp | 16.4 | 16.4 | OK |
+| T9 visibility endpoint correct | 51 | 51 | OK |
+| T9 visibility rescued (text) | 9 | 9 | OK |
+| T9 visibility gain pp | 8.7 | 8.7 | OK |
+| T9 nearest_object endpoint correct | 68 | 68 | OK |
+| T9 nearest_object rescued (topdown) | 10 | 10 | OK |
+| T9 nearest_object gain pp | 9.6 | 9.6 | OK |
+| T9 farthest_object endpoint correct | 64 | 64 | OK |
+| T9 farthest_object rescued (topdown) | 10 | 10 | OK |
+| T9 farthest_object gain pp | 10.2 | 10.2 | OK |
+| T9 object_relative_direction endpoint correct | 135 | 135 | OK |
+| T9 object_relative_direction rescued (video) | 14 | 14 | OK |
+| T9 object_relative_direction gain pp | 8.2 | 8.2 | OK |
+| T9 All endpoint correct | 396 | 396 | OK |
+| T9 All rescued | 67 | 67 | OK |
+| T9 All gain pp | 10.8 | 10.8 | OK |
+| T8 Gemini VI delta topdown (count-based) | 9.3 | 9.3 | OK |
+| T8 Gemini VI delta text (count-based) | 5.6 | 5.6 | OK |
+| T8 Gemini VI delta video (count-based) | 6.3 | 6.3 | OK |
+| T8 Gemini VI delta depth (count-based) | 7.1 | 7.1 | OK |
+| T8 Gemini VI delta surface_normals (count-based) | 4.2 | 4.2 | OK |
+| T8 Gemini VI delta panorama (count-based) | 8.4 | 8.4 | OK |
+| T8 Gemini VI delta oracle selection | 18.8 | 18.8 | OK |
+| T2 Gemini question-only VI | 31.7 | 31.7 | OK |
+| T2 Gemini observed VI | 53.7 | 53.7 | OK |
+| T2 Gemini +oracle RGB VI | 63.7 | 63.7 | OK |
+| T7 Gemini oracle CV | Observed view | cross_view_closest | 60.5 | 60.5 | OK |
+| T7 Gemini oracle CV | + Endpoint RGB | cross_view_closest | 75.3 | 75.3 | OK |
+| T7 Gemini oracle CV | Top-down | cross_view_closest | 80.2 | 80.2 | OK |
+| T7 Gemini oracle CV | Text | cross_view_closest | 80.2 | 80.2 | OK |
+| T7 Gemini oracle CV | Video | cross_view_closest | 80.2 | 80.2 | OK |
+| T7 Gemini oracle CV | Depth | cross_view_closest | 81.5 | 81.5 | OK |
+| T7 Gemini oracle CV | Normals | cross_view_closest | 79.0 | 79.0 | OK |
+| T7 Gemini oracle CV | Panorama | cross_view_closest | 80.2 | 80.2 | OK |
+| T7 Gemini oracle CV | Oracle selection | cross_view_closest | 84.0 | 84.0 | OK |
+| T7 Gemini oracle CV | Question only | cross_view_closest | None | 30.9 | NO PAPER VALUE |
+| T7 Gemini oracle CV | Observed view | cross_view_farthest | 59.8 | 59.8 | OK |
+| T7 Gemini oracle CV | + Endpoint RGB | cross_view_farthest | 62.2 | 62.2 | OK |
+| T7 Gemini oracle CV | Top-down | cross_view_farthest | 73.2 | 73.2 | OK |
+| T7 Gemini oracle CV | Text | cross_view_farthest | 65.9 | 65.9 | OK |
+| T7 Gemini oracle CV | Video | cross_view_farthest | 72.0 | 72.0 | OK |
+| T7 Gemini oracle CV | Depth | cross_view_farthest | 68.3 | 68.3 | OK |
+| T7 Gemini oracle CV | Normals | cross_view_farthest | 68.3 | 68.3 | OK |
+| T7 Gemini oracle CV | Panorama | cross_view_farthest | 69.5 | 69.5 | OK |
+| T7 Gemini oracle CV | Oracle selection | cross_view_farthest | 79.3 | 79.3 | OK |
+| T7 Gemini oracle CV | Question only | cross_view_farthest | None | 36.6 | NO PAPER VALUE |
+| T7 Gemini oracle CV | Observed view | ordering | 73.7 | 73.7 | OK |
+| T7 Gemini oracle CV | + Endpoint RGB | ordering | 90.5 | 90.5 | OK |
+| T7 Gemini oracle CV | Top-down | ordering | 94.9 | 94.9 | OK |
+| T7 Gemini oracle CV | Text | ordering | 95.6 | 95.6 | OK |
+| T7 Gemini oracle CV | Video | ordering | 96.4 | 96.4 | OK |
+| T7 Gemini oracle CV | Depth | ordering | 94.9 | 94.9 | OK |
+| T7 Gemini oracle CV | Normals | ordering | 95.6 | 95.6 | OK |
+| T7 Gemini oracle CV | Panorama | ordering | 93.4 | 93.4 | OK |
+| T7 Gemini oracle CV | Oracle selection | ordering | 97.8 | 97.8 | OK |
+| T7 Gemini oracle CV | Question only | ordering | None | 24.8 | NO PAPER VALUE |
+| T7 Gemini oracle CV | Observed view | ALL | 66.3 | 66.3 | OK |
+| T7 Gemini oracle CV | + Endpoint RGB | ALL | 78.7 | 78.7 | OK |
+| T7 Gemini oracle CV | Top-down | ALL | 85.0 | 85.0 | OK |
+| T7 Gemini oracle CV | Text | ALL | 83.3 | 83.3 | OK |
+| T7 Gemini oracle CV | Video | ALL | 85.3 | 85.3 | OK |
+| T7 Gemini oracle CV | Depth | ALL | 84.0 | 84.0 | OK |
+| T7 Gemini oracle CV | Normals | ALL | 83.7 | 83.7 | OK |
+| T7 Gemini oracle CV | Panorama | ALL | 83.3 | 83.3 | OK |
+| T7 Gemini oracle CV | Oracle selection | ALL | 89.0 | 89.0 | OK |
+| T7 Gemini oracle CV | Question only | ALL | 29.7 | 29.7 | OK |
+| T2 Gemini question-only CV | 29.7 | 29.7 | OK |
+| T2 Gemini observed CV | 66.3 | 66.3 | OK |
+| T2 Gemini +oracle RGB CV | 78.7 | 78.7 | OK |
+| T8 Gemini CV delta topdown (count-based) | 6.3 | 6.3 | OK |
+| T8 Gemini CV delta text (count-based) | 4.7 | 4.7 | OK |
+| T8 Gemini CV delta video (count-based) | 6.7 | 6.7 | OK |
+| T8 Gemini CV delta depth (count-based) | 5.3 | 5.3 | OK |
+| T8 Gemini CV delta surface_normals (count-based) | 5.0 | 5.0 | OK |
+| T8 Gemini CV delta panorama (count-based) | 4.7 | 4.7 | OK |
+| T8 Gemini CV delta oracle selection | 10.3 | 10.3 | OK |
+| T4 GPT estimated VI | Observed view | open_space_direction | 60.4 | 60.4 | OK |
+| T4 GPT estimated VI | + Est. endpoint RGB | open_space_direction | 52.7 | 52.7 | OK |
+| T4 GPT estimated VI | Top-down | open_space_direction | 63.7 | 63.7 | OK |
+| T4 GPT estimated VI | Text | open_space_direction | 60.4 | 60.4 | OK |
+| T4 GPT estimated VI | Video | open_space_direction | 62.6 | 62.6 | OK |
+| T4 GPT estimated VI | Depth | open_space_direction | 57.1 | 57.1 | OK |
+| T4 GPT estimated VI | Normals | open_space_direction | 57.1 | 57.1 | OK |
+| T4 GPT estimated VI | Panorama | open_space_direction | 70.3 | 70.3 | OK |
+| T4 GPT estimated VI | Observed view | nearest_obstacle_direction | 38.2 | 38.2 | OK |
+| T4 GPT estimated VI | + Est. endpoint RGB | nearest_obstacle_direction | 45.5 | 45.5 | OK |
+| T4 GPT estimated VI | Top-down | nearest_obstacle_direction | 56.4 | 56.4 | OK |
+| T4 GPT estimated VI | Text | nearest_obstacle_direction | 54.5 | 54.5 | OK |
+| T4 GPT estimated VI | Video | nearest_obstacle_direction | 61.8 | 61.8 | OK |
+| T4 GPT estimated VI | Depth | nearest_obstacle_direction | 54.5 | 54.5 | OK |
+| T4 GPT estimated VI | Normals | nearest_obstacle_direction | 52.7 | 52.7 | OK |
+| T4 GPT estimated VI | Panorama | nearest_obstacle_direction | 60.0 | 60.0 | OK |
+| T4 GPT estimated VI | Observed view | visibility | 39.4 | 39.4 | OK |
+| T4 GPT estimated VI | + Est. endpoint RGB | visibility | 47.1 | 47.1 | OK |
+| T4 GPT estimated VI | Top-down | visibility | 50.0 | 50.0 | OK |
+| T4 GPT estimated VI | Text | visibility | 51.9 | 51.9 | OK |
+| T4 GPT estimated VI | Video | visibility | 54.8 | 54.8 | OK |
+| T4 GPT estimated VI | Depth | visibility | 52.9 | 52.9 | OK |
+| T4 GPT estimated VI | Normals | visibility | 52.9 | 52.9 | OK |
+| T4 GPT estimated VI | Panorama | visibility | 56.7 | 56.7 | OK |
+| T4 GPT estimated VI | Observed view | nearest_object | 51.0 | 51.0 | OK |
+| T4 GPT estimated VI | + Est. endpoint RGB | nearest_object | 49.0 | 49.0 | OK |
+| T4 GPT estimated VI | Top-down | nearest_object | 57.7 | 57.7 | OK |
+| T4 GPT estimated VI | Text | nearest_object | 56.7 | 56.7 | OK |
+| T4 GPT estimated VI | Video | nearest_object | 59.6 | 59.6 | OK |
+| T4 GPT estimated VI | Depth | nearest_object | 61.5 | 61.5 | OK |
+| T4 GPT estimated VI | Normals | nearest_object | 58.7 | 58.7 | OK |
+| T4 GPT estimated VI | Panorama | nearest_object | 59.6 | 59.6 | OK |
+| T4 GPT estimated VI | Observed view | farthest_object | 68.4 | 68.4 | OK |
+| T4 GPT estimated VI | + Est. endpoint RGB | farthest_object | 53.1 | 53.1 | OK |
+| T4 GPT estimated VI | Top-down | farthest_object | 62.2 | 62.2 | OK |
+| T4 GPT estimated VI | Text | farthest_object | 69.4 | 69.4 | OK |
+| T4 GPT estimated VI | Video | farthest_object | 70.4 | 70.4 | OK |
+| T4 GPT estimated VI | Depth | farthest_object | 66.3 | 66.3 | OK |
+| T4 GPT estimated VI | Normals | farthest_object | 67.3 | 67.3 | OK |
+| T4 GPT estimated VI | Panorama | farthest_object | 63.3 | 63.3 | OK |
+| T4 GPT estimated VI | Observed view | object_relative_direction | 70.0 | 70.0 | OK |
+| T4 GPT estimated VI | + Est. endpoint RGB | object_relative_direction | 67.6 | 67.6 | OK |
+| T4 GPT estimated VI | Top-down | object_relative_direction | 72.4 | 72.4 | OK |
+| T4 GPT estimated VI | Text | object_relative_direction | 73.5 | 73.5 | OK |
+| T4 GPT estimated VI | Video | object_relative_direction | 72.4 | 72.4 | OK |
+| T4 GPT estimated VI | Depth | object_relative_direction | 71.2 | 71.2 | OK |
+| T4 GPT estimated VI | Normals | object_relative_direction | 71.2 | 71.2 | OK |
+| T4 GPT estimated VI | Panorama | object_relative_direction | 75.3 | 75.3 | OK |
+| T4 GPT estimated VI | Observed view | ALL | 57.2 | 57.2 | OK |
+| T4 GPT estimated VI | + Est. endpoint RGB | ALL | 54.7 | 54.7 | OK |
+| T4 GPT estimated VI | Top-down | ALL | 61.9 | 61.9 | OK |
+| T4 GPT estimated VI | Text | ALL | 62.9 | 62.9 | OK |
+| T4 GPT estimated VI | Video | ALL | 64.6 | 64.6 | OK |
+| T4 GPT estimated VI | Depth | ALL | 62.2 | 62.2 | OK |
+| T4 GPT estimated VI | Normals | ALL | 61.7 | 61.7 | OK |
+| T4 GPT estimated VI | Panorama | ALL | 65.6 | 65.6 | OK |
+| T4 GPT estimated VI | Per-type best | open_space_direction | 70.3 | 70.3 | OK |
+| T4 GPT estimated VI | Per-type best | nearest_obstacle_direction | 61.8 | 61.8 | OK |
+| T4 GPT estimated VI | Per-type best | visibility | 56.7 | 56.7 | OK |
+| T4 GPT estimated VI | Per-type best | nearest_object | 61.5 | 61.5 | OK |
+| T4 GPT estimated VI | Per-type best | farthest_object | 70.4 | 70.4 | OK |
+| T4 GPT estimated VI | Per-type best | object_relative_direction | 75.3 | 75.3 | OK |
+| T4 GPT estimated VI | Per-type best | ALL (sum of per-type maxima / 622) | 67.2 | 67.2 | OK |
+| T5 GPT estimated CV | Observed view | cross_view_closest | 56.8 | 56.8 | OK |
+| T5 GPT estimated CV | + Est. RGB | cross_view_closest | 74.1 | 74.1 | OK |
+| T5 GPT estimated CV | + Est. depth | cross_view_closest | 79.0 | 79.0 | OK |
+| T5 GPT estimated CV | Observed view | cross_view_farthest | 59.8 | 59.8 | OK |
+| T5 GPT estimated CV | + Est. RGB | cross_view_farthest | 54.9 | 54.9 | OK |
+| T5 GPT estimated CV | + Est. depth | cross_view_farthest | 65.9 | 65.9 | OK |
+| T5 GPT estimated CV | Observed view | ordering | 79.6 | 79.6 | OK |
+| T5 GPT estimated CV | + Est. RGB | ordering | 89.8 | 89.8 | OK |
+| T5 GPT estimated CV | + Est. depth | ordering | 93.4 | 93.4 | OK |
+| T5 GPT estimated CV | Observed view | ALL | 68.0 | 68.0 | OK |
+| T5 GPT estimated CV | + Est. RGB | ALL | 76.0 | 76.0 | OK |
+| T5 GPT estimated CV | + Est. depth | ALL | 82.0 | 82.0 | OK |
+| T10a gating ablation VI | No gate | open_space_direction | 52.7 | 52.7 | OK |
+| T10a gating ablation VI | +Gating | open_space_direction | 60.4 | 60.4 | OK |
+| T10a gating ablation VI | +Routing | open_space_direction | 56.0 | 56.0 | OK |
+| T10a gating ablation VI | Gating+Routing | open_space_direction | 63.7 | 63.7 | OK |
+| T10a gating ablation VI | No gate | nearest_obstacle_direction | 49.1 | 49.1 | OK |
+| T10a gating ablation VI | +Gating | nearest_obstacle_direction | 52.7 | 52.7 | OK |
+| T10a gating ablation VI | +Routing | nearest_obstacle_direction | 49.1 | 49.1 | OK |
+| T10a gating ablation VI | Gating+Routing | nearest_obstacle_direction | 54.5 | 54.5 | OK |
+| T10a gating ablation VI | No gate | visibility | 44.2 | 44.2 | OK |
+| T10a gating ablation VI | +Gating | visibility | 44.2 | 44.2 | OK |
+| T10a gating ablation VI | +Routing | visibility | 43.3 | 43.3 | OK |
+| T10a gating ablation VI | Gating+Routing | visibility | 48.1 | 48.1 | OK |
+| T10a gating ablation VI | No gate | nearest_object | 54.8 | 54.8 | OK |
+| T10a gating ablation VI | +Gating | nearest_object | 54.8 | 54.8 | OK |
+| T10a gating ablation VI | +Routing | nearest_object | 52.9 | 52.9 | OK |
+| T10a gating ablation VI | Gating+Routing | nearest_object | 55.8 | 55.8 | OK |
+| T10a gating ablation VI | No gate | farthest_object | 58.2 | 58.2 | OK |
+| T10a gating ablation VI | +Gating | farthest_object | 63.3 | 63.3 | OK |
+| T10a gating ablation VI | +Routing | farthest_object | 68.4 | 68.4 | OK |
+| T10a gating ablation VI | Gating+Routing | farthest_object | 68.4 | 68.4 | OK |
+| T10a gating ablation VI | No gate | object_relative_direction | 61.8 | 61.8 | OK |
+| T10a gating ablation VI | +Gating | object_relative_direction | 68.8 | 68.8 | OK |
+| T10a gating ablation VI | +Routing | object_relative_direction | 70.0 | 70.0 | OK |
+| T10a gating ablation VI | Gating+Routing | object_relative_direction | 70.0 | 70.0 | OK |
+| T10a gating ablation VI | No gate | ALL | 54.7 | 54.7 | OK |
+| T10a gating ablation VI | +Gating | ALL | 58.8 | 58.8 | OK |
+| T10a gating ablation VI | +Routing | ALL | 58.5 | 58.5 | OK |
+| T10a gating ablation VI | Gating+Routing | ALL | 61.4 | 61.4 | OK |
+| T10b gating ablation CV | No gate | cross_view_closest | 72.8 | 72.8 | OK |
+| T10b gating ablation CV | +Gating | cross_view_closest | 71.6 | 71.6 | OK |
+| T10b gating ablation CV | +Routing | cross_view_closest | 74.1 | 74.1 | OK |
+| T10b gating ablation CV | Gating+Routing | cross_view_closest | 74.1 | 74.1 | OK |
+| T10b gating ablation CV | No gate | cross_view_farthest | 61.0 | 61.0 | OK |
+| T10b gating ablation CV | +Gating | cross_view_farthest | 61.0 | 61.0 | OK |
+| T10b gating ablation CV | +Routing | cross_view_farthest | 61.0 | 61.0 | OK |
+| T10b gating ablation CV | Gating+Routing | cross_view_farthest | 61.0 | 61.0 | OK |
+| T10b gating ablation CV | No gate | ordering | 89.8 | 89.8 | OK |
+| T10b gating ablation CV | +Gating | ordering | 88.3 | 88.3 | OK |
+| T10b gating ablation CV | +Routing | ordering | 89.8 | 89.8 | OK |
+| T10b gating ablation CV | Gating+Routing | ordering | 89.8 | 89.8 | OK |
+| T10b gating ablation CV | No gate | ALL | 77.3 | 77.3 | OK |
+| T10b gating ablation CV | +Gating | ALL | 76.3 | 76.3 | OK |
+| T10b gating ablation CV | +Routing | ALL | 77.7 | 77.7 | OK |
+| T10b gating ablation CV | Gating+Routing | ALL | 77.7 | 77.7 | OK |
+| T6 baselines VI | MindJourney | open_space_direction | 53.8 | 53.8 | OK |
+| T6 baselines VI | AVIC | open_space_direction | 51.6 | 51.6 | OK |
+| T6 baselines VI | GEARS | open_space_direction | 63.7 | 63.7 | OK |
+| T6 baselines VI | MindJourney | nearest_obstacle_direction | 52.7 | 52.7 | OK |
+| T6 baselines VI | AVIC | nearest_obstacle_direction | 49.1 | 49.1 | OK |
+| T6 baselines VI | GEARS | nearest_obstacle_direction | 54.5 | 54.5 | OK |
+| T6 baselines VI | MindJourney | visibility | 45.2 | 45.2 | OK |
+| T6 baselines VI | AVIC | visibility | 46.2 | 46.2 | OK |
+| T6 baselines VI | GEARS | visibility | 48.1 | 48.1 | OK |
+| T6 baselines VI | MindJourney | nearest_object | 53.8 | 53.8 | OK |
+| T6 baselines VI | AVIC | nearest_object | 51.0 | 51.0 | OK |
+| T6 baselines VI | GEARS | nearest_object | 55.8 | 55.8 | OK |
+| T6 baselines VI | MindJourney | farthest_object | 69.4 | 69.4 | OK |
+| T6 baselines VI | AVIC | farthest_object | 63.3 | 63.3 | OK |
+| T6 baselines VI | GEARS | farthest_object | 68.4 | 68.4 | OK |
+| T6 baselines VI | MindJourney | object_relative_direction | 67.1 | 67.1 | OK |
+| T6 baselines VI | AVIC | object_relative_direction | 62.4 | 62.4 | OK |
+| T6 baselines VI | GEARS | object_relative_direction | 70.0 | 70.0 | OK |
+| T6 baselines VI | MindJourney | ALL | 58.4 | 58.4 | OK |
+| T6 baselines VI | AVIC | ALL | 55.1 | 55.1 | OK |
+| T6 baselines VI | GEARS | ALL | 61.4 | 61.4 | OK |
+| T6 baselines CV | MindJourney | cross_view_closest | 61.7 | 61.7 | OK |
+| T6 baselines CV | AVIC | cross_view_closest | 59.3 | 59.3 | OK |
+| T6 baselines CV | GEARS | cross_view_closest | 74.1 | 74.1 | OK |
+| T6 baselines CV | MindJourney | cross_view_farthest | 62.2 | 62.2 | OK |
+| T6 baselines CV | AVIC | cross_view_farthest | 51.2 | 51.2 | OK |
+| T6 baselines CV | GEARS | cross_view_farthest | 61.0 | 61.0 | OK |
+| T6 baselines CV | MindJourney | ordering | 81.8 | 81.8 | OK |
+| T6 baselines CV | AVIC | ordering | 85.4 | 85.4 | OK |
+| T6 baselines CV | GEARS | ordering | 89.8 | 89.8 | OK |
+| T6 baselines CV | MindJourney | ALL | 71.0 | 71.0 | OK |
+| T6 baselines CV | AVIC | ALL | 69.0 | 69.0 | OK |
+| T6 baselines CV | GEARS | ALL | 77.7 | 77.7 | OK |
+| Intro/4.2: GPT Farthest Object observed | 68.4 | 68.4 | OK |
+| Intro/4.2: GPT Farthest Object + oracle RGB | 58.2 | 58.2 | OK |
+| Intro: GPT Farthest Object top-down | 75.5 | 75.5 | OK |
+| 4.2: Gemini observed VI (prose 53.7) | 53.7 | 53.7 | OK |
+| 4.3: GPT panorama open-space gain | 16.5 | 16.5 | OK |
+| 4.3: Gemini panorama open-space gain | 16.5 | 16.5 | OK |
+| Sec5: GEARS best on N of 9 question types | 7 | 7 | OK |
+| Sec3.4: VI routes (trajectories) | 200 | 200 | OK |
+| Sec3.4: VI scenes | 73 | 73 | OK |
+| Sec3.4: CV view groups | 143 | 143 | OK |
+| Sec3.4: CV scenes | 21 | 21 | OK |
+| T3 question count open_space_direction | 91 | 91 | OK |
+| T3 question count nearest_obstacle_direction | 55 | 55 | OK |
+| T3 question count visibility | 104 | 104 | OK |
+| T3 question count nearest_object | 104 | 104 | OK |
+| T3 question count farthest_object | 98 | 98 | OK |
+| T3 question count object_relative_direction | 170 | 170 | OK |
+| T3 question count cross_view_closest | 81 | 81 | OK |
+| T3 question count cross_view_farthest | 82 | 82 | OK |
+| T3 question count ordering | 137 | 137 | OK |
+| Appendix: median planned endpoint error m (MoGe scale) | 1.4 | 1.4 | OK |
+| Appendix: median planned heading error deg | 14 | 14 | OK |
+| Appendix: median route length m | 4.2 | 4.2 | OK |
+
+424 checks, 0 mismatches

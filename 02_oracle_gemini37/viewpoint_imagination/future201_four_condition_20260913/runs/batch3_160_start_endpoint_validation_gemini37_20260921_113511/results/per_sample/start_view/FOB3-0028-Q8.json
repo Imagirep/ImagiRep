@@ -1,0 +1,88 @@
+{
+  "row_index": 81,
+  "question_id": "FOB3-0028-Q8",
+  "trajectory_id": "FOB3-0028",
+  "scan_id": "ZMojNkEp431",
+  "question_type": 8,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk to the doorway, then walk to the photo display wall ahead, facing where I go, which object(s) would be directly on my left?",
+  "answer_choices": {
+    "D": "lamp",
+    "A": "wooden chair",
+    "B": "shelf",
+    "C": "sofa"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "lamp",
+    "B": "sofa",
+    "C": "wooden chair",
+    "D": "shelf"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "D": "A",
+    "A": "C",
+    "B": "D",
+    "C": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0028\\start_view.png",
+      "sha256": "6b20d692bc62afa17f2438f05191e4ec82536a8e07ea5f965cb27592058b57ab"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0028\\step_01_rgb.png",
+      "sha256": "434b0cdc890c10bd733a80e79b4e8b359f564403fb92d1eb6187bae4541797cb"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1156,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 92
+      }
+    ],
+    "thoughts_token_count": 1137,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2294,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-21T11:40:29-04:00"
+}

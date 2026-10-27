@@ -1,0 +1,1 @@
+{"uid": "last50__MVC-200-Q3", "category": "ordering", "reason": "The Estimated RGB connects the views and helps establish left-to-right order without depth.", "choice": "est_rgb", "usage": {"input_tokens": 3461, "input_tokens_details": {"cache_write_tokens": 3458, "cached_tokens": 0}, "output_tokens": 147, "output_tokens_details": {"reasoning_tokens": 112}, "total_tokens": 3608}}

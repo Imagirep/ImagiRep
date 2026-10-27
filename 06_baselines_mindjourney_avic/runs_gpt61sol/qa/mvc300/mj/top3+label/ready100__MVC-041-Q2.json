@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-041-Q2", "method": "mj", "variant": "top3+label", "prediction": "wooden desk", "gold": "wooden desk", "correct": true, "n_imagined": 3, "category": "cross_view_farthest", "stored_result": "wrong"}

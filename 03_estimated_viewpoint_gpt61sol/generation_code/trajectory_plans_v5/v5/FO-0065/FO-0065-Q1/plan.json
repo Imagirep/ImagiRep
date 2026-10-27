@@ -1,0 +1,229 @@
+{
+  "question_id": "FO-0065-Q1",
+  "motion_text": "I walk to the blue glass pillar and turn right.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "blue glass pillar on the left",
+      "relation": "to"
+    },
+    {
+      "op": "turn",
+      "direction": "right"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FO-0065-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.3796412221315909,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.452455882924757,
+        "y": -1.377518736024491,
+        "yaw": -0.3796412221315909,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -3.452455882924757,
+        -1.377518736024491
+      ]
+    ],
+    "x": -3.452455882924757,
+    "y": -1.377518736024491,
+    "yaw": -0.3796412221315909,
+    "pitch": 0.0,
+    "travel_yaw": -0.3796412221315909
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -3.452455882924757,
+      -1.377518736024491
+    ]
+  ],
+  "final": {
+    "x": -3.452455882924757,
+    "y": -1.377518736024491,
+    "yaw_deg": 58.248160242671275,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "blue glass pillar on the left",
+        "relation": "to"
+      },
+      "x": -3.452455882924757,
+      "y": -1.377518736024491,
+      "yaw": -0.3796412221315909,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "right"
+      },
+      "x": -3.452455882924757,
+      "y": -1.377518736024491,
+      "yaw": 1.016622179463873,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.3796412221315909,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.452455882924757,
+      "y": -1.377518736024491,
+      "yaw": -0.3796412221315909,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.452455882924757,
+      "y": -1.377518736024491,
+      "yaw": 1.016622179463873,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "blue glass pillar on the left",
+      "method": "initial_photo",
+      "box": [
+        504,
+        147,
+        924,
+        268
+      ],
+      "point_m": [
+        -4.293008473737441,
+        -2.0555077471422676,
+        -1.0884942249889353
+      ]
+    },
+    {
+      "overlap": "blue glass pillar on the left",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 4.9,
+          "stop_m": 1.0799063649772491,
+          "visible_frac": 0.84,
+          "center_deg": 0.2579023195574369,
+          "width_deg": 29.654079519368143,
+          "distance_m": 1.1813949542038298
+        },
+        {
+          "sector": 5,
+          "path_m": 4.9,
+          "stop_m": 1.086817521592476,
+          "visible_frac": 0.84,
+          "center_deg": 1.2059290116715746,
+          "width_deg": 31.11658724374341,
+          "distance_m": 1.166916525193907
+        },
+        {
+          "sector": 3,
+          "path_m": 5.4,
+          "stop_m": 1.0407853659033464,
+          "visible_frac": 0.8622222222222222,
+          "center_deg": -2.6837375792428446,
+          "width_deg": 21.760311559559312,
+          "distance_m": 1.195588971349546
+        },
+        {
+          "sector": 6,
+          "path_m": 5.4,
+          "stop_m": 1.0796269274845667,
+          "visible_frac": 0.8,
+          "center_deg": 2.9980293657227786,
+          "width_deg": 32.33177493243015,
+          "distance_m": 1.0601605291902643
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 1.1427991357113207,
+  "seconds": 6.173497200012207
+}

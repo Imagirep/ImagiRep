@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC3I-002-Q2", "method": "mj", "variant": "top3+label", "prediction": "bed", "gold": "bed", "correct": true, "n_imagined": 3, "category": "cross_view_farthest", "stored_result": "correct"}

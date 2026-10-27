@@ -1,0 +1,256 @@
+{
+  "question_id": "FOB4-0227-Q1",
+  "motion_text": "I walk near the yellow chair farther from me, then slightly turn right.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "yellow chair farther from me",
+      "relation": "near"
+    },
+    {
+      "op": "turn",
+      "direction": "right",
+      "amount": "slight"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0227-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.31063202733433926,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.381206685594882,
+        "y": 0.4434012212233984,
+        "yaw": 0.31063202733433926,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -1.381206685594882,
+        "y": 0.4434012212233984,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.9812066855948816,
+        "y": 0.4434012212233984,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -1.381206685594882,
+        0.4434012212233984
+      ],
+      [
+        -2.9812066855948816,
+        0.4434012212233984
+      ]
+    ],
+    "x": -2.9812066855948816,
+    "y": 0.4434012212233984,
+    "yaw": 0.14764974721008864,
+    "pitch": 0.0,
+    "travel_yaw": 0.14764974721008864
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.381206685594882,
+      0.4434012212233984
+    ],
+    [
+      -2.9812066855948816,
+      0.4434012212233984
+    ]
+  ],
+  "final": {
+    "x": -2.9812066855948816,
+    "y": 0.4434012212233984,
+    "yaw_deg": 43.45970736131158,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "yellow chair farther from me",
+        "relation": "near"
+      },
+      "x": -2.9812066855948816,
+      "y": 0.4434012212233984,
+      "yaw": 0.14764974721008864,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "right",
+        "amount": "slight"
+      },
+      "x": -2.9812066855948816,
+      "y": 0.4434012212233984,
+      "yaw": 0.7585149854081039,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.31063202733433926,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.381206685594882,
+      "y": 0.4434012212233984,
+      "yaw": 0.31063202733433926,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.381206685594882,
+      "y": 0.4434012212233984,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.9812066855948816,
+      "y": 0.4434012212233984,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.9812066855948816,
+      "y": 0.4434012212233984,
+      "yaw": 0.14764974721008864,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.9812066855948816,
+      "y": 0.4434012212233984,
+      "yaw": 0.7585149854081039,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "yellow chair farther from me",
+      "method": "initial_photo",
+      "box": [
+        616,
+        513,
+        719,
+        629
+      ],
+      "point_m": [
+        -4.55490542702287,
+        0.5142033848839053,
+        -0.9154018392498057
+      ]
+    },
+    {
+      "overlap": "yellow chair farther from me",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 3.4000000000000004,
+          "stop_m": 1.575290663703383,
+          "visible_frac": 1.0,
+          "center_deg": -0.4174729352568243,
+          "width_deg": 31.067921695969428,
+          "distance_m": 2.2389649168606613
+        },
+        {
+          "sector": 4,
+          "path_m": 3.5,
+          "stop_m": 1.5739695811606218,
+          "visible_frac": 1.0,
+          "center_deg": -0.2747056309188383,
+          "width_deg": 35.94866130317314,
+          "distance_m": 2.23790033324355
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 1.5067983200298403,
+  "seconds": 8.395930528640747
+}

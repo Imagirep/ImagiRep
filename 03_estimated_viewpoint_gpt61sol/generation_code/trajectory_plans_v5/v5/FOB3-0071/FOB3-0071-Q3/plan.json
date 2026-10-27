@@ -1,0 +1,274 @@
+{
+  "question_id": "FOB3-0071-Q3",
+  "motion_text": "I walk to the hallway on the left and turn to face my starting point, then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the hallway on the left",
+      "relation": "to"
+    },
+    {
+      "op": "face_start"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0071-Q3",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 1.6510390498867078,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": 0.09817418793370791,
+        "y": 1.220838258856273,
+        "yaw": 1.6510390498867078,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.09817418793370791,
+        "y": 1.220838258856273,
+        "yaw": 1.873681195169868,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": 0.5981741879337079,
+        "y": 2.8208382588562735,
+        "yaw": 1.873681195169868,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.09817418793370791,
+        1.220838258856273
+      ],
+      [
+        0.5981741879337079,
+        2.8208382588562735
+      ]
+    ],
+    "x": 0.5981741879337079,
+    "y": 2.8208382588562735,
+    "yaw": 1.7797563591143366,
+    "pitch": 0.0,
+    "travel_yaw": 1.7797563591143366
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.09817418793370791,
+      1.220838258856273
+    ],
+    [
+      0.5981741879337079,
+      2.8208382588562735
+    ]
+  ],
+  "final": {
+    "x": 0.5981741879337079,
+    "y": 2.8208382588562735,
+    "yaw_deg": -78.02747206117881,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the hallway on the left",
+        "relation": "to"
+      },
+      "x": 0.5981741879337079,
+      "y": 2.8208382588562735,
+      "yaw": 1.7797563591143366,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": 0.5981741879337079,
+      "y": 2.8208382588562735,
+      "yaw": -1.3618362944754565,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": 0.5981741879337079,
+      "y": 2.8208382588562735,
+      "yaw": -1.3618362944754565,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 1.6510390498867078,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": 0.09817418793370791,
+      "y": 1.220838258856273,
+      "yaw": 1.6510390498867078,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.09817418793370791,
+      "y": 1.220838258856273,
+      "yaw": 1.873681195169868,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": 0.5981741879337079,
+      "y": 2.8208382588562735,
+      "yaw": 1.873681195169868,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.5981741879337079,
+      "y": 2.8208382588562735,
+      "yaw": 1.7797563591143366,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.5981741879337079,
+      "y": 2.8208382588562735,
+      "yaw": -1.3618362944754565,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the hallway on the left",
+      "method": "lookaround",
+      "view": 2,
+      "box": [
+        257,
+        185,
+        998,
+        442
+      ],
+      "point_m": [
+        1.1587182294590066,
+        3.7215604605093597,
+        -0.7585615899960667
+      ]
+    },
+    {
+      "overlap": "the hallway on the left",
+      "n_points": 152,
+      "candidates": [
+        {
+          "sector": 1,
+          "path_m": 3.4000000000000004,
+          "stop_m": 1.0609006112922637,
+          "visible_frac": 0.7236842105263158,
+          "center_deg": -0.19159821606831878,
+          "width_deg": 53.58964964235405,
+          "distance_m": 1.3809414936870659
+        },
+        {
+          "sector": 0,
+          "path_m": 4.0,
+          "stop_m": 0.6104744852015955,
+          "visible_frac": 0.42105263157894735,
+          "center_deg": -14.041592511083653,
+          "width_deg": 68.04141311946968,
+          "distance_m": 1.2770979187624323
+        },
+        {
+          "sector": 6,
+          "path_m": 4.9,
+          "stop_m": 0.5379728302917867,
+          "visible_frac": 0.3881578947368421,
+          "center_deg": 7.973772417017814,
+          "width_deg": 43.74514786510976,
+          "distance_m": 0.9119551951968969
+        }
+      ],
+      "chosen_sector": 1
+    }
+  ],
+  "m_per_unit": 1.8127761137410794,
+  "seconds": 20.67074179649353
+}

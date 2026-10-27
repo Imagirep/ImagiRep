@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC3I-002-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC3I-002-Q3",
+  "resource_id": "MVC3I-002",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "lamp, toilet, decorative white cabinet, bed",
+    "B": "lamp, bed, toilet, decorative white cabinet",
+    "C": "decorative white cabinet, lamp, toilet, bed",
+    "D": "decorative white cabinet, toilet, lamp, bed"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "4ef212238ed79771a31caa228cc601e39fab875cbba45375366bdc34c7b9ccb2",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC3I-002\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 5703,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 366
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 5337
+      }
+    ],
+    "thoughts_token_count": 4000,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9704,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 21.33293920000142,
+  "completed_at": "2026-10-06T17:45:18-04:00"
+}

@@ -1,0 +1,134 @@
+{
+  "row_index": 52,
+  "question_id": "FO-0199-Q5",
+  "trajectory_id": "FO-0199",
+  "scan_id": "1LXtFkjw3qL",
+  "question_type": 5,
+  "question_set": "lookback",
+  "endpoint_is_lookback": true,
+  "requires_separate_lookback": false,
+  "show_lookback": true,
+  "question": "If I walk past the black pillar and turn around to face where I come from, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "A": "green sofa",
+    "B": "black sofa",
+    "C": "potted plant",
+    "D": "saxophone"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "saxophone",
+    "B": "potted plant",
+    "C": "green sofa",
+    "D": "black sofa"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "A": "C",
+    "B": "D",
+    "C": "B",
+    "D": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_expansion_199\\items\\FOE-0004\\start_view.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_expansion_199\\items\\FOE-0004\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_expansion_199\\items\\FOE-0004\\step_02_rgb.png"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_expansion_199\\items\\FOE-0004\\oracle_lookback.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "a22e3b810694f183a341b77d2ad66f92ec9b4037008f34d5b5d2d66fcf2b0b74",
+    "45e28bcfb19f550ddc8d679ea0da2aab2d02240c9080b895d0a24bccd0356d67"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0199\\modalities\\current_expansion\\topdown_lookback_with_path.png",
+      "sha256": "bc979faf77ed7db43a3af959639973de82922acc11fc9884c2b6f1c7083b111d"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0199\\modalities\\current_expansion\\trajectory_lookback.txt",
+      "sha256": "41e63b9225dd14b15b2f844abfef3980e12cdaca6e55971e46abd23ce1c6a39d"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0199\\modalities\\current_expansion\\trajectory_lookback.mp4",
+      "sha256": "97988f2f283699ce8da1d1c58e7b29b568b831a9dbc8d92914ad7637f0bf5068",
+      "frame_count": 89,
+      "fps": 12.0,
+      "duration_seconds": 7.416666666666667,
+      "bytes": 722849,
+      "final_rgb_correlation": 0.9994853644720534
+    }
+  },
+  "condition": "start_final_topdown",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+  ],
+  "modality_prompt": "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": true,
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "topdown"
+  ],
+  "additional_modality": {
+    "kind": "topdown",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0199\\modalities\\current_expansion\\topdown_lookback_with_path.png",
+    "sha256": "bc979faf77ed7db43a3af959639973de82922acc11fc9884c2b6f1c7083b111d"
+  },
+  "input_signature": "59f12cb450ab2d0a43e0b1f370e215a00e4a7fb09ef27075f512074af88043bd",
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3408,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 191
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3217
+      }
+    ],
+    "thoughts_token_count": 1430,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4839,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-16T17:36:32-04:00"
+}

@@ -1,0 +1,211 @@
+{
+  "question_id": "FOB3-0017-Q4",
+  "motion_text": "I walk to the white sofa and face the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the white sofa on the right",
+      "relation": "to"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0017-Q4",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.10514947536003778,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.157201806673503,
+        "y": 0.2276683222755227,
+        "yaw": 0.10514947536003778,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.157201806673503,
+        0.2276683222755227
+      ]
+    ],
+    "x": -2.157201806673503,
+    "y": 0.2276683222755227,
+    "yaw": 0.10514947536003778,
+    "pitch": 0.0,
+    "travel_yaw": 0.10514947536003778
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.157201806673503,
+      0.2276683222755227
+    ]
+  ],
+  "final": {
+    "x": -2.157201806673503,
+    "y": 0.2276683222755227,
+    "yaw_deg": 6.024621156145007,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the white sofa on the right",
+        "relation": "to"
+      },
+      "x": -2.157201806673503,
+      "y": 0.2276683222755227,
+      "yaw": 0.10514947536003778,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -2.157201806673503,
+      "y": 0.2276683222755227,
+      "yaw": 0.10514947536003778,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.10514947536003778,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.157201806673503,
+      "y": 0.2276683222755227,
+      "yaw": 0.10514947536003778,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the white sofa on the right",
+      "method": "initial_photo",
+      "box": [
+        602,
+        637,
+        794,
+        803
+      ],
+      "point_m": [
+        -2.8350460049231154,
+        1.0740390978601022,
+        -0.8995932899293907
+      ]
+    },
+    {
+      "overlap": "the white sofa on the right",
+      "n_points": 214,
+      "candidates": [
+        {
+          "sector": 2,
+          "path_m": 2.4000000000000004,
+          "stop_m": 1.0843506106717988,
+          "visible_frac": 0.7523364485981309,
+          "center_deg": -2.656819073384452,
+          "width_deg": 39.65294674860133,
+          "distance_m": 4.106720425950647
+        },
+        {
+          "sector": 3,
+          "path_m": 2.4000000000000004,
+          "stop_m": 1.0780124912992932,
+          "visible_frac": 0.7616822429906542,
+          "center_deg": -1.7170116773373112,
+          "width_deg": 32.67937300350135,
+          "distance_m": 4.159983034899314
+        },
+        {
+          "sector": 1,
+          "path_m": 2.9000000000000004,
+          "stop_m": 1.0466053122111871,
+          "visible_frac": 0.5467289719626168,
+          "center_deg": -9.150957327218189,
+          "width_deg": 25.89690345102878,
+          "distance_m": 3.862079898710562
+        }
+      ],
+      "chosen_sector": 2
+    }
+  ],
+  "m_per_unit": 2.59511671168326,
+  "seconds": 8.543409585952759
+}

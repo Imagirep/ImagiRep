@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-026-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-026-Q1",
+  "resource_id": "MVC-026",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to silver pot in Image 1?",
+  "answer_choices": {
+    "A": "microwave",
+    "B": "black pot",
+    "C": "ovens",
+    "D": "yellow clock"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "e94d00863b031e5daf2f5eee6254e931c91850517f5ce13856fc8e39a2400aeb",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.598 m (near/red) to 3.120 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-026\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4601,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 345
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 3276,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7878,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 14.824627299996791,
+  "completed_at": "2026-10-06T17:36:53-04:00"
+}

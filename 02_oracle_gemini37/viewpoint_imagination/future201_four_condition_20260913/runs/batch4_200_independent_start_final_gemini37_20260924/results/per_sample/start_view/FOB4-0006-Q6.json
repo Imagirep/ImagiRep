@@ -1,0 +1,96 @@
+{
+  "row_index": 190,
+  "question_id": "FOB4-0006-Q6",
+  "trajectory_id": "FOB4-0006",
+  "scan_id": "8194nk5LbLH",
+  "route_variant": "new_straight",
+  "question_type": 6,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "final_image_kind": "lookback",
+  "question": "If I walk near the brown sofa, then turn to face my starting point, where is the square table with glass top relaitve to me?",
+  "answer_choices": {
+    "C": "left",
+    "A": "behind",
+    "B": "right",
+    "D": "front"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "C": "B",
+    "A": "D",
+    "B": "C",
+    "D": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0006\\start_view.png",
+      "sha256": "fc39bce3f1fc5c7fd9230f4b771db566069d773f8fe623f3ed4de38a79ca6a5f"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0006\\step_01_rgb.png",
+      "sha256": "6d1c69fefb48c05741f0cfcbe91e9f9d183cc5c3bde995d6db25b4d928448e82"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0006\\oracle_lookback.png",
+      "sha256": "322cd5090ce2b9d876b97a57cf64e079095677480c8e198c99f7ed489e528902"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "B",
+  "correct": false,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1152,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 88
+      }
+    ],
+    "thoughts_token_count": 2302,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3455,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "completed_at": "2026-09-24T17:33:14-04:00"
+}

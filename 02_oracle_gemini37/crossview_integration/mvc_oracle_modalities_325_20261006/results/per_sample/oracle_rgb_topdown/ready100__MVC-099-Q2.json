@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-099-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-099-Q2",
+  "resource_id": "MVC-099",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from potted plant in Image 2?",
+  "answer_choices": {
+    "A": "gray chair",
+    "B": "lamp",
+    "C": "wooden desk",
+    "D": "bed"
+  },
+  "gold_answer": "B",
+  "prediction": "D",
+  "correct": false,
+  "signature": "afe2d1fd3469121b1381061d9b01fc0701529c3af10c512e66dd9edabf249f5e",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-099\\order_21\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4595,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 314
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      }
+    ],
+    "thoughts_token_count": 1810,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6406,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 25.587068099994212,
+  "completed_at": "2026-10-06T17:28:49-04:00"
+}

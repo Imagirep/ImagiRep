@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVP-008-001-Q3",
+  "cohort": "last50",
+  "question_id": "MVP-008-001-Q3",
+  "resource_id": "MVP-008-001",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "round wooden table, large picture, low black cabinet, tall black cabinet",
+    "B": "tall black cabinet, round wooden table, low black cabinet, large picture",
+    "C": "large picture, tall black cabinet, round wooden table, low black cabinet",
+    "D": "round wooden table, tall black cabinet, large picture, low black cabinet"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "4fd3ff6827c77e1fe306b9d8b1d579902c447043c35b02e924222f86b1ecc6fc",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVP-008-001\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3608,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 416
+      }
+    ],
+    "thoughts_token_count": 1065,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4674,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 7.508730599991395,
+  "completed_at": "2026-10-06T17:33:02-04:00"
+}

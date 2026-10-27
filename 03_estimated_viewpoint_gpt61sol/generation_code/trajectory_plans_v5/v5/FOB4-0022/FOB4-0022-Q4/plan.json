@@ -1,0 +1,240 @@
+{
+  "question_id": "FOB4-0022-Q4",
+  "motion_text": "I walk to the white cabinet and turn right.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the white cabinet in the corner",
+      "relation": "to"
+    },
+    {
+      "op": "turn",
+      "direction": "right"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0022-Q4",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.183487897282137,
+        "y": -0.025914783385240447,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.183487897282137,
+        -0.025914783385240447
+      ]
+    ],
+    "x": -2.183487897282137,
+    "y": -0.025914783385240447,
+    "yaw": -0.01186796900423502,
+    "pitch": 0.0,
+    "travel_yaw": -0.01186796900423502
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.183487897282137,
+      -0.025914783385240447
+    ]
+  ],
+  "final": {
+    "x": -2.183487897282137,
+    "y": -0.025914783385240447,
+    "yaw_deg": 79.32001546466523,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the white cabinet in the corner",
+        "relation": "to"
+      },
+      "x": -2.183487897282137,
+      "y": -0.025914783385240447,
+      "yaw": -0.01186796900423502,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "right"
+      },
+      "x": -2.183487897282137,
+      "y": -0.025914783385240447,
+      "yaw": 1.3843954325912282,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.183487897282137,
+      "y": -0.025914783385240447,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.183487897282137,
+      "y": -0.025914783385240447,
+      "yaw": -0.01186796900423502,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.183487897282137,
+      "y": -0.025914783385240447,
+      "yaw": 1.3843954325912282,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the white cabinet in the corner",
+      "method": "initial_photo",
+      "box": [
+        488,
+        486,
+        699,
+        517
+      ],
+      "point_m": [
+        -3.215729747999065,
+        0.007601560064097719,
+        -0.49990551461870175
+      ]
+    },
+    {
+      "overlap": "the white cabinet in the corner",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 2.2,
+          "stop_m": 1.0327858362941091,
+          "visible_frac": 1.0,
+          "center_deg": 0.00888978045298286,
+          "width_deg": 6.406894518768619,
+          "distance_m": 1.1115939112682909
+        },
+        {
+          "sector": 4,
+          "path_m": 2.3000000000000003,
+          "stop_m": 1.034380643167618,
+          "visible_frac": 1.0,
+          "center_deg": 0.010419975232088614,
+          "width_deg": 6.171298736198739,
+          "distance_m": 1.111615592369996
+        },
+        {
+          "sector": 2,
+          "path_m": 3.2,
+          "stop_m": 0.8950266561479531,
+          "visible_frac": 1.0,
+          "center_deg": 0.4532153619805086,
+          "width_deg": 15.106059863269639,
+          "distance_m": 0.9542399953467074
+        },
+        {
+          "sector": 5,
+          "path_m": 3.3000000000000003,
+          "stop_m": 0.9186567488714746,
+          "visible_frac": 1.0,
+          "center_deg": 0.17804897915982754,
+          "width_deg": 13.362068760650438,
+          "distance_m": 0.966666548559156
+        },
+        {
+          "sector": 1,
+          "path_m": 4.2,
+          "stop_m": 0.9359721845660214,
+          "visible_frac": 1.0,
+          "center_deg": -0.1500954491420963,
+          "width_deg": 19.913142251849365,
+          "distance_m": 0.9397098305799552
+        },
+        {
+          "sector": 6,
+          "path_m": 4.3,
+          "stop_m": 0.968855936232939,
+          "visible_frac": 0.9422222222222222,
+          "center_deg": -0.1077474565504318,
+          "width_deg": 16.59644578466806,
+          "distance_m": 0.9670966407804208
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 3.3788977706046843,
+  "seconds": 8.75542664527893
+}

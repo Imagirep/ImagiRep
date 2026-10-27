@@ -1,0 +1,136 @@
+{
+  "row_index": 20,
+  "question_id": "FO-0038-Q8",
+  "trajectory_id": "FO-0038",
+  "scan_id": "aayBHfsNo7d",
+  "question_type": 8,
+  "question_set": "lookback",
+  "endpoint_is_lookback": true,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk through the doorway ahead and turn around, which object(s) would be on my left?",
+  "answer_choices": {
+    "A": "curtain",
+    "B": "low black table",
+    "C": "white potted plant",
+    "D": "tv"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "white potted plant",
+    "B": "tv",
+    "C": "curtain",
+    "D": "low black table"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "A": "C",
+    "B": "D",
+    "C": "A",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0038\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0038\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0038\\modalities\\step_02_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "eb7d3b6d99edebd0178696ffaaaaf7926d9088994b39535f790948da23ba7f22",
+    "6b79770932efe3b40dcf75fdc81c1ea66a1c825647e98769fbe8be39e59b7e5c"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0038\\modalities\\topdown_with_path.png",
+      "sha256": "6e9a07ec13195bd504a586c3fbc77bea976c6fdf1e25178d2bcf2943b6b8f359"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0038\\modalities\\trajectory.txt",
+      "sha256": "9b517181fdce471bf192dfd42ab6a74f4be6e18f06146d963fd2f833a8779f34"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0038\\modalities\\trajectory.mp4",
+      "sha256": "c04d52fd2e552acf826a79ce174bbed7c9fe1705ef144ebfae1381c3e1d9fdcb",
+      "frame_count": 89,
+      "fps": 12.0,
+      "duration_seconds": 7.416666666666667,
+      "bytes": 483324,
+      "final_rgb_correlation": 0.9997963227098621
+    }
+  },
+  "condition": "start_final_video",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "modality_prompt": "ADDITIONAL TRAJECTORY VIDEO:\nThe video shows the movement from start to the final state, including camera turns. Translation uses discrete connectivity hops. Use it together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "additional_modality": {
+    "kind": "video",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0038\\modalities\\trajectory.mp4",
+    "sha256": "c04d52fd2e552acf826a79ce174bbed7c9fe1705ef144ebfae1381c3e1d9fdcb",
+    "frame_count": 89,
+    "fps": 12.0,
+    "duration_seconds": 7.416666666666667,
+    "bytes": 483324,
+    "final_rgb_correlation": 0.9997963227098621
+  },
+  "input_signature": "cd3b4d092c5514fd0f26147ef0af59e296dbdd4fa230355c62c50a99692df4c4",
+  "video_sampling_fps": 12,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7915,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 180
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 5607
+      }
+    ],
+    "thoughts_token_count": 1294,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9210,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-16T17:34:36-04:00"
+}

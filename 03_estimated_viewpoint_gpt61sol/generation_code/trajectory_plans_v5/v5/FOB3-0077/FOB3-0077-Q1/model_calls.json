@@ -1,0 +1,118 @@
+[
+  {
+    "purpose": "parse",
+    "model": "gemini-3.7-flash",
+    "inputs": [
+      {
+        "image_sha256": "70c6fb67fb8b42761282866d4d6f8a72aeb43010e9ba5fd4af4869a232db1fc1",
+        "kind": "initial"
+      },
+      {
+        "text": "You will control a camera that starts at the viewpoint of this photo, at standing eye height. Convert the movement instruction into primitive steps, in order. Use ONLY what the instruction says.\nInstruction: \"I walk to the right, past the counter and face the direction I go.\"\nPrimitives (JSON objects):\n- {\"op\":\"forward\",\"amount\":\"default|few_steps\"}  walk straight ahead without a named target\n- {\"op\":\"back\",\"direction\":\"left|right|null\"}  step backwards (optionally back-left/right)\n- {\"op\":\"turn\",\"direction\":\"left|right\",\"amount\":\"slight|normal|around\"}  turn in place; \"turn around\" is amount around\n- {\"op\":\"go\",\"target\":\"...\",\"relation\":\"to|near|next_to|beside|into|through|past\",\"side\":\"left|right|null\"}  walk to/near/past/through a target\n- {\"op\":\"face\",\"target\":\"...\"}  turn in place to face an object (also \"look at\"/\"look through\")\n- {\"op\":\"face_start\"}  turn in place to face the starting point\n- {\"op\":\"face_motion\"}  keep facing the walking direction\nTarget descriptions must uniquely identify the object as seen in the photo when possible: include color, material, relative position in the photo (left/right/center, near/far) exactly as implied by the instruction. If the target is not visible in the photo, still describe it from the instruction. Return {\"steps\":[...]}"
+      }
+    ],
+    "response": {
+      "steps": [
+        {
+          "op": "turn",
+          "direction": "right",
+          "amount": "normal"
+        },
+        {
+          "op": "go",
+          "target": "the counter",
+          "relation": "past"
+        },
+        {
+          "op": "face_motion"
+        }
+      ]
+    }
+  },
+  {
+    "purpose": "ground_initial",
+    "model": "gemini-3.7-flash",
+    "inputs": [
+      {
+        "image_sha256": "70c6fb67fb8b42761282866d4d6f8a72aeb43010e9ba5fd4af4869a232db1fc1",
+        "kind": "initial"
+      },
+      {
+        "text": "Movement instruction: \"I walk to the right, past the counter and face the direction I go.\"\nTarget: \"the counter\".\nIs this target visible in the photo? If yes give its tight bounding box [ymin, xmin, ymax, xmax] in 0-1000 normalized coordinates (only the target object itself). Return {\"visible\":true|false,\"box\":[ymin,xmin,ymax,xmax],\"confidence\":0-1}"
+      }
+    ],
+    "response": {
+      "visible": false,
+      "box": null,
+      "confidence": 0.95
+    }
+  },
+  {
+    "purpose": "ground_lookaround",
+    "model": "gemini-3.7-flash",
+    "inputs": [
+      {
+        "image_sha256": "70c6fb67fb8b42761282866d4d6f8a72aeb43010e9ba5fd4af4869a232db1fc1",
+        "kind": "initial"
+      },
+      {
+        "text": "Above: the original starting photo. Below: six views from the camera's CURRENT position in a blurry 3D reconstruction of the same place. View k is rotated 60*k degrees to the right of the current facing direction."
+      },
+      {
+        "text": "View 0:"
+      },
+      {
+        "image_sha256": "84fa6926cc05db116e2624bd2cd18c8f1915eb541034a80bc06687d5e3037c77",
+        "kind": "render"
+      },
+      {
+        "text": "View 1:"
+      },
+      {
+        "image_sha256": "eb3b138f12772aa3516e0674b222c63f48111bd9f4ce30dc32243df8851ffd27",
+        "kind": "render"
+      },
+      {
+        "text": "View 2:"
+      },
+      {
+        "image_sha256": "bb8fa30cca8a7028d002938eb4ed78b65641bea398aa896714e8436a10208f89",
+        "kind": "render"
+      },
+      {
+        "text": "View 3:"
+      },
+      {
+        "image_sha256": "d692f8cadbfdd8d62e6fe6334bbb9fc423c8506be7dd5fc67a40c40a3762b44a",
+        "kind": "render"
+      },
+      {
+        "text": "View 4:"
+      },
+      {
+        "image_sha256": "a0bb34301432b6f0da342ff9acb6e009765827a98bcdc75adaf936fd6b0a59b1",
+        "kind": "render"
+      },
+      {
+        "text": "View 5:"
+      },
+      {
+        "image_sha256": "d7a1921948ca4773789c52f8eeaaa33ada055321166c43caa447344e73255ca3",
+        "kind": "render"
+      },
+      {
+        "text": "Movement instruction: \"I walk to the right, past the counter and face the direction I go.\"\nTarget: \"the counter\".\nWhich view shows this target most clearly? Give its tight bounding box [ymin, xmin, ymax, xmax] in 0-1000 normalized coordinates of that view. Return {\"view\":k or -1,\"box\":[ymin,xmin,ymax,xmax],\"confidence\":0-1}"
+      }
+    ],
+    "response": {
+      "view": 4,
+      "box": [
+        782,
+        0,
+        1000,
+        404
+      ],
+      "confidence": 0.85
+    }
+  }
+]

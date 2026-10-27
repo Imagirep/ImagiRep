@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-038-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-038-Q1",
+  "resource_id": "MVC-038",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to piano in Image 2?",
+  "answer_choices": {
+    "A": "podium",
+    "B": "wooden desk",
+    "C": "white pillar",
+    "D": "monitor"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "c5ff893b5d6d70cf295b4577ca1a24c030fbb5719befb0c8d7b6a33af74e6614",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-038\\order_12\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4594,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 313
+      }
+    ],
+    "thoughts_token_count": 1141,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5736,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.590779000005568,
+  "completed_at": "2026-10-06T16:49:50-04:00"
+}

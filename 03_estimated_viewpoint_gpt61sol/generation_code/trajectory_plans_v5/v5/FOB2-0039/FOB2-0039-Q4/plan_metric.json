@@ -1,0 +1,185 @@
+{
+  "question_id": "FOB2-0039-Q4",
+  "motion_text": "I walk forward till I'm near the dining table, then stop and turn right.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the round dark wood dining table on the right",
+      "relation": "near"
+    },
+    {
+      "op": "turn",
+      "direction": "right"
+    }
+  ],
+  "shared_walk_from": "FOB2-0039-Q1",
+  "walk_state": {
+    "question_id": "FOB2-0039-Q4",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.0356512177382597,
+        "y": 0.01505997016502655,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -1.0356512177382597,
+        "y": 0.01505997016502655,
+        "yaw": 0.3217505543966419,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.7088075667064173,
+        "y": 0.2394454198210788,
+        "yaw": 0.3217505543966419,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -1.3846502337728452,
+        0.02013495552600819
+      ],
+      [
+        -2.2846502337728456,
+        0.320134955526008
+      ]
+    ],
+    "x": -2.2846502337728456,
+    "y": 0.320134955526008,
+    "yaw": 0.13921782452960615,
+    "pitch": 0.0,
+    "travel_yaw": 0.13921782452960615
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.0356512177382597,
+      0.01505997016502655
+    ],
+    [
+      -1.7088075667064173,
+      0.2394454198210788
+    ]
+  ],
+  "final": {
+    "x": -1.7088075667064173,
+    "y": 0.2394454198210788,
+    "yaw_deg": 87.9765937785393,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "turn",
+        "direction": "right"
+      },
+      "x": -2.2846502337728456,
+      "y": 0.320134955526008,
+      "yaw": 1.5354812261250697,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.0356512177382597,
+      "y": 0.01505997016502655,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.0356512177382597,
+      "y": 0.01505997016502655,
+      "yaw": 0.3217505543966419,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.7088075667064173,
+      "y": 0.2394454198210788,
+      "yaw": 0.3217505543966419,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.7088075667064173,
+      "y": 0.2394454198210788,
+      "yaw": 1.5354812261250697,
+      "pitch": 0.0
+    }
+  ],
+  "events": [],
+  "m_per_unit": 1.8969537019729614,
+  "seconds": 4.263556003570557,
+  "planning_m_per_unit": 2.536198810859652,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.747951498853508
+}

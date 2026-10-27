@@ -1,0 +1,300 @@
+{
+  "question_id": "FOB4-0030-Q1",
+  "motion_text": "I walk to the long yellow chair, then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the long yellow chair",
+      "relation": "to"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0030-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.04823919045672846,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.1104484174972806,
+        "y": -0.15016200833135857,
+        "yaw": -0.04823919045672846,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -3.1104484174972806,
+        "y": -0.15016200833135857,
+        "yaw": 0.7853981633974527,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.1836354390854518,
+        "y": -0.07697498674318687,
+        "yaw": 0.7853981633974527,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -3.1836354390854518,
+        "y": -0.07697498674318687,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.866936935613392,
+        "y": -0.07697498674318687,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -4.25,
+        -0.20517573344674567
+      ],
+      [
+        -4.35,
+        -0.10517573344674513
+      ],
+      [
+        -6.65,
+        -0.10517573344674513
+      ]
+    ],
+    "x": -6.65,
+    "y": -0.10517573344674513,
+    "yaw": -0.015814581220436986,
+    "pitch": 0.0,
+    "travel_yaw": -0.015814581220436986
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -3.1104484174972806,
+      -0.15016200833135857
+    ],
+    [
+      -3.1836354390854518,
+      -0.07697498674318687
+    ],
+    [
+      -4.866936935613392,
+      -0.07697498674318687
+    ]
+  ],
+  "final": {
+    "x": -4.866936935613392,
+    "y": -0.07697498674318687,
+    "yaw_deg": 179.09389124130212,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the long yellow chair",
+        "relation": "to"
+      },
+      "x": -6.65,
+      "y": -0.10517573344674513,
+      "yaw": -0.015814581220436986,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -6.65,
+      "y": -0.10517573344674513,
+      "yaw": 3.1257780723693562,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.04823919045672846,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.1104484174972806,
+      "y": -0.15016200833135857,
+      "yaw": -0.04823919045672846,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.1104484174972806,
+      "y": -0.15016200833135857,
+      "yaw": 0.7853981633974527,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.1836354390854518,
+      "y": -0.07697498674318687,
+      "yaw": 0.7853981633974527,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.1836354390854518,
+      "y": -0.07697498674318687,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.866936935613392,
+      "y": -0.07697498674318687,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.866936935613392,
+      "y": -0.07697498674318687,
+      "yaw": -0.015814581220436986,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.866936935613392,
+      "y": -0.07697498674318687,
+      "yaw": 3.1257780723693562,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the long yellow chair",
+      "method": "initial_photo",
+      "box": [
+        528,
+        404,
+        653,
+        490
+      ],
+      "point_m": [
+        -7.45963810813478,
+        -0.7738481277216963,
+        -1.0262831323841914
+      ]
+    },
+    {
+      "overlap": "the long yellow chair",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 7.0,
+          "stop_m": 1.0500650632267798,
+          "visible_frac": 0.7955555555555556,
+          "center_deg": 3.794111308190684,
+          "width_deg": 45.585829365710765,
+          "distance_m": 1.7263461471206794
+        },
+        {
+          "sector": 5,
+          "path_m": 7.2,
+          "stop_m": 0.9048654009053225,
+          "visible_frac": 0.76,
+          "center_deg": 5.172043271853746,
+          "width_deg": 50.46841682693651,
+          "distance_m": 1.5965244431826509
+        },
+        {
+          "sector": 6,
+          "path_m": 8.200000000000001,
+          "stop_m": 0.5058571567447876,
+          "visible_frac": 0.27111111111111114,
+          "center_deg": 19.485153833742007,
+          "width_deg": 58.66999935330139,
+          "distance_m": 0.844970735644083
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 3.105231761932373,
+  "seconds": 9.877460718154907,
+  "planning_m_per_unit": 4.242872157587909,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.7318702158817131
+}

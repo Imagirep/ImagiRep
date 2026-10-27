@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-164-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-164-Q3",
+  "resource_id": "MVC-164",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "tall potted plant, red cabinet, lamp, small potted plant",
+    "B": "lamp, tall potted plant, small potted plant, red cabinet",
+    "C": "tall potted plant, small potted plant, lamp, red cabinet",
+    "D": "red cabinet, lamp, small potted plant, tall potted plant"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "3d0635ae5a1303681afebdcba99d1362733e67172fcb1dd8a9cfe23f3649f28f",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-164\\order_21\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4644,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 363
+      }
+    ],
+    "thoughts_token_count": 685,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5330,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 5.072538199994597,
+  "completed_at": "2026-10-06T17:29:22-04:00"
+}

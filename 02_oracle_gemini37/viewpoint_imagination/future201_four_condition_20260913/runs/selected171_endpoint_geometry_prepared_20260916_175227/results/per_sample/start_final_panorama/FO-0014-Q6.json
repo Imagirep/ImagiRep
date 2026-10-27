@@ -1,0 +1,188 @@
+{
+  "row_index": 56,
+  "question_id": "FO-0014-Q6",
+  "trajectory_id": "FO-0014",
+  "scan_id": "D7N2EKCX4Sj",
+  "question_type": 6,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk to the right till I'm near the bed, and face the glass door, where is the chair under the lamp relative to me?",
+  "answer_choices": {
+    "D": "front",
+    "A": "right",
+    "B": "left",
+    "C": "behind"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "D": "A",
+    "A": "C",
+    "B": "B",
+    "C": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0014\\image_1.png"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0014\\modalities\\step_01_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "ddb73550c87edb93984bd6ceb8dccac5361d0c5bc35a775f5e1715a60540a4d7",
+    "3491bea22ad77393c24aaa486e9e49184ae9059f31e21a9b7010c820d25ab521"
+  ],
+  "endpoint_modalities": {
+    "depth": {
+      "kind": "depth",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0014\\modalities\\step_01_depth.png",
+      "sha256": "afd4974e5017963bf439ecd76e2d131bdf41320d7b23fd07ecd93301b97b27af",
+      "final_image_kind": "endpoint",
+      "pose": {
+        "viewpoint_id": "326494a7ec264aa7a19b6e49b0e71415",
+        "heading_rad": 2.9358162879943848,
+        "elevation_rad": 0.0,
+        "vfov_degrees": 60.0,
+        "width": 320,
+        "height": 240
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0014\\modalities\\step_01_aligned_manifest.json",
+      "color_scale": {
+        "near_m": 1.542,
+        "far_m": 4.7545,
+        "colormap": "reversed OpenCV TURBO",
+        "normalization": "2nd to 98th percentile per image; clipped",
+        "black": "invalid depth",
+        "measurement": "camera-forward z-depth, not radial range"
+      }
+    },
+    "surface_normals": {
+      "kind": "surface_normals",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0014\\modalities\\step_01_surface_normals.png",
+      "sha256": "9c10197f8148e4a600eb85e4558f8f1142e64276cbd22ff3b4358b878e7b2e74",
+      "final_image_kind": "endpoint",
+      "pose": {
+        "viewpoint_id": "326494a7ec264aa7a19b6e49b0e71415",
+        "heading_rad": 2.9358162879943848,
+        "elevation_rad": 0.0,
+        "vfov_degrees": 60.0,
+        "width": 320,
+        "height": 240
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0014\\modalities\\step_01_aligned_manifest.json",
+      "encoding": {
+        "rgb_axes": [
+          "camera-right",
+          "camera-up",
+          "camera-forward"
+        ],
+        "channel_formula": "uint8(clip((component + 1) * 127.5, 0, 255))",
+        "black": "missing geometry"
+      }
+    },
+    "panorama": {
+      "kind": "panorama",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0014\\modalities\\step_01_panorama.png",
+      "sha256": "9f667e4a4fbe0de9cb178a38620ee37d78efc40df47d157dd8779bb7efbc229c",
+      "final_image_kind": "endpoint",
+      "pose": {
+        "viewpoint_id": "326494a7ec264aa7a19b6e49b0e71415",
+        "heading_rad": 2.9358162879943848,
+        "elevation_rad": 0.0,
+        "vfov_degrees": 60.0,
+        "width": 320,
+        "height": 240
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0014\\modalities\\step_01_aligned_manifest.json",
+      "orientation": {
+        "center": "front",
+        "quarter_width": "left",
+        "three_quarter_width": "right",
+        "edges": "behind; horizontal wrap",
+        "pose_alignment": "source RGB camera-centered spherical rotation"
+      }
+    }
+  },
+  "condition": "start_final_panorama",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_endpoint_geometry_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT PANORAMA (360-degree RGB at the FINAL VIEW position):\nThe panorama is centered on the final camera's facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. This is one position, not a sequence of movement frames. Combine it with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "panorama"
+  ],
+  "endpoint_modality": {
+    "kind": "panorama",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0014\\modalities\\step_01_panorama.png",
+    "sha256": "9f667e4a4fbe0de9cb178a38620ee37d78efc40df47d157dd8779bb7efbc229c",
+    "final_image_kind": "endpoint",
+    "pose": {
+      "viewpoint_id": "326494a7ec264aa7a19b6e49b0e71415",
+      "heading_rad": 2.9358162879943848,
+      "elevation_rad": 0.0,
+      "vfov_degrees": 60.0,
+      "width": 320,
+      "height": 240
+    },
+    "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0014\\modalities\\step_01_aligned_manifest.json",
+    "orientation": {
+      "center": "front",
+      "quarter_width": "left",
+      "three_quarter_width": "right",
+      "edges": "behind; horizontal wrap",
+      "pose_alignment": "source RGB camera-centered spherical rotation"
+    }
+  },
+  "input_signature": "5367bd3fd0d622cdb4fa5a7e204115277f469bd017b96d02dce1ce9c23a1b614",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3460,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3209
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 251
+      }
+    ],
+    "thoughts_token_count": 4270,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7731,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-16T18:04:06-04:00"
+}

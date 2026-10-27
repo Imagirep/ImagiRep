@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-044-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-044-Q1",
+  "resource_id": "MVC-044",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to stools in Image 2?",
+  "answer_choices": {
+    "A": "round table",
+    "B": "potted plant",
+    "C": "fireplace",
+    "D": "framed painting"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "826e1ba279b1502a965a6d45a8a7217e7b4b26b0646219efc72463f9e0f18f15",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-044\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3551,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 359
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1513,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5064,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 12.737988399996539,
+  "completed_at": "2026-10-06T17:30:46-04:00"
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-190-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-190-Q3",
+  "resource_id": "MVC-190",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "fireplace, stove, blue cups, framed painting",
+    "B": "fireplace, framed painting, blue cups, stove",
+    "C": "stove, framed painting, blue cups, fireplace",
+    "D": "stove, blue cups, framed painting, fireplace"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "e68e89ce026548998fd1362a68929744d51538d9ea4d6551e23b37c722e3e9da",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-190\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4634,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 361
+      }
+    ],
+    "thoughts_token_count": 1621,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6256,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.40067070000805,
+  "completed_at": "2026-10-06T17:45:48-04:00"
+}

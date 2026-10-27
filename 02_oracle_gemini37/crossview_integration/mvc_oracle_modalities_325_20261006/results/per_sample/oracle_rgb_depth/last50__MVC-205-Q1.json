@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-205-Q1",
+  "cohort": "last50",
+  "question_id": "MVC-205-Q1",
+  "resource_id": "MVC-205",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to pillows in Image 1?",
+  "answer_choices": {
+    "A": "yellow pot",
+    "B": "sink",
+    "C": "fireplace",
+    "D": "stove"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "553461cb124a93e581e540ab8681a8ee88c928880b396ac57efa110467e90b6d",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.604 m (near/red) to 6.673 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-205\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4599,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 343
+      }
+    ],
+    "thoughts_token_count": 414,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5014,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 5.024935399997048,
+  "completed_at": "2026-10-06T17:39:38-04:00"
+}

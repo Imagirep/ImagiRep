@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-032-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-032-Q1",
+  "resource_id": "MVC-032",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to silver pot in Image 1?",
+  "answer_choices": {
+    "A": "round table",
+    "B": "black cabinet",
+    "C": "potted flower",
+    "D": "framed painting under the light"
+  },
+  "gold_answer": "B",
+  "prediction": "A",
+  "correct": false,
+  "signature": "94f9e1c7db6e7195fb60a5465e7d8bf5a0cb1f6b2cc7095cf44c2db27b871494",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-032\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3556,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 364
+      }
+    ],
+    "thoughts_token_count": 1448,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5005,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.396441600008984,
+  "completed_at": "2026-10-06T17:30:34-04:00"
+}

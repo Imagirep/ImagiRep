@@ -1,0 +1,270 @@
+{
+  "question_id": "FOB3-0146-Q1",
+  "motion_text": "I slightly turn left and walk near the left side of the dining table, facing the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "turn",
+      "direction": "left",
+      "amount": "slight"
+    },
+    {
+      "op": "go",
+      "target": "large dark dining table in the center",
+      "relation": "near",
+      "side": "left"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0146-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.6108652381980155,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.15458894292085873,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.340363493165706,
+        "y": -0.6763687025382001,
+        "yaw": -0.15458894292085873,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -4.340363493165706,
+        -0.6763687025382001
+      ]
+    ],
+    "x": -4.340363493165706,
+    "y": -0.6763687025382001,
+    "yaw": -0.15458894292085873,
+    "pitch": 0.0,
+    "travel_yaw": -0.15458894292085873
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -4.340363493165706,
+      -0.6763687025382001
+    ]
+  ],
+  "final": {
+    "x": -4.340363493165706,
+    "y": -0.6763687025382001,
+    "yaw_deg": -8.857293988753991,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left",
+        "amount": "slight"
+      },
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.6108652381980155,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "target": "large dark dining table in the center",
+        "relation": "near",
+        "side": "left"
+      },
+      "x": -4.340363493165706,
+      "y": -0.6763687025382001,
+      "yaw": -0.15458894292085873,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -4.340363493165706,
+      "y": -0.6763687025382001,
+      "yaw": -0.15458894292085873,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.6108652381980155,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.15458894292085873,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.340363493165706,
+      "y": -0.6763687025382001,
+      "yaw": -0.15458894292085873,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "large dark dining table in the center",
+      "method": "initial_photo",
+      "box": [
+        565,
+        215,
+        762,
+        446
+      ],
+      "point_m": [
+        -5.325590606752967,
+        -1.4771402566875529,
+        -1.06904704982717
+      ]
+    },
+    {
+      "overlap": "large dark dining table in the center",
+      "n_points": 184,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 5.0,
+          "stop_m": 1.269609210458973,
+          "visible_frac": 0.9565217391304348,
+          "center_deg": -5.0783689185253,
+          "width_deg": 60.61537861111262,
+          "distance_m": 1.6669149688748977
+        },
+        {
+          "sector": 5,
+          "path_m": 5.0,
+          "stop_m": 1.296624159739247,
+          "visible_frac": 0.9347826086956522,
+          "center_deg": -5.442518068114454,
+          "width_deg": 64.4872678070537,
+          "distance_m": 1.5463318629891272
+        },
+        {
+          "sector": 3,
+          "path_m": 5.6000000000000005,
+          "stop_m": 1.289051984198378,
+          "visible_frac": 0.8532608695652174,
+          "center_deg": -3.2261811213214266,
+          "width_deg": 45.5036798399144,
+          "distance_m": 1.6780688024927055
+        },
+        {
+          "sector": 6,
+          "path_m": 5.6000000000000005,
+          "stop_m": 1.2008624248544113,
+          "visible_frac": 0.6739130434782609,
+          "center_deg": 2.2244508122982927,
+          "width_deg": 64.57475672930165,
+          "distance_m": 1.296975877899833
+        },
+        {
+          "sector": 2,
+          "path_m": 6.800000000000001,
+          "stop_m": 1.261839466991346,
+          "visible_frac": 0.6902173913043478,
+          "center_deg": 6.720567347844346,
+          "width_deg": 44.495846925687026,
+          "distance_m": 1.49956108025308
+        },
+        {
+          "sector": 1,
+          "path_m": 8.1,
+          "stop_m": 1.299312430741912,
+          "visible_frac": 0.3532608695652174,
+          "center_deg": -3.362912879925854,
+          "width_deg": 67.65062775942597,
+          "distance_m": 1.4043404950547749
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 2.7699130264309497,
+  "seconds": 9.530688762664795
+}

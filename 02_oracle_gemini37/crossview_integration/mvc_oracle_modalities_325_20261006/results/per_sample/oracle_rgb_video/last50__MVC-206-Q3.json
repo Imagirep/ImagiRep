@@ -1,0 +1,52 @@
+{
+  "uid": "last50__MVC-206-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-206-Q3",
+  "resource_id": "MVC-206",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "fireplace, black armchair, mirror, tall wooden cabinet",
+    "B": "black armchair, fireplace, tall wooden cabinet, mirror",
+    "C": "black armchair, fireplace, mirror, tall wooden cabinet",
+    "D": "black armchair, mirror, fireplace, tall wooden cabinet"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "77872412a9d50fff89f2c818008d6092812be1209f46b4db241c3ac09eda947a",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-206\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7927,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 325
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 929,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8857,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.597597200001474,
+  "completed_at": "2026-10-06T17:35:58-04:00"
+}

@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB4-0171-Q4",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk forward till I'm near the pool, then turn right, which object(s) would be closest to me?",
+  "answer_choices": {
+    "B": "dark green armchair",
+    "A": "black counter",
+    "C": "wooden table",
+    "D": "tv"
+  },
+  "gold_answer": "B",
+  "show_lookback": false,
+  "prediction": "B",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0171/start_view.png",
+      "sha256": "45605f6cbd29e301d48ddc77e972ebd19caae8fe7b6b5f13f08889344df29f5f"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0171/step_01_rgb.png",
+      "sha256": "adbfa78998feccd6eb5dfb273b7efe81e02dcbc99b7dcb2e0cf80ceadd04e51e"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0171/step_02_rgb.png",
+      "sha256": "49b8343d13838eb6fe76d5ed5b9e2c580e9090276924140e6fd2a2a4b1d09610"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3339,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 147
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1896,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5236,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 10.07100999999966,
+  "completed_at": "2026-10-06T15:18:33-04:00"
+}

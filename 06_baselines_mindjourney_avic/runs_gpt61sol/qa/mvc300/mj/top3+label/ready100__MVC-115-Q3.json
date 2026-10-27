@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-115-Q3", "method": "mj", "variant": "top3+label", "prediction": "fireplace, small potted plant, tall potted plant, lamp", "gold": "fireplace, small potted plant, tall potted plant, lamp", "correct": true, "n_imagined": 3, "category": "ordering", "stored_result": "correct"}

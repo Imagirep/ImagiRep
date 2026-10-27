@@ -1,0 +1,279 @@
+{
+  "question_id": "FOB4-0158-Q1",
+  "motion_text": "I walk forward, walk to the ovens, then turn around.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "forward",
+      "amount": "default"
+    },
+    {
+      "op": "go",
+      "target": "the built-in double ovens next to the refrigerator",
+      "relation": "to"
+    },
+    {
+      "op": "turn",
+      "direction": "left",
+      "amount": "around"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0158-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.0437293927079736,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.0437293927079736,
+        "y": 0.0,
+        "yaw": 0.4809434513147324,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.2745643323663325,
+        "y": 0.6422627110845084,
+        "yaw": 0.4809434513147324,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.0,
+        0.0
+      ],
+      [
+        -3.204498936160509,
+        0.6285203054534536
+      ]
+    ],
+    "x": -3.204498936160509,
+    "y": 0.6285203054534536,
+    "yaw": 0.4809434513147324,
+    "pitch": 0.0,
+    "travel_yaw": 0.4809434513147324
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.0437293927079736,
+      0.0
+    ],
+    [
+      -3.2745643323663325,
+      0.6422627110845084
+    ]
+  ],
+  "final": {
+    "x": -3.2745643323663325,
+    "y": 0.6422627110845084,
+    "yaw_deg": -152.44397005521026,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "forward",
+        "amount": "default"
+      },
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "target": "the built-in double ovens next to the refrigerator",
+        "relation": "to"
+      },
+      "x": -3.204498936160509,
+      "y": 0.6285203054534536,
+      "yaw": 0.4809434513147324,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left",
+        "amount": "around"
+      },
+      "x": -3.204498936160509,
+      "y": 0.6285203054534536,
+      "yaw": -2.660649202275061,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.0437293927079736,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.0437293927079736,
+      "y": 0.0,
+      "yaw": 0.4809434513147324,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.2745643323663325,
+      "y": 0.6422627110845084,
+      "yaw": 0.4809434513147324,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.2745643323663325,
+      "y": 0.6422627110845084,
+      "yaw": -2.660649202275061,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "move_yaw_deg": 0.0,
+      "requested_m": 2.0,
+      "end": [
+        -2.0,
+        0.0
+      ],
+      "blocked": false
+    },
+    {
+      "ground": "the built-in double ovens next to the refrigerator",
+      "method": "initial_photo",
+      "box": [
+        498,
+        660,
+        814,
+        715
+      ],
+      "point_m": [
+        -4.1723040718159154,
+        1.1426124969408449,
+        -0.7353946441962751
+      ]
+    },
+    {
+      "overlap": "the built-in double ovens next to the refrigerator",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 1.8,
+          "stop_m": 1.0958729679799972,
+          "visible_frac": 1.0,
+          "center_deg": -0.22237851525105604,
+          "width_deg": 6.544928526014564,
+          "distance_m": 1.238570262496356
+        },
+        {
+          "sector": 4,
+          "path_m": 2.4000000000000004,
+          "stop_m": 0.971610483766215,
+          "visible_frac": 1.0,
+          "center_deg": -0.01887959903139928,
+          "width_deg": 21.912762623331165,
+          "distance_m": 1.0789445923802499
+        },
+        {
+          "sector": 5,
+          "path_m": 3.4000000000000004,
+          "stop_m": 0.6094153068212335,
+          "visible_frac": 0.7288888888888889,
+          "center_deg": 0.6447046498794259,
+          "width_deg": 53.586260632743375,
+          "distance_m": 0.6279280190324168
+        },
+        {
+          "sector": 6,
+          "path_m": 3.9000000000000004,
+          "stop_m": 0.586791674588362,
+          "visible_frac": 0.5555555555555556,
+          "center_deg": -8.713650580197223,
+          "width_deg": 48.49496032229735,
+          "distance_m": 0.5571167145358547
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 2.299131393432617,
+  "seconds": 9.722477912902832,
+  "planning_m_per_unit": 2.249937199744661,
+  "scale_source": "moge",
+  "scale_factor_applied": 1.0218646963539868
+}

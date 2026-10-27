@@ -1,0 +1,98 @@
+{
+  "row_index": 146,
+  "question_id": "FOB4-0154-Q1",
+  "trajectory_id": "FOB4-0154",
+  "scan_id": "wc2JMjhGNzB",
+  "route_variant": "new_bent",
+  "question_type": 1,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk forward, walk near the brown sofa and slightly turn right, which direction would have the most open space?",
+  "answer_choices": {
+    "A": "right",
+    "B": "front",
+    "C": "left",
+    "D": "behind"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "A": "C",
+    "B": "A",
+    "C": "B",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0154\\start_view.png",
+      "sha256": "74e5005b6a92cca634a510295c67c7d27b517193052493c2e28f287b38afdad0"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0154\\step_01_rgb.png",
+      "sha256": "ed09ee542e147b6875e28c4216774e2bf11f1cec7cc3847d0c84804dfd37a026"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0154\\step_02_rgb.png",
+      "sha256": "44c1fb60c4020183a58e0cedb2af3775814ca7d07b0dc132184503a0aa449cd3"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2263,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 135
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 1155,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3419,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-24T17:31:52-04:00"
+}

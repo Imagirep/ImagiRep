@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB2-0009-Q5",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk forward till I'm near the sink, then stop and keep facing forward, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "D": "chair",
+    "A": "tv",
+    "B": "flower in the vase",
+    "C": "small yellow pot"
+  },
+  "gold_answer": "D",
+  "show_lookback": false,
+  "prediction": "D",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0009/start_view.png",
+      "sha256": "8e5631939a50e31821e6aaddee3d48dc8e9ea8fa99fe61c76e9502a2e5005779"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0009/step_01_rgb.png",
+      "sha256": "a335d06194bab96bdf33dba7e98cd1ad722a40dd710d34576f6b8a76752a49a4"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0009/step_02_rgb.png",
+      "sha256": "a8546a0acb225c391f1882a950f2d8bc985c614c1aae8b0afda4400a0e6150eb"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3343,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 151
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 2375,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5719,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 11.784418900002493,
+  "completed_at": "2026-10-06T14:15:13-04:00"
+}

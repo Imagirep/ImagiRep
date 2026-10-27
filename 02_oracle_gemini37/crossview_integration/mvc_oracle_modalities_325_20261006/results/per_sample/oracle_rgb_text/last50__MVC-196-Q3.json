@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-196-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-196-Q3",
+  "resource_id": "MVC-196",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "glass door, bed, white chair, tv",
+    "B": "tv, glass door, white chair, bed",
+    "C": "tv, white chair, bed, glass door",
+    "D": "bed, white chair, tv, glass door"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "286b48a223596b3f6cb50f8827e134f7a986ab5686dd0223b9b6c0276c4cf1bd",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-196\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3588,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 396
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 742,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4331,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 5.373347799992189,
+  "completed_at": "2026-10-06T17:32:37-04:00"
+}

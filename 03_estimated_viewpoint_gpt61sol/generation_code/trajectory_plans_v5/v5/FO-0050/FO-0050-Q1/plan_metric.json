@@ -1,0 +1,337 @@
+{
+  "question_id": "FO-0050-Q1",
+  "motion_text": "I walk through the doors, walk forward till I'm near the white chair, and face the direction I move.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the open double doors",
+      "relation": "through"
+    },
+    {
+      "op": "go",
+      "target": "the white chair on the left",
+      "relation": "near"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FO-0050-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.3423448059768176,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.321868424192391,
+        "y": 0.8274611627684534,
+        "yaw": 0.3423448059768176,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.4346202087333784,
+        "y": 0.867643337506867,
+        "yaw": 0.3423448059768176,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.4346202087333784,
+        "y": 0.867643337506867,
+        "yaw": -2.257671168689398,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.4016669819178302,
+        "y": 0.8274611627684534,
+        "yaw": -2.257671168689398,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.4016669819178302,
+        "y": 0.8274611627684534,
+        "yaw": -1.1071487177940904,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.960256885995906,
+        "y": -0.2897186453876988,
+        "yaw": -1.1071487177940904,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.9096621422421896,
+        1.036937491546495
+      ],
+      [
+        -3.0509576590470537,
+        1.0872920040637102
+      ],
+      [
+        -3.009662142242189,
+        1.036937491546495
+      ],
+      [
+        -3.7096621422421894,
+        -0.3630625084535053
+      ]
+    ],
+    "x": -3.7096621422421894,
+    "y": -0.3630625084535053,
+    "yaw": -1.1444817715371114,
+    "pitch": 0.0,
+    "travel_yaw": -1.1444817715371114
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.321868424192391,
+      0.8274611627684534
+    ],
+    [
+      -2.4346202087333784,
+      0.867643337506867
+    ],
+    [
+      -2.4016669819178302,
+      0.8274611627684534
+    ],
+    [
+      -2.960256885995906,
+      -0.2897186453876988
+    ]
+  ],
+  "final": {
+    "x": -2.960256885995906,
+    "y": -0.2897186453876988,
+    "yaw_deg": -65.57397523873219,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the open double doors",
+        "relation": "through"
+      },
+      "x": -3.0509576590470537,
+      "y": 1.0872920040637102,
+      "yaw": 0.34234480597681755,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "target": "the white chair on the left",
+        "relation": "near"
+      },
+      "x": -3.7096621422421894,
+      "y": -0.3630625084535053,
+      "yaw": -1.1444817715371114,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -3.7096621422421894,
+      "y": -0.3630625084535053,
+      "yaw": -1.1444817715371114,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.3423448059768176,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.321868424192391,
+      "y": 0.8274611627684534,
+      "yaw": 0.3423448059768176,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.4346202087333784,
+      "y": 0.867643337506867,
+      "yaw": 0.3423448059768176,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.4346202087333784,
+      "y": 0.867643337506867,
+      "yaw": -2.257671168689398,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.4016669819178302,
+      "y": 0.8274611627684534,
+      "yaw": -2.257671168689398,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.4016669819178302,
+      "y": 0.8274611627684534,
+      "yaw": -1.1071487177940904,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.960256885995906,
+      "y": -0.2897186453876988,
+      "yaw": -1.1071487177940904,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.960256885995906,
+      "y": -0.2897186453876988,
+      "yaw": -1.1444817715371114,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the open double doors",
+      "method": "initial_photo",
+      "box": [
+        219,
+        159,
+        1000,
+        1000
+      ],
+      "point_m": [
+        -3.386794443650161,
+        1.1776869849773859,
+        -0.4837173451047062
+      ]
+    },
+    {
+      "move_yaw_deg": 19.614912520696688,
+      "requested_m": 1.0,
+      "end": [
+        -3.0509576590470537,
+        1.0872920040637102
+      ],
+      "blocked": true
+    },
+    {
+      "ground": "the white chair on the left",
+      "method": "initial_photo",
+      "box": [
+        669,
+        368,
+        781,
+        470
+      ],
+      "point_m": [
+        -4.949830967700436,
+        -0.7443697730464232,
+        -1.348870376053762
+      ]
+    },
+    {
+      "overlap": "the white chair on the left",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 2.2,
+          "stop_m": 1.2974644294429885,
+          "visible_frac": 0.9155555555555556,
+          "center_deg": 1.3784160107626993,
+          "width_deg": 22.8437108009285,
+          "distance_m": 1.3857115308571772
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 1.5534567832946777,
+  "seconds": 9.887824773788452,
+  "planning_m_per_unit": 1.94672288268619,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.7979855772543942
+}

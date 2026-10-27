@@ -1,0 +1,1 @@
+{"qid": "FO-0006-Q3", "method": "mj", "variant": "top3+label", "prediction": "completely blocked", "gold": "partially visible", "correct": false, "n_imagined": 3, "category": "visibility", "stored_result": "wrong"}

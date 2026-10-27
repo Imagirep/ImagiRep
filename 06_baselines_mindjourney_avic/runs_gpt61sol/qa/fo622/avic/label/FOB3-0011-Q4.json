@@ -1,0 +1,1 @@
+{"qid": "FOB3-0011-Q4", "method": "avic", "variant": "label", "prediction": "glass container", "gold": "stove", "correct": false, "n_imagined": 3, "category": "nearest_object", "stored_result": "wrong"}

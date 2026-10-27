@@ -1,0 +1,96 @@
+{
+  "row_index": 93,
+  "question_id": "FOB4-0156-Q8",
+  "trajectory_id": "FOB4-0156",
+  "scan_id": "wc2JMjhGNzB",
+  "route_variant": "new_straight",
+  "question_type": 8,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk forward to the end and turn right, which object(s) would be behind me?",
+  "answer_choices": {
+    "A": "sink",
+    "B": "curtain",
+    "C": "tub",
+    "D": "potted plant"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "sink",
+    "B": "potted plant",
+    "C": "tub",
+    "D": "curtain"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "A": "A",
+    "B": "D",
+    "C": "C",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0156\\start_view.png",
+      "sha256": "5301ecd117908f219bc452549055a15891f10985cb8ecca7f69def0d0d7c6d02"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0156\\step_01_rgb.png",
+      "sha256": "2b1b30c1a9a90ebd8b2d3b5ea0d9c9f7bb5287d0d1324314c02d150f331d6041"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0156\\step_02_rgb.png",
+      "sha256": "0b14772b0ad7cc094e87040518b4e793b41d1326da1854f0567e8ab4ecbb4276"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1144,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 80
+      }
+    ],
+    "thoughts_token_count": 608,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1753,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-24T17:30:31-04:00"
+}

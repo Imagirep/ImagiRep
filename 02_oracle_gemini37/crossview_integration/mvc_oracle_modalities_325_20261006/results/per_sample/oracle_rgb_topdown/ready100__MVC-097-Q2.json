@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-097-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-097-Q2",
+  "resource_id": "MVC-097",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from white chair in Image 2?",
+  "answer_choices": {
+    "A": "bed",
+    "B": "framed paintings",
+    "C": "potted plant",
+    "D": "white ottoman near me"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "3e1ca903b4d8ceb797937c8e2cfe9802fe44d421080c3559ff3373625e967eeb",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-097\\order_12\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4598,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 317
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      }
+    ],
+    "thoughts_token_count": 5166,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9765,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 26.071984900001553,
+  "completed_at": "2026-10-06T17:12:02-04:00"
+}

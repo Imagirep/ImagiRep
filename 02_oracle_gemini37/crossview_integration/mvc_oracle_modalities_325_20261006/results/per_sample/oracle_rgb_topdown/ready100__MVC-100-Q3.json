@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-100-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-100-Q3",
+  "resource_id": "MVC-100",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "gramophone, framed picture, wooden door, wooden cabinet",
+    "B": "gramophone, wooden door, wooden cabinet, framed picture",
+    "C": "wooden door, gramophone, wooden cabinet, framed picture",
+    "D": "wooden door, wooden cabinet, framed picture, gramophone"
+  },
+  "gold_answer": "A",
+  "prediction": "B",
+  "correct": false,
+  "signature": "424e6ac8d83a91caf20e3f1f372855bf3704a355c4e1695223b3d4d640619e94",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-100\\order_12\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4640,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 359
+      }
+    ],
+    "thoughts_token_count": 2819,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7460,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 31.095352799995453,
+  "completed_at": "2026-10-06T17:28:55-04:00"
+}

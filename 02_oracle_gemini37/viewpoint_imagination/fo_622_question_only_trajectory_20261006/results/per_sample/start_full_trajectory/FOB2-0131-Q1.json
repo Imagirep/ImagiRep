@@ -1,0 +1,64 @@
+{
+  "question_id": "FOB2-0131-Q1",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk near the floral armchair and turn left, which direction would have the most open space?",
+  "answer_choices": {
+    "D": "left",
+    "A": "right",
+    "B": "front",
+    "C": "behind"
+  },
+  "gold_answer": "D",
+  "show_lookback": false,
+  "prediction": "D",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0131/start_view.png",
+      "sha256": "b0d680e528ae36196499ffbad1bbb7441f434a7b609267ab225dee819b3b18ba"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0131/step_01_rgb.png",
+      "sha256": "0ead1014c40942a7c3ffd011cde525030b7f472fd2f831060b15629dad1cae54"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2259,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 131
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 1790,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4050,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 9.618387300011818,
+  "completed_at": "2026-10-06T14:28:46-04:00"
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-162-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-162-Q3",
+  "resource_id": "MVC-162",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "black and white painting, white ottoman, plant in a white pot, kitchen counter",
+    "B": "black and white painting, plant in a white pot, kitchen counter, white ottoman",
+    "C": "white ottoman, black and white painting, plant in a white pot, kitchen counter",
+    "D": "kitchen counter, white ottoman, plant in a white pot, black and white painting"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "986f79a35fdf709aa077744020d047cca366af69f91899d889f8677948867a6f",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-162\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4662,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 389
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      }
+    ],
+    "thoughts_token_count": 1945,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6607,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 12.361058800001047,
+  "completed_at": "2026-10-06T17:45:21-04:00"
+}

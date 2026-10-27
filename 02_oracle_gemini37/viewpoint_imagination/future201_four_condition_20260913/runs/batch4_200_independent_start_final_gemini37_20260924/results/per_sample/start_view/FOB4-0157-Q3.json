@@ -1,0 +1,102 @@
+{
+  "row_index": 31,
+  "question_id": "FOB4-0157-Q3",
+  "trajectory_id": "FOB4-0157",
+  "scan_id": "wc2JMjhGNzB",
+  "route_variant": "old_bent",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": true,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "final_image_kind": "lookback",
+  "question": "If I walk forward, walk past the counter by its right side, then turn around, then turn to face my starting point, would the refrigerator still be directly visible?",
+  "answer_choices": {
+    "C": "partially visible",
+    "A": "completely blocked",
+    "B": "clearly visible",
+    "D": "outside of view"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "C": "B",
+    "A": "C",
+    "B": "A",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0157\\start_view.png",
+      "sha256": "585b85dc8cde203cd3c6fcbd04a1d198274765f3d5f181198da6ca1795ef7d2b"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0157\\step_01_rgb.png",
+      "sha256": "f19ccd7edcd1e40778df5f6e657c346872f5a76a0ec836bdd13d70a082896559"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0157\\step_02_back180_rgb.png",
+      "sha256": "58e298ee3beab201d156425438c3a7916d929bf8c0800dd3a897d6cf675f8377"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0157\\oracle_lookback.png",
+      "sha256": "5174dff578716f38f22103fa9de6a444448b2cb6c5ba9c9b1d22ed9da756677c"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": false,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1161,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 97
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 3303,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4465,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-24T17:29:05-04:00"
+}

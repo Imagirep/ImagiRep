@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVP-004-003-Q3",
+  "cohort": "last50",
+  "question_id": "MVP-004-003-Q3",
+  "resource_id": "MVP-004-003",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "gray sofa, tv, striped pillow, blue painting",
+    "B": "blue painting, gray sofa, tv, striped pillow",
+    "C": "gray sofa, striped pillow, tv, blue painting",
+    "D": "tv, gray sofa, striped pillow, blue painting"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "5b75aa8dbcbc50f1230c093983b1fdb901a0509d88a4a5fa898dc15f6e7afe7d",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.430 m (near/red) to 5.058 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVP-004-003\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4642,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 386
+      }
+    ],
+    "thoughts_token_count": 2632,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7275,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 12.352006900007837,
+  "completed_at": "2026-10-06T17:40:05-04:00"
+}

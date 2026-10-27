@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB2-0279-Q2",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk left past the stool and turn to face the wooden table, which direction would have the closest obstacle?",
+  "answer_choices": {
+    "A": "left",
+    "B": "front",
+    "C": "behind",
+    "D": "right"
+  },
+  "gold_answer": "A",
+  "show_lookback": false,
+  "prediction": "B",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_old40_20260917/items/FOB2-0279/start_view.png",
+      "sha256": "842dc96cc6167feeedf6dae6693e70062c89f09712f667a5962fb28c9680e593"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_old40_20260917/items/FOB2-0279/step_01_rgb.png",
+      "sha256": "0f4719fe1a6d2a51c27fbbf4e1f826496bbee96759db7f33f296491626661560"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_old40_20260917/items/FOB2-0279/step_02_rgb.png",
+      "sha256": "5c4258a0c099ff43f7556b85175d49a3ca0e607e3b4c496d541cd0e3e042d597"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3331,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 139
+      }
+    ],
+    "thoughts_token_count": 5383,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8715,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 25.971204699992086,
+  "completed_at": "2026-10-06T14:37:27-04:00"
+}

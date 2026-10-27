@@ -1,0 +1,76 @@
+{
+  "question_id": "FOB2-0095-Q3",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk near the black table, then stop and face the way I go, then turn back to face where I come from, would the small statue still be directly visible?",
+  "answer_choices": {
+    "B": "partially visible",
+    "A": "completely blocked",
+    "C": "outside of view",
+    "D": "clearly visible"
+  },
+  "gold_answer": "B",
+  "show_lookback": true,
+  "prediction": "B",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0095/start_view.png",
+      "sha256": "9fac47d2a6dd7979c53cb15d21e47d8371f64b40ad7495a56d6fca3403e3f0a6"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0095/step_01_rgb.png",
+      "sha256": "e41557b88808a269733501776d3a353e41456f845813593cd2e3631f2435b16e"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0095/step_02_rgb.png",
+      "sha256": "6c6fa3f4287e782485ba394563eaf1f220f920b2a7b61728657d8721bb31438d"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0095/oracle_lookback.png",
+      "sha256": "ab69a0f2d4312674b99396686d208a9a36dc02d1fd19ca9ca3838346f80e19fd"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4420,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 164
+      }
+    ],
+    "thoughts_token_count": 1398,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5819,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 7.213571600004798,
+  "completed_at": "2026-10-06T14:25:50-04:00"
+}

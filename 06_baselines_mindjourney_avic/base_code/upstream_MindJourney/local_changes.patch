@@ -1,0 +1,218 @@
+diff --git a/pipelines/pipeline_wan_scaling_beam_search_double_rank.py b/pipelines/pipeline_wan_scaling_beam_search_double_rank.py
+index fe8cf49..ebd1a48 100644
+--- a/pipelines/pipeline_wan_scaling_beam_search_double_rank.py
++++ b/pipelines/pipeline_wan_scaling_beam_search_double_rank.py
+@@ -124,6 +124,7 @@ class SpatialVQAPipeline(PipelineBase):
+ 
+         # Optional: load finetuned ckpt via env var if provided (robust to nesting/prefixes)
+         ckpt_path = os.environ.get("WAN_CKPT_PATH", None)
++        assert ckpt_path and os.path.isfile(ckpt_path), f"[bench-patch] WAN_CKPT_PATH not a file: {ckpt_path}"
+         if ckpt_path is not None and os.path.isfile(ckpt_path):
+             raw = torch.load(ckpt_path, map_location="cpu")
+             sd = raw.get("state_dict", raw)
+@@ -139,7 +140,7 @@ class SpatialVQAPipeline(PipelineBase):
+                 if missing or unexpected:
+                     print(f"[INFO] Loaded ckpt with missing={len(missing)}, unexpected={len(unexpected)} keys from {ckpt_path}.")
+             except Exception as e:
+-                print(f"[WARN] Failed to load finetuned ckpt from {ckpt_path}: {e}. Proceeding with base weights.")
++                raise  # [bench-patch] never fall back to base weights
+ 
+         self.new_pipeline.to("cuda")
+         self.new_pipeline.to(dtype=torch.bfloat16)
+@@ -166,6 +167,7 @@ class SpatialVQAPipeline(PipelineBase):
+                 continue
+ 
+             qid = question["database_idx"]
++            self.model_args.camera_pitch_deg = float(question.get("camera_pitch_deg", -10.0))  # [bench-patch]
+             if (
+                 qid in self.results["skip_indices"]
+                 or any(qid in result["correct"] for result in self.results["progress"].values())
+@@ -188,14 +190,13 @@ class SpatialVQAPipeline(PipelineBase):
+             cv2.imwrite(primary_img_path, img)
+ 
+             helper_img_path = None
+-            if len(question["img_paths"]) > 1:
+-                helper_img_path = os.path.join(save_dir, "step_0", "helper_img.png")
+-                helper = cv2.imread(question["img_paths"][1])
+-                if self.model_args.vlm_model_name == "OpenGVLab/InternVL3-14B":
+-                    helper = cv2.resize(helper, (512, 512), interpolation=cv2.INTER_LINEAR)
+-                # else:
+-                #     helper = resize_to_short_side(helper, target_short=512)
+-                cv2.imwrite(helper_img_path, helper)
++            self._helper_imgs = []  # [bench-patch] all observed images after Image 1
++            for _hi, _hp in enumerate(question["img_paths"][1:], start=1):
++                _dst = os.path.join(save_dir, "step_0", "helper_img.png" if _hi == 1 else f"helper_img_{_hi}.png")
++                helper = cv2.imread(_hp)
++                cv2.imwrite(_dst, helper)
++                self._helper_imgs.append(_dst)
++            helper_img_path = self._helper_imgs[0] if self._helper_imgs else None
+ 
+             response, result, action_list, magnitude = None, "out of control", [], None
+             previous_action_sequences = None
+@@ -225,6 +226,8 @@ class SpatialVQAPipeline(PipelineBase):
+                 print("previous_action_sequences", previous_action_sequences)
+                 print("previous_action_lists", previous_action_lists)
+                 possible_actions = [f"move-forward {self.model_args.fixed_forward_magnitudes}", f"turn-left {self.model_args.fixed_rotation_magnitudes}", f"turn-right {self.model_args.fixed_rotation_magnitudes}"]
++                if os.environ.get("IMAG_TURN_ONLY") == "1":  # [bench-patch]
++                    possible_actions = [a for a in possible_actions if not a.startswith("move-forward")]
+ 
+                 action_candidates = self._simulate_all_actions(
+                     image_path=primary_img_path,
+@@ -252,7 +255,7 @@ class SpatialVQAPipeline(PipelineBase):
+                         sys_prompt, content = self.vlm.format_prompt(prompt_type="prompt_scores",
+                             question=question["question"],
+                             answer_choices=question["answer_choices"],
+-                            images=[primary_img_path, helper_img_path] if len(question['img_paths']) > 1 else [primary_img_path],
++                            images=[primary_img_path] + self._helper_imgs,
+                             action_consequences=temp_actions_store,
+                             sys_prompt=system_prompts_for_double_search[rank_i],
+                         )
+@@ -276,12 +279,12 @@ class SpatialVQAPipeline(PipelineBase):
+                         top_scores_all[rank_i] = [(score, index) for index, score in enumerate(scores)]
+                         top_scores_all[rank_i].sort(key=lambda x: x[0], reverse=True)
+                     if rank_i == 1:
+-                        for score, index in top_scores_all[rank_i]:
++                        for _rank, (score, index) in enumerate(top_scores_all[rank_i]):  # [bench-patch]
+                             if index >= len(temp_actions_store):
+                                 print("index out of range")
+                                 continue
+                             action_str, subaction_str, img_path = temp_actions_store[index]
+-                            if score < self.model_args.helpful_score_threshold:
++                            if score < self.model_args.helpful_score_threshold and not (_rank < self.model_args.helpful_topk and score >= self.model_args.helpful_floor):  # [bench-patch]
+                                 continue
+                             if img_path not in [helpful[3] for helpful in helpful_store]:
+                                 helpful_store.append((score, action_str, subaction_str, img_path))
+@@ -292,7 +295,7 @@ class SpatialVQAPipeline(PipelineBase):
+                     if index >= len(temp_actions_store):
+                         print("index out of range")
+                         continue
+-                    if score < self.model_args.exploration_score_threshold:
++                    if score < min(self.model_args.exploration_score_threshold, self.model_args.exploration_floor):  # [bench-patch]
+                         continue
+                     action_str, subaction_str, img_path = temp_actions_store[index]
+                     previous_action_list = []
+@@ -346,7 +349,7 @@ class SpatialVQAPipeline(PipelineBase):
+                 sys_prompt, content = self.vlm.format_prompt(prompt_type="answer_scaling",
+                     question=question["question"],
+                     answer_choices=question["answer_choices"],
+-                    images=[primary_img_path, helper_img_path] if len(question['img_paths']) > 1 else [primary_img_path],
++                    images=[primary_img_path] + self._helper_imgs,
+                     action_consequences=helpful_action_consequences,
+                 )
+                 response = self.vlm.run_prompt("answer_scaling", sys_prompt, content)
+@@ -384,13 +387,11 @@ class SpatialVQAPipeline(PipelineBase):
+             json.dump(self.timing, open(os.path.join(save_dir, "timing.json"), "w"), indent=4)
+ 
+     def _process_answer(self, response: str, question: dict, fwd=0.075, turn=3):
+-        response_l = response.lower()
+-        try:
+-            if any(c.lower() in response_l for c in question["answer_choices"]):
+-                return "correct" if question["correct_answer"].lower() in response_l.split("\n")[-1] else "wrong"
+-        except Exception:
+-            pass
+-        return "out of control"
++        # [bench-patch] exact match on the enum-constrained final line (upstream: substring match)
++        last = (response or "").strip().split("\n")[-1].strip().lower()
++        if last not in [c.lower() for c in question["answer_choices"]]:
++            return "out of control"
++        return "correct" if last == question["correct_answer"].lower() else "wrong"
+ 
+     def _process_score(self, response: str):
+         try:
+@@ -505,7 +506,7 @@ class SpatialVQAPipeline(PipelineBase):
+ 
+             # Build trajectory poses (Euler yaw changes; forward in camera's local Z)
+             pos   = np.zeros(3, dtype=float)
+-            theta = np.array([np.radians(-10.0), 0.0, 0.0], dtype=float)
++            theta = np.array([np.radians(getattr(self.model_args, 'camera_pitch_deg', -10.0)), 0.0, 0.0], dtype=float)  # [bench-patch] true start pitch
+ 
+             c2w_list = []
+             for i, action in enumerate([0] + action_list):
+@@ -785,5 +786,4 @@ class SpatialVQAPipeline(PipelineBase):
+ if __name__ == "__main__":
+     pipeline = SpatialVQAPipeline()
+     pipeline.run()
+-
+-
++# [bench-patch 2026-10-06]
+diff --git a/utils/args.py b/utils/args.py
+index f1abeaa..a63d3da 100755
+--- a/utils/args.py
++++ b/utils/args.py
+@@ -132,16 +132,18 @@ def _get_pipeline_args(parser: argparse.ArgumentParser) -> None:
+         "--vlm_model_name",
+         type=str,
+         default="gpt-4o",
+-        choices=["gpt-4o", "gpt-4.1", "o4-mini", "o1", "OpenGVLab/InternVL3-8B", "OpenGVLab/InternVL3-14B"],
+     )
+ 
+     parser.add_argument(
+         "--vlm_qa_model_name",
+         type=str,
+         default=None,
+-        choices=[None, "None", "gpt-4o", "gpt-4.1", "o4-mini", "o1", "OpenGVLab/InternVL3-8B", "OpenGVLab/InternVL3-14B"],
+     )
+ 
++    parser.add_argument("--inference_step", type=int, default=50)  # [bench-patch] upstream default path used 50
++    parser.add_argument("--helpful_topk", type=int, default=0)  # [bench-patch] rank-based helpful selection
++    parser.add_argument("--helpful_floor", type=float, default=99)
++    parser.add_argument("--exploration_floor", type=float, default=99)  # 99 = upstream (threshold only)
+     parser.add_argument(
+         "--num_question_chunks",
+         type=int,
+@@ -216,4 +218,5 @@ def get_svc_args():
+     _get_svc_args(parser)
+     _get_pipeline_args(parser)
+ 
+-    return parser.parse_args()
+\ No newline at end of file
++    return parser.parse_args()
++# [bench-patch 2026-10-06]
+diff --git a/utils/vlm_wrapper.py b/utils/vlm_wrapper.py
+index bbccf45..24cfec2 100644
+--- a/utils/vlm_wrapper.py
++++ b/utils/vlm_wrapper.py
+@@ -1,10 +1,17 @@
+ # A VLM wrapper for adapting both close-source (i.e. API) and open-source (i.e. local) models.
+ from utils.api import ChatAPI, AzureConfig
++from utils.gemini_backend import GeminiChatAPI
+ from utils.InternVL3 import *
+ from utils.prompt_formatting import *
+ 
+ class VLMWrapper:
+     def __init__(self, model_name, qa_model_name=None):
++        self.is_gemini = str(model_name).startswith(('gemini', 'gpt-'))  # [bench-patch] [gpt61-patch 2026-10-10]
++        self.curr_choices = None
++        if self.is_gemini:
++            self.model = GeminiChatAPI(model_name); self.qa_model = None
++            self.prompt_style = 'gpt'; self.curr_prompt = None
++            return
+         if model_name in ['gpt-4o', 'gpt-4.1', 'o4-mini', 'o1']:
+             api_info = {
+                 "gpt-4o": {
+@@ -61,6 +68,7 @@ class VLMWrapper:
+         self.curr_prompt = None
+     
+     def format_prompt(self, prompt_type, question, answer_choices, images, action_consequences=None, sys_prompt=None):
++        self.curr_choices = answer_choices  # [bench-patch]
+         if prompt_type == 'bounding_box':
+             return format_spatial_vqa_prompt_bbox(question=question, answer_choices=answer_choices, images=images)
+         if prompt_type == 'answer_baseline':
+@@ -82,6 +90,9 @@ class VLMWrapper:
+         self.curr_prompt = {"system": system_prompt, "content": content}
+         if self.prompt_style == 'gpt':
+             content = format_gpt_content(content)
++            if getattr(self, "is_gemini", False):  # [bench-patch]
++                enum = list(self.curr_choices) if prompt_type[:7] == "answer_" and self.curr_choices else None
++                return self.model.get_system_response_with_content(system_prompt, content, enum=enum, role=prompt_type)
+             if prompt_type[:7] == 'answer_' and self.qa_model is not None:
+                 response = self.qa_model.get_system_response_with_content(system_prompt, content)
+             else:
+@@ -97,4 +108,5 @@ class VLMWrapper:
+             response, history = self.model.chat(self.tokenizer, pixel_values, system_prompt+'\n'+question, self.generation_config, num_patches_list=num_patches_list, history=None, return_history=True)
+             return response
+         else:
+-            raise ValueError(f"Prompt style {self.prompt_style} is not supported.")
+\ No newline at end of file
++            raise ValueError(f"Prompt style {self.prompt_style} is not supported.")
++# [bench-patch 2026-10-06]

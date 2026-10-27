@@ -1,0 +1,144 @@
+{
+  "row_index": 238,
+  "question_id": "FOB3-0030-Q1",
+  "trajectory_id": "FOB3-0030",
+  "scan_id": "ZMojNkEp431",
+  "question_type": 1,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk to the black box, facing the direction I go, which direction would have the most open space?",
+  "answer_choices": {
+    "C": "behind",
+    "A": "left",
+    "B": "right",
+    "D": "front"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "C": "D",
+    "A": "B",
+    "B": "C",
+    "D": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0030\\start_view.png",
+      "sha256": "ec6b51636f375d79a4006cc759d5dadd860f1d6e554b75ae23f3378b029e219c"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0030\\step_01_rgb.png",
+      "sha256": "90b1e9683620c22eb3568593406fb22aee808955211bd71a89e825f46979119c"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0030\\step_02_rgb.png",
+      "sha256": "507d9f79647506281ed804d16d7779df0b000c216c5411bc7fdda6475a2dcb42"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "category": "open_space_direction",
+  "category_label": "Open-space direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0030\\step_02_depth.png",
+      "sha256": "d12ac90cea6ced94aa0b9219a0df84cacfb0c382f0e9ec71f742e012380225b7",
+      "color_scale": {
+        "near_m": 1.1565,
+        "far_m": 7.3245
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0030\\step_02_surface_normals.png",
+      "sha256": "414cb8c2082aca525c26e7a0444d7a7f65cfe5ab6487eb279b4baf5d33300c0d"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0030\\step_02_panorama.png",
+      "sha256": "df894f88e7bbd16b10f34fcaaf615630bb97519200f11d684ba3c6b070164f14"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0030\\topdown_with_path.png",
+      "sha256": "76a67ff155cbed6265bf8b4cdc5b6ca7befe537f35a9e4f6db52622bb39dbc98"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0030\\trajectory.txt",
+      "sha256": "a03c79a2e6e5716545a2ef47bc59698c8f6706ad0c4799768c587940f5bbbad6"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0030\\trajectory.mp4",
+      "sha256": "a6462a5f604f2e278a6ba1a1de14423fbcf3fca81a58364991eb8b494fb6d9c0"
+    }
+  },
+  "condition": "start_final_depth",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT DEPTH MAP (same camera pose and field of view as FINAL VIEW):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.157 m (near/red) to 7.324 m (far/purple), with values outside this range clipped. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch3_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "C",
+  "correct": true,
+  "input_signature": "ed5347e2d84347a19f0dc9d966904ec2a411707d1b14d73b9539494f305ce520",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "depth"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3442,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 250
+      }
+    ],
+    "thoughts_token_count": 677,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4120,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T18:54:08.257-04:00",
+  "request_duration_seconds": 4.717900300005567,
+  "completed_at": "2026-10-04T18:54:12.975-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

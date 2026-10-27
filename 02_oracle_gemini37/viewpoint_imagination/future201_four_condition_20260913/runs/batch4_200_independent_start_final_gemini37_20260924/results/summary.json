@@ -1,0 +1,41 @@
+{
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "question_count": 200,
+  "by_condition": {
+    "start_view": {
+      "n": 200,
+      "correct": 113,
+      "accuracy": 0.565,
+      "by_set": {
+        "lookback": {
+          "n": 116,
+          "correct": 73,
+          "accuracy": 0.6293103448275862
+        },
+        "non-lookback": {
+          "n": 84,
+          "correct": 40,
+          "accuracy": 0.47619047619047616
+        }
+      }
+    },
+    "start_final": {
+      "n": 200,
+      "correct": 141,
+      "accuracy": 0.705,
+      "by_set": {
+        "lookback": {
+          "n": 116,
+          "correct": 82,
+          "accuracy": 0.7068965517241379
+        },
+        "non-lookback": {
+          "n": 84,
+          "correct": 59,
+          "accuracy": 0.7023809523809523
+        }
+      }
+    }
+  }
+}

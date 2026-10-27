@@ -1,0 +1,96 @@
+{
+  "row_index": 213,
+  "question_id": "FOB3-0047-Q8",
+  "trajectory_id": "FOB3-0047",
+  "scan_id": "JmbYfDe2QKZ",
+  "question_type": 8,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk to the white chair at the center of my view, facing the direction I go, which object(s) would be behind me and on my right?",
+  "answer_choices": {
+    "A": "small wooden table",
+    "B": "white table",
+    "C": "painting",
+    "D": "plastic cup"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "small wooden table",
+    "B": "plastic cup",
+    "C": "painting",
+    "D": "white table"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "A": "A",
+    "B": "D",
+    "C": "C",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0047\\start_view.png",
+      "sha256": "842622f46e9998d42b009208a7cafc764cb7fdd5ef3926112fc20683a7ad9987"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0047\\step_01_rgb.png",
+      "sha256": "519cd3a6a20635cd7ba69c5a2ff87483ceab389b5f8875077f834e082af47118"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0047\\step_02_rgb.png",
+      "sha256": "82a06ba7e7cd4079b69efdc534c1ee87b9368005520320433c3aebccb4896c1e"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2277,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 149
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 1614,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3891,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-21T11:43:57-04:00"
+}

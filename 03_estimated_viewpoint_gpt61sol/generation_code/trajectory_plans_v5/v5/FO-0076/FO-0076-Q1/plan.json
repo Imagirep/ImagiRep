@@ -1,0 +1,256 @@
+{
+  "question_id": "FO-0076-Q1",
+  "motion_text": "I walk to the round table, then look back to face where I come from.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the small round table between the two red chairs",
+      "relation": "to"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FO-0076-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -6.018215158592522,
+        "y": -0.023453892998574588,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -6.018215158592522,
+        -0.023453892998574588
+      ]
+    ],
+    "x": -6.018215158592522,
+    "y": -0.023453892998574588,
+    "yaw": -0.0038971312331039032,
+    "pitch": 0.0,
+    "travel_yaw": -0.0038971312331039032
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -6.018215158592522,
+      -0.023453892998574588
+    ]
+  ],
+  "final": {
+    "x": -6.018215158592522,
+    "y": -0.023453892998574588,
+    "yaw_deg": 179.77671082813453,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the small round table between the two red chairs",
+        "relation": "to"
+      },
+      "x": -6.018215158592522,
+      "y": -0.023453892998574588,
+      "yaw": -0.0038971312331039032,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -6.018215158592522,
+      "y": -0.023453892998574588,
+      "yaw": 3.1376955223566894,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -6.018215158592522,
+      "y": -0.023453892998574588,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -6.018215158592522,
+      "y": -0.023453892998574588,
+      "yaw": -0.0038971312331039032,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -6.018215158592522,
+      "y": -0.023453892998574588,
+      "yaw": 3.1376955223566894,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the small round table between the two red chairs",
+      "method": "initial_photo",
+      "box": [
+        631,
+        508,
+        761,
+        597
+      ],
+      "point_m": [
+        -6.903365309739695,
+        0.5566189682789188,
+        -1.7680326823817896
+      ]
+    },
+    {
+      "overlap": "the small round table between the two red chairs",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 6.0,
+          "stop_m": 1.0582888615432564,
+          "visible_frac": 0.72,
+          "center_deg": -2.6224285872374864,
+          "width_deg": 30.737689409847142,
+          "distance_m": 2.181715955787319
+        },
+        {
+          "sector": 2,
+          "path_m": 6.4,
+          "stop_m": 0.7562110773777277,
+          "visible_frac": 0.6311111111111111,
+          "center_deg": -5.8940670741172205,
+          "width_deg": 31.38787114279713,
+          "distance_m": 1.8284722338737933
+        },
+        {
+          "sector": 4,
+          "path_m": 6.4,
+          "stop_m": 1.0853331015832879,
+          "visible_frac": 0.7333333333333333,
+          "center_deg": 0.7798604475726244,
+          "width_deg": 22.673526643412504,
+          "distance_m": 2.2937002638620214
+        },
+        {
+          "sector": 1,
+          "path_m": 6.9,
+          "stop_m": 0.580262908000856,
+          "visible_frac": 0.49777777777777776,
+          "center_deg": -14.277956763649145,
+          "width_deg": 39.25655420004912,
+          "distance_m": 1.3976706149636713
+        },
+        {
+          "sector": 0,
+          "path_m": 7.5,
+          "stop_m": 0.845295724007286,
+          "visible_frac": 0.05333333333333334,
+          "center_deg": -28.321491691321064,
+          "width_deg": 30.70539773799652,
+          "distance_m": 1.2170025650710143
+        },
+        {
+          "sector": 5,
+          "path_m": 7.5,
+          "stop_m": 0.569806494140214,
+          "visible_frac": 0.5466666666666666,
+          "center_deg": 7.90743710692786,
+          "width_deg": 30.07585546233853,
+          "distance_m": 1.6591458780838022
+        },
+        {
+          "sector": 6,
+          "path_m": 8.0,
+          "stop_m": 0.5201391617549327,
+          "visible_frac": 0.4088888888888889,
+          "center_deg": 14.644690874617893,
+          "width_deg": 36.1756642523707,
+          "distance_m": 1.3244067028266593
+        },
+        {
+          "sector": 7,
+          "path_m": 8.0,
+          "stop_m": 0.5152353420733528,
+          "visible_frac": 0.1288888888888889,
+          "center_deg": 6.1866180277241165,
+          "width_deg": 42.55689784732928,
+          "distance_m": 1.25780474425199
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 3.170624079985771,
+  "seconds": 7.483518362045288
+}

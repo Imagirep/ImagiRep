@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-132-Q3", "method": "avic", "variant": "label", "prediction": "sink, glass can, glass pot, chair", "gold": "sink, glass can, glass pot, chair", "correct": true, "n_imagined": 2, "category": "ordering", "stored_result": "correct"}

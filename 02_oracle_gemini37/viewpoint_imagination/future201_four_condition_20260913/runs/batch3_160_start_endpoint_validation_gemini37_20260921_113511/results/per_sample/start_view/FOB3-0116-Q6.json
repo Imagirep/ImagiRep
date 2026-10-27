@@ -1,0 +1,94 @@
+{
+  "row_index": 105,
+  "question_id": "FOB3-0116-Q6",
+  "trajectory_id": "FOB3-0116",
+  "scan_id": "qoiz87JEwZ2",
+  "question_type": 6,
+  "question_set": "lookback",
+  "endpoint_is_lookback": true,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk out of this room, then turn around to face where I come from, where is the dining table relative to me?",
+  "answer_choices": {
+    "B": "right",
+    "A": "behind",
+    "C": "left",
+    "D": "front"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "B": "C",
+    "A": "D",
+    "C": "B",
+    "D": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0116\\start_view.png",
+      "sha256": "cb4b10f5e0921226c44418adc88dbbe696ed2e29be046d2de3915ffa897a7793"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0116\\step_01_rgb.png",
+      "sha256": "2918af43f07f6e1d8e02dab6defae63ec77669dec651ec1decad26c4727d5f8b"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0116\\step_02_rgb.png",
+      "sha256": "9c463cc1dcfab9e370dc9c47892d1080392129cf616171fa14546f8b36f53bc0"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": false,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1149,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 85
+      }
+    ],
+    "thoughts_token_count": 2015,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3165,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-21T11:41:17-04:00"
+}

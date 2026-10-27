@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-117-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-117-Q3",
+  "resource_id": "MVC-117",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_surface_normals",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "fireplace, bed, wooden table, wooden cabinet",
+    "B": "wooden table, bed, wooden cabinet, fireplace",
+    "C": "wooden cabinet, fireplace, bed, wooden table",
+    "D": "bed, wooden cabinet, wooden table, fireplace"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "5dff7e997c7ca7a454e2f447a76bfd0c928faf471eadec2c34f830bbea6735cc",
+  "caption": "ORACLE SURFACE NORMAL MAP (same camera pose and field of view as Oracle RGB):\nColors encode surface orientation, not object color or distance. RGB channels encode normal components along camera-right (R), camera-up (G), and camera-forward (B): 0 = -1, about 128 = 0, and 255 = +1. Higher R/G/B means a stronger rightward/upward/forward component; a surface facing the camera has low B. Black means missing geometry. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-117\\oracle_surface_normals_sv.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4648,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 392
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 906,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5555,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 6.626628700003494,
+  "completed_at": "2026-10-06T17:41:31-04:00"
+}

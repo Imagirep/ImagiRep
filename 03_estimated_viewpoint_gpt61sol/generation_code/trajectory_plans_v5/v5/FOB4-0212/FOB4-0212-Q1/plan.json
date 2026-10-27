@@ -1,0 +1,202 @@
+{
+  "question_id": "FOB4-0212-Q1",
+  "motion_text": "I walk near the large counter, facing the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "large kitchen island counter with yellow barstools on the right",
+      "relation": "near"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0212-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.024065552577197936,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.9861757493297283,
+        "y": -0.07187784607388359,
+        "yaw": -0.024065552577197936,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.9861757493297283,
+        -0.07187784607388359
+      ]
+    ],
+    "x": -2.9861757493297283,
+    "y": -0.07187784607388359,
+    "yaw": -0.024065552577197936,
+    "pitch": 0.0,
+    "travel_yaw": -0.024065552577197936
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.9861757493297283,
+      -0.07187784607388359
+    ]
+  ],
+  "final": {
+    "x": -2.9861757493297283,
+    "y": -0.07187784607388359,
+    "yaw_deg": -1.378854594323623,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "large kitchen island counter with yellow barstools on the right",
+        "relation": "near"
+      },
+      "x": -2.9861757493297283,
+      "y": -0.07187784607388359,
+      "yaw": -0.024065552577197936,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -2.9861757493297283,
+      "y": -0.07187784607388359,
+      "yaw": -0.024065552577197936,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.024065552577197936,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.9861757493297283,
+      "y": -0.07187784607388359,
+      "yaw": -0.024065552577197936,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "large kitchen island counter with yellow barstools on the right",
+      "method": "initial_photo",
+      "box": [
+        595,
+        553,
+        844,
+        997
+      ],
+      "point_m": [
+        -4.357591105438276,
+        1.3407420216714665,
+        -0.9615233436881061
+      ]
+    },
+    {
+      "overlap": "large kitchen island counter with yellow barstools on the right",
+      "n_points": 213,
+      "candidates": [
+        {
+          "sector": 2,
+          "path_m": 3.1,
+          "stop_m": 1.9688257845018247,
+          "visible_frac": 0.7793427230046949,
+          "center_deg": -1.3117537508651482,
+          "width_deg": 40.522369970994404,
+          "distance_m": 2.026043245203872
+        },
+        {
+          "sector": 3,
+          "path_m": 3.1,
+          "stop_m": 1.9718098456473605,
+          "visible_frac": 0.812206572769953,
+          "center_deg": -0.2620658287613309,
+          "width_deg": 42.10179707153502,
+          "distance_m": 2.081085624373477
+        }
+      ],
+      "chosen_sector": 2
+    }
+  ],
+  "m_per_unit": 2.166037724156446,
+  "seconds": 14.482819080352783
+}

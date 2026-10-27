@@ -1,0 +1,305 @@
+{
+  "question_id": "FOB4-0044-Q3",
+  "motion_text": "I walk forward, walk to the wooden chairs, then turn to face my starting point, then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "forward",
+      "amount": "default"
+    },
+    {
+      "op": "go",
+      "target": "the wooden chairs on the left",
+      "relation": "to"
+    },
+    {
+      "op": "face_start"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0044-Q3",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.5550514883047126,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -1.5550514883047126,
+        "y": 0.0,
+        "yaw": -0.10006313886489705,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -5.461993062803446,
+        "y": -0.39225086650693564,
+        "yaw": -0.10006313886489705,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.0,
+        0.0
+      ],
+      [
+        -7.024838860812263,
+        -0.5044860179318693
+      ]
+    ],
+    "x": -7.024838860812263,
+    "y": -0.5044860179318693,
+    "yaw": -0.10006313886489705,
+    "pitch": 0.0,
+    "travel_yaw": -0.10006313886489705
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.5550514883047126,
+      0.0
+    ],
+    [
+      -5.461993062803446,
+      -0.39225086650693564
+    ]
+  ],
+  "final": {
+    "x": -5.461993062803446,
+    "y": -0.39225086650693564,
+    "yaw_deg": 175.89237808650924,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "forward",
+        "amount": "default"
+      },
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "target": "the wooden chairs on the left",
+        "relation": "to"
+      },
+      "x": -7.024838860812263,
+      "y": -0.5044860179318693,
+      "yaw": -0.10006313886489705,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -7.024838860812263,
+      "y": -0.5044860179318693,
+      "yaw": 3.0699011267723098,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -7.024838860812263,
+      "y": -0.5044860179318693,
+      "yaw": 3.0699011267723098,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.5550514883047126,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.5550514883047126,
+      "y": 0.0,
+      "yaw": -0.10006313886489705,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -5.461993062803446,
+      "y": -0.39225086650693564,
+      "yaw": -0.10006313886489705,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -5.461993062803446,
+      "y": -0.39225086650693564,
+      "yaw": 3.0699011267723098,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "move_yaw_deg": 0.0,
+      "requested_m": 2.0,
+      "end": [
+        -2.0,
+        0.0
+      ],
+      "blocked": false
+    },
+    {
+      "ground": "the wooden chairs on the left",
+      "method": "initial_photo",
+      "box": [
+        554,
+        344,
+        751,
+        427
+      ],
+      "point_m": [
+        -7.803672721279297,
+        -1.2562671108094219,
+        -1.6538646792039737
+      ]
+    },
+    {
+      "overlap": "the wooden chairs on the left",
+      "n_points": 217,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 5.5,
+          "stop_m": 1.0824772486376566,
+          "visible_frac": 0.5253456221198156,
+          "center_deg": 19.58828239246817,
+          "width_deg": 29.359552668808437,
+          "distance_m": 1.7609422216247115
+        },
+        {
+          "sector": 5,
+          "path_m": 5.5,
+          "stop_m": 1.08919531779211,
+          "visible_frac": 0.511520737327189,
+          "center_deg": 20.559074530206956,
+          "width_deg": 36.59012674643094,
+          "distance_m": 1.6995452567096
+        },
+        {
+          "sector": 6,
+          "path_m": 6.0,
+          "stop_m": 1.051994045989533,
+          "visible_frac": 0.31336405529953915,
+          "center_deg": 21.230331102531864,
+          "width_deg": 61.63369376882383,
+          "distance_m": 1.2935697408812543
+        },
+        {
+          "sector": 3,
+          "path_m": 6.5,
+          "stop_m": 0.5808387909112597,
+          "visible_frac": 0.2995391705069124,
+          "center_deg": -4.002385454325895,
+          "width_deg": 31.288114589225096,
+          "distance_m": 1.1879910683339499
+        },
+        {
+          "sector": 2,
+          "path_m": 7.1000000000000005,
+          "stop_m": 0.7278913628119884,
+          "visible_frac": 0.12442396313364056,
+          "center_deg": -22.206669710169773,
+          "width_deg": 19.38432398234115,
+          "distance_m": 1.0679221831102164
+        },
+        {
+          "sector": 7,
+          "path_m": 7.1000000000000005,
+          "stop_m": 0.9720592542852201,
+          "visible_frac": 0.4608294930875576,
+          "center_deg": -22.984103215094162,
+          "width_deg": 60.32062976650759,
+          "distance_m": 1.7839507064243167
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 1.90217787027359,
+  "seconds": 10.18948745727539,
+  "planning_m_per_unit": 2.4464500173525545,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.7775257441523563
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-015-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-015-Q2",
+  "resource_id": "MVC-015",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is farthest from shelf in Image 1?",
+  "answer_choices": {
+    "A": "black armchairs",
+    "B": "bed",
+    "C": "framed painting",
+    "D": "lamp with a wooden stem"
+  },
+  "gold_answer": "C",
+  "prediction": "D",
+  "correct": false,
+  "signature": "37d15351a600843ef16658182119c0e48565cfd0c9e96c305dbeebbe9d73141a",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-015\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3555,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 363
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 3927,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7483,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 16.449300499996752,
+  "completed_at": "2026-10-06T17:30:37-04:00"
+}

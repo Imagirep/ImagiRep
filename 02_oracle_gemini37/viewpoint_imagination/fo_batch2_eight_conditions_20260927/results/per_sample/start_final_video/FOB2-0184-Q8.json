@@ -1,0 +1,167 @@
+{
+  "row_index": 101,
+  "question_id": "FOB2-0184-Q8",
+  "trajectory_id": "FOB2-0184",
+  "scan_id": "JeFG25nYj2p",
+  "question_type": 8,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk to the round table and turn back to face where I come from, which object(s) would be to my right?",
+  "answer_choices": {
+    "B": "window",
+    "A": "potted plant",
+    "C": "armchair",
+    "D": "carpet"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "armchair",
+    "B": "potted plant",
+    "C": "carpet",
+    "D": "window"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "B": "D",
+    "A": "B",
+    "C": "A",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0184\\start_view.png",
+      "sha256": "d620f29ced986fbde8535e4fbbac859518ab59f3c0849b4f97ef3c03c90ff0f6"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0184\\step_01_rgb.png",
+      "sha256": "bd42a32b8bafb720622502b5edf3215502ffac6896b07803bb6806eeec7f04f8"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0184\\step_02_rgb.png",
+      "sha256": "de259fc13aa8e099abfaae45dd1e2888e119f079fda6fa3ec97690d86669ee61"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0184\\oracle_lookback.png",
+      "sha256": "32131246a21413dd56b340a97ea96bde340c910de24be510d951741757d7ca3f"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "lookback_correction": {
+    "audit": "source_snapshot/lookback_audit.json",
+    "original": {
+      "show_lookback": false,
+      "endpoint_is_lookback": false,
+      "requires_separate_lookback": false
+    },
+    "corrected": {
+      "show_lookback": true,
+      "endpoint_is_lookback": false,
+      "requires_separate_lookback": true
+    },
+    "basis": "lookback_wording_with_distinct_route_lookback_pose",
+    "endpoint_to_lookback_angle_degrees": 164.86581515787643
+  },
+  "category": "object_selection_by_direction",
+  "category_label": "Object selection by direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0184\\oracle_lookback_depth.png",
+      "sha256": "76d9a216a679cc791db61e6e0934f75ad78cb389427cc6c27e6b3251aa69684b",
+      "color_scale": {
+        "near_m": 1.86325,
+        "far_m": 9.31625
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0184\\oracle_lookback_surface_normals.png",
+      "sha256": "62c0e9eb559545463de3d98d941fbe5fca65dcb6ba914011bfafda75080aa4fb"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0184\\oracle_lookback_panorama.png",
+      "sha256": "42b053f27e83cd9b95babffceb427079e79914233e7d89d09d084a08035f9a7a"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0184\\topdown_lookback_with_path.png",
+      "sha256": "0d134fb08f51945989ee45c28e3f6187b2bd33e552f2ac066ad474867dfd0471"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0184\\trajectory_lookback.txt",
+      "sha256": "2028ca41534f119a0ec4c163644cd55260a8a380a34bfded02cdd04dcd210503"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0184\\trajectory_lookback.mp4",
+      "sha256": "7f90ccc1214d47db92ba67996281f2b6f562c2cdd41dab3839b440e8f4ebe681"
+    }
+  },
+  "condition": "start_final_video",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "B",
+  "correct": true,
+  "input_signature": "fddf63c5daf3f32661692b9e09a3ca1594ce071796e1e27ef83fb8468fd81718",
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "video_sampling_fps": 12,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 8674,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 6363
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 183
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 1150,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9825,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_started_at": "2026-09-28T01:38:34.036-04:00",
+  "request_duration_seconds": 6.015493500046432,
+  "completed_at": "2026-09-28T01:38:40.052-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "video/mp4"
+  ]
+}

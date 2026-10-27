@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-105-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-105-Q3",
+  "resource_id": "MVC-105",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "round table, empty vase, tv, flowers in a vase",
+    "B": "round table, tv, empty vase, flowers in a vase",
+    "C": "tv, flowers in a vase, empty vase, round table",
+    "D": "round table, flowers in a vase, tv, empty vase"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "c84c9c4be7ee02932b95bc0dfb78d826854399fb98902df6ddb26cca323ac0f4",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-105\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4646,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 373
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      }
+    ],
+    "thoughts_token_count": 1478,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6125,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.839899599988712,
+  "completed_at": "2026-10-06T17:44:42-04:00"
+}

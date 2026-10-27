@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-006-Q1", "method": "avic", "variant": "label", "prediction": "white flower", "gold": "white flower", "correct": true, "n_imagined": 2, "category": "cross_view_closest", "stored_result": "correct"}

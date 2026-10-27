@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB4-0173-Q3",
+  "motion_text": "I walk through the hallway with yellow light on the right, then turn to face the starting point, then turn to face my starting point.",
+  "view_variant": "lookback",
+  "frames": 155,
+  "fps": 12,
+  "total_distance_m": 5.52791353298902,
+  "depth_display_range_scene_units": [
+    1.1244363832473754,
+    5.543746471405029
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.539922910878267,
+    "far_m": 7.592196704594743
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.5134363960433745 m over generated floor distance",
+  "m_per_unit": 1.9583525657653809,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 33.94001388549805
+}

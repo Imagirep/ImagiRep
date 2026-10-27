@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB3-0017-Q4",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the white sofa and face the direction I go, which object(s) would be closest to me?",
+  "answer_choices": {
+    "D": "round table",
+    "A": "purple long sofa",
+    "B": "purple armchair",
+    "C": "brown square table"
+  },
+  "gold_answer": "D",
+  "show_lookback": false,
+  "prediction": "D",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0017/start_view.png",
+      "sha256": "67549047770c00b8d9f7096c29513da398753f344877ce432d9ab45f1faaa3c9"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0017/step_01_rgb.png",
+      "sha256": "3d4450c05f66093126db11dbd1555ab87a06bf3d1a668d21daa79f57836306a5"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0017/step_02_rgb.png",
+      "sha256": "6b475529b5128f2e9ee7a98404e10b5c4c1f53d8485f8a0765b6f20dbed51e6d"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3339,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 147
+      }
+    ],
+    "thoughts_token_count": 1166,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4506,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 7.0420543999935035,
+  "completed_at": "2026-10-06T14:40:47-04:00"
+}

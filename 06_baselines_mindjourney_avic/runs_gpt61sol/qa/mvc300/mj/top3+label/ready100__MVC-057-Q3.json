@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-057-Q3", "method": "mj", "variant": "top3+label", "prediction": "fireplace, sink, door, bed", "gold": "fireplace, bed, door, sink", "correct": false, "n_imagined": 2, "category": "ordering", "stored_result": "correct"}

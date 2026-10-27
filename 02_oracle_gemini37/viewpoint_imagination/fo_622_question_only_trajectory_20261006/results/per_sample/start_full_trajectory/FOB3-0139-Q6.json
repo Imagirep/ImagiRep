@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB3-0139-Q6",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk forward, turn right to walk to the other side of the table, then turn left, where is the gray armchair relative to me?",
+  "answer_choices": {
+    "A": "front",
+    "B": "behind",
+    "C": "right",
+    "D": "left"
+  },
+  "gold_answer": "A",
+  "show_lookback": false,
+  "prediction": "A",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch3_bent100_20260920/items/FOB3-0139/start_view.png",
+      "sha256": "8facef77525cb030af1237d040ecafc6ecc12942a7f602d1368ec0ffe1b128d1"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_bent100_20260920/items/FOB3-0139/step_01_rgb.png",
+      "sha256": "ff343a5b285dd4fc1bc937da35ccb002a9210eeecc8e0cbce18108c7444ac375"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_bent100_20260920/items/FOB3-0139/step_02_rgb.png",
+      "sha256": "8e31ced3c7dc3ed87f8155bcdeb6d7281c0afa4de50bbcce88fb14890b8c170c"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3338,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 146
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 898,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4237,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_duration_seconds": 5.339507500000764,
+  "completed_at": "2026-10-06T14:52:57-04:00"
+}

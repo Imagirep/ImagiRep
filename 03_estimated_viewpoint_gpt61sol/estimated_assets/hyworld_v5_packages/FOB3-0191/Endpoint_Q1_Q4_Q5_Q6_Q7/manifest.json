@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB3-0191-Q1",
+  "motion_text": "I walk past the glass table, turn left and walk to the end.",
+  "view_variant": "endpoint",
+  "frames": 89,
+  "fps": 12,
+  "total_distance_m": 3.5660066154905223,
+  "depth_display_range_scene_units": [
+    1.5394470620155334,
+    2.8664689445495637
+  ],
+  "depth_color_scale_m": {
+    "near_m": 2.083454649882332,
+    "far_m": 3.879417615988687
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.566763404660037 m over generated floor distance",
+  "m_per_unit": 2.1385159492492676,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 24.40544605255127
+}

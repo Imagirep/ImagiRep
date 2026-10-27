@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-196-Q2", "method": "mj", "variant": "top3+label", "prediction": "tv", "gold": "white cup set", "correct": false, "n_imagined": 3, "category": "cross_view_farthest", "stored_result": "wrong"}

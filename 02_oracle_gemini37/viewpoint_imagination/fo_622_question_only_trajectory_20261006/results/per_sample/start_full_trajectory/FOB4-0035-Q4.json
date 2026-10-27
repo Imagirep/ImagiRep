@@ -1,0 +1,76 @@
+{
+  "question_id": "FOB4-0035-Q4",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the round table, then turn to face my starting point, which object(s) would be closest to me?",
+  "answer_choices": {
+    "D": "sofa",
+    "A": "potted plant",
+    "B": "telephone",
+    "C": "wooden chair"
+  },
+  "gold_answer": "D",
+  "show_lookback": true,
+  "prediction": "D",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0035/start_view.png",
+      "sha256": "744b60980b426848750d7ff42f0fe888f8d9f3ecfcb202601deebc884a0f9765"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0035/step_01_rgb.png",
+      "sha256": "21c81c720c89bb28f2ea109757417c1cf2b9092550ca869af5a95a696ab52bf6"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0035/step_02_rgb.png",
+      "sha256": "f1e9a56fc283e8493f29e283630e653c5344c070b4ef4049f6bc400049205af3"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0035/oracle_lookback.png",
+      "sha256": "2f93a8360936bb204149cc61725865e5e4851d1fbd15fd187e77642b11d20239"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4408,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 152
+      }
+    ],
+    "thoughts_token_count": 1748,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6157,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 12.633950000003097,
+  "completed_at": "2026-10-06T15:02:28-04:00"
+}

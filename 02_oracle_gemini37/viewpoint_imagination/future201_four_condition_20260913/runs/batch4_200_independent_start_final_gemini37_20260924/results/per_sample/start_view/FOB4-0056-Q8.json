@@ -1,0 +1,102 @@
+{
+  "row_index": 196,
+  "question_id": "FOB4-0056-Q8",
+  "trajectory_id": "FOB4-0056",
+  "scan_id": "jh4fc5c5qoQ",
+  "route_variant": "new_straight",
+  "question_type": 8,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "final_image_kind": "lookback",
+  "question": "If I walk near the doorway and turn to face my starting point, which object(s) would be in front of me and on my left?",
+  "answer_choices": {
+    "A": "refrigerator",
+    "B": "armchair",
+    "C": "white bowl",
+    "D": "square table"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "refrigerator",
+    "B": "armchair",
+    "C": "square table",
+    "D": "white bowl"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "A": "A",
+    "B": "B",
+    "C": "D",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0056\\start_view.png",
+      "sha256": "88de3533d9ebd1ac2182e3d8673797ca50c3e23c437b61caea086a754dd6c3ba"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0056\\step_01_rgb.png",
+      "sha256": "22c5425651707055eda04a0a710d5a6b7324b013f466233dc4a4235c4e98195c"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0056\\step_02_rgb.png",
+      "sha256": "e5d6b46688270b9f4b018ed647236fc8b231f9d0338cd180708374323ea616d9"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0056\\oracle_lookback.png",
+      "sha256": "5b5aeb32577eb6df185082f70b8423bf43277509edbaa092bc61783f63317e89"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1154,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 90
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 479,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1634,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-24T17:33:19-04:00"
+}

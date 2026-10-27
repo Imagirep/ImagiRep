@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-052-Q3", "method": "avic", "variant": "label", "prediction": "sink, white bowls, ovens, refrigerator", "gold": "sink, ovens, refrigerator, white bowls", "correct": false, "n_imagined": 2, "category": "ordering", "stored_result": "wrong"}

@@ -1,0 +1,320 @@
+{
+  "question_id": "FO-0003-Q2",
+  "motion_text": "I walk past the fireplace and walk next to the chair, then face the chair.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "relation": "past",
+      "target": "the fireplace on the right"
+    },
+    {
+      "op": "go",
+      "relation": "next_to",
+      "target": "the grey chair"
+    },
+    {
+      "op": "face",
+      "target": "the grey chair"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FO-0003-Q2",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -6.15,
+        "y": 0.027680878272375864,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -6.15,
+        "y": 0.027680878272375864,
+        "yaw": 0.004500925422656526,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -6.15,
+        "y": 0.027680878272375864,
+        "yaw": 1.5707963267948966,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -6.15,
+        "y": 0.4276808782723762,
+        "yaw": 1.5707963267948966,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -6.15,
+        0.027680878272375864
+      ],
+      [
+        -6.15,
+        0.4276808782723762
+      ]
+    ],
+    "x": -6.15,
+    "y": 0.4276808782723762,
+    "yaw": 1.5707963267948966,
+    "pitch": 0.0,
+    "travel_yaw": 1.5707963267948966
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -6.15,
+      0.027680878272375864
+    ],
+    [
+      -6.15,
+      0.4276808782723762
+    ]
+  ],
+  "final": {
+    "x": -6.15,
+    "y": 0.4276808782723762,
+    "yaw_deg": 62.25002069972643,
+    "pitch_deg": -25.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "relation": "past",
+        "target": "the fireplace on the right"
+      },
+      "x": -6.15,
+      "y": 0.027680878272375864,
+      "yaw": 0.004500925422656526,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "relation": "next_to",
+        "target": "the grey chair"
+      },
+      "x": -6.15,
+      "y": 0.4276808782723762,
+      "yaw": 1.5707963267948966,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face",
+        "target": "the grey chair"
+      },
+      "x": -6.15,
+      "y": 0.4276808782723762,
+      "yaw": 1.0864678206448506,
+      "pitch": -0.4363323129985824
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -6.15,
+      "y": 0.027680878272375864,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -6.15,
+      "y": 0.027680878272375864,
+      "yaw": 0.004500925422656526,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -6.15,
+      "y": 0.027680878272375864,
+      "yaw": 1.5707963267948966,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -6.15,
+      "y": 0.4276808782723762,
+      "yaw": 1.5707963267948966,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -6.15,
+      "y": 0.4276808782723762,
+      "yaw": 1.0864678206448506,
+      "pitch": -0.4363323129985824
+    }
+  ],
+  "events": [
+    {
+      "ground": "the fireplace on the right",
+      "method": "initial_photo",
+      "box": [
+        537,
+        727,
+        783,
+        1000
+      ],
+      "point_m": [
+        -5.812348596208457,
+        2.621266998331628,
+        -0.893532738459072
+      ]
+    },
+    {
+      "ground": "the grey chair",
+      "method": "initial_photo",
+      "box": [
+        591,
+        595,
+        720,
+        678
+      ],
+      "point_m": [
+        -6.657177636023328,
+        1.3990064505137434,
+        -1.2014451475776295
+      ]
+    },
+    {
+      "overlap": "the grey chair",
+      "n_points": 191,
+      "candidates": [
+        {
+          "sector": 2,
+          "path_m": 0.4,
+          "stop_m": 1.0957657239447811,
+          "visible_frac": 0.9109947643979057,
+          "center_deg": -0.1484670699336611,
+          "width_deg": 30.529278443645737,
+          "distance_m": 1.096907363043063
+        },
+        {
+          "sector": 1,
+          "path_m": 0.9,
+          "stop_m": 1.0753392362378087,
+          "visible_frac": 0.6963350785340314,
+          "center_deg": 2.352194939279963,
+          "width_deg": 15.898527175566098,
+          "distance_m": 1.0678280517496985
+        },
+        {
+          "sector": 3,
+          "path_m": 0.9,
+          "stop_m": 0.6923705290744714,
+          "visible_frac": 0.42408376963350786,
+          "center_deg": 8.367663842416663,
+          "width_deg": 49.133225299515935,
+          "distance_m": 0.8053969200698814
+        },
+        {
+          "sector": 0,
+          "path_m": 1.9000000000000001,
+          "stop_m": 0.964718016817051,
+          "visible_frac": 0.34554973821989526,
+          "center_deg": -2.0254594973450892,
+          "width_deg": 26.450222921223027,
+          "distance_m": 0.9977829940259904
+        },
+        {
+          "sector": 4,
+          "path_m": 1.9000000000000001,
+          "stop_m": 1.0075857349689028,
+          "visible_frac": 0.9424083769633508,
+          "center_deg": 0.19933322356245653,
+          "width_deg": 32.876530941735666,
+          "distance_m": 1.0617251071280687
+        }
+      ],
+      "chosen_sector": 2
+    },
+    {
+      "ground": "the grey chair",
+      "method": "initial_photo",
+      "box": [
+        594,
+        596,
+        725,
+        678
+      ],
+      "point_m": [
+        -6.662779475148552,
+        1.4023152041287745,
+        -1.2247432573555181
+      ]
+    }
+  ],
+  "m_per_unit": 2.5148796109422826,
+  "seconds": 11.936387538909912
+}

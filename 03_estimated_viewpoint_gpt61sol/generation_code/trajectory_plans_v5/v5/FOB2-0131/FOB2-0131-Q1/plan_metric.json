@@ -1,0 +1,275 @@
+{
+  "question_id": "FOB2-0131-Q1",
+  "motion_text": "I walk near the floral armchair and turn left.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "floral armchair",
+      "relation": "near"
+    },
+    {
+      "op": "turn",
+      "direction": "left"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0131-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.066362053690384,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.1831926395666184,
+        "y": -0.1450942042513128,
+        "yaw": -0.066362053690384,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.1831926395666184,
+        "y": -0.1450942042513128,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.4597175995871075,
+        "y": -0.1450942042513128,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.3685304640183515,
+        -0.1574116899688498
+      ],
+      [
+        -2.6685304640183514,
+        -0.1574116899688498
+      ]
+    ],
+    "x": -2.6685304640183514,
+    "y": -0.1574116899688498,
+    "yaw": -0.05891987954340696,
+    "pitch": 0.0,
+    "travel_yaw": -0.05891987954340696
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.1831926395666184,
+      -0.1450942042513128
+    ],
+    [
+      -2.4597175995871075,
+      -0.1450942042513128
+    ]
+  ],
+  "final": {
+    "x": -2.4597175995871075,
+    "y": -0.1450942042513128,
+    "yaw_deg": -83.37586042725641,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "floral armchair",
+        "relation": "near"
+      },
+      "x": -2.6685304640183514,
+      "y": -0.1574116899688498,
+      "yaw": -0.05891987954340696,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left"
+      },
+      "x": -2.6685304640183514,
+      "y": -0.1574116899688498,
+      "yaw": -1.4551832811388705,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.066362053690384,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.1831926395666184,
+      "y": -0.1450942042513128,
+      "yaw": -0.066362053690384,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.1831926395666184,
+      "y": -0.1450942042513128,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.4597175995871075,
+      "y": -0.1450942042513128,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.4597175995871075,
+      "y": -0.1450942042513128,
+      "yaw": -0.05891987954340696,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.4597175995871075,
+      "y": -0.1450942042513128,
+      "yaw": -1.4551832811388705,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "floral armchair",
+      "method": "initial_photo",
+      "box": [
+        639,
+        210,
+        951,
+        403
+      ],
+      "point_m": [
+        -3.5732290321422684,
+        -1.0011036775254845,
+        -1.4472232489360795
+      ]
+    },
+    {
+      "overlap": "floral armchair",
+      "n_points": 198,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 2.9000000000000004,
+          "stop_m": 1.2370511990345145,
+          "visible_frac": 0.9393939393939394,
+          "center_deg": 0.8834668281042675,
+          "width_deg": 29.39799130558241,
+          "distance_m": 1.3344032667039372
+        },
+        {
+          "sector": 5,
+          "path_m": 3.0,
+          "stop_m": 1.1659142144291523,
+          "visible_frac": 0.9191919191919192,
+          "center_deg": 0.7935081479013724,
+          "width_deg": 30.664681891048577,
+          "distance_m": 1.279243691482792
+        },
+        {
+          "sector": 3,
+          "path_m": 3.5,
+          "stop_m": 1.2060137778255844,
+          "visible_frac": 1.0,
+          "center_deg": 0.07781671406350052,
+          "width_deg": 32.9803943445154,
+          "distance_m": 1.2880199547435027
+        },
+        {
+          "sector": 2,
+          "path_m": 4.7,
+          "stop_m": 0.751131978666212,
+          "visible_frac": 0.5252525252525253,
+          "center_deg": 0.5465746999526939,
+          "width_deg": 41.13147661563983,
+          "distance_m": 1.0161469158238634
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 2.767671585083008,
+  "seconds": 8.355493068695068,
+  "planning_m_per_unit": 3.002627594497729,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.9217498667349642
+}

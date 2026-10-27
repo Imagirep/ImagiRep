@@ -1,0 +1,193 @@
+{
+  "row_index": 140,
+  "question_id": "FO-0003-Q6",
+  "trajectory_id": "FO-0003",
+  "scan_id": "5q7pvUzZiYa",
+  "question_type": 6,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk past the fireplace and walk next to the chair, then face the chair, where is the black pillar relative to me?",
+  "answer_choices": {
+    "D": "behind",
+    "A": "left",
+    "B": "right",
+    "C": "front"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "D": "D",
+    "A": "B",
+    "B": "C",
+    "C": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0003\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0003\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0003\\modalities\\step_02_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "5e73318ca6f38a0b949a815a8eb92de606ec4ed77a93b419ec51d3609e216430",
+    "59064f818e998c8979cb51675a83803b63289a1082c030ef2438aadcbfa9e80d"
+  ],
+  "endpoint_modalities": {
+    "depth": {
+      "kind": "depth",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0003\\modalities\\step_02_depth.png",
+      "sha256": "fa6edb6d28fbd8f62aae8c3fbea69796aa09a885462c4fa8dbe6c7610181aaed",
+      "final_image_kind": "endpoint",
+      "pose": {
+        "viewpoint_id": "3731cd0ad6784067a5a3819f071d7878",
+        "heading_rad": -3.0486614092620137,
+        "elevation_rad": -0.4363323129985824,
+        "vfov_degrees": 60.0,
+        "width": 640,
+        "height": 480
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0003\\modalities\\step_02_aligned_manifest.json",
+      "color_scale": {
+        "near_m": 0.96375,
+        "far_m": 7.00325,
+        "colormap": "reversed OpenCV TURBO",
+        "normalization": "2nd to 98th percentile per image; clipped",
+        "black": "invalid depth",
+        "measurement": "camera-forward z-depth, not radial range"
+      }
+    },
+    "surface_normals": {
+      "kind": "surface_normals",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0003\\modalities\\step_02_surface_normals.png",
+      "sha256": "3698c7582b95a1a74c4337b952f4888c3e98ee1bd03ebdff5f1b04fdb6b8f8c9",
+      "final_image_kind": "endpoint",
+      "pose": {
+        "viewpoint_id": "3731cd0ad6784067a5a3819f071d7878",
+        "heading_rad": -3.0486614092620137,
+        "elevation_rad": -0.4363323129985824,
+        "vfov_degrees": 60.0,
+        "width": 640,
+        "height": 480
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0003\\modalities\\step_02_aligned_manifest.json",
+      "encoding": {
+        "rgb_axes": [
+          "camera-right",
+          "camera-up",
+          "camera-forward"
+        ],
+        "channel_formula": "uint8(clip((component + 1) * 127.5, 0, 255))",
+        "black": "missing geometry"
+      }
+    },
+    "panorama": {
+      "kind": "panorama",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0003\\modalities\\step_02_panorama.png",
+      "sha256": "67bcb1a2eb5ce0fce84fd25935f4ade1a9960ee99ecee05a816db1bd762cb781",
+      "final_image_kind": "endpoint",
+      "pose": {
+        "viewpoint_id": "3731cd0ad6784067a5a3819f071d7878",
+        "heading_rad": -3.0486614092620137,
+        "elevation_rad": -0.4363323129985824,
+        "vfov_degrees": 60.0,
+        "width": 640,
+        "height": 480
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0003\\modalities\\step_02_aligned_manifest.json",
+      "orientation": {
+        "center": "front",
+        "quarter_width": "left",
+        "three_quarter_width": "right",
+        "edges": "behind; horizontal wrap",
+        "pose_alignment": "source RGB camera-centered spherical rotation"
+      }
+    }
+  },
+  "condition": "start_final_panorama",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_endpoint_geometry_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT PANORAMA (360-degree RGB at the FINAL VIEW position):\nThe panorama is centered on the final camera's facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. This is one position, not a sequence of movement frames. Combine it with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "B",
+  "correct": false,
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "panorama"
+  ],
+  "endpoint_modality": {
+    "kind": "panorama",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0003\\modalities\\step_02_panorama.png",
+    "sha256": "67bcb1a2eb5ce0fce84fd25935f4ade1a9960ee99ecee05a816db1bd762cb781",
+    "final_image_kind": "endpoint",
+    "pose": {
+      "viewpoint_id": "3731cd0ad6784067a5a3819f071d7878",
+      "heading_rad": -3.0486614092620137,
+      "elevation_rad": -0.4363323129985824,
+      "vfov_degrees": 60.0,
+      "width": 640,
+      "height": 480
+    },
+    "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0003\\modalities\\step_02_aligned_manifest.json",
+    "orientation": {
+      "center": "front",
+      "quarter_width": "left",
+      "three_quarter_width": "right",
+      "edges": "behind; horizontal wrap",
+      "pose_alignment": "source RGB camera-centered spherical rotation"
+    }
+  },
+  "input_signature": "39b6be4b51fe726c18eae5301310f691e9f0aef8453392d483c30f13b9500dac",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3456,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3209
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 247
+      }
+    ],
+    "thoughts_token_count": 1127,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4584,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "completed_at": "2026-09-16T18:08:49-04:00"
+}

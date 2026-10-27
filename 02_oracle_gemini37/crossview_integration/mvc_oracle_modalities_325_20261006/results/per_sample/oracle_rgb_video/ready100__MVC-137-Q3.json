@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-137-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-137-Q3",
+  "resource_id": "MVC-137",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "blue pot, chair, framed painting, doorway",
+    "B": "chair, doorway, blue pot, framed painting",
+    "C": "framed painting, doorway, chair, blue pot",
+    "D": "blue pot, framed painting, chair, doorway"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "5d98a7f506864368aa9d9b0073fdf990236e9de57fc882e1fe18d262237ada20",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-137\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7923,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 321
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1111,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9035,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.403386999998474,
+  "completed_at": "2026-10-06T17:34:55-04:00"
+}

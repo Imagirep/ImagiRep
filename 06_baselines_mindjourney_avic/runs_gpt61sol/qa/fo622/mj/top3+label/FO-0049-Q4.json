@@ -1,0 +1,1 @@
+{"qid": "FO-0049-Q4", "method": "mj", "variant": "top3+label", "prediction": "silver bottle", "gold": "silver bottle", "correct": true, "n_imagined": 3, "category": "nearest_object", "stored_result": "wrong"}

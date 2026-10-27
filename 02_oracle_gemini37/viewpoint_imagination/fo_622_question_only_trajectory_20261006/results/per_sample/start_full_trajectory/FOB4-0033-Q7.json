@@ -1,0 +1,76 @@
+{
+  "question_id": "FOB4-0033-Q7",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the door in front of me and to my right, then turn to face my starting point, where is the marble counter relative to me?",
+  "answer_choices": {
+    "B": "front",
+    "A": "behind",
+    "C": "left",
+    "D": "right"
+  },
+  "gold_answer": "B",
+  "show_lookback": true,
+  "prediction": "D",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0033/start_view.png",
+      "sha256": "250364c8a001806f94ed5a2f7cdaf0e4d2f227f6f04c8aa5c6fe533c6f9d56e2"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0033/step_01_rgb.png",
+      "sha256": "94be7f9c663697fee4196f992cf890494eca6aee8c7f666c6e6523d1ed45f8b8"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0033/step_02_back180_rgb.png",
+      "sha256": "c971939104d2bee713ee4880a01eba9bdedc00f25d2ab13a69c628bac9b84ec5"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0033/oracle_lookback.png",
+      "sha256": "9ff80d9806fa6407b712de9ead32c12cee67b8cb2beaae03e65abea7adfb0dc0"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4411,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 155
+      }
+    ],
+    "thoughts_token_count": 1224,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5636,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 5.939674699999159,
+  "completed_at": "2026-10-06T15:01:59-04:00"
+}

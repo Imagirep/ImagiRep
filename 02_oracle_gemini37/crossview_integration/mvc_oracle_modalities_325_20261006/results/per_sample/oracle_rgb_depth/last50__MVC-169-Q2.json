@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-169-Q2",
+  "cohort": "last50",
+  "question_id": "MVC-169-Q2",
+  "resource_id": "MVC-169",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from tv in Image 2?",
+  "answer_choices": {
+    "A": "mirror",
+    "B": "stool",
+    "C": "white shelf",
+    "D": "tub"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "07697ebdef1611f91ea5ddfeb760ce0f6ca3e820ea956b3676a7ca26e303192c",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.557 m (near/red) to 5.548 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-169\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4599,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 343
+      }
+    ],
+    "thoughts_token_count": 2330,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6930,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 15.179696599996532,
+  "completed_at": "2026-10-06T17:39:14-04:00"
+}

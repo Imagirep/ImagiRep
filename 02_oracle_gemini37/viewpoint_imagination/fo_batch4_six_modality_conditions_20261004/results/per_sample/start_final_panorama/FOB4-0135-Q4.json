@@ -1,0 +1,140 @@
+{
+  "row_index": 128,
+  "question_id": "FOB4-0135-Q4",
+  "trajectory_id": "FOB4-0135",
+  "scan_id": "Vt2qJdWjCF2",
+  "route_variant": "old_straight",
+  "question_type": 4,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I take a step back and to the left, facing the same direction, which object(s) would be closest to me?",
+  "answer_choices": {
+    "D": "wooden table",
+    "A": "doors",
+    "B": "gray cabinet",
+    "C": "gray basket"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "wooden table",
+    "B": "gray basket",
+    "C": "gray cabinet",
+    "D": "doors"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "D": "A",
+    "A": "D",
+    "B": "C",
+    "C": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0135\\start_view.png",
+      "sha256": "35790b0a9dc235eb56cc0628bef970478ea52390718363c639c18b7d24388ad4"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0135\\step_01_rgb.png",
+      "sha256": "752ffe639d0383a6a82121d305e2a1eacd09d431b537b72677a0edaab1b6a8b4"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "category": "nearest_object",
+  "category_label": "Nearest object",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0135\\step_01_depth.png",
+      "sha256": "c3f42cfd9157be49a4104712c41f5765c855a740f40b3b16aba927683821a0a4",
+      "color_scale": {
+        "near_m": 0.771,
+        "far_m": 4.626
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0135\\step_01_surface_normals.png",
+      "sha256": "9c02e70e944fdfaefa7211ee6ba6178a03afc2cf471f0b34eb1eb42b3f2dbaf6"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0135\\step_01_panorama.png",
+      "sha256": "93926e8a3ddebe0e2b8370455eb7cbd8380d2dac040709557e3cfc2cdc128107"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0135\\topdown_with_path.png",
+      "sha256": "8449896966f3749f49e201e5de31d73e416e4d3630a0f70c647b4f522e3dddb6"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0135\\trajectory.txt",
+      "sha256": "369835801505f471b1e62a59d355696027d3383b0d5991af505c6f3c69feb58c"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0135\\trajectory.mp4",
+      "sha256": "2f685ed08e26897c0026f08f1f2583991303daea0119a9c21b6ab8e2f3b0c988"
+    }
+  },
+  "condition": "start_final_panorama",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT PANORAMA (360-degree RGB at the FINAL VIEW position):\nThe panorama is centered on the final camera's facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. This is one position, not a sequence of movement frames. Combine it with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch4_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "D",
+  "correct": true,
+  "input_signature": "f856ea440d9d45ba67ca8ed28c77329539ba936605996107b6afa2dd0c10c64d",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "panorama"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3459,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3209
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 250
+      }
+    ],
+    "thoughts_token_count": 1518,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4978,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_started_at": "2026-10-05T00:55:03.995-04:00",
+  "request_duration_seconds": 8.415902099994128,
+  "completed_at": "2026-10-05T00:55:12.411-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

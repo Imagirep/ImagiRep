@@ -1,0 +1,1 @@
+Solve this spatial reasoning multiple-choice question from the provided text. Reason carefully. Return only A, B, C, or D.

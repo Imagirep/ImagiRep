@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-160-Q2",
+  "cohort": "last50",
+  "question_id": "MVC-160-Q2",
+  "resource_id": "MVC-160",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from openwork black painting in Image 2?",
+  "answer_choices": {
+    "A": "yellow vases",
+    "B": "monitor",
+    "C": "record player",
+    "D": "black and white painting"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "2fb7b89559607c34c799f384dd39d855af83651a47d9afe33df35653967c37d6",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-160\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3556,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 364
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1684,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5241,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.119796400002087,
+  "completed_at": "2026-10-06T17:31:57-04:00"
+}

@@ -1,0 +1,303 @@
+{
+  "accuracy": {
+    "all": {
+      "original_only": {
+        "n": 325,
+        "correct": 222,
+        "accuracy": 0.683076923076923
+      },
+      "oracle_rgb": {
+        "n": 325,
+        "correct": 262,
+        "accuracy": 0.8061538461538461
+      },
+      "oracle_rgb_topdown": {
+        "n": 325,
+        "correct": 260,
+        "accuracy": 0.8
+      },
+      "oracle_rgb_text": {
+        "n": 325,
+        "correct": 267,
+        "accuracy": 0.8215384615384616
+      },
+      "oracle_rgb_video": {
+        "n": 325,
+        "correct": 273,
+        "accuracy": 0.84
+      },
+      "oracle_rgb_depth": {
+        "n": 325,
+        "correct": 263,
+        "accuracy": 0.8092307692307692
+      },
+      "oracle_rgb_surface_normals": {
+        "n": 325,
+        "correct": 253,
+        "accuracy": 0.7784615384615384
+      },
+      "oracle_rgb_panorama": {
+        "n": 325,
+        "correct": 258,
+        "accuracy": 0.7938461538461539
+      }
+    },
+    "cross_view_closest": {
+      "original_only": {
+        "n": 90,
+        "correct": 58,
+        "accuracy": 0.6444444444444445
+      },
+      "oracle_rgb": {
+        "n": 90,
+        "correct": 70,
+        "accuracy": 0.7777777777777778
+      },
+      "oracle_rgb_topdown": {
+        "n": 90,
+        "correct": 66,
+        "accuracy": 0.7333333333333333
+      },
+      "oracle_rgb_text": {
+        "n": 90,
+        "correct": 70,
+        "accuracy": 0.7777777777777778
+      },
+      "oracle_rgb_video": {
+        "n": 90,
+        "correct": 71,
+        "accuracy": 0.7888888888888889
+      },
+      "oracle_rgb_depth": {
+        "n": 90,
+        "correct": 70,
+        "accuracy": 0.7777777777777778
+      },
+      "oracle_rgb_surface_normals": {
+        "n": 90,
+        "correct": 66,
+        "accuracy": 0.7333333333333333
+      },
+      "oracle_rgb_panorama": {
+        "n": 90,
+        "correct": 69,
+        "accuracy": 0.7666666666666667
+      }
+    },
+    "cross_view_farthest": {
+      "original_only": {
+        "n": 87,
+        "correct": 55,
+        "accuracy": 0.632183908045977
+      },
+      "oracle_rgb": {
+        "n": 87,
+        "correct": 57,
+        "accuracy": 0.6551724137931034
+      },
+      "oracle_rgb_topdown": {
+        "n": 87,
+        "correct": 59,
+        "accuracy": 0.6781609195402298
+      },
+      "oracle_rgb_text": {
+        "n": 87,
+        "correct": 55,
+        "accuracy": 0.632183908045977
+      },
+      "oracle_rgb_video": {
+        "n": 87,
+        "correct": 60,
+        "accuracy": 0.6896551724137931
+      },
+      "oracle_rgb_depth": {
+        "n": 87,
+        "correct": 59,
+        "accuracy": 0.6781609195402298
+      },
+      "oracle_rgb_surface_normals": {
+        "n": 87,
+        "correct": 56,
+        "accuracy": 0.6436781609195402
+      },
+      "oracle_rgb_panorama": {
+        "n": 87,
+        "correct": 56,
+        "accuracy": 0.6436781609195402
+      }
+    },
+    "ordering": {
+      "original_only": {
+        "n": 148,
+        "correct": 109,
+        "accuracy": 0.7364864864864865
+      },
+      "oracle_rgb": {
+        "n": 148,
+        "correct": 135,
+        "accuracy": 0.9121621621621622
+      },
+      "oracle_rgb_topdown": {
+        "n": 148,
+        "correct": 135,
+        "accuracy": 0.9121621621621622
+      },
+      "oracle_rgb_text": {
+        "n": 148,
+        "correct": 142,
+        "accuracy": 0.9594594594594594
+      },
+      "oracle_rgb_video": {
+        "n": 148,
+        "correct": 142,
+        "accuracy": 0.9594594594594594
+      },
+      "oracle_rgb_depth": {
+        "n": 148,
+        "correct": 134,
+        "accuracy": 0.9054054054054054
+      },
+      "oracle_rgb_surface_normals": {
+        "n": 148,
+        "correct": 131,
+        "accuracy": 0.8851351351351351
+      },
+      "oracle_rgb_panorama": {
+        "n": 148,
+        "correct": 133,
+        "accuracy": 0.8986486486486487
+      }
+    }
+  },
+  "positive_only": {
+    "all": {
+      "oracle_rgb_topdown": {
+        "n": 325,
+        "correct": 280,
+        "accuracy": 0.8615384615384616
+      },
+      "oracle_rgb_text": {
+        "n": 325,
+        "correct": 276,
+        "accuracy": 0.8492307692307692
+      },
+      "oracle_rgb_video": {
+        "n": 325,
+        "correct": 282,
+        "accuracy": 0.8676923076923077
+      },
+      "oracle_rgb_depth": {
+        "n": 325,
+        "correct": 278,
+        "accuracy": 0.8553846153846154
+      },
+      "oracle_rgb_surface_normals": {
+        "n": 325,
+        "correct": 277,
+        "accuracy": 0.8523076923076923
+      },
+      "oracle_rgb_panorama": {
+        "n": 325,
+        "correct": 276,
+        "accuracy": 0.8492307692307692
+      }
+    },
+    "cross_view_closest": {
+      "oracle_rgb_topdown": {
+        "n": 90,
+        "correct": 74,
+        "accuracy": 0.8222222222222222
+      },
+      "oracle_rgb_text": {
+        "n": 90,
+        "correct": 74,
+        "accuracy": 0.8222222222222222
+      },
+      "oracle_rgb_video": {
+        "n": 90,
+        "correct": 74,
+        "accuracy": 0.8222222222222222
+      },
+      "oracle_rgb_depth": {
+        "n": 90,
+        "correct": 75,
+        "accuracy": 0.8333333333333334
+      },
+      "oracle_rgb_surface_normals": {
+        "n": 90,
+        "correct": 73,
+        "accuracy": 0.8111111111111111
+      },
+      "oracle_rgb_panorama": {
+        "n": 90,
+        "correct": 74,
+        "accuracy": 0.8222222222222222
+      }
+    },
+    "cross_view_farthest": {
+      "oracle_rgb_topdown": {
+        "n": 87,
+        "correct": 65,
+        "accuracy": 0.7471264367816092
+      },
+      "oracle_rgb_text": {
+        "n": 87,
+        "correct": 60,
+        "accuracy": 0.6896551724137931
+      },
+      "oracle_rgb_video": {
+        "n": 87,
+        "correct": 65,
+        "accuracy": 0.7471264367816092
+      },
+      "oracle_rgb_depth": {
+        "n": 87,
+        "correct": 62,
+        "accuracy": 0.7126436781609196
+      },
+      "oracle_rgb_surface_normals": {
+        "n": 87,
+        "correct": 62,
+        "accuracy": 0.7126436781609196
+      },
+      "oracle_rgb_panorama": {
+        "n": 87,
+        "correct": 63,
+        "accuracy": 0.7241379310344828
+      }
+    },
+    "ordering": {
+      "oracle_rgb_topdown": {
+        "n": 148,
+        "correct": 141,
+        "accuracy": 0.9527027027027027
+      },
+      "oracle_rgb_text": {
+        "n": 148,
+        "correct": 142,
+        "accuracy": 0.9594594594594594
+      },
+      "oracle_rgb_video": {
+        "n": 148,
+        "correct": 143,
+        "accuracy": 0.9662162162162162
+      },
+      "oracle_rgb_depth": {
+        "n": 148,
+        "correct": 141,
+        "accuracy": 0.9527027027027027
+      },
+      "oracle_rgb_surface_normals": {
+        "n": 148,
+        "correct": 142,
+        "accuracy": 0.9594594594594594
+      },
+      "oracle_rgb_panorama": {
+        "n": 148,
+        "correct": 139,
+        "accuracy": 0.9391891891891891
+      }
+    }
+  },
+  "complete": true
+}

@@ -1,0 +1,226 @@
+{
+  "question_id": "FOB4-0065-Q3",
+  "motion_text": "I walk to the windows, then turn to face my starting point, then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the window with potted plants on the sill at the far end of the room",
+      "relation": "to"
+    },
+    {
+      "op": "face_start"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0065-Q3",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.8793208641108046,
+        "y": -0.031333381590717475,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -3.7978904653616903,
+        -0.04132945121684983
+      ]
+    ],
+    "x": -3.7978904653616903,
+    "y": -0.04132945121684983,
+    "yaw": -0.010881782995944165,
+    "pitch": 0.0,
+    "travel_yaw": -0.010881782995944165
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.8793208641108046,
+      -0.031333381590717475
+    ]
+  ],
+  "final": {
+    "x": -2.8793208641108046,
+    "y": -0.031333381590717475,
+    "yaw_deg": 179.37651976075517,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the window with potted plants on the sill at the far end of the room",
+        "relation": "to"
+      },
+      "x": -3.7978904653616903,
+      "y": -0.04132945121684983,
+      "yaw": -0.010881782995944165,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -3.7978904653616903,
+      "y": -0.04132945121684983,
+      "yaw": 3.130710870593849,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -3.7978904653616903,
+      "y": -0.04132945121684983,
+      "yaw": 3.130710870593849,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.8793208641108046,
+      "y": -0.031333381590717475,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.8793208641108046,
+      "y": -0.031333381590717475,
+      "yaw": -0.010881782995944165,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.8793208641108046,
+      "y": -0.031333381590717475,
+      "yaw": 3.130710870593849,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the window with potted plants on the sill at the far end of the room",
+      "method": "initial_photo",
+      "box": [
+        318,
+        345,
+        599,
+        558
+      ],
+      "point_m": [
+        -4.807303135661705,
+        -0.21706410247329022,
+        0.38513766109220804
+      ]
+    },
+    {
+      "overlap": "the window with potted plants on the sill at the far end of the room",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 3.8000000000000003,
+          "stop_m": 1.02459582597941,
+          "visible_frac": 1.0,
+          "center_deg": 0.01902626139733064,
+          "width_deg": 59.590851542340985,
+          "distance_m": 1.080714296974039
+        },
+        {
+          "sector": 3,
+          "path_m": 4.0,
+          "stop_m": 1.009704286468,
+          "visible_frac": 1.0,
+          "center_deg": 0.0010491193852645206,
+          "width_deg": 62.4096867823619,
+          "distance_m": 1.075755005194164
+        },
+        {
+          "sector": 5,
+          "path_m": 4.7,
+          "stop_m": 1.0512043502298438,
+          "visible_frac": 1.0,
+          "center_deg": -0.012426895803645458,
+          "width_deg": 42.036987705991066,
+          "distance_m": 1.1642336133542113
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 1.5355526208877563,
+  "seconds": 14.167011499404907,
+  "planning_m_per_unit": 2.0254292359777577,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.7581368895104756
+}

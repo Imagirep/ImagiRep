@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-034-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-034-Q3",
+  "resource_id": "MVC-034",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "gray armchair, round desk, white armchair, globe",
+    "B": "white armchair, gray armchair, globe, round desk",
+    "C": "round desk, white armchair, gray armchair, globe",
+    "D": "globe, white armchair, round desk, gray armchair"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "4813bfac71e3cefa925503e27bb072436a3375dcf3128af6aeb234ea87cdfba6",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-034\\order_21\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4636,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 355
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      }
+    ],
+    "thoughts_token_count": 3049,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7685,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 16.285693999991054,
+  "completed_at": "2026-10-06T16:49:40-04:00"
+}

@@ -1,0 +1,277 @@
+{
+  "question_id": "FOB3-0013-Q6",
+  "motion_text": "I walk to the left side of the blue sofa and turn right.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "blue sofa",
+      "relation": "to",
+      "side": "left"
+    },
+    {
+      "op": "turn",
+      "direction": "right"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0013-Q6",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.5495996482487058,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.7282429231771614,
+        "y": 1.058642988774736,
+        "yaw": 0.5495996482487058,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -1.7282429231771614,
+        "y": 1.058642988774736,
+        "yaw": 0.14189705460416338,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.35169419067435,
+        "y": 1.1477074555600482,
+        "yaw": 0.14189705460416338,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -1.9404404310228935,
+        1.1886255282104425
+      ],
+      [
+        -2.6404404310228937,
+        1.2886255282104422
+      ]
+    ],
+    "x": -2.6404404310228937,
+    "y": 1.2886255282104422,
+    "yaw": 0.4540293177237228,
+    "pitch": 0.0,
+    "travel_yaw": 0.4540293177237228
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.7282429231771614,
+      1.058642988774736
+    ],
+    [
+      -2.35169419067435,
+      1.1477074555600482
+    ]
+  ],
+  "final": {
+    "x": -2.35169419067435,
+    "y": 1.1477074555600482,
+    "yaw_deg": 106.01396368077366,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "blue sofa",
+        "relation": "to",
+        "side": "left"
+      },
+      "x": -2.6404404310228937,
+      "y": 1.2886255282104422,
+      "yaw": 0.4540293177237228,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "right"
+      },
+      "x": -2.6404404310228937,
+      "y": 1.2886255282104422,
+      "yaw": 1.850292719319187,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.5495996482487058,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.7282429231771614,
+      "y": 1.058642988774736,
+      "yaw": 0.5495996482487058,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.7282429231771614,
+      "y": 1.058642988774736,
+      "yaw": 0.14189705460416338,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.35169419067435,
+      "y": 1.1477074555600482,
+      "yaw": 0.14189705460416338,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.35169419067435,
+      "y": 1.1477074555600482,
+      "yaw": 0.4540293177237228,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.35169419067435,
+      "y": 1.1477074555600482,
+      "yaw": 1.850292719319187,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "blue sofa",
+      "method": "initial_photo",
+      "box": [
+        601,
+        530,
+        893,
+        948
+      ],
+      "point_m": [
+        -3.7090493358693815,
+        1.3487202170369188,
+        -1.270514411138906
+      ]
+    },
+    {
+      "overlap": "blue sofa",
+      "n_points": 149,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 3.9000000000000004,
+          "stop_m": 1.0702973246450544,
+          "visible_frac": 0.8993288590604027,
+          "center_deg": -7.335754524936742,
+          "width_deg": 66.4500406028632,
+          "distance_m": 1.1497329284033162
+        },
+        {
+          "sector": 4,
+          "path_m": 4.0,
+          "stop_m": 1.0693537419287715,
+          "visible_frac": 0.8657718120805369,
+          "center_deg": -8.070605230850784,
+          "width_deg": 63.548297700774405,
+          "distance_m": 1.1759817533021912
+        },
+        {
+          "sector": 2,
+          "path_m": 4.800000000000001,
+          "stop_m": 0.5895418962367817,
+          "visible_frac": 0.2684563758389262,
+          "center_deg": 28.463712273701844,
+          "width_deg": 54.15007464445951,
+          "distance_m": 0.9903736197762825
+        },
+        {
+          "sector": 5,
+          "path_m": 5.1000000000000005,
+          "stop_m": 0.8560343999739773,
+          "visible_frac": 0.6375838926174496,
+          "center_deg": -8.775425749612499,
+          "width_deg": 28.166429971801858,
+          "distance_m": 1.3134837278987854
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 1.9166767597198486,
+  "seconds": 12.222166538238525,
+  "planning_m_per_unit": 2.1520105928887943,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.8906446678531259
+}

@@ -1,0 +1,286 @@
+{
+  "question_id": "FOB4-0102-Q4",
+  "motion_text": "I walk forward, walk to the black counter, facing the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "forward",
+      "amount": "default"
+    },
+    {
+      "op": "go",
+      "target": "black counter",
+      "relation": "to"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0102-Q4",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.14536456732921,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -1.14536456732921,
+        "y": 0.0,
+        "yaw": -0.15471686507706447,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.266483013301308,
+        "y": -0.48677994111491407,
+        "yaw": -0.15471686507706447,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.0,
+        0.0
+      ],
+      [
+        -7.449999999999999,
+        -0.8499999999999996
+      ]
+    ],
+    "x": -7.449999999999999,
+    "y": -0.8499999999999996,
+    "yaw": -0.15471686507706447,
+    "pitch": 0.0,
+    "travel_yaw": -0.15471686507706447
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.14536456732921,
+      0.0
+    ],
+    [
+      -4.266483013301308,
+      -0.48677994111491407
+    ]
+  ],
+  "final": {
+    "x": -4.266483013301308,
+    "y": -0.48677994111491407,
+    "yaw_deg": -8.864623388410793,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "forward",
+        "amount": "default"
+      },
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "target": "black counter",
+        "relation": "to"
+      },
+      "x": -7.449999999999999,
+      "y": -0.8499999999999996,
+      "yaw": -0.15471686507706447,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -7.449999999999999,
+      "y": -0.8499999999999996,
+      "yaw": -0.15471686507706447,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.14536456732921,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.14536456732921,
+      "y": 0.0,
+      "yaw": -0.15471686507706447,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.266483013301308,
+      "y": -0.48677994111491407,
+      "yaw": -0.15471686507706447,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "move_yaw_deg": 0.0,
+      "requested_m": 2.0,
+      "end": [
+        -2.0,
+        0.0
+      ],
+      "blocked": false
+    },
+    {
+      "ground": "black counter",
+      "method": "initial_photo",
+      "box": [
+        570,
+        314,
+        737,
+        446
+      ],
+      "point_m": [
+        -8.229044626297215,
+        -1.578235793411121,
+        -1.8357936060618774
+      ]
+    },
+    {
+      "overlap": "black counter",
+      "n_points": 195,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 6.4,
+          "stop_m": 1.0664135691970982,
+          "visible_frac": 0.5846153846153846,
+          "center_deg": 10.363242195004144,
+          "width_deg": 34.39668563163269,
+          "distance_m": 2.767238667895355
+        },
+        {
+          "sector": 5,
+          "path_m": 6.4,
+          "stop_m": 1.0940358163301867,
+          "visible_frac": 0.5794871794871795,
+          "center_deg": 15.988269155381248,
+          "width_deg": 41.70427253368292,
+          "distance_m": 2.671687782457999
+        },
+        {
+          "sector": 6,
+          "path_m": 6.9,
+          "stop_m": 1.028449305770014,
+          "visible_frac": 0.3641025641025641,
+          "center_deg": 22.647785553152417,
+          "width_deg": 47.52004648840876,
+          "distance_m": 2.2318110717858493
+        },
+        {
+          "sector": 7,
+          "path_m": 8.0,
+          "stop_m": 1.0974037982514029,
+          "visible_frac": 0.08205128205128205,
+          "center_deg": -18.10473538700412,
+          "width_deg": 62.52623901621062,
+          "distance_m": 1.3624680487360212
+        },
+        {
+          "sector": 0,
+          "path_m": 8.5,
+          "stop_m": 0.5258750828258927,
+          "visible_frac": 0.15897435897435896,
+          "center_deg": 2.3172358782816045,
+          "width_deg": 34.71316147039563,
+          "distance_m": 1.4486425089877977
+        },
+        {
+          "sector": 1,
+          "path_m": 8.8,
+          "stop_m": 0.6322696365220171,
+          "visible_frac": 0.020512820512820513,
+          "center_deg": 3.6460541299271894,
+          "width_deg": 44.34924575224947,
+          "distance_m": 1.2108008912443848
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 1.804361641407013,
+  "seconds": 8.706140756607056,
+  "planning_m_per_unit": 3.1507202036369413,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.572682283664605
+}

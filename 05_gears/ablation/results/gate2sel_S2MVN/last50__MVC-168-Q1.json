@@ -1,0 +1,1 @@
+{"uid": "last50__MVC-168-Q1", "category": "cross_view_closest", "reason": "The Estimated RGB connects the two views and helps assess proximity to the bed.", "choice": "est_rgb", "usage": {"input_tokens": 3421, "input_tokens_details": {"cache_write_tokens": 3418, "cached_tokens": 0}, "output_tokens": 131, "output_tokens_details": {"reasoning_tokens": 97}, "total_tokens": 3552}}

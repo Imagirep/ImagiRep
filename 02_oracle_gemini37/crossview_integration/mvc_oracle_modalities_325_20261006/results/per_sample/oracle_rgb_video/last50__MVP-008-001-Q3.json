@@ -1,0 +1,52 @@
+{
+  "uid": "last50__MVP-008-001-Q3",
+  "cohort": "last50",
+  "question_id": "MVP-008-001-Q3",
+  "resource_id": "MVP-008-001",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "round wooden table, large picture, low black cabinet, tall black cabinet",
+    "B": "tall black cabinet, round wooden table, low black cabinet, large picture",
+    "C": "large picture, tall black cabinet, round wooden table, low black cabinet",
+    "D": "round wooden table, tall black cabinet, large picture, low black cabinet"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "b43dd0534ac1ecdba2b60d8b29a537d017ea2fa1658adbc7412c03ce3af3601e",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVP-008-001\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7943,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 341
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1325,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9269,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.944373400008772,
+  "completed_at": "2026-10-06T17:36:11-04:00"
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB2-0279-Q3",
+  "motion_text": "I walk left past the stool, then turn to face my starting point.",
+  "view_variant": "lookback",
+  "frames": 110,
+  "fps": 12,
+  "total_distance_m": 2.9000904391740656,
+  "depth_display_range_scene_units": [
+    1.6951983571052551,
+    6.093993091583252
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.1004006832408617,
+    "far_m": 3.9557814184614246
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.394118626463758 m over generated floor distance",
+  "m_per_unit": 1.6802836656570435,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 31.15561604499817
+}

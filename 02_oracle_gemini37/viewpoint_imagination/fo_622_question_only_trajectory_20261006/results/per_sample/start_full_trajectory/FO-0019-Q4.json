@@ -1,0 +1,76 @@
+{
+  "question_id": "FO-0019-Q4",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the glass doors then turn to face my starting point, which object(s) would be closest to me?",
+  "answer_choices": {
+    "A": "sofa",
+    "B": "ottoman",
+    "C": "table",
+    "D": "tv"
+  },
+  "gold_answer": "A",
+  "show_lookback": true,
+  "prediction": "A",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "benchmark_release/items/FO-0019/image_1.png",
+      "sha256": "bbe67b4908cfd140ce664006785548c415dd5a4f840fa051fb6c45043868f127"
+    },
+    {
+      "path": "benchmark_release/items/FO-0019/modalities/step_01_rgb.png",
+      "sha256": "3438a648562a14cdc3242aa15ea8c12c328db108aeda34876c0f78ad46378583"
+    },
+    {
+      "path": "benchmark_release/items/FO-0019/modalities/step_02_rgb.png",
+      "sha256": "8d4f221bf9d44f917efc90547be1614c0601511531f06fe0c64f8aca71991193"
+    },
+    {
+      "path": "benchmark_release/items/FO-0019/modalities/oracle_lookback.png",
+      "sha256": "9bad97deb5e286dc6729fcdf108b6d4772e92c798db7cb76440cc503baa4559f"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4405,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 149
+      }
+    ],
+    "thoughts_token_count": 982,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5388,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_duration_seconds": 8.102578599995468,
+  "completed_at": "2026-10-06T14:11:53-04:00"
+}

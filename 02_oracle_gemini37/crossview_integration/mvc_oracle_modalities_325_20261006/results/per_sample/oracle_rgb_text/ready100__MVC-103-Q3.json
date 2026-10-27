@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-103-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-103-Q3",
+  "resource_id": "MVC-103",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "red bowl, wooden desk, statue, lamp",
+    "B": "statue, wooden desk, red bowl, lamp",
+    "C": "statue, red bowl, wooden desk, lamp",
+    "D": "red bowl, statue, wooden desk, lamp"
+  },
+  "gold_answer": "C",
+  "prediction": "D",
+  "correct": false,
+  "signature": "4748c84e3bfa2d2ee0f985c1859cef0f3ccc2cdee94c92b5ad726fe8b9dc3e9f",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-103\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3588,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 396
+      }
+    ],
+    "thoughts_token_count": 1794,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5383,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.050875599990832,
+  "completed_at": "2026-10-06T17:31:19-04:00"
+}

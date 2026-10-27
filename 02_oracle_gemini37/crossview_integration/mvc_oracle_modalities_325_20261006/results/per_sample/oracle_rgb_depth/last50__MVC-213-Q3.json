@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-213-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-213-Q3",
+  "resource_id": "MVC-213",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "large dining table, fireplace, three white wall decorations, black sofa",
+    "B": "black sofa, fireplace, large dining table, three white wall decorations",
+    "C": "fireplace, three white wall decorations, black sofa, large dining table",
+    "D": "three white wall decorations, black sofa, large dining table, fireplace"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "e6c22f9f4a1b2af97893350b664d7c78a6e74955b8af7f49373e8a0b185ebf76",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.813 m (near/red) to 6.535 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-213\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4654,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 398
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 1971,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6626,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.628619600000093,
+  "completed_at": "2026-10-06T17:39:49-04:00"
+}

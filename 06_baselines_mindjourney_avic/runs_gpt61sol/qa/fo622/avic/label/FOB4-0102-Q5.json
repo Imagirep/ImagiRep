@@ -1,0 +1,1 @@
+{"qid": "FOB4-0102-Q5", "method": "avic", "variant": "label", "prediction": "stove", "gold": "black stool", "correct": false, "n_imagined": 3, "category": "farthest_object", "stored_result": "wrong"}

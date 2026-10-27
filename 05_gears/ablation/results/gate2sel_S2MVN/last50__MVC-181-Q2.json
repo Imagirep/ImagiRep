@@ -1,0 +1,1 @@
+{"uid": "last50__MVC-181-Q2", "category": "cross_view_farthest", "reason": "Depth would help compare distances from the black box across the connected views.", "choice": "depth", "usage": {"input_tokens": 3422, "input_tokens_details": {"cache_write_tokens": 3419, "cached_tokens": 0}, "output_tokens": 124, "output_tokens_details": {"reasoning_tokens": 92}, "total_tokens": 3546}}

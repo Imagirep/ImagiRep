@@ -1,0 +1,98 @@
+{
+  "row_index": 241,
+  "question_id": "FOB4-0002-Q8",
+  "trajectory_id": "FOB4-0002",
+  "scan_id": "8194nk5LbLH",
+  "route_variant": "new_straight",
+  "question_type": 8,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk to the sofa in front of me and turn to my starting point, which object would be behind me and on my left?",
+  "answer_choices": {
+    "A": "potted plant",
+    "B": "blue and black chairs",
+    "C": "small black table",
+    "D": "yellow and white painting"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "potted plant",
+    "B": "blue and black chairs",
+    "C": "yellow and white painting",
+    "D": "small black table"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "A": "A",
+    "B": "B",
+    "C": "D",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0002\\start_view.png",
+      "sha256": "60d20be1bd08259586c512fdb85dfcdf688387f3f3580e65dd0e5562f6c0bf38"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0002\\step_01_rgb.png",
+      "sha256": "bf23dfc47d0a2b8b586366e2978ddb525f3c1b36d25733fc05dc88f6d5e1f275"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0002\\step_02_rgb.png",
+      "sha256": "54c331a131d17dba8a49fbf701177eb0e4fd23de19bb3f4ee5061110da6cea79"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2276,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 148
+      }
+    ],
+    "thoughts_token_count": 1206,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3483,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-24T17:34:39-04:00"
+}

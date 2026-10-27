@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-013-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-013-Q2",
+  "resource_id": "MVC-013",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from gray doors in Image 2?",
+  "answer_choices": {
+    "A": "stove",
+    "B": "stools",
+    "C": "cabinet with bowls in it",
+    "D": "tall plant"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "dd34dd67ac3b3680479328748c4db644595ac5a3cc81ddb13603f529d260bbde",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-013\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4600,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 327
+      }
+    ],
+    "thoughts_token_count": 952,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5552,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.348488399991766,
+  "completed_at": "2026-10-06T17:43:27-04:00"
+}

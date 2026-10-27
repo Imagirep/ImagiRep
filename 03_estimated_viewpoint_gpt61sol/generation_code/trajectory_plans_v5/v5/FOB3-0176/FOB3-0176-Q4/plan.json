@@ -1,0 +1,226 @@
+{
+  "question_id": "FOB3-0176-Q4",
+  "motion_text": "I walk forward, then walk to the cabinet, facing the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "forward"
+    },
+    {
+      "op": "face_motion"
+    },
+    {
+      "op": "go",
+      "target": "the wooden cabinet on the left",
+      "relation": "to"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0176-Q4",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.0,
+        "y": 0.0,
+        "yaw": -0.9883538419951441,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.580585863685855,
+        "y": -0.8814585522310381,
+        "yaw": -0.9883538419951441,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.0,
+        0.0
+      ],
+      [
+        -2.580585863685855,
+        -0.8814585522310381
+      ]
+    ],
+    "x": -2.580585863685855,
+    "y": -0.8814585522310381,
+    "yaw": -0.9883538419951441,
+    "pitch": 0.0,
+    "travel_yaw": -0.9883538419951441
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.0,
+      0.0
+    ],
+    [
+      -2.580585863685855,
+      -0.8814585522310381
+    ]
+  ],
+  "final": {
+    "x": -2.580585863685855,
+    "y": -0.8814585522310381,
+    "yaw_deg": -56.62850381186158,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "forward"
+      },
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "target": "the wooden cabinet on the left",
+        "relation": "to"
+      },
+      "x": -2.580585863685855,
+      "y": -0.8814585522310381,
+      "yaw": -0.9883538419951441,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": -0.9883538419951441,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.580585863685855,
+      "y": -0.8814585522310381,
+      "yaw": -0.9883538419951441,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "move_yaw_deg": 0.0,
+      "requested_m": 2.0,
+      "end": [
+        -2.0,
+        0.0
+      ],
+      "blocked": false
+    },
+    {
+      "ground": "the wooden cabinet on the left",
+      "method": "initial_photo",
+      "box": [
+        404,
+        13,
+        882,
+        347
+      ],
+      "point_m": [
+        -4.002501410109116,
+        -2.322676157201571,
+        -0.9299374122152412
+      ]
+    },
+    {
+      "overlap": "the wooden cabinet on the left",
+      "n_points": 225,
+      "candidates": [],
+      "chosen_sector": null
+    }
+  ],
+  "m_per_unit": 1.8620986254715082,
+  "seconds": 10.545493125915527
+}

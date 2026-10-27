@@ -1,0 +1,144 @@
+{
+  "row_index": 26,
+  "question_id": "FOB3-0011-Q4",
+  "trajectory_id": "FOB3-0011",
+  "scan_id": "sKLMLpTHeUy",
+  "question_type": 4,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk near the sink and face the direction I go, which object(s) would be closest to me?",
+  "answer_choices": {
+    "B": "stove",
+    "A": "books",
+    "C": "glass container",
+    "D": "white plates"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "glass container",
+    "B": "white plates",
+    "C": "books",
+    "D": "stove"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "B": "D",
+    "A": "C",
+    "C": "A",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0011\\start_view.png",
+      "sha256": "792647285cbd09bd65adf0f2c8fd32f9bf660bb4763aa1f2c3d7b2108b95bca6"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0011\\step_01_rgb.png",
+      "sha256": "b12904de7f76664683f38b62f50fa72a07f0f0e3a25d4977705a0c53d506ce3a"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0011\\step_02_rgb.png",
+      "sha256": "42d477a4b5adb96a3321f923017544fbcac7c295b547b34dedd5f741b06b850c"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "category": "nearest_object",
+  "category_label": "Nearest object",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0011\\step_02_depth.png",
+      "sha256": "9601c8ec0ea765f22dbd653bb3998f0ff3cfd4b5877519b4720fd555720d7738",
+      "color_scale": {
+        "near_m": 1.1565,
+        "far_m": 4.69025
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0011\\step_02_surface_normals.png",
+      "sha256": "465e8038e4fda7a48248c3249c69a0d9385ad226414f93e47fdc3ed30f8fa1a0"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0011\\step_02_panorama.png",
+      "sha256": "ce63a696690c9ef424304491ee693155508b646d0542c97fd0a2a3f8199ca214"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0011\\topdown_with_path.png",
+      "sha256": "33cb8fe40e615be088cc39754bed81a2436517cddecdcd9c845da71e6d02c3d3"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0011\\trajectory.txt",
+      "sha256": "cab452f706ab28dc869a4a81a464ecfdee0f5a914ec9d543aa77febb7f8ea33e"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0011\\trajectory.mp4",
+      "sha256": "7f32bbce6fcfc60c10612dddd8891e7e66ec51e204904bf3cca194530e5f9b7c"
+    }
+  },
+  "condition": "start_final_depth",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT DEPTH MAP (same camera pose and field of view as FINAL VIEW):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.157 m (near/red) to 4.690 m (far/purple), with values outside this range clipped. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch3_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "B",
+  "correct": true,
+  "input_signature": "bf3851a027056e459e387f455b785a71bc09e933810cd3d323723aa32aa16c2d",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "depth"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3445,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 253
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1535,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4981,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T18:35:51.638-04:00",
+  "request_duration_seconds": 7.526197900006082,
+  "completed_at": "2026-10-04T18:35:59.164-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

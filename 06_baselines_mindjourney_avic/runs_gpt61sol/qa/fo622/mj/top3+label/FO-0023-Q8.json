@@ -1,0 +1,1 @@
+{"qid": "FO-0023-Q8", "method": "mj", "variant": "top3+label", "prediction": "blue sofa", "gold": "blue sofa", "correct": true, "n_imagined": 3, "category": "visibility", "stored_result": "correct"}

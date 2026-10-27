@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVP-008-001-Q3",
+  "cohort": "last50",
+  "question_id": "MVP-008-001-Q3",
+  "resource_id": "MVP-008-001",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "round wooden table, large picture, low black cabinet, tall black cabinet",
+    "B": "tall black cabinet, round wooden table, low black cabinet, large picture",
+    "C": "large picture, tall black cabinet, round wooden table, low black cabinet",
+    "D": "round wooden table, tall black cabinet, large picture, low black cabinet"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "198b451819de52b0021198f8b7378082311880c5069b1f78e5f26835499e6339",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVP-008-001\\order_12\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4652,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 371
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      }
+    ],
+    "thoughts_token_count": 1449,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6102,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.678937599994242,
+  "completed_at": "2026-10-06T17:30:16-04:00"
+}

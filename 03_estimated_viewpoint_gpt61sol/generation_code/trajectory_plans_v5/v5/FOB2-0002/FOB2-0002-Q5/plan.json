@@ -1,0 +1,274 @@
+{
+  "question_id": "FOB2-0002-Q5",
+  "motion_text": "I walk forward and walk near the short stool, facing the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "forward",
+      "amount": "default"
+    },
+    {
+      "op": "go",
+      "target": "the short stool",
+      "relation": "near"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0002-Q5",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.0,
+        "y": 0.0,
+        "yaw": -0.26810775659289354,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.295933507226986,
+        "y": -0.6307434905026064,
+        "yaw": -0.26810775659289354,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.0,
+        0.0
+      ],
+      [
+        -4.295933507226986,
+        -0.6307434905026064
+      ]
+    ],
+    "x": -4.295933507226986,
+    "y": -0.6307434905026064,
+    "yaw": -0.26810775659289354,
+    "pitch": 0.0,
+    "travel_yaw": -0.26810775659289354
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.0,
+      0.0
+    ],
+    [
+      -4.295933507226986,
+      -0.6307434905026064
+    ]
+  ],
+  "final": {
+    "x": -4.295933507226986,
+    "y": -0.6307434905026064,
+    "yaw_deg": -15.361442907493572,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "forward",
+        "amount": "default"
+      },
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "target": "the short stool",
+        "relation": "near"
+      },
+      "x": -4.295933507226986,
+      "y": -0.6307434905026064,
+      "yaw": -0.26810775659289354,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -4.295933507226986,
+      "y": -0.6307434905026064,
+      "yaw": -0.26810775659289354,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": -0.26810775659289354,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.295933507226986,
+      "y": -0.6307434905026064,
+      "yaw": -0.26810775659289354,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "move_yaw_deg": 0.0,
+      "requested_m": 2.0,
+      "end": [
+        -2.0,
+        0.0
+      ],
+      "blocked": false
+    },
+    {
+      "ground": "the short stool",
+      "method": "initial_photo",
+      "box": [
+        627,
+        304,
+        719,
+        345
+      ],
+      "point_m": [
+        -5.27070232926316,
+        -1.469746677948486,
+        -0.9874033187207025
+      ]
+    },
+    {
+      "overlap": "the short stool",
+      "n_points": 206,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 2.9000000000000004,
+          "stop_m": 1.2861184257128637,
+          "visible_frac": 0.9466019417475728,
+          "center_deg": -5.37477504484177,
+          "width_deg": 22.90294841569949,
+          "distance_m": 1.347855255267696
+        },
+        {
+          "sector": 5,
+          "path_m": 2.9000000000000004,
+          "stop_m": 1.2960688064767307,
+          "visible_frac": 0.9805825242718447,
+          "center_deg": -8.623049616933695,
+          "width_deg": 30.42928559226433,
+          "distance_m": 1.3492159610801582
+        },
+        {
+          "sector": 6,
+          "path_m": 3.5,
+          "stop_m": 1.2392600658628894,
+          "visible_frac": 0.9805825242718447,
+          "center_deg": -18.963716804952945,
+          "width_deg": 54.550099999212975,
+          "distance_m": 1.2875105727633533
+        },
+        {
+          "sector": 3,
+          "path_m": 3.7,
+          "stop_m": 1.076498319535515,
+          "visible_frac": 0.587378640776699,
+          "center_deg": 5.361970262138321,
+          "width_deg": 9.274462718862473,
+          "distance_m": 1.0599337659994224
+        },
+        {
+          "sector": 7,
+          "path_m": 4.800000000000001,
+          "stop_m": 1.107759995729551,
+          "visible_frac": 0.6310679611650486,
+          "center_deg": -35.25922214571501,
+          "width_deg": 30.2376966991733,
+          "distance_m": 1.110627113877742
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 2.796202932971708,
+  "seconds": 11.340922832489014
+}

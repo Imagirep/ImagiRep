@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-013-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-013-Q2",
+  "resource_id": "MVC-013",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from gray doors in Image 2?",
+  "answer_choices": {
+    "A": "stove",
+    "B": "stools",
+    "C": "cabinet with bowls in it",
+    "D": "tall plant"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "5b17f2e031cc6a13cdebb14320cfd554e011342f1c40eb01a9da363516db1208",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-013\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7889,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 287
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 988,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8878,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 6.258918299994548,
+  "completed_at": "2026-10-06T17:33:17-04:00"
+}

@@ -1,0 +1,248 @@
+{
+  "question_id": "FOB4-0126-Q3",
+  "motion_text": "I walk to the open doorway, then turn to face my starting point, then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the open doorway",
+      "relation": "to"
+    },
+    {
+      "op": "face_start"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0126-Q3",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.08540831185872497,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -10.006419561476756,
+        "y": -0.8567155428480691,
+        "yaw": -0.08540831185872497,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -10.006419561476756,
+        -0.8567155428480691
+      ]
+    ],
+    "x": -10.006419561476756,
+    "y": -0.8567155428480691,
+    "yaw": -0.08540831185872497,
+    "pitch": 0.0,
+    "travel_yaw": -0.08540831185872497
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -10.006419561476756,
+      -0.8567155428480691
+    ]
+  ],
+  "final": {
+    "x": -10.006419561476756,
+    "y": -0.8567155428480691,
+    "yaw_deg": 175.10646419515794,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the open doorway",
+        "relation": "to"
+      },
+      "x": -10.006419561476756,
+      "y": -0.8567155428480691,
+      "yaw": -0.08540831185872497,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -10.006419561476756,
+      "y": -0.8567155428480691,
+      "yaw": 3.0561843417310683,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -10.006419561476756,
+      "y": -0.8567155428480691,
+      "yaw": 3.0561843417310683,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.08540831185872497,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -10.006419561476756,
+      "y": -0.8567155428480691,
+      "yaw": -0.08540831185872497,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -10.006419561476756,
+      "y": -0.8567155428480691,
+      "yaw": 3.0561843417310683,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the open doorway",
+      "method": "initial_photo",
+      "box": [
+        329,
+        290,
+        677,
+        525
+      ],
+      "point_m": [
+        -10.78814925668535,
+        -1.60076219792276,
+        -0.26125879604326946
+      ]
+    },
+    {
+      "overlap": "the open doorway",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 10.9,
+          "stop_m": 1.0792157992258806,
+          "visible_frac": 0.40444444444444444,
+          "center_deg": 4.097896167272665,
+          "width_deg": 57.644324080462475,
+          "distance_m": 1.7841289208964075
+        },
+        {
+          "sector": 5,
+          "path_m": 10.9,
+          "stop_m": 1.0849747154989262,
+          "visible_frac": 0.38666666666666666,
+          "center_deg": 9.193661293963864,
+          "width_deg": 54.161452210555645,
+          "distance_m": 1.7817419500181906
+        },
+        {
+          "sector": 3,
+          "path_m": 11.4,
+          "stop_m": 1.0831758445905302,
+          "visible_frac": 0.4311111111111111,
+          "center_deg": -3.7809178491688735,
+          "width_deg": 55.398534613380235,
+          "distance_m": 1.7483425131446397
+        },
+        {
+          "sector": 6,
+          "path_m": 11.5,
+          "stop_m": 0.9442234327715459,
+          "visible_frac": 0.3022222222222222,
+          "center_deg": 19.99688320101363,
+          "width_deg": 63.92495416516135,
+          "distance_m": 1.9809096042502308
+        },
+        {
+          "sector": 2,
+          "path_m": 12.5,
+          "stop_m": 0.5946520099626531,
+          "visible_frac": 0.28,
+          "center_deg": -11.369112435211454,
+          "width_deg": 66.7250896666849,
+          "distance_m": 1.8724166134827507
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 2.7773113945608636,
+  "seconds": 11.667006492614746
+}

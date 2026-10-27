@@ -1,0 +1,886 @@
+{
+  "status": "passed",
+  "questions": 171,
+  "trajectories": 50,
+  "question_types": {
+    "6": 31,
+    "3": 23,
+    "2": 14,
+    "4": 21,
+    "1": 18,
+    "8": 36,
+    "5": 27,
+    "7": 1
+  },
+  "question_sets": {
+    "lookback": 86,
+    "non-lookback": 85
+  },
+  "final_image_kinds": {
+    "lookback": 55,
+    "endpoint": 116
+  },
+  "prompt_version": "final_state_balanced_v3",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "final_view_prompt": "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+  "manifest_sha256": "8da7be61b4f3e4c0cd6800b6cc6448ce8e6009adf20ffa987b65fbbbcc844d2d",
+  "labels_sha256": "30aea8e2ba9f0d12f3a6fed947873b65f040fb35cc2a7d15f67fef246a37ab6c",
+  "verified_image_files": {
+    "<authors_workspace>\\benchmark_release\\items\\FO-0029\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "ee102dc69efe921ed66cdc3671e0639e10b2251b0985d0a20b82f1432636b254"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0029\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "e7382ca0eca8ab786c30829ceb6e910f9d2da2fa5f72507e5906b444f1bf6bcb"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0090\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "431a3af63790fcf0131147a0faff56d386433a57d5f68fefbac3a15f35a6cd87"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0090\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "8d2ea4ce016aef4a07a623ce495e8def29d13851d4aa86dd81106b3fae6cabe4"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0013\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "1edf1ef6dd7704f0c68b9733eb084de7bc8110a7f232a25d6b3d5b121d61725c"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0013\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "5ae9a7c18616e277536a012bd5de3774b9d47fb288385f53da9a299b34843625"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0134\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "151d537e8ee4abef8811fc30aa10ab9f6ab72b5b2b362e351a4ee7b1786b84f4"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0134\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "abd84e9c3dfc68c5e9eabe52f3cfce12e2d965138efff8e3221ee7ae10772740"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0044\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "d864cc06d96dbbf4480b7cb794299737c1c2cd764432c218ade46602d4143217"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0044\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "9683ae6d5b982a788666e37e664b4b6594af4d1330b65e3f146787432cf882b6"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0124\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "a9bed1f3fe066f1f05ab9fcaa168e0541b65cd4d011c2e3cae61941ec1ec3e59"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0124\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "8b736e8e3c512eae0b1d17d1a9edc68648d4d0198c35bd917eba9c0f2a4ec773"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0056\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "14ff5fde178b8fbe59b35cb444e9310a988415e77dc59864aa3ec0617e798029"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0056\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "dcc326a2e936b5fc662c72cd57b7415398e93270f9afa57bca4cb34fe3934ff3"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0020\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "b1b7c0e140f3c18e5dc0455f32cff1544c7d4e766ab71f837d46a0a36b59e639"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0020\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "8398a0a2944025ad378418917af1cc92325cbdd42399422ab65bcf5785e37ecc"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0006\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "8e5be9b6b2eb867ec4b0e2b9d31fe26000b7a28351cc4fc7dd2d428effab4aed"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0006\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "7badb8762c40674f9c918c28acc58a3d206f23bf02aaceb474f5ff3ffceae80b"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0027\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "f09ac2060dd272e40b157eb48a1c4c8034cdf0387cc52585602e28fbd03512c7"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0027\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "a512adb4e97005f964cef214cfdaaa77138ca7e0dde62b48a5d4f4e748b77490"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0066\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "c3d25f9ca560db8a1cda71a7bcaf70d6d1ba57514cc44fe77990de26101852a9"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0066\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "63b5609a22d096904a8389b66594c01bd9fbf02a32714799ff2e6910b06763fb"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0031\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "920809faf9507b748b83c0a0aeaed0f59b4737a284eaaa24c6017eccf9c01ded"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0031\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "8ecbb035d88dca76de6acaad9336c09236ebad2ef114c3a0d0d50d3647ddb1a0"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0057\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "5eec8c060676d048710da0a9600b94b51e0f9332bfee3405881a82179d756b7e"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0057\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "7bc558c2bae14c290ebed890c5fca790319791b5e6b7a8556153e0a6360f16aa"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0049\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "294b3a8910362e83e29d646f74b8863e748ae068c6d94e2b626992f60e5a236f"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0049\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "32238b942446004b05e45293471d9e33c2621e3714d68828584e22db28640923"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0019\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "bbe67b4908cfd140ce664006785548c415dd5a4f840fa051fb6c45043868f127"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0019\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "9bad97deb5e286dc6729fcdf108b6d4772e92c798db7cb76440cc503baa4559f"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0085\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "d3fc63f96883c0bb4d22b36a38fe9a38af4146ffbcdfe59ddbfba9ba22231f47"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0085\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "884486aaaf30628497b4dfe8f8215d29c5c848070350b6faf0d7f39d95275df3"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0123\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "d78f58d16d187c5f860228121e226fe8adce4668790d1303f4f61c4a4ddbc3f5"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0123\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "6cc5378ba3abb3cd8f0c69a391735bfc3610171b9c6fde5e67c5d25d8445afb9"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0038\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "eb7d3b6d99edebd0178696ffaaaaf7926d9088994b39535f790948da23ba7f22"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0038\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "6b79770932efe3b40dcf75fdc81c1ea66a1c825647e98769fbe8be39e59b7e5c"
+    },
+    "<authors_workspace>\\outputs\\future_trajectory_expansion_199\\items\\FOE-0004\\start_view.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "a22e3b810694f183a341b77d2ad66f92ec9b4037008f34d5b5d2d66fcf2b0b74"
+    },
+    "<authors_workspace>\\outputs\\future_trajectory_expansion_199\\items\\FOE-0004\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "45e28bcfb19f550ddc8d679ea0da2aab2d02240c9080b895d0a24bccd0356d67"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0009\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "ddb73550c87edb93984bd6ceb8dccac5361d0c5bc35a775f5e1715a60540a4d7"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0009\\modalities\\step_01_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "26ba38c44a3093c7c364fc514e98bb39aeb1437029e33d8910daec10489906da"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0059\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "61bf54b9f883cb3812506d109c42e01d2e4b1c646003184c79baeb4be7bd9ab7"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0059\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "16ffdff0aa509e1b7386bde2cb9653b2d8e18cc8bbeee8b2380bfe7167e81c63"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0039\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "8ec6dbdb2735156f02ab76b7d6ff91a8a784723595f77bfd05abdec4b0ab09b4"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "2f3a73d4a7ce371a5137c636727f5d4bee936bebdedbe60a7f6ea8f5d827c0bb"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0032\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "805e3ed13a0aed8723114cd1190df9f539bfe7741f7927f065f4fef35c6841ff"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0032\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "fafff693ff2546e31e3f907f293d51aa218274e1e243a929b9e2c8f38754a56f"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0052\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "521d54a5d8ee3396f8e5d6940fe54083fc044dfeb0757e5af4cac6523b6776ee"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0052\\modalities\\step_01_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "c9e5ef5caf4cdbb12601a06882f39e9c7f308df5b16f573f069867c71645b185"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "27e1ae3322bad54f6005ab0be77e6481470e98f1c3fbabcf5ba132a8b8019994"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0032\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "f8ccc80b868b81cd4d31c2637c84f885d71fc49860196651b2a593022c333dec"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0005\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "8bd2e12513438321a1830bdb9ea824ef18a5247313eada3f649dc6cc94f402ad"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0005\\modalities\\step_01_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "4cc217b4cb9acf6bb5b2d22588b0166143f5f85ab69e914003aa31c4e55ebf96"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0024\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "33b0f1a806206827971e2f023873ef352f5eefe28fb21925543086f69794d062"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0024\\modalities\\step_01_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "7d8f23b32b470ea97aa9b720a99a744805297b3cf02cc1c85efdcabd22d5f578"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0033\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "20a7b52c16d8e0232387cdcba10815479bd52c32ee0a583f71a4295f26e90d3f"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0033\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "8041bdabccca4216202d874d9c28f0a20d03015a555fdbc211f8c91a9dfcb2cb"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0081\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "56d5ddc7648ff1e437a827b81614c5c8cbedef6e0a2760a822d28275ec5646de"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0081\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "cbdcbe6c980b773068bdefe2409c01cf7eb15682549ba6f3d21a961b8325e36f"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0057\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "1a46f3650b62dfbfbcd97a5f794cf3eb34f7cde13a38196b2da810e76399554b"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0023\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "0adac49c8666e18ff447b72612d9e650ce88405b936769a0ae030616b2d8d278"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0023\\modalities\\step_01_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "e565e8f7e49950177c9bf24f60aa311b5a4727f926b77309efc2901fffbf6672"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0034\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "450ef4f649234c33e812ed509e9eb9d2446cb1c71743f5951ef0f3db4cf8e8b9"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0034\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "dcd3477ae230c70e59a6583a6141e128b82f6d607b6be96fb592e2f4c74cf795"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0080\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "8e5be9b6b2eb867ec4b0e2b9d31fe26000b7a28351cc4fc7dd2d428effab4aed"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0080\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "0840c69c790f9b829f710145df5e67fd5c01dc07fbee5f22775e172df31a0e56"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0001\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "760179a33f3dd8440717927e400f0c90bf34177a2187e28fabb83e19401069e6"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0001\\modalities\\step_03_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "ba920b336102764f874f73b8da1fc56f78e8f3bf196b3b76f5dd7d05a8d3a021"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0046\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "523ba07ad829a7940f926599fd345657ab9326c4d0af8bd9cc1a09943fa403da"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0046\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "518d7a2205a449583c83ef2b930ab3e82593fc005dff90d9a8b0f1cc14827894"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0014\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "ddb73550c87edb93984bd6ceb8dccac5361d0c5bc35a775f5e1715a60540a4d7"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0014\\modalities\\step_01_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "3491bea22ad77393c24aaa486e9e49184ae9059f31e21a9b7010c820d25ab521"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0102\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "450ef4f649234c33e812ed509e9eb9d2446cb1c71743f5951ef0f3db4cf8e8b9"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0102\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "de2df9bfc26ea24a6e3392a620969d82e2d12886ea5b3da0fa9c00a705747877"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0003\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "5e73318ca6f38a0b949a815a8eb92de606ec4ed77a93b419ec51d3609e216430"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0003\\modalities\\step_02_rgb.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "59064f818e998c8979cb51675a83803b63289a1082c030ef2438aadcbfa9e80d"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0059\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "c4b313296990e4ac66aa72b0c82a2a5dc66c674a84938df7ef4aff5fb5d5a83e"
+    },
+    "<authors_workspace>\\outputs\\future_trajectory_expansion_199\\items\\FOE-0002\\start_view.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "9b6cb9cd38bf0d0248f56d435a3aa15d22e6e217fc7b8b4bef01f58cfee8780d"
+    },
+    "<authors_workspace>\\outputs\\future_trajectory_expansion_199\\items\\FOE-0002\\step_01_rgb.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "66f31752fd2cb30132d2e47167727d2a8020349e1084e9845fcc779c31d46e50"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0029\\modalities\\step_03_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "6372335f5317c57150fc94efb9c573fdec7481343d49297e47e5ee6930f7a0e1"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0037\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "5e73318ca6f38a0b949a815a8eb92de606ec4ed77a93b419ec51d3609e216430"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0037\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "b5cd5b7621d7a3c239fb8be828fac9738d4169cc59d39795f270d7bfbcb8f6ce"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0034\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "10761352fbb2d2718b18d73a621a5e3db630048ad0baaebebb23bbab9f23ce3f"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0050\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "0adac49c8666e18ff447b72612d9e650ce88405b936769a0ae030616b2d8d278"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0050\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "3843ce8742880499a4970ad88dad79f45bedd3cf7f7270ada2b7b3335be15329"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0021\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "963e7f2612f1c735984c77856ebdc4ae2c27f4b7b7a76d9db066f4d8c80a0957"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0021\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "e49b47098867fbcbc0f02c51de0fcdc6df35886cd248759411a2349e563ac774"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0018\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "bbe67b4908cfd140ce664006785548c415dd5a4f840fa051fb6c45043868f127"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0018\\modalities\\step_01_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "d98d569b2bcce204f62a02102d1df57d1ca295213a7b09426bba57d990d1ffc0"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0040\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "b6f34fc15e26e0caa3533afe91dac13d075911d7007110080a2afa665085dcfa"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0040\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "0995b23442c78494282560c5bf26b1959efeb95bc61bca28d103cc31fc6a7ae1"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0090\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "74a71099ec4ae30eee82e0bed9bd544ac1d00244c0a73759fb7d25460480fba3"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0006\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "44ec4f01f1e298820a615622c60ad5320fd47de46a47c33720a7770a6d8dcde6"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0003\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "bc02ba2bdd7fdf1fe54b77506dc31c5d988c9d0fb4bb6f847b46be91552e5780"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0056\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "e5c115f08469688959b5dc1f9d9a97abeb9a3969ce8cb1cc95a041c9c01ca5c4"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0028\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "9a37f4bd421b1fa04abc4dccce6dbca3a2644567bb4260f26477438be9816f56"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0028\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "34eb6f78caa1b6289e2661e0eb8844766040f82b0b55081f56a4fee5eb6f735f"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0028\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "6c0a476f4dc830dc1e3df11f35d291faa0056a14e4fcdb98d75a39801a741113"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0081\\modalities\\step_01_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "cfb1aff7f3354242c88e27b1be7b73e3fa91065649dd870cf24885c4b77faa0e"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0067\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "4edb21c41ba5c7e644eb6a848ec7699ff710aa868004221326b98bef5af2709a"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0067\\modalities\\step_01_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "43cc4508dcdac2d0c2f280b63a3e6b5e725386767a5ced0672fe97648db5fbd0"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0027\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "7f1c0001246124380b5f8f01fffc283636419fcc6906c450cf2abb4dd5ddf94b"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0040\\modalities\\step_03_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "f7d2496403fd38883b009f5c67f3142ebd4d1759e58cb262fa2f7edd2f023c87"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0023\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "e41e432e49c81573edc9deae3e110e1b6d0e1dc26a2ba9c7e7bb919ba8359c3a"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0068\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "3c12cb5162c297a1dd95e0ace8b9ff87aee703eb7e1fd151ea16a5ffc8d57600"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0068\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "33d85a454e77dd8549cc4ef2beccf109162efdd3189a6af3a95f55d911c1c56c"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0102\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "9020dac78788dfdb32d890d32ccd6a179de7be8e5b22456191dd9f9407b7af1e"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0123\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "888fdfa68adc62df93a1218bce269ddc9f3b40a9e47190a561cc94127c9bb65e"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0042\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "d864cc06d96dbbf4480b7cb794299737c1c2cd764432c218ade46602d4143217"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0042\\modalities\\step_01_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "36a4abb379de6f9df60c7b7016d0daabe99daadd85a1e41855a67383d5846b48"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0005\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "20b3112d984ab40870da5d1a9a146d3d56b8991a4ba6d1dd5e18bcab4271adf6"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0064\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "7d1c8063065c1d0e7c29dfa650c5348857d3aa15a598d6958eb569cc3e875cea"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0064\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "fc1292c3089a87d41752f58177fc99d0fc1b457c0477a4cd574ad0dbd4ba6d79"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0031\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "559f6b2755a3f7431e2c9a2f9315932fb552ac1368efc8415d9299c1faa5f3a7"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0076\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "d864cc06d96dbbf4480b7cb794299737c1c2cd764432c218ade46602d4143217"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0076\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "6b9c3acc6b55d4a151078435668d04ba0758e7cecd6aef0af6752212eb649dc9"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0007\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "5a3633e389da9e171a1074bed223362974c31dd7f181b1b2337aa95c689ba138"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0007\\modalities\\step_01_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "9b3643db3b6d55c975d5311283a8b3812a57093a8d53bca21386de1a0aae914b"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0046\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "ca38b56fdd14718fd69caa5939f01e2d132d4d5bd8353dd182a44e7621e404a3"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0066\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "f59927d4f358c04abe4cd6f48519e3249f68776e50785bc0851f44c0ba570e0a"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0065\\image_1.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "5a3633e389da9e171a1074bed223362974c31dd7f181b1b2337aa95c689ba138"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0065\\modalities\\step_02_rgb.png": {
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "c1258f15690792220688c1d49db50a0f9d32a2d9aa58ac4b56234a9b1e73bf8b"
+    },
+    "<authors_workspace>\\benchmark_release\\items\\FO-0020\\modalities\\oracle_lookback.png": {
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "8d7a7d0386739f4892b87c13c34bc782112f21c39c40360f61a453003803b47c"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,46 @@
+{
+  "resource_id": "MVC3I-014",
+  "schema": "low_overlap",
+  "scan_id": "VzqfbhrpDEA",
+  "observation_viewpoint": "dd6fb65d75ca41d2aa13e81410291aa1",
+  "oracle_viewpoint": "0331b320ae1f41d0b42fdf0100e56bd2",
+  "image_headings_degrees": {
+    "1": 218.3561780277456,
+    "2": 119.85617802774561,
+    "3": 21.356178027745614
+  },
+  "pitch_degrees": -15.0,
+  "oracle_heading_degrees": 130.87438178045247,
+  "oracle_pitch_degrees": 12.441688567241242,
+  "resolution": [
+    1280,
+    960
+  ],
+  "hfov_degrees": 96.4183429694,
+  "vfov_degrees": 80.0,
+  "checks": {
+    "oracle_native_reproduction_mae": 0.0,
+    "image1_vs_first_video_frame_mae": 0.0,
+    "mesh_vs_oracle_edge_correlation": 0.561659379690666
+  },
+  "depth": {
+    "source": "official MP3D textured mesh at the oracle camera",
+    "near_m": 1.094,
+    "far_m": 7.645,
+    "valid_fraction": 0.9999226888020833,
+    "encoding": "raw uint16 = metres*4000, 0 = no surface; colour reversed TURBO (red near, blue far, black none)"
+  },
+  "surface_normals": "mesh normals in oracle-camera axes: R right, G up, B toward camera; -1..1 -> 0..255",
+  "panorama": "native skybox ERP at the oracle capture point, 2048x1024, oracle heading at the centre",
+  "view_transition": {
+    "stops": [
+      "Image 1",
+      "Image 2",
+      "Image 3"
+    ],
+    "frames": 102,
+    "fps": 12
+  },
+  "topdown": "labeler top-down, unchanged",
+  "model_calls": 0
+}

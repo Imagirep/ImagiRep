@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-168-Q3", "method": "mj", "variant": "top3+label", "prediction": "tv, blue and white chair, lamp, wooden table", "gold": "wooden table, lamp, blue and white chair, tv", "correct": false, "n_imagined": 2, "category": "ordering", "stored_result": "wrong"}

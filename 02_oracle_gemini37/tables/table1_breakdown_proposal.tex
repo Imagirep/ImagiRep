@@ -1,0 +1,24 @@
+\begin{table*}[!tb]
+\centering
+\caption{Effect of providing the correct future state, overall and by question type. Accuracy (\%).
+Single-view types: Open = open-space direction, Obst.\ = closest-obstacle direction, Vis.\ = visibility,
+Close = closest object, Far = farthest object, Dir.\ = object relative direction.
+Multi-view types: Close = cross-view closest, Far = cross-view farthest, Order = left--right ordering.}
+\label{tab:oracle_imagination}
+\begin{tabular}{l rrrrrrr rrrr}
+\toprule
+& \multicolumn{7}{c}{Single-view} & \multicolumn{4}{c}{Multi-view} \\
+\cmidrule(lr){2-8}\cmidrule(lr){9-12}
+Setting & All & Open & Obst. & Vis. & Close & Far & Dir. & All & Close & Far & Order \\
+\textit{$n$} & \textit{622} & \textit{91} & \textit{55} & \textit{104} & \textit{104} & \textit{98} & \textit{170} & \textit{325} & \textit{90} & \textit{87} & \textit{148} \\
+\midrule
+\multicolumn{12}{l}{\emph{No imagination}} \\
+\quad Question only           & 31.7 & 44.0 & 32.7 & 23.1 & 27.9 & 30.6 & 32.9 & 32.0 & 33.3 & 40.2 & 26.4 \\
+\quad Observed view(s)        & 53.7 & 52.7 & 36.4 & 32.7 & 51.9 & 66.3 & 66.5 & 68.3 & 64.4 & 63.2 & 73.6 \\
+\midrule
+\multicolumn{12}{l}{\emph{Oracle imagination}} \\
+\quad + Oracle endpoint RGB   & 63.7 & 58.2 & 45.5 & 49.0 & 65.4 & 65.3 & 79.4 & 80.6 & 77.8 & 65.5 & 91.2 \\
+\quad + Oracle trajectory RGB & \multicolumn{7}{c}{Pending} & \multicolumn{4}{c}{Pending} \\
+\bottomrule
+\end{tabular}
+\end{table*}

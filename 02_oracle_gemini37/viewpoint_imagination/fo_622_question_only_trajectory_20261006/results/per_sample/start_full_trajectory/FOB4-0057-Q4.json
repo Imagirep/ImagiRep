@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB4-0057-Q4",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk forward, slightly turn left and walk near the washing machines, then turn around, which object(s) would be closest to me?",
+  "answer_choices": {
+    "B": "large lamp",
+    "A": "white pillow",
+    "C": "book shelf",
+    "D": "yellow sofa"
+  },
+  "gold_answer": "B",
+  "show_lookback": false,
+  "prediction": "A",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0057/start_view.png",
+      "sha256": "aa5ea3ceeb58a2a63d4838dc874318b4de282a3776c295b481411604e71543c7"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0057/step_01_rgb.png",
+      "sha256": "43d3413b44f0da8c467786ab68af89649cd0894265ed9426db3b8c9f2fd8fd4f"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0057/step_02_rgb.png",
+      "sha256": "087862f6e3126d1a84f95127d558efee6942462bac1ba050342d7d080706baf8"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3342,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 150
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 3057,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6400,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_duration_seconds": 14.468447899998864,
+  "completed_at": "2026-10-06T15:05:26-04:00"
+}

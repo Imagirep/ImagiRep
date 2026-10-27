@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-185-Q3", "method": "avic", "variant": "label", "prediction": "black cabinet, sink, toilet, fireplace", "gold": "sink, toilet, black cabinet, fireplace", "correct": false, "n_imagined": 2, "category": "ordering", "stored_result": "wrong"}

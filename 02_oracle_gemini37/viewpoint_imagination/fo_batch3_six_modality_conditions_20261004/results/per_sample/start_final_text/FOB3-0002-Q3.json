@@ -1,0 +1,147 @@
+{
+  "row_index": 240,
+  "question_id": "FOB3-0002-Q3",
+  "trajectory_id": "FOB3-0002",
+  "scan_id": "mJXqzFtmKg4",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk near the left side of the sofa, then turn to face my starting point, would the cabinet with glass doors still be directly visible?",
+  "answer_choices": {
+    "B": "completely blocked",
+    "A": "clearly visible",
+    "C": "outside of view",
+    "D": "partially visible"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "B": "C",
+    "A": "A",
+    "C": "D",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0002\\start_view.png",
+      "sha256": "a18d66a2ac87c0b9d620d00017f50539a7198515b73a6aeb865b539557a8bdac"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0002\\step_01_rgb.png",
+      "sha256": "907795396e407de8eb8e90a0c1a719bb876471bfe414238993ed865df5d38614"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0002\\step_02_rgb.png",
+      "sha256": "b496824bbd78408180b9d7ab71f1924573a9fcd4753c2704d1c11772f8566317"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0002\\oracle_lookback.png",
+      "sha256": "8423424dc0b6c5e824845d85b2ca3399bf078a4462b2efabbce32e1a374ef755"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "category": "visibility",
+  "category_label": "Visibility (incl. object selection by visibility)",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0002\\oracle_lookback_depth.png",
+      "sha256": "222140f3258e1d44456c7d3e8c4b72a968a792534f0b22a5b48d482121c169c2",
+      "color_scale": {
+        "near_m": 0.83525,
+        "far_m": 8.28825
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0002\\oracle_lookback_surface_normals.png",
+      "sha256": "7aa0522cdade39cc8c7220734ece6b6508c2837872dcdde3af6472b757f05381"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0002\\oracle_lookback_panorama.png",
+      "sha256": "c62018caf5585a41c14624c82811a99bd5461cd93c281f12153714ab25e9b576"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0002\\topdown_lookback_with_path.png",
+      "sha256": "d8bde2c32e3e13538e4de4f33534489a3de8d4066c81f323486a4346c79bbc5a"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0002\\trajectory_lookback.txt",
+      "sha256": "c6f0639cc3df8eea28c9eb560601873004a7dd158a4b07791c429dd647032dec"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0002\\trajectory_lookback.mp4",
+      "sha256": "db995dbda74ca2a111ffe249dc7fd7aa7c5aeb2df1c632febdb5194c324afdfe"
+    }
+  },
+  "condition": "start_final_text",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch3_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "B",
+  "correct": true,
+  "input_signature": "08e781decf8a56520771303494352f382d3b79390e63cd8d608092f96ab9d2d5",
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2594,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 466
+      }
+    ],
+    "thoughts_token_count": 6527,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9122,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T17:42:58.365-04:00",
+  "request_duration_seconds": 23.696409400006814,
+  "completed_at": "2026-10-04T17:43:22.061-04:00",
+  "request_part_count": 6,
+  "request_mime_types": [
+    "image/png",
+    "image/png"
+  ]
+}

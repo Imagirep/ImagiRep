@@ -1,0 +1,194 @@
+{
+  "row_index": 43,
+  "question_id": "FO-0123-Q4",
+  "trajectory_id": "FO-0123",
+  "scan_id": "1pXnuDYAj8r",
+  "question_type": 4,
+  "question_set": "lookback",
+  "endpoint_is_lookback": true,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk into the hallway ahead and turn around, which object(s) would be closest to me?",
+  "answer_choices": {
+    "D": "refrigerator",
+    "A": "cabinets",
+    "B": "stove",
+    "C": "kitchen counter"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "stove",
+    "B": "cabinets",
+    "C": "refrigerator",
+    "D": "kitchen counter"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "D": "C",
+    "A": "B",
+    "B": "A",
+    "C": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0123\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0123\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0123\\modalities\\step_02_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "d78f58d16d187c5f860228121e226fe8adce4668790d1303f4f61c4a4ddbc3f5",
+    "6cc5378ba3abb3cd8f0c69a391735bfc3610171b9c6fde5e67c5d25d8445afb9"
+  ],
+  "endpoint_modalities": {
+    "depth": {
+      "kind": "depth",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0123\\modalities\\step_02_depth.png",
+      "sha256": "d4b023558c5a27142716d74095d540753e3b6d71ef2b01c5b614dc65f419b296",
+      "final_image_kind": "endpoint",
+      "pose": {
+        "viewpoint_id": "49b4f59afc74417d846ad8cf1634e3d8",
+        "heading_rad": 1.603654384613037,
+        "elevation_rad": 0.0,
+        "vfov_degrees": 60.0,
+        "width": 320,
+        "height": 240
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0123\\modalities\\step_02_aligned_manifest.json",
+      "color_scale": {
+        "near_m": 0.6425,
+        "far_m": 9.44475,
+        "colormap": "reversed OpenCV TURBO",
+        "normalization": "2nd to 98th percentile per image; clipped",
+        "black": "invalid depth",
+        "measurement": "camera-forward z-depth, not radial range"
+      }
+    },
+    "surface_normals": {
+      "kind": "surface_normals",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0123\\modalities\\step_02_surface_normals.png",
+      "sha256": "a485f7d1323e7d0696c2de873dc10efdb292181bf4bda218aaf1390d454693f8",
+      "final_image_kind": "endpoint",
+      "pose": {
+        "viewpoint_id": "49b4f59afc74417d846ad8cf1634e3d8",
+        "heading_rad": 1.603654384613037,
+        "elevation_rad": 0.0,
+        "vfov_degrees": 60.0,
+        "width": 320,
+        "height": 240
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0123\\modalities\\step_02_aligned_manifest.json",
+      "encoding": {
+        "rgb_axes": [
+          "camera-right",
+          "camera-up",
+          "camera-forward"
+        ],
+        "channel_formula": "uint8(clip((component + 1) * 127.5, 0, 255))",
+        "black": "missing geometry"
+      }
+    },
+    "panorama": {
+      "kind": "panorama",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0123\\modalities\\step_02_panorama.png",
+      "sha256": "3f897276598a9f8c6388d1213a2dedc9e78f60fa7ec145edcfaadf2b8b2564e1",
+      "final_image_kind": "endpoint",
+      "pose": {
+        "viewpoint_id": "49b4f59afc74417d846ad8cf1634e3d8",
+        "heading_rad": 1.603654384613037,
+        "elevation_rad": 0.0,
+        "vfov_degrees": 60.0,
+        "width": 320,
+        "height": 240
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0123\\modalities\\step_02_aligned_manifest.json",
+      "orientation": {
+        "center": "front",
+        "quarter_width": "left",
+        "three_quarter_width": "right",
+        "edges": "behind; horizontal wrap",
+        "pose_alignment": "source RGB camera-centered spherical rotation"
+      }
+    }
+  },
+  "condition": "start_final_depth",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_endpoint_geometry_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT DEPTH MAP (same camera pose and field of view as FINAL VIEW):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.642 m (near/red) to 9.445 m (far/purple), with values outside this range clipped. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "depth"
+  ],
+  "endpoint_modality": {
+    "kind": "depth",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0123\\modalities\\step_02_depth.png",
+    "sha256": "d4b023558c5a27142716d74095d540753e3b6d71ef2b01c5b614dc65f419b296",
+    "final_image_kind": "endpoint",
+    "pose": {
+      "viewpoint_id": "49b4f59afc74417d846ad8cf1634e3d8",
+      "heading_rad": 1.603654384613037,
+      "elevation_rad": 0.0,
+      "vfov_degrees": 60.0,
+      "width": 320,
+      "height": 240
+    },
+    "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0123\\modalities\\step_02_aligned_manifest.json",
+    "color_scale": {
+      "near_m": 0.6425,
+      "far_m": 9.44475,
+      "colormap": "reversed OpenCV TURBO",
+      "normalization": "2nd to 98th percentile per image; clipped",
+      "black": "invalid depth",
+      "measurement": "camera-forward z-depth, not radial range"
+    }
+  },
+  "input_signature": "15cc5c50d9667b52fc45303d935fb2f0be8639f7613a47af977f5a6ad363415a",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3442,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 250
+      }
+    ],
+    "thoughts_token_count": 757,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4200,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-16T18:03:01-04:00"
+}

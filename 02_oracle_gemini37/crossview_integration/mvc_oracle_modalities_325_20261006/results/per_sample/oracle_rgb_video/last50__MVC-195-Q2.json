@@ -1,0 +1,52 @@
+{
+  "uid": "last50__MVC-195-Q2",
+  "cohort": "last50",
+  "question_id": "MVC-195-Q2",
+  "resource_id": "MVC-195",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is farthest from flowers in Image 1?",
+  "answer_choices": {
+    "A": "round table",
+    "B": "wooden table",
+    "C": "potted white flower",
+    "D": "fireplace"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "0b3264bdeb2e4df0bad7fa5052e4dd9557d6de17be31b9be0c3ea58c2bd7be26",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-195\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7887,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 285
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1520,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9408,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 14.7374770000024,
+  "completed_at": "2026-10-06T17:35:51-04:00"
+}

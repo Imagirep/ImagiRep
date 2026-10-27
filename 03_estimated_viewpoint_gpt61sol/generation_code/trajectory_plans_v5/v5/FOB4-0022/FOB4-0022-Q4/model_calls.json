@@ -1,0 +1,51 @@
+[
+  {
+    "purpose": "parse",
+    "model": "gemini-3.7-flash",
+    "inputs": [
+      {
+        "image_sha256": "7f4c7005fa34f1913d9582923295b552cd098622525e0784fc522c66602b25aa",
+        "kind": "initial"
+      },
+      {
+        "text": "You will control a camera that starts at the viewpoint of this photo, at standing eye height. Convert the movement instruction into primitive steps, in order. Use ONLY what the instruction says.\nInstruction: \"I walk to the white cabinet and turn right.\"\nPrimitives (JSON objects):\n- {\"op\":\"forward\",\"amount\":\"default|few_steps\"}  walk straight ahead without a named target\n- {\"op\":\"back\",\"direction\":\"left|right|null\"}  step backwards (optionally back-left/right)\n- {\"op\":\"turn\",\"direction\":\"left|right\",\"amount\":\"slight|normal|around\"}  turn in place; \"turn around\" is amount around\n- {\"op\":\"go\",\"target\":\"...\",\"relation\":\"to|near|next_to|beside|into|through|past\",\"side\":\"left|right|null\"}  walk to/near/past/through a target\n- {\"op\":\"face\",\"target\":\"...\"}  turn in place to face an object (also \"look at\"/\"look through\")\n- {\"op\":\"face_start\"}  turn in place to face the starting point\n- {\"op\":\"face_motion\"}  keep facing the walking direction\nTarget descriptions must uniquely identify the object as seen in the photo when possible: include color, material, relative position in the photo (left/right/center, near/far) exactly as implied by the instruction. If the target is not visible in the photo, still describe it from the instruction. Return {\"steps\":[...]}"
+      }
+    ],
+    "response": {
+      "steps": [
+        {
+          "op": "go",
+          "target": "the white cabinet in the corner",
+          "relation": "to"
+        },
+        {
+          "op": "turn",
+          "direction": "right"
+        }
+      ]
+    }
+  },
+  {
+    "purpose": "ground_initial",
+    "model": "gemini-3.7-flash",
+    "inputs": [
+      {
+        "image_sha256": "7f4c7005fa34f1913d9582923295b552cd098622525e0784fc522c66602b25aa",
+        "kind": "initial"
+      },
+      {
+        "text": "Movement instruction: \"I walk to the white cabinet and turn right.\"\nTarget: \"the white cabinet in the corner\".\nIs this target visible in the photo? If yes give its tight bounding box [ymin, xmin, ymax, xmax] in 0-1000 normalized coordinates (only the target object itself). Return {\"visible\":true|false,\"box\":[ymin,xmin,ymax,xmax],\"confidence\":0-1}"
+      }
+    ],
+    "response": {
+      "visible": true,
+      "box": [
+        488,
+        486,
+        699,
+        517
+      ],
+      "confidence": 0.82
+    }
+  }
+]

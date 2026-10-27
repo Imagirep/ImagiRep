@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-206-Q2",
+  "cohort": "last50",
+  "question_id": "MVC-206-Q2",
+  "resource_id": "MVC-206",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from wooden cabinet in Image 2?",
+  "answer_choices": {
+    "A": "lamp",
+    "B": "fireplace",
+    "C": "black armchair",
+    "D": "mirror"
+  },
+  "gold_answer": "B",
+  "prediction": "C",
+  "correct": false,
+  "signature": "05f51a29dcfd97aa2bf32a1e5a171357b9d3748d8a545152d4bb8d97b3838a27",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.225 m (near/red) to 2.731 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-206\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4600,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 344
+      }
+    ],
+    "thoughts_token_count": 1146,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5747,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.311089299997548,
+  "completed_at": "2026-10-06T17:39:43-04:00"
+}

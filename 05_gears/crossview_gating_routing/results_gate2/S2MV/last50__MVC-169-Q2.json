@@ -1,0 +1,1 @@
+{"uid": "last50__MVC-169-Q2", "category": "cross_view_farthest", "reason": "A depth map would help compare distances from the TV across the connected views.", "choice": "depth", "usage": {"input_tokens": 3444, "input_tokens_details": {"cached_tokens": 0, "cache_write_tokens": 3441}, "output_tokens": 113, "output_tokens_details": {"reasoning_tokens": 80}, "total_tokens": 3557}}

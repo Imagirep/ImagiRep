@@ -1,0 +1,213 @@
+{
+  "question_id": "FOB3-0161-Q4",
+  "motion_text": "I walk near the sink, facing the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "relation": "near",
+      "side": null,
+      "target": "the sink on the black countertop kitchen island on the right"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0161-Q4",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.29156363229665316,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.920322547202466,
+        "y": 0.8764368560337295,
+        "yaw": 0.29156363229665316,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -3.470037192843755,
+        1.0414152678201534
+      ]
+    ],
+    "x": -3.470037192843755,
+    "y": 1.0414152678201534,
+    "yaw": 0.29156363229665316,
+    "pitch": 0.0,
+    "travel_yaw": 0.29156363229665316
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.920322547202466,
+      0.8764368560337295
+    ]
+  ],
+  "final": {
+    "x": -2.920322547202466,
+    "y": 0.8764368560337295,
+    "yaw_deg": 16.70536559010245,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "relation": "near",
+        "side": null,
+        "target": "the sink on the black countertop kitchen island on the right"
+      },
+      "x": -3.470037192843755,
+      "y": 1.0414152678201534,
+      "yaw": 0.29156363229665316,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.29156363229665316,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.920322547202466,
+      "y": 0.8764368560337295,
+      "yaw": 0.29156363229665316,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the sink on the black countertop kitchen island on the right",
+      "method": "initial_photo",
+      "box": [
+        537,
+        775,
+        648,
+        881
+      ],
+      "point_m": [
+        -4.13059408493428,
+        2.1557994738548336,
+        -0.5449415649378387
+      ]
+    },
+    {
+      "overlap": "the sink on the black countertop kitchen island on the right",
+      "n_points": 140,
+      "candidates": [
+        {
+          "sector": 2,
+          "path_m": 4.5,
+          "stop_m": 1.2954487895504934,
+          "visible_frac": 1.0,
+          "center_deg": 1.897044065805505,
+          "width_deg": 37.355827488721204,
+          "distance_m": 1.3682096266067352
+        },
+        {
+          "sector": 3,
+          "path_m": 4.5,
+          "stop_m": 1.2593217134558374,
+          "visible_frac": 1.0,
+          "center_deg": 0.38003267189331125,
+          "width_deg": 24.158278054804065,
+          "distance_m": 1.3336339269104072
+        },
+        {
+          "sector": 4,
+          "path_m": 5.1000000000000005,
+          "stop_m": 1.2634610173540133,
+          "visible_frac": 1.0,
+          "center_deg": -0.6948139361384407,
+          "width_deg": 43.31826252096942,
+          "distance_m": 1.3694996434301956
+        },
+        {
+          "sector": 5,
+          "path_m": 6.300000000000001,
+          "stop_m": 1.2348576837212166,
+          "visible_frac": 0.9857142857142858,
+          "center_deg": -3.0657090773656686,
+          "width_deg": 59.669151140808026,
+          "distance_m": 1.3885075675595717
+        }
+      ],
+      "chosen_sector": 2
+    }
+  ],
+  "m_per_unit": 2.1977932453155518,
+  "seconds": 9.661165237426758,
+  "planning_m_per_unit": 2.6115006750646446,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.841582491745344
+}

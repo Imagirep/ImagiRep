@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-068-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-068-Q2",
+  "resource_id": "MVC-068",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from toilet in Image 2?",
+  "answer_choices": {
+    "A": "bed",
+    "B": "framed white paper",
+    "C": "wooden door",
+    "D": "framed black painting"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "f83d2cbc8e20fb74b9970424a7e01472d7cfa55491182cb6df94ff647d5c0b78",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-068\\order_21\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7888,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 286
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      }
+    ],
+    "thoughts_token_count": 1438,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9327,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.802763800005778,
+  "completed_at": "2026-10-06T17:34:08-04:00"
+}

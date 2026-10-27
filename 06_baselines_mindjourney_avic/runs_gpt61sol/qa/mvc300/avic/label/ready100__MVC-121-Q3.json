@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-121-Q3", "method": "avic", "variant": "label", "prediction": "bed, lamp, tall potted plant, wooden table", "gold": "bed, wooden table, lamp, tall potted plant", "correct": false, "n_imagined": 2, "category": "ordering", "stored_result": "correct"}

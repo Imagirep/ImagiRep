@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-017-Q3", "method": "avic", "variant": "label", "prediction": "stove, sink, refrigerator, round table", "gold": "stove, sink, refrigerator, round table", "correct": true, "n_imagined": 2, "category": "ordering", "stored_result": "correct"}

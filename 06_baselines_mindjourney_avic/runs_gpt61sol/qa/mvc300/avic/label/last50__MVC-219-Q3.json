@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-219-Q3", "method": "avic", "variant": "label", "prediction": "refrigerator, paper towel, silver pot, ovens", "gold": "refrigerator, paper towel, silver pot, ovens", "correct": true, "n_imagined": 2, "category": "ordering", "stored_result": "correct"}

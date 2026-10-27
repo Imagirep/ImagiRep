@@ -1,0 +1,140 @@
+{
+  "row_index": 149,
+  "question_id": "FOB4-0022-Q4",
+  "trajectory_id": "FOB4-0022",
+  "scan_id": "gYvKGZ5eRqb",
+  "route_variant": "new_straight",
+  "question_type": 4,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk to the white cabinet and turn right, which object(s) would be closest to me?",
+  "answer_choices": {
+    "A": "chair",
+    "B": "large black pillar",
+    "C": "poster",
+    "D": "door"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "chair",
+    "B": "door",
+    "C": "poster",
+    "D": "large black pillar"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "A": "A",
+    "B": "D",
+    "C": "C",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0022\\start_view.png",
+      "sha256": "7f4c7005fa34f1913d9582923295b552cd098622525e0784fc522c66602b25aa"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0022\\step_01_rgb.png",
+      "sha256": "6062b3b208c1a68b4990aa2d98b7e1c4fb4dd35538ba856d9a26327cf58c8125"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "category": "nearest_object",
+  "category_label": "Nearest object",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0022\\step_01_depth.png",
+      "sha256": "7da3d9431d6ad562884cd9636ac6052ff9f977b8570d1779ae9990ce63c5b2dc",
+      "color_scale": {
+        "near_m": 1.542,
+        "far_m": 8.67375
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0022\\step_01_surface_normals.png",
+      "sha256": "934f5417798d0d08064641e1e082d89783cce90d9d6ea70cea2e443065693777"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0022\\step_01_panorama.png",
+      "sha256": "14c0eb5a0e87d0f80c72fd9dc5faaf256b8c54ddc9a271fc8bf786312836a919"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0022\\topdown_with_path.png",
+      "sha256": "08adeaafd1d06fd0545e0178fd72ab234a44ad76b97ce553ac8cad19b32d820f"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0022\\trajectory.txt",
+      "sha256": "7c545cf36315256b7414f2b7d1fe69786ea676a673d3dd6b702219604fcb7dfc"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0022\\trajectory.mp4",
+      "sha256": "9d1895f8ec68f0d5b502c426bab7b40a0537960f083c580ceb6b4c1c90c3a008"
+    }
+  },
+  "condition": "start_final_depth",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT DEPTH MAP (same camera pose and field of view as FINAL VIEW):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.542 m (near/red) to 8.674 m (far/purple), with values outside this range clipped. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch4_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": true,
+  "input_signature": "54f7a2f9382823ed68028e6d524729f0c665f2ef69bf6a790c6fc4b16c442d3e",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "depth"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3443,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 251
+      }
+    ],
+    "thoughts_token_count": 826,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4270,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T23:36:37.738-04:00",
+  "request_duration_seconds": 4.935094400003436,
+  "completed_at": "2026-10-04T23:36:42.673-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

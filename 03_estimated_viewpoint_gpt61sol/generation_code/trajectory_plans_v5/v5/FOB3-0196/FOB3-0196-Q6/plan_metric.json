@@ -1,0 +1,268 @@
+{
+  "question_id": "FOB3-0196-Q6",
+  "motion_text": "I walk forward, walk to the oven on the right and face the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "forward",
+      "amount": "default"
+    },
+    {
+      "op": "go",
+      "target": "the oven on the right",
+      "relation": "to"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0196-Q6",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.642431527664972,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -1.642431527664972,
+        "y": 0.0,
+        "yaw": 1.478261088914964,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.649373628320395,
+        "y": 0.07480690552028947,
+        "yaw": 1.478261088914964,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.0,
+        0.0
+      ],
+      [
+        -2.008453443006288,
+        0.09109287572753999
+      ]
+    ],
+    "x": -2.008453443006288,
+    "y": 0.09109287572753999,
+    "yaw": 1.478261088914964,
+    "pitch": 0.0,
+    "travel_yaw": 1.478261088914964
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.642431527664972,
+      0.0
+    ],
+    [
+      -1.649373628320395,
+      0.07480690552028947
+    ]
+  ],
+  "final": {
+    "x": -1.649373628320395,
+    "y": 0.07480690552028947,
+    "yaw_deg": 84.69812141324077,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "forward",
+        "amount": "default"
+      },
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "target": "the oven on the right",
+        "relation": "to"
+      },
+      "x": -2.008453443006288,
+      "y": 0.09109287572753999,
+      "yaw": 1.478261088914964,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -2.008453443006288,
+      "y": 0.09109287572753999,
+      "yaw": 1.478261088914964,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.642431527664972,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.642431527664972,
+      "y": 0.0,
+      "yaw": 1.478261088914964,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.649373628320395,
+      "y": 0.07480690552028947,
+      "yaw": 1.478261088914964,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "move_yaw_deg": 0.0,
+      "requested_m": 2.0,
+      "end": [
+        -2.0,
+        0.0
+      ],
+      "blocked": false
+    },
+    {
+      "ground": "the oven on the right",
+      "method": "initial_photo",
+      "box": [
+        602,
+        792,
+        804,
+        863
+      ],
+      "point_m": [
+        -2.1661422088313054,
+        1.1272201148500491,
+        -0.4626266488920774
+      ]
+    },
+    {
+      "overlap": "the oven on the right",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 2,
+          "path_m": 0.1,
+          "stop_m": 1.0480579194486583,
+          "visible_frac": 1.0,
+          "center_deg": 1.1465605125866318,
+          "width_deg": 14.046282220911163,
+          "distance_m": 1.04995717557452
+        },
+        {
+          "sector": 1,
+          "path_m": 0.30000000000000004,
+          "stop_m": 1.0369907888641265,
+          "visible_frac": 1.0,
+          "center_deg": 1.274856274749625,
+          "width_deg": 14.369270145889717,
+          "distance_m": 1.0263867899142018
+        },
+        {
+          "sector": 3,
+          "path_m": 1.0,
+          "stop_m": 1.0563974526832056,
+          "visible_frac": 1.0,
+          "center_deg": 0.4432091065370443,
+          "width_deg": 10.855265924235159,
+          "distance_m": 1.078673837826217
+        },
+        {
+          "sector": 0,
+          "path_m": 1.3,
+          "stop_m": 1.0454230151285706,
+          "visible_frac": 1.0,
+          "center_deg": 0.7013130886894074,
+          "width_deg": 10.248667964377283,
+          "distance_m": 1.0093993247030917
+        }
+      ],
+      "chosen_sector": 2
+    }
+  ],
+  "m_per_unit": 2.30580472946167,
+  "seconds": 12.078696250915527,
+  "planning_m_per_unit": 2.807794042701809,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.821215763832486
+}

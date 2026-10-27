@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-105-Q2", "method": "avic", "variant": "label", "prediction": "white sofa", "gold": "blue cup", "correct": false, "n_imagined": 1, "category": "cross_view_farthest", "stored_result": "wrong"}

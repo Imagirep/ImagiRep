@@ -1,0 +1,1 @@
+{"qid": "FOB4-0171-Q5", "method": "mj", "variant": "top3+label", "prediction": "tv", "gold": "tv", "correct": true, "n_imagined": 3, "category": "farthest_object", "stored_result": "correct"}

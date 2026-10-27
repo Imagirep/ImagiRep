@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB4-0173-Q4",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk through the hallway with yellow light on the right, then turn to face the starting point, which object(s) would be closest to me?",
+  "answer_choices": {
+    "B": "counter",
+    "A": "wooden table",
+    "C": "dark green chair",
+    "D": "tv"
+  },
+  "gold_answer": "B",
+  "show_lookback": false,
+  "prediction": "B",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0173/start_view.png",
+      "sha256": "2339dbc78eaa81776bbb96014aa64e95aca2e2853f127da1907b13a2bdd605a9"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0173/step_01_rgb.png",
+      "sha256": "72158bbedaeb92893b0422b6c275e26d1d6f99c5715ae95040f22c20c2f1a230"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0173/step_02_back180_rgb.png",
+      "sha256": "4c38730d5b663f4c2642e846aef1cd371a5db030df68a5b1b7bf9336dc597f1f"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3343,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 151
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 774,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4117,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 5.960327199994936,
+  "completed_at": "2026-10-06T15:19:23-04:00"
+}

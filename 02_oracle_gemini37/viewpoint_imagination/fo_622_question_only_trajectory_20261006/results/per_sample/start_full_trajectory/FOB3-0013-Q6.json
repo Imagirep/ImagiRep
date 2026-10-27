@@ -1,0 +1,64 @@
+{
+  "question_id": "FOB3-0013-Q6",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the left side of the blue sofa and turn right, where is the black wall decoration relative to me?",
+  "answer_choices": {
+    "B": "front",
+    "A": "behind",
+    "C": "right",
+    "D": "left"
+  },
+  "gold_answer": "B",
+  "show_lookback": false,
+  "prediction": "B",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0013/start_view.png",
+      "sha256": "fcf87ecf288363ee732704ebe3bb5c4cb47b6b302f37f792fa7a88c0f07f339a"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0013/step_01_rgb.png",
+      "sha256": "db42eebc4d1ad2f2bfd607c595c1558198251ce690063c8d6db98b3b90560fad"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2264,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 136
+      }
+    ],
+    "thoughts_token_count": 937,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3201,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 5.934642299995176,
+  "completed_at": "2026-10-06T14:40:29-04:00"
+}

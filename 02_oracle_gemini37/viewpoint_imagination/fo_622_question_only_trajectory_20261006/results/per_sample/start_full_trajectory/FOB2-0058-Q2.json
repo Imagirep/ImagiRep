@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB2-0058-Q2",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk into the room ahead and stop, facing the way I go, which direction would have the closest obstacle?",
+  "answer_choices": {
+    "C": "front",
+    "A": "behind",
+    "B": "right",
+    "D": "left"
+  },
+  "gold_answer": "C",
+  "show_lookback": false,
+  "prediction": "D",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0058/start_view.png",
+      "sha256": "1704a0fa566f75957062945833d3659b3d760e5b476aab8800cb7481c88697d3"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0058/step_01_rgb.png",
+      "sha256": "9c1d43451251a0f9ea7bb1124e4b63353c3ec919e56f853ff6e108d7c07db12f"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0058/step_02_rgb.png",
+      "sha256": "77c3c1d4b262bc97126dbe4a0f319cabb4687975c87978f600c161fd0c46258b"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3332,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 140
+      }
+    ],
+    "thoughts_token_count": 3507,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6840,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 16.60631889999786,
+  "completed_at": "2026-10-06T14:23:26-04:00"
+}

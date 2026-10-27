@@ -1,0 +1,64 @@
+{
+  "question_id": "FOB4-0135-Q4",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I take a step back and to the left, facing the same direction, which object(s) would be closest to me?",
+  "answer_choices": {
+    "D": "wooden table",
+    "A": "doors",
+    "B": "gray cabinet",
+    "C": "gray basket"
+  },
+  "gold_answer": "D",
+  "show_lookback": false,
+  "prediction": "D",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0135/start_view.png",
+      "sha256": "35790b0a9dc235eb56cc0628bef970478ea52390718363c639c18b7d24388ad4"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0135/step_01_rgb.png",
+      "sha256": "752ffe639d0383a6a82121d305e2a1eacd09d431b537b72677a0edaab1b6a8b4"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2269,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 141
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 1103,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3373,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 6.0375633999938145,
+  "completed_at": "2026-10-06T15:12:17-04:00"
+}

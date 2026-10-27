@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-189-Q3", "method": "mj", "variant": "top3+label", "prediction": "refrigerator, large black painting, sink, black armchair", "gold": "refrigerator, large black painting, sink, black armchair", "correct": true, "n_imagined": 0, "category": "ordering", "stored_result": "wrong"}

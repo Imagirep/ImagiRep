@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-039-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-039-Q3",
+  "resource_id": "MVC-039",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "door, white shelf, white cabinet, safe",
+    "B": "white shelf, door, safe, white cabinet",
+    "C": "white shelf, safe, door, white cabinet",
+    "D": "door, safe, white cabinet, white shelf"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "978d48212505b954cd464834ad013346e256a2cf531b72d3c611909a8462b3da",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-039\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3588,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 396
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1596,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5185,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.694916799999191,
+  "completed_at": "2026-10-06T17:30:39-04:00"
+}

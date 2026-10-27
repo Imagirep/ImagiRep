@@ -1,0 +1,129 @@
+{
+  "row_index": 127,
+  "question_id": "FO-0033-Q1",
+  "trajectory_id": "FO-0033",
+  "scan_id": "1pXnuDYAj8r",
+  "question_type": 1,
+  "question_set": "lookback",
+  "endpoint_is_lookback": true,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk through the hallway with yellow light on the left, walk a few steps and turn around, which direction would have the most open space?",
+  "answer_choices": {
+    "C": "front",
+    "A": "right",
+    "B": "left",
+    "D": "behind"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "C": "A",
+    "A": "C",
+    "B": "B",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0033\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0033\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0033\\modalities\\step_02_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "20a7b52c16d8e0232387cdcba10815479bd52c32ee0a583f71a4295f26e90d3f",
+    "8041bdabccca4216202d874d9c28f0a20d03015a555fdbc211f8c91a9dfcb2cb"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0033\\modalities\\topdown_with_path.png",
+      "sha256": "95c97777ff7c3b1478db8f1ea0dad5eb8d732553ae1c53b79d5860e45a8ebb0f"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0033\\modalities\\trajectory.txt",
+      "sha256": "c8d3a9ab0985ffa1e76faba372ead67333fbae0de1378558a021fcbea7bb2788"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0033\\modalities\\trajectory.mp4",
+      "sha256": "0f751e6c07750b4faae3af2b78efbd8dbf181add7739f5c8b374b61a7795e32f",
+      "frame_count": 96,
+      "fps": 12.0,
+      "duration_seconds": 8.0,
+      "bytes": 515519,
+      "final_rgb_correlation": 0.9994761756587481
+    }
+  },
+  "condition": "start_final_topdown",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+  ],
+  "modality_prompt": "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": true,
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "topdown"
+  ],
+  "additional_modality": {
+    "kind": "topdown",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0033\\modalities\\topdown_with_path.png",
+    "sha256": "95c97777ff7c3b1478db8f1ea0dad5eb8d732553ae1c53b79d5860e45a8ebb0f"
+  },
+  "input_signature": "0de83a75c1b6824f86de2312975e116849b0fdaaa1ceb321f87aeccf553fbca2",
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3407,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3217
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 190
+      }
+    ],
+    "thoughts_token_count": 1151,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4559,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-16T17:41:42-04:00"
+}

@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-038-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-038-Q3",
+  "resource_id": "MVC-038",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "lamp, piano, monitor, podium",
+    "B": "podium, piano, lamp, monitor",
+    "C": "podium, lamp, monitor, piano",
+    "D": "piano, lamp, podium, monitor"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "a2380d2a6c45218e265564d4fe180b92b038bb921a453df09d67461d4f10c283",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-038\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7915,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 313
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1783,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9699,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 14.830031800011056,
+  "completed_at": "2026-10-06T17:33:47-04:00"
+}

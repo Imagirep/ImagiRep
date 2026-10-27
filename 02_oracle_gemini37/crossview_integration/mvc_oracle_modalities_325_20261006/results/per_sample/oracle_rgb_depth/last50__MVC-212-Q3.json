@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-212-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-212-Q3",
+  "resource_id": "MVC-212",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "hallway, yellow and black painting, tall potted plant, tv",
+    "B": "yellow and black painting, hallway, tall potted plant, tv",
+    "C": "hallway, tv, yellow and black painting, tall potted plant",
+    "D": "tv, yellow and black painting, tall potted plant, hallway"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "4414b2e622312b6781aec8ca2da48902c038980a6f56638544b6512b0ba369ac",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.401 m (near/red) to 6.624 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-212\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4650,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 394
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 2458,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7109,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 14.803012200005469,
+  "completed_at": "2026-10-06T17:39:53-04:00"
+}

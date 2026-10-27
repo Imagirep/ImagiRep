@@ -1,0 +1,134 @@
+{
+  "row_index": 167,
+  "question_id": "FO-0068-Q4",
+  "trajectory_id": "FO-0068",
+  "scan_id": "2azQ1b91cZZ",
+  "question_type": 4,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk through the arched doorway on the left, then turn back to face where I come from, which object(s) would be closest to me?",
+  "answer_choices": {
+    "C": "ovens",
+    "A": "kitchen counter",
+    "B": "cabinet",
+    "D": "telephone"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "cabinet",
+    "B": "ovens",
+    "C": "telephone",
+    "D": "kitchen counter"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "C": "B",
+    "A": "D",
+    "B": "A",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0068\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0068\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0068\\modalities\\step_02_rgb.png"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0068\\modalities\\oracle_lookback.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "3c12cb5162c297a1dd95e0ace8b9ff87aee703eb7e1fd151ea16a5ffc8d57600",
+    "33d85a454e77dd8549cc4ef2beccf109162efdd3189a6af3a95f55d911c1c56c"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0068\\modalities\\topdown_lookback_with_path.png",
+      "sha256": "ec31c6f1e450c226dcb769e155042a02204e6fc6e895ae9788a0db5779803ed6"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0068\\modalities\\trajectory_lookback.txt",
+      "sha256": "1c709a07f68b6550142550d429e0a40f910afff4d16636cde40aec00c97b59a8"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0068\\modalities\\trajectory_lookback.mp4",
+      "sha256": "3ab81a4fb085b9a2b5ff47142e3d6d45b548a5a5b30709fbc7362da1dfb11c8e",
+      "frame_count": 94,
+      "fps": 12.0,
+      "duration_seconds": 7.833333333333333,
+      "bytes": 660598,
+      "final_rgb_correlation": 0.9994103855535458
+    }
+  },
+  "condition": "start_final_topdown",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+  ],
+  "modality_prompt": "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": true,
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "topdown"
+  ],
+  "additional_modality": {
+    "kind": "topdown",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0068\\modalities\\topdown_lookback_with_path.png",
+    "sha256": "ec31c6f1e450c226dcb769e155042a02204e6fc6e895ae9788a0db5779803ed6"
+  },
+  "input_signature": "13a0164775d021b211dd79ff2d853a4155371811f6e7913a12a3e0592c65b5aa",
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3410,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 193
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3217
+      }
+    ],
+    "thoughts_token_count": 4455,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7866,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-16T17:44:23-04:00"
+}

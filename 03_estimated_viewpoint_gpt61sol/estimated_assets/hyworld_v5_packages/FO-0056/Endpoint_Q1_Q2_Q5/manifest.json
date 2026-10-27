@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FO-0056-Q1",
+  "motion_text": "I walk to the low black table near the glass door and face the way I move.",
+  "view_variant": "endpoint",
+  "frames": 87,
+  "fps": 12,
+  "total_distance_m": 4.200185634722768,
+  "depth_display_range_scene_units": [
+    1.6901342296600341,
+    3.3523917675018313
+  ],
+  "depth_color_scale_m": {
+    "near_m": 2.0328241913711467,
+    "far_m": 4.032119440183152
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.614548099109939 m over generated floor distance",
+  "m_per_unit": 2.2966655492782593,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 20.301334857940674
+}

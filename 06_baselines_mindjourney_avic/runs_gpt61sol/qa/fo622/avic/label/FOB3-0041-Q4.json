@@ -1,0 +1,1 @@
+{"qid": "FOB3-0041-Q4", "method": "avic", "variant": "label", "prediction": "red counter with black top", "gold": "red sofa", "correct": false, "n_imagined": 3, "category": "nearest_object", "stored_result": "wrong"}

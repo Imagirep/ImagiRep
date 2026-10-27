@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC3I-002-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC3I-002-Q1",
+  "resource_id": "MVC3I-002",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Images 3 and 2 is closest to white decorative cabinet in Image 1?",
+  "answer_choices": {
+    "A": "bed",
+    "B": "lamp",
+    "C": "toilet",
+    "D": "sink"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "43d094146a08f697bf18ca605b0c13c0849bfe0b95cfde744f43725df74d75e8",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC3I-002\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 5668,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 331
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 5337
+      }
+    ],
+    "thoughts_token_count": 5032,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 10700,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 25.123883399995975,
+  "completed_at": "2026-10-06T17:45:21-04:00"
+}

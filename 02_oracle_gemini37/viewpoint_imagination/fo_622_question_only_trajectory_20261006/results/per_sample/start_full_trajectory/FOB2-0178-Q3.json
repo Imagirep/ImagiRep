@@ -1,0 +1,82 @@
+{
+  "question_id": "FOB2-0178-Q3",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the chair far from me, then take one step to the right, then turn back to face where I come from, would the chair near me still be directly visible?",
+  "answer_choices": {
+    "D": "outside of view",
+    "A": "completely blocked",
+    "B": "partially visible",
+    "C": "clearly visible"
+  },
+  "gold_answer": "D",
+  "show_lookback": true,
+  "prediction": "A",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2:",
+    "Step 3 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_bent100_20260917/items/FOB2-0178/start_view.png",
+      "sha256": "b2be9b8f98f631d25fd8babafed0fb86ce932175fcecc2568c457afee19c760b"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_bent100_20260917/items/FOB2-0178/step_01_rgb.png",
+      "sha256": "e864a7aed141bb0791fdf91ff0390140bd8177b505a2869a2e4a13ba04fecb3e"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_bent100_20260917/items/FOB2-0178/step_02_rgb.png",
+      "sha256": "ac7ba73b6fc60d0f5c895444a5ecb280c4b6cd5ea5707d043e77d16f41d4e535"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_bent100_20260917/items/FOB2-0178/step_03_rgb.png",
+      "sha256": "5a663db04cdbff5e8bffda8df0d887edc3cb02cc91ef1c3f64cf296e4ac81cdf"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_bent100_20260917/items/FOB2-0178/oracle_lookback.png",
+      "sha256": "fbec1a14de5752935724574fa1943e7e08ea40f662d47f2033014d04f1b620f0"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 5491,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 171
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 5320
+      }
+    ],
+    "thoughts_token_count": 2363,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7855,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_duration_seconds": 13.802020400005858,
+  "completed_at": "2026-10-06T14:32:10-04:00"
+}

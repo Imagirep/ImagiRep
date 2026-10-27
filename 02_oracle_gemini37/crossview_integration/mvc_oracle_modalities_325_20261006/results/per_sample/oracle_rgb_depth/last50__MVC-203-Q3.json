@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-203-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-203-Q3",
+  "resource_id": "MVC-203",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "bed, armchair, white doorway, wooden desk",
+    "B": "bed, white doorway, wooden desk, armchair",
+    "C": "armchair, white doorway, wooden desk, bed",
+    "D": "armchair, wooden desk, bed, white doorway"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "7e9a7add4f0cc922c85ba1977cd5c1c7854772484686ea2afc3c12903f71a1a6",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.972 m (near/red) to 4.714 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-203\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4638,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 382
+      }
+    ],
+    "thoughts_token_count": 2560,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7199,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 13.215227599997888,
+  "completed_at": "2026-10-06T17:39:46-04:00"
+}

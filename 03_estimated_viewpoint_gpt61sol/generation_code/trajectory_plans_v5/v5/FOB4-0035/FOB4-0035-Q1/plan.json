@@ -1,0 +1,202 @@
+{
+  "question_id": "FOB4-0035-Q1",
+  "motion_text": "I walk to the round table, then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the round wooden coffee table in the center",
+      "relation": "to"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0035-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.619713773898904,
+        "y": 0.012550580474980144,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.619713773898904,
+        0.012550580474980144
+      ]
+    ],
+    "x": -2.619713773898904,
+    "y": 0.012550580474980144,
+    "yaw": 0.004790784619744117,
+    "pitch": 0.0,
+    "travel_yaw": 0.004790784619744117
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.619713773898904,
+      0.012550580474980144
+    ]
+  ],
+  "final": {
+    "x": -2.619713773898904,
+    "y": 0.012550580474980144,
+    "yaw_deg": -179.72550826073248,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the round wooden coffee table in the center",
+        "relation": "to"
+      },
+      "x": -2.619713773898904,
+      "y": 0.012550580474980144,
+      "yaw": 0.004790784619744117,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -2.619713773898904,
+      "y": 0.012550580474980144,
+      "yaw": -3.136801868970049,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.619713773898904,
+      "y": 0.012550580474980144,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.619713773898904,
+      "y": 0.012550580474980144,
+      "yaw": 0.004790784619744117,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.619713773898904,
+      "y": 0.012550580474980144,
+      "yaw": -3.136801868970049,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the round wooden coffee table in the center",
+      "method": "initial_photo",
+      "box": [
+        642,
+        440,
+        850,
+        567
+      ],
+      "point_m": [
+        -4.355168959411343,
+        -0.0483359258226578,
+        -1.112845903450979
+      ]
+    },
+    {
+      "overlap": "the round wooden coffee table in the center",
+      "n_points": 197,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 2.6,
+          "stop_m": 1.7365229245740315,
+          "visible_frac": 0.8578680203045685,
+          "center_deg": 0.08584626694097025,
+          "width_deg": 20.037180757502036,
+          "distance_m": 1.8306563028411063
+        },
+        {
+          "sector": 3,
+          "path_m": 2.7,
+          "stop_m": 1.7358958973140122,
+          "visible_frac": 0.8578680203045685,
+          "center_deg": -0.1439103266526457,
+          "width_deg": 20.159668267272522,
+          "distance_m": 1.8331703537499209
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 2.0032230189517306,
+  "seconds": 7.876971483230591
+}

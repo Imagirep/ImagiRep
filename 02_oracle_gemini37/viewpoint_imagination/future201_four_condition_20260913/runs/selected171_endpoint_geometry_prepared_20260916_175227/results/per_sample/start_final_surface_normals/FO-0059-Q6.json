@@ -1,0 +1,200 @@
+{
+  "row_index": 62,
+  "question_id": "FO-0059-Q6",
+  "trajectory_id": "FO-0059",
+  "scan_id": "1pXnuDYAj8r",
+  "question_type": 6,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": true,
+  "question": "If I walk through the doorway, walk a few steps and turn back to face where I come from, where is the black pillar relative to me?",
+  "answer_choices": {
+    "D": "left",
+    "A": "front",
+    "B": "right",
+    "C": "behind"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "D": "B",
+    "A": "A",
+    "B": "C",
+    "C": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0059\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0059\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0059\\modalities\\step_02_rgb.png"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0059\\modalities\\oracle_lookback.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "61bf54b9f883cb3812506d109c42e01d2e4b1c646003184c79baeb4be7bd9ab7",
+    "c4b313296990e4ac66aa72b0c82a2a5dc66c674a84938df7ef4aff5fb5d5a83e"
+  ],
+  "endpoint_modalities": {
+    "depth": {
+      "kind": "depth",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0059\\modalities\\oracle_lookback_depth.png",
+      "sha256": "369faa5bcfe0eb2dd4851235737165147779e65f8100b12b6d334b3ecded32b8",
+      "final_image_kind": "lookback",
+      "pose": {
+        "viewpoint_id": "20f6b7fcb5254024aacdd907da2eb315",
+        "heading_rad": -2.93192796844967,
+        "elevation_rad": -0.00459987139283653,
+        "vfov_degrees": 60.0,
+        "width": 640,
+        "height": 480
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0059\\modalities\\oracle_lookback_aligned_manifest.json",
+      "color_scale": {
+        "near_m": 1.799,
+        "far_m": 10.21575,
+        "colormap": "reversed OpenCV TURBO",
+        "normalization": "2nd to 98th percentile per image; clipped",
+        "black": "invalid depth",
+        "measurement": "camera-forward z-depth, not radial range"
+      }
+    },
+    "surface_normals": {
+      "kind": "surface_normals",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0059\\modalities\\oracle_lookback_surface_normals.png",
+      "sha256": "09b13a4389ed27b3e956749ff8936dd25b3097aff8a0df31f5a944dc6d118d14",
+      "final_image_kind": "lookback",
+      "pose": {
+        "viewpoint_id": "20f6b7fcb5254024aacdd907da2eb315",
+        "heading_rad": -2.93192796844967,
+        "elevation_rad": -0.00459987139283653,
+        "vfov_degrees": 60.0,
+        "width": 640,
+        "height": 480
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0059\\modalities\\oracle_lookback_aligned_manifest.json",
+      "encoding": {
+        "rgb_axes": [
+          "camera-right",
+          "camera-up",
+          "camera-forward"
+        ],
+        "channel_formula": "uint8(clip((component + 1) * 127.5, 0, 255))",
+        "black": "missing geometry"
+      }
+    },
+    "panorama": {
+      "kind": "panorama",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0059\\modalities\\oracle_lookback_panorama.png",
+      "sha256": "0a93d0e618454ae7dcf1bc4d61f452866987aba0239738e806bfbbb8f54ab9f9",
+      "final_image_kind": "lookback",
+      "pose": {
+        "viewpoint_id": "20f6b7fcb5254024aacdd907da2eb315",
+        "heading_rad": -2.93192796844967,
+        "elevation_rad": -0.00459987139283653,
+        "vfov_degrees": 60.0,
+        "width": 640,
+        "height": 480
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0059\\modalities\\oracle_lookback_aligned_manifest.json",
+      "orientation": {
+        "center": "front",
+        "quarter_width": "left",
+        "three_quarter_width": "right",
+        "edges": "behind; horizontal wrap",
+        "pose_alignment": "source RGB camera-centered spherical rotation"
+      }
+    }
+  },
+  "condition": "start_final_surface_normals",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_endpoint_geometry_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT SURFACE NORMAL MAP (same camera pose and field of view as FINAL VIEW):\nColors encode surface orientation, not object color or distance. RGB channels encode normal components along camera-right (R), camera-up (G), and camera-forward (B): 0 = -1, about 128 = 0, and 255 = +1. Higher R/G/B means a stronger rightward/upward/forward component; a surface facing the camera has low B. Black means missing geometry. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "surface_normals"
+  ],
+  "endpoint_modality": {
+    "kind": "surface_normals",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0059\\modalities\\oracle_lookback_surface_normals.png",
+    "sha256": "09b13a4389ed27b3e956749ff8936dd25b3097aff8a0df31f5a944dc6d118d14",
+    "final_image_kind": "lookback",
+    "pose": {
+      "viewpoint_id": "20f6b7fcb5254024aacdd907da2eb315",
+      "heading_rad": -2.93192796844967,
+      "elevation_rad": -0.00459987139283653,
+      "vfov_degrees": 60.0,
+      "width": 640,
+      "height": 480
+    },
+    "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0059\\modalities\\oracle_lookback_aligned_manifest.json",
+    "encoding": {
+      "rgb_axes": [
+        "camera-right",
+        "camera-up",
+        "camera-forward"
+      ],
+      "channel_formula": "uint8(clip((component + 1) * 127.5, 0, 255))",
+      "black": "missing geometry"
+    }
+  },
+  "input_signature": "f6ddf724d965ecdbd4aec2be4d2f2f06abe07b645fbe29e626ca72fee10bac82",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3459,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 267
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 722,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4182,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-16T18:04:15-04:00"
+}

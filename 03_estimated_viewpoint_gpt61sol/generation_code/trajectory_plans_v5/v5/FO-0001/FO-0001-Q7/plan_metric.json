@@ -1,0 +1,241 @@
+{
+  "question_id": "FO-0001-Q7",
+  "motion_text": "I walk forward into the room, then walk to the brown chair and face the brown chair.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "forward",
+      "amount": "default"
+    },
+    {
+      "op": "go",
+      "target": "the brown armchair on the right",
+      "relation": "to"
+    },
+    {
+      "op": "face",
+      "target": "the brown armchair on the right"
+    }
+  ],
+  "shared_walk_from": "FO-0001-Q2",
+  "walk_state": {
+    "question_id": "FO-0001-Q7",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.5295592447362358,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -1.5295592447362358,
+        "y": 0.0,
+        "yaw": 0.5246997950902945,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.231368282439643,
+        "y": 1.563859025600915,
+        "yaw": 0.5246997950902945,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -4.231368282439643,
+        "y": 1.563859025600915,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.307846244676455,
+        "y": 1.563859025600915,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.0,
+        0.0
+      ],
+      [
+        -5.53279423075805,
+        2.044849234814169
+      ],
+      [
+        -5.6327942307580505,
+        2.044849234814169
+      ]
+    ],
+    "x": -5.6327942307580505,
+    "y": 2.044849234814169,
+    "yaw": 0.5126826807881812,
+    "pitch": 0.0,
+    "travel_yaw": 0.5126826807881812
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.5295592447362358,
+      0.0
+    ],
+    [
+      -4.231368282439643,
+      1.563859025600915
+    ],
+    [
+      -4.307846244676455,
+      1.563859025600915
+    ]
+  ],
+  "final": {
+    "x": -4.307846244676455,
+    "y": 1.563859025600915,
+    "yaw_deg": 18.322479746749146,
+    "pitch_deg": -25.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "face",
+        "target": "the brown armchair on the right"
+      },
+      "x": -5.6327942307580505,
+      "y": 2.044849234814169,
+      "yaw": 0.31978759871074935,
+      "pitch": -0.4363323129985824
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.5295592447362358,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.5295592447362358,
+      "y": 0.0,
+      "yaw": 0.5246997950902945,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.231368282439643,
+      "y": 1.563859025600915,
+      "yaw": 0.5246997950902945,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.231368282439643,
+      "y": 1.563859025600915,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.307846244676455,
+      "y": 1.563859025600915,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.307846244676455,
+      "y": 1.563859025600915,
+      "yaw": 0.31978759871074935,
+      "pitch": -0.4363323129985824
+    }
+  ],
+  "events": [
+    {
+      "ground": "the brown armchair on the right",
+      "method": "initial_photo",
+      "box": [
+        537,
+        672,
+        731,
+        769
+      ],
+      "point_m": [
+        -6.5702764855074784,
+        2.3552999473199887,
+        -1.179430966280983
+      ]
+    }
+  ],
+  "m_per_unit": 1.8218867778778076,
+  "seconds": 7.526118278503418,
+  "planning_m_per_unit": 2.3822376075298504,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.7647796223681179
+}

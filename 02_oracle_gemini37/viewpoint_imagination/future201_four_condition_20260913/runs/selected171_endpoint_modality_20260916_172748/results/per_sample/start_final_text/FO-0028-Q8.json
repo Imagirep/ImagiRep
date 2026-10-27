@@ -1,0 +1,127 @@
+{
+  "row_index": 90,
+  "question_id": "FO-0028-Q8",
+  "trajectory_id": "FO-0028",
+  "scan_id": "b8cTxDM8gDG",
+  "question_type": 8,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk through the door and face the way I move, which object(s) would be on my left?",
+  "answer_choices": {
+    "C": "potted plant",
+    "A": "mirror",
+    "B": "little table",
+    "D": "chandelier"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "mirror",
+    "B": "little table",
+    "C": "potted plant",
+    "D": "chandelier"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "C": "C",
+    "A": "A",
+    "B": "B",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0028\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0028\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0028\\modalities\\step_02_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "9a37f4bd421b1fa04abc4dccce6dbca3a2644567bb4260f26477438be9816f56",
+    "34eb6f78caa1b6289e2661e0eb8844766040f82b0b55081f56a4fee5eb6f735f"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0028\\modalities\\topdown_with_path.png",
+      "sha256": "37e74852cfe5b485380f45707b30487e0e4fe3794c89c4349ed21471adc319e8"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0028\\modalities\\trajectory.txt",
+      "sha256": "f5c64a13f6f113a81a0638d21e4b7e3579a6ede50a9fab5a849bc51e380153d5"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0028\\modalities\\trajectory.mp4",
+      "sha256": "d4656c94503c177f098634974bb8d61d183ab481a457cf217cdea1a406972ae1",
+      "frame_count": 73,
+      "fps": 12.0,
+      "duration_seconds": 6.083333333333333,
+      "bytes": 607815,
+      "final_rgb_correlation": 0.9994533299554871
+    }
+  },
+  "condition": "start_final_text",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "modality_prompt": "ADDITIONAL TEXT TRAJECTORY:\nThe description gives the movement and camera poses from start to final state. Headings are in degrees: 0 faces +Y; positive rotation is clockwise toward +X. Use it together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "additional_modality": {
+    "kind": "text",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0028\\modalities\\trajectory.txt",
+    "sha256": "f5c64a13f6f113a81a0638d21e4b7e3579a6ede50a9fab5a849bc51e380153d5"
+  },
+  "input_signature": "4cb359776665067891f3ae5d18db25c168b17e0882c10cbca58c030675b527b1",
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2593,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 465
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 987,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3581,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-16T17:39:14-04:00"
+}

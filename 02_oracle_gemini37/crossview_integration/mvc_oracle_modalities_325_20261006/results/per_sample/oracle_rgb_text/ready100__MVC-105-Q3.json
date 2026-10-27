@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-105-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-105-Q3",
+  "resource_id": "MVC-105",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "round table, empty vase, tv, flowers in a vase",
+    "B": "round table, tv, empty vase, flowers in a vase",
+    "C": "tv, flowers in a vase, empty vase, round table",
+    "D": "round table, flowers in a vase, tv, empty vase"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "af297c12b3c349acf31b4094455ab1bb1e952429315228614d2548082150bc94",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-105\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3600,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 408
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1019,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4620,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 5.977538399994955,
+  "completed_at": "2026-10-06T17:31:19-04:00"
+}

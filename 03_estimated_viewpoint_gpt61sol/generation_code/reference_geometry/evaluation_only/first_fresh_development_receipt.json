@@ -1,0 +1,93 @@
+{
+  "recorded_at": "2026-10-02T11:21:44.010659+00:00",
+  "generation_only_projection_diagnostic": {
+    "recorded_at": "2026-10-02T11:19:06.444876+00:00",
+    "camera_source": "immutable v12 cpu_preview.py W=320,H=240,vfov=60; final GS not audited",
+    "method": "generated-only camera frustum diagnostic; no reference paths; no motion changes",
+    "tests_passed": 5,
+    "rows": [
+      {
+        "question_id": "FO-0001-Q2",
+        "status": "diagnostic",
+        "gt_metadata_used": [],
+        "semantic_success_certified": false,
+        "occlusion_tested": false,
+        "camera_assumption": {
+          "width": 320,
+          "height": 240,
+          "vfov_degrees": 60
+        },
+        "target_id": "chair_1",
+        "target_center_projection": {
+          "in_frustum": false,
+          "behind_camera": false,
+          "normalized_x": -1.991635303567842e-16,
+          "normalized_y": -1.6318165195867134
+        },
+        "horizontal_facing_error_degrees": 0.0,
+        "target_vertical_angle_degrees": -43.29324336866628,
+        "camera_pitch_degrees": 0.0,
+        "robust_bounds_corners_in_frustum": 3,
+        "robust_bounds_corner_count": 8
+      },
+      {
+        "question_id": "FO-0001-Q7",
+        "status": "diagnostic",
+        "gt_metadata_used": [],
+        "semantic_success_certified": false,
+        "occlusion_tested": false,
+        "camera_assumption": {
+          "width": 320,
+          "height": 240,
+          "vfov_degrees": 60
+        },
+        "target_id": "brown_chair",
+        "target_center_projection": {
+          "in_frustum": false,
+          "behind_camera": false,
+          "normalized_x": -6.4564538069068e-17,
+          "normalized_y": -1.6038117882314995
+        },
+        "horizontal_facing_error_degrees": 0.0,
+        "target_vertical_angle_degrees": -42.79848896752486,
+        "camera_pitch_degrees": 0.0,
+        "robust_bounds_corners_in_frustum": 3,
+        "robust_bounds_corner_count": 8
+      }
+    ]
+  },
+  "local_development_metrics": [
+    {
+      "question_id": "FO-0001-Q2",
+      "planner_version": "geometry-v11-room-entry-candidate",
+      "endpoint_error_m": 2.118946654444181,
+      "final_yaw_error_deg": 18.465405565483714,
+      "final_pitch_error_deg": 0.0,
+      "arc_length_correspondence_error_m": 1.0160901382315086,
+      "generated_length_m": 5.291963933363799,
+      "oracle_length_m": 3.2735257569854177,
+      "length_ratio": 1.6165945607946448,
+      "provisional_geometric_pass": false,
+      "scale_is_camera_height_prior": true,
+      "semantic_success_certified": false
+    },
+    {
+      "question_id": "FO-0001-Q7",
+      "planner_version": "geometry-v11-room-entry-candidate",
+      "endpoint_error_m": 2.081379480040945,
+      "final_yaw_error_deg": 18.465405565483714,
+      "final_pitch_error_deg": 0.0,
+      "arc_length_correspondence_error_m": 0.9990027220762223,
+      "generated_length_m": 5.257334938382611,
+      "oracle_length_m": 3.2735257569854177,
+      "length_ratio": 1.606016059951237,
+      "provisional_geometric_pass": false,
+      "scale_is_camera_height_prior": true,
+      "semantic_success_certified": false
+    }
+  ],
+  "oracle_uploaded": false,
+  "generation_modified_by_diagnostic": false,
+  "fresh_scene_count": 1,
+  "multiple_distinct_scene_quality_verified": false
+}

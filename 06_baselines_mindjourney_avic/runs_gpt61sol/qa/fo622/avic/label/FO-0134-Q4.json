@@ -1,0 +1,1 @@
+{"qid": "FO-0134-Q4", "method": "avic", "variant": "label", "prediction": "black armchairs", "gold": "black table", "correct": false, "n_imagined": 4, "category": "nearest_object", "stored_result": "wrong"}

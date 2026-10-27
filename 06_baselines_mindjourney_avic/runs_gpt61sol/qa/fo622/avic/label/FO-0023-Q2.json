@@ -1,0 +1,1 @@
+{"qid": "FO-0023-Q2", "method": "avic", "variant": "label", "prediction": "left", "gold": "left", "correct": true, "n_imagined": 5, "category": "nearest_obstacle_direction", "stored_result": "wrong"}

@@ -1,0 +1,124 @@
+{
+  "row_index": 104,
+  "question_id": "FO-0023-Q5",
+  "trajectory_id": "FO-0023",
+  "scan_id": "759xd9YjKW5",
+  "question_type": 5,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I move a few steps back and to the left, then look through the doors, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "D": "fireplace",
+    "A": "white and blue stool",
+    "B": "white ottoman",
+    "C": "blue sofa"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "white ottoman",
+    "B": "blue sofa",
+    "C": "white and blue stool",
+    "D": "fireplace"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "D": "D",
+    "A": "C",
+    "B": "A",
+    "C": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0023\\image_1.png"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0023\\modalities\\step_01_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "0adac49c8666e18ff447b72612d9e650ce88405b936769a0ae030616b2d8d278",
+    "e565e8f7e49950177c9bf24f60aa311b5a4727f926b77309efc2901fffbf6672"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0023\\modalities\\topdown_with_path.png",
+      "sha256": "028dc553933c63c08666d2bf2bcda9074e23d4c46f9814ed99b77e60348e9712"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0023\\modalities\\trajectory.txt",
+      "sha256": "22d1d272cb5a085c02305c7efbef5cfbed4cecdc6066a6fd3e57f24c4401d881"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0023\\modalities\\trajectory.mp4",
+      "sha256": "79ba53b599ff3eeb89c5b3be031d004d3da80d842f629b667006652728d2e50b",
+      "frame_count": 69,
+      "fps": 12.0,
+      "duration_seconds": 5.75,
+      "bytes": 617407,
+      "final_rgb_correlation": 0.9992503334323569
+    }
+  },
+  "condition": "start_final_topdown",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+  ],
+  "modality_prompt": "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "topdown"
+  ],
+  "additional_modality": {
+    "kind": "topdown",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0023\\modalities\\topdown_with_path.png",
+    "sha256": "028dc553933c63c08666d2bf2bcda9074e23d4c46f9814ed99b77e60348e9712"
+  },
+  "input_signature": "0eff700c9232d1c6b3e114194b356b6fb43ef1a386589a7adbdb36c22d79b421",
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3411,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3217
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 194
+      }
+    ],
+    "thoughts_token_count": 1614,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5025,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-16T17:40:05-04:00"
+}

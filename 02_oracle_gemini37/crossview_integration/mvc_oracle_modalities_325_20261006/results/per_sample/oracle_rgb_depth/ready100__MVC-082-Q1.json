@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-082-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-082-Q1",
+  "resource_id": "MVC-082",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to round table in Image 2?",
+  "answer_choices": {
+    "A": "blender",
+    "B": "silver wall decoration",
+    "C": "sink",
+    "D": "refrigerator"
+  },
+  "gold_answer": "A",
+  "prediction": "B",
+  "correct": false,
+  "signature": "3d1b3ce8d5ce031f5153f48af352ff8ff0aeda2f845d22f7706f19f2350a2107",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.839 m (near/red) to 4.193 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-082\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4601,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 345
+      }
+    ],
+    "thoughts_token_count": 2592,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7194,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 12.619819400002598,
+  "completed_at": "2026-10-06T17:37:39-04:00"
+}

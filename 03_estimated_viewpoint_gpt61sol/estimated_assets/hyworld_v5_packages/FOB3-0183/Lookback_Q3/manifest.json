@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB3-0183-Q3",
+  "motion_text": "I walk into the room and walk to the right side of the bed, then turn left, then turn to face my starting point.",
+  "view_variant": "lookback",
+  "frames": 133,
+  "fps": 12,
+  "total_distance_m": 4.324443500026567,
+  "depth_display_range_scene_units": [
+    0.5265217566490173,
+    8.327361660003662
+  ],
+  "depth_color_scale_m": {
+    "near_m": 0.633613622741306,
+    "far_m": 10.02110496411872
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.5245349214256265 m over generated floor distance",
+  "m_per_unit": 2.2840505838394165,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 48.540632009506226
+}

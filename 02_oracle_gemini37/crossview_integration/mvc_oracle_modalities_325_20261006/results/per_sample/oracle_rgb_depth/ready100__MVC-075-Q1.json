@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-075-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-075-Q1",
+  "resource_id": "MVC-075",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to towel in Image 2?",
+  "answer_choices": {
+    "A": "painting",
+    "B": "tissue box",
+    "C": "glass cup",
+    "D": "sink"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "91105ee28e7b7589b6021b23ccb2c118f0ca8a5ed847f4427fbdc611d53d5b62",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.636 m (near/red) to 3.412 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-075\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4600,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 344
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 6501,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 11102,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 23.596261199985747,
+  "completed_at": "2026-10-06T17:37:43-04:00"
+}

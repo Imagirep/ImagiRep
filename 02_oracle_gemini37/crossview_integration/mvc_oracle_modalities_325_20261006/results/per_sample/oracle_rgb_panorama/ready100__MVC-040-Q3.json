@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-040-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-040-Q3",
+  "resource_id": "MVC-040",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "mirror, wooden box, window, potted plant",
+    "B": "potted plant, window, wooden box, mirror",
+    "C": "wooden box, window, potted plant, mirror",
+    "D": "window, mirror, potted plant, wooden box"
+  },
+  "gold_answer": "C",
+  "prediction": "A",
+  "correct": false,
+  "signature": "7e2e4b6127bcd1af044f5b5cdd1e84a085ba8831f12a8de0e7d5a555064c6aff",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-040\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4634,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 361
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      }
+    ],
+    "thoughts_token_count": 598,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5233,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 11.978082500005257,
+  "completed_at": "2026-10-06T17:43:47-04:00"
+}

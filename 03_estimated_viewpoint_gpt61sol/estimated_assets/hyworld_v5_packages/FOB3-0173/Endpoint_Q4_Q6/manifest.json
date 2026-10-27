@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB3-0173-Q4",
+  "motion_text": "I walk past the table and walk to the right till I reach the sofa, then slightly turn left.",
+  "view_variant": "endpoint",
+  "frames": 93,
+  "fps": 12,
+  "total_distance_m": 2.689973894894555,
+  "depth_display_range_scene_units": [
+    0.7432510805130005,
+    5.048690404891968
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.1590963178581744,
+    "far_m": 7.87340726673026
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.6670913947930543 m over generated floor distance",
+  "m_per_unit": 2.265757918357849,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 19.629344701766968
+}

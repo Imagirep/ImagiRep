@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-041-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-041-Q2",
+  "resource_id": "MVC-041",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from sink in Image 2?",
+  "answer_choices": {
+    "A": "microwave",
+    "B": "refrigerator",
+    "C": "wooden desk",
+    "D": "green bottles"
+  },
+  "gold_answer": "C",
+  "prediction": "D",
+  "correct": false,
+  "signature": "2404342997b7d82049e4a606bcc6aaa2036baaf2009253299e400c5d904b3725",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-041\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4596,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 323
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      }
+    ],
+    "thoughts_token_count": 2689,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7286,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 15.205269900005078,
+  "completed_at": "2026-10-06T17:43:51-04:00"
+}

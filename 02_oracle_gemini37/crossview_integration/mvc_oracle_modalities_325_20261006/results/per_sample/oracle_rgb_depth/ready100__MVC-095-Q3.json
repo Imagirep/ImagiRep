@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-095-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-095-Q3",
+  "resource_id": "MVC-095",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "gray armchair, green potted flowers, tall plant in a vase, white armchair",
+    "B": "white armchair, green potted flowers, gray armchair, tall plant in a vase",
+    "C": "white armchair, tall plant in a vase, gray armchair, green potted flowers",
+    "D": "green potted flowers, gray armchair, white armchair, tall plant in a vase"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "06694f90add6b09aecd86d412ffac1c93e052c3907b0936c8311b9d13a8a4ead",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.168 m (near/red) to 10.065 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-095\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4663,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 407
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 5119,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9783,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 19.206122800009325,
+  "completed_at": "2026-10-06T17:38:08-04:00"
+}

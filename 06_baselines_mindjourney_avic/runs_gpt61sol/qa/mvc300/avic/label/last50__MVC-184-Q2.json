@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-184-Q2", "method": "avic", "variant": "label", "prediction": "stove", "gold": "knife shelf", "correct": false, "n_imagined": 1, "category": "cross_view_farthest", "stored_result": "correct"}

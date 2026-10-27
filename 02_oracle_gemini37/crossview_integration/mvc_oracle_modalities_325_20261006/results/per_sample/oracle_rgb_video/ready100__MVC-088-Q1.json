@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-088-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-088-Q1",
+  "resource_id": "MVC-088",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to colorful painting in Image 2?",
+  "answer_choices": {
+    "A": "white armchair",
+    "B": "white ottoman",
+    "C": "tv",
+    "D": "black and white painting"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "f97e1898149c4a13d813f9d5248c3f75fa8a98c96599a1728e922d861031fa87",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-088\\order_21\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7889,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 287
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      }
+    ],
+    "thoughts_token_count": 5368,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 13258,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 26.385039799992228,
+  "completed_at": "2026-10-06T17:34:39-04:00"
+}

@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-021-Q2", "method": "avic", "variant": "label", "prediction": "large dining table", "gold": "stools", "correct": false, "n_imagined": 2, "category": "cross_view_farthest", "stored_result": "wrong"}

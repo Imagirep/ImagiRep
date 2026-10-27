@@ -1,0 +1,222 @@
+{
+  "row_index": 4,
+  "question_id": "FO-0019-Q4",
+  "trajectory_id": "FO-0019",
+  "scan_id": "1pXnuDYAj8r",
+  "batch": 1,
+  "question_type": 4,
+  "question_set": "lookback",
+  "show_lookback": true,
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "question": "If I walk to the glass doors then turn to face my starting point, which object(s) would be closest to me?",
+  "answer_choices": {
+    "A": "sofa",
+    "B": "ottoman",
+    "C": "table",
+    "D": "tv"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "tv",
+    "B": "sofa",
+    "C": "table",
+    "D": "ottoman"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "A": "B",
+    "B": "D",
+    "C": "C",
+    "D": "A"
+  },
+  "shuffle_origin": "balanced_seed_20261005",
+  "rerun_reasons": [
+    "no_oracle_run"
+  ],
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0019\\image_1.png",
+      "sha256": "bbe67b4908cfd140ce664006785548c415dd5a4f840fa051fb6c45043868f127"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0019\\modalities\\step_01_rgb.png",
+      "sha256": "3438a648562a14cdc3242aa15ea8c12c328db108aeda34876c0f78ad46378583"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0019\\modalities\\step_02_rgb.png",
+      "sha256": "8d4f221bf9d44f917efc90547be1614c0601511531f06fe0c64f8aca71991193"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0019\\modalities\\oracle_lookback.png",
+      "sha256": "9bad97deb5e286dc6729fcdf108b6d4772e92c798db7cb76440cc503baa4559f"
+    }
+  ],
+  "endpoint_modalities": {
+    "depth": {
+      "kind": "depth",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0019\\modalities\\oracle_lookback_depth.png",
+      "sha256": "70c9a99c63f49fb7c45d8e1d52cf5f8fc28f785f84b3388d085c039e413a374a",
+      "final_image_kind": "lookback",
+      "pose": {
+        "viewpoint_id": "1eae38cbbaf744f99de90c99d8c013f1",
+        "heading_rad": -1.5185757223996383,
+        "elevation_rad": 0.0021180046673123657,
+        "vfov_degrees": 60.0,
+        "width": 640,
+        "height": 480
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0019\\modalities\\oracle_lookback_aligned_manifest.json",
+      "color_scale": {
+        "near_m": 1.22075,
+        "far_m": 9.6375,
+        "colormap": "reversed OpenCV TURBO",
+        "normalization": "2nd to 98th percentile per image; clipped",
+        "black": "invalid depth",
+        "measurement": "camera-forward z-depth, not radial range"
+      }
+    },
+    "surface_normals": {
+      "kind": "surface_normals",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0019\\modalities\\oracle_lookback_surface_normals.png",
+      "sha256": "74614f0c71ccd5f4ec6c72893e9476283fddd41277daef5fc5caf66129d26a82",
+      "final_image_kind": "lookback",
+      "pose": {
+        "viewpoint_id": "1eae38cbbaf744f99de90c99d8c013f1",
+        "heading_rad": -1.5185757223996383,
+        "elevation_rad": 0.0021180046673123657,
+        "vfov_degrees": 60.0,
+        "width": 640,
+        "height": 480
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0019\\modalities\\oracle_lookback_aligned_manifest.json",
+      "encoding": {
+        "rgb_axes": [
+          "camera-right",
+          "camera-up",
+          "camera-forward"
+        ],
+        "channel_formula": "uint8(clip((component + 1) * 127.5, 0, 255))",
+        "black": "missing geometry"
+      }
+    },
+    "panorama": {
+      "kind": "panorama",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0019\\modalities\\oracle_lookback_panorama.png",
+      "sha256": "0bfa2c7c217dd5ae00ecc57324fd70898de634ed7cb86e5cd73fbfd276c09951",
+      "final_image_kind": "lookback",
+      "pose": {
+        "viewpoint_id": "1eae38cbbaf744f99de90c99d8c013f1",
+        "heading_rad": -1.5185757223996383,
+        "elevation_rad": 0.0021180046673123657,
+        "vfov_degrees": 60.0,
+        "width": 640,
+        "height": 480
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0019\\modalities\\oracle_lookback_aligned_manifest.json",
+      "orientation": {
+        "center": "front",
+        "quarter_width": "left",
+        "three_quarter_width": "right",
+        "edges": "behind; horizontal wrap",
+        "pose_alignment": "source RGB camera-centered spherical rotation"
+      },
+      "sha256_at_source_run": "2ff6d347488dadc28793d12274c91aaef12ee16856dc1bfe35bc3a340bf07d01",
+      "changed_since_source_run": true
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0019\\modalities\\topdown_lookback_with_path.png",
+      "sha256": "59b9fbbf9ade3c14e866fa6d68ed64b8ce82d05252abecca27a4c41610e4df8e"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0019\\modalities\\trajectory_lookback.txt",
+      "sha256": "6c83909e0085719fb4dc65f067df53158294508937f65e16cc308d5acd7bde51",
+      "sha256_at_source_run": "9c3ce93e43298650ec39e2a2542c37c94400ee64c6edd88d341839022a30c74b",
+      "changed_since_source_run": true
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0019\\modalities\\trajectory_lookback.mp4",
+      "sha256": "f56d005f98ed039d7b30bdd710bc747815dd3f835d3aa5b8a9c5796a7c9790e7",
+      "frame_count": 92,
+      "fps": 12.0,
+      "duration_seconds": 7.666666666666667,
+      "bytes": 776697,
+      "final_rgb_correlation": 0.9991657651092309
+    }
+  },
+  "modality_source": "batch1_20260916",
+  "manifest_seed": 20261005,
+  "source": "622_freeze_labels_20261002",
+  "category": "nearest_object",
+  "subtype": "minimum_distance_from_observer",
+  "category_label": "Nearest object",
+  "condition": "start_final_surface_normals",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT SURFACE NORMAL MAP (same camera pose and field of view as FINAL VIEW):\nColors encode surface orientation, not object color or distance. RGB channels encode normal components along camera-right (R), camera-up (G), and camera-forward (B): 0 = -1, about 128 = 0, and 255 = +1. Higher R/G/B means a stronger rightward/upward/forward component; a surface facing the camera has low B. Black means missing geometry. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_622supplement_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": true,
+  "input_signature": "478087da924d9fd8bc9c5a5e8041f485a2e8e568059240aeac5342116731b9b1",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "surface_normals"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3455,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 263
+      }
+    ],
+    "thoughts_token_count": 1320,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4776,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-10-05T12:45:53.863-04:00",
+  "request_duration_seconds": 12.201328199997079,
+  "completed_at": "2026-10-05T12:46:06.064-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

@@ -1,0 +1,1 @@
+{"qid": "FO-0037-Q4", "method": "avic", "variant": "label", "prediction": "fireplace", "gold": "door", "correct": false, "n_imagined": 3, "category": "nearest_object", "stored_result": "wrong"}

@@ -1,0 +1,88 @@
+{
+  "row_index": 197,
+  "question_id": "FOB3-0013-Q6",
+  "trajectory_id": "FOB3-0013",
+  "scan_id": "sKLMLpTHeUy",
+  "question_type": 6,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk to the left side of the blue sofa and turn right, where is the black wall decoration relative to me?",
+  "answer_choices": {
+    "B": "front",
+    "A": "behind",
+    "C": "right",
+    "D": "left"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "B": "A",
+    "A": "D",
+    "C": "C",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0013\\start_view.png",
+      "sha256": "fcf87ecf288363ee732704ebe3bb5c4cb47b6b302f37f792fa7a88c0f07f339a"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0013\\step_01_rgb.png",
+      "sha256": "db42eebc4d1ad2f2bfd607c595c1558198251ce690063c8d6db98b3b90560fad"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "B",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1147,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 83
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 543,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1691,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "completed_at": "2026-09-21T11:43:28-04:00"
+}

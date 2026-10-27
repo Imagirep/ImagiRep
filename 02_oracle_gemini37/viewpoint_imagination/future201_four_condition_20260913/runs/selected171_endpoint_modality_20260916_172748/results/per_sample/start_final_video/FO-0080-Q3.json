@@ -1,0 +1,146 @@
+{
+  "row_index": 95,
+  "question_id": "FO-0080-Q3",
+  "trajectory_id": "FO-0080",
+  "scan_id": "ARNzJeq3xxb",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk through the glass door, then turn back to face where I come from, would the oven still be directly visible?",
+  "answer_choices": {
+    "A": "completely blocked",
+    "B": "clearly visible",
+    "C": "outside of view",
+    "D": "partially visible"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "A": "C",
+    "B": "A",
+    "C": "D",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0080\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0080\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0080\\modalities\\step_02_rgb.png"
+    },
+    {
+      "label": "Step 3 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0080\\modalities\\step_03_rgb.png"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0080\\modalities\\oracle_lookback.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "8e5be9b6b2eb867ec4b0e2b9d31fe26000b7a28351cc4fc7dd2d428effab4aed",
+    "0840c69c790f9b829f710145df5e67fd5c01dc07fbee5f22775e172df31a0e56"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0080\\modalities\\topdown_lookback_with_path.png",
+      "sha256": "1777e39616bad6916bf7abb718f15a987a6bfccea5eeb421ef3a58b528cc8aac"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0080\\modalities\\trajectory_lookback.txt",
+      "sha256": "56fac82a27bf6d88bf23661fd4a6b914f1cf563a026be2389d29b014c189b986"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0080\\modalities\\trajectory_lookback.mp4",
+      "sha256": "1e43da0a7263eeb1350aca8189976cb585590b88dbf9eaf3efb39577d4efe368",
+      "frame_count": 121,
+      "fps": 12.0,
+      "duration_seconds": 10.083333333333334,
+      "bytes": 1036364,
+      "final_rgb_correlation": 0.9993452783322994
+    }
+  },
+  "condition": "start_final_video",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "modality_prompt": "ADDITIONAL TRAJECTORY VIDEO:\nThe video shows the movement from start to the final state, including camera turns. Translation uses discrete connectivity hops. Use it together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "additional_modality": {
+    "kind": "video",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0080\\modalities\\trajectory_lookback.mp4",
+    "sha256": "1e43da0a7263eeb1350aca8189976cb585590b88dbf9eaf3efb39577d4efe368",
+    "frame_count": 121,
+    "fps": 12.0,
+    "duration_seconds": 10.083333333333334,
+    "bytes": 1036364,
+    "final_rgb_correlation": 0.9993452783322994
+  },
+  "input_signature": "b3bcbb9589682b52a97d72a106e9e7ca5d31a07ce2d461770ce33d24327d28de",
+  "video_sampling_fps": 12,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 9936,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 185
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 7623
+      }
+    ],
+    "thoughts_token_count": 2758,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 12694,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-16T17:39:41-04:00"
+}

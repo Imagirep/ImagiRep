@@ -1,0 +1,52 @@
+{
+  "uid": "last50__MVC-167-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-167-Q3",
+  "resource_id": "MVC-167",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "doorway, black table, wooden wall decoration, white tall vase",
+    "B": "wooden wall decoration, white tall vase, doorway, black table",
+    "C": "wooden wall decoration, doorway, white tall vase, black table",
+    "D": "white tall vase, doorway, wooden wall decoration, black table"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "c5c113164ff44e5bcf68e38b6a12659cfae16112c04144bc5a0c6a421977e7b9",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-167\\order_21\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7935,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 333
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      }
+    ],
+    "thoughts_token_count": 1992,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9927,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.93211420001171,
+  "completed_at": "2026-10-06T17:35:24-04:00"
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB2-0095-Q3",
+  "motion_text": "I walk near the black table, then stop and face the way I go, then turn to face my starting point.",
+  "view_variant": "lookback",
+  "frames": 107,
+  "fps": 12,
+  "total_distance_m": 2.403496191509656,
+  "depth_display_range_scene_units": [
+    1.858596432209015,
+    5.742176551818847
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.518565018556397,
+    "far_m": 4.691641655420047
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.3266338403326472 m over generated floor distance",
+  "m_per_unit": 1.7541438341140747,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 25.10894799232483
+}

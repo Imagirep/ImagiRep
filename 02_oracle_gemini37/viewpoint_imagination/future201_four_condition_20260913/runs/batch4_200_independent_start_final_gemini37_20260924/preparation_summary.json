@@ -1,0 +1,24 @@
+{
+  "status": "prepared_not_run",
+  "questions": 200,
+  "trajectories": 50,
+  "conditions": [
+    "start_view",
+    "start_final"
+  ],
+  "planned_calls": 400,
+  "final_image_kind": {
+    "endpoint": 113,
+    "lookback": 87
+  },
+  "route_variants": {
+    "new_bent": 33,
+    "old_bent": 35,
+    "new_straight": 104,
+    "old_straight": 28
+  },
+  "selection_manifest_sha256": "ff4e0b958309906ca20d73636405426f0d251d184edb59df2b7d74870819baa4",
+  "selected_ids_sha256": "1cbf9c101fa6dd54260d0685de4d25dc2b054cfbe607224bb5eae1c07a1fa063",
+  "manifest_sha256": "482e93c4d488cfb91f0251f6f1678770834a08f8bf7d5a8e2965bae898620daf",
+  "unique_evidence_files": 173
+}

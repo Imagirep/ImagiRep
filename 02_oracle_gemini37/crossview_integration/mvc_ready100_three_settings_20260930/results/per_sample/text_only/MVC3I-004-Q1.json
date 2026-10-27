@@ -1,0 +1,44 @@
+{
+  "status": "ok",
+  "row_index": 198,
+  "question_id": "MVC3I-004-Q1",
+  "condition": "text_only",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "response_format": "dynamic option enum",
+  "system_prompt": "Solve this spatial reasoning multiple-choice question from the provided text. Reason carefully. Return only A, B, C, or D.",
+  "condition_prompt": "No images are provided. Choose the best answer using only the question and answer choices. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.",
+  "prompt_hash": "dae46cc91399aa54be8e35966f5a83ade7ef8b1c9c3e8271a0ceec5304b67dc7",
+  "question": "Which object in Images 1 and 3 is closest to podium  in Image 2?",
+  "answer_choices": {
+    "A": "framed black and white painting",
+    "B": "piles of books",
+    "C": "white pillar",
+    "D": "black desk"
+  },
+  "gold_answer": "C",
+  "prediction": "D",
+  "correct": false,
+  "image_paths": [],
+  "image_count": 0,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 203,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 203
+      }
+    ],
+    "thoughts_token_count": 1807,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2011,
+    "traffic_type": null
+  },
+  "completed_at": "2026-09-30T19:02:31"
+}

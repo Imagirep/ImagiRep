@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-005-Q2", "method": "avic", "variant": "label", "prediction": "laptop", "gold": "framed paintings", "correct": false, "n_imagined": 1, "category": "cross_view_farthest", "stored_result": "wrong"}

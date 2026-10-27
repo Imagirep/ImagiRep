@@ -1,0 +1,76 @@
+{
+  "question_id": "FOB2-0010-Q3",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk into the room, walk near the chair, then turn back to face where I come from, would the vertical photo frames still be directly visible?",
+  "answer_choices": {
+    "B": "completely blocked",
+    "A": "clearly visible",
+    "C": "outside of view",
+    "D": "partially visible"
+  },
+  "gold_answer": "B",
+  "show_lookback": true,
+  "prediction": "B",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0010/start_view.png",
+      "sha256": "66f4536d1f4d3f3dd01ace75a7ca3cc8fe63e8417c21e5928375c20be1cbd6d3"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0010/step_01_rgb.png",
+      "sha256": "64fecd6b47bfd5ed89a07830b1f46a65c6fbc35cfc160bb37cff082ebc13027b"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0010/step_02_rgb.png",
+      "sha256": "89665923a90e6acc0b4f1335dbf73a1b07f8c88b2e7da50902cf034175de2d8c"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0010/oracle_lookback.png",
+      "sha256": "45066cc384ebcf735b48e3e23269737068046f28dd3a814f50d8df0e14ff7590"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4416,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 160
+      }
+    ],
+    "thoughts_token_count": 2873,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7290,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 14.189858400000958,
+  "completed_at": "2026-10-06T14:15:43-04:00"
+}

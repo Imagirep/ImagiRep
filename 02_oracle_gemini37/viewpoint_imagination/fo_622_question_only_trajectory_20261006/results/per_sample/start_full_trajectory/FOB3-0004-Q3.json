@@ -1,0 +1,76 @@
+{
+  "question_id": "FOB3-0004-Q3",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the bed and face the same direction I go, then turn to face my starting point, would the towel still be directly visible?",
+  "answer_choices": {
+    "D": "completely blocked",
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "outside of view"
+  },
+  "gold_answer": "D",
+  "show_lookback": true,
+  "prediction": "D",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0004/start_view.png",
+      "sha256": "2aae3c3401e71e11c87695b4ff306078eee6e39afe1dd9833afdf634a2c05aa3"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0004/step_01_rgb.png",
+      "sha256": "34d2e446b9e27a7742f5a40e7a1bf02e46cfecc56701aa0f1edf7b00a6b0e01a"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0004/step_02_rgb.png",
+      "sha256": "9cd5420dcdc147fc2c5f42980abee0c2311d9d82e848739f15979a1761867998"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0004/oracle_lookback.png",
+      "sha256": "ffb0030b1ac1ff0d17142c1885920297d35519f9e84223374f911fae3d96be7f"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4414,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 158
+      }
+    ],
+    "thoughts_token_count": 2936,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7350,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 14.08766309999919,
+  "completed_at": "2026-10-06T14:39:16-04:00"
+}

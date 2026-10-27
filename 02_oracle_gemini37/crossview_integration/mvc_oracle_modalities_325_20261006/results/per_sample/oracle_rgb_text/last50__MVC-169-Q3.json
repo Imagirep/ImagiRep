@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-169-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-169-Q3",
+  "resource_id": "MVC-169",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "stool, tub, mirror, tv",
+    "B": "mirror, stool, tv, tub",
+    "C": "tv, tub, stool, mirror",
+    "D": "stool, tub, tv, mirror"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "275aee21a517840332dc8e16c27c6d4eb0e6ba71c27dd803ee4628b68bb7f7a6",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-169\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3580,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 388
+      }
+    ],
+    "thoughts_token_count": 2328,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5909,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.920106899997336,
+  "completed_at": "2026-10-06T17:32:14-04:00"
+}

@@ -1,0 +1,83 @@
+{
+  "row_index": 139,
+  "question_id": "FO-0034-Q8",
+  "trajectory_id": "FO-0034",
+  "scan_id": "2azQ1b91cZZ",
+  "question_type": 8,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk past the kitchen table, turn left, walk a few steps and look back to where I come from, which object(s) would be in front of me?",
+  "answer_choices": {
+    "C": "sink",
+    "A": "tv",
+    "B": "fireplace",
+    "D": "ovens"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "fireplace",
+    "B": "tv",
+    "C": "ovens",
+    "D": "sink"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "C": "D",
+    "A": "B",
+    "B": "A",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0034\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0034\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0034\\modalities\\step_02_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "condition": "text_only",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": false,
+  "image_count": 0,
+  "evidence_kinds": [],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 91,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 91
+      }
+    ],
+    "thoughts_token_count": 3005,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3096,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-16T12:35:37-04:00"
+}

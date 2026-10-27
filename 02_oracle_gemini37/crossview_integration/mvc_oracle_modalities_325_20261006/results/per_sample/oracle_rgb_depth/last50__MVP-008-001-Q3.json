@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVP-008-001-Q3",
+  "cohort": "last50",
+  "question_id": "MVP-008-001-Q3",
+  "resource_id": "MVP-008-001",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "round wooden table, large picture, low black cabinet, tall black cabinet",
+    "B": "tall black cabinet, round wooden table, low black cabinet, large picture",
+    "C": "large picture, tall black cabinet, round wooden table, low black cabinet",
+    "D": "round wooden table, tall black cabinet, large picture, low black cabinet"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "e430eafe9ddeb2780762379204b69a624baaadb00601b4d7addeaef3880c1f21",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.789 m (near/red) to 4.302 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVP-008-001\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4658,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 402
+      }
+    ],
+    "thoughts_token_count": 1943,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6602,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 11.27064979998977,
+  "completed_at": "2026-10-06T17:40:05-04:00"
+}

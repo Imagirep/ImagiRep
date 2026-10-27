@@ -1,0 +1,41 @@
+{
+  "question_id": "FOB4-0217-Q4",
+  "condition": "text_only",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk near the dining table, facing the direction I go, which object(s) would be closest to me?",
+  "answer_choices": {
+    "A": "stove",
+    "B": "refrigerator",
+    "C": "framed painting",
+    "D": "black chair"
+  },
+  "gold_answer": "A",
+  "prediction": "D",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 82,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 82
+      }
+    ],
+    "thoughts_token_count": 583,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 666,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 4.268186599998444,
+  "completed_at": "2026-10-06T12:23:58-04:00"
+}

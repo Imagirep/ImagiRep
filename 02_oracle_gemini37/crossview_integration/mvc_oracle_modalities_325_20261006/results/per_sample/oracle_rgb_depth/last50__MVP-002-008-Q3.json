@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVP-002-008-Q3",
+  "cohort": "last50",
+  "question_id": "MVP-002-008-Q3",
+  "resource_id": "MVP-002-008",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "red vase, yellow cushion, red statue, white statue",
+    "B": "yellow cushion, red vase, red statue, white statue",
+    "C": "yellow cushion, red vase, white statue, red statue",
+    "D": "red statue, red vase, yellow cushion, white statue"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "a578ab89fab2cba2b13662dfb685edc551cadb7344c045d19257b49a7ed6160f",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.743 m (near/red) to 6.764 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVP-002-008\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4646,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 390
+      }
+    ],
+    "thoughts_token_count": 1613,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6260,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.6429405999952,
+  "completed_at": "2026-10-06T17:40:03-04:00"
+}

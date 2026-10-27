@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-076-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-076-Q1",
+  "resource_id": "MVC-076",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to pink statue in Image 2?",
+  "answer_choices": {
+    "A": "deer-shaped statue",
+    "B": "fireplace",
+    "C": "wooden small table",
+    "D": "round table"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "4dd8bfdc9de1b72d0afa44650c1fefb105c165d542c4e28d9bcdf1fd1896e817",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-076\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3555,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 363
+      }
+    ],
+    "thoughts_token_count": 1968,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5524,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.630551199996262,
+  "completed_at": "2026-10-06T17:31:02-04:00"
+}

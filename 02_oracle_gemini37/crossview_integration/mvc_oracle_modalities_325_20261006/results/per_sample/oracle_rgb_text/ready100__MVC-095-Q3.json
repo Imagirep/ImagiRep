@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-095-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-095-Q3",
+  "resource_id": "MVC-095",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "gray armchair, green potted flowers, tall plant in a vase, white armchair",
+    "B": "white armchair, green potted flowers, gray armchair, tall plant in a vase",
+    "C": "white armchair, tall plant in a vase, gray armchair, green potted flowers",
+    "D": "green potted flowers, gray armchair, white armchair, tall plant in a vase"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "36e50681a2adcfbd80af1b37445b72d7ee9115ab48edb0a3fd1a78ac948ec650",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-095\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3612,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 420
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 4534,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8147,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 16.72549070000241,
+  "completed_at": "2026-10-06T17:31:22-04:00"
+}

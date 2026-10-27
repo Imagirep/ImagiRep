@@ -1,0 +1,124 @@
+{
+  "row_index": 56,
+  "question_id": "FO-0014-Q6",
+  "trajectory_id": "FO-0014",
+  "scan_id": "D7N2EKCX4Sj",
+  "question_type": 6,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk to the right till I'm near the bed, and face the glass door, where is the chair under the lamp relative to me?",
+  "answer_choices": {
+    "D": "front",
+    "A": "right",
+    "B": "left",
+    "C": "behind"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "D": "A",
+    "A": "C",
+    "B": "B",
+    "C": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0014\\image_1.png"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0014\\modalities\\step_01_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "ddb73550c87edb93984bd6ceb8dccac5361d0c5bc35a775f5e1715a60540a4d7",
+    "3491bea22ad77393c24aaa486e9e49184ae9059f31e21a9b7010c820d25ab521"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0014\\modalities\\topdown_with_path.png",
+      "sha256": "31f34e259702997cdea4ca63cf6c6f3e38ed49c12acc770a565c3fbbc09d3b14"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0014\\modalities\\trajectory.txt",
+      "sha256": "c622c4273d2e3c620831481f0159a0c259fd44b37b27b3cdf9c64ccca573a2d7"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0014\\modalities\\trajectory.mp4",
+      "sha256": "38e5937273ad6c07b137e388fc59ced85e14bf65a7c41db9b56f9d10dc8067d1",
+      "frame_count": 56,
+      "fps": 12.0,
+      "duration_seconds": 4.666666666666667,
+      "bytes": 582323,
+      "final_rgb_correlation": 0.9994937916221407
+    }
+  },
+  "condition": "start_final_topdown",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+  ],
+  "modality_prompt": "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "topdown"
+  ],
+  "additional_modality": {
+    "kind": "topdown",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0014\\modalities\\topdown_with_path.png",
+    "sha256": "31f34e259702997cdea4ca63cf6c6f3e38ed49c12acc770a565c3fbbc09d3b14"
+  },
+  "input_signature": "d1a8d72358dc47e94dfa2995f65280e4ab256e4c3497415524495c38230886b3",
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3408,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 191
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3217
+      }
+    ],
+    "thoughts_token_count": 2897,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6306,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-16T17:37:04-04:00"
+}

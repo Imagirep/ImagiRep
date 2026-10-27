@@ -1,0 +1,1 @@
+{"qid": "FOB2-0050-Q5", "method": "avic", "variant": "label", "prediction": "towel", "gold": "sink", "correct": false, "n_imagined": 3, "category": "farthest_object", "stored_result": "wrong"}

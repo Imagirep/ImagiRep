@@ -1,0 +1,1 @@
+Solve this multi-view spatial reasoning multiple-choice question using the provided evidence. Reason carefully. Return only A, B, C, or D.

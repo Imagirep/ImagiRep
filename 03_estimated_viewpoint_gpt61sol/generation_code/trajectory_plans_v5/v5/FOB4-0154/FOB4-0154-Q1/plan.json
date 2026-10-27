@@ -1,0 +1,283 @@
+{
+  "question_id": "FOB4-0154-Q1",
+  "motion_text": "I walk forward, walk near the brown sofa and slightly turn right.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "forward"
+    },
+    {
+      "op": "go",
+      "target": "the brown sofa on the left",
+      "relation": "near"
+    },
+    {
+      "op": "turn",
+      "direction": "right",
+      "amount": "slight"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0154-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.0,
+        "y": 0.0,
+        "yaw": -2.4656673964802893,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.4620322809218376,
+        "y": -0.4314200486779747,
+        "yaw": -2.4656673964802893,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.0,
+        0.0
+      ],
+      [
+        -1.4620322809218376,
+        -0.4314200486779747
+      ]
+    ],
+    "x": -1.4620322809218376,
+    "y": -0.4314200486779747,
+    "yaw": -2.4656673964802893,
+    "pitch": 0.0,
+    "travel_yaw": -2.4656673964802893
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.0,
+      0.0
+    ],
+    [
+      -1.4620322809218376,
+      -0.4314200486779747
+    ]
+  ],
+  "final": {
+    "x": -1.4620322809218376,
+    "y": -0.4314200486779747,
+    "yaw_deg": -106.27233550133039,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "forward"
+      },
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "target": "the brown sofa on the left",
+        "relation": "near"
+      },
+      "x": -1.4620322809218376,
+      "y": -0.4314200486779747,
+      "yaw": -2.4656673964802893,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "right",
+        "amount": "slight"
+      },
+      "x": -1.4620322809218376,
+      "y": -0.4314200486779747,
+      "yaw": -1.854802158282274,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": -2.4656673964802893,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.4620322809218376,
+      "y": -0.4314200486779747,
+      "yaw": -2.4656673964802893,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.4620322809218376,
+      "y": -0.4314200486779747,
+      "yaw": -1.854802158282274,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "move_yaw_deg": 0.0,
+      "requested_m": 2.0,
+      "end": [
+        -2.0,
+        0.0
+      ],
+      "blocked": false
+    },
+    {
+      "ground": "the brown sofa on the left",
+      "method": "initial_photo",
+      "box": [
+        596,
+        148,
+        836,
+        258
+      ],
+      "point_m": [
+        -2.0434299113378813,
+        -1.000131935365204,
+        -0.5859051038324874
+      ]
+    },
+    {
+      "overlap": "the brown sofa on the left",
+      "n_points": 215,
+      "candidates": [
+        {
+          "sector": 5,
+          "path_m": 0.0,
+          "stop_m": 0.9721256573337004,
+          "visible_frac": 0.5534883720930233,
+          "center_deg": 10.102745486018271,
+          "width_deg": 49.14751722831545,
+          "distance_m": 3.909635473288574
+        },
+        {
+          "sector": 6,
+          "path_m": 0.1,
+          "stop_m": 0.968890482749867,
+          "visible_frac": 0.5116279069767442,
+          "center_deg": 10.57869921731768,
+          "width_deg": 7.166877079600656,
+          "distance_m": 3.851780074724545
+        },
+        {
+          "sector": 4,
+          "path_m": 0.9,
+          "stop_m": 0.8132997078031804,
+          "visible_frac": 1.0,
+          "center_deg": -8.990684707630736,
+          "width_deg": 28.14014189781726,
+          "distance_m": 0.9807888800696393
+        },
+        {
+          "sector": 7,
+          "path_m": 1.1,
+          "stop_m": 1.2643143024884858,
+          "visible_frac": 0.4883720930232558,
+          "center_deg": 23.271763418658875,
+          "width_deg": 9.220473379399031,
+          "distance_m": 3.0978069681463487
+        },
+        {
+          "sector": 0,
+          "path_m": 2.2,
+          "stop_m": 1.1190398595552855,
+          "visible_frac": 0.4883720930232558,
+          "center_deg": 20.756090338943274,
+          "width_deg": 8.218982832335794,
+          "distance_m": 2.3931522148638518
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 2.010317347340309,
+  "seconds": 10.06029224395752
+}

@@ -1,0 +1,314 @@
+{
+  "question_id": "FOB3-0034-Q1",
+  "motion_text": "I walk forward, then walk to the fireplace, facing the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "forward",
+      "amount": "default"
+    },
+    {
+      "op": "go",
+      "relation": "to",
+      "target": "the fireplace on the right side of the dining room"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0034-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.55,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -1.55,
+        "y": 0.0,
+        "yaw": -0.9915635697488357,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.615601604305434,
+        "y": -0.10029715704131625,
+        "yaw": -0.9915635697488357,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -1.615601604305434,
+        "y": -0.10029715704131625,
+        "yaw": 0.08314123188844098,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.8156016043054333,
+        "y": -0.00029715704131660914,
+        "yaw": 0.08314123188844098,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.8156016043054333,
+        "y": -0.00029715704131660914,
+        "yaw": 0.3080527810237761,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -5.0156016043054334,
+        "y": 0.6997028429586827,
+        "yaw": 0.3080527810237761,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -1.55,
+        0.0
+      ],
+      [
+        -1.615601604305434,
+        -0.10029715704131625
+      ],
+      [
+        -2.8156016043054333,
+        -0.00029715704131660914
+      ],
+      [
+        -5.0156016043054334,
+        0.6997028429586827
+      ]
+    ],
+    "x": -5.0156016043054334,
+    "y": 0.6997028429586827,
+    "yaw": 0.19922122558020325,
+    "pitch": 0.0,
+    "travel_yaw": 0.19922122558020325
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.55,
+      0.0
+    ],
+    [
+      -1.615601604305434,
+      -0.10029715704131625
+    ],
+    [
+      -2.8156016043054333,
+      -0.00029715704131660914
+    ],
+    [
+      -5.0156016043054334,
+      0.6997028429586827
+    ]
+  ],
+  "final": {
+    "x": -5.0156016043054334,
+    "y": 0.6997028429586827,
+    "yaw_deg": 11.414535415169361,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "forward",
+        "amount": "default"
+      },
+      "x": -1.55,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "relation": "to",
+        "target": "the fireplace on the right side of the dining room"
+      },
+      "x": -5.0156016043054334,
+      "y": 0.6997028429586827,
+      "yaw": 0.19922122558020325,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.55,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.55,
+      "y": 0.0,
+      "yaw": -0.9915635697488357,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.615601604305434,
+      "y": -0.10029715704131625,
+      "yaw": -0.9915635697488357,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.615601604305434,
+      "y": -0.10029715704131625,
+      "yaw": 0.08314123188844098,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.8156016043054333,
+      "y": -0.00029715704131660914,
+      "yaw": 0.08314123188844098,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.8156016043054333,
+      "y": -0.00029715704131660914,
+      "yaw": 0.3080527810237761,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -5.0156016043054334,
+      "y": 0.6997028429586827,
+      "yaw": 0.3080527810237761,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -5.0156016043054334,
+      "y": 0.6997028429586827,
+      "yaw": 0.19922122558020325,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "move_yaw_deg": 0.0,
+      "requested_m": 2.0,
+      "end": [
+        -1.55,
+        0.0
+      ],
+      "blocked": true
+    },
+    {
+      "ground": "the fireplace on the right side of the dining room",
+      "method": "initial_photo",
+      "box": [
+        558,
+        675,
+        731,
+        891
+      ],
+      "point_m": [
+        -4.693462967804816,
+        2.057098324991112,
+        -0.818617308619437
+      ]
+    },
+    {
+      "overlap": "the fireplace on the right side of the dining room",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 1,
+          "path_m": 4.4,
+          "stop_m": 1.395097056038944,
+          "visible_frac": 0.6355555555555555,
+          "center_deg": -14.983659658381185,
+          "width_deg": 62.125143993836545,
+          "distance_m": 2.627437340832129
+        },
+        {
+          "sector": 0,
+          "path_m": 5.5,
+          "stop_m": 1.2591531588876863,
+          "visible_frac": 0.3244444444444444,
+          "center_deg": -23.251194745667913,
+          "width_deg": 69.0019119841559,
+          "distance_m": 2.2105396617646584
+        }
+      ],
+      "chosen_sector": 1
+    }
+  ],
+  "m_per_unit": 2.671975161660163,
+  "seconds": 8.762901782989502
+}

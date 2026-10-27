@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB2-0105-Q4",
+  "motion_text": "I walk near the cabinet and face the way I go.",
+  "view_variant": "endpoint",
+  "frames": 69,
+  "fps": 12,
+  "total_distance_m": 1.9572117916813667,
+  "depth_display_range_scene_units": [
+    0.8608624505996704,
+    3.5466892004013064
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.0171229136824205,
+    "far_m": 4.190470673828612
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.536831447971565 m over generated floor distance",
+  "m_per_unit": 2.024235725402832,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 19.97067642211914
+}

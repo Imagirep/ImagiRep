@@ -1,0 +1,1 @@
+{"uid": "last50__MVC-185-Q3", "category": "ordering", "reason": "The Estimated RGB connects the viewpoints and helps clarify the left-to-right arrangement.", "choice": "est_rgb", "usage": {"input_tokens": 3478, "input_tokens_details": {"cached_tokens": 0, "cache_write_tokens": 3475}, "output_tokens": 130, "output_tokens_details": {"reasoning_tokens": 96}, "total_tokens": 3608}}

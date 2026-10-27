@@ -1,0 +1,94 @@
+{
+  "row_index": 212,
+  "question_id": "FOB3-0182-Q4",
+  "trajectory_id": "FOB3-0182",
+  "scan_id": "q9vSo1VnCiC",
+  "question_type": 4,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk to the bed and face the direction I go, which object(s) would be closest to me?",
+  "answer_choices": {
+    "D": "white chairs",
+    "A": "round table",
+    "B": "lamp",
+    "C": "wooden stool"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "white chairs",
+    "B": "wooden stool",
+    "C": "round table",
+    "D": "lamp"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "D": "A",
+    "A": "C",
+    "B": "D",
+    "C": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0182\\start_view.png",
+      "sha256": "0b58c052c84ce9dc322a6cd3da2b2c49940ce8f286de3b97c090844b35a9cead"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0182\\step_01_rgb.png",
+      "sha256": "7069e71cbc4734ec627bee41b5d26059246a069c164e85e46bd23dd9b338f882"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0182\\step_02_rgb.png",
+      "sha256": "2b278804574f297774cdfc999338522a13b443a108ec7ad56f0fc534c6584fc0"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "B",
+  "correct": false,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1149,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 85
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 656,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1806,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "completed_at": "2026-09-21T11:43:52-04:00"
+}

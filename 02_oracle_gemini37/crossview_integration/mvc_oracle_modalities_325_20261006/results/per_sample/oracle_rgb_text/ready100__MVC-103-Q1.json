@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-103-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-103-Q1",
+  "resource_id": "MVC-103",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to statue in Image 1?",
+  "answer_choices": {
+    "A": "lamp",
+    "B": "wooden desk",
+    "C": "red bowl",
+    "D": "dark blue armchair"
+  },
+  "gold_answer": "C",
+  "prediction": "D",
+  "correct": false,
+  "signature": "07a3e3e01c3cbb38e6678f5e40a39da14cc5b678fb6fe7381c8500c7bfe2f0ea",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-103\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3552,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 360
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1194,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4747,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 7.664916800000356,
+  "completed_at": "2026-10-06T17:31:19-04:00"
+}

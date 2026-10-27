@@ -1,0 +1,324 @@
+{
+  "question_id": "FOB3-0173-Q4",
+  "motion_text": "I walk past the table and walk to the right till I reach the sofa, then slightly turn left.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "wooden dining table on the right",
+      "relation": "past"
+    },
+    {
+      "op": "go",
+      "target": "sofa on the right",
+      "relation": "to"
+    },
+    {
+      "op": "turn",
+      "direction": "left",
+      "amount": "slight"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0173-Q4",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.18591343813716807,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -0.8779648106619207,
+        "y": 0.1651323895694714,
+        "yaw": 0.18591343813716807,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -0.8779648106619207,
+        "y": 0.1651323895694714,
+        "yaw": -0.06241880999595714,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.4021626573298556,
+        "y": 0.0698700241527258,
+        "yaw": -0.06241880999595714,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.4021626573298556,
+        "y": 0.0698700241527258,
+        "yaw": 0.029078101888305147,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.4021626573298556,
+        "y": 0.0698700241527258,
+        "yaw": 0.7853981633974505,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.592687388163347,
+        "y": 0.2603947549862179,
+        "yaw": 0.7853981633974505,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -0.9216281863473288,
+        0.17334483439190684
+      ],
+      [
+        -2.5216281863473284,
+        0.0733448343919072
+      ],
+      [
+        -2.7216281863473277,
+        0.2733448343919074
+      ]
+    ],
+    "x": -2.7216281863473277,
+    "y": 0.2733448343919074,
+    "yaw": 0.7853981633974505,
+    "pitch": 0.0,
+    "travel_yaw": 0.7853981633974505
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -0.8779648106619207,
+      0.1651323895694714
+    ],
+    [
+      -2.4021626573298556,
+      0.0698700241527258
+    ],
+    [
+      -2.592687388163347,
+      0.2603947549862179
+    ]
+  ],
+  "final": {
+    "x": -2.592687388163347,
+    "y": 0.2603947549862179,
+    "yaw_deg": 10.000000000000142,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "wooden dining table on the right",
+        "relation": "past"
+      },
+      "x": -2.5216281863473284,
+      "y": 0.0733448343919072,
+      "yaw": 0.029078101888305147,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "target": "sofa on the right",
+        "relation": "to"
+      },
+      "x": -2.7216281863473277,
+      "y": 0.2733448343919074,
+      "yaw": 0.7853981633974505,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left",
+        "amount": "slight"
+      },
+      "x": -2.7216281863473277,
+      "y": 0.2733448343919074,
+      "yaw": 0.17453292519943542,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.18591343813716807,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -0.8779648106619207,
+      "y": 0.1651323895694714,
+      "yaw": 0.18591343813716807,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -0.8779648106619207,
+      "y": 0.1651323895694714,
+      "yaw": -0.06241880999595714,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.4021626573298556,
+      "y": 0.0698700241527258,
+      "yaw": -0.06241880999595714,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.4021626573298556,
+      "y": 0.0698700241527258,
+      "yaw": 0.029078101888305147,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.4021626573298556,
+      "y": 0.0698700241527258,
+      "yaw": 0.7853981633974505,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.592687388163347,
+      "y": 0.2603947549862179,
+      "yaw": 0.7853981633974505,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.592687388163347,
+      "y": 0.2603947549862179,
+      "yaw": 0.17453292519943542,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "wooden dining table on the right",
+      "method": "initial_photo",
+      "box": [
+        631,
+        627,
+        997,
+        994
+      ],
+      "point_m": [
+        -2.239543393979224,
+        1.1521897014226052,
+        -0.8684267877964847
+      ]
+    },
+    {
+      "ground": "sofa on the right",
+      "method": "initial_photo",
+      "box": [
+        569,
+        713,
+        647,
+        865
+      ],
+      "point_m": [
+        -3.393554156674888,
+        1.4853342696335692,
+        -0.5054497249829224
+      ]
+    },
+    {
+      "overlap": "sofa on the right",
+      "n_points": 205,
+      "candidates": [
+        {
+          "sector": 2,
+          "path_m": 0.4,
+          "stop_m": 1.3857860227098684,
+          "visible_frac": 0.9853658536585366,
+          "center_deg": 0.6261634622176651,
+          "width_deg": 42.97653468481282,
+          "distance_m": 4.3087057299629565
+        }
+      ],
+      "chosen_sector": 2
+    }
+  ],
+  "m_per_unit": 2.265757918357849,
+  "seconds": 14.606288194656372,
+  "planning_m_per_unit": 2.3784397001332036,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.9526236541674595
+}

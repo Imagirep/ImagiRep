@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-086-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-086-Q3",
+  "resource_id": "MVC-086",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "curtain, potted plant, white armchair, bed",
+    "B": "white armchair, potted plant, curtain, bed",
+    "C": "curtain, bed, white armchair, potted plant",
+    "D": "curtain, potted plant, bed, white armchair"
+  },
+  "gold_answer": "D",
+  "prediction": "C",
+  "correct": false,
+  "signature": "bf0c1ff82872235b163fede277b0087e40a76fd2a324a66f26da73ee5cc68883",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-086\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4634,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 361
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      }
+    ],
+    "thoughts_token_count": 3026,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7661,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 14.366933700002846,
+  "completed_at": "2026-10-06T17:44:30-04:00"
+}

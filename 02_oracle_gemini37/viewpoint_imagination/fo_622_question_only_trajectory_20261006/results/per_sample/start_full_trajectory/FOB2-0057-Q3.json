@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB2-0057-Q3",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk near the long sofa, then turn back to face where I come from, would the tall potted plant still be directly visible?",
+  "answer_choices": {
+    "B": "outside of view",
+    "A": "completely blocked",
+    "C": "clearly visible",
+    "D": "partially visible"
+  },
+  "gold_answer": "B",
+  "show_lookback": true,
+  "prediction": "B",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0057/start_view.png",
+      "sha256": "a6a8e6bb6a7b97fc94e2b1a36c7bab9c63e89bcfa80fae37d5a4aa78486722bf"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0057/step_01_rgb.png",
+      "sha256": "a3ed525059b9bcd9dc45f7ed4037dc9af78cb43f78d0826cfb3339b10e07d664"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0057/oracle_lookback.png",
+      "sha256": "2d5d9662588b58a27677b9a9bce3371033a51b3e654ffa5bf4bdc4d100819db9"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3343,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 151
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1619,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4963,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 8.586131599993678,
+  "completed_at": "2026-10-06T14:22:51-04:00"
+}

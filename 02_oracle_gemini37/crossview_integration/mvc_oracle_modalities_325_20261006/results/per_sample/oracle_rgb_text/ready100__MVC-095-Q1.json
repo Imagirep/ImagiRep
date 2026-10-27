@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-095-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-095-Q1",
+  "resource_id": "MVC-095",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to vase in Image 1?",
+  "answer_choices": {
+    "A": "gray armchair",
+    "B": "green potted flowers",
+    "C": "white armchair",
+    "D": "white potted flowers"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "a3ca0b6b422bf809d4a7abb09eea53f637c9dd1c18f171c54ea6f7b68fb51dd5",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-095\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3554,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 362
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1524,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5079,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.75656799999706,
+  "completed_at": "2026-10-06T17:31:15-04:00"
+}

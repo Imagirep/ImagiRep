@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-097-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-097-Q2",
+  "resource_id": "MVC-097",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from white chair in Image 2?",
+  "answer_choices": {
+    "A": "bed",
+    "B": "framed paintings",
+    "C": "potted plant",
+    "D": "white ottoman near me"
+  },
+  "gold_answer": "B",
+  "prediction": "C",
+  "correct": false,
+  "signature": "ef92dea6cb3e5933a0316acd6a24f2f24a1d645c1675afc1f173160567a9b86c",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-097\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7889,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 287
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 3107,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 10996,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 17.05729289998999,
+  "completed_at": "2026-10-06T17:34:39-04:00"
+}

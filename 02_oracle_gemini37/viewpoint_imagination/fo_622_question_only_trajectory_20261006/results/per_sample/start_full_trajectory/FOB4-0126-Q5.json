@@ -1,0 +1,82 @@
+{
+  "question_id": "FOB4-0126-Q5",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the open doorway, then turn to face my starting point, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "C": "tv",
+    "A": "bed",
+    "B": "white chair",
+    "D": "white stool"
+  },
+  "gold_answer": "C",
+  "show_lookback": true,
+  "prediction": "C",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2:",
+    "Step 3 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0126/start_view.png",
+      "sha256": "3f320142dba42a842cfd9449f9d644beaddb763ba74ba403112b3f33292542ba"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0126/step_01_rgb.png",
+      "sha256": "79d35833de1a80fff6014b9df63ba79348f0c2429b69af676d5aa688329f9d0f"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0126/step_02_rgb.png",
+      "sha256": "6660dc3465ac15d8a3b94e1ce8a1dae70600c31f5599b318689ac1c5a97c19b2"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0126/step_03_rgb.png",
+      "sha256": "6cd307a3fb6b5c170f9f73d8304e424c1ff996d113eac11c9c13aadbddeadcbd"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0126/oracle_lookback.png",
+      "sha256": "186451608e335cba6d3a3506dd5a65f500fab0f7e237b2b7bb2414ac45f43cea"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 5477,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 5320
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 157
+      }
+    ],
+    "thoughts_token_count": 2609,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8087,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_duration_seconds": 12.789455899997847,
+  "completed_at": "2026-10-06T15:11:26-04:00"
+}

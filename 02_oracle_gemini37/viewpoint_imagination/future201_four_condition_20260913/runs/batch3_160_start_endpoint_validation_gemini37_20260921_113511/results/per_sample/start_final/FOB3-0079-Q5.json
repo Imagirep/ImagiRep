@@ -1,0 +1,96 @@
+{
+  "row_index": 180,
+  "question_id": "FOB3-0079-Q5",
+  "trajectory_id": "FOB3-0079",
+  "scan_id": "RPmz2sHmrrY",
+  "question_type": 5,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk forward to the end and turn left, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "C": "chair",
+    "A": "trash can",
+    "B": "pink lamp",
+    "D": "decorative statue"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "chair",
+    "B": "decorative statue",
+    "C": "trash can",
+    "D": "pink lamp"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "C": "A",
+    "A": "C",
+    "B": "D",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0079\\start_view.png",
+      "sha256": "aa80dd6f30318f26aafa8c8e1a92012300e5a5ef38cb566f9d9f8535f002e280"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0079\\step_01_rgb.png",
+      "sha256": "11b1b0d767aa72f19f48cd8fcc251556627c6555a17b1de514d53e7829f43e81"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0079\\step_02_rgb.png",
+      "sha256": "66ab38c68e554233a75a9f28199bd546f2bc8d9e56d15ea0bd3e108a96aa079c"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2264,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 136
+      }
+    ],
+    "thoughts_token_count": 980,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3245,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-21T11:43:00-04:00"
+}

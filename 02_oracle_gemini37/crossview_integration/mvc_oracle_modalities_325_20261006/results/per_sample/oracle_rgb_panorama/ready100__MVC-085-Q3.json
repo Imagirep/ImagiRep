@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-085-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-085-Q3",
+  "resource_id": "MVC-085",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "brown armchair, white lamp, white armchair, potted plant",
+    "B": "potted plant, white lamp, white armchair, brown armchair",
+    "C": "white armchair, white lamp, potted plant, brown armchair",
+    "D": "potted plant, brown armchair, white lamp, white armchair"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "3e6d2d3d9756d2b3a710b4b6d5f32dd453d2cde1426d6ff5948d34483570f66e",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-085\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4642,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 369
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      }
+    ],
+    "thoughts_token_count": 5708,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 10351,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 27.099574699997902,
+  "completed_at": "2026-10-06T17:44:40-04:00"
+}

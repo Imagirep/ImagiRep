@@ -1,0 +1,155 @@
+{
+  "row_index": 211,
+  "question_id": "FOB4-0064-Q3",
+  "trajectory_id": "FOB4-0064",
+  "scan_id": "oLBMNvg9in8",
+  "route_variant": "new_bent",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "final_image_kind": "lookback",
+  "question": "If I walk forward, walk to the left side of the white table, then turn to face my starting point, then turn to face my starting point, would the freezer still be directly visible?",
+  "answer_choices": {
+    "B": "outside of view",
+    "A": "partially visible",
+    "C": "completely blocked",
+    "D": "clearly visible"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "B": "D",
+    "A": "B",
+    "C": "C",
+    "D": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0064\\start_view.png",
+      "sha256": "6a58346a6b18ab264c8fa7d2fd2f4f5bc4f353fa28ceed9af2d711e3b6e53ab7"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0064\\step_01_rgb.png",
+      "sha256": "b2299177081c8957c1bcb4aa4310d0fdfcbc7c8fb1e17bfa27e19f2b315ce703"
+    },
+    {
+      "label": "Step 2",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0064\\step_02_rgb.png",
+      "sha256": "7022ff611aca198b1aca60254db97bbcb7a18dee3ef93f7163efd01f1168d7c3"
+    },
+    {
+      "label": "Step 3 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0064\\step_03_rgb.png",
+      "sha256": "1b9572e06c72f2e42ae49f8f8c7e8f8c5617be64a0fab3b987d676f873462910"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0064\\oracle_lookback.png",
+      "sha256": "d1034601da52bbb5fca14296d50f2c639c591da539fa7c0e4c3122f192561337"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "category": "visibility",
+  "category_label": "Visibility (incl. object selection by visibility)",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0064\\oracle_lookback_depth.png",
+      "sha256": "b0c638d08319dd2ed728350ca660db506197a9a64edf9db04454819c82ec4a70",
+      "color_scale": {
+        "near_m": 0.96375,
+        "far_m": 3.79075
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0064\\oracle_lookback_surface_normals.png",
+      "sha256": "f5a1bf89558286082a88fb99650ade56e8616a76ad4db0eb7f9e7296ecbaa5c9"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0064\\oracle_lookback_panorama.png",
+      "sha256": "5c5e0dadd348c33f17e819e15f9323649131777df324340038b50b5f545727fb"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0064\\topdown_lookback_with_path.png",
+      "sha256": "dda3d57e3829fe0cbe585761ec974b4d24c922727b0524308910d9ddb37a60a6"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0064\\trajectory_lookback.txt",
+      "sha256": "7acd1cc25b09a571d70b492c17c339f8cb0a5596253e6392d36a64fc6e493f7e"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0064\\trajectory_lookback.mp4",
+      "sha256": "63fb147e6cf2a3a8ee0ea5a57e498bf3d443309b721fcc314802a5af9f777492"
+    }
+  },
+  "condition": "start_final_text",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch4_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "B",
+  "correct": true,
+  "input_signature": "6dbf9e963efe53fd0f83fac49f557276120a50921fb55ac96271f1a44c9edaf6",
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2678,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 550
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 1786,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4464,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T20:53:19.639-04:00",
+  "request_duration_seconds": 6.736933899999713,
+  "completed_at": "2026-10-04T20:53:26.376-04:00",
+  "request_part_count": 6,
+  "request_mime_types": [
+    "image/png",
+    "image/png"
+  ]
+}

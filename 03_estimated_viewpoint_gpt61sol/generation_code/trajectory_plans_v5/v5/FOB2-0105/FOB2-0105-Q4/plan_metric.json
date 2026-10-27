@@ -1,0 +1,266 @@
+{
+  "question_id": "FOB2-0105-Q4",
+  "motion_text": "I walk near the cabinet and face the way I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "wooden cabinet on the left",
+      "relation": "near"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0105-Q4",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.4611408450191058,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -0.9663135819805084,
+        "y": -0.4801326749255649,
+        "yaw": -0.4611408450191058,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -0.9663135819805084,
+        "y": -0.4801326749255649,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.8445029808214026,
+        "y": -0.4801326749255649,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -1.1003475824872488,
+        -0.5467302105437426
+      ],
+      [
+        -2.100347582487249,
+        -0.5467302105437426
+      ]
+    ],
+    "x": -2.100347582487249,
+    "y": -0.5467302105437426,
+    "yaw": -0.2546533828836632,
+    "pitch": 0.0,
+    "travel_yaw": -0.2546533828836632
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -0.9663135819805084,
+      -0.4801326749255649
+    ],
+    [
+      -1.8445029808214026,
+      -0.4801326749255649
+    ]
+  ],
+  "final": {
+    "x": -1.8445029808214026,
+    "y": -0.4801326749255649,
+    "yaw_deg": -14.590564077962897,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "wooden cabinet on the left",
+        "relation": "near"
+      },
+      "x": -2.100347582487249,
+      "y": -0.5467302105437426,
+      "yaw": -0.2546533828836632,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -2.100347582487249,
+      "y": -0.5467302105437426,
+      "yaw": -0.2546533828836632,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.4611408450191058,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -0.9663135819805084,
+      "y": -0.4801326749255649,
+      "yaw": -0.4611408450191058,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -0.9663135819805084,
+      "y": -0.4801326749255649,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.8445029808214026,
+      "y": -0.4801326749255649,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.8445029808214026,
+      "y": -0.4801326749255649,
+      "yaw": -0.2546533828836632,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "wooden cabinet on the left",
+      "method": "initial_photo",
+      "box": [
+        397,
+        167,
+        1000,
+        391
+      ],
+      "point_m": [
+        -3.1677738934342137,
+        -1.2484428672314531,
+        -0.9171882897475717
+      ]
+    },
+    {
+      "overlap": "wooden cabinet on the left",
+      "n_points": 201,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 2.6,
+          "stop_m": 1.2774191097120675,
+          "visible_frac": 1.0,
+          "center_deg": -1.4309534099812329,
+          "width_deg": 31.786778874064126,
+          "distance_m": 1.3846167060566086
+        },
+        {
+          "sector": 5,
+          "path_m": 3.0,
+          "stop_m": 0.9684309645503901,
+          "visible_frac": 0.9104477611940298,
+          "center_deg": -5.08118443065787,
+          "width_deg": 41.29990690855038,
+          "distance_m": 1.0816683430575496
+        },
+        {
+          "sector": 3,
+          "path_m": 3.4000000000000004,
+          "stop_m": 1.0719418506417382,
+          "visible_frac": 0.8208955223880597,
+          "center_deg": -1.3862146099606383,
+          "width_deg": 29.562187571750048,
+          "distance_m": 1.113853354415865
+        },
+        {
+          "sector": 6,
+          "path_m": 3.8000000000000003,
+          "stop_m": 0.8023741204150291,
+          "visible_frac": 0.47761194029850745,
+          "center_deg": -8.759433428821357,
+          "width_deg": 51.99527025916819,
+          "distance_m": 0.7834107520803173
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 2.024235725402832,
+  "seconds": 7.052334308624268,
+  "planning_m_per_unit": 2.3050104317754037,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.8781893988408943
+}

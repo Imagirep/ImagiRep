@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB3-0028-Q6",
+  "motion_text": "I walk to the doorway, then walk to the photo display wall ahead, facing where I go.",
+  "view_variant": "endpoint",
+  "frames": 147,
+  "fps": 12,
+  "total_distance_m": 5.708529145782046,
+  "depth_display_range_scene_units": [
+    0.6989757716655731,
+    0.9395260429382324
+  ],
+  "depth_color_scale_m": {
+    "near_m": 0.8355898169213855,
+    "far_m": 1.1231553739565734
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.3768657063344563 m over generated floor distance",
+  "m_per_unit": 2.1202797889709473,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 25.90949535369873
+}

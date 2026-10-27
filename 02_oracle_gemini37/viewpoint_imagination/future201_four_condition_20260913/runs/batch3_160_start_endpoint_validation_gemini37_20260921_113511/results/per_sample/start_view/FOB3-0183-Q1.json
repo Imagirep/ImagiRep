@@ -1,0 +1,94 @@
+{
+  "row_index": 17,
+  "question_id": "FOB3-0183-Q1",
+  "trajectory_id": "FOB3-0183",
+  "scan_id": "q9vSo1VnCiC",
+  "question_type": 1,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk into the room and walk to the right side of the bed, then turn left, which direction would have the most open space?",
+  "answer_choices": {
+    "B": "left",
+    "A": "right",
+    "C": "front",
+    "D": "behind"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "B": "B",
+    "A": "C",
+    "C": "A",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0183\\start_view.png",
+      "sha256": "b38bd92a03b58b4833396fdad2feed4d127f4eee6940da6fe05e375db13e1a86"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0183\\step_01_rgb.png",
+      "sha256": "4980f83da708a0da3351676edcdb32df617e3abd418c3f3fadc282c3ac77982c"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0183\\step_02_rgb.png",
+      "sha256": "0a806a0ce22246025793fa2b255ae988126c7933ec9fe1b255a619304558f04b"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "B",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1151,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 87
+      }
+    ],
+    "thoughts_token_count": 2485,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3637,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "completed_at": "2026-09-21T11:39:13-04:00"
+}

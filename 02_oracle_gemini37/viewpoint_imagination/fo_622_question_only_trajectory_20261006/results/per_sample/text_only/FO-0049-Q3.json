@@ -1,0 +1,41 @@
+{
+  "question_id": "FO-0049-Q3",
+  "condition": "text_only",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the round table, turn left and walk a few steps, then turn to face my starting point, would the round table still be directly visible?",
+  "answer_choices": {
+    "C": "partially visible",
+    "A": "completely blocked",
+    "B": "outside of view",
+    "D": "clearly visible"
+  },
+  "gold_answer": "C",
+  "prediction": "B",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 93,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 93
+      }
+    ],
+    "thoughts_token_count": 3489,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3582,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 14.691197200001625,
+  "completed_at": "2026-10-06T12:22:48-04:00"
+}

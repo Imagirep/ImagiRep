@@ -1,0 +1,41 @@
+{
+  "question_id": "FO-0050-Q4",
+  "condition": "text_only",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk through the doors, walk forward till I'm near the white chair, and face the direction I move, which object(s) would be closest to me?",
+  "answer_choices": {
+    "B": "white ottoman",
+    "A": "blue sofa",
+    "C": "blue chairs",
+    "D": "blue and white stool"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 97,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 97
+      }
+    ],
+    "thoughts_token_count": 1368,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1466,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 5.9528979000024265,
+  "completed_at": "2026-10-06T12:23:02-04:00"
+}

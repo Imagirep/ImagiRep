@@ -1,0 +1,57 @@
+\begin{table}[!tb]
+\centering
+\caption{Effect of providing the correct future state. Accuracy (\%) on the single-view
+and multi-view tasks; $\Delta$ is the change relative to the no-imagination setting
+that uses the observed view(s).}
+\label{tab:oracle_imagination}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+& \multicolumn{2}{c}{Single-view ($n{=}622$)} & \multicolumn{2}{c}{Multi-view ($n{=}325$)} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Setting & Acc. & $\Delta$ & Acc. & $\Delta$ \\
+\midrule
+\multicolumn{5}{l}{\emph{No imagination}} \\
+\quad Question only             & 31.7    & $-22.0$ & 32.0 & $-36.3$ \\
+\quad Observed view(s)          & 53.7    & --      & 68.3 & --      \\
+\midrule
+\multicolumn{5}{l}{\emph{Oracle imagination}} \\
+\quad + Oracle endpoint RGB     & 63.7    & $+10.0$ & 80.6 & $+12.3$ \\
+\quad + Oracle trajectory RGB   & Pending & Pending & Pending & Pending \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table*}[!tb]
+\centering
+\caption{Question-type breakdown of Table~\ref{tab:oracle_imagination}. Accuracy (\%)
+for each setting; Obs.: observed view(s) without imagination; Endpoint and Trajectory:
+observed view(s) plus the oracle endpoint RGB or the oracle trajectory RGB.}
+\label{tab:oracle_by_type}
+\begin{tabular}{llrrrrr}
+\toprule
+& & & \multicolumn{2}{c}{No imagination} & \multicolumn{2}{c}{Oracle imagination} \\
+\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+Task & Question type & $n$ & Question only & Obs. & + Endpoint & + Trajectory \\
+\midrule
+\multirow{7}{*}{Single-view}
+ & Open-space direction       &  91 & 44.0 & 52.7 & 58.2 & Pending \\
+ & Closest-obstacle direction &  55 & 32.7 & 36.4 & 45.5 & Pending \\
+ & Visibility                 & 104 & 23.1 & 32.7 & 49.0 & Pending \\
+ & Closest object             & 104 & 27.9 & 51.9 & 65.4 & Pending \\
+ & Farthest object            &  98 & 30.6 & 66.3 & 65.3 & Pending \\
+ & Object relative direction  & 170 & 32.9 & 66.5 & 79.4 & Pending \\
+ \cmidrule(l){2-7}
+ & All                        & 622 & 31.7 & 53.7 & 63.7 & Pending \\
+\midrule
+\multirow{4}{*}{Multi-view}
+ & Cross-view closest   &  90 & 33.3 & 64.4 & 77.8 & Pending \\
+ & Cross-view farthest  &  87 & 40.2 & 63.2 & 65.5 & Pending \\
+ & Left--right ordering & 148 & 26.4 & 73.6 & 91.2 & Pending \\
+ \cmidrule(l){2-7}
+ & All                  & 325 & 32.0 & 68.3 & 80.6 & Pending \\
+\bottomrule
+\end{tabular}
+\end{table*}
+

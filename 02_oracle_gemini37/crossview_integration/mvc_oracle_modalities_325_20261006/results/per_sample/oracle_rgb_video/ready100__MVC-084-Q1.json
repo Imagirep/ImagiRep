@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-084-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-084-Q1",
+  "resource_id": "MVC-084",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to lamp in Image 2?",
+  "answer_choices": {
+    "A": "white armchair",
+    "B": "black armchair",
+    "C": "painting",
+    "D": "tv"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "7225b4cb2360effe685c5745c67a6271b96e674dcf108183a726ecf0f5cc347e",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-084\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7885,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 283
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      }
+    ],
+    "thoughts_token_count": 1684,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9570,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.753072099993005,
+  "completed_at": "2026-10-06T17:34:18-04:00"
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB2-0155-Q6",
+  "motion_text": "I walk to the sink and turn to face my starting point.",
+  "view_variant": "lookback",
+  "frames": 94,
+  "fps": 12,
+  "total_distance_m": 2.956600563049516,
+  "depth_display_range_scene_units": [
+    0.7544498383998871,
+    4.972681474685669
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.1684406164893208,
+    "far_m": 7.701350987376151
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.165047407286309 m over generated floor distance",
+  "m_per_unit": 2.260864496231079,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 23.511000871658325
+}

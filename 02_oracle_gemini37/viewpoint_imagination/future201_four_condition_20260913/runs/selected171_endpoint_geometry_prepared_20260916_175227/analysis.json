@@ -1,0 +1,1241 @@
+{
+  "verification": "passed",
+  "errors": [],
+  "overall": {
+    "text_only": {
+      "n": 171,
+      "correct": 64,
+      "accuracy_pct": 37.42690058479532,
+      "source": "earlier_run"
+    },
+    "start_view": {
+      "n": 171,
+      "correct": 106,
+      "accuracy_pct": 61.98830409356725,
+      "source": "earlier_run"
+    },
+    "start_final": {
+      "n": 171,
+      "correct": 126,
+      "accuracy_pct": 73.6842105263158,
+      "source": "earlier_run"
+    },
+    "start_full_trajectory": {
+      "n": 171,
+      "correct": 116,
+      "accuracy_pct": 67.83625730994152,
+      "source": "earlier_run"
+    },
+    "start_final_topdown": {
+      "n": 171,
+      "correct": 117,
+      "accuracy_pct": 68.42105263157895,
+      "source": "earlier_run"
+    },
+    "start_final_text": {
+      "n": 171,
+      "correct": 115,
+      "accuracy_pct": 67.25146198830409,
+      "source": "earlier_run"
+    },
+    "start_final_video": {
+      "n": 171,
+      "correct": 120,
+      "accuracy_pct": 70.17543859649123,
+      "source": "earlier_run"
+    },
+    "start_final_depth": {
+      "n": 171,
+      "correct": 128,
+      "accuracy_pct": 74.85380116959064,
+      "source": "current_geometry_run"
+    },
+    "start_final_surface_normals": {
+      "n": 171,
+      "correct": 119,
+      "accuracy_pct": 69.5906432748538,
+      "source": "current_geometry_run"
+    },
+    "start_final_panorama": {
+      "n": 171,
+      "correct": 104,
+      "accuracy_pct": 60.8187134502924,
+      "source": "current_geometry_run"
+    }
+  },
+  "by_set": {
+    "lookback": {
+      "text_only": {
+        "n": 86,
+        "correct": 33,
+        "accuracy_pct": 38.372093023255815,
+        "source": "earlier_run"
+      },
+      "start_view": {
+        "n": 86,
+        "correct": 55,
+        "accuracy_pct": 63.95348837209303,
+        "source": "earlier_run"
+      },
+      "start_final": {
+        "n": 86,
+        "correct": 65,
+        "accuracy_pct": 75.5813953488372,
+        "source": "earlier_run"
+      },
+      "start_full_trajectory": {
+        "n": 86,
+        "correct": 60,
+        "accuracy_pct": 69.76744186046511,
+        "source": "earlier_run"
+      },
+      "start_final_topdown": {
+        "n": 86,
+        "correct": 65,
+        "accuracy_pct": 75.5813953488372,
+        "source": "earlier_run"
+      },
+      "start_final_text": {
+        "n": 86,
+        "correct": 63,
+        "accuracy_pct": 73.25581395348837,
+        "source": "earlier_run"
+      },
+      "start_final_video": {
+        "n": 86,
+        "correct": 63,
+        "accuracy_pct": 73.25581395348837,
+        "source": "earlier_run"
+      },
+      "start_final_depth": {
+        "n": 86,
+        "correct": 67,
+        "accuracy_pct": 77.90697674418605,
+        "source": "current_geometry_run"
+      },
+      "start_final_surface_normals": {
+        "n": 86,
+        "correct": 59,
+        "accuracy_pct": 68.6046511627907,
+        "source": "current_geometry_run"
+      },
+      "start_final_panorama": {
+        "n": 86,
+        "correct": 55,
+        "accuracy_pct": 63.95348837209303,
+        "source": "current_geometry_run"
+      }
+    },
+    "non-lookback": {
+      "text_only": {
+        "n": 85,
+        "correct": 31,
+        "accuracy_pct": 36.470588235294116,
+        "source": "earlier_run"
+      },
+      "start_view": {
+        "n": 85,
+        "correct": 51,
+        "accuracy_pct": 60.0,
+        "source": "earlier_run"
+      },
+      "start_final": {
+        "n": 85,
+        "correct": 61,
+        "accuracy_pct": 71.76470588235294,
+        "source": "earlier_run"
+      },
+      "start_full_trajectory": {
+        "n": 85,
+        "correct": 56,
+        "accuracy_pct": 65.88235294117646,
+        "source": "earlier_run"
+      },
+      "start_final_topdown": {
+        "n": 85,
+        "correct": 52,
+        "accuracy_pct": 61.1764705882353,
+        "source": "earlier_run"
+      },
+      "start_final_text": {
+        "n": 85,
+        "correct": 52,
+        "accuracy_pct": 61.1764705882353,
+        "source": "earlier_run"
+      },
+      "start_final_video": {
+        "n": 85,
+        "correct": 57,
+        "accuracy_pct": 67.05882352941177,
+        "source": "earlier_run"
+      },
+      "start_final_depth": {
+        "n": 85,
+        "correct": 61,
+        "accuracy_pct": 71.76470588235294,
+        "source": "current_geometry_run"
+      },
+      "start_final_surface_normals": {
+        "n": 85,
+        "correct": 60,
+        "accuracy_pct": 70.58823529411765,
+        "source": "current_geometry_run"
+      },
+      "start_final_panorama": {
+        "n": 85,
+        "correct": 49,
+        "accuracy_pct": 57.64705882352941,
+        "source": "current_geometry_run"
+      }
+    }
+  },
+  "by_type": {
+    "1": {
+      "text_only": {
+        "n": 18,
+        "correct": 10,
+        "accuracy_pct": 55.55555555555556,
+        "source": "earlier_run"
+      },
+      "start_view": {
+        "n": 18,
+        "correct": 16,
+        "accuracy_pct": 88.88888888888889,
+        "source": "earlier_run"
+      },
+      "start_final": {
+        "n": 18,
+        "correct": 13,
+        "accuracy_pct": 72.22222222222223,
+        "source": "earlier_run"
+      },
+      "start_full_trajectory": {
+        "n": 18,
+        "correct": 15,
+        "accuracy_pct": 83.33333333333333,
+        "source": "earlier_run"
+      },
+      "start_final_topdown": {
+        "n": 18,
+        "correct": 11,
+        "accuracy_pct": 61.111111111111114,
+        "source": "earlier_run"
+      },
+      "start_final_text": {
+        "n": 18,
+        "correct": 14,
+        "accuracy_pct": 77.77777777777777,
+        "source": "earlier_run"
+      },
+      "start_final_video": {
+        "n": 18,
+        "correct": 14,
+        "accuracy_pct": 77.77777777777777,
+        "source": "earlier_run"
+      },
+      "start_final_depth": {
+        "n": 18,
+        "correct": 15,
+        "accuracy_pct": 83.33333333333333,
+        "source": "current_geometry_run"
+      },
+      "start_final_surface_normals": {
+        "n": 18,
+        "correct": 15,
+        "accuracy_pct": 83.33333333333333,
+        "source": "current_geometry_run"
+      },
+      "start_final_panorama": {
+        "n": 18,
+        "correct": 10,
+        "accuracy_pct": 55.55555555555556,
+        "source": "current_geometry_run"
+      }
+    },
+    "2": {
+      "text_only": {
+        "n": 14,
+        "correct": 3,
+        "accuracy_pct": 21.428571428571427,
+        "source": "earlier_run"
+      },
+      "start_view": {
+        "n": 14,
+        "correct": 4,
+        "accuracy_pct": 28.571428571428573,
+        "source": "earlier_run"
+      },
+      "start_final": {
+        "n": 14,
+        "correct": 6,
+        "accuracy_pct": 42.857142857142854,
+        "source": "earlier_run"
+      },
+      "start_full_trajectory": {
+        "n": 14,
+        "correct": 6,
+        "accuracy_pct": 42.857142857142854,
+        "source": "earlier_run"
+      },
+      "start_final_topdown": {
+        "n": 14,
+        "correct": 6,
+        "accuracy_pct": 42.857142857142854,
+        "source": "earlier_run"
+      },
+      "start_final_text": {
+        "n": 14,
+        "correct": 7,
+        "accuracy_pct": 50.0,
+        "source": "earlier_run"
+      },
+      "start_final_video": {
+        "n": 14,
+        "correct": 6,
+        "accuracy_pct": 42.857142857142854,
+        "source": "earlier_run"
+      },
+      "start_final_depth": {
+        "n": 14,
+        "correct": 6,
+        "accuracy_pct": 42.857142857142854,
+        "source": "current_geometry_run"
+      },
+      "start_final_surface_normals": {
+        "n": 14,
+        "correct": 7,
+        "accuracy_pct": 50.0,
+        "source": "current_geometry_run"
+      },
+      "start_final_panorama": {
+        "n": 14,
+        "correct": 6,
+        "accuracy_pct": 42.857142857142854,
+        "source": "current_geometry_run"
+      }
+    },
+    "3": {
+      "text_only": {
+        "n": 23,
+        "correct": 6,
+        "accuracy_pct": 26.08695652173913,
+        "source": "earlier_run"
+      },
+      "start_view": {
+        "n": 23,
+        "correct": 7,
+        "accuracy_pct": 30.434782608695652,
+        "source": "earlier_run"
+      },
+      "start_final": {
+        "n": 23,
+        "correct": 15,
+        "accuracy_pct": 65.21739130434783,
+        "source": "earlier_run"
+      },
+      "start_full_trajectory": {
+        "n": 23,
+        "correct": 14,
+        "accuracy_pct": 60.869565217391305,
+        "source": "earlier_run"
+      },
+      "start_final_topdown": {
+        "n": 23,
+        "correct": 14,
+        "accuracy_pct": 60.869565217391305,
+        "source": "earlier_run"
+      },
+      "start_final_text": {
+        "n": 23,
+        "correct": 14,
+        "accuracy_pct": 60.869565217391305,
+        "source": "earlier_run"
+      },
+      "start_final_video": {
+        "n": 23,
+        "correct": 15,
+        "accuracy_pct": 65.21739130434783,
+        "source": "earlier_run"
+      },
+      "start_final_depth": {
+        "n": 23,
+        "correct": 16,
+        "accuracy_pct": 69.56521739130434,
+        "source": "current_geometry_run"
+      },
+      "start_final_surface_normals": {
+        "n": 23,
+        "correct": 12,
+        "accuracy_pct": 52.17391304347826,
+        "source": "current_geometry_run"
+      },
+      "start_final_panorama": {
+        "n": 23,
+        "correct": 14,
+        "accuracy_pct": 60.869565217391305,
+        "source": "current_geometry_run"
+      }
+    },
+    "4": {
+      "text_only": {
+        "n": 21,
+        "correct": 12,
+        "accuracy_pct": 57.142857142857146,
+        "source": "earlier_run"
+      },
+      "start_view": {
+        "n": 21,
+        "correct": 11,
+        "accuracy_pct": 52.38095238095238,
+        "source": "earlier_run"
+      },
+      "start_final": {
+        "n": 21,
+        "correct": 18,
+        "accuracy_pct": 85.71428571428571,
+        "source": "earlier_run"
+      },
+      "start_full_trajectory": {
+        "n": 21,
+        "correct": 16,
+        "accuracy_pct": 76.19047619047619,
+        "source": "earlier_run"
+      },
+      "start_final_topdown": {
+        "n": 21,
+        "correct": 15,
+        "accuracy_pct": 71.42857142857143,
+        "source": "earlier_run"
+      },
+      "start_final_text": {
+        "n": 21,
+        "correct": 16,
+        "accuracy_pct": 76.19047619047619,
+        "source": "earlier_run"
+      },
+      "start_final_video": {
+        "n": 21,
+        "correct": 16,
+        "accuracy_pct": 76.19047619047619,
+        "source": "earlier_run"
+      },
+      "start_final_depth": {
+        "n": 21,
+        "correct": 17,
+        "accuracy_pct": 80.95238095238095,
+        "source": "current_geometry_run"
+      },
+      "start_final_surface_normals": {
+        "n": 21,
+        "correct": 16,
+        "accuracy_pct": 76.19047619047619,
+        "source": "current_geometry_run"
+      },
+      "start_final_panorama": {
+        "n": 21,
+        "correct": 15,
+        "accuracy_pct": 71.42857142857143,
+        "source": "current_geometry_run"
+      }
+    },
+    "5": {
+      "text_only": {
+        "n": 27,
+        "correct": 8,
+        "accuracy_pct": 29.62962962962963,
+        "source": "earlier_run"
+      },
+      "start_view": {
+        "n": 27,
+        "correct": 19,
+        "accuracy_pct": 70.37037037037037,
+        "source": "earlier_run"
+      },
+      "start_final": {
+        "n": 27,
+        "correct": 17,
+        "accuracy_pct": 62.96296296296296,
+        "source": "earlier_run"
+      },
+      "start_full_trajectory": {
+        "n": 27,
+        "correct": 13,
+        "accuracy_pct": 48.148148148148145,
+        "source": "earlier_run"
+      },
+      "start_final_topdown": {
+        "n": 27,
+        "correct": 19,
+        "accuracy_pct": 70.37037037037037,
+        "source": "earlier_run"
+      },
+      "start_final_text": {
+        "n": 27,
+        "correct": 14,
+        "accuracy_pct": 51.851851851851855,
+        "source": "earlier_run"
+      },
+      "start_final_video": {
+        "n": 27,
+        "correct": 13,
+        "accuracy_pct": 48.148148148148145,
+        "source": "earlier_run"
+      },
+      "start_final_depth": {
+        "n": 27,
+        "correct": 17,
+        "accuracy_pct": 62.96296296296296,
+        "source": "current_geometry_run"
+      },
+      "start_final_surface_normals": {
+        "n": 27,
+        "correct": 16,
+        "accuracy_pct": 59.25925925925926,
+        "source": "current_geometry_run"
+      },
+      "start_final_panorama": {
+        "n": 27,
+        "correct": 12,
+        "accuracy_pct": 44.44444444444444,
+        "source": "current_geometry_run"
+      }
+    },
+    "6": {
+      "text_only": {
+        "n": 31,
+        "correct": 15,
+        "accuracy_pct": 48.38709677419355,
+        "source": "earlier_run"
+      },
+      "start_view": {
+        "n": 31,
+        "correct": 22,
+        "accuracy_pct": 70.96774193548387,
+        "source": "earlier_run"
+      },
+      "start_final": {
+        "n": 31,
+        "correct": 27,
+        "accuracy_pct": 87.09677419354838,
+        "source": "earlier_run"
+      },
+      "start_full_trajectory": {
+        "n": 31,
+        "correct": 23,
+        "accuracy_pct": 74.19354838709677,
+        "source": "earlier_run"
+      },
+      "start_final_topdown": {
+        "n": 31,
+        "correct": 28,
+        "accuracy_pct": 90.3225806451613,
+        "source": "earlier_run"
+      },
+      "start_final_text": {
+        "n": 31,
+        "correct": 24,
+        "accuracy_pct": 77.41935483870968,
+        "source": "earlier_run"
+      },
+      "start_final_video": {
+        "n": 31,
+        "correct": 28,
+        "accuracy_pct": 90.3225806451613,
+        "source": "earlier_run"
+      },
+      "start_final_depth": {
+        "n": 31,
+        "correct": 27,
+        "accuracy_pct": 87.09677419354838,
+        "source": "current_geometry_run"
+      },
+      "start_final_surface_normals": {
+        "n": 31,
+        "correct": 25,
+        "accuracy_pct": 80.64516129032258,
+        "source": "current_geometry_run"
+      },
+      "start_final_panorama": {
+        "n": 31,
+        "correct": 23,
+        "accuracy_pct": 74.19354838709677,
+        "source": "current_geometry_run"
+      }
+    },
+    "7": {
+      "text_only": {
+        "n": 1,
+        "correct": 1,
+        "accuracy_pct": 100.0,
+        "source": "earlier_run"
+      },
+      "start_view": {
+        "n": 1,
+        "correct": 0,
+        "accuracy_pct": 0.0,
+        "source": "earlier_run"
+      },
+      "start_final": {
+        "n": 1,
+        "correct": 0,
+        "accuracy_pct": 0.0,
+        "source": "earlier_run"
+      },
+      "start_full_trajectory": {
+        "n": 1,
+        "correct": 1,
+        "accuracy_pct": 100.0,
+        "source": "earlier_run"
+      },
+      "start_final_topdown": {
+        "n": 1,
+        "correct": 0,
+        "accuracy_pct": 0.0,
+        "source": "earlier_run"
+      },
+      "start_final_text": {
+        "n": 1,
+        "correct": 0,
+        "accuracy_pct": 0.0,
+        "source": "earlier_run"
+      },
+      "start_final_video": {
+        "n": 1,
+        "correct": 0,
+        "accuracy_pct": 0.0,
+        "source": "earlier_run"
+      },
+      "start_final_depth": {
+        "n": 1,
+        "correct": 1,
+        "accuracy_pct": 100.0,
+        "source": "current_geometry_run"
+      },
+      "start_final_surface_normals": {
+        "n": 1,
+        "correct": 0,
+        "accuracy_pct": 0.0,
+        "source": "current_geometry_run"
+      },
+      "start_final_panorama": {
+        "n": 1,
+        "correct": 0,
+        "accuracy_pct": 0.0,
+        "source": "current_geometry_run"
+      }
+    },
+    "8": {
+      "text_only": {
+        "n": 36,
+        "correct": 9,
+        "accuracy_pct": 25.0,
+        "source": "earlier_run"
+      },
+      "start_view": {
+        "n": 36,
+        "correct": 27,
+        "accuracy_pct": 75.0,
+        "source": "earlier_run"
+      },
+      "start_final": {
+        "n": 36,
+        "correct": 30,
+        "accuracy_pct": 83.33333333333333,
+        "source": "earlier_run"
+      },
+      "start_full_trajectory": {
+        "n": 36,
+        "correct": 28,
+        "accuracy_pct": 77.77777777777777,
+        "source": "earlier_run"
+      },
+      "start_final_topdown": {
+        "n": 36,
+        "correct": 24,
+        "accuracy_pct": 66.66666666666667,
+        "source": "earlier_run"
+      },
+      "start_final_text": {
+        "n": 36,
+        "correct": 26,
+        "accuracy_pct": 72.22222222222223,
+        "source": "earlier_run"
+      },
+      "start_final_video": {
+        "n": 36,
+        "correct": 28,
+        "accuracy_pct": 77.77777777777777,
+        "source": "earlier_run"
+      },
+      "start_final_depth": {
+        "n": 36,
+        "correct": 29,
+        "accuracy_pct": 80.55555555555556,
+        "source": "current_geometry_run"
+      },
+      "start_final_surface_normals": {
+        "n": 36,
+        "correct": 28,
+        "accuracy_pct": 77.77777777777777,
+        "source": "current_geometry_run"
+      },
+      "start_final_panorama": {
+        "n": 36,
+        "correct": 24,
+        "accuracy_pct": 66.66666666666667,
+        "source": "current_geometry_run"
+      }
+    }
+  },
+  "endpoint_to_modality_transitions": {
+    "start_final_depth": {
+      "both_correct": [
+        "FO-0029-Q6",
+        "FO-0090-Q3",
+        "FO-0134-Q3",
+        "FO-0044-Q1",
+        "FO-0056-Q6",
+        "FO-0020-Q8",
+        "FO-0006-Q8",
+        "FO-0066-Q8",
+        "FO-0031-Q4",
+        "FO-0057-Q1",
+        "FO-0049-Q6",
+        "FO-0019-Q6",
+        "FO-0123-Q1",
+        "FO-0124-Q6",
+        "FO-0038-Q8",
+        "FO-0199-Q6",
+        "FO-0039-Q3",
+        "FO-0044-Q5",
+        "FO-0009-Q8",
+        "FO-0052-Q5",
+        "FO-0019-Q8",
+        "FO-0066-Q4",
+        "FO-0032-Q6",
+        "FO-0024-Q8",
+        "FO-0134-Q4",
+        "FO-0033-Q3",
+        "FO-0123-Q4",
+        "FO-0052-Q6",
+        "FO-0081-Q6",
+        "FO-0019-Q1",
+        "FO-0023-Q8",
+        "FO-0034-Q6",
+        "FO-0001-Q2",
+        "FO-0102-Q2",
+        "FO-0039-Q4",
+        "FO-0003-Q5",
+        "FO-0059-Q3",
+        "FO-0059-Q6",
+        "FO-0038-Q3",
+        "FO-0085-Q8",
+        "FO-0197-Q5",
+        "FO-0020-Q2",
+        "FO-0052-Q4",
+        "FO-0023-Q6",
+        "FO-0134-Q5",
+        "FO-0021-Q1",
+        "FO-0018-Q8",
+        "FO-0040-Q6",
+        "FO-0090-Q6",
+        "FO-0003-Q3",
+        "FO-0033-Q8",
+        "FO-0037-Q8",
+        "FO-0056-Q1",
+        "FO-0019-Q2",
+        "FO-0024-Q6",
+        "FO-0028-Q8",
+        "FO-0028-Q3",
+        "FO-0034-Q3",
+        "FO-0081-Q8",
+        "FO-0067-Q5",
+        "FO-0080-Q3",
+        "FO-0027-Q6",
+        "FO-0027-Q8",
+        "FO-0124-Q1",
+        "FO-0023-Q5",
+        "FO-0068-Q8",
+        "FO-0021-Q4",
+        "FO-0102-Q3",
+        "FO-0049-Q4",
+        "FO-0123-Q3",
+        "FO-0050-Q5",
+        "FO-0123-Q6",
+        "FO-0009-Q4",
+        "FO-0006-Q4",
+        "FO-0037-Q4",
+        "FO-0013-Q6",
+        "FO-0042-Q1",
+        "FO-0064-Q1",
+        "FO-0057-Q6",
+        "FO-0003-Q2",
+        "FO-0006-Q6",
+        "FO-0059-Q8",
+        "FO-0033-Q1",
+        "FO-0013-Q8",
+        "FO-0046-Q5",
+        "FO-0076-Q1",
+        "FO-0003-Q6",
+        "FO-0039-Q8",
+        "FO-0056-Q5",
+        "FO-0102-Q6",
+        "FO-0033-Q4",
+        "FO-0023-Q2",
+        "FO-0005-Q6",
+        "FO-0056-Q8",
+        "FO-0018-Q5",
+        "FO-0046-Q4",
+        "FO-0046-Q8",
+        "FO-0046-Q6",
+        "FO-0050-Q8",
+        "FO-0031-Q5",
+        "FO-0049-Q8",
+        "FO-0021-Q3",
+        "FO-0029-Q5",
+        "FO-0029-Q3",
+        "FO-0081-Q4",
+        "FO-0068-Q4",
+        "FO-0057-Q8",
+        "FO-0076-Q6",
+        "FO-0134-Q8",
+        "FO-0080-Q1",
+        "FO-0029-Q1",
+        "FO-0013-Q5",
+        "FO-0090-Q8",
+        "FO-0020-Q6",
+        "FO-0123-Q8",
+        "FO-0005-Q5",
+        "FO-0102-Q8"
+      ],
+      "endpoint_wrong_modality_correct": [
+        "FO-0124-Q3",
+        "FO-0199-Q5",
+        "FO-0032-Q1",
+        "FO-0031-Q8",
+        "FO-0001-Q7",
+        "FO-0027-Q5",
+        "FO-0018-Q4",
+        "FO-0066-Q3",
+        "FO-0065-Q1",
+        "FO-0080-Q6",
+        "FO-0040-Q4"
+      ],
+      "endpoint_correct_modality_wrong": [
+        "FO-0013-Q4",
+        "FO-0027-Q4",
+        "FO-0059-Q4",
+        "FO-0044-Q8",
+        "FO-0034-Q5",
+        "FO-0006-Q3",
+        "FO-0102-Q5",
+        "FO-0007-Q6",
+        "FO-0003-Q8"
+      ],
+      "both_wrong": [
+        "FO-0013-Q2",
+        "FO-0085-Q3",
+        "FO-0009-Q1",
+        "FO-0066-Q2",
+        "FO-0049-Q3",
+        "FO-0049-Q5",
+        "FO-0032-Q8",
+        "FO-0039-Q5",
+        "FO-0005-Q1",
+        "FO-0057-Q3",
+        "FO-0134-Q6",
+        "FO-0080-Q2",
+        "FO-0046-Q1",
+        "FO-0014-Q6",
+        "FO-0029-Q8",
+        "FO-0080-Q8",
+        "FO-0037-Q5",
+        "FO-0050-Q2",
+        "FO-0033-Q6",
+        "FO-0009-Q5",
+        "FO-0040-Q5",
+        "FO-0023-Q3",
+        "FO-0037-Q2",
+        "FO-0005-Q3",
+        "FO-0090-Q5",
+        "FO-0032-Q5",
+        "FO-0006-Q2",
+        "FO-0033-Q5",
+        "FO-0031-Q3",
+        "FO-0034-Q8",
+        "FO-0005-Q8",
+        "FO-0023-Q4",
+        "FO-0056-Q2",
+        "FO-0059-Q2"
+      ]
+    },
+    "start_final_surface_normals": {
+      "both_correct": [
+        "FO-0029-Q6",
+        "FO-0090-Q3",
+        "FO-0134-Q3",
+        "FO-0044-Q1",
+        "FO-0020-Q8",
+        "FO-0006-Q8",
+        "FO-0027-Q4",
+        "FO-0066-Q8",
+        "FO-0031-Q4",
+        "FO-0057-Q1",
+        "FO-0049-Q6",
+        "FO-0019-Q6",
+        "FO-0123-Q1",
+        "FO-0124-Q6",
+        "FO-0038-Q8",
+        "FO-0199-Q6",
+        "FO-0059-Q4",
+        "FO-0044-Q5",
+        "FO-0009-Q8",
+        "FO-0052-Q5",
+        "FO-0019-Q8",
+        "FO-0066-Q4",
+        "FO-0032-Q6",
+        "FO-0024-Q8",
+        "FO-0134-Q4",
+        "FO-0033-Q3",
+        "FO-0123-Q4",
+        "FO-0052-Q6",
+        "FO-0081-Q6",
+        "FO-0019-Q1",
+        "FO-0023-Q8",
+        "FO-0034-Q6",
+        "FO-0001-Q2",
+        "FO-0102-Q2",
+        "FO-0039-Q4",
+        "FO-0003-Q5",
+        "FO-0059-Q3",
+        "FO-0059-Q6",
+        "FO-0085-Q8",
+        "FO-0197-Q5",
+        "FO-0020-Q2",
+        "FO-0052-Q4",
+        "FO-0023-Q6",
+        "FO-0034-Q5",
+        "FO-0134-Q5",
+        "FO-0021-Q1",
+        "FO-0018-Q8",
+        "FO-0040-Q6",
+        "FO-0090-Q6",
+        "FO-0006-Q3",
+        "FO-0003-Q3",
+        "FO-0033-Q8",
+        "FO-0037-Q8",
+        "FO-0056-Q1",
+        "FO-0019-Q2",
+        "FO-0024-Q6",
+        "FO-0028-Q8",
+        "FO-0034-Q3",
+        "FO-0067-Q5",
+        "FO-0080-Q3",
+        "FO-0027-Q6",
+        "FO-0102-Q5",
+        "FO-0027-Q8",
+        "FO-0124-Q1",
+        "FO-0023-Q5",
+        "FO-0068-Q8",
+        "FO-0021-Q4",
+        "FO-0102-Q3",
+        "FO-0123-Q3",
+        "FO-0050-Q5",
+        "FO-0123-Q6",
+        "FO-0009-Q4",
+        "FO-0006-Q4",
+        "FO-0013-Q6",
+        "FO-0042-Q1",
+        "FO-0064-Q1",
+        "FO-0057-Q6",
+        "FO-0003-Q2",
+        "FO-0006-Q6",
+        "FO-0059-Q8",
+        "FO-0033-Q1",
+        "FO-0013-Q8",
+        "FO-0046-Q5",
+        "FO-0076-Q1",
+        "FO-0003-Q6",
+        "FO-0039-Q8",
+        "FO-0003-Q8",
+        "FO-0102-Q6",
+        "FO-0033-Q4",
+        "FO-0023-Q2",
+        "FO-0005-Q6",
+        "FO-0056-Q8",
+        "FO-0018-Q5",
+        "FO-0046-Q4",
+        "FO-0046-Q8",
+        "FO-0046-Q6",
+        "FO-0050-Q8",
+        "FO-0031-Q5",
+        "FO-0049-Q8",
+        "FO-0021-Q3",
+        "FO-0029-Q5",
+        "FO-0029-Q3",
+        "FO-0081-Q4",
+        "FO-0068-Q4",
+        "FO-0057-Q8",
+        "FO-0076-Q6",
+        "FO-0134-Q8",
+        "FO-0080-Q1",
+        "FO-0029-Q1",
+        "FO-0090-Q8",
+        "FO-0020-Q6",
+        "FO-0123-Q8",
+        "FO-0005-Q5"
+      ],
+      "endpoint_wrong_modality_correct": [
+        "FO-0005-Q1",
+        "FO-0199-Q5",
+        "FO-0050-Q2",
+        "FO-0031-Q8",
+        "FO-0065-Q1",
+        "FO-0040-Q4"
+      ],
+      "endpoint_correct_modality_wrong": [
+        "FO-0013-Q4",
+        "FO-0056-Q6",
+        "FO-0039-Q3",
+        "FO-0044-Q8",
+        "FO-0038-Q3",
+        "FO-0028-Q3",
+        "FO-0081-Q8",
+        "FO-0049-Q4",
+        "FO-0037-Q4",
+        "FO-0007-Q6",
+        "FO-0056-Q5",
+        "FO-0013-Q5",
+        "FO-0102-Q8"
+      ],
+      "both_wrong": [
+        "FO-0013-Q2",
+        "FO-0124-Q3",
+        "FO-0085-Q3",
+        "FO-0009-Q1",
+        "FO-0066-Q2",
+        "FO-0049-Q3",
+        "FO-0049-Q5",
+        "FO-0032-Q8",
+        "FO-0039-Q5",
+        "FO-0057-Q3",
+        "FO-0134-Q6",
+        "FO-0080-Q2",
+        "FO-0046-Q1",
+        "FO-0014-Q6",
+        "FO-0029-Q8",
+        "FO-0080-Q8",
+        "FO-0037-Q5",
+        "FO-0033-Q6",
+        "FO-0032-Q1",
+        "FO-0009-Q5",
+        "FO-0040-Q5",
+        "FO-0023-Q3",
+        "FO-0001-Q7",
+        "FO-0037-Q2",
+        "FO-0005-Q3",
+        "FO-0090-Q5",
+        "FO-0032-Q5",
+        "FO-0027-Q5",
+        "FO-0006-Q2",
+        "FO-0018-Q4",
+        "FO-0033-Q5",
+        "FO-0031-Q3",
+        "FO-0034-Q8",
+        "FO-0005-Q8",
+        "FO-0023-Q4",
+        "FO-0056-Q2",
+        "FO-0066-Q3",
+        "FO-0080-Q6",
+        "FO-0059-Q2"
+      ]
+    },
+    "start_final_panorama": {
+      "both_correct": [
+        "FO-0134-Q3",
+        "FO-0056-Q6",
+        "FO-0020-Q8",
+        "FO-0006-Q8",
+        "FO-0027-Q4",
+        "FO-0031-Q4",
+        "FO-0057-Q1",
+        "FO-0049-Q6",
+        "FO-0019-Q6",
+        "FO-0123-Q1",
+        "FO-0124-Q6",
+        "FO-0038-Q8",
+        "FO-0199-Q6",
+        "FO-0052-Q5",
+        "FO-0044-Q8",
+        "FO-0019-Q8",
+        "FO-0066-Q4",
+        "FO-0032-Q6",
+        "FO-0024-Q8",
+        "FO-0134-Q4",
+        "FO-0033-Q3",
+        "FO-0123-Q4",
+        "FO-0052-Q6",
+        "FO-0081-Q6",
+        "FO-0019-Q1",
+        "FO-0023-Q8",
+        "FO-0034-Q6",
+        "FO-0001-Q2",
+        "FO-0102-Q2",
+        "FO-0039-Q4",
+        "FO-0003-Q5",
+        "FO-0059-Q3",
+        "FO-0059-Q6",
+        "FO-0038-Q3",
+        "FO-0085-Q8",
+        "FO-0197-Q5",
+        "FO-0020-Q2",
+        "FO-0052-Q4",
+        "FO-0023-Q6",
+        "FO-0034-Q5",
+        "FO-0021-Q1",
+        "FO-0018-Q8",
+        "FO-0090-Q6",
+        "FO-0006-Q3",
+        "FO-0003-Q3",
+        "FO-0028-Q8",
+        "FO-0034-Q3",
+        "FO-0081-Q8",
+        "FO-0067-Q5",
+        "FO-0080-Q3",
+        "FO-0027-Q6",
+        "FO-0102-Q5",
+        "FO-0027-Q8",
+        "FO-0023-Q5",
+        "FO-0068-Q8",
+        "FO-0021-Q4",
+        "FO-0102-Q3",
+        "FO-0049-Q4",
+        "FO-0123-Q3",
+        "FO-0123-Q6",
+        "FO-0009-Q4",
+        "FO-0006-Q4",
+        "FO-0013-Q6",
+        "FO-0064-Q1",
+        "FO-0057-Q6",
+        "FO-0003-Q2",
+        "FO-0006-Q6",
+        "FO-0059-Q8",
+        "FO-0033-Q1",
+        "FO-0013-Q8",
+        "FO-0076-Q1",
+        "FO-0039-Q8",
+        "FO-0056-Q5",
+        "FO-0102-Q6",
+        "FO-0033-Q4",
+        "FO-0023-Q2",
+        "FO-0005-Q6",
+        "FO-0056-Q8",
+        "FO-0018-Q5",
+        "FO-0046-Q8",
+        "FO-0046-Q6",
+        "FO-0050-Q8",
+        "FO-0031-Q5",
+        "FO-0049-Q8",
+        "FO-0021-Q3",
+        "FO-0029-Q3",
+        "FO-0081-Q4",
+        "FO-0068-Q4",
+        "FO-0057-Q8",
+        "FO-0076-Q6",
+        "FO-0134-Q8",
+        "FO-0090-Q8",
+        "FO-0020-Q6",
+        "FO-0123-Q8",
+        "FO-0005-Q5"
+      ],
+      "endpoint_wrong_modality_correct": [
+        "FO-0124-Q3",
+        "FO-0005-Q1",
+        "FO-0199-Q5",
+        "FO-0046-Q1",
+        "FO-0014-Q6",
+        "FO-0032-Q1",
+        "FO-0056-Q2",
+        "FO-0066-Q3",
+        "FO-0040-Q4"
+      ],
+      "endpoint_correct_modality_wrong": [
+        "FO-0029-Q6",
+        "FO-0090-Q3",
+        "FO-0013-Q4",
+        "FO-0044-Q1",
+        "FO-0066-Q8",
+        "FO-0059-Q4",
+        "FO-0039-Q3",
+        "FO-0044-Q5",
+        "FO-0009-Q8",
+        "FO-0134-Q5",
+        "FO-0040-Q6",
+        "FO-0033-Q8",
+        "FO-0037-Q8",
+        "FO-0056-Q1",
+        "FO-0019-Q2",
+        "FO-0024-Q6",
+        "FO-0028-Q3",
+        "FO-0124-Q1",
+        "FO-0050-Q5",
+        "FO-0037-Q4",
+        "FO-0042-Q1",
+        "FO-0046-Q5",
+        "FO-0003-Q6",
+        "FO-0007-Q6",
+        "FO-0003-Q8",
+        "FO-0046-Q4",
+        "FO-0029-Q5",
+        "FO-0080-Q1",
+        "FO-0029-Q1",
+        "FO-0013-Q5",
+        "FO-0102-Q8"
+      ],
+      "both_wrong": [
+        "FO-0013-Q2",
+        "FO-0085-Q3",
+        "FO-0009-Q1",
+        "FO-0066-Q2",
+        "FO-0049-Q3",
+        "FO-0049-Q5",
+        "FO-0032-Q8",
+        "FO-0039-Q5",
+        "FO-0057-Q3",
+        "FO-0134-Q6",
+        "FO-0080-Q2",
+        "FO-0029-Q8",
+        "FO-0080-Q8",
+        "FO-0037-Q5",
+        "FO-0050-Q2",
+        "FO-0033-Q6",
+        "FO-0009-Q5",
+        "FO-0040-Q5",
+        "FO-0031-Q8",
+        "FO-0023-Q3",
+        "FO-0001-Q7",
+        "FO-0037-Q2",
+        "FO-0005-Q3",
+        "FO-0090-Q5",
+        "FO-0032-Q5",
+        "FO-0027-Q5",
+        "FO-0006-Q2",
+        "FO-0018-Q4",
+        "FO-0033-Q5",
+        "FO-0031-Q3",
+        "FO-0034-Q8",
+        "FO-0005-Q8",
+        "FO-0023-Q4",
+        "FO-0065-Q1",
+        "FO-0080-Q6",
+        "FO-0059-Q2"
+      ]
+    }
+  },
+  "comparison_result_sha256": {
+    "<authors_workspace>\\docs\\experiments\\future201_four_condition_20260913\\runs\\selected171_validation_20260916_122242\\results\\results_by_sample.jsonl": "a55d7a7c2e21016725f6a69861bb636cc4a0ae63e2b53a473a1d4f60ad5836f9",
+    "<authors_workspace>\\docs\\experiments\\future201_four_condition_20260913\\runs\\selected171_full_rgb_20260916_171304\\results\\results_by_sample.jsonl": "dc26c057124928097d5ad50b91527abadac014c06e9dfd10d92b940374c08f19",
+    "<authors_workspace>\\docs\\experiments\\future201_four_condition_20260913\\runs\\selected171_endpoint_modality_20260916_172748\\results\\results_by_sample.jsonl": "e584159dda32fc1f63986c7c843952902d8930e827a7f7b6de1314e98512ed95"
+  },
+  "note": "Only endpoint depth/normals/panorama are newly measured; other settings are earlier same171 runs."
+}

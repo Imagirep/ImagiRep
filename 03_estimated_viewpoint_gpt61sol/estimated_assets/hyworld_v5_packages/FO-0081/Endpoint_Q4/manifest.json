@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FO-0081-Q4",
+  "motion_text": "I walk forward a few steps and face the way I move.",
+  "view_variant": "endpoint",
+  "frames": 35,
+  "fps": 12,
+  "total_distance_m": 0.7984774930397041,
+  "depth_display_range_scene_units": [
+    1.3125384640693665,
+    5.368500308990479
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.5236542607509371,
+    "far_m": 6.231998980262855
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.3973356128194823 m over generated floor distance",
+  "m_per_unit": 2.070032477378845,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 14.56433916091919
+}

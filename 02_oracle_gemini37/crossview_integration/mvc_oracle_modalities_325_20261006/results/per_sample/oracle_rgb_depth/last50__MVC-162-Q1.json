@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-162-Q1",
+  "cohort": "last50",
+  "question_id": "MVC-162-Q1",
+  "resource_id": "MVC-162",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to black and white painting in Image 2?",
+  "answer_choices": {
+    "A": "plant in a white pot",
+    "B": "stove",
+    "C": "white ottoman",
+    "D": "kitchen counter"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "9d1779eb7a4da5fad659ce1a2bca4d7256e9715b3d4ed6fe1c5f7714feb7b91a",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.752 m (near/red) to 10.286 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-162\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4608,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 352
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 1259,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5868,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 7.819669000004069,
+  "completed_at": "2026-10-06T17:38:52-04:00"
+}

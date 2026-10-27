@@ -1,0 +1,1 @@
+{"qid": "FO-0059-Q4", "method": "avic", "variant": "label", "prediction": "white sofa", "gold": "black pillar", "correct": false, "n_imagined": 3, "category": "nearest_object", "stored_result": "wrong"}

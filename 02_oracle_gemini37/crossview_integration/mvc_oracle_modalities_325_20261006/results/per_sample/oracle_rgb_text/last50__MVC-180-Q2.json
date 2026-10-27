@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-180-Q2",
+  "cohort": "last50",
+  "question_id": "MVC-180-Q2",
+  "resource_id": "MVC-180",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is farthest from potted plant in Image 1?",
+  "answer_choices": {
+    "A": "gray long chair",
+    "B": "black table",
+    "C": "statue",
+    "D": "yellow sofa"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "193491e8c4cff2c365715c0414ec956adf021bc702c1233c4615b5ffd7d3bbe5",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-180\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3553,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 361
+      }
+    ],
+    "thoughts_token_count": 984,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4538,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 6.828955000004498,
+  "completed_at": "2026-10-06T17:32:19-04:00"
+}

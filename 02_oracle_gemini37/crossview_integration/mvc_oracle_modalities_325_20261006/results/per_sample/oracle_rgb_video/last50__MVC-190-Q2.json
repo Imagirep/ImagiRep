@@ -1,0 +1,52 @@
+{
+  "uid": "last50__MVC-190-Q2",
+  "cohort": "last50",
+  "question_id": "MVC-190-Q2",
+  "resource_id": "MVC-190",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from sink in Image 2?",
+  "answer_choices": {
+    "A": "blue cups",
+    "B": "framed painting",
+    "C": "sink",
+    "D": "glass pot"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "d687d4d9dcee2151c5ddb95dcb0ad75133661add0d346b2890fad294c67988fd",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-190\\order_21\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7886,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 284
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      }
+    ],
+    "thoughts_token_count": 1405,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9292,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 12.44101039999805,
+  "completed_at": "2026-10-06T17:35:48-04:00"
+}

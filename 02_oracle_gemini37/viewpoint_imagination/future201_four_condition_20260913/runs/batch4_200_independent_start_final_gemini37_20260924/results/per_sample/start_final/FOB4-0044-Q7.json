@@ -1,0 +1,110 @@
+{
+  "row_index": 145,
+  "question_id": "FOB4-0044-Q7",
+  "trajectory_id": "FOB4-0044",
+  "scan_id": "i5noydFURQK",
+  "route_variant": "new_bent",
+  "question_type": 7,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "final_image_kind": "lookback",
+  "question": "If I walk forward, walk to the wooden chairs, then turn to face my starting point, where is the dining table relative to me?",
+  "answer_choices": {
+    "B": "left",
+    "A": "right",
+    "C": "front",
+    "D": "behind"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "B": "B",
+    "A": "C",
+    "C": "A",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0044\\start_view.png",
+      "sha256": "a81e26d59ae88262575fd198ea52fb138660ac7a19367cbd7286098fdd202d64"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0044\\step_01_rgb.png",
+      "sha256": "59f7e55bca33dab5caafcb392958ebf3c2b47796e7e4ac953bd5c6f1786646f3"
+    },
+    {
+      "label": "Step 2",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0044\\step_02_rgb.png",
+      "sha256": "23949489ce041b388a5fc9ece80285d91700ba650f313d22f850ac7260425700"
+    },
+    {
+      "label": "Step 3 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0044\\step_03_back180_rgb.png",
+      "sha256": "d5841e13e3d1118443e26c91da02ac45c32b41b5353f5f455ef8d61bfe2126f0"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0044\\oracle_lookback.png",
+      "sha256": "f65e14fc37b76f87308c602bf675e5dc2af55d13904fe2274b4d00daf31948d7"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "B",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2267,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 139
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 887,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3155,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "completed_at": "2026-09-24T17:31:50-04:00"
+}

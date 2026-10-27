@@ -1,0 +1,229 @@
+{
+  "question_id": "FOB4-0002-Q4",
+  "motion_text": "I walk to the sofa in front of me and face the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the brown sofa in front of me",
+      "relation": "to"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0002-Q4",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.10266804361658459,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -8.25,
+        "y": 0.8500000000000014,
+        "yaw": 0.10266804361658459,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -8.25,
+        0.8500000000000014
+      ]
+    ],
+    "x": -8.25,
+    "y": 0.8500000000000014,
+    "yaw": 0.10266804361658459,
+    "pitch": 0.0,
+    "travel_yaw": 0.10266804361658459
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -8.25,
+      0.8500000000000014
+    ]
+  ],
+  "final": {
+    "x": -8.25,
+    "y": 0.8500000000000014,
+    "yaw_deg": 5.88244559009535,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the brown sofa in front of me",
+        "relation": "to"
+      },
+      "x": -8.25,
+      "y": 0.8500000000000014,
+      "yaw": 0.10266804361658459,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -8.25,
+      "y": 0.8500000000000014,
+      "yaw": 0.10266804361658459,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.10266804361658459,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -8.25,
+      "y": 0.8500000000000014,
+      "yaw": 0.10266804361658459,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the brown sofa in front of me",
+      "method": "initial_photo",
+      "box": [
+        635,
+        460,
+        796,
+        747
+      ],
+      "point_m": [
+        -9.059905336628718,
+        1.509403574911159,
+        -2.019946659898326
+      ]
+    },
+    {
+      "overlap": "the brown sofa in front of me",
+      "n_points": 222,
+      "candidates": [
+        {
+          "sector": 2,
+          "path_m": 9.1,
+          "stop_m": 1.0864891494509994,
+          "visible_frac": 0.26126126126126126,
+          "center_deg": -7.605826233399723,
+          "width_deg": 25.11257615855796,
+          "distance_m": 1.8106287306282582
+        },
+        {
+          "sector": 3,
+          "path_m": 9.1,
+          "stop_m": 1.0443944316709526,
+          "visible_frac": 0.3153153153153153,
+          "center_deg": 6.631502596876466,
+          "width_deg": 45.194125567618116,
+          "distance_m": 1.6745296182655456
+        },
+        {
+          "sector": 1,
+          "path_m": 9.600000000000001,
+          "stop_m": 1.0632276251596013,
+          "visible_frac": 0.17567567567567569,
+          "center_deg": -27.563054851010907,
+          "width_deg": 68.88818877456356,
+          "distance_m": 1.7985743968433299
+        },
+        {
+          "sector": 4,
+          "path_m": 9.600000000000001,
+          "stop_m": 1.0107209598505205,
+          "visible_frac": 0.3918918918918919,
+          "center_deg": -8.747383696996012,
+          "width_deg": 61.51446688880443,
+          "distance_m": 1.720792754811824
+        },
+        {
+          "sector": 5,
+          "path_m": 10.600000000000001,
+          "stop_m": 0.6017870011871062,
+          "visible_frac": 0.26126126126126126,
+          "center_deg": 13.62671424235963,
+          "width_deg": 42.99497371058531,
+          "distance_m": 1.9062580605675463
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 3.21506325028994,
+  "seconds": 11.568378210067749
+}

@@ -1,0 +1,83 @@
+{
+  "row_index": 146,
+  "question_id": "FO-0056-Q5",
+  "trajectory_id": "FO-0056",
+  "scan_id": "aayBHfsNo7d",
+  "question_type": 5,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk to the low black table near the glass door and face the way I move, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "D": "shelf",
+    "A": "large sofa",
+    "B": "coffee table",
+    "C": "white small sofa"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "large sofa",
+    "B": "shelf",
+    "C": "white small sofa",
+    "D": "coffee table"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "D": "B",
+    "A": "A",
+    "B": "D",
+    "C": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0056\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0056\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0056\\modalities\\step_02_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "condition": "text_only",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 0,
+  "evidence_kinds": [],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 89,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 89
+      }
+    ],
+    "thoughts_token_count": 1197,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1287,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-16T12:36:11-04:00"
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-103-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-103-Q1",
+  "resource_id": "MVC-103",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to statue in Image 1?",
+  "answer_choices": {
+    "A": "lamp",
+    "B": "wooden desk",
+    "C": "red bowl",
+    "D": "dark blue armchair"
+  },
+  "gold_answer": "C",
+  "prediction": "A",
+  "correct": false,
+  "signature": "4ff0fb01b1789000065b3eb17d03f9dc1cca2164011f31969464e4f001ad34d0",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-103\\order_21\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4596,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 315
+      }
+    ],
+    "thoughts_token_count": 2836,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7433,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 28.739434299990535,
+  "completed_at": "2026-10-06T17:28:52-04:00"
+}

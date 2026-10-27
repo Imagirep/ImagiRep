@@ -1,0 +1,211 @@
+{
+  "question_id": "FOB4-0027-Q1",
+  "motion_text": "I walk near the black box, facing the way I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "relation": "near",
+      "target": "the black box"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0027-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.0885580177104387,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.4130351426507648,
+        "y": -0.12546374688401585,
+        "yaw": -0.0885580177104387,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -1.4130351426507648,
+        -0.12546374688401585
+      ]
+    ],
+    "x": -1.4130351426507648,
+    "y": -0.12546374688401585,
+    "yaw": -0.0885580177104387,
+    "pitch": 0.0,
+    "travel_yaw": -0.0885580177104387
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.4130351426507648,
+      -0.12546374688401585
+    ]
+  ],
+  "final": {
+    "x": -1.4130351426507648,
+    "y": -0.12546374688401585,
+    "yaw_deg": -5.0740006568529346,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "relation": "near",
+        "target": "the black box"
+      },
+      "x": -1.4130351426507648,
+      "y": -0.12546374688401585,
+      "yaw": -0.0885580177104387,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -1.4130351426507648,
+      "y": -0.12546374688401585,
+      "yaw": -0.0885580177104387,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.0885580177104387,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.4130351426507648,
+      "y": -0.12546374688401585,
+      "yaw": -0.0885580177104387,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the black box",
+      "method": "initial_photo",
+      "box": [
+        703,
+        539,
+        785,
+        618
+      ],
+      "point_m": [
+        -2.60851863313329,
+        0.28542769035241256,
+        -0.772164066085414
+      ]
+    },
+    {
+      "overlap": "the black box",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 1.5,
+          "stop_m": 1.2641252110493246,
+          "visible_frac": 1.0,
+          "center_deg": 0.00613726823562572,
+          "width_deg": 9.196754711282093,
+          "distance_m": 1.3214315367647052
+        },
+        {
+          "sector": 2,
+          "path_m": 2.3000000000000003,
+          "stop_m": 1.1359308546798181,
+          "visible_frac": 1.0,
+          "center_deg": 0.3555724865239806,
+          "width_deg": 8.240685946796496,
+          "distance_m": 1.198481601203302
+        },
+        {
+          "sector": 1,
+          "path_m": 3.5,
+          "stop_m": 1.2108998602818997,
+          "visible_frac": 1.0,
+          "center_deg": 0.2709090887426815,
+          "width_deg": 11.102207196831163,
+          "distance_m": 1.2473178508806422
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 3.6626444701732175,
+  "seconds": 9.070212364196777
+}

@@ -1,0 +1,145 @@
+{
+  "row_index": 14,
+  "question_id": "FOB2-0040-Q1",
+  "trajectory_id": "FOB2-0040",
+  "scan_id": "WYY7iVyf5p8",
+  "batch": 2,
+  "question_type": 1,
+  "question_set": "non-lookback",
+  "show_lookback": false,
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "question": "If I walk to the far counter and slightly turn right, which direction would have the most open space?",
+  "answer_choices": {
+    "A": "right",
+    "B": "front",
+    "C": "left",
+    "D": "behind"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "A": "C",
+    "B": "A",
+    "C": "B",
+    "D": "D"
+  },
+  "shuffle_origin": "frozen_oracle_run",
+  "rerun_reasons": [
+    "gold"
+  ],
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0040\\start_view.png",
+      "sha256": "1f7343e1e991b448ad8ba6f9ded2e8566cd8d5fd3fb5c11b47cbeaae918da4ce"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0040\\step_01_rgb.png",
+      "sha256": "a274f02fff2dd223ac2402d0fc68b009c567b6c7541e119f5be39d1b6b2e2846"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0040\\step_02_rgb.png",
+      "sha256": "0d18789c7a6d4c8fefd5b36025faa437168489b2ee741df95fa4a0589b429d9f"
+    }
+  ],
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0040\\step_02_depth.png",
+      "sha256": "18bca8a994e96008d44038ec47dc8f48c1577423ed73753eafdeba2934083abe",
+      "color_scale": {
+        "near_m": 1.028,
+        "far_m": 7.00325
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0040\\step_02_surface_normals.png",
+      "sha256": "0de0eca24e6730de48cfebff1a66419ccba39cde75d722826a36012c1eff1bf4"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0040\\step_02_panorama.png",
+      "sha256": "eff86610d64e79d3f904e6a6aef04441b2fae74d09f86051ab574d012c079601"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0040\\topdown_with_path.png",
+      "sha256": "7d8f3d06e470ec13e75d7e85c4a407bbf4e1f9d6374308b5af961def67d77dc5"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0040\\trajectory.txt",
+      "sha256": "5464f1bcdde78650cd3b83775b3465aa7ce773b996ec0ee286872498e8bb5d3f"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0040\\trajectory.mp4",
+      "sha256": "79d2ed03f2f8dccb5e5dba361e2576e4770cdc962b37f56dac55ae3277626528"
+    }
+  },
+  "modality_source": "fo_batch2_eight_conditions_20260927",
+  "manifest_seed": 20261005,
+  "source": "622_freeze_labels_20261002",
+  "category": "open_space_direction",
+  "subtype": "direction_maximum_open_space",
+  "category_label": "Open-space direction",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:"
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_622supplement_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "C",
+  "correct": false,
+  "input_signature": "31754d62271440f0b64209db76186c2717cf39d4e33437e9ae1b025c0c5f482c",
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1143,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 79
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 1210,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2354,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_started_at": "2026-10-05T11:52:28.051-04:00",
+  "request_duration_seconds": 14.500221900001634,
+  "completed_at": "2026-10-05T11:52:42.552-04:00",
+  "request_part_count": 3,
+  "request_mime_types": [
+    "image/png"
+  ]
+}

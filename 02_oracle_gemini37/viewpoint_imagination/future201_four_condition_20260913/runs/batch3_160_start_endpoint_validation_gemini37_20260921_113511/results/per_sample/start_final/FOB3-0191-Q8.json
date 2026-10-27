@@ -1,0 +1,96 @@
+{
+  "row_index": 127,
+  "question_id": "FOB3-0191-Q8",
+  "trajectory_id": "FOB3-0191",
+  "scan_id": "UwV83HsGsw3",
+  "question_type": 8,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk past the glass table, turn left and walk to the end, which object(s) would be directly to my right?",
+  "answer_choices": {
+    "D": "black decorative cube",
+    "A": "books",
+    "B": "blue and white painting",
+    "C": "vase"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "black decorative cube",
+    "B": "vase",
+    "C": "books",
+    "D": "blue and white painting"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "D": "A",
+    "A": "C",
+    "B": "D",
+    "C": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0191\\start_view.png",
+      "sha256": "0dbad6bba8b3023f0c8c980eacc701956fe2db370d362484a93a1587a3210c44"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0191\\step_01_rgb.png",
+      "sha256": "70c3df9d113c9462f459c709eac45f04ad03a3a53c29f303db3702d565da53ef"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0191\\step_02_rgb.png",
+      "sha256": "b69b1181004be7dfcd9d9808ee39c7ba833d8c2431459628cd4f052552856d1e"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2272,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 144
+      }
+    ],
+    "thoughts_token_count": 4581,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6854,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-21T11:42:00-04:00"
+}

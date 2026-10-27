@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-004-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-004-Q3",
+  "resource_id": "MVC-004",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "white pillar with trophies on it, monitor, white bowl, wooden cabinet",
+    "B": "monitor, white pillar with trophies on it, white bowl, wooden cabinet",
+    "C": "white pillar with trophies on it, monitor, wooden cabinet, white bowl",
+    "D": "white bowl, monitor, wooden cabinet, white pillar with trophies on it"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "2c696bc19610369848fbb39fd244d82634448457a27eaf2f6fb9aba9d9fec120",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-004\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4654,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 381
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      }
+    ],
+    "thoughts_token_count": 2376,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7031,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 12.577435100000002,
+  "completed_at": "2026-10-06T17:43:17-04:00"
+}

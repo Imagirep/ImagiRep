@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-021-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-021-Q3",
+  "resource_id": "MVC-021",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "pool table, fireplace, glass table, white stools",
+    "B": "glass table, fireplace, pool table, white stools",
+    "C": "white stools, pool table, glass table, fireplace",
+    "D": "fireplace, pool table, glass table, white stools"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "9cdf53eb2b90d850f1dec7df3a966b1b09ea2f9ba77465b65d59e1480537d119",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.931 m (near/red) to 7.211 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-021\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4642,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 386
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 706,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5349,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 5.421104200009722,
+  "completed_at": "2026-10-06T17:36:41-04:00"
+}

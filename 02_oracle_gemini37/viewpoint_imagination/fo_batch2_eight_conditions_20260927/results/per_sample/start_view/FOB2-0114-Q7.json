@@ -1,0 +1,153 @@
+{
+  "row_index": 249,
+  "question_id": "FOB2-0114-Q7",
+  "trajectory_id": "FOB2-0114",
+  "scan_id": "vyrNrziPKCB",
+  "question_type": 7,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk near the bar stools and turn back to face where I come from, where is the blue container relative to me?",
+  "answer_choices": {
+    "B": "right",
+    "A": "left",
+    "C": "front",
+    "D": "behind"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "B": "C",
+    "A": "B",
+    "C": "A",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0114\\start_view.png",
+      "sha256": "cfaf0e8f1f39695338f5eadef395341ac033b0a9ef006c09b6708b26ddcea983"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0114\\step_01_rgb.png",
+      "sha256": "515d9d997f93715627563b8056ce6776fe624f6815ded868490a5e0833fe2e99"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0114\\oracle_lookback.png",
+      "sha256": "49043d00bff3aa88529acea7547e58a42d609e931439219044880d5b79621ae2"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "lookback_correction": {
+    "audit": "source_snapshot/lookback_audit.json",
+    "original": {
+      "show_lookback": false,
+      "endpoint_is_lookback": false,
+      "requires_separate_lookback": false
+    },
+    "corrected": {
+      "show_lookback": true,
+      "endpoint_is_lookback": false,
+      "requires_separate_lookback": true
+    },
+    "basis": "lookback_wording_with_distinct_route_lookback_pose",
+    "endpoint_to_lookback_angle_degrees": 178.05011484934877
+  },
+  "category": "object_relative_direction",
+  "category_label": "Object-relative direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0114\\oracle_lookback_depth.png",
+      "sha256": "7926a21a264c698a1bb4c833e5c730cd1958e24d7acf090d133d9c6d6be595cc",
+      "color_scale": {
+        "near_m": 1.028,
+        "far_m": 5.97525
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0114\\oracle_lookback_surface_normals.png",
+      "sha256": "5c8702b6f580d4d9cc1a71b8deaa69ba0d2321e2451de1ddcfd143db590168bf"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0114\\oracle_lookback_panorama.png",
+      "sha256": "ac2a7b28c72a7056e8c33f399232fa783f5e9b76d37e5a0428c2f3fbfa8ecfb1"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0114\\topdown_lookback_with_path.png",
+      "sha256": "d8c7b2a9ea83139f8d74ad7242374dbf4d475fa80d00ecb6fb3302e16c19dab7"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0114\\trajectory_lookback.txt",
+      "sha256": "ef0765f4499fc0c3f7eea5cc0b7e43e70864189ab6f428d905fe2c1fd7c55545"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0114\\trajectory_lookback.mp4",
+      "sha256": "0310141809be2b5717adaac23ec902c44ad30101f0d63297614a94785fc46cb4"
+    }
+  },
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:"
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "B",
+  "correct": true,
+  "input_signature": "cf2243955e986d5a025832efa908ec20823bbaf85344a66186693ff588fe15b5",
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1148,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 84
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 671,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1820,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_started_at": "2026-09-27T23:35:27.267-04:00",
+  "request_duration_seconds": 4.0136610000627115,
+  "completed_at": "2026-09-27T23:35:31.281-04:00",
+  "request_part_count": 3,
+  "request_mime_types": [
+    "image/png"
+  ]
+}

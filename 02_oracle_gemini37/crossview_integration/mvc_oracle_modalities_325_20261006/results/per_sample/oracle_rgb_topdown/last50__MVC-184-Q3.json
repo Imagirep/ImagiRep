@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-184-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-184-Q3",
+  "resource_id": "MVC-184",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "stove, coffee maker, blue and white cup, knife shelf",
+    "B": "knife shelf, coffee maker, blue and white cup, stove",
+    "C": "knife shelf, stove, blue and white cup, coffee maker",
+    "D": "knife shelf, stove, coffee maker, blue and white cup"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "b5a3746210f83e1f634c80ad6eb6ff83cabceeaebe4ec86e02c377373237092c",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-184\\order_21\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4644,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 363
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      }
+    ],
+    "thoughts_token_count": 826,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5471,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 5.8345432999922195,
+  "completed_at": "2026-10-06T17:29:43-04:00"
+}

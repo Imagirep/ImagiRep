@@ -1,0 +1,232 @@
+{
+  "question_id": "FOB2-0129-Q2",
+  "motion_text": "I walk near the tall armchair, then stop and face the way I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "relation": "near",
+      "target": "the tall armchair in the hallway"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0129-Q2",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.13300812755039979,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.51136076667242,
+        "y": 0.6036113824282382,
+        "yaw": 0.13300812755039979,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -6.65,
+        0.8897571931735628
+      ]
+    ],
+    "x": -6.65,
+    "y": 0.8897571931735628,
+    "yaw": 0.13300812755039979,
+    "pitch": 0.0,
+    "travel_yaw": 0.13300812755039979
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -4.51136076667242,
+      0.6036113824282382
+    ]
+  ],
+  "final": {
+    "x": -4.51136076667242,
+    "y": 0.6036113824282382,
+    "yaw_deg": 7.620804349575637,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "relation": "near",
+        "target": "the tall armchair in the hallway"
+      },
+      "x": -6.65,
+      "y": 0.8897571931735628,
+      "yaw": 0.13300812755039979,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -6.65,
+      "y": 0.8897571931735628,
+      "yaw": 0.13300812755039979,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.13300812755039979,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.51136076667242,
+      "y": 0.6036113824282382,
+      "yaw": 0.13300812755039979,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the tall armchair in the hallway",
+      "method": "initial_photo",
+      "box": [
+        507,
+        617,
+        766,
+        698
+      ],
+      "point_m": [
+        -7.396158646353907,
+        1.952581243142482,
+        -1.469223142381559
+      ]
+    },
+    {
+      "overlap": "the tall armchair in the hallway",
+      "n_points": 153,
+      "candidates": [
+        {
+          "sector": 2,
+          "path_m": 7.6000000000000005,
+          "stop_m": 1.298594504347308,
+          "visible_frac": 0.8235294117647058,
+          "center_deg": 4.462926293064276,
+          "width_deg": 37.01783205637072,
+          "distance_m": 1.370571789722672
+        },
+        {
+          "sector": 3,
+          "path_m": 7.6000000000000005,
+          "stop_m": 1.280500497959695,
+          "visible_frac": 0.8104575163398693,
+          "center_deg": 3.574445993590839,
+          "width_deg": 32.1511522022641,
+          "distance_m": 1.361151437750181
+        },
+        {
+          "sector": 1,
+          "path_m": 8.200000000000001,
+          "stop_m": 1.263971310015519,
+          "visible_frac": 0.7124183006535948,
+          "center_deg": 6.030522601853937,
+          "width_deg": 42.037559939337996,
+          "distance_m": 1.2794807563750388
+        },
+        {
+          "sector": 4,
+          "path_m": 8.200000000000001,
+          "stop_m": 1.246713047634986,
+          "visible_frac": 0.7647058823529411,
+          "center_deg": 1.3266395981300079,
+          "width_deg": 19.959333643536915,
+          "distance_m": 1.3129538863994976
+        },
+        {
+          "sector": 0,
+          "path_m": 9.5,
+          "stop_m": 1.2861876492682465,
+          "visible_frac": 0.5359477124183006,
+          "center_deg": 3.963392423859659,
+          "width_deg": 27.736539466020083,
+          "distance_m": 1.3110170373970287
+        }
+      ],
+      "chosen_sector": 2
+    }
+  ],
+  "m_per_unit": 1.66859632730484,
+  "seconds": 9.975868701934814,
+  "planning_m_per_unit": 2.4596050173042845,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.6784001152890856
+}

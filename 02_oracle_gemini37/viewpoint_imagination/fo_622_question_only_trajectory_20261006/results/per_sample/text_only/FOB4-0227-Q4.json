@@ -1,0 +1,41 @@
+{
+  "question_id": "FOB4-0227-Q4",
+  "condition": "text_only",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk near the yellow chair farther from me, then slightly turn right, which object(s) would be closest to me?",
+  "answer_choices": {
+    "B": "small potted plant",
+    "A": "painting",
+    "C": "large potted plant",
+    "D": "black stools"
+  },
+  "gold_answer": "B",
+  "prediction": "D",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 87,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 87
+      }
+    ],
+    "thoughts_token_count": 2027,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2115,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 10.392107799998485,
+  "completed_at": "2026-10-06T12:25:37-04:00"
+}

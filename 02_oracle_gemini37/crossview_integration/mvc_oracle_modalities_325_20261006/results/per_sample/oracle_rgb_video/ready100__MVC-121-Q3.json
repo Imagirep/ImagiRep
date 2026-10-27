@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-121-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-121-Q3",
+  "resource_id": "MVC-121",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "bed, lamp, tall potted plant, wooden table",
+    "B": "tall potted plant, lamp, wooden table, bed",
+    "C": "bed, wooden table, lamp, tall potted plant",
+    "D": "lamp, tall potted plant, bed, wooden table"
+  },
+  "gold_answer": "C",
+  "prediction": "D",
+  "correct": false,
+  "signature": "930d69b291716267a80583a3b40c6a2a5258f1cd0dd6037a449fcf4651b7d076",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-121\\order_21\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7927,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 325
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      }
+    ],
+    "thoughts_token_count": 4364,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 12292,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 21.43743099999847,
+  "completed_at": "2026-10-06T17:35:01-04:00"
+}

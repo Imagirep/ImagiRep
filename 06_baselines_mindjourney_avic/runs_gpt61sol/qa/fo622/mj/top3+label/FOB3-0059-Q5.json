@@ -1,0 +1,1 @@
+{"qid": "FOB3-0059-Q5", "method": "mj", "variant": "top3+label", "prediction": "white small table", "gold": "white small table", "correct": true, "n_imagined": 3, "category": "farthest_object", "stored_result": "correct"}

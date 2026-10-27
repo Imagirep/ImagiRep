@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-088-Q2", "method": "avic", "variant": "label", "prediction": "tv", "gold": "tv", "correct": true, "n_imagined": 2, "category": "cross_view_farthest", "stored_result": "correct"}

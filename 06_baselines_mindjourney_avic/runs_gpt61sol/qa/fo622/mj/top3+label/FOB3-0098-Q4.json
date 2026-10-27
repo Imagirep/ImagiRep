@@ -1,0 +1,1 @@
+{"qid": "FOB3-0098-Q4", "method": "mj", "variant": "top3+label", "prediction": "large metal container", "gold": "large metal container", "correct": true, "n_imagined": 3, "category": "nearest_object", "stored_result": "correct"}

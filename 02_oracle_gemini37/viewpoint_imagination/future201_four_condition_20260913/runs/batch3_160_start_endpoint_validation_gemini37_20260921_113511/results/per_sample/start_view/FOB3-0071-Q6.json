@@ -1,0 +1,100 @@
+{
+  "row_index": 32,
+  "question_id": "FOB3-0071-Q6",
+  "trajectory_id": "FOB3-0071",
+  "scan_id": "e9zR4mvMWw7",
+  "question_type": 6,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk to the hallway on the left and turn to face my starting point, where is the potted plant relative to me?",
+  "answer_choices": {
+    "B": "left",
+    "A": "front",
+    "C": "behind",
+    "D": "right"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "B": "B",
+    "A": "A",
+    "C": "D",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0071\\start_view.png",
+      "sha256": "9b49bda123e0fa18ca076829462e9403dd614c3132dad5e66a81328af127666c"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0071\\step_01_rgb.png",
+      "sha256": "eb18c1e7a911245238c2bfa5a33972d45a0a829d0fd10871607594c56adf1ef0"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0071\\step_02_rgb.png",
+      "sha256": "bcea6e1b3fad76412586ececef925e0ab44c0ddc731e4930eeb233da2e12478f"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0071\\oracle_lookback.png",
+      "sha256": "878f8aed2c3249a228c90a3652895a2b0583f6b78c5fe97212a9642c029ee944"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": false,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1148,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 84
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 716,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1865,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-21T11:39:31-04:00"
+}

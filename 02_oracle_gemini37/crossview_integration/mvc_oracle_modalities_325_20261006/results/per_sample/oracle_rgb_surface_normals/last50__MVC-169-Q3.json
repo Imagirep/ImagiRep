@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-169-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-169-Q3",
+  "resource_id": "MVC-169",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_surface_normals",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "stool, tub, mirror, tv",
+    "B": "mirror, stool, tv, tub",
+    "C": "tv, tub, stool, mirror",
+    "D": "stool, tub, tv, mirror"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "a00b1f8b9b4fd4dc679c92a65c8360ad47ab835b83852c03fec3c73ffa4aac1f",
+  "caption": "ORACLE SURFACE NORMAL MAP (same camera pose and field of view as Oracle RGB):\nColors encode surface orientation, not object color or distance. RGB channels encode normal components along camera-right (R), camera-up (G), and camera-forward (B): 0 = -1, about 128 = 0, and 255 = +1. Higher R/G/B means a stronger rightward/upward/forward component; a surface facing the camera has low B. Black means missing geometry. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-169\\oracle_surface_normals_sv.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4640,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 384
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 3884,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8525,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 15.714445300007355,
+  "completed_at": "2026-10-06T17:42:18-04:00"
+}

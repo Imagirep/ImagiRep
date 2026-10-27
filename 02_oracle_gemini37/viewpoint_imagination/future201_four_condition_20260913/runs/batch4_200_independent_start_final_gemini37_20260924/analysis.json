@@ -1,0 +1,102 @@
+{
+  "status": "complete_verified",
+  "questions": 200,
+  "trajectories": 50,
+  "conditions": {
+    "start_view": {
+      "overall": {
+        "n": 200,
+        "correct": 113,
+        "accuracy": 0.565
+      },
+      "by_final_kind": {
+        "lookback": {
+          "n": 87,
+          "correct": 54,
+          "accuracy": 0.6206896551724138
+        },
+        "endpoint": {
+          "n": 113,
+          "correct": 59,
+          "accuracy": 0.5221238938053098
+        }
+      },
+      "by_route_variant": {
+        "old_straight": {
+          "n": 28,
+          "correct": 21,
+          "accuracy": 0.75
+        },
+        "old_bent": {
+          "n": 35,
+          "correct": 20,
+          "accuracy": 0.5714285714285714
+        },
+        "new_straight": {
+          "n": 104,
+          "correct": 55,
+          "accuracy": 0.5288461538461539
+        },
+        "new_bent": {
+          "n": 33,
+          "correct": 17,
+          "accuracy": 0.5151515151515151
+        }
+      }
+    },
+    "start_final": {
+      "overall": {
+        "n": 200,
+        "correct": 141,
+        "accuracy": 0.705
+      },
+      "by_final_kind": {
+        "lookback": {
+          "n": 87,
+          "correct": 58,
+          "accuracy": 0.6666666666666666
+        },
+        "endpoint": {
+          "n": 113,
+          "correct": 83,
+          "accuracy": 0.7345132743362832
+        }
+      },
+      "by_route_variant": {
+        "old_straight": {
+          "n": 28,
+          "correct": 20,
+          "accuracy": 0.7142857142857143
+        },
+        "old_bent": {
+          "n": 35,
+          "correct": 25,
+          "accuracy": 0.7142857142857143
+        },
+        "new_straight": {
+          "n": 104,
+          "correct": 70,
+          "accuracy": 0.6730769230769231
+        },
+        "new_bent": {
+          "n": 33,
+          "correct": 26,
+          "accuracy": 0.7878787878787878
+        }
+      }
+    }
+  },
+  "start_to_final": {
+    "both_correct": 106,
+    "wrong_to_correct": 35,
+    "correct_to_wrong": 7,
+    "both_wrong": 52,
+    "net_correct": 28,
+    "gain_percentage_points": 14.0,
+    "exact_mcnemar_p_two_sided": 1.5097200957825407e-05
+  },
+  "selection_round_gain_percentage_points": [
+    20.0,
+    17.5
+  ]
+}

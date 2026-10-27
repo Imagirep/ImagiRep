@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-160-Q2", "method": "avic", "variant": "label", "prediction": "yellow vases", "gold": "yellow vases", "correct": true, "n_imagined": 3, "category": "cross_view_farthest", "stored_result": "correct"}

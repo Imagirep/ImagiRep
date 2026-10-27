@@ -1,0 +1,100 @@
+{
+  "row_index": 71,
+  "question_id": "FOB3-0011-Q6",
+  "trajectory_id": "FOB3-0011",
+  "scan_id": "sKLMLpTHeUy",
+  "question_type": 6,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk near the sink then turn to face my starting point, where is the glass container relative to me?",
+  "answer_choices": {
+    "D": "right",
+    "A": "behind",
+    "B": "front",
+    "C": "left"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "D": "C",
+    "A": "D",
+    "B": "A",
+    "C": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0011\\start_view.png",
+      "sha256": "792647285cbd09bd65adf0f2c8fd32f9bf660bb4763aa1f2c3d7b2108b95bca6"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0011\\step_01_rgb.png",
+      "sha256": "b12904de7f76664683f38b62f50fa72a07f0f0e3a25d4977705a0c53d506ce3a"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0011\\step_02_rgb.png",
+      "sha256": "42d477a4b5adb96a3321f923017544fbcac7c295b547b34dedd5f741b06b850c"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0011\\oracle_lookback.png",
+      "sha256": "605bedf93e350732722cb1499d508ff2c94388d5b3224261521e554a13912d2e"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1145,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 81
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 940,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2086,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-21T11:40:12-04:00"
+}

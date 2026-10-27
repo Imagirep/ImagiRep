@@ -1,0 +1,234 @@
+{
+  "question_id": "FOB4-0136-Q1",
+  "motion_text": "I walk to the farthest ottoman and turn right.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the farthest grey square ottoman on the right",
+      "relation": "to"
+    },
+    {
+      "op": "turn",
+      "direction": "right"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0136-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.260143192606074,
+        "y": 0.03164328618573565,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.061741132545185,
+        0.028865544851963243
+      ]
+    ],
+    "x": -2.061741132545185,
+    "y": 0.028865544851963243,
+    "yaw": 0.013999652324486718,
+    "pitch": 0.0,
+    "travel_yaw": 0.013999652324486718
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.260143192606074,
+      0.03164328618573565
+    ]
+  ],
+  "final": {
+    "x": -2.260143192606074,
+    "y": 0.03164328618573565,
+    "yaw_deg": 80.80212099284357,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the farthest grey square ottoman on the right",
+        "relation": "to"
+      },
+      "x": -2.061741132545185,
+      "y": 0.028865544851963243,
+      "yaw": 0.013999652324486718,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "right"
+      },
+      "x": -2.061741132545185,
+      "y": 0.028865544851963243,
+      "yaw": 1.4102630539199499,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.260143192606074,
+      "y": 0.03164328618573565,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.260143192606074,
+      "y": 0.03164328618573565,
+      "yaw": 0.013999652324486718,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.260143192606074,
+      "y": 0.03164328618573565,
+      "yaw": 1.4102630539199499,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the farthest grey square ottoman on the right",
+      "method": "initial_photo",
+      "box": [
+        745,
+        537,
+        947,
+        672
+      ],
+      "point_m": [
+        -3.002274713531258,
+        0.5088401402472897,
+        -1.1829242093534764
+      ]
+    },
+    {
+      "overlap": "the farthest grey square ottoman on the right",
+      "n_points": 215,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 2.1,
+          "stop_m": 1.0559256740828842,
+          "visible_frac": 0.9069767441860465,
+          "center_deg": -0.8976850685612471,
+          "width_deg": 31.03906933826504,
+          "distance_m": 1.309919360534498
+        },
+        {
+          "sector": 4,
+          "path_m": 2.5,
+          "stop_m": 1.0407262608338854,
+          "visible_frac": 0.813953488372093,
+          "center_deg": -1.3165469155770457,
+          "width_deg": 17.491951579962866,
+          "distance_m": 1.394746624977653
+        },
+        {
+          "sector": 2,
+          "path_m": 2.6,
+          "stop_m": 0.6514947798726558,
+          "visible_frac": 0.5534883720930233,
+          "center_deg": -8.284653596170564,
+          "width_deg": 41.59469685756697,
+          "distance_m": 1.0576210042340155
+        },
+        {
+          "sector": 1,
+          "path_m": 3.2,
+          "stop_m": 0.5830152539122044,
+          "visible_frac": 0.22325581395348837,
+          "center_deg": -8.532546395763296,
+          "width_deg": 54.08832174020927,
+          "distance_m": 0.8072832286767091
+        },
+        {
+          "sector": 0,
+          "path_m": 3.6,
+          "stop_m": 0.7371419715558017,
+          "visible_frac": 0.4186046511627907,
+          "center_deg": 18.11049151809542,
+          "width_deg": 48.26965288609405,
+          "distance_m": 0.9340757928438461
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 1.7625988125801086,
+  "seconds": 10.60867953300476,
+  "planning_m_per_unit": 1.6078726710591629,
+  "scale_source": "moge",
+  "scale_factor_applied": 1.0962303447940454
+}

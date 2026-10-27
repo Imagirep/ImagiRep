@@ -1,0 +1,70 @@
+{
+  "question_id": "FO-0050-Q4",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk through the doors, walk forward till I'm near the white chair, and face the direction I move, which object(s) would be closest to me?",
+  "answer_choices": {
+    "B": "white ottoman",
+    "A": "blue sofa",
+    "C": "blue chairs",
+    "D": "blue and white stool"
+  },
+  "gold_answer": "B",
+  "show_lookback": false,
+  "prediction": "B",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "benchmark_release/items/FO-0050/image_1.png",
+      "sha256": "0adac49c8666e18ff447b72612d9e650ce88405b936769a0ae030616b2d8d278"
+    },
+    {
+      "path": "benchmark_release/items/FO-0050/modalities/step_01_rgb.png",
+      "sha256": "50279d1cdb091bbbcef747afb80be57b0f3c01229a0d241be97006a6591a535c"
+    },
+    {
+      "path": "benchmark_release/items/FO-0050/modalities/step_02_rgb.png",
+      "sha256": "3843ce8742880499a4970ad88dad79f45bedd3cf7f7270ada2b7b3335be15329"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3350,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 158
+      }
+    ],
+    "thoughts_token_count": 1873,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5223,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 10.890670099994168,
+  "completed_at": "2026-10-06T14:12:59-04:00"
+}

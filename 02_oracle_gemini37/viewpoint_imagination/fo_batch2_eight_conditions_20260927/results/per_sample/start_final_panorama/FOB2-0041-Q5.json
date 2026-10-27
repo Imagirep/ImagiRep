@@ -1,0 +1,138 @@
+{
+  "row_index": 239,
+  "question_id": "FOB2-0041-Q5",
+  "trajectory_id": "FOB2-0041",
+  "scan_id": "WYY7iVyf5p8",
+  "question_type": 5,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk near the low table and slightly turn right, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "D": "fireplace",
+    "A": "paintings",
+    "B": "counter",
+    "C": "chairs"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "fireplace",
+    "B": "chairs",
+    "C": "paintings",
+    "D": "counter"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "D": "A",
+    "A": "C",
+    "B": "D",
+    "C": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0041\\start_view.png",
+      "sha256": "ae289432f999414fb93a9a778ae2c467d0b870a23b4e5ca7adb1492b3082f612"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0041\\step_01_rgb.png",
+      "sha256": "1a320d8805b1a6796eeae954c3a5cc8b8a2779ab530ac5db8ce835633e045299"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "category": "farthest_object",
+  "category_label": "Farthest object",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0041\\step_01_depth.png",
+      "sha256": "e50b6c9d35061c951b50b635f46b86e0269988d1aa58c8e1e4fbd953c33baee6",
+      "color_scale": {
+        "near_m": 1.73475,
+        "far_m": 4.112
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0041\\step_01_surface_normals.png",
+      "sha256": "2be79280f43c4b93f76ab2fdcc6bdfdfe4dcfaf054637fa91c36d9c7d15d3864"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0041\\step_01_panorama.png",
+      "sha256": "46992a7ad78e7823e0869577fa78aff3909417d12234353a0e1224c4fb71078d"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0041\\topdown_with_path.png",
+      "sha256": "eb77ab93552ac6b40f8fb388fd630f45252e449dba01063db152e4c6bb198aa7"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0041\\trajectory.txt",
+      "sha256": "34fb494601ca644caa1c6d6127a9a1a774bff5b4296cb91d75cbe9fbf550cc7e"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0041\\trajectory.mp4",
+      "sha256": "53107358f81c005e3b18c74696427178b52d26f91dfdd7c2cc800d0d18ecc6da"
+    }
+  },
+  "condition": "start_final_panorama",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT PANORAMA (360-degree RGB at the FINAL VIEW position):\nThe panorama is centered on the final camera's facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. This is one position, not a sequence of movement frames. Combine it with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "B",
+  "correct": false,
+  "input_signature": "6238214f71232f76f7274c8930cc7bbc09e84e80b29a3bb927d0d82a82679534",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "panorama"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3452,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3209
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 243
+      }
+    ],
+    "thoughts_token_count": 1481,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4934,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_started_at": "2026-09-28T04:05:03.455-04:00",
+  "request_duration_seconds": 7.737408800050616,
+  "completed_at": "2026-09-28T04:05:11.192-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

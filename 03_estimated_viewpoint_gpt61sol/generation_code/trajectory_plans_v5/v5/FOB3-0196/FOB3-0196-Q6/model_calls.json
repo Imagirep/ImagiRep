@@ -1,0 +1,54 @@
+[
+  {
+    "purpose": "parse",
+    "model": "gemini-3.7-flash",
+    "inputs": [
+      {
+        "image_sha256": "c0b7fcf0a6d46e7d83a1a8dce29fd8a2efe64d873f839a550a62b0b87f90ec6c",
+        "kind": "initial"
+      },
+      {
+        "text": "You will control a camera that starts at the viewpoint of this photo, at standing eye height. Convert the movement instruction into primitive steps, in order. Use ONLY what the instruction says.\nInstruction: \"I walk forward, walk to the oven on the right and face the direction I go.\"\nPrimitives (JSON objects):\n- {\"op\":\"forward\",\"amount\":\"default|few_steps\"}  walk straight ahead without a named target\n- {\"op\":\"back\",\"direction\":\"left|right|null\"}  step backwards (optionally back-left/right)\n- {\"op\":\"turn\",\"direction\":\"left|right\",\"amount\":\"slight|normal|around\"}  turn in place; \"turn around\" is amount around\n- {\"op\":\"go\",\"target\":\"...\",\"relation\":\"to|near|next_to|beside|into|through|past\",\"side\":\"left|right|null\"}  walk to/near/past/through a target\n- {\"op\":\"face\",\"target\":\"...\"}  turn in place to face an object (also \"look at\"/\"look through\")\n- {\"op\":\"face_start\"}  turn in place to face the starting point\n- {\"op\":\"face_motion\"}  keep facing the walking direction\nTarget descriptions must uniquely identify the object as seen in the photo when possible: include color, material, relative position in the photo (left/right/center, near/far) exactly as implied by the instruction. If the target is not visible in the photo, still describe it from the instruction. Return {\"steps\":[...]}"
+      }
+    ],
+    "response": {
+      "steps": [
+        {
+          "op": "forward",
+          "amount": "default"
+        },
+        {
+          "op": "go",
+          "target": "the oven on the right",
+          "relation": "to"
+        },
+        {
+          "op": "face_motion"
+        }
+      ]
+    }
+  },
+  {
+    "purpose": "ground_initial",
+    "model": "gemini-3.7-flash",
+    "inputs": [
+      {
+        "image_sha256": "c0b7fcf0a6d46e7d83a1a8dce29fd8a2efe64d873f839a550a62b0b87f90ec6c",
+        "kind": "initial"
+      },
+      {
+        "text": "Movement instruction: \"I walk forward, walk to the oven on the right and face the direction I go.\"\nTarget: \"the oven on the right\".\nIs this target visible in the photo? If yes give its tight bounding box [ymin, xmin, ymax, xmax] in 0-1000 normalized coordinates (only the target object itself). Return {\"visible\":true|false,\"box\":[ymin,xmin,ymax,xmax],\"confidence\":0-1}"
+      }
+    ],
+    "response": {
+      "visible": true,
+      "box": [
+        602,
+        792,
+        804,
+        863
+      ],
+      "confidence": 0.98
+    }
+  }
+]

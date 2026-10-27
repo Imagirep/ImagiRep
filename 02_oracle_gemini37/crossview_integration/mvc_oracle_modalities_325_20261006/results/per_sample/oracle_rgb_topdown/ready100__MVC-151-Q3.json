@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-151-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-151-Q3",
+  "resource_id": "MVC-151",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "wooden cabinet, window, round table, black and white paintings",
+    "B": "round table, black and white paintings, window, wooden cabinet",
+    "C": "window, wooden cabinet, black and white paintings, round table",
+    "D": "round table, wooden cabinet, window, black and white paintings"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "54b11b8673c4dceda1ffd815c678c98b83b4b53e6f0412e6da5ceb2e497a02ac",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-151\\order_12\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4644,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 363
+      }
+    ],
+    "thoughts_token_count": 1400,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6045,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.940274000007776,
+  "completed_at": "2026-10-06T17:29:09-04:00"
+}

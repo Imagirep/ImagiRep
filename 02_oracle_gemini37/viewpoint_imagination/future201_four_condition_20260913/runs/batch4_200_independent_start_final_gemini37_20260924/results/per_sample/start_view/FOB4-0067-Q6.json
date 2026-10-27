@@ -1,0 +1,96 @@
+{
+  "row_index": 126,
+  "question_id": "FOB4-0067-Q6",
+  "trajectory_id": "FOB4-0067",
+  "scan_id": "oLBMNvg9in8",
+  "route_variant": "old_bent",
+  "question_type": 6,
+  "question_set": "lookback",
+  "endpoint_is_lookback": true,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk forward, turn left then turn around, where are the paintings relative to me?",
+  "answer_choices": {
+    "D": "left",
+    "A": "front",
+    "B": "right",
+    "C": "behind"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "D": "B",
+    "A": "A",
+    "B": "C",
+    "C": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0067\\start_view.png",
+      "sha256": "5b4b7b792cfea7a54aa4159839b6c868f56b430a068fa59b764b1f4f31bb7787"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0067\\step_01_rgb.png",
+      "sha256": "cc00bdedec480e45ffba00f8aa887eab2693166e200ae65a11594071d9719770"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0067\\step_02_back180_rgb.png",
+      "sha256": "9bc453464384c3587a2896949c375b1d77c7cb4bdf34ff7c1daaee8fdfb72922"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1141,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 77
+      }
+    ],
+    "thoughts_token_count": 449,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1591,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-24T17:31:18-04:00"
+}

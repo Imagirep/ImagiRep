@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB2-0024-Q3",
+  "motion_text": "I walk to the cabinet and turn right, then turn to face my starting point.",
+  "view_variant": "lookback",
+  "frames": 100,
+  "fps": 12,
+  "total_distance_m": 3.753046797139786,
+  "depth_display_range_scene_units": [
+    0.7166361105442047,
+    4.626372232437134
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.3596794135030355,
+    "far_m": 8.777652969329178
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.3540735380096294 m over generated floor distance",
+  "m_per_unit": 2.690886616706848,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 24.548656463623047
+}

@@ -1,0 +1,96 @@
+{
+  "row_index": 91,
+  "question_id": "FOB3-0017-Q4",
+  "trajectory_id": "FOB3-0017",
+  "scan_id": "qoiz87JEwZ2",
+  "question_type": 4,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk to the white sofa and face the direction I go, which object(s) would be closest to me?",
+  "answer_choices": {
+    "D": "round table",
+    "A": "purple long sofa",
+    "B": "purple armchair",
+    "C": "brown square table"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "round table",
+    "B": "purple long sofa",
+    "C": "purple armchair",
+    "D": "brown square table"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "D": "A",
+    "A": "B",
+    "B": "C",
+    "C": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0017\\start_view.png",
+      "sha256": "67549047770c00b8d9f7096c29513da398753f344877ce432d9ab45f1faaa3c9"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0017\\step_01_rgb.png",
+      "sha256": "3d4450c05f66093126db11dbd1555ab87a06bf3d1a668d21daa79f57836306a5"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0017\\step_02_rgb.png",
+      "sha256": "6b475529b5128f2e9ee7a98404e10b5c4c1f53d8485f8a0765b6f20dbed51e6d"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2270,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 142
+      }
+    ],
+    "thoughts_token_count": 1497,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3768,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-21T11:40:52-04:00"
+}

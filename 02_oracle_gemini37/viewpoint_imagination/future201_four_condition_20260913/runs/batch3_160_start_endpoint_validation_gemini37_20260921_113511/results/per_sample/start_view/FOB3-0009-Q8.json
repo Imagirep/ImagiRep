@@ -1,0 +1,94 @@
+{
+  "row_index": 92,
+  "question_id": "FOB3-0009-Q8",
+  "trajectory_id": "FOB3-0009",
+  "scan_id": "V2XKFyX4ASd",
+  "question_type": 8,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk past the long table and turn right, which object(s) would be in front of me?",
+  "answer_choices": {
+    "C": "refrigerator",
+    "A": "round counter",
+    "B": "long stool",
+    "D": "dishwasher"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "refrigerator",
+    "B": "long stool",
+    "C": "round counter",
+    "D": "dishwasher"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "C": "A",
+    "A": "C",
+    "B": "B",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0009\\start_view.png",
+      "sha256": "c6d316379dc19e95bd7a8145b2fd38c0b94d4aad7d3c12c406d82932e019bceb"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0009\\step_01_rgb.png",
+      "sha256": "7bcb850fa05d5bde1b50580a140f25eaec6a3534c7409a99f9a897de76919520"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0009\\step_02_rgb.png",
+      "sha256": "54edb3ed814116587357e77524ba736ceccf88ec8cb76e7987689aa949ee53bb"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1147,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 83
+      }
+    ],
+    "thoughts_token_count": 3562,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4710,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-21T11:40:57-04:00"
+}

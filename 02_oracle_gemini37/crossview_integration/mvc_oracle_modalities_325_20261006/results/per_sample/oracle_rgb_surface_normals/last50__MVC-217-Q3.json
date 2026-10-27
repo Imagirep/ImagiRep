@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-217-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-217-Q3",
+  "resource_id": "MVC-217",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_surface_normals",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "blue vase, sink, refrigerator, white bowl",
+    "B": "white bowl, blue vase, refrigerator, sink",
+    "C": "blue vase, white bowl, sink, refrigerator",
+    "D": "sink, white bowl, refrigerator, blue vase"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "811f8a3d9390b7ee760cf1657312b330e02d785f81ec4f75e4a4eec2cae64c33",
+  "caption": "ORACLE SURFACE NORMAL MAP (same camera pose and field of view as Oracle RGB):\nColors encode surface orientation, not object color or distance. RGB channels encode normal components along camera-right (R), camera-up (G), and camera-forward (B): 0 = -1, about 128 = 0, and 255 = +1. Higher R/G/B means a stronger rightward/upward/forward component; a surface facing the camera has low B. Black means missing geometry. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-217\\oracle_surface_normals_sv.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4648,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 392
+      }
+    ],
+    "thoughts_token_count": 5948,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 10597,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 23.580541999996058,
+  "completed_at": "2026-10-06T17:43:08-04:00"
+}

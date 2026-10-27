@@ -1,0 +1,108 @@
+{
+  "row_index": 12,
+  "question_id": "FOB4-0192-Q6",
+  "trajectory_id": "FOB4-0192",
+  "scan_id": "zsNo4HB9uLZ",
+  "route_variant": "new_straight",
+  "question_type": 6,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "final_image_kind": "lookback",
+  "question": "If I walk past the hallway, then turn to face my starting point, where is the black shelf relaitve to me?",
+  "answer_choices": {
+    "B": "right",
+    "A": "left",
+    "C": "behind",
+    "D": "front"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "B": "C",
+    "A": "B",
+    "C": "D",
+    "D": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0192\\start_view.png",
+      "sha256": "3ad12166d8c19e61e0eb0f89dad243c68da5a04119a35315b153450ac7d933f2"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0192\\step_01_rgb.png",
+      "sha256": "675ed0b40e0dd40f1322336cc5cd90d13a4c1d2addef1ddbaf66994c165666ab"
+    },
+    {
+      "label": "Step 2",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0192\\step_02_rgb.png",
+      "sha256": "099c30b171018cc5ceed77c3c23bd364667b355e5d1c1713348a22adaa874178"
+    },
+    {
+      "label": "Step 3 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0192\\step_03_rgb.png",
+      "sha256": "68cc6963f440e96c70f2bb10948a985b9be28211f532935c988ed4687cfbfba3"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0192\\oracle_lookback.png",
+      "sha256": "165c016f60af7258a3f9a9d4a95bed84481dffe76c431481b0444e9aba13b59d"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "B",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1148,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 84
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 346,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1495,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "completed_at": "2026-09-24T17:28:25-04:00"
+}

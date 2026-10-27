@@ -1,0 +1,199 @@
+{
+  "row_index": 26,
+  "question_id": "FO-0039-Q3",
+  "trajectory_id": "FO-0039",
+  "scan_id": "7y3sRwLe3Va",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk to the oven, then turn back to face where I come from, would both white bowl on dining table still be directly visible?",
+  "answer_choices": {
+    "C": "partially visible",
+    "A": "outside of view",
+    "B": "completely blocked",
+    "D": "clearly visible"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "C": "B",
+    "A": "D",
+    "B": "C",
+    "D": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\step_02_rgb.png"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\oracle_lookback.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "8ec6dbdb2735156f02ab76b7d6ff91a8a784723595f77bfd05abdec4b0ab09b4",
+    "2f3a73d4a7ce371a5137c636727f5d4bee936bebdedbe60a7f6ea8f5d827c0bb"
+  ],
+  "endpoint_modalities": {
+    "depth": {
+      "kind": "depth",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\oracle_lookback_depth.png",
+      "sha256": "0db6f4cb0d2436a0c19bea1b6726d34ecf24d52af47f26d8a3abe6a9723b9081",
+      "final_image_kind": "lookback",
+      "pose": {
+        "viewpoint_id": "afad225acfbe48f39cf2894c61d9e714",
+        "heading_rad": 2.6293961826875947,
+        "elevation_rad": 0.0001325149168853312,
+        "vfov_degrees": 60.0,
+        "width": 640,
+        "height": 480
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\oracle_lookback_aligned_manifest.json",
+      "color_scale": {
+        "near_m": 1.1565,
+        "far_m": 9.509,
+        "colormap": "reversed OpenCV TURBO",
+        "normalization": "2nd to 98th percentile per image; clipped",
+        "black": "invalid depth",
+        "measurement": "camera-forward z-depth, not radial range"
+      }
+    },
+    "surface_normals": {
+      "kind": "surface_normals",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\oracle_lookback_surface_normals.png",
+      "sha256": "2b5dd609cb820af0c369bbad6af00c0481d8f06bf542b7056ff117e79b82c13d",
+      "final_image_kind": "lookback",
+      "pose": {
+        "viewpoint_id": "afad225acfbe48f39cf2894c61d9e714",
+        "heading_rad": 2.6293961826875947,
+        "elevation_rad": 0.0001325149168853312,
+        "vfov_degrees": 60.0,
+        "width": 640,
+        "height": 480
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\oracle_lookback_aligned_manifest.json",
+      "encoding": {
+        "rgb_axes": [
+          "camera-right",
+          "camera-up",
+          "camera-forward"
+        ],
+        "channel_formula": "uint8(clip((component + 1) * 127.5, 0, 255))",
+        "black": "missing geometry"
+      }
+    },
+    "panorama": {
+      "kind": "panorama",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\oracle_lookback_panorama.png",
+      "sha256": "41c6e58ef4a4d2f21aa1381316810a128d135c474b4555c3ac5d19dc625da77c",
+      "final_image_kind": "lookback",
+      "pose": {
+        "viewpoint_id": "afad225acfbe48f39cf2894c61d9e714",
+        "heading_rad": 2.6293961826875947,
+        "elevation_rad": 0.0001325149168853312,
+        "vfov_degrees": 60.0,
+        "width": 640,
+        "height": 480
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\oracle_lookback_aligned_manifest.json",
+      "orientation": {
+        "center": "front",
+        "quarter_width": "left",
+        "three_quarter_width": "right",
+        "edges": "behind; horizontal wrap",
+        "pose_alignment": "source RGB camera-centered spherical rotation"
+      }
+    }
+  },
+  "condition": "start_final_depth",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_endpoint_geometry_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT DEPTH MAP (same camera pose and field of view as FINAL VIEW):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.157 m (near/red) to 9.509 m (far/purple), with values outside this range clipped. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": true,
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "depth"
+  ],
+  "endpoint_modality": {
+    "kind": "depth",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\oracle_lookback_depth.png",
+    "sha256": "0db6f4cb0d2436a0c19bea1b6726d34ecf24d52af47f26d8a3abe6a9723b9081",
+    "final_image_kind": "lookback",
+    "pose": {
+      "viewpoint_id": "afad225acfbe48f39cf2894c61d9e714",
+      "heading_rad": 2.6293961826875947,
+      "elevation_rad": 0.0001325149168853312,
+      "vfov_degrees": 60.0,
+      "width": 640,
+      "height": 480
+    },
+    "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0039\\modalities\\oracle_lookback_aligned_manifest.json",
+    "color_scale": {
+      "near_m": 1.1565,
+      "far_m": 9.509,
+      "colormap": "reversed OpenCV TURBO",
+      "normalization": "2nd to 98th percentile per image; clipped",
+      "black": "invalid depth",
+      "measurement": "camera-forward z-depth, not radial range"
+    }
+  },
+  "input_signature": "f5f66acd542d37aeefff46c794e02a690bea4329e0ace7e36ba08d0e4e283292",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3453,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 261
+      }
+    ],
+    "thoughts_token_count": 1239,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4692,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-16T18:02:01-04:00"
+}

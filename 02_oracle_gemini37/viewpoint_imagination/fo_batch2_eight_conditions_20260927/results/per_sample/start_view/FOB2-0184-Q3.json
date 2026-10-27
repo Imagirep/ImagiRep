@@ -1,0 +1,144 @@
+{
+  "row_index": 211,
+  "question_id": "FOB2-0184-Q3",
+  "trajectory_id": "FOB2-0184",
+  "scan_id": "JeFG25nYj2p",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk to the round table, then turn back to face where I come from, would the armchair still be directly visible?",
+  "answer_choices": {
+    "B": "clearly visible",
+    "A": "completely blocked",
+    "C": "partially visible",
+    "D": "outside of view"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "B": "A",
+    "A": "C",
+    "C": "B",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0184\\start_view.png",
+      "sha256": "d620f29ced986fbde8535e4fbbac859518ab59f3c0849b4f97ef3c03c90ff0f6"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0184\\step_01_rgb.png",
+      "sha256": "bd42a32b8bafb720622502b5edf3215502ffac6896b07803bb6806eeec7f04f8"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0184\\step_02_rgb.png",
+      "sha256": "de259fc13aa8e099abfaae45dd1e2888e119f079fda6fa3ec97690d86669ee61"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0184\\oracle_lookback.png",
+      "sha256": "32131246a21413dd56b340a97ea96bde340c910de24be510d951741757d7ca3f"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "category": "visibility",
+  "category_label": "Visibility (incl. object selection by visibility)",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0184\\oracle_lookback_depth.png",
+      "sha256": "76d9a216a679cc791db61e6e0934f75ad78cb389427cc6c27e6b3251aa69684b",
+      "color_scale": {
+        "near_m": 1.86325,
+        "far_m": 9.31625
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0184\\oracle_lookback_surface_normals.png",
+      "sha256": "62c0e9eb559545463de3d98d941fbe5fca65dcb6ba914011bfafda75080aa4fb"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0184\\oracle_lookback_panorama.png",
+      "sha256": "42b053f27e83cd9b95babffceb427079e79914233e7d89d09d084a08035f9a7a"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0184\\topdown_lookback_with_path.png",
+      "sha256": "0d134fb08f51945989ee45c28e3f6187b2bd33e552f2ac066ad474867dfd0471"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0184\\trajectory_lookback.txt",
+      "sha256": "2028ca41534f119a0ec4c163644cd55260a8a380a34bfded02cdd04dcd210503"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0184\\trajectory_lookback.mp4",
+      "sha256": "7f90ccc1214d47db92ba67996281f2b6f562c2cdd41dab3839b440e8f4ebe681"
+    }
+  },
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:"
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "B",
+  "correct": true,
+  "input_signature": "f78dd9976e6ece91c0816877e1f25e7a8b93be779931029d047dcfedca3cd37e",
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1153,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 89
+      }
+    ],
+    "thoughts_token_count": 302,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1456,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_started_at": "2026-09-27T23:31:43.484-04:00",
+  "request_duration_seconds": 3.245487100095488,
+  "completed_at": "2026-09-27T23:31:46.730-04:00",
+  "request_part_count": 3,
+  "request_mime_types": [
+    "image/png"
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "row_index": 166,
+  "question_id": "FO-0081-Q4",
+  "trajectory_id": "FO-0081",
+  "scan_id": "7y3sRwLe3Va",
+  "question_type": 4,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk forward a few steps and face the way I move, which object(s) would be closest to me?",
+  "answer_choices": {
+    "B": "sink",
+    "A": "cabinet with glass doors",
+    "C": "white counter with a pot on it",
+    "D": "glass doors"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "cabinet with glass doors",
+    "B": "sink",
+    "C": "white counter with a pot on it",
+    "D": "glass doors"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "B": "B",
+    "A": "A",
+    "C": "C",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0081\\image_1.png"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0081\\modalities\\step_01_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "56d5ddc7648ff1e437a827b81614c5c8cbedef6e0a2760a822d28275ec5646de",
+    "cfb1aff7f3354242c88e27b1be7b73e3fa91065649dd870cf24885c4b77faa0e"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0081\\modalities\\topdown_with_path.png",
+      "sha256": "cb24047ff1a4871abf750addc05f92798809ca3d8d3698f246cd5c1b0652fcff"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0081\\modalities\\trajectory.txt",
+      "sha256": "8e97204627e0a59d994d449045a110a8dcf151d61d67bfd20494b26212ea7f39"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0081\\modalities\\trajectory.mp4",
+      "sha256": "3a179f4426c42c8c1db0a4909d92481fe5c4a913d0dc8cc3ba95bbe6e0a589fc",
+      "frame_count": 42,
+      "fps": 12.0,
+      "duration_seconds": 3.5,
+      "bytes": 196172,
+      "final_rgb_correlation": 0.9989259482721844
+    }
+  },
+  "condition": "start_final_video",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "modality_prompt": "ADDITIONAL TRAJECTORY VIDEO:\nThe video shows the movement from start to the final state, including camera turns. Translation uses discrete connectivity hops. Use it together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "B",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "additional_modality": {
+    "kind": "video",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0081\\modalities\\trajectory.mp4",
+    "sha256": "3a179f4426c42c8c1db0a4909d92481fe5c4a913d0dc8cc3ba95bbe6e0a589fc",
+    "frame_count": 42,
+    "fps": 12.0,
+    "duration_seconds": 3.5,
+    "bytes": 196172,
+    "final_rgb_correlation": 0.9989259482721844
+  },
+  "input_signature": "b3a04e324984f8fd15fe7e3c48f1eae8cd20001e12ef906d4bf0f661904003f1",
+  "video_sampling_fps": 12,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4963,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 2646
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 189
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 1348,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6312,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "completed_at": "2026-09-16T17:44:09-04:00"
+}

@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-138-Q3", "method": "mj", "variant": "top3+label", "prediction": "yellow chair, sink, bed, window", "gold": "yellow chair, sink, bed, window", "correct": true, "n_imagined": 2, "category": "ordering", "stored_result": "correct"}

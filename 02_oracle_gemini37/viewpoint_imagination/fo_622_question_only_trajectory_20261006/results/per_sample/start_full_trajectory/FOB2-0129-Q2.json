@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB2-0129-Q2",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk near the tall armchair, then stop and face the way I go, which direction would have the closest obstacle besides the armchair?",
+  "answer_choices": {
+    "B": "right",
+    "A": "left",
+    "C": "behind",
+    "D": "front"
+  },
+  "gold_answer": "B",
+  "show_lookback": false,
+  "prediction": "B",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0129/start_view.png",
+      "sha256": "b2ae73581d755016fad5945c89978df986dac6230fce8088aaf78ec70b035ede"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0129/step_01_rgb.png",
+      "sha256": "fbd4fdc730dd7f1352be3fe3cc083c22ab2657882dacb60006cea3d7bfa09f10"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0129/step_02_rgb.png",
+      "sha256": "b28abd576a5420322e26c9887973ec1b8e0132c60100e1815088a33d95c9f71e"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3336,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 144
+      }
+    ],
+    "thoughts_token_count": 856,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4193,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 6.0797928999963915,
+  "completed_at": "2026-10-06T14:28:05-04:00"
+}

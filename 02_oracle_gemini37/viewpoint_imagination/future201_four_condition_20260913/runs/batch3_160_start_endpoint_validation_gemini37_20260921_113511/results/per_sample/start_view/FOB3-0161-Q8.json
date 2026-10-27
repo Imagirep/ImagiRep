@@ -1,0 +1,94 @@
+{
+  "row_index": 80,
+  "question_id": "FOB3-0161-Q8",
+  "trajectory_id": "FOB3-0161",
+  "scan_id": "rPc6DW4iMge",
+  "question_type": 8,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk near the sink, facing the direction I go, which object(s) would be in front of me?",
+  "answer_choices": {
+    "C": "ovens",
+    "A": "three-tier tray",
+    "B": "two-tier tray",
+    "D": "black table"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "ovens",
+    "B": "two-tier tray",
+    "C": "three-tier tray",
+    "D": "black table"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "C": "A",
+    "A": "C",
+    "B": "B",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0161\\start_view.png",
+      "sha256": "79ef7d9388d2597d239ab687f6bfe91e86d82f801857a0090bc5038c99d3877b"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0161\\step_01_rgb.png",
+      "sha256": "972060eba17a2c9ba04130e6c6c604a20844d5a29076fb399002606951375807"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0161\\step_02_rgb.png",
+      "sha256": "7008bcdfccc80be2930123973d6d0157ffc264d675709bdb883988b64f8e38b5"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1154,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 90
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 953,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2108,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-21T11:40:25-04:00"
+}

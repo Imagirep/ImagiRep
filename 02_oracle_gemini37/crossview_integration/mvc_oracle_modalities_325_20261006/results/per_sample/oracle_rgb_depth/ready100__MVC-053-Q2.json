@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-053-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-053-Q2",
+  "resource_id": "MVC-053",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is farthest from closest lamp in Image 1?",
+  "answer_choices": {
+    "A": "round table",
+    "B": "bookshelf",
+    "C": "podium",
+    "D": "piano"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "96cd118756fb44ee3ad7831cdc98bed0f06569b597af989f54585d694fc0555d",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.071 m (near/red) to 6.955 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-053\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4600,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 344
+      }
+    ],
+    "thoughts_token_count": 4128,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8729,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 18.290966599990497,
+  "completed_at": "2026-10-06T17:37:18-04:00"
+}

@@ -1,0 +1,94 @@
+{
+  "row_index": 207,
+  "question_id": "FOB3-0046-Q4",
+  "trajectory_id": "FOB3-0046",
+  "scan_id": "JmbYfDe2QKZ",
+  "question_type": 4,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk forward till I'm near the dining table, facing the way go, which object(s) would be closest to me?",
+  "answer_choices": {
+    "A": "decorative cup",
+    "B": "blue and yellow painting",
+    "C": "decorative stone",
+    "D": "cabinet"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "decorative stone",
+    "B": "cabinet",
+    "C": "blue and yellow painting",
+    "D": "decorative cup"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "A": "D",
+    "B": "C",
+    "C": "A",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0046\\start_view.png",
+      "sha256": "b773731e9ee9d7bb50683d59bac6d24363767872d8177be271126e98f94c9545"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0046\\step_01_rgb.png",
+      "sha256": "dddf2ca1a6b29c032b5173e1c1cef9047af3b5c365b7651b37ddf6f895adbfa2"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0046\\step_02_rgb.png",
+      "sha256": "14542736bb2fd5330683adf57ec586a2929846acd8d11a9ece1bab93cae4e090"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1156,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 92
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 736,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1893,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-21T11:43:49-04:00"
+}

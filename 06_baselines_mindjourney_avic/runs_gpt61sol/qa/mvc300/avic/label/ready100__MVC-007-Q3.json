@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-007-Q3", "method": "avic", "variant": "label", "prediction": "glass vase, dishwasher, stove, refrigerator", "gold": "dishwasher, glass vase, stove, refrigerator", "correct": false, "n_imagined": 1, "category": "ordering", "stored_result": "wrong"}

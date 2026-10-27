@@ -1,0 +1,1 @@
+{"qid": "FO-0040-Q4", "method": "mj", "variant": "top3+label", "prediction": "fireplace", "gold": "vase on the table", "correct": false, "n_imagined": 3, "category": "nearest_object", "stored_result": "wrong"}

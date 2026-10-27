@@ -1,0 +1,181 @@
+{
+  "question_id": "FO-0023-Q2",
+  "motion_text": "I move a few steps back and to the left, then look through the doors.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "back",
+      "direction": "left"
+    },
+    {
+      "op": "face",
+      "target": "open double doors with painted floral panels leading into the living room"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FO-0023-Q2",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": 0.2764303127023581,
+        "y": -0.15959711545087873,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.34641016151377557,
+        -0.19999999999999984
+      ]
+    ],
+    "x": 0.34641016151377557,
+    "y": -0.19999999999999984,
+    "yaw": -2.617993877991495,
+    "pitch": 0.0,
+    "travel_yaw": -2.617993877991495
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.2764303127023581,
+      -0.15959711545087873
+    ]
+  ],
+  "final": {
+    "x": 0.2764303127023581,
+    "y": -0.15959711545087873,
+    "yaw_deg": 20.255877470102007,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "back",
+        "direction": "left"
+      },
+      "x": 0.34641016151377557,
+      "y": -0.19999999999999984,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face",
+        "target": "open double doors with painted floral panels leading into the living room"
+      },
+      "x": 0.34641016151377557,
+      "y": -0.19999999999999984,
+      "yaw": 0.35353175473381926,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": 0.2764303127023581,
+      "y": -0.15959711545087873,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.2764303127023581,
+      "y": -0.15959711545087873,
+      "yaw": 0.35353175473381926,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "back": true,
+      "end": [
+        0.34641016151377557,
+        -0.19999999999999984
+      ],
+      "blocked": true
+    },
+    {
+      "ground": "open double doors with painted floral panels leading into the living room",
+      "method": "initial_photo",
+      "box": [
+        219,
+        159,
+        1000,
+        1000
+      ],
+      "point_m": [
+        -3.386794443650161,
+        1.1776869849773859,
+        -0.4837173451047062
+      ]
+    }
+  ],
+  "m_per_unit": 1.5534567832946777,
+  "seconds": 6.5511815547943115,
+  "planning_m_per_unit": 1.94672288268619,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.7979855772543942
+}

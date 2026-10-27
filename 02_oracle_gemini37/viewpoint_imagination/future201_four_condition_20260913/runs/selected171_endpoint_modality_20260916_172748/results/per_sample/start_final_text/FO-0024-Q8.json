@@ -1,0 +1,122 @@
+{
+  "row_index": 40,
+  "question_id": "FO-0024-Q8",
+  "trajectory_id": "FO-0024",
+  "scan_id": "5LpN3gDmAk7",
+  "question_type": 8,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I move a few steps forward and to the right, then face the direction I move, which object(s) would be behind me?",
+  "answer_choices": {
+    "B": "counter",
+    "A": "black and white pillow",
+    "C": "tv",
+    "D": "brown pot"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "counter",
+    "B": "brown pot",
+    "C": "tv",
+    "D": "black and white pillow"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "B": "A",
+    "A": "D",
+    "C": "C",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0024\\image_1.png"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0024\\modalities\\step_01_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "33b0f1a806206827971e2f023873ef352f5eefe28fb21925543086f69794d062",
+    "7d8f23b32b470ea97aa9b720a99a744805297b3cf02cc1c85efdcabd22d5f578"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0024\\modalities\\topdown_with_path.png",
+      "sha256": "9f0e555070a617e2bf131ca007e013536fc985616251a9c392634c24a4f6f078"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0024\\modalities\\trajectory.txt",
+      "sha256": "54d240e37106f6fbb45e8bd561c1e7f922b63d612a66002e2220290584e4fd28"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0024\\modalities\\trajectory.mp4",
+      "sha256": "3545d929fca1aa0355ec40c79a8abf2f938c46a4d4e03fe93052984e142af779",
+      "frame_count": 45,
+      "fps": 12.0,
+      "duration_seconds": 3.75,
+      "bytes": 285500,
+      "final_rgb_correlation": 0.9997429463361392
+    }
+  },
+  "condition": "start_final_text",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "modality_prompt": "ADDITIONAL TEXT TRAJECTORY:\nThe description gives the movement and camera poses from start to final state. Headings are in degrees: 0 faces +Y; positive rotation is clockwise toward +X. Use it together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "B",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "additional_modality": {
+    "kind": "text",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0024\\modalities\\trajectory.txt",
+    "sha256": "54d240e37106f6fbb45e8bd561c1e7f922b63d612a66002e2220290584e4fd28"
+  },
+  "input_signature": "08ec1f30b91a0a8a29af25d88857fa2b066e98c05d2adaea7bcb4b553d30f7ee",
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2509,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 381
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 1190,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3700,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "completed_at": "2026-09-16T17:35:46-04:00"
+}

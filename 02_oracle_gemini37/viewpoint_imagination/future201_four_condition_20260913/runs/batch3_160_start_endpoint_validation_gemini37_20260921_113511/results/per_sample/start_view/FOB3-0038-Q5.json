@@ -1,0 +1,88 @@
+{
+  "row_index": 104,
+  "question_id": "FOB3-0038-Q5",
+  "trajectory_id": "FOB3-0038",
+  "scan_id": "YFuZgdQ5vWj",
+  "question_type": 5,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk forward, walk to the counter and face the direction I go, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "D": "refrigerator",
+    "A": "white sofa",
+    "B": "potted plant",
+    "C": "gray armchair"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "potted plant",
+    "B": "gray armchair",
+    "C": "white sofa",
+    "D": "refrigerator"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "D": "D",
+    "A": "C",
+    "B": "A",
+    "C": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0038\\start_view.png",
+      "sha256": "b398154b4506b141393059691be5d1f2977ec3b0e3f68a1be62534fb6aefe8f0"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0038\\step_01_rgb.png",
+      "sha256": "06403c49e9e5541a52534bf34ad029fe165c6bbd3e681352d1eece90b2775a18"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": false,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1152,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 88
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 1410,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2563,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-21T11:41:16-04:00"
+}

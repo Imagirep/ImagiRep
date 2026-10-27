@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-085-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-085-Q1",
+  "resource_id": "MVC-085",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to fireplace in Image 1?",
+  "answer_choices": {
+    "A": "potted plant",
+    "B": "white armchair",
+    "C": "brown armchair",
+    "D": "white lamp"
+  },
+  "gold_answer": "C",
+  "prediction": "B",
+  "correct": false,
+  "signature": "ac3b811df7bcdb5b8d21c4b19162d7d0dc109497c33e8f8b1d9b5af5ff10f600",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.604 m (near/red) to 9.990 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-085\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4602,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 346
+      }
+    ],
+    "thoughts_token_count": 3180,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7783,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 14.421459499993944,
+  "completed_at": "2026-10-06T17:37:45-04:00"
+}

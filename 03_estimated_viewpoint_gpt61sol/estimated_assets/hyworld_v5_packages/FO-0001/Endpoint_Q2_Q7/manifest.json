@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FO-0001-Q2",
+  "motion_text": "I walk forward into the room, then walk to the brown chair and face the brown chair.",
+  "view_variant": "endpoint",
+  "frames": 117,
+  "fps": 12,
+  "total_distance_m": 4.727803874770187,
+  "depth_display_range_scene_units": [
+    0.6671800708770752,
+    4.339051189422609
+  ],
+  "depth_color_scale_m": {
+    "near_m": 0.7618595112331717,
+    "far_m": 4.954805400652158
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.3383643391442064 m over generated floor distance",
+  "m_per_unit": 1.8218867778778076,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 21.89167356491089
+}

@@ -1,0 +1,137 @@
+{
+  "row_index": 164,
+  "question_id": "FO-0029-Q3",
+  "trajectory_id": "FO-0029",
+  "scan_id": "2t7WUuJeko7",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk to the door, then turn back to face where I come from, would the table covered with white tablecloth still be directly visible?",
+  "answer_choices": {
+    "C": "outside of view",
+    "A": "clearly visible",
+    "B": "partially visible",
+    "D": "completely blocked"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "C": "D",
+    "A": "A",
+    "B": "B",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0029\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0029\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0029\\modalities\\step_02_rgb.png"
+    },
+    {
+      "label": "Step 3 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0029\\modalities\\step_03_rgb.png"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0029\\modalities\\oracle_lookback.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "ee102dc69efe921ed66cdc3671e0639e10b2251b0985d0a20b82f1432636b254",
+    "e7382ca0eca8ab786c30829ceb6e910f9d2da2fa5f72507e5906b444f1bf6bcb"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0029\\modalities\\topdown_lookback_with_path.png",
+      "sha256": "c28c51fd504231b2db5be2d87dcdc3698d01547cbb381fef4b474aec78146964"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0029\\modalities\\trajectory_lookback.txt",
+      "sha256": "b7c90f6d3245f36c59d13165c7271f602b4ca1bf11d779ce3ada0f2381144e3d"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0029\\modalities\\trajectory_lookback.mp4",
+      "sha256": "d82b3f060e80422cdb1250cabf6297c4f1238fa576598a94ac0c4a650e6670bc",
+      "frame_count": 118,
+      "fps": 12.0,
+      "duration_seconds": 9.833333333333334,
+      "bytes": 751232,
+      "final_rgb_correlation": 0.9993871065040438
+    }
+  },
+  "condition": "start_final_text",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "modality_prompt": "ADDITIONAL TEXT TRAJECTORY:\nThe description gives the movement and camera poses from start to final state. Headings are in degrees: 0 faces +Y; positive rotation is clockwise toward +X. Use it together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "additional_modality": {
+    "kind": "text",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0029\\modalities\\trajectory_lookback.txt",
+    "sha256": "b7c90f6d3245f36c59d13165c7271f602b4ca1bf11d779ce3ada0f2381144e3d"
+  },
+  "input_signature": "fe05a9e3369b5f724471b7bf7bb08874dad5567af8bdec9549cca17f4526714b",
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2766,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 638
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 1802,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4569,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-16T17:44:08-04:00"
+}

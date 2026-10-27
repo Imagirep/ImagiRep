@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB4-0112-Q3",
+  "motion_text": "I walk near the wooden table, then turn to face my starting point.",
+  "view_variant": "lookback",
+  "frames": 127,
+  "fps": 12,
+  "total_distance_m": 5.406698185964903,
+  "depth_display_range_scene_units": [
+    2.414646768569946,
+    8.485953216552733
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.876735793607016,
+    "far_m": 6.595537016708691
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.1715541481081004 m over generated floor distance",
+  "m_per_unit": 1.7940977215766907,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 34.398720264434814
+}

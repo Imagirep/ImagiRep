@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-020-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-020-Q1",
+  "resource_id": "MVC-020",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to white chair in Image 2?",
+  "answer_choices": {
+    "A": "white chair",
+    "B": "potted plant",
+    "C": "tv",
+    "D": "black table"
+  },
+  "gold_answer": "D",
+  "prediction": "A",
+  "correct": false,
+  "signature": "e547c2fb694a07aeeab4a38ae6743aba9c1e086abeed48354dd7368d5bea03b7",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.420 m (near/red) to 4.914 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-020\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4602,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 346
+      }
+    ],
+    "thoughts_token_count": 508,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5111,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 5.816302300008829,
+  "completed_at": "2026-10-06T17:36:36-04:00"
+}

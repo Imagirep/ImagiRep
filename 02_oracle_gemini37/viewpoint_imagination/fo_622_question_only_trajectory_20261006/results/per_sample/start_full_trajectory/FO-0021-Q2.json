@@ -1,0 +1,70 @@
+{
+  "question_id": "FO-0021-Q2",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the little wooden table and turn right, which direction would have the closest obstacle, other than the little wooden table?",
+  "answer_choices": {
+    "B": "front",
+    "A": "behind",
+    "C": "right",
+    "D": "left"
+  },
+  "gold_answer": "B",
+  "show_lookback": false,
+  "prediction": "B",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "benchmark_release/items/FO-0021/image_1.png",
+      "sha256": "963e7f2612f1c735984c77856ebdc4ae2c27f4b7b7a76d9db066f4d8c80a0957"
+    },
+    {
+      "path": "benchmark_release/items/FO-0021/modalities/step_01_rgb.png",
+      "sha256": "967d77cd25770b3c1aa29c9c2a6de962f790bc588c7bda8a6fa161d0c59178cf"
+    },
+    {
+      "path": "benchmark_release/items/FO-0021/modalities/step_02_rgb.png",
+      "sha256": "e49b47098867fbcbc0f02c51de0fcdc6df35886cd248759411a2349e563ac774"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3335,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 143
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 2467,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5803,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 12.219418000007863,
+  "completed_at": "2026-10-06T14:12:05-04:00"
+}

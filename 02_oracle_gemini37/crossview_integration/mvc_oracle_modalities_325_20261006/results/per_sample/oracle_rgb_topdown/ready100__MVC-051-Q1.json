@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-051-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-051-Q1",
+  "resource_id": "MVC-051",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to painting in Image 1?",
+  "answer_choices": {
+    "A": "black armchair",
+    "B": "decorative paintings",
+    "C": "sink",
+    "D": "long black sofa"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "0910edc5261ae20c7a44a4cb54c970b216f023e94348eabe4441b45b7e05cdb5",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-051\\order_21\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4596,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 315
+      }
+    ],
+    "thoughts_token_count": 1380,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5977,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.79502419999335,
+  "completed_at": "2026-10-06T16:53:07-04:00"
+}

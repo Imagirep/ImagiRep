@@ -1,0 +1,231 @@
+{
+  "question_id": "FOB2-0024-Q5",
+  "motion_text": "I walk to the cabinet and turn right.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the wooden cabinet against the stone wall",
+      "relation": "to"
+    },
+    {
+      "op": "turn",
+      "direction": "right"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0024-Q5",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.85,
+        "y": 0.06419440051221947,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -4.85,
+        0.06419440051221947
+      ]
+    ],
+    "x": -4.85,
+    "y": 0.06419440051221947,
+    "yaw": 0.013235186011178764,
+    "pitch": 0.0,
+    "travel_yaw": 0.013235186011178764
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -4.85,
+      0.06419440051221947
+    ]
+  ],
+  "final": {
+    "x": -4.85,
+    "y": 0.06419440051221947,
+    "yaw_deg": 80.75832029951114,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the wooden cabinet against the stone wall",
+        "relation": "to"
+      },
+      "x": -4.85,
+      "y": 0.06419440051221947,
+      "yaw": 0.013235186011178764,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "right"
+      },
+      "x": -4.85,
+      "y": 0.06419440051221947,
+      "yaw": 1.4094985876066426,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.85,
+      "y": 0.06419440051221947,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.85,
+      "y": 0.06419440051221947,
+      "yaw": 0.013235186011178764,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.85,
+      "y": 0.06419440051221947,
+      "yaw": 1.4094985876066426,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the wooden cabinet against the stone wall",
+      "method": "initial_photo",
+      "box": [
+        609,
+        429,
+        823,
+        604
+      ],
+      "point_m": [
+        -5.79617514797524,
+        0.40899302150940714,
+        -1.489420607083064
+      ]
+    },
+    {
+      "overlap": "the wooden cabinet against the stone wall",
+      "n_points": 207,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 5.0,
+          "stop_m": 1.0070419552767054,
+          "visible_frac": 0.7439613526570048,
+          "center_deg": -1.7658140148736292,
+          "width_deg": 49.19392917212963,
+          "distance_m": 1.2434519383265596
+        },
+        {
+          "sector": 4,
+          "path_m": 5.300000000000001,
+          "stop_m": 1.0476304847057607,
+          "visible_frac": 0.8115942028985508,
+          "center_deg": -3.0163649201878657,
+          "width_deg": 44.19715551887428,
+          "distance_m": 1.3080753453336027
+        },
+        {
+          "sector": 2,
+          "path_m": 5.7,
+          "stop_m": 0.7041859130309026,
+          "visible_frac": 0.3333333333333333,
+          "center_deg": -19.17156637471979,
+          "width_deg": 69.00204772997243,
+          "distance_m": 1.0878419317545267
+        },
+        {
+          "sector": 5,
+          "path_m": 6.300000000000001,
+          "stop_m": 0.637401410507373,
+          "visible_frac": 0.1642512077294686,
+          "center_deg": -0.5933276963487368,
+          "width_deg": 34.81122547259423,
+          "distance_m": 1.1269976323255655
+        },
+        {
+          "sector": 1,
+          "path_m": 6.5,
+          "stop_m": 0.8465115620794774,
+          "visible_frac": 0.17391304347826086,
+          "center_deg": 21.533625075598465,
+          "width_deg": 43.65291013009909,
+          "distance_m": 0.8642875397832495
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 3.477692641537683,
+  "seconds": 7.198469877243042
+}

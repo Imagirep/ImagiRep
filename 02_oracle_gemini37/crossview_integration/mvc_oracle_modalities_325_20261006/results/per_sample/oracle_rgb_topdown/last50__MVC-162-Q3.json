@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-162-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-162-Q3",
+  "resource_id": "MVC-162",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "black and white painting, white ottoman, plant in a white pot, kitchen counter",
+    "B": "black and white painting, plant in a white pot, kitchen counter, white ottoman",
+    "C": "white ottoman, black and white painting, plant in a white pot, kitchen counter",
+    "D": "kitchen counter, white ottoman, plant in a white pot, black and white painting"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "7742fed202023712a7736c47789e98fdee39b761d928fb3a51e5dc08bdce9c03",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-162\\order_21\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4660,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 379
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      }
+    ],
+    "thoughts_token_count": 3647,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8308,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 19.84419170000183,
+  "completed_at": "2026-10-06T17:29:34-04:00"
+}

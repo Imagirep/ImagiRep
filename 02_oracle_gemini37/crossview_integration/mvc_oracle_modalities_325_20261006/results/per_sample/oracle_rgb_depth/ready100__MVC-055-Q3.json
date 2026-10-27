@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-055-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-055-Q3",
+  "resource_id": "MVC-055",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "wooden cabinet, pool table, tv, potted plant",
+    "B": "wooden cabinet, pool table, potted plant, tv",
+    "C": "potted plant, pool table, wooden cabinet, tv",
+    "D": "potted plant, tv, wooden cabinet, pool table"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "1223d8aa6156803a2b71fe0d4d2ae60551fdfde43ab3ea648208e8132a4b0259",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.109 m (near/red) to 10.264 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-055\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4643,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 387
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 1419,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6063,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 7.269706399994902,
+  "completed_at": "2026-10-06T17:37:16-04:00"
+}

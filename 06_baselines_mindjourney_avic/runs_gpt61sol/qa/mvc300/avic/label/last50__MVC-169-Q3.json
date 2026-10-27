@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-169-Q3", "method": "avic", "variant": "label", "prediction": "tv, tub, stool, mirror", "gold": "stool, tub, mirror, tv", "correct": false, "n_imagined": 3, "category": "ordering", "stored_result": "wrong"}

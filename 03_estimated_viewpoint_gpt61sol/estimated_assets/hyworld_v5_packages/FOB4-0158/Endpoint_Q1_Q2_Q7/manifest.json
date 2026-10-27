@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB4-0158-Q1",
+  "motion_text": "I walk forward, walk to the ovens, then turn around.",
+  "view_variant": "endpoint",
+  "frames": 101,
+  "fps": 12,
+  "total_distance_m": 3.432057898045748,
+  "depth_display_range_scene_units": [
+    1.178276777267456,
+    7.852083587646483
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.5438774870324095,
+    "far_m": 10.28846134554035
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.788263218619477 m over generated floor distance",
+  "m_per_unit": 2.299131393432617,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 26.33740496635437
+}

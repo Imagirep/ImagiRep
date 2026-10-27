@@ -1,0 +1,90 @@
+{
+  "row_index": 75,
+  "question_id": "FOB3-0057-Q8",
+  "trajectory_id": "FOB3-0057",
+  "scan_id": "jtcxE69GiFV",
+  "question_type": 8,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk near the small white table, facing the direction I go, which object(s) would be in front of me and on my right?",
+  "answer_choices": {
+    "D": "bed",
+    "A": "picture frames",
+    "B": "purple cabinet",
+    "C": "tv"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "tv",
+    "B": "purple cabinet",
+    "C": "picture frames",
+    "D": "bed"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "D": "D",
+    "A": "C",
+    "B": "B",
+    "C": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0057\\start_view.png",
+      "sha256": "838049c5d1dca8a3c771749bed08b64f531d8103d1c78a7dc2a35a9e498a73e8"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0057\\step_01_rgb.png",
+      "sha256": "65f5d10567be3c5fb29b76b2df5e359f28029a2bb7b957b56462ca6e21b9bad7"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2272,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 144
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 1012,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3285,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-21T11:40:22-04:00"
+}

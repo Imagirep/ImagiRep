@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FO-0029-Q6",
+  "motion_text": "I walk to the door and turn to face my starting point.",
+  "view_variant": "lookback",
+  "frames": 107,
+  "fps": 12,
+  "total_distance_m": 3.4120126186942623,
+  "depth_display_range_scene_units": [
+    3.864705467224121,
+    9.475403060913084
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.6945415096745384,
+    "far_m": 4.154641005320175
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.3238192174553092 m over generated floor distance",
+  "m_per_unit": 1.0724730491638184,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 22.263916969299316
+}

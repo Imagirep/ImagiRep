@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-044-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-044-Q1",
+  "resource_id": "MVC-044",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_surface_normals",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to stools in Image 2?",
+  "answer_choices": {
+    "A": "round table",
+    "B": "potted plant",
+    "C": "fireplace",
+    "D": "framed painting"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "5eefa658a8a82c1998dc22f17aa2c87292d7da8efdf0b101b222909067b144cd",
+  "caption": "ORACLE SURFACE NORMAL MAP (same camera pose and field of view as Oracle RGB):\nColors encode surface orientation, not object color or distance. RGB channels encode normal components along camera-right (R), camera-up (G), and camera-forward (B): 0 = -1, about 128 = 0, and 255 = +1. Higher R/G/B means a stronger rightward/upward/forward component; a surface facing the camera has low B. Black means missing geometry. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-044\\oracle_surface_normals_sv.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4611,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 355
+      }
+    ],
+    "thoughts_token_count": 1919,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6531,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.01678799999354,
+  "completed_at": "2026-10-06T17:40:37-04:00"
+}

@@ -1,0 +1,152 @@
+{
+  "row_index": 27,
+  "question_id": "FOB4-0102-Q3",
+  "trajectory_id": "FOB4-0102",
+  "scan_id": "rqfALeAoiTq",
+  "route_variant": "new_straight",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "final_image_kind": "lookback",
+  "question": "If I walk forward, walk to the black counter, then turn to face my starting point, then turn to face my starting point, would the black stool still be directly visible?",
+  "answer_choices": {
+    "A": "partially visible",
+    "B": "completely blocked",
+    "C": "clearly visible",
+    "D": "outside of view"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "A": "B",
+    "B": "C",
+    "C": "A",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0102\\start_view.png",
+      "sha256": "05bf427e158a7adda6ba8941730d67656f1879e82d303af53fc1b048edcda416"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0102\\step_01_rgb.png",
+      "sha256": "8e3e3fe0ee5ee77832a7e0df85b666b5b73da99df2751bb9b12bd7e0c86221ee"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0102\\step_02_rgb.png",
+      "sha256": "20bd12c0c39ebd15b88af8bab571f7ae05a6414f1ac4ee327e5f79d824afb91a"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0102\\oracle_lookback.png",
+      "sha256": "a21f57d9ee6092b29c9b9065df151d8a7791a7c1264fac5c8abb18f9828ef847"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "category": "visibility",
+  "category_label": "Visibility (incl. object selection by visibility)",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0102\\oracle_lookback_depth.png",
+      "sha256": "cea5bdf2c8506af960097c61228f69f390ff439ad47563704f6d37edacc1034a",
+      "color_scale": {
+        "near_m": 1.4135,
+        "far_m": 7.71
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0102\\oracle_lookback_surface_normals.png",
+      "sha256": "16e7d262c1e39fab92e0fae591b6f08e46d2a8cd57cfee8eb29d1c14519fc741"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0102\\oracle_lookback_panorama.png",
+      "sha256": "d57c67133d40f6b2170440f38f94736e6e7debad3dda6649ce40b0c9f2d4fcbc"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0102\\topdown_lookback_with_path.png",
+      "sha256": "c142ff311c09fdb6e92c8333429b635b51a1bde043fc1357d7fd165123082e3e"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0102\\trajectory_lookback.txt",
+      "sha256": "45647731870346b0b60d325bc14417cbaed67bd38e73647dec22bfb79e9e13e4"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0102\\trajectory_lookback.mp4",
+      "sha256": "6ebea42f4b76587661b81f4b7b2c6374f4655b0ad72f9358e1e11599b3267eb3"
+    }
+  },
+  "condition": "start_final_topdown",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch4_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": true,
+  "input_signature": "10ac1b523ad83c81f46682b0c667c0d0af5e85b34d701f5502ca02ef8dcffb0c",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "topdown"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3418,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 201
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3217
+      }
+    ],
+    "thoughts_token_count": 1087,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4506,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T19:56:43.610-04:00",
+  "request_duration_seconds": 5.3213022999989334,
+  "completed_at": "2026-10-04T19:56:48.931-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

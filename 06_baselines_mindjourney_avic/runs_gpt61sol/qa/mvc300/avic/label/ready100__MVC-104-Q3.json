@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-104-Q3", "method": "avic", "variant": "label", "prediction": "ovens, stove, sink, silver pot", "gold": "ovens, stove, sink, silver pot", "correct": true, "n_imagined": 2, "category": "ordering", "stored_result": "correct"}

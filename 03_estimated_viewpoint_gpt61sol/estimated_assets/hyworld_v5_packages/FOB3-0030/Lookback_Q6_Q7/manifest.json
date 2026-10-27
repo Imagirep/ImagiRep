@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB3-0030-Q6",
+  "motion_text": "I walk to the black box, then turn to face my starting point.",
+  "view_variant": "lookback",
+  "frames": 178,
+  "fps": 12,
+  "total_distance_m": 7.458085290403557,
+  "depth_display_range_scene_units": [
+    0.7445464897155761,
+    7.480863504409793
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.491437101567267,
+    "far_m": 14.985279678773935
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.3553674021863742 m over generated floor distance",
+  "m_per_unit": 2.7414450645446777,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 33.55145621299744
+}

@@ -1,0 +1,76 @@
+{
+  "question_id": "FOB3-0079-Q6",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk forward to the end and turn to face my starting point, where is the pink lamp relative to me?",
+  "answer_choices": {
+    "D": "front",
+    "A": "behind",
+    "B": "left",
+    "C": "right"
+  },
+  "gold_answer": "D",
+  "show_lookback": true,
+  "prediction": "B",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0079/start_view.png",
+      "sha256": "aa80dd6f30318f26aafa8c8e1a92012300e5a5ef38cb566f9d9f8535f002e280"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0079/step_01_rgb.png",
+      "sha256": "11b1b0d767aa72f19f48cd8fcc251556627c6555a17b1de514d53e7829f43e81"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0079/step_02_rgb.png",
+      "sha256": "66ab38c68e554233a75a9f28199bd546f2bc8d9e56d15ea0bd3e108a96aa079c"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0079/oracle_lookback.png",
+      "sha256": "d52e06da8a55f737a37f5eae7889c1d9168ed5735d6de7305f55172918506b6e"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4403,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 147
+      }
+    ],
+    "thoughts_token_count": 700,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5104,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 4.508818000002066,
+  "completed_at": "2026-10-06T14:50:03-04:00"
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-173-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-173-Q3",
+  "resource_id": "MVC-173",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "white sofa, plant in orange pot, black chair, plant in white pot",
+    "B": "white sofa, plant in white pot, plant in orange pot, black chair",
+    "C": "white sofa, black chair, plant in white pot, plant in orange pot",
+    "D": "white sofa, plant in white pot, black chair, plant in orange pot"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "31590a7dab7d1f37a86a83ebd7cb159100fdbd5e0a36fdec931c2beee06ad2e3",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-173\\order_12\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4656,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 375
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      }
+    ],
+    "thoughts_token_count": 2204,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6861,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.645246100000804,
+  "completed_at": "2026-10-06T17:29:37-04:00"
+}

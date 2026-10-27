@@ -1,0 +1,104 @@
+{
+  "row_index": 171,
+  "question_id": "FOB4-0041-Q5",
+  "trajectory_id": "FOB4-0041",
+  "scan_id": "i5noydFURQK",
+  "route_variant": "old_straight",
+  "question_type": 5,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "final_image_kind": "lookback",
+  "question": "If I walk forward, walk to the door and turn to face my starting point, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "C": "large wooden table",
+    "A": "sofa",
+    "B": "lamp",
+    "D": "tv"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "lamp",
+    "B": "tv",
+    "C": "large wooden table",
+    "D": "sofa"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "C": "C",
+    "A": "D",
+    "B": "A",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0041\\start_view.png",
+      "sha256": "b7f1b5f2c595603faf736eea916de6c755c902a84240c04e37bdd5cd24c35907"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0041\\step_01_rgb.png",
+      "sha256": "1087494b0e17e399810be9a6870ef8f1291ff9282800f6196d234d9781c80aee"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0041\\step_02_rgb.png",
+      "sha256": "42bb558be36f13d5aa7671896b0a1685d322f312cc003ad7422ede04bf2c3b08"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0041\\oracle_lookback.png",
+      "sha256": "9056077832ff793bb41939c670f6fa1eac7c2bf828bbedf97bf0e13915abab9b"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2269,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 141
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 942,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3212,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-24T17:32:36-04:00"
+}

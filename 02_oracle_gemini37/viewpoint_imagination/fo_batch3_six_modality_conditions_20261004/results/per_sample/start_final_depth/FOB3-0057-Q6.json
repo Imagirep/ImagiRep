@@ -1,0 +1,138 @@
+{
+  "row_index": 67,
+  "question_id": "FOB3-0057-Q6",
+  "trajectory_id": "FOB3-0057",
+  "scan_id": "jtcxE69GiFV",
+  "question_type": 6,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk near the small white table, facing the direction I go, where is the tv relative to me?",
+  "answer_choices": {
+    "B": "behind",
+    "A": "left",
+    "C": "front",
+    "D": "right"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "B": "D",
+    "A": "B",
+    "C": "A",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0057\\start_view.png",
+      "sha256": "838049c5d1dca8a3c771749bed08b64f531d8103d1c78a7dc2a35a9e498a73e8"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0057\\step_01_rgb.png",
+      "sha256": "65f5d10567be3c5fb29b76b2df5e359f28029a2bb7b957b56462ca6e21b9bad7"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "category": "object_relative_direction",
+  "category_label": "Object-relative direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0057\\step_01_depth.png",
+      "sha256": "8ca580ab4298e0c125d27fe43fcd09af4c4eef7a4a525f67107ddd4c4960a2fe",
+      "color_scale": {
+        "near_m": 1.73475,
+        "far_m": 4.17625
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0057\\step_01_surface_normals.png",
+      "sha256": "f2e8869ef5ef17539907e9ec6518ad0bdd8744c2ae40b92af09fd9c7acd51faa"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0057\\step_01_panorama.png",
+      "sha256": "de4ac7befb9bd123c0c8325a6e77e926171746fee45c655087325700c2797d5c"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0057\\topdown_with_path.png",
+      "sha256": "f0cdb2db8daa9b0c0d01be88dc4847d2da3e9bd5f0d3bfc64f8e44cc156960a4"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0057\\trajectory.txt",
+      "sha256": "fdd1d7bf5643debe62c3252587004d6b87afd5b7f42b4c1c4696582b7303f996"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0057\\trajectory.mp4",
+      "sha256": "21ebe462ae3afc4d17afb8e674fb0db04d85d2fa622bee5f9e496f7a0a49dff3"
+    }
+  },
+  "condition": "start_final_depth",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT DEPTH MAP (same camera pose and field of view as FINAL VIEW):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.735 m (near/red) to 4.176 m (far/purple), with values outside this range clipped. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch3_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": false,
+  "input_signature": "411ab4f1ae0167286d1afbd76479fdee4c690436345c3824c1157ff91b7a0cff",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "depth"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3442,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 250
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 608,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4051,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T18:38:49.427-04:00",
+  "request_duration_seconds": 3.6626367999997456,
+  "completed_at": "2026-10-04T18:38:53.090-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

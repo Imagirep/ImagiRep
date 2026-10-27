@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-072-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-072-Q3",
+  "resource_id": "MVC-072",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "refrigerator, stove, black pillows, potted tall plant",
+    "B": "potted tall plant, refrigerator, stove, black pillows",
+    "C": "refrigerator, black pillows, potted tall plant, stove",
+    "D": "refrigerator, stove, potted tall plant, black pillows"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "f0cf540a4266d63b883d2efc51dca71c2fce68645fdc66569279733cfa4df10c",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-072\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3592,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 400
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1167,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4760,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 6.5668708000011975,
+  "completed_at": "2026-10-06T17:30:57-04:00"
+}

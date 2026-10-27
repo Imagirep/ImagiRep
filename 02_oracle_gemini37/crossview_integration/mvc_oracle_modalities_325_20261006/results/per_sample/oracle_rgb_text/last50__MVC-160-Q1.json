@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-160-Q1",
+  "cohort": "last50",
+  "question_id": "MVC-160-Q1",
+  "resource_id": "MVC-160",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to openwork black painting in Image 2?",
+  "answer_choices": {
+    "A": "black and white painting",
+    "B": "record player",
+    "C": "monitor",
+    "D": "yellow vases"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "2402fc712953cf2ad00cd671dbd7d82837ac25c313a9f3f353ad9078c7297064",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-160\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3556,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 364
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 2329,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5886,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 12.315528499995708,
+  "completed_at": "2026-10-06T17:32:00-04:00"
+}

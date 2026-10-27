@@ -1,0 +1,53 @@
+{
+  "status": "ok",
+  "row_index": 208,
+  "question_id": "MVC3I-014-Q2",
+  "condition": "oracle_rgb",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "response_format": "dynamic option enum",
+  "system_prompt": "Solve this multi-view spatial reasoning multiple-choice question using the provided evidence. Reason carefully. Return only A, B, C, or D.",
+  "condition_prompt": "Use the numbered images together with Oracle RGB to answer the question. Oracle RGB is an additional view of the same scene; it supplies evidence but does not replace the reference viewpoint named in the question. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.",
+  "prompt_hash": "04a0f0ea97d2c23b66c69b96324080838fda55e0500a37b455f130c3a0929ff2",
+  "question": "Which object in Images 3 and 2 is farthest from poster in Image 1?",
+  "answer_choices": {
+    "A": "glass water pitcher",
+    "B": "tissue box",
+    "C": "sink",
+    "D": "ovens"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "image_paths": [
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-014\\image_1.png",
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-014\\image_3.png",
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-014\\image_2.png",
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-014\\oracle_native_pose.png"
+  ],
+  "image_count": 4,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4497,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 241
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 1922,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6420,
+    "traffic_type": null
+  },
+  "completed_at": "2026-09-30T19:04:12"
+}

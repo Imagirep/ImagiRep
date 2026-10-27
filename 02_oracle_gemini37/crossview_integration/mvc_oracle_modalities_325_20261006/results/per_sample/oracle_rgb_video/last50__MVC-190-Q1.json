@@ -1,0 +1,52 @@
+{
+  "uid": "last50__MVC-190-Q1",
+  "cohort": "last50",
+  "question_id": "MVC-190-Q1",
+  "resource_id": "MVC-190",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to sink in Image 2?",
+  "answer_choices": {
+    "A": "framed painting",
+    "B": "blue cups",
+    "C": "glass pot",
+    "D": "sink"
+  },
+  "gold_answer": "A",
+  "prediction": "D",
+  "correct": false,
+  "signature": "5fc6162f8f37b8c897e555cba612fae016cdac8fb4c2ce50629edaa9279fb06f",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-190\\order_21\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7886,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 284
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 3513,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 11399,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 18.921994500007713,
+  "completed_at": "2026-10-06T17:35:55-04:00"
+}

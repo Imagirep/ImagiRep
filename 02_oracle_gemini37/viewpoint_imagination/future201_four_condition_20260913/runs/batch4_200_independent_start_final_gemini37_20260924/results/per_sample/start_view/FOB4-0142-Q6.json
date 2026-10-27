@@ -1,0 +1,96 @@
+{
+  "row_index": 77,
+  "question_id": "FOB4-0142-Q6",
+  "trajectory_id": "FOB4-0142",
+  "scan_id": "VVfe2KiqLaN",
+  "route_variant": "new_straight",
+  "question_type": 6,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk to the curtain and slightly turn left, where is the small potted plant relative to me?",
+  "answer_choices": {
+    "D": "behind",
+    "A": "front",
+    "B": "right",
+    "C": "left"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "D": "D",
+    "A": "A",
+    "B": "C",
+    "C": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0142\\start_view.png",
+      "sha256": "13cb8683bc9050209585bfae4ad4c80ab85dc8aa6fa5a5c81f2db6073bb1150b"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0142\\step_01_rgb.png",
+      "sha256": "e0ea76433eab6a152a6f5d169143e85e369c74dda22055a2d14901e38efa4566"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0142\\step_02_rgb.png",
+      "sha256": "71fd2f60ad97d082e4755891eef696c358238ce33c32e23ecbe68b5bbc9ee8ef"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1143,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 79
+      }
+    ],
+    "thoughts_token_count": 1189,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2333,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-24T17:30:09-04:00"
+}

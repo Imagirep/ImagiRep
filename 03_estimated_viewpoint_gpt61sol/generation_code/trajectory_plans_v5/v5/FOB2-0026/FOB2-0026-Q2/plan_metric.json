@@ -1,0 +1,222 @@
+{
+  "question_id": "FOB2-0026-Q2",
+  "motion_text": "I walk to the two chairs side by side, facing the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the two wooden lounge chairs placed side by side facing the pool",
+      "relation": "to"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0026-Q2",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -5.007858692101892,
+        "y": -0.0021589940971287955,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -6.949999999999999,
+        -0.002996292407114076
+      ]
+    ],
+    "x": -6.949999999999999,
+    "y": -0.002996292407114076,
+    "yaw": -0.0004311211829465186,
+    "pitch": 0.0,
+    "travel_yaw": -0.0004311211829465186
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -5.007858692101892,
+      -0.0021589940971287955
+    ]
+  ],
+  "final": {
+    "x": -5.007858692101892,
+    "y": -0.0021589940971287955,
+    "yaw_deg": -0.024701424241522954,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the two wooden lounge chairs placed side by side facing the pool",
+        "relation": "to"
+      },
+      "x": -6.949999999999999,
+      "y": -0.002996292407114076,
+      "yaw": -0.0004311211829465186,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -5.007858692101892,
+      "y": -0.0021589940971287955,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -5.007858692101892,
+      "y": -0.0021589940971287955,
+      "yaw": -0.0004311211829465186,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the two wooden lounge chairs placed side by side facing the pool",
+      "method": "initial_photo",
+      "box": [
+        588,
+        459,
+        749,
+        651
+      ],
+      "point_m": [
+        -7.998533001360043,
+        0.2702041034409924,
+        -1.6469955006253365
+      ]
+    },
+    {
+      "overlap": "the two wooden lounge chairs placed side by side facing the pool",
+      "n_points": 198,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 7.0,
+          "stop_m": 1.0835404520518204,
+          "visible_frac": 0.5656565656565656,
+          "center_deg": 3.0573932843311082,
+          "width_deg": 51.12518303152948,
+          "distance_m": 1.8238468077217216
+        },
+        {
+          "sector": 4,
+          "path_m": 7.300000000000001,
+          "stop_m": 1.0488754328917231,
+          "visible_frac": 0.5454545454545454,
+          "center_deg": 2.4747229320466007,
+          "width_deg": 59.05821962300797,
+          "distance_m": 1.734218086440504
+        },
+        {
+          "sector": 2,
+          "path_m": 7.800000000000001,
+          "stop_m": 0.9347693976714864,
+          "visible_frac": 0.3484848484848485,
+          "center_deg": 8.134977016058746,
+          "width_deg": 45.45267464224263,
+          "distance_m": 1.9182516768557267
+        },
+        {
+          "sector": 5,
+          "path_m": 8.4,
+          "stop_m": 0.8329262856615995,
+          "visible_frac": 0.15656565656565657,
+          "center_deg": 16.122538799560164,
+          "width_deg": 32.44703923116974,
+          "distance_m": 1.279631645687271
+        },
+        {
+          "sector": 1,
+          "path_m": 8.9,
+          "stop_m": 1.0744337772043175,
+          "visible_frac": 0.22727272727272727,
+          "center_deg": -0.6059451712859456,
+          "width_deg": 54.882463490493734,
+          "distance_m": 1.9871865532878839
+        },
+        {
+          "sector": 6,
+          "path_m": 9.0,
+          "stop_m": 0.6289090520210187,
+          "visible_frac": 0.015151515151515152,
+          "center_deg": 28.406642696555718,
+          "width_deg": 2.1846726843548723,
+          "distance_m": 1.0665985109739493
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 2.2623825073242188,
+  "seconds": 10.402141332626343,
+  "planning_m_per_unit": 3.1397767773882306,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.7205552074966752
+}

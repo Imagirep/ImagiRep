@@ -1,0 +1,277 @@
+{
+  "question_id": "FOB4-0066-Q1",
+  "motion_text": "I walk to the large painting, then slightly turn left.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "large framed painting above the fireplace",
+      "relation": "to"
+    },
+    {
+      "op": "turn",
+      "direction": "left",
+      "amount": "slight"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0066-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.07903594134087513,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.695299712143679,
+        "y": -0.213470228566606,
+        "yaw": -0.07903594134087513,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.695299712143679,
+        "y": -0.213470228566606,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.2549637214801117,
+        "y": -0.213470228566606,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -3.8527397398154974,
+        -0.30514054862267503
+      ],
+      [
+        -4.652739739815498,
+        -0.30514054862267503
+      ]
+    ],
+    "x": -4.652739739815498,
+    "y": -0.30514054862267503,
+    "yaw": -0.0654891974183543,
+    "pitch": 0.0,
+    "travel_yaw": -0.0654891974183543
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.695299712143679,
+      -0.213470228566606
+    ],
+    [
+      -3.2549637214801117,
+      -0.213470228566606
+    ]
+  ],
+  "final": {
+    "x": -3.2549637214801117,
+    "y": -0.213470228566606,
+    "yaw_deg": -38.752254615770745,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "large framed painting above the fireplace",
+        "relation": "to"
+      },
+      "x": -4.652739739815498,
+      "y": -0.30514054862267503,
+      "yaw": -0.0654891974183543,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left",
+        "amount": "slight"
+      },
+      "x": -4.652739739815498,
+      "y": -0.30514054862267503,
+      "yaw": -0.6763544356163695,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.07903594134087513,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.695299712143679,
+      "y": -0.213470228566606,
+      "yaw": -0.07903594134087513,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.695299712143679,
+      "y": -0.213470228566606,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.2549637214801117,
+      "y": -0.213470228566606,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.2549637214801117,
+      "y": -0.213470228566606,
+      "yaw": -0.0654891974183543,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.2549637214801117,
+      "y": -0.213470228566606,
+      "yaw": -0.6763544356163695,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "large framed painting above the fireplace",
+      "method": "initial_photo",
+      "box": [
+        196,
+        338,
+        515,
+        534
+      ],
+      "point_m": [
+        -5.5562229717048055,
+        -0.8384432247952089,
+        0.8914592344937509
+      ]
+    },
+    {
+      "overlap": "large framed painting above the fireplace",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 5.0,
+          "stop_m": 1.0491395020291316,
+          "visible_frac": 0.8977777777777778,
+          "center_deg": 3.660611043500829,
+          "width_deg": 61.59479572890281,
+          "distance_m": 1.1659635716688679
+        },
+        {
+          "sector": 5,
+          "path_m": 5.4,
+          "stop_m": 0.7334215085518621,
+          "visible_frac": 0.6044444444444445,
+          "center_deg": 13.15694077211452,
+          "width_deg": 72.0372897567797,
+          "distance_m": 0.8709553714506547
+        },
+        {
+          "sector": 3,
+          "path_m": 5.5,
+          "stop_m": 1.0056973350311496,
+          "visible_frac": 0.9244444444444444,
+          "center_deg": 1.9445365730833815,
+          "width_deg": 41.70943584723694,
+          "distance_m": 1.3093216167087545
+        },
+        {
+          "sector": 6,
+          "path_m": 6.5,
+          "stop_m": 1.0378005141219837,
+          "visible_frac": 0.6133333333333333,
+          "center_deg": -15.78663390702896,
+          "width_deg": 49.38966615073619,
+          "distance_m": 1.034007247486838
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 2.0845842361450195,
+  "seconds": 9.995340585708618,
+  "planning_m_per_unit": 2.979765289701749,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.6995800116705401
+}

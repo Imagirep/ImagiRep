@@ -1,0 +1,90 @@
+{
+  "row_index": 102,
+  "question_id": "FOB4-0200-Q2",
+  "trajectory_id": "FOB4-0200",
+  "scan_id": "zsNo4HB9uLZ",
+  "route_variant": "new_straight",
+  "question_type": 2,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk near the gray armchair, and slightly turn right, which direction would have the closest obstacle besides the armchair?",
+  "answer_choices": {
+    "D": "left",
+    "A": "front",
+    "B": "behind",
+    "C": "right"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "D": "B",
+    "A": "A",
+    "B": "D",
+    "C": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0200\\start_view.png",
+      "sha256": "32dc760eb81ef8cc2077b5f89a0167422cf9ce333327b43c594828921b99b0e0"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0200\\step_01_rgb.png",
+      "sha256": "7141b73f93bae4f11ff1194c63233fa7097004cde05f548c939c17bef835be95"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1146,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 82
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 2123,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3270,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-24T17:30:47-04:00"
+}

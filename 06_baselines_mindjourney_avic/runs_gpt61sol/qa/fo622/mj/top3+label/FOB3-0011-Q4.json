@@ -1,0 +1,1 @@
+{"qid": "FOB3-0011-Q4", "method": "mj", "variant": "top3+label", "prediction": "stove", "gold": "stove", "correct": true, "n_imagined": 3, "category": "nearest_object", "stored_result": "wrong"}

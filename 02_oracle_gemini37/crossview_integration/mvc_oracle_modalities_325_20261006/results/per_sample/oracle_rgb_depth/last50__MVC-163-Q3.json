@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-163-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-163-Q3",
+  "resource_id": "MVC-163",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "white pillow, bed, tv, black pillow",
+    "B": "tv, white pillow, black pillow, bed",
+    "C": "black pillow, white pillow, bed, tv",
+    "D": "tv, white pillow, bed, black pillow"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "2370b6a901d778a342d19352d6ce5ffd484f55f262bcde3e7d795c66fab3f18f",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.317 m (near/red) to 4.297 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-163\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4638,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 382
+      }
+    ],
+    "thoughts_token_count": 2250,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6889,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 51.4331952999928,
+  "completed_at": "2026-10-06T17:39:41-04:00"
+}

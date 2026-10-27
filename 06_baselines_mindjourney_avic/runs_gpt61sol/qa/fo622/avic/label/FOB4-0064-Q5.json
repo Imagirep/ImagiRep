@@ -1,0 +1,1 @@
+{"qid": "FOB4-0064-Q5", "method": "avic", "variant": "label", "prediction": "freezer", "gold": "freezer", "correct": true, "n_imagined": 4, "category": "farthest_object", "stored_result": "correct"}

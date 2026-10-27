@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-101-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-101-Q3",
+  "resource_id": "MVC-101",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "yellow pillow, yellow bottles, glass large table, plant in a blue pot",
+    "B": "yellow bottles, plant in a blue pot, yellow pillow, glass large table",
+    "C": "yellow bottles, glass large table, yellow pillow, plant in a blue pot",
+    "D": "yellow pillow, glass large table, plant in a blue pot, yellow bottles"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "bcdedb7a047234c27e34d9c7020736de61bba38431c3f2a97e4dadb5a705f506",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-101\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3612,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 420
+      }
+    ],
+    "thoughts_token_count": 1622,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5235,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 24.849701800005278,
+  "completed_at": "2026-10-06T17:31:35-04:00"
+}

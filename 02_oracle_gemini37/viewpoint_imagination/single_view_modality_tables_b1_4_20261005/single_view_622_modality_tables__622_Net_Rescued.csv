@@ -1,0 +1,23 @@
+"Batch1-4 (622 set), 622 questions",,,,,,,,,
+Category,N,Start-only,Final (base),Topdown,Text,Video,Depth,Normals,Panorama
+Open Space Direction,91,-5,0,-13,-6,-10,3,-2,-16
+Closest Obstacle Direction,55,-5,0,3,0,2,1,4,-2
+Visibility,104,-17,0,4,3,-2,1,-7,-5
+Closest Object,104,-14,0,1,-1,-4,2,0,-7
+Farthest Object,98,1,0,-4,-9,-6,2,-3,-7
+Direction of a Given Object,170,-22,0,-3,-10,4,1,-3,-9
+,,,,,,,,,
+Net change in correct answers vs Start + Final (modality correct - final correct).,,,,,,,,,
+,,,,,,,,,
+By Question,,,,,,,,,
+Category,N,,Final (base),Topdown,Text,Video,Depth,Normals,Panorama
+Open Space Direction,91,,0,8,5,5,10,5,15
+Closest Obstacle Direction,55,,0,9,5,6,4,4,6
+Visibility,104,,0,9,9,7,8,3,7
+Closest Object,104,,0,10,5,3,6,4,5
+Farthest Object,98,,0,10,3,4,8,4,6
+Direction of a Given Object,170,,0,12,8,14,8,6,13
+,,,,,,,,,
+Rescued = questions wrong with Start + Final but correct with Start + Final + modality (positive-only). Bold = best per row.,,,,,,,,,
+,,,,,,,,,
+"Source: raw per-question results. B1 selected171 runs (validation / endpoint_modality / endpoint_geometry 2026-09-16); B2 fo_batch2_eight_conditions_20260927; B3/B4 start_view+start_final from 2026-09-21/24 runs, six modalities from fo_batch3/4_six_modality_conditions_20261004. Gemini 3.7 flash, temp 0, HIGH thinking. Category object_selection_by_direction excluded (as in the B1+B2 308 table). Note: B1 Panorama uses the 2026-09-16 pre-repair panorama.",,,,,,,,,

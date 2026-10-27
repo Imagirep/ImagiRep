@@ -1,0 +1,1 @@
+{"qid": "FO-0197-Q5", "method": "mj", "variant": "top3+label", "prediction": "table and chairs", "gold": "green sofa", "correct": false, "n_imagined": 3, "category": "farthest_object", "stored_result": "wrong"}

@@ -1,0 +1,307 @@
+{
+  "question_id": "FOB2-0010-Q1",
+  "motion_text": "I walk into the room, walk near the chair and turn right.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "relation": "into",
+      "target": "the room"
+    },
+    {
+      "op": "go",
+      "relation": "near",
+      "target": "the red armchair"
+    },
+    {
+      "op": "turn",
+      "direction": "right",
+      "amount": "normal"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0010-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.19795606655964493,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.7964444954820875,
+        "y": 0.5609192049659519,
+        "yaw": 0.19795606655964493,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.7964444954820875,
+        "y": 0.5609192049659519,
+        "yaw": 3.141592653589793,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.596444495482088,
+        "y": 0.5609192049659519,
+        "yaw": 3.141592653589793,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.7964444954820875,
+        0.5609192049659519
+      ],
+      [
+        -2.596444495482088,
+        0.5609192049659519
+      ]
+    ],
+    "x": -2.596444495482088,
+    "y": 0.5609192049659519,
+    "yaw": 3.141592653589793,
+    "pitch": 0.0,
+    "travel_yaw": 3.141592653589793
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.7964444954820875,
+      0.5609192049659519
+    ],
+    [
+      -2.596444495482088,
+      0.5609192049659519
+    ]
+  ],
+  "final": {
+    "x": -2.596444495482088,
+    "y": 0.5609192049659519,
+    "yaw_deg": -99.99999999999999,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "relation": "into",
+        "target": "the room"
+      },
+      "x": -2.7964444954820875,
+      "y": 0.5609192049659519,
+      "yaw": 0.19795606655964493,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "relation": "near",
+        "target": "the red armchair"
+      },
+      "x": -2.596444495482088,
+      "y": 0.5609192049659519,
+      "yaw": 3.141592653589793,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "right",
+        "amount": "normal"
+      },
+      "x": -2.596444495482088,
+      "y": 0.5609192049659519,
+      "yaw": -1.7453292519943293,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.19795606655964493,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.7964444954820875,
+      "y": 0.5609192049659519,
+      "yaw": 0.19795606655964493,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.7964444954820875,
+      "y": 0.5609192049659519,
+      "yaw": 3.141592653589793,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.596444495482088,
+      "y": 0.5609192049659519,
+      "yaw": 3.141592653589793,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.596444495482088,
+      "y": 0.5609192049659519,
+      "yaw": -1.7453292519943293,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the room",
+      "method": "initial_photo",
+      "box": [
+        178,
+        350,
+        1000,
+        866
+      ],
+      "point_m": [
+        -3.218365910119654,
+        0.7793287758014387,
+        -0.3332343022498483
+      ]
+    },
+    {
+      "move_yaw_deg": 11.342047142878464,
+      "requested_m": 1.0,
+      "end": [
+        -2.8454680253447684,
+        0.5707524912834975
+      ],
+      "blocked": true
+    },
+    {
+      "ground": "the red armchair",
+      "method": "initial_photo",
+      "box": [
+        549,
+        649,
+        746,
+        755
+      ],
+      "point_m": [
+        -3.1926762708205754,
+        0.9427847677498917,
+        -0.3996373481632479
+      ]
+    },
+    {
+      "overlap": "the red armchair",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 0.2,
+          "stop_m": 0.7080350541912309,
+          "visible_frac": 1.0,
+          "center_deg": -0.05401193698382228,
+          "width_deg": 27.383789483350867,
+          "distance_m": 0.739186017961821
+        },
+        {
+          "sector": 2,
+          "path_m": 0.30000000000000004,
+          "stop_m": 0.7647310036931014,
+          "visible_frac": 1.0,
+          "center_deg": -0.14547589263876118,
+          "width_deg": 21.55531799730411,
+          "distance_m": 0.8018548495995478
+        },
+        {
+          "sector": 4,
+          "path_m": 0.8,
+          "stop_m": 0.7964382574134812,
+          "visible_frac": 1.0,
+          "center_deg": 0.15655739727518747,
+          "width_deg": 27.31704588479831,
+          "distance_m": 0.8145118348591418
+        },
+        {
+          "sector": 1,
+          "path_m": 0.9,
+          "stop_m": 0.8818736135871937,
+          "visible_frac": 1.0,
+          "center_deg": -0.27634011621497706,
+          "width_deg": 6.213428914943963,
+          "distance_m": 0.9344966367188011
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 2.313961243209665,
+  "seconds": 12.052537679672241
+}

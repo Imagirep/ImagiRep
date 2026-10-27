@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-168-Q2", "method": "avic", "variant": "label", "prediction": "tv", "gold": "lamp", "correct": false, "n_imagined": 2, "category": "cross_view_farthest", "stored_result": "wrong"}

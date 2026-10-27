@@ -1,0 +1,150 @@
+{
+  "row_index": 243,
+  "question_id": "FOB3-0030-Q7",
+  "trajectory_id": "FOB3-0030",
+  "scan_id": "ZMojNkEp431",
+  "question_type": 7,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk to the black box, then turn to face my starting point, where is the ping pong table relative to me?",
+  "answer_choices": {
+    "C": "left",
+    "A": "right",
+    "B": "behind",
+    "D": "front"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "C": "B",
+    "A": "C",
+    "B": "D",
+    "D": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0030\\start_view.png",
+      "sha256": "ec6b51636f375d79a4006cc759d5dadd860f1d6e554b75ae23f3378b029e219c"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0030\\step_01_rgb.png",
+      "sha256": "90b1e9683620c22eb3568593406fb22aee808955211bd71a89e825f46979119c"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0030\\step_02_rgb.png",
+      "sha256": "507d9f79647506281ed804d16d7779df0b000c216c5411bc7fdda6475a2dcb42"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0030\\oracle_lookback.png",
+      "sha256": "18f8b59a7653639e4bc5a6882837e75ee1565bfbf0154da802f5aa51dddb5415"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "category": "object_relative_direction",
+  "category_label": "Object-relative direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0030\\oracle_lookback_depth.png",
+      "sha256": "25018ecb0eaed1645b126c248ed6bd57b8e9191f66ea9eaec0814189a75a28fc",
+      "color_scale": {
+        "near_m": 1.47775,
+        "far_m": 10.794
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0030\\oracle_lookback_surface_normals.png",
+      "sha256": "017fb795314fe6a0346565548f7af6e717b09f350a1364f271a5dff4551f4eee"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0030\\oracle_lookback_panorama.png",
+      "sha256": "5bb1b024da85fd22bf04137fc32f549f8ff7173f3fa57bd2cd76e5d8112614c1"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0030\\topdown_lookback_with_path.png",
+      "sha256": "1896b8415cb1ff271ab8b40b6ec267104a519dd63df381e1847e79521a546456"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0030\\trajectory_lookback.txt",
+      "sha256": "3254ae9dd77fa26bd7619f90192b8e81014430290b2fa30f64da8eddeef41f07"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0030\\trajectory_lookback.mp4",
+      "sha256": "917c1a678b5fe576a47178a67cf1b7f1435e1b4351a9d86508e464bf83c83414"
+    }
+  },
+  "condition": "start_final_panorama",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT PANORAMA (360-degree RGB at the FINAL VIEW position):\nThe panorama is centered on the final camera's facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. This is one position, not a sequence of movement frames. Combine it with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch3_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "C",
+  "correct": true,
+  "input_signature": "a5e5b7f19231ffccfeb037cda84ab6d4c42937324ec300feb0c793116b5d6004",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "panorama"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3455,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 246
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3209
+      }
+    ],
+    "thoughts_token_count": 3490,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6945,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T19:49:24.644-04:00",
+  "request_duration_seconds": 11.290832200000295,
+  "completed_at": "2026-10-04T19:49:35.935-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

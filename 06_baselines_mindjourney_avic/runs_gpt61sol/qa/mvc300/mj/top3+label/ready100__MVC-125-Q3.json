@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-125-Q3", "method": "mj", "variant": "top3+label", "prediction": "bed, painting, armchair, long sofa", "gold": "bed, painting, armchair, long sofa", "correct": true, "n_imagined": 3, "category": "ordering", "stored_result": "correct"}

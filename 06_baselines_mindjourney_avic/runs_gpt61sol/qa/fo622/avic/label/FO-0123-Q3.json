@@ -1,0 +1,1 @@
+{"qid": "FO-0123-Q3", "method": "avic", "variant": "label", "prediction": "outside of view", "gold": "completely blocked", "correct": false, "n_imagined": 2, "category": "visibility", "stored_result": "wrong"}

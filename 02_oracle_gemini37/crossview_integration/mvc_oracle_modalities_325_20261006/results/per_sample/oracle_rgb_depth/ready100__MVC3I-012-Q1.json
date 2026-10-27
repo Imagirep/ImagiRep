@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC3I-012-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC3I-012-Q1",
+  "resource_id": "MVC3I-012",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Images 2 and 3 is closest to deer statue in Image 1?",
+  "answer_choices": {
+    "A": "gray doorway",
+    "B": "lamp",
+    "C": "wooden desk",
+    "D": "black chair"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "b80167a432604985133712c0b315999410d152519af3751c76f4babc63962cae",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.312 m (near/red) to 5.886 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC3I-012\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 5674,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 5320
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 354
+      }
+    ],
+    "thoughts_token_count": 3017,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8692,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 30.570710299987695,
+  "completed_at": "2026-10-06T17:39:08-04:00"
+}

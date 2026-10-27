@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB4-0154-Q1",
+  "motion_text": "I walk forward, walk near the brown sofa and slightly turn right.",
+  "view_variant": "endpoint",
+  "frames": 80,
+  "fps": 12,
+  "total_distance_m": 2.297951441557407,
+  "depth_display_range_scene_units": [
+    0.7415070641040802,
+    1.2862408828735352
+  ],
+  "depth_color_scale_m": {
+    "near_m": 0.5116235756895202,
+    "far_m": 0.8874779372316738
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.4951784549536562 m over generated floor distance",
+  "m_per_unit": 1.7175903916358948,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 46.647258043289185
+}

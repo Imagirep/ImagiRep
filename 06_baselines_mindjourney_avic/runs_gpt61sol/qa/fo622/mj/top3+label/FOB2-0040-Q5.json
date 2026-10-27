@@ -1,0 +1,1 @@
+{"qid": "FOB2-0040-Q5", "method": "mj", "variant": "top3+label", "prediction": "grey chair", "gold": "stove", "correct": false, "n_imagined": 3, "category": "farthest_object", "stored_result": "wrong"}

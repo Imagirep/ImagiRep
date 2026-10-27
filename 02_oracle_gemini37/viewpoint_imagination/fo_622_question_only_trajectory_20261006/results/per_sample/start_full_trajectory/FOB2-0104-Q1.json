@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB2-0104-Q1",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk near the sink and face the way I go, which direction would have the most open space?",
+  "answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "gold_answer": "A",
+  "show_lookback": false,
+  "prediction": "A",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0104/start_view.png",
+      "sha256": "a7499ce9fd3017b7f2f251450be61b8e822e09ef2e772fae791dc207e7cb1f73"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0104/step_01_rgb.png",
+      "sha256": "cb26cec4e22daa2f5c9de4a1852173cbb96f3d4e069da0d459f38d980c7e0bc1"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0104/step_02_rgb.png",
+      "sha256": "b5018ad3cebcafbe5e7903b931fdb269de8daabb3606055243e2dc1a09eca201"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3330,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 138
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1134,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4464,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_duration_seconds": 6.923135200006072,
+  "completed_at": "2026-10-06T14:26:20-04:00"
+}

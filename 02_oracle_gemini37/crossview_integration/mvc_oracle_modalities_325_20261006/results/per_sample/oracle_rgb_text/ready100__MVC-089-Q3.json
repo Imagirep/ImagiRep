@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-089-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-089-Q3",
+  "resource_id": "MVC-089",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "small wooden desk, framed painting, low hallway, mirror",
+    "B": "small wooden desk, mirror, low hallway, framed painting",
+    "C": "small wooden desk, low hallway, mirror, framed painting",
+    "D": "low hallway, small wooden desk, mirror, framed painting"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "807a97a9d01074a6b0330fd05bf23feb126e118c7aa7374530eb8d4a93a56ce2",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-089\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3596,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 404
+      }
+    ],
+    "thoughts_token_count": 2348,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5945,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 11.073947199998656,
+  "completed_at": "2026-10-06T17:31:10-04:00"
+}

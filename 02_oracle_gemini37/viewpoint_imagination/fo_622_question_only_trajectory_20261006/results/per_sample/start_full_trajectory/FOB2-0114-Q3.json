@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB2-0114-Q3",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk near the bar stools, then turn back to face where I come from, would the upholstered chair still be directly visible?",
+  "answer_choices": {
+    "C": "partially visible",
+    "A": "clearly visible",
+    "B": "outside of view",
+    "D": "completely blocked"
+  },
+  "gold_answer": "C",
+  "show_lookback": true,
+  "prediction": "A",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0114/start_view.png",
+      "sha256": "cfaf0e8f1f39695338f5eadef395341ac033b0a9ef006c09b6708b26ddcea983"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0114/step_01_rgb.png",
+      "sha256": "515d9d997f93715627563b8056ce6776fe624f6815ded868490a5e0833fe2e99"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0114/oracle_lookback.png",
+      "sha256": "49043d00bff3aa88529acea7547e58a42d609e931439219044880d5b79621ae2"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3342,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 150
+      }
+    ],
+    "thoughts_token_count": 727,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4070,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_duration_seconds": 6.454937600006815,
+  "completed_at": "2026-10-06T14:26:56-04:00"
+}

@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-216-Q1", "method": "mj", "variant": "top3+label", "prediction": "dining table", "gold": "dining table", "correct": true, "n_imagined": 3, "category": "cross_view_closest", "stored_result": "correct"}

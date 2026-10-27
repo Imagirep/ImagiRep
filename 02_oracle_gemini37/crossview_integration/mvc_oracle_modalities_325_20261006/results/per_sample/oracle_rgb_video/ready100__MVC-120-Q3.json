@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-120-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-120-Q3",
+  "resource_id": "MVC-120",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "window, fireplace, framed painting, glass door",
+    "B": "fireplace, framed painting, glass door, window",
+    "C": "window, fireplace, glass door, framed painting",
+    "D": "framed painting, window, fireplace, glass door"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "4792c6d1419a65a868036db92715d8734e8e96df4cc8329e0dd140175fae60a5",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-120\\order_21\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7923,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 321
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1599,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9523,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 12.158267100006924,
+  "completed_at": "2026-10-06T17:34:51-04:00"
+}

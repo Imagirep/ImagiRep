@@ -1,0 +1,229 @@
+{
+  "question_id": "FOB4-0112-Q1",
+  "motion_text": "I walk near the wooden table, facing the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "relation": "near",
+      "target": "small wooden table between the two dark leather chairs on the patterned rug"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0112-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.2851905063457226,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -5.188311227335873,
+        "y": -1.5211219156979805,
+        "yaw": -0.2851905063457226,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -7.75,
+        -2.2721641648148934
+      ]
+    ],
+    "x": -7.75,
+    "y": -2.2721641648148934,
+    "yaw": -0.2851905063457226,
+    "pitch": 0.0,
+    "travel_yaw": -0.2851905063457226
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -5.188311227335873,
+      -1.5211219156979805
+    ]
+  ],
+  "final": {
+    "x": -5.188311227335873,
+    "y": -1.5211219156979805,
+    "yaw_deg": -16.34021237080883,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "relation": "near",
+        "target": "small wooden table between the two dark leather chairs on the patterned rug"
+      },
+      "x": -7.75,
+      "y": -2.2721641648148934,
+      "yaw": -0.2851905063457226,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.2851905063457226,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -5.188311227335873,
+      "y": -1.5211219156979805,
+      "yaw": -0.2851905063457226,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "small wooden table between the two dark leather chairs on the patterned rug",
+      "method": "initial_photo",
+      "box": [
+        584,
+        210,
+        673,
+        324
+      ],
+      "point_m": [
+        -8.704240457070874,
+        -3.0791825023491635,
+        -1.4686716553293797
+      ]
+    },
+    {
+      "overlap": "small wooden table between the two dark leather chairs on the patterned rug",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 10.100000000000001,
+          "stop_m": 1.2497413520514586,
+          "visible_frac": 0.5555555555555556,
+          "center_deg": -5.634497628895017,
+          "width_deg": 44.526520836902534,
+          "distance_m": 1.4536382973372386
+        },
+        {
+          "sector": 5,
+          "path_m": 10.100000000000001,
+          "stop_m": 1.2858927542005376,
+          "visible_frac": 0.5422222222222223,
+          "center_deg": -3.8397218878444397,
+          "width_deg": 45.75562102189548,
+          "distance_m": 1.514057094074925
+        },
+        {
+          "sector": 3,
+          "path_m": 10.700000000000001,
+          "stop_m": 1.2576822785219832,
+          "visible_frac": 0.5111111111111111,
+          "center_deg": -3.733371772971748,
+          "width_deg": 45.37750690511756,
+          "distance_m": 1.3887570108558644
+        },
+        {
+          "sector": 2,
+          "path_m": 11.9,
+          "stop_m": 1.0943941630369725,
+          "visible_frac": 0.3422222222222222,
+          "center_deg": -0.19994690167628382,
+          "width_deg": 58.713558311440835,
+          "distance_m": 1.0945924370722344
+        },
+        {
+          "sector": 7,
+          "path_m": 13.9,
+          "stop_m": 1.2457793126636547,
+          "visible_frac": 0.26666666666666666,
+          "center_deg": -3.7113032599644162,
+          "width_deg": 53.039522488740744,
+          "distance_m": 1.4505933574445529
+        },
+        {
+          "sector": 0,
+          "path_m": 14.0,
+          "stop_m": 1.249224730924694,
+          "visible_frac": 0.24888888888888888,
+          "center_deg": -0.8092051368269646,
+          "width_deg": 51.49939222696987,
+          "distance_m": 1.4240287278039858
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 1.7940977215766907,
+  "seconds": 9.674848079681396,
+  "planning_m_per_unit": 2.6799196757822483,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.6694595132046288
+}

@@ -1,0 +1,52 @@
+{
+  "uid": "mvc131__MVC-131-Q3",
+  "cohort": "mvc131",
+  "question_id": "MVC-131-Q3",
+  "resource_id": "MVC-131",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "mirror, window, gray door, green potted plant",
+    "B": "mirror, gray door, green potted plant, window",
+    "C": "green potted plant, mirror, gray door, window",
+    "D": "window, green potted plant, mirror, gray door"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "176bd59d24c6242e83d0a79767400e5c8be7130a46b76bbe118b8db92a55c4bb",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-131\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7927,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 325
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1455,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9383,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 7.595086199988145,
+  "completed_at": "2026-10-06T19:42:03-04:00"
+}

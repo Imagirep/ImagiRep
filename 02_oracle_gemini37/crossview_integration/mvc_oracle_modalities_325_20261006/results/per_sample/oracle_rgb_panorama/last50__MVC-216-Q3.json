@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-216-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-216-Q3",
+  "resource_id": "MVC-216",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "small framed painting, stoves, dining table, small marble table",
+    "B": "stoves, dining table, small framed painting, small marble table",
+    "C": "small marble table, stoves, small framed painting, dining table",
+    "D": "stoves, small framed painting, dining table, small marble table"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "ac7808121e86dcf9596d3acb7c100761ddac2d169677f6e9217be81b3397b75d",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-216\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4646,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 373
+      }
+    ],
+    "thoughts_token_count": 4244,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8891,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 37.06339379999554,
+  "completed_at": "2026-10-06T17:46:32-04:00"
+}

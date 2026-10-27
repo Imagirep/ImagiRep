@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB2-0024-Q5",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the cabinet and turn right, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "D": "brown pot",
+    "A": "chair",
+    "B": "sink",
+    "C": "potted plant"
+  },
+  "gold_answer": "D",
+  "show_lookback": false,
+  "prediction": "C",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0024/start_view.png",
+      "sha256": "5db8fe0f1758eaf58385cae6887d8f7e99561ac73a9112a1267985dfe8be69cc"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0024/step_01_rgb.png",
+      "sha256": "77aef68a134dce5783aa303d44cb9386db5e0a1906de900d3633f04e416546a4"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0024/step_02_rgb.png",
+      "sha256": "8af4d3fa0e015dc16573396ee85a5873e17e93f1ad308122a073ccf722753bbc"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3331,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 139
+      }
+    ],
+    "thoughts_token_count": 2273,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5605,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_duration_seconds": 10.628930899998522,
+  "completed_at": "2026-10-06T14:17:22-04:00"
+}

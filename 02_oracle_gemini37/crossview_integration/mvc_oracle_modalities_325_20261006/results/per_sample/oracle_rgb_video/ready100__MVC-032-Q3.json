@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-032-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-032-Q3",
+  "resource_id": "MVC-032",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "painting under the light, dining table, decorative metal pot, book shelf",
+    "B": "decorative metal pot, book shelf, dining table, painting under the light",
+    "C": "book shelf, dining table, painting under the light, decorative metal pot",
+    "D": "book shelf, decorative metal pot, painting under the light, dining table"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "adebe36a611e72b4fccb910eb846832b399cf61eacb2a0d87a83a1cfed4085f3",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-032\\order_21\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7943,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 341
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 2066,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 10010,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 19.74178430000029,
+  "completed_at": "2026-10-06T17:33:49-04:00"
+}

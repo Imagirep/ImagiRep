@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-182-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-182-Q3",
+  "resource_id": "MVC-182",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "white statue, green plant, white decorative pot, yellow cushions",
+    "B": "yellow cushions, green plant, white decorative pot, white statue",
+    "C": "white decorative pot, yellow cushions, green plant, white statue",
+    "D": "white decorative pot, green plant, white statue, yellow cushions"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "1749794fa5c0d47c270b7ade7fccc1ec770c2a2469870e8f95b2a777d674c297",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-182\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3600,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 408
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1567,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5167,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.147168800001964,
+  "completed_at": "2026-10-06T17:32:25-04:00"
+}

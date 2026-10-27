@@ -1,0 +1,94 @@
+{
+  "row_index": 245,
+  "question_id": "FOB3-0139-Q5",
+  "trajectory_id": "FOB3-0139",
+  "scan_id": "YFuZgdQ5vWj",
+  "question_type": 5,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk forward, turn right to walk to the other side of the table, then turn left, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "D": "stairs",
+    "A": "white sculpture",
+    "B": "white sofa",
+    "C": "gray armchair"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "white sofa",
+    "B": "gray armchair",
+    "C": "stairs",
+    "D": "white sculpture"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "D": "C",
+    "A": "D",
+    "B": "A",
+    "C": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0139\\start_view.png",
+      "sha256": "8facef77525cb030af1237d040ecafc6ecc12942a7f602d1368ec0ffe1b128d1"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0139\\step_01_rgb.png",
+      "sha256": "ff343a5b285dd4fc1bc937da35ccb002a9210eeecc8e0cbce18108c7444ac375"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0139\\step_02_rgb.png",
+      "sha256": "8e31ced3c7dc3ed87f8155bcdeb6d7281c0afa4de50bbcce88fb14890b8c170c"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1157,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 93
+      }
+    ],
+    "thoughts_token_count": 917,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2075,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-21T11:44:46-04:00"
+}

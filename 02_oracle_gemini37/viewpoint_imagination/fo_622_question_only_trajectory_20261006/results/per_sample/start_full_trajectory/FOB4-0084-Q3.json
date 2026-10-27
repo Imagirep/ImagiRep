@@ -1,0 +1,76 @@
+{
+  "question_id": "FOB4-0084-Q3",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk past the table and the white armchair, take a step to the right and turn to face my starting point, then turn to face my starting point, would the table still be directly visible?",
+  "answer_choices": {
+    "D": "partially visible",
+    "A": "outside of view",
+    "B": "completely blocked",
+    "C": "clearly visible"
+  },
+  "gold_answer": "D",
+  "show_lookback": true,
+  "prediction": "C",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0084/start_view.png",
+      "sha256": "036e98140b81a29ab2ea72428ad58b45e01b052296a13643cca780e855a5cb87"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0084/step_01_rgb.png",
+      "sha256": "59a8bc51e0c104152505988fd15160e837a22159fcd1d574ff018827fd8747b1"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0084/step_02_back180_rgb.png",
+      "sha256": "4dea75fdb5717882a74d99914aea95eaf9ec76c68e9ffb12e2f0f75bbe46b7c5"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0084/oracle_lookback.png",
+      "sha256": "82557ad346ebcb6a27de91ba6e6d9f4e60b11f57e23c18cdd2ac42e2df6f99c4"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4425,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 169
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 1643,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6069,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_duration_seconds": 7.422965400008252,
+  "completed_at": "2026-10-06T15:08:37-04:00"
+}

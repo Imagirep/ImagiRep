@@ -1,0 +1,5092 @@
+{
+  "schema_version": 1,
+  "items": {
+    "FO-0001": {
+      "question_id": "FO-0001",
+      "saved_at": "2026-09-16T14:50:43+00:00",
+      "action": "If I walk forward into the room, then walk to the brown chair and face the brown chair,",
+      "removed_slots": [
+        1
+      ],
+      "questions": [
+        {
+          "slot": 2,
+          "question": "If I walk forward into the room, then walk to the brown chair and face the brown chair, which direction would have the closest obstacle besides the brown chair?",
+          "question_suffix": "which direction would have the closest obstacle besides the brown chair?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 3,
+          "question": "If I walk forward into the room, then walk to the brown chair, then turn back to face where I come from, would the chair covered in grey fabric on the left still be directly visible?",
+          "question_suffix": "would the chair covered in grey fabric on the left still be directly visible?",
+          "action_override": "If I walk forward into the room, then walk to the brown chair,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "A",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk forward into the room, then walk to the brown chair and face the brown chair, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "lamp",
+            "B": "fireplace",
+            "C": "silver table",
+            "D": "sofa"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk forward into the room, then walk to the brown chair and face the brown chair, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "lamp",
+            "B": "grey chair",
+            "C": "silver table",
+            "D": "sofa"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk forward into the room, then walk to the chair and turn back to face where I come from, where is the chair covered in grey fabric relative to me?",
+          "question_suffix": "where is the chair covered in grey fabric relative to me?",
+          "action_override": "If I walk forward into the room, then walk to the chair and turn back to face where I come from,",
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": true
+        },
+        {
+          "slot": 7,
+          "question": "If I walk forward into the room, then walk to the brown chair and face the brown chair, where is the chair covered in grey and white fabric relative to me?",
+          "question_suffix": "where is the chair covered in grey and white fabric relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk forward into the room, then walk to the brown chair and face the brown chair, which object(s) would be behind me?",
+          "question_suffix": "which object(s) would be behind me?",
+          "action_override": null,
+          "options": {
+            "A": "lamp",
+            "B": "grey chair",
+            "C": "silver table",
+            "D": "yellow sofa"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0003": {
+      "question_id": "FO-0003",
+      "saved_at": "2026-09-15T15:33:30+00:00",
+      "action": "If I walk past the fireplace and walk next to the chair, then face the chair,",
+      "removed_slots": [],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk past the fireplace and walk next to the chair, then face the chair, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 2,
+          "question": "If I walk past the fireplace and walk next to the chair, then face the chair, which direction would have the closest obstacle, other than the chair?",
+          "question_suffix": "which direction would have the closest obstacle, other than the chair?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 3,
+          "question": "If I walk past the fireplace and walk next to the chair, then turn back to face where I come from, would the black and white pillows still be directly visible?",
+          "question_suffix": "would the black and white pillows still be directly visible?",
+          "action_override": "If I walk past the fireplace and walk next to the chair,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk past the fireplace and walk next to the chair, then face the chair, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "grey sofa",
+            "B": "black pillar",
+            "C": "painting",
+            "D": "door"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk past the fireplace and walk next to the chair, then face the chair, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "white pillar",
+            "B": "dining table",
+            "C": "black pillar",
+            "D": "door"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk past the fireplace and walk next to the chair, then face the chair, where is the black pillar relative to me?",
+          "question_suffix": "where is the black pillar relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk past the fireplace and walk next to the chair, then face the chair, which object would be directly behind me?",
+          "question_suffix": "which object would be directly behind me?",
+          "action_override": null,
+          "options": {
+            "A": "sofa",
+            "B": "black pillar",
+            "C": "door",
+            "D": "silver pillar"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0005": {
+      "question_id": "FO-0005",
+      "saved_at": "2026-09-16T14:57:49+00:00",
+      "action": "If I walk to the refrigerator and face the sink,",
+      "removed_slots": [
+        2
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk to the refrigerator and face the sink, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk to the refrigerator, then turn back to face where I come from, would the white chairs near the kitchen counter still be directly visible?",
+          "question_suffix": "would the white chairs near the kitchen counter still be directly visible?",
+          "action_override": "If I walk to the refrigerator,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk to the refrigerator and face the sink, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": "If I walk to the refrigerator and face the sink,",
+          "options": {
+            "A": "oven",
+            "B": "stove",
+            "C": "chairs",
+            "D": "cabinet with glass doors"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": true
+        },
+        {
+          "slot": 5,
+          "question": "If I walk to the refrigerator and turn right, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": "If I walk to the refrigerator and turn right,",
+          "options": {
+            "A": "oven",
+            "B": "stove",
+            "C": "sink",
+            "D": "faucet"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 6,
+          "question": "If I walk to the refrigerator and face the sink, where are the cabinets relative to me?",
+          "question_suffix": "where are the cabinets relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk to the refrigerator and face the sink, which object(s) would be on my left?",
+          "question_suffix": "which object(s) would be on my left?",
+          "action_override": null,
+          "options": {
+            "A": "oven",
+            "B": "faucet",
+            "C": "stove",
+            "D": "kitchen counter"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0006": {
+      "question_id": "FO-0006",
+      "saved_at": "2026-09-16T14:58:35+00:00",
+      "action": "If I walk past the chair and continue to the glass door, then turn right,",
+      "removed_slots": [
+        5
+      ],
+      "questions": [
+        {
+          "slot": 2,
+          "question": "If I walk past the chair and continue to the glass door, then turn right, which direction would have the closest obstacle?",
+          "question_suffix": "which direction would have the closest obstacle?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk past the chair and continue a few steps, then turn back to face where I come from, would the black stool still be directly visible?",
+          "question_suffix": "would the black stool still be directly visible?",
+          "action_override": "If I walk past the chair and continue a few steps,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk past the chair and continue to the glass door, then turn right, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "stove",
+            "B": "sink",
+            "C": "black stool",
+            "D": "cabinets"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": false,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk past the chair and continue a few steps, then turn back to face where I come from, where is the stove relative to me?",
+          "question_suffix": "then turn back to face where I come from, where is the stove relative to me?",
+          "action_override": "If I walk past the chair and continue a few steps,",
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 7,
+          "question": "If I walk past the chair and continue to the glass door, then turn right, would the kitchen counter still be directly visible?",
+          "question_suffix": "would the kitchen counter still be directly visible?",
+          "action_override": null,
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk past the chair and continue to the glass door, then turn right, which object(s) would be on my left?",
+          "question_suffix": "which object(s) would be on my left?",
+          "action_override": null,
+          "options": {
+            "A": "kitchen counter",
+            "B": "cabinets",
+            "C": "potted plant",
+            "D": "black stool"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0007": {
+      "question_id": "FO-0007",
+      "saved_at": "2026-09-16T15:01:40+00:00",
+      "action": "If I walk to the spot between the chair and the blue pillar, then turn slightly to the right,",
+      "removed_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "questions": [
+        {
+          "slot": 6,
+          "question": "If I walk to the spot between the chair and the blue pillar, then turn slightly to the right, where is the blue glass pillar relative to me?",
+          "question_suffix": "where is the blue glass pillar relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk to the spot between the chair and the blue pillar, then turn slightly to the right, which object(s) would be on my left?",
+          "question_suffix": "which object(s) would be on my left?",
+          "action_override": null,
+          "options": {
+            "A": "blue pillar",
+            "B": "chairs",
+            "C": "piano",
+            "D": "ottoman"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0009": {
+      "question_id": "FO-0009",
+      "saved_at": "2026-09-16T14:53:49+00:00",
+      "action": "If I walk to the open glass doors and turn slightly to the right,",
+      "removed_slots": [
+        2,
+        3
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk to the open glass doors and turn slightly to the right, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk to the open glass doors and turn slightly to the right, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "black pillows",
+            "B": "fireplace",
+            "C": "lamp next to bed",
+            "D": "clock"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk to the open glass doors and turn slightly to the right, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "black pillows",
+            "B": "fireplace",
+            "C": "lamp next to bed",
+            "D": "clock"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 8,
+          "question": "If I walk to the open glass doors and turn slightly to the right, which object(s) would be in front of me and on my right?",
+          "question_suffix": "which object(s) would be in front of me and on my right?",
+          "action_override": null,
+          "options": {
+            "A": "chair",
+            "B": "fireplace",
+            "C": "door",
+            "D": "tub"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0013": {
+      "question_id": "FO-0013",
+      "saved_at": "2026-09-15T16:05:43+00:00",
+      "action": "If I walk past the chair and turn back to face where I come from,",
+      "removed_slots": [
+        1
+      ],
+      "questions": [
+        {
+          "slot": 2,
+          "question": "If I walk past the chair and turn back to face where I come from, which direction would have the closest obstacle, other than the chair?",
+          "question_suffix": "which direction would have the closest obstacle, other than the chair?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "D",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 3,
+          "question": "If I walk past the chair and turn back to face where I come from, would the kitchen counter still be directly visible?",
+          "question_suffix": "would the kitchen counter still be directly visible?",
+          "action_override": null,
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": true
+        },
+        {
+          "slot": 4,
+          "question": "If I walk past the chair and turn back to face where I come from, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "tv",
+            "B": "painting",
+            "C": "sink",
+            "D": "stove"
+          },
+          "answer": "A",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk past the chair and turn back to face where I come from, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "tv",
+            "B": "stove",
+            "C": "sink",
+            "D": "painting"
+          },
+          "answer": "C",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk past the chair and turn back to face where I come from, where are the paintings relative to me?",
+          "question_suffix": "where are the paintings relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk past the chair and turn back to face where I come from, which object(s) would be behind me?",
+          "question_suffix": "which object(s) would be behind me?",
+          "action_override": null,
+          "options": {
+            "A": "tv",
+            "B": "oven",
+            "C": "sink",
+            "D": "stove"
+          },
+          "answer": "A",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0014": {
+      "question_id": "FO-0014",
+      "saved_at": "2026-09-16T15:05:00+00:00",
+      "action": "If I walk to the right till I'm near the bed, and face the glass door,",
+      "removed_slots": [
+        2,
+        3,
+        4,
+        5,
+        8
+      ],
+      "questions": [
+        {
+          "slot": 6,
+          "question": "If I walk to the right till I'm near the bed, and face the glass door, where is the chair under the lamp relative to me?",
+          "question_suffix": "where is the chair under the lamp relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0017": {
+      "question_id": "FO-0017",
+      "saved_at": "2026-09-10T14:32:52+00:00",
+      "action": "If I walk past the bed and enter the other room on the left, then turn back to face where I come from,",
+      "removed_slots": [
+        3
+      ],
+      "questions": []
+    },
+    "FO-0018": {
+      "question_id": "FO-0018",
+      "saved_at": "2026-09-16T15:07:18+00:00",
+      "action": "If I walk past the small dotted ottomans, move to a position between the sofa and the black table, then face the sofa,",
+      "removed_slots": [
+        1,
+        2,
+        3
+      ],
+      "questions": [
+        {
+          "slot": 4,
+          "question": "If I walk past the small dotted ottomans, move to a position between the sofa and the black table, then face the sofa, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "ottomans",
+            "B": "tv",
+            "C": "glass windows",
+            "D": "potted plant"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk past the small dotted ottomans, move to a position between the sofa and the black table, then face the sofa, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "ottomans",
+            "B": "tv",
+            "C": "glass windows",
+            "D": "potted plant"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 8,
+          "question": "If I walk past the small dotted ottomans, move to a position between the sofa and the black table, then face the sofa, which object(s) would be in front of me and on my left?",
+          "question_suffix": "which object(s) would be in front of me and on my left?",
+          "action_override": null,
+          "options": {
+            "A": "ottomans",
+            "B": "tv",
+            "C": "glass windows",
+            "D": "small potted plant"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0019": {
+      "question_id": "FO-0019",
+      "saved_at": "2026-09-15T16:22:27+00:00",
+      "action": "If I walk to the glass doors then turn back to face where I come from,",
+      "removed_slots": [
+        3
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk to the glass doors then turn back to face where I come from, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 2,
+          "question": "If I walk to the glass doors then turn back to face where I come from, which direction would have the closest obstacle, other than the glass door?",
+          "question_suffix": "which direction would have the closest obstacle, other than the glass door?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 4,
+          "question": "If I walk to the glass doors then turn back to face where I come from, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "tv",
+            "B": "sofa",
+            "C": "table",
+            "D": "ottoman"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk to the glass doors then turn back to face where I come from, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "tv",
+            "B": "sofa",
+            "C": "table",
+            "D": "ottoman"
+          },
+          "answer": "A",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk to the glass doors then turn back to face where I come from, where are the dotted ottoman relative to me?",
+          "question_suffix": "where are the dotted ottoman relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk to the glass doors then turn back to face where I come from, which object(s) would be in front of me and to my right?",
+          "question_suffix": "which object(s) would be in front of me and to my right?",
+          "action_override": null,
+          "options": {
+            "A": "tv",
+            "B": "sofa",
+            "C": "black table",
+            "D": "dotted ottomans"
+          },
+          "answer": "A",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0020": {
+      "question_id": "FO-0020",
+      "saved_at": "2026-09-14T20:15:29+00:00",
+      "action": "If I walk to the table and chairs then turn slightly to the left,",
+      "removed_slots": [
+        3,
+        4
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk to the table and chairs then turn slightly to the left, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 2,
+          "question": "If I walk to the table and chairs then turn slightly to the left, which direction would have the closest obstacle, other than the table and chairs?",
+          "question_suffix": "which direction would have the closest obstacle, other than the table and chairs?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 6,
+          "question": "If I walk to the table and chairs then turn back to face where I come from, where is the tall potted plant relative to me?",
+          "question_suffix": "where is the tall potted plant relative to me?",
+          "action_override": "If I walk to the table and chairs then turn back to face where I come from,",
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk to the table and chairs then turn slightly to the left, which object(s) would be directly on my right?",
+          "question_suffix": "which object(s) would be directly on my right?",
+          "action_override": null,
+          "options": {
+            "A": "yellow counter",
+            "B": "sofa",
+            "C": "small potted plant",
+            "D": "tall plant"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0021": {
+      "question_id": "FO-0021",
+      "saved_at": "2026-09-15T16:33:40+00:00",
+      "action": "If I walk to the little wooden table and turn right,",
+      "removed_slots": [
+        5
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk to the little wooden table and turn right, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": false,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 2,
+          "question": "If I walk to the little wooden table and turn right, which direction would have the closest obstacle, other than the little wooden table?",
+          "question_suffix": "which direction would have the closest obstacle, other than the little wooden table?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": false,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 3,
+          "question": "If I walk to the little wooden table and turn right, would the wooden pillar still be directly visible?",
+          "question_suffix": "would the wooden pillar still be directly visible?",
+          "action_override": "If I walk to the little wooden table and turn right,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": false,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": true
+        },
+        {
+          "slot": 4,
+          "question": "If I walk to the little wooden table and turn right, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "tv",
+            "B": "sofa",
+            "C": "painting",
+            "D": "wooden pillar"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": false,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 8,
+          "question": "If I walk to the little wooden table and turn right, which object(s) would be directly behind me?",
+          "question_suffix": "which object(s) would be directly behind me?",
+          "action_override": null,
+          "options": {
+            "A": "sofa",
+            "B": "painting",
+            "C": "tv",
+            "D": "wooden pillar"
+          },
+          "answer": "D",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0023": {
+      "question_id": "FO-0023",
+      "saved_at": "2026-09-15T16:36:19+00:00",
+      "action": "If I move a few steps back and to the left, then look through the doors,",
+      "removed_slots": [
+        1
+      ],
+      "questions": [
+        {
+          "slot": 2,
+          "question": "If I move a few steps back and to the left, then look through the doors, which direction would have the closest obstacle?",
+          "question_suffix": "which direction would have the closest obstacle?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I move a few steps back and to the left, then look through the doors, then turn back to face where I come from, would the white chair still be directly visible?",
+          "question_suffix": "would the white chair still be directly visible?",
+          "action_override": null,
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "C",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I move a few steps back and to the left, then look through the doors, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "white ottoman",
+            "B": "blue sofa",
+            "C": "white and blue stool",
+            "D": "fireplace"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I move a few steps back and to the left, then look through the doors, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "white ottoman",
+            "B": "blue sofa",
+            "C": "white and blue stool",
+            "D": "fireplace"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I move a few steps back and to the left, then look through the doors, where is the blue sofa relative to me?",
+          "question_suffix": "where is the blue sofa relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I move a few steps back and to the left, then look through the doors, which object would be visible?",
+          "question_suffix": "which object would be visible?",
+          "action_override": null,
+          "options": {
+            "A": "blue and white stool",
+            "B": "blue sofa",
+            "C": "fireplace",
+            "D": "white chair"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0024": {
+      "question_id": "FO-0024",
+      "saved_at": "2026-09-15T16:41:28+00:00",
+      "action": "If I move a few steps forward and to the right, then face the direction I move,",
+      "removed_slots": [
+        3,
+        5
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I move a few steps forward and to the right, then face the direction I move, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 2,
+          "question": "If I move a few steps forward and to the right, then face the direction I move, which direction would have the closest obstacle?",
+          "question_suffix": "which direction would have the closest obstacle?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 4,
+          "question": "If I move a few steps forward and to the right, then face the direction I move, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "wooden counter",
+            "B": "brown vase",
+            "C": "tv",
+            "D": "carpet"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I move a few steps forward and to the right, then face the direction I move, where is the counter relative to me?",
+          "question_suffix": "where is the counter relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "right",
+            "C": "left",
+            "D": "behind"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I move a few steps forward and to the right, then face the direction I move, which object(s) would be behind me?",
+          "question_suffix": "which object(s) would be behind me?",
+          "action_override": null,
+          "options": {
+            "A": "counter",
+            "B": "brown pot",
+            "C": "tv",
+            "D": "black and white pillow"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0027": {
+      "question_id": "FO-0027",
+      "saved_at": "2026-09-15T16:49:20+00:00",
+      "action": "If I walk past the table and stop near the windows, facing the direction I move,",
+      "removed_slots": [],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk past the table and stop near the windows, facing the direction I move, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk past the counter and continue a few steps forward, then turn back to face where I come from, would the chair closest to me at the starting point still be directly visible?",
+          "question_suffix": "would the chair closest to me at the starting point still be directly visible?",
+          "action_override": "If I walk past the counter and continue a few steps forward,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk past the table and stop near the windows, facing the direction I move, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "white vases",
+            "B": "glass vase",
+            "C": "counter",
+            "D": "white chair"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk past the table and stop near the windows, facing the direction I move, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "white vases",
+            "B": "glass vase",
+            "C": "cabinet with glass doors",
+            "D": "white chair"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk past the kitchen counter and stop near the windows, then turn back to face where I come from, where is the glass vase relative to me?",
+          "question_suffix": "then turn back to face where I come from, where is the glass vase relative to me?",
+          "action_override": "If I walk past the kitchen counter and stop near the windows,",
+          "options": {
+            "A": "front",
+            "B": "right",
+            "C": "left",
+            "D": "behind"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk past the table and stop near the windows, facing the direction I move, which object(s) would be in front of me and on my right?",
+          "question_suffix": "which object(s) would be in front of me and on my right?",
+          "action_override": null,
+          "options": {
+            "A": "white vases",
+            "B": "glass vase",
+            "C": "cabinet with glass doors",
+            "D": "counter"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0028": {
+      "question_id": "FO-0028",
+      "saved_at": "2026-09-14T20:24:08+00:00",
+      "action": "If I walk through the door and face the way I move,",
+      "removed_slots": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "questions": [
+        {
+          "slot": 3,
+          "question": "If I walk through the door then turn back to face where I come from, would the glass vase still be directly visible?",
+          "question_suffix": "would the glass vase still be directly visible?",
+          "action_override": "If I walk through the door",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "D",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk through the door and look back to where I come from, where is the chandelier relative to me?",
+          "question_suffix": "where is the chandelier relative to me?",
+          "action_override": "If I walk through the door and look back to where I come from,",
+          "options": {
+            "A": "front",
+            "B": "right",
+            "C": "behind",
+            "D": "left"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk through the door and face the way I move, which object(s) would be on my left?",
+          "question_suffix": "which object(s) would be on my left?",
+          "action_override": null,
+          "options": {
+            "A": "mirror",
+            "B": "little table",
+            "C": "potted plant",
+            "D": "chandelier"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0029": {
+      "question_id": "FO-0029",
+      "saved_at": "2026-09-15T16:55:44+00:00",
+      "action": "If I walk to the door and turn right,",
+      "removed_slots": [
+        2
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk to the door and turn right, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk to the door, then turn back to face where I come from, would the table covered with white tablecloth still be directly visible?",
+          "question_suffix": "would the table covered with white tablecloth still be directly visible?",
+          "action_override": "If I walk to the door,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "D",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk to the door and turn right, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "wooden cabinet",
+            "B": "table covered with white tablecloth",
+            "C": "black table",
+            "D": "curtains"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk to the door and turn back to face where I come from, where is the black table relative to me?",
+          "question_suffix": "where is the black table relative to me?",
+          "action_override": "If I walk to the door and turn back to face where I come from,",
+          "options": {
+            "A": "front",
+            "B": "right",
+            "C": "left",
+            "D": "behind"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk to the door and turn right, which object(s) would be behind me?",
+          "question_suffix": "which object(s) would be behind me?",
+          "action_override": null,
+          "options": {
+            "A": "wooden cabinet",
+            "B": "table covered with white tablecloth",
+            "C": "black table",
+            "D": "white counter with a brown top"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0031": {
+      "question_id": "FO-0031",
+      "saved_at": "2026-09-15T17:00:46+00:00",
+      "action": "If I walk to the windows farthest from me and slightly turn right,",
+      "removed_slots": [],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk to the windows farthest from me and slightly turn right, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 2,
+          "question": "If I walk to the windows farthest from me and slightly turn right, which direction would have the closest obstacle?",
+          "question_suffix": "which direction would have the closest obstacle?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk to the windows farthest from me, then turn back to face where I come from, would the tv still be directly visible?",
+          "question_suffix": "would the tv still be directly visible?",
+          "action_override": "If I walk to the windows farthest from me,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "D",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk to the windows farthest from me and slightly turn right, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "painting",
+            "B": "tv",
+            "C": "bed",
+            "D": "sofa"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk to the windows farthest from me and slightly turn right, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "painting",
+            "B": "tv",
+            "C": "wooden table",
+            "D": "sofa"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 8,
+          "question": "If I walk to the windows farthest from me and slightly turn right, which object(s) would be in front of me?",
+          "question_suffix": "which object(s) would be in front of me?",
+          "action_override": null,
+          "options": {
+            "A": "painting",
+            "B": "tv",
+            "C": "bed",
+            "D": "sofa"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0032": {
+      "question_id": "FO-0032",
+      "saved_at": "2026-09-16T15:10:56+00:00",
+      "action": "If I walk to the window on the right and turn right,",
+      "removed_slots": [
+        2,
+        3,
+        4
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk to the window on the right and turn right, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk to the window on the right and turn right, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "sink",
+            "B": "cabinets with glass doors",
+            "C": "curtain",
+            "D": "wooden table"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk to the window on the right and turn back to face where I come from, where are the cabinets with glass doors relative to me?",
+          "question_suffix": "where are the cabinets with glass doors relative to me?",
+          "action_override": "If I walk to the window on the right and turn back to face where I come from,",
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk to the window on the right and turn right, which object(s) would be behind me?",
+          "question_suffix": "which object(s) would be behind me?",
+          "action_override": null,
+          "options": {
+            "A": "sink",
+            "B": "cabinets with glass doors",
+            "C": "wooden cabinet",
+            "D": "door"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0033": {
+      "question_id": "FO-0033",
+      "saved_at": "2026-09-15T17:10:25+00:00",
+      "action": "If I walk through the hallway with yellow light on the left, walk a few steps and turn around,",
+      "removed_slots": [
+        2
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk through the hallway with yellow light on the left, walk a few steps and turn around, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk through the doorway on the left, walk a few steps, then turn back to face where I come from, would the black chair still be directly visible?",
+          "question_suffix": "would the black chair still be directly visible?",
+          "action_override": "If I walk through the doorway on the left, walk a few steps,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": false,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk through the hallway with yellow light on the left, walk a few steps and turn around, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "pool table",
+            "B": "black chair",
+            "C": "tv",
+            "D": "dartboard"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk through the hallway with yellow light on the left, walk a few steps and turn around, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "pool table",
+            "B": "black chair",
+            "C": "tv",
+            "D": "dartboard"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk through the hallway with yellow light on the left, walk a few steps and turn around, where is the pool table relative to me?",
+          "question_suffix": "where is the pool table relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk through the hallway with yellow light on the left, walk a few steps and turn around, which object(s) would be furthest to my right?",
+          "question_suffix": "which object(s) would be furthest to my right?",
+          "action_override": null,
+          "options": {
+            "A": "pool table",
+            "B": "black chair",
+            "C": "tv",
+            "D": "dartboard"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0034": {
+      "question_id": "FO-0034",
+      "saved_at": "2026-09-15T17:15:36+00:00",
+      "action": "If I walk past the kitchen table, turn left, walk a few steps and face the way I move,",
+      "removed_slots": [
+        1,
+        2
+      ],
+      "questions": [
+        {
+          "slot": 3,
+          "question": "If I walk past the kitchen table, turn left, walk a few steps, then turn back to face where I come from, would the sink and the faucet still be directly visible?",
+          "question_suffix": "would the sink and the faucet still be directly visible?",
+          "action_override": "If I walk past the kitchen table, turn left, walk a few steps,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk past the kitchen table, turn left, walk a few steps and face the way I move, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "fireplace",
+            "B": "tv",
+            "C": "ovens",
+            "D": "doorway"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk past the kitchen table, turn left, walk a few steps and face the way I move, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "fireplace",
+            "B": "tv",
+            "C": "ovens",
+            "D": "chandelier"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk past the kitchen table, turn left, walk a few steps and turn back to face where I come from, where are the ovens relative to me?",
+          "question_suffix": "where are the ovens relative to me?",
+          "action_override": "If I walk past the kitchen table, turn left, walk a few steps and turn back to face where I come from,",
+          "options": {
+            "A": "front",
+            "B": "behind",
+            "C": "left",
+            "D": "right"
+          },
+          "answer": "C",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk past the kitchen table, turn left, walk a few steps and look back to where I come from, which object(s) would be in front of me?",
+          "question_suffix": "which object(s) would be in front of me?",
+          "action_override": "If I walk past the kitchen table, turn left, walk a few steps and look back to where I come from,",
+          "options": {
+            "A": "fireplace",
+            "B": "tv",
+            "C": "ovens",
+            "D": "sink"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0037": {
+      "question_id": "FO-0037",
+      "saved_at": "2026-09-15T17:26:45+00:00",
+      "action": "If I walk past the black pillar and turn right,",
+      "removed_slots": [
+        1
+      ],
+      "questions": [
+        {
+          "slot": 2,
+          "question": "If I walk past the black pillar and turn right, which direction would have the closest obstacle?",
+          "question_suffix": "which direction would have the closest obstacle?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk past the black pillar, then turn back to face where I come from, would the grey sofa still be directly visible?",
+          "question_suffix": "would the grey sofa still be directly visible?",
+          "action_override": "If I walk past the black pillar,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk past the black pillar and turn right, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "door",
+            "B": "grey sofa",
+            "C": "fireplace",
+            "D": "white pillar"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk past the black pillar and turn right, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "door",
+            "B": "painting",
+            "C": "fireplace",
+            "D": "white pillar"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 8,
+          "question": "If I walk past the black pillar and turn right, which object(s) would be directly behind me?",
+          "question_suffix": "which object(s) would be directly behind me?",
+          "action_override": null,
+          "options": {
+            "A": "door",
+            "B": "painting",
+            "C": "fireplace",
+            "D": "white pillar"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0038": {
+      "question_id": "FO-0038",
+      "saved_at": "2026-09-15T17:35:29+00:00",
+      "action": "If I walk through the doorway ahead and turn around,",
+      "removed_slots": [
+        2,
+        5
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk through the doorway ahead and turn around, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk through the doorway ahead and turn around, would the white potted plant still be directly visible?",
+          "question_suffix": "would the white potted plant still be directly visible?",
+          "action_override": null,
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": true
+        },
+        {
+          "slot": 4,
+          "question": "If I walk through the doorway ahead and turn around, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "potted plant",
+            "B": "tv",
+            "C": "low black table",
+            "D": "painting"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 8,
+          "question": "If I walk through the doorway ahead and turn around, which object(s) would be on my left?",
+          "question_suffix": "which object(s) would be on my left?",
+          "action_override": null,
+          "options": {
+            "A": "white potted plant",
+            "B": "tv",
+            "C": "curtain",
+            "D": "low black table"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0039": {
+      "question_id": "FO-0039",
+      "saved_at": "2026-09-16T15:14:46+00:00",
+      "action": "If I walk to the oven, move forward and turn right,",
+      "removed_slots": [
+        1,
+        2
+      ],
+      "questions": [
+        {
+          "slot": 3,
+          "question": "If I walk to the oven, then turn back to face where I come from, would both white bowl on dining table still be directly visible?",
+          "question_suffix": "would both white bowl on dining table still be directly visible?",
+          "action_override": "If I walk to the oven,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk to the oven, move forward and turn right, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "cabinets",
+            "B": "glass vase",
+            "C": "white bowls",
+            "D": "white vases"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk to the oven, move forward and turn right, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "cabinets",
+            "B": "glass vase",
+            "C": "white bowls",
+            "D": "white vases"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 8,
+          "question": "If I walk to the oven, move forward and turn right, which object(s) would be in front of me?",
+          "question_suffix": "which object(s) would be in front of me?",
+          "action_override": null,
+          "options": {
+            "A": "chairs",
+            "B": "glass vase",
+            "C": "white bowls",
+            "D": "white vases"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0040": {
+      "question_id": "FO-0040",
+      "saved_at": "2026-09-16T15:59:24+00:00",
+      "action": "If I walk through the doorway on the left and turn around,",
+      "removed_slots": [
+        2
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk through the doorway on the left and turn around, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk through the doorway on the left, then turn back to face where I come from, would the grey sofa be directly visible?",
+          "question_suffix": "would the grey sofa be directly visible?",
+          "action_override": "If I walk through the doorway on the left,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk through the doorway on the left and turn around, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "vase on the table",
+            "B": "mirror",
+            "C": "fireplace",
+            "D": "yellow sofa"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk through the doorway on the left and turn around, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "yellow sofa",
+            "B": "mirror",
+            "C": "fireplace",
+            "D": "vase"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk through the doorway on the left and turn back to face where I come from, where is the fireplace relative to me?",
+          "question_suffix": "where is the fireplace relative to me?",
+          "action_override": "If I walk through the doorway on the left and turn back to face where I come from,",
+          "options": {
+            "A": "front",
+            "B": "behind",
+            "C": "left",
+            "D": "right"
+          },
+          "answer": "C",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk through the doorway on the left and turn around, which object(s) would be right in front of me?",
+          "question_suffix": "which object(s) would be right in front of me?",
+          "action_override": null,
+          "options": {
+            "A": "vase on the table",
+            "B": "mirror",
+            "C": "fireplace",
+            "D": "yellow sofa"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0042": {
+      "question_id": "FO-0042",
+      "saved_at": "2026-09-16T15:17:28+00:00",
+      "action": "If I walk forward till I'm near the black chair, then face the way I move,",
+      "removed_slots": [
+        3
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk forward till I'm near the black chair, then face the way I move, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 2,
+          "question": "If I walk forward till I'm near the black chair, then face the way I move, which direction would have the closest obstacle?",
+          "question_suffix": "which direction would have the closest obstacle?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk forward till I'm near the black chair, then face the way I move, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "black chair",
+            "B": "fireplace",
+            "C": "window",
+            "D": "round table"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 8,
+          "question": "If I walk forward till I'm near the black chair, then face the way I move, which object(s) would be right in front of me?",
+          "question_suffix": "which object(s) would be right in front of me?",
+          "action_override": null,
+          "options": {
+            "A": "black chair",
+            "B": "fireplace",
+            "C": "window",
+            "D": "round table"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0044": {
+      "question_id": "FO-0044",
+      "saved_at": "2026-09-14T20:45:49+00:00",
+      "action": "If I walk past the black chair, then turn around,",
+      "removed_slots": [
+        2,
+        3,
+        6
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk past the black chair, then turn around, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk past the black chair, then turn around, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "fireplace",
+            "B": "door",
+            "C": "round table",
+            "D": "wooden chairs"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 8,
+          "question": "If I walk past the black chair, then turn around, which object(s) would be behind me?",
+          "question_suffix": "which object(s) would be behind me?",
+          "action_override": null,
+          "options": {
+            "A": "fireplace",
+            "B": "door",
+            "C": "round table",
+            "D": "wooden chairs"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0046": {
+      "question_id": "FO-0046",
+      "saved_at": "2026-09-16T15:23:40+00:00",
+      "action": "If I walk into the tub on the left and turn slightly right,",
+      "removed_slots": [
+        2,
+        3
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk into the tub on the left and turn slightly right, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk into the tub on the left and turn slightly right, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "fireplace",
+            "B": "chair on the right",
+            "C": "lamp",
+            "D": "bed"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk into the tub on the left and turn slightly right, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "fireplace",
+            "B": "chair",
+            "C": "lamp",
+            "D": "bed"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk into the tub on the left and turn back to face where I come from, where is the wooden door relative to me?",
+          "question_suffix": "where is the wooden door relative to me?",
+          "action_override": "If I walk into the tub on the left and turn back to face where I come from,",
+          "options": {
+            "A": "front",
+            "B": "behind",
+            "C": "right",
+            "D": "left"
+          },
+          "answer": "A",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk into the tub on the left and turn slightly right, which object(s) would be furthest to my right?",
+          "question_suffix": "which object(s) would be furthest to my right?",
+          "action_override": null,
+          "options": {
+            "A": "bed",
+            "B": "fireplace",
+            "C": "lamp",
+            "D": "door"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0049": {
+      "question_id": "FO-0049",
+      "saved_at": "2026-09-15T18:10:26+00:00",
+      "action": "If I walk to the round table, turn left and walk a few steps, then turn around,",
+      "removed_slots": [
+        2
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk to the round table, turn left and walk a few steps, then turn around, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk to the round table, turn left and walk a few steps, then turn back to face where I come from, would the round table still be directly visible?",
+          "question_suffix": "would the round table still be directly visible?",
+          "action_override": "If I walk to the round table, turn left and walk a few steps,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": false,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk to the round table, turn left and walk a few steps, then turn around, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "tv",
+            "B": "silver bottle",
+            "C": "painting",
+            "D": "fireplace"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk to the round table, turn left and walk a few steps, then turn around, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "sofa",
+            "B": "painting",
+            "C": "silver bottle",
+            "D": "fireplace"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk to the round table, turn left and walk a few steps, then turn around, where is the painting relative to me?",
+          "question_suffix": "where is the painting relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk to the round table, turn left and walk a few steps, then turn around, which object(s) would be in front of me?",
+          "question_suffix": "which object(s) would be in front of me?",
+          "action_override": null,
+          "options": {
+            "A": "tv",
+            "B": "silver bottle",
+            "C": "painting",
+            "D": "fireplace"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0050": {
+      "question_id": "FO-0050",
+      "saved_at": "2026-09-16T15:25:00+00:00",
+      "action": "If I walk through the doors, walk forward till I'm near the white chair, and face the direction I move,",
+      "removed_slots": [
+        3
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk through the doors, walk forward till I'm near the white chair, and face the direction I move, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 2,
+          "question": "If I walk through the doors, walk forward till I'm near the white chair, and face the direction I move, which direction would have the closest obstacle?",
+          "question_suffix": "which direction would have the closest obstacle?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk through the doors, walk forward till I'm near the white chair, and face the direction I move, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "white ottoman",
+            "B": "blue sofa",
+            "C": "blue chairs",
+            "D": "blue and white stool"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk through the doors, walk forward till I'm near the white chair, and face the direction I move, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "white ottoman",
+            "B": "blue and white stool",
+            "C": "blue sofa",
+            "D": "coffee table"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 8,
+          "question": "If I walk through the doors, walk forward till I'm near the white chair, and face the direction I move, which object(s) would be behind me and to my left?",
+          "question_suffix": "which object(s) would be behind me and to my left?",
+          "action_override": null,
+          "options": {
+            "A": "blue and white stool",
+            "B": "blue sofa",
+            "C": "fireplace",
+            "D": "dining table"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0052": {
+      "question_id": "FO-0052",
+      "saved_at": "2026-09-16T15:25:41+00:00",
+      "action": "If I walk near the chairs and turn slightly left,",
+      "removed_slots": [
+        1,
+        3
+      ],
+      "questions": [
+        {
+          "slot": 2,
+          "question": "If I walk near the chairs and turn slightly left, which direction would have the closest obstacle?",
+          "question_suffix": "which direction would have the closest obstacle?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk near the chairs and turn slightly left, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "wooden flower decoration on the left",
+            "B": "wooden flower decoration on the right",
+            "C": "painting on the left",
+            "D": "painting on the right"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk near the chairs and turn slightly left, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "wooden flower decoration on the left",
+            "B": "wooden flower decoration on the right",
+            "C": "painting on the left",
+            "D": "painting on the right"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk near the chairs and turn slightly left, where is the painting on the left relative to me?",
+          "question_suffix": "where is the painting on the left relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk near the chairs and turn slightly left, which object(s) would be on my right?",
+          "question_suffix": "which object(s) would be on my right?",
+          "action_override": null,
+          "options": {
+            "A": "chairs",
+            "B": "wooden flower decoration",
+            "C": "dining table",
+            "D": "painting"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0056": {
+      "question_id": "FO-0056",
+      "saved_at": "2026-09-14T20:51:36+00:00",
+      "action": "If I walk to the low black table near the glass door and face the way I move,",
+      "removed_slots": [
+        3,
+        4
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk to the low black table near the glass door and face the way I move, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 2,
+          "question": "If I walk to the low black table near the glass door and face the way I move, which direction would have the closest obstacle besides the low black table?",
+          "question_suffix": "which direction would have the closest obstacle besides the low black table?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 5,
+          "question": "If I walk to the low black table near the glass door and face the way I move, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "large sofa",
+            "B": "shelf",
+            "C": "white small sofa",
+            "D": "coffee table"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk to the low black table near the glass door and turn back to face where I come from, where are the stairs relative to me?",
+          "question_suffix": "where are the stairs relative to me?",
+          "action_override": "If I walk to the low black table near the glass door and turn back to face where I come from,",
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk to the low black table near the glass door and face the way I move, which object(s) would be in front of me?",
+          "question_suffix": "which object(s) would be in front of me?",
+          "action_override": null,
+          "options": {
+            "A": "large sofa",
+            "B": "shelf",
+            "C": "white small sofa",
+            "D": "coffee table"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0057": {
+      "question_id": "FO-0057",
+      "saved_at": "2026-09-14T20:53:21+00:00",
+      "action": "If I walk through the second arched doorway to the right, and turn around,",
+      "removed_slots": [
+        2,
+        4,
+        5
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk through the second arched doorway to the right, and turn around, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk through the second arched doorway to the right, then turn back to face where I come from, would the chair closest to me still be directly visible?",
+          "question_suffix": "would the chair closest to me still be directly visible?",
+          "action_override": "If I walk through the second arched doorway to the right,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk through the second arched doorway to the right, and turn around, would the grey chair on the left still be visible?",
+          "question_suffix": "would the grey chair on the left still be visible?",
+          "action_override": null,
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk through the second arched doorway to the right, and turn around, which object(s) would be on my right?",
+          "question_suffix": "which object(s) would be on my right?",
+          "action_override": null,
+          "options": {
+            "A": "dining table",
+            "B": "cabinets",
+            "C": "chairs",
+            "D": "faucet"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0059": {
+      "question_id": "FO-0059",
+      "saved_at": "2026-09-16T15:27:14+00:00",
+      "action": "If I walk through the doorway, walk near the white chair and turn right,",
+      "removed_slots": [
+        1
+      ],
+      "questions": [
+        {
+          "slot": 2,
+          "question": "If I walk through the doorway, walk near the white chair and turn right, which direction would have the closest obstacle?",
+          "question_suffix": "which direction would have the closest obstacle?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk through the doorway, walk near the white chair and turn right, then turn back to face where I come from, would the black pillar still be directly visible?",
+          "question_suffix": "would the black pillar still be directly visible?",
+          "action_override": null,
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "A",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk through the doorway, walk near the white chair and turn right, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "white and green painting",
+            "B": "black pillar",
+            "C": "white sofa",
+            "D": "lamp"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk through the doorway, walk near the white chair and turn right, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "white and green painting",
+            "B": "black pillar",
+            "C": "white sofa",
+            "D": "lamp"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk through the doorway, walk a few steps and turn back to face where I come from, where is the black pillar relative to me?",
+          "question_suffix": "where is the black pillar relative to me?",
+          "action_override": "If I walk through the doorway, walk a few steps and turn back to face where I come from,",
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk through the doorway, walk near the white chair and turn right, which object(s) would be on my left?",
+          "question_suffix": "which object(s) would be on my left?",
+          "action_override": null,
+          "options": {
+            "A": "white and green painting",
+            "B": "black pillar",
+            "C": "white sofa",
+            "D": "lamp"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0064": {
+      "question_id": "FO-0064",
+      "saved_at": "2026-09-15T18:18:50+00:00",
+      "action": "If I walk to the wooden table and turn right,",
+      "removed_slots": [
+        2,
+        3,
+        4
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk to the wooden table and turn right, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 8,
+          "question": "If I walk to the wooden table and turn right, which object(s) would be on my left?",
+          "question_suffix": "which object(s) would be on my left?",
+          "action_override": null,
+          "options": {
+            "A": "chairs",
+            "B": "yellow counter",
+            "C": "doors",
+            "D": "washing machine"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0065": {
+      "question_id": "FO-0065",
+      "saved_at": "2026-09-15T18:19:40+00:00",
+      "action": "If I walk to the blue glass pillar and turn right,",
+      "removed_slots": [
+        2,
+        3,
+        4
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk to the blue glass pillar and turn right, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk to the blue glass pillar and turn right, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "piano",
+            "B": "small chair",
+            "C": "round table",
+            "D": "white pillows"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 8,
+          "question": "If I walk to the blue glass pillar and turn right, which object(s) would be behind me?",
+          "question_suffix": "which object(s) would be behind me?",
+          "action_override": null,
+          "options": {
+            "A": "piano",
+            "B": "small chair",
+            "C": "round table",
+            "D": "white pillows"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0066": {
+      "question_id": "FO-0066",
+      "saved_at": "2026-09-15T14:24:16+00:00",
+      "action": "If I walk into the room and face the way I move,",
+      "removed_slots": [
+        1
+      ],
+      "questions": [
+        {
+          "slot": 2,
+          "question": "If I walk into the room and face the way I move, which direction would have the closest obstacle?",
+          "question_suffix": "which direction would have the closest obstacle?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk into the room and face the way I move, then turn back to face where I come from, would the painting still be directly visible?",
+          "question_suffix": "would the painting still be directly visible?",
+          "action_override": null,
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "D",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk into the room and face the way I move, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "glass ball on the ceiling",
+            "B": "small desk",
+            "C": "black pillows",
+            "D": "painting"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk into the room and face the way I move, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "painting",
+            "B": "small desk",
+            "C": "black pillows",
+            "D": "shelf"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 8,
+          "question": "If I walk into the room and face the way I move, which object(s) would be furthest to my left?",
+          "question_suffix": "which object(s) would be furthest to my left?",
+          "action_override": null,
+          "options": {
+            "A": "bed",
+            "B": "desk",
+            "C": "pillows",
+            "D": "painting"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0067": {
+      "question_id": "FO-0067",
+      "saved_at": "2026-09-16T15:27:44+00:00",
+      "action": "If I walk near the carpet and turn left,",
+      "removed_slots": [
+        2,
+        3
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk near the carpet and turn left, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk near the carpet and turn left, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "windows",
+            "B": "potted plant on the table",
+            "C": "potted plant at the corner of the walls",
+            "D": "chairs"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk near the carpet and turn left, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "painting",
+            "B": "potted plant on the table",
+            "C": "tall potted plant",
+            "D": "swivel chair"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        }
+      ]
+    },
+    "FO-0068": {
+      "question_id": "FO-0068",
+      "saved_at": "2026-09-15T18:22:07+00:00",
+      "action": "If I walk through the arched doorway on the left, then turn back to face where I come from,",
+      "removed_slots": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "questions": [
+        {
+          "slot": 3,
+          "question": "If I walk through the arched doorway on the left, then turn back to face where I come from, would the cabinet still be directly visible?",
+          "question_suffix": "would the cabinet still be directly visible?",
+          "action_override": "If I walk through the arched doorway on the left,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "A",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk through the arched doorway on the left, then turn back to face where I come from, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "cabinet",
+            "B": "ovens",
+            "C": "telephone",
+            "D": "kitchen counter"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 8,
+          "question": "If I walk through the arched doorway on the left, then turn back to face where I come from, which object(s) would be on my right?",
+          "question_suffix": "which object(s) would be on my right?",
+          "action_override": null,
+          "options": {
+            "A": "cabinets",
+            "B": "ovens",
+            "C": "telephone",
+            "D": "kitchen counter"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0076": {
+      "question_id": "FO-0076",
+      "saved_at": "2026-09-15T18:23:24+00:00",
+      "action": "If I walk to the round table, then look back to face where I come from,",
+      "removed_slots": [
+        3,
+        4
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk to the round table, then look back to face where I come from, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 2,
+          "question": "If I walk to the round table, then look back to face where I come from, which direction would have the closest obstacle?",
+          "question_suffix": "which direction would have the closest obstacle?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk to the round table, then look back to face where I come from, where is the black sofa relative to me?",
+          "question_suffix": "where is the black sofa relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": false,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk to the round table, then look back to face where I come from, which object(s) would be in front of me?",
+          "question_suffix": "which object(s) would be in front of me?",
+          "action_override": null,
+          "options": {
+            "A": "fireplace",
+            "B": "sofa",
+            "C": "window",
+            "D": "wooden chairs"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0197": {
+      "question_id": "FO-0197",
+      "saved_at": "2026-09-15T18:33:29+00:00",
+      "action": "If I walk through the doorway and face the way I move,",
+      "removed_slots": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "questions": [
+        {
+          "slot": 5,
+          "question": "If I walk through the doorway and face the way I move, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "lamp",
+            "B": "green sofa",
+            "C": "table and chairs",
+            "D": "grey armchairs"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 8,
+          "question": "If I walk through the doorway and face the way I move, which object(s) would be on my left?",
+          "question_suffix": "which object(s) would be on my left?",
+          "action_override": null,
+          "options": {
+            "A": "lamp",
+            "B": "green sofa",
+            "C": "table and chairs",
+            "D": "painting"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0199": {
+      "question_id": "FO-0199",
+      "saved_at": "2026-09-15T18:34:44+00:00",
+      "action": "If I walk past the black pillar and turn around to face where I come from,",
+      "removed_slots": [
+        4
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk past the black pillar and turn around to face where I come from, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 2,
+          "question": "If I walk past the black pillar and turn around to face where I come from, which direction would have the closest obstacle?",
+          "question_suffix": "which direction would have the closest obstacle?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk past the black pillar, then turn back to face where I come from, would the potted plant still be directly visible?",
+          "question_suffix": "would the potted plant still be directly visible?",
+          "action_override": "If I walk past the black pillar,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk past the black pillar and turn around to face where I come from, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "saxophone",
+            "B": "potted plant",
+            "C": "green sofa",
+            "D": "black sofa"
+          },
+          "answer": "C",
+          "show_lookback": true,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk past the black pillar and turn around to face where I come from, would the black sofa still be directly visible?",
+          "question_suffix": "would the black sofa still be directly visible?",
+          "action_override": null,
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "C",
+          "show_lookback": true,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk past the black pillar and turn around to face where I come from, which object(s) would be right in front of me?",
+          "question_suffix": "which object(s) would be right in front of me?",
+          "action_override": null,
+          "options": {
+            "A": "low table",
+            "B": "potted plant",
+            "C": "large green sofa",
+            "D": "black sofa"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0080": {
+      "question_id": "FO-0080",
+      "saved_at": "2026-09-15T19:45:56+00:00",
+      "action": "If I walk through the glass door and turn back to face the way I come from,",
+      "removed_slots": [],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk through the glass door and turn back to face the way I come from, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 2,
+          "question": "If I walk through the glass door and turn back to face the way I come from, which direction would have the closest obstacle?",
+          "question_suffix": "which direction would have the closest obstacle?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "D",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk through the glass door, then turn back to face where I come from, would the oven still be directly visible?",
+          "question_suffix": "would the oven still be directly visible?",
+          "action_override": "If I walk through the glass door,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "C",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk through the glass door and turn back to face the way I come from, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "stove",
+            "B": "sink",
+            "C": "black stool",
+            "D": "dining table"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk through the glass door and turn back to face the way I come from, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "chair",
+            "B": "stove",
+            "C": "black stool",
+            "D": "kitchen counter"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk through the glass door and turn back to face the way I come from, where is the sink relative to me?",
+          "question_suffix": "where is the sink relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk through the glass door and turn back to face the way I come from, which object(s) would be on my left",
+          "question_suffix": "which object(s) would be on my left",
+          "action_override": null,
+          "options": {
+            "A": "chair",
+            "B": "counter",
+            "C": "black stool",
+            "D": "dining table"
+          },
+          "answer": "D",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0081": {
+      "question_id": "FO-0081",
+      "saved_at": "2026-09-14T21:42:15+00:00",
+      "action": "If I walk forward a few steps and face the way I move,",
+      "removed_slots": [
+        2,
+        3
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk forward a few steps and face the way I move, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk forward a few steps and face the way I move, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "cabinet with glass doors",
+            "B": "sink",
+            "C": "white counter with a pot on it",
+            "D": "glass doors"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk forward a few steps and face the way I move, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "cabinet with glass doors",
+            "B": "sink",
+            "C": "white counter with a pot on it",
+            "D": "white chairs"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk forward a few steps and face the way I move, then turn back to face the way I come from, where is the dining table relative to me?",
+          "question_suffix": "where is the dining table relative to me?",
+          "action_override": "If I walk forward a few steps and face the way I move, then turn back to face the way I come from,",
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk forward a few steps and face the way I move, which object(s) would be on my right?",
+          "question_suffix": "which object(s) would be on my right?",
+          "action_override": null,
+          "options": {
+            "A": "cabinet with glass doors",
+            "B": "sink",
+            "C": "counter",
+            "D": "white vases"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0085": {
+      "question_id": "FO-0085",
+      "saved_at": "2026-09-15T18:27:51+00:00",
+      "action": "If I walk through the doorway ahead and turn back to face where I come from,",
+      "removed_slots": [
+        2
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk through the doorway ahead and turn back to face where I come from, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk through the doorway ahead, then turn back to face where I come from, would the dining table still be directly visible?",
+          "question_suffix": "would the dining table still be directly visible?",
+          "action_override": "If I walk through the doorway ahead,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk through the doorway ahead and turn back to face where I come from, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "silver pot on the cart",
+            "B": "dining table",
+            "C": "chair",
+            "D": "white pillar with a bowl on it"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk through the doorway ahead and turn back to face where I come from, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "silver jar",
+            "B": "dining table",
+            "C": "chair",
+            "D": "white pillar with a bowl on it"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk through the doorway ahead and turn back to face where I come from, where is the dining table relative to me?",
+          "question_suffix": "where is the dining table relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk through the doorway ahead and turn back to face where I come from, which object(s) would be not visible?",
+          "question_suffix": "which object(s) would be not visible?",
+          "action_override": null,
+          "options": {
+            "A": "silver pot on the cart",
+            "B": "dining table",
+            "C": "chair",
+            "D": "white pillar with a bowl on it"
+          },
+          "answer": "D",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0090": {
+      "question_id": "FO-0090",
+      "saved_at": "2026-09-15T18:28:23+00:00",
+      "action": "If I open the door, walk through the doorway and turn around,",
+      "removed_slots": [
+        1,
+        2
+      ],
+      "questions": [
+        {
+          "slot": 3,
+          "question": "If I open the door, walk through the doorway, then turn back to face where I come from, would the orange chair still be directly visible?",
+          "question_suffix": "would the orange chair still be directly visible?",
+          "action_override": "If I open the door, walk through the doorway,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I open the door, walk through the doorway and turn around, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "the orange chair",
+            "B": "the other doorway",
+            "C": "the yellow sofa",
+            "D": "two chairs next to each other"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I open the door, walk through the doorway and turn around, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "the orange chair",
+            "B": "the glass window",
+            "C": "the little yellow sofa",
+            "D": "two chairs next to each other"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I open the door, walk through the doorway and turn around, where is the orange chair relative to me?",
+          "question_suffix": "where is the orange chair relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I open the door, walk through the doorway and turn around, which object(s) would be on my right?",
+          "question_suffix": "which object(s) would be on my right?",
+          "action_override": null,
+          "options": {
+            "A": "the orange chair",
+            "B": "the other doorway",
+            "C": "the yellow sofa",
+            "D": "two chairs next to each other"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0102": {
+      "question_id": "FO-0102",
+      "saved_at": "2026-09-14T21:12:13+00:00",
+      "action": "If I walk to the doorway farther from me,",
+      "removed_slots": [
+        4
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk to the doorway farther from me, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 2,
+          "question": "If I walk to the doorway farther from me, which direction would have the closest obstacle?",
+          "question_suffix": "which direction would have the closest obstacle?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk to the doorway farther from me, then turn back to face where I come from, would the faucet still be directly visible?",
+          "question_suffix": "would the faucet still be directly visible?",
+          "action_override": null,
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk to the doorway farther from me, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "tv",
+            "B": "vase",
+            "C": "chandelier",
+            "D": "fireplace"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk to the doorway farther from me, then turn back to face where I come from, where is the faucet relative to me?",
+          "question_suffix": "where is the faucet relative to me?",
+          "action_override": "If I walk to the doorway farther from me, then turn back to face where I come from,",
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk to the doorway farther from me, which object(s) would be right in front of me?",
+          "question_suffix": "which object(s) would be right in front of me?",
+          "action_override": null,
+          "options": {
+            "A": "tv",
+            "B": "vase",
+            "C": "chandelier",
+            "D": "fireplace"
+          },
+          "answer": "B",
+          "show_lookback": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0123": {
+      "question_id": "FO-0123",
+      "saved_at": "2026-09-16T15:29:20+00:00",
+      "action": "If I walk into the hallway ahead and turn around,",
+      "removed_slots": [],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk into the hallway ahead and turn around, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 3,
+          "question": "If I take a few steps forward, then turn back to face where I come from, would the stove still be directly visible?",
+          "question_suffix": "would the stove still be directly visible?",
+          "action_override": "If I take a few steps forward,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "C",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk into the hallway ahead and turn around, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "stove",
+            "B": "cabinets",
+            "C": "refrigerator",
+            "D": "kitchen counter"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk into the hallway ahead and turn around, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "stove",
+            "B": "cabinets",
+            "C": "refrigerator",
+            "D": "kitchen counter"
+          },
+          "answer": "D",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": "RFR",
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk into the hallway ahead and turn around, where is the kitchen counter relative to me?",
+          "question_suffix": "where is the kitchen counter relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk into the hallway ahead and turn around, which object(s) would be in front of me and to my left?",
+          "question_suffix": "which object(s) would be in front of me and to my left?",
+          "action_override": null,
+          "options": {
+            "A": "stove",
+            "B": "cabinets",
+            "C": "refrigerator",
+            "D": "kitchen counter"
+          },
+          "answer": "C",
+          "show_lookback": false,
+          "endpoint_is_lookback": true,
+          "requires_separate_lookback": false,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    },
+    "FO-0124": {
+      "question_id": "FO-0124",
+      "saved_at": "2026-09-10T22:47:54+00:00",
+      "action": "If I walk through the doorway ahead and turn back to face where I come from,",
+      "removed_slots": [
+        2,
+        4,
+        5
+      ],
+      "questions": [
+        {
+          "slot": 1,
+          "question": "If I walk through the doorway ahead and turn back to face where I come from, which direction would have the most open space?",
+          "question_suffix": "which direction would have the most open space?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "A",
+          "show_lookback": true,
+          "lookback_override": true,
+          "question_edited": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false
+        },
+        {
+          "slot": 3,
+          "question": "If I walk through the doorway ahead, then turn back to face where I come from, would the chairs with red cushions still be directly visible?",
+          "question_suffix": "would the chairs with red cushions still be directly visible?",
+          "action_override": "If I walk through the doorway ahead,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "lookback_override": null,
+          "question_edited": true,
+          "omit_lookback_clause": false,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true
+        },
+        {
+          "slot": 6,
+          "question": "If I walk through the doorway ahead and turn back to face where I come from, where are the chairs with red cushions relative to me?",
+          "question_suffix": "where are the chairs with red cushions relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "C",
+          "show_lookback": true,
+          "lookback_override": true,
+          "question_edited": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false
+        }
+      ]
+    },
+    "FO-0134": {
+      "question_id": "FO-0134",
+      "saved_at": "2026-09-15T18:32:36+00:00",
+      "action": "If I walk past the sofa and to the lamp, then look back to face where I come from,",
+      "removed_slots": [
+        1,
+        2
+      ],
+      "questions": [
+        {
+          "slot": 3,
+          "question": "If I walk past the sofa and to the lamp, then turn back to face where I come from, would a black armchair still be directly visible?",
+          "question_suffix": "would a black armchair still be directly visible?",
+          "action_override": "If I walk past the sofa and to the lamp,",
+          "options": {
+            "A": "clearly visible",
+            "B": "partially visible",
+            "C": "completely blocked",
+            "D": "outside of view"
+          },
+          "answer": "A",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": true,
+          "lookback_override": null,
+          "removal_tag": null,
+          "question_edited": true,
+          "omit_lookback_clause": false
+        },
+        {
+          "slot": 4,
+          "question": "If I walk past the sofa and to the lamp, then look back to face where I come from, which object(s) would be closest to me?",
+          "question_suffix": "which object(s) would be closest to me?",
+          "action_override": null,
+          "options": {
+            "A": "black table",
+            "B": "black armchairs",
+            "C": "dotted ottomans",
+            "D": "lower wooden stool"
+          },
+          "answer": "A",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 5,
+          "question": "If I walk past the sofa and to the lamp, then look back to face where I come from, which object(s) would be farthest from me?",
+          "question_suffix": "which object(s) would be farthest from me?",
+          "action_override": null,
+          "options": {
+            "A": "black table",
+            "B": "black armchairs",
+            "C": "dotted ottomans",
+            "D": "painting"
+          },
+          "answer": "C",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": false
+        },
+        {
+          "slot": 6,
+          "question": "If I walk past the sofa and to the lamp, then look back to face where I come from, where is the painting relative to me?",
+          "question_suffix": "where is the painting relative to me?",
+          "action_override": null,
+          "options": {
+            "A": "front",
+            "B": "left",
+            "C": "right",
+            "D": "behind"
+          },
+          "answer": "B",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": true
+        },
+        {
+          "slot": 8,
+          "question": "If I walk past the sofa and to the lamp, then look back to face where I come from, which object(s) would be in front of me and on my right?",
+          "question_suffix": "which object(s) would be in front of me and on my right?",
+          "action_override": null,
+          "options": {
+            "A": "black table",
+            "B": "black armchairs",
+            "C": "ottomans",
+            "D": "lower wooden stool"
+          },
+          "answer": "C",
+          "show_lookback": true,
+          "endpoint_is_lookback": false,
+          "requires_separate_lookback": false,
+          "lookback_override": true,
+          "removal_tag": null,
+          "question_edited": true
+        }
+      ]
+    }
+  },
+  "updated_at": "2026-09-16T15:59:24+00:00",
+  "soft_exclusions": {
+    "RFR": {
+      "question_ids": [
+        "FO-0001-Q6",
+        "FO-0013-Q2",
+        "FO-0013-Q4",
+        "FO-0019-Q5",
+        "FO-0021-Q1",
+        "FO-0023-Q5",
+        "FO-0024-Q1",
+        "FO-0024-Q6",
+        "FO-0037-Q2",
+        "FO-0037-Q3",
+        "FO-0046-Q6",
+        "FO-0052-Q2",
+        "FO-0056-Q5",
+        "FO-0059-Q5",
+        "FO-0076-Q1",
+        "FO-0076-Q4",
+        "FO-0085-Q3",
+        "FO-0085-Q6",
+        "FO-0090-Q3",
+        "FO-0090-Q4",
+        "FO-0102-Q1"
+      ],
+      "count": 21,
+      "excluded_from_statistics": true,
+      "data_retained": true,
+      "updated_at": "2026-09-14T00:17:34+00:00"
+    }
+  }
+}

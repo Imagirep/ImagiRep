@@ -1,0 +1,57 @@
+{
+ "schema_version": 1,
+ "items": {
+  "MVC-131": {
+   "id": "MVC-131",
+   "template_schema": 4,
+   "revision": 1,
+   "saved_at": "2026-10-01T13:26:53.596586+00:00",
+   "questions": [
+    {
+     "slot": 1,
+     "type": "cross_view_closest",
+     "question": "Which object in Image 1 is closest to wooden box in Image 2?",
+     "options": {
+      "A": "window",
+      "B": "green potted plant",
+      "C": "mirror",
+      "D": "gray door"
+     },
+     "answer": "B",
+     "ready": true,
+     "reference_object": ""
+    },
+    {
+     "slot": 2,
+     "type": "cross_view_farthest",
+     "question": "Which object in Image 1 is farthest from wooden box in Image 2?",
+     "options": {
+      "A": "window",
+      "B": "green potted plant",
+      "C": "mirror",
+      "D": "gray door"
+     },
+     "answer": "C",
+     "ready": true,
+     "reference_object": ""
+    },
+    {
+     "slot": 3,
+     "type": "ordering",
+     "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+     "options": {
+      "A": "window, green potted plant, mirror, gray door",
+      "B": "mirror, gray door, green potted plant, window",
+      "C": "mirror, window, gray door, green potted plant",
+      "D": "green potted plant, mirror, gray door, window"
+     },
+     "answer": "A",
+     "ready": true,
+     "order_direction": "left_to_right"
+    }
+   ]
+  }
+ },
+ "updated_at": "2026-10-01T16:08:40.615905+00:00",
+ "template_schema": 4
+}

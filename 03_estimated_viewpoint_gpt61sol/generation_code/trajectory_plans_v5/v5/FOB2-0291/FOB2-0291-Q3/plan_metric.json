@@ -1,0 +1,275 @@
+{
+  "question_id": "FOB2-0291-Q3",
+  "motion_text": "I walk into the hallway on the right, then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the hallway through the arched doorway on the right",
+      "relation": "into"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0291-Q3",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.08526163964572277,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.1404165541129205,
+        "y": 0.1829389343196213,
+        "yaw": 0.08526163964572277,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.1404165541129205,
+        "y": 0.1829389343196213,
+        "yaw": 0.7853981633974498,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.354008305718351,
+        "y": 0.3965306859250526,
+        "yaw": 0.7853981633974498,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.354008305718351,
+        "y": 0.3965306859250526,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.567600057323782,
+        "y": 0.3965306859250526,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -3.0063191176973776,
+        0.25694662777647714
+      ],
+      [
+        -3.3063191176973774,
+        0.5569466277764779
+      ],
+      [
+        -3.6063191176973772,
+        0.5569466277764779
+      ]
+    ],
+    "x": -3.6063191176973772,
+    "y": 0.5569466277764779,
+    "yaw": 0.1532257909868737,
+    "pitch": 0.0,
+    "travel_yaw": 0.1532257909868737
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.1404165541129205,
+      0.1829389343196213
+    ],
+    [
+      -2.354008305718351,
+      0.3965306859250526
+    ],
+    [
+      -2.567600057323782,
+      0.3965306859250526
+    ]
+  ],
+  "final": {
+    "x": -2.567600057323782,
+    "y": 0.3965306859250526,
+    "yaw_deg": -171.22080886389844,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the hallway through the arched doorway on the right",
+        "relation": "into"
+      },
+      "x": -3.6063191176973772,
+      "y": 0.5569466277764779,
+      "yaw": 0.1532257909868737,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -3.6063191176973772,
+      "y": 0.5569466277764779,
+      "yaw": -2.9883668626029194,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.08526163964572277,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.1404165541129205,
+      "y": 0.1829389343196213,
+      "yaw": 0.08526163964572277,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.1404165541129205,
+      "y": 0.1829389343196213,
+      "yaw": 0.7853981633974498,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.354008305718351,
+      "y": 0.3965306859250526,
+      "yaw": 0.7853981633974498,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.354008305718351,
+      "y": 0.3965306859250526,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.567600057323782,
+      "y": 0.3965306859250526,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.567600057323782,
+      "y": 0.3965306859250526,
+      "yaw": 0.1532257909868737,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.567600057323782,
+      "y": 0.3965306859250526,
+      "yaw": -2.9883668626029194,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the hallway through the arched doorway on the right",
+      "method": "initial_photo",
+      "box": [
+        232,
+        517,
+        987,
+        657
+      ],
+      "point_m": [
+        -4.0536952806527955,
+        0.3969052912271095,
+        -0.8547491480989755
+      ]
+    },
+    {
+      "move_yaw_deg": 0.0,
+      "requested_m": 1.0,
+      "end": [
+        -3.656319117697377,
+        0.5569466277764779
+      ],
+      "blocked": true
+    }
+  ],
+  "m_per_unit": 2.3059887886047363,
+  "seconds": 9.294760942459106,
+  "planning_m_per_unit": 3.238873371193568,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.711972505351436
+}

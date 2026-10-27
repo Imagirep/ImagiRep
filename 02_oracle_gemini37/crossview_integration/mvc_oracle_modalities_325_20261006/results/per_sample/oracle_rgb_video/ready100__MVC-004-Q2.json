@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-004-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-004-Q2",
+  "resource_id": "MVC-004",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is farthest from small white pillar in Image 1?",
+  "answer_choices": {
+    "A": "wooden cabinet",
+    "B": "white bowl",
+    "C": "potted flower",
+    "D": "framed painting"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "24d3782f2b5bb3ed3a28588907dd6b34188d4dc4ab7529733ec862bb3828113c",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-004\\order_21\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7889,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 287
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 2634,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 10524,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 34.069589399994584,
+  "completed_at": "2026-10-06T17:33:35-04:00"
+}

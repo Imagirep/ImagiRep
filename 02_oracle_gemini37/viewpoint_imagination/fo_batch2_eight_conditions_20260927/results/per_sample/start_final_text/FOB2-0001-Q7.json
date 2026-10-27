@@ -1,0 +1,162 @@
+{
+  "row_index": 57,
+  "question_id": "FOB2-0001-Q7",
+  "trajectory_id": "FOB2-0001",
+  "scan_id": "EDJbREhghzL",
+  "question_type": 7,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk forward past the bar stools, then walk to the right and stop beside the round dining table, and turn back to face where I come from, where is the long table relative to me?",
+  "answer_choices": {
+    "C": "right",
+    "A": "behind",
+    "B": "front",
+    "D": "left"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "C": "C",
+    "A": "D",
+    "B": "A",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0001\\start_view.png",
+      "sha256": "26ee5f161909c86b1c4696112dd76c30750b1360288dc4cd7755d4c3ad0fd92c"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0001\\step_01_rgb.png",
+      "sha256": "d50193505ab6cfaf02445df72d1a1f43ae87720baa5ea1eb2c5b3952407c9bd6"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0001\\step_02_rgb.png",
+      "sha256": "590ad9b59c9c488d808092a60a411c9b466fbac05802e1365d316a8e63510254"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0001\\oracle_lookback.png",
+      "sha256": "486fd54a2cae322fed5df207f183241abd374e5b6f340a243620bfd1f129a72a"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "lookback_correction": {
+    "audit": "source_snapshot/lookback_audit.json",
+    "original": {
+      "show_lookback": false,
+      "endpoint_is_lookback": false,
+      "requires_separate_lookback": false
+    },
+    "corrected": {
+      "show_lookback": true,
+      "endpoint_is_lookback": false,
+      "requires_separate_lookback": true
+    },
+    "basis": "lookback_wording_with_distinct_route_lookback_pose",
+    "endpoint_to_lookback_angle_degrees": 100.83383516754054
+  },
+  "category": "object_relative_direction",
+  "category_label": "Object-relative direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0001\\oracle_lookback_depth.png",
+      "sha256": "cb9cadf63e0814f568de3472cb57aaccac2cb314ed71a49356c560cc812d37d2",
+      "color_scale": {
+        "near_m": 0.70675,
+        "far_m": 7.00325
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0001\\oracle_lookback_surface_normals.png",
+      "sha256": "e9bb156259cb9ddb8f3290f1b853c8ea0119a37bc2f8607b1ff9aa7b31ddf3bb"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0001\\oracle_lookback_panorama.png",
+      "sha256": "63dbdb1e671a0f147d157f2e46aabe26f69ebe24c2cb548190e5eaed9e7a966f"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0001\\topdown_lookback_with_path.png",
+      "sha256": "e544c2eb36974b4da0142e788c64b2102e44209c43039a90c4c7495956da43a4"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0001\\trajectory_lookback.txt",
+      "sha256": "445c5a3514e9e063e6863829aca031a5cae8e7aa622597b2786a098d9263df0a"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0001\\trajectory_lookback.mp4",
+      "sha256": "8307d5e932f9ef9c4ac0f6de336b1d6979de3db6d4298a1e73055a9cfeb81d9a"
+    }
+  },
+  "condition": "start_final_text",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "C",
+  "correct": true,
+  "input_signature": "2adb6940dd41940368d01daf39608454ec041e3a0aefe487021861b2ba3e1eb6",
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2666,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 538
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 597,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3264,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_started_at": "2026-09-28T00:50:57.320-04:00",
+  "request_duration_seconds": 3.861601100070402,
+  "completed_at": "2026-09-28T00:51:01.181-04:00",
+  "request_part_count": 6,
+  "request_mime_types": [
+    "image/png",
+    "image/png"
+  ]
+}

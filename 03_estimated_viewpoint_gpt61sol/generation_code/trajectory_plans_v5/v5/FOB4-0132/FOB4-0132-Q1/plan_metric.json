@@ -1,0 +1,243 @@
+{
+  "question_id": "FOB4-0132-Q1",
+  "motion_text": "I walk to the table and slightly turn left.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the wooden desk with a computer monitor in the room ahead"
+    },
+    {
+      "op": "turn",
+      "direction": "left",
+      "amount": "slight"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0132-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.8781172564429585,
+        "y": 0.019441960507625276,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -3.202379938689277,
+        0.02163238629664299
+      ]
+    ],
+    "x": -3.202379938689277,
+    "y": 0.02163238629664299,
+    "yaw": 0.006754993998714843,
+    "pitch": 0.0,
+    "travel_yaw": 0.006754993998714843
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.8781172564429585,
+      0.019441960507625276
+    ]
+  ],
+  "final": {
+    "x": -2.8781172564429585,
+    "y": 0.019441960507625276,
+    "yaw_deg": -34.61296735323743,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the wooden desk with a computer monitor in the room ahead"
+      },
+      "x": -3.202379938689277,
+      "y": 0.02163238629664299,
+      "yaw": 0.006754993998714843,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left",
+        "amount": "slight"
+      },
+      "x": -3.202379938689277,
+      "y": 0.02163238629664299,
+      "yaw": -0.6041102441993003,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.8781172564429585,
+      "y": 0.019441960507625276,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.8781172564429585,
+      "y": 0.019441960507625276,
+      "yaw": 0.006754993998714843,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.8781172564429585,
+      "y": 0.019441960507625276,
+      "yaw": -0.6041102441993003,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the wooden desk with a computer monitor in the room ahead",
+      "method": "initial_photo",
+      "box": [
+        635,
+        404,
+        887,
+        491
+      ],
+      "point_m": [
+        -4.231947610171309,
+        -0.3393750901561162,
+        -1.2097706222806706
+      ]
+    },
+    {
+      "overlap": "the wooden desk with a computer monitor in the room ahead",
+      "n_points": 211,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 3.2,
+          "stop_m": 1.0910252005410888,
+          "visible_frac": 0.6018957345971564,
+          "center_deg": -2.5300630567544444,
+          "width_deg": 23.039335298115674,
+          "distance_m": 1.2031071939944329
+        },
+        {
+          "sector": 3,
+          "path_m": 3.6,
+          "stop_m": 1.030305783276749,
+          "visible_frac": 0.5308056872037915,
+          "center_deg": 0.3880787456371213,
+          "width_deg": 21.931026141620634,
+          "distance_m": 1.1367874248042709
+        },
+        {
+          "sector": 5,
+          "path_m": 3.9000000000000004,
+          "stop_m": 0.7714734650749782,
+          "visible_frac": 0.4834123222748815,
+          "center_deg": -4.918795280780921,
+          "width_deg": 43.6506637817927,
+          "distance_m": 1.0047207890674414
+        },
+        {
+          "sector": 2,
+          "path_m": 4.6000000000000005,
+          "stop_m": 0.614200960690286,
+          "visible_frac": 0.25118483412322273,
+          "center_deg": -1.5878488003414832,
+          "width_deg": 53.1732743530963,
+          "distance_m": 1.074354961230569
+        },
+        {
+          "sector": 6,
+          "path_m": 4.7,
+          "stop_m": 0.7642598328562464,
+          "visible_frac": 0.33649289099526064,
+          "center_deg": 19.092814725730893,
+          "width_deg": 63.9041367897364,
+          "distance_m": 1.2148153155807668
+        },
+        {
+          "sector": 7,
+          "path_m": 5.300000000000001,
+          "stop_m": 1.0151339107487551,
+          "visible_frac": 0.23222748815165878,
+          "center_deg": -28.197744510371773,
+          "width_deg": 38.969311484774835,
+          "distance_m": 1.0287903177659288
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 2.101377010345459,
+  "seconds": 7.633989095687866,
+  "planning_m_per_unit": 2.338128360298276,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.8987432195884171
+}

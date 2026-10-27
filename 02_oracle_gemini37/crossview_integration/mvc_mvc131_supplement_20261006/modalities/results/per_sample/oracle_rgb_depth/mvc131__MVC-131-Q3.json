@@ -1,0 +1,48 @@
+{
+  "uid": "mvc131__MVC-131-Q3",
+  "cohort": "mvc131",
+  "question_id": "MVC-131-Q3",
+  "resource_id": "MVC-131",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "mirror, window, gray door, green potted plant",
+    "B": "mirror, gray door, green potted plant, window",
+    "C": "green potted plant, mirror, gray door, window",
+    "D": "window, green potted plant, mirror, gray door"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "f324ac2f633d8923c43c6e59474236a75d899dc44e84bc6c3cde65a642f81a90",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.896 m (near/red) to 3.391 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-131\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4642,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 386
+      }
+    ],
+    "thoughts_token_count": 1274,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5917,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.50386910000816,
+  "completed_at": "2026-10-06T19:42:13-04:00"
+}

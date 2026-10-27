@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-219-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-219-Q3",
+  "resource_id": "MVC-219",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "paper towel, refrigerator, ovens, silver pot",
+    "B": "refrigerator, paper towel, silver pot, ovens",
+    "C": "silver pot, ovens, refrigerator, paper towel",
+    "D": "paper towel, ovens, refrigerator, silver pot"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "e535904ccc66021b7f4df9d67bc2b7a4a99c1dc1f016ecafb55c56b0a783d72a",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-219\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3588,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 396
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1115,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4704,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 6.013867899993784,
+  "completed_at": "2026-10-06T17:32:53-04:00"
+}

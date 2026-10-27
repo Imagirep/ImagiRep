@@ -1,0 +1,44 @@
+{
+  "status": "ok",
+  "row_index": 181,
+  "question_id": "MVC-138-Q3",
+  "condition": "text_only",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "response_format": "dynamic option enum",
+  "system_prompt": "Solve this spatial reasoning multiple-choice question from the provided text. Reason carefully. Return only A, B, C, or D.",
+  "condition_prompt": "No images are provided. Choose the best answer using only the question and answer choices. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.",
+  "prompt_hash": "3ffbb4314550226c5b6843e9c9f428e27cbd71ad330bc75f793bcc1b77631f1f",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "bed, sink, window, yellow chair",
+    "B": "yellow chair, window, sink, bed",
+    "C": "yellow chair, sink, bed, window",
+    "D": "sink, yellow chair, bed, window"
+  },
+  "gold_answer": "C",
+  "prediction": "B",
+  "correct": false,
+  "image_paths": [],
+  "image_count": 0,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 227,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 227
+      }
+    ],
+    "thoughts_token_count": 1779,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2007,
+    "traffic_type": null
+  },
+  "completed_at": "2026-09-30T18:59:49"
+}

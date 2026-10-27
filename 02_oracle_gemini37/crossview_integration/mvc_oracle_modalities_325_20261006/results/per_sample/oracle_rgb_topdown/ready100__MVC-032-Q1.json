@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-032-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-032-Q1",
+  "resource_id": "MVC-032",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to silver pot in Image 1?",
+  "answer_choices": {
+    "A": "round table",
+    "B": "black cabinet",
+    "C": "potted flower",
+    "D": "framed painting under the light"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "5070abe903a092d0834af6e2d82521ef4d84e382b9f19ee6d4c44c0cfe68c484",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-032\\order_21\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4600,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 319
+      }
+    ],
+    "thoughts_token_count": 5191,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9792,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 22.215877499998896,
+  "completed_at": "2026-10-06T16:48:19-04:00"
+}

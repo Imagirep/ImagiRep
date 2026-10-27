@@ -1,0 +1,52 @@
+{
+  "uid": "last50__MVC-166-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-166-Q3",
+  "resource_id": "MVC-166",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "red bowl, dog shaped statue, white shelf, white statue",
+    "B": "white shelf, red bowl, dog shaped statue, white statue",
+    "C": "white shelf, dog shaped statue, white statue, red bowl",
+    "D": "dog shaped statue, white shelf, white statue, red bowl"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "3962cdcefd1d20e2aae923b9bc633185b98d0b0a66eecf25782cd35c8dc947b0",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-166\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7935,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 333
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      }
+    ],
+    "thoughts_token_count": 1011,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8946,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 7.329266100001405,
+  "completed_at": "2026-10-06T17:35:20-04:00"
+}

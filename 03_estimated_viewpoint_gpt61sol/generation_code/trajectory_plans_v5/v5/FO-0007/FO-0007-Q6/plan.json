@@ -1,0 +1,267 @@
+{
+  "question_id": "FO-0007-Q6",
+  "motion_text": "I walk to the spot between the chair and the blue pillar, then turn slightly to the right.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the spot between the chair and the blue pillar",
+      "relation": "to"
+    },
+    {
+      "op": "turn",
+      "direction": "right",
+      "amount": "slight"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FO-0007-Q6",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.14683955768483284,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.5524558829247566,
+        "y": -0.3775187360244905,
+        "yaw": -0.14683955768483284,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.5524558829247566,
+        -0.3775187360244905
+      ]
+    ],
+    "x": -2.5524558829247566,
+    "y": -0.3775187360244905,
+    "yaw": -0.14683955768483284,
+    "pitch": 0.0,
+    "travel_yaw": -0.14683955768483284
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.5524558829247566,
+      -0.3775187360244905
+    ]
+  ],
+  "final": {
+    "x": -2.5524558829247566,
+    "y": -0.3775187360244905,
+    "yaw_deg": 26.58671307909129,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the spot between the chair and the blue pillar",
+        "relation": "to"
+      },
+      "x": -2.5524558829247566,
+      "y": -0.3775187360244905,
+      "yaw": -0.14683955768483284,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "right",
+        "amount": "slight"
+      },
+      "x": -2.5524558829247566,
+      "y": -0.3775187360244905,
+      "yaw": 0.4640256805131826,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.14683955768483284,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.5524558829247566,
+      "y": -0.3775187360244905,
+      "yaw": -0.14683955768483284,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.5524558829247566,
+      "y": -0.3775187360244905,
+      "yaw": 0.4640256805131826,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the spot between the chair and the blue pillar",
+      "method": "initial_photo",
+      "box": [
+        748,
+        206,
+        998,
+        427
+      ],
+      "point_m": [
+        -3.4176772923832037,
+        -0.9633569218804109,
+        -1.6693245814275641
+      ]
+    },
+    {
+      "overlap": "the spot between the chair and the blue pillar",
+      "n_points": 186,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 3.0,
+          "stop_m": 1.0448992618392539,
+          "visible_frac": 0.7204301075268817,
+          "center_deg": 0.025792278940635127,
+          "width_deg": 40.800914243923806,
+          "distance_m": 1.585519116926911
+        },
+        {
+          "sector": 5,
+          "path_m": 3.3000000000000003,
+          "stop_m": 0.814052591493418,
+          "visible_frac": 0.553763440860215,
+          "center_deg": 2.497768324026076,
+          "width_deg": 45.93374162159614,
+          "distance_m": 1.5118953426317143
+        },
+        {
+          "sector": 3,
+          "path_m": 3.4000000000000004,
+          "stop_m": 1.0653155439345154,
+          "visible_frac": 0.7419354838709677,
+          "center_deg": -1.0301864220672123,
+          "width_deg": 38.47295905266677,
+          "distance_m": 1.6000215742309238
+        },
+        {
+          "sector": 6,
+          "path_m": 3.8000000000000003,
+          "stop_m": 0.6867194241742376,
+          "visible_frac": 0.3225806451612903,
+          "center_deg": 10.502053774802516,
+          "width_deg": 54.43396783438479,
+          "distance_m": 1.3286958712404897
+        },
+        {
+          "sector": 2,
+          "path_m": 4.5,
+          "stop_m": 0.5521926169570998,
+          "visible_frac": 0.3064516129032258,
+          "center_deg": -8.899262452461503,
+          "width_deg": 46.93995422126004,
+          "distance_m": 1.3594580956972337
+        },
+        {
+          "sector": 7,
+          "path_m": 4.9,
+          "stop_m": 0.5416237947622369,
+          "visible_frac": 0.0,
+          "center_deg": null,
+          "width_deg": null,
+          "distance_m": null
+        },
+        {
+          "sector": 0,
+          "path_m": 5.0,
+          "stop_m": 0.5349660717105914,
+          "visible_frac": 0.0,
+          "center_deg": null,
+          "width_deg": null,
+          "distance_m": null
+        },
+        {
+          "sector": 1,
+          "path_m": 5.0,
+          "stop_m": 0.5153367069052898,
+          "visible_frac": 0.11827956989247312,
+          "center_deg": -21.877615207530823,
+          "width_deg": 34.67990655641439,
+          "distance_m": 1.2069567155473653
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 1.1427991357113207,
+  "seconds": 7.643568754196167
+}

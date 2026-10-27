@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB2-0226-Q1",
+  "motion_text": "I walk into the room, walk near the long sofa, then stop and slightly turn right.",
+  "view_variant": "endpoint",
+  "frames": 80,
+  "fps": 12,
+  "total_distance_m": 0.9171576499893108,
+  "depth_display_range_scene_units": [
+    1.7579464650154113,
+    4.823698606491089
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.7261745768121863,
+    "far_m": 4.736518469950274
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.3682350947565354 m over generated floor distance",
+  "m_per_unit": 1.7819411158561707,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 27.58810830116272
+}

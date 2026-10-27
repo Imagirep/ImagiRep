@@ -1,0 +1,83 @@
+{
+  "row_index": 178,
+  "question_id": "FO-0090-Q8",
+  "trajectory_id": "FO-0090",
+  "scan_id": "ac26ZMwG7aT",
+  "question_type": 8,
+  "question_set": "lookback",
+  "endpoint_is_lookback": true,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I open the door, walk through the doorway and turn around, which object(s) would be on my right?",
+  "answer_choices": {
+    "C": "the yellow sofa",
+    "A": "two chairs next to each other",
+    "B": "the other doorway",
+    "D": "the orange chair"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "the orange chair",
+    "B": "the other doorway",
+    "C": "the yellow sofa",
+    "D": "two chairs next to each other"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "C": "C",
+    "A": "D",
+    "B": "B",
+    "D": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0090\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0090\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0090\\modalities\\step_02_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "condition": "text_only",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": false,
+  "image_count": 0,
+  "evidence_kinds": [],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 91,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 91
+      }
+    ],
+    "thoughts_token_count": 2331,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2423,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-16T12:38:37-04:00"
+}

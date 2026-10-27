@@ -1,0 +1,379 @@
+{
+  "question_id": "FOB4-0057-Q1",
+  "motion_text": "I walk forward, slightly turn left and walk near the washing machines, then turn around.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "forward",
+      "amount": "default"
+    },
+    {
+      "op": "turn",
+      "direction": "left",
+      "amount": "slight"
+    },
+    {
+      "op": "go",
+      "target": "the stacked white washing machine and dryer",
+      "relation": "near"
+    },
+    {
+      "op": "turn",
+      "direction": "left",
+      "amount": "around"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0057-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -0.704989479014239,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -0.704989479014239,
+        "y": 0.0,
+        "yaw": -0.6108652381980155,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -0.704989479014239,
+        "y": 0.0,
+        "yaw": 0.678853618994864,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.2891261059609922,
+        "y": 0.4712622082907645,
+        "yaw": 0.678853618994864,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -1.2891261059609922,
+        "y": 0.4712622082907645,
+        "yaw": -0.11065722117389551,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.101956194854749,
+        "y": 0.26983664285812503,
+        "yaw": -0.11065722117389551,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -3.101956194854749,
+        "y": 0.26983664285812503,
+        "yaw": -0.4636476090008061,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.303381760287389,
+        "y": 0.1691238601418051,
+        "yaw": -0.4636476090008061,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -0.7000000000000001,
+        0.0
+      ],
+      [
+        -1.2800024695892924,
+        0.46792690617851385
+      ],
+      [
+        -3.0800024695892922,
+        0.2679269061785141
+      ],
+      [
+        -3.2800024695892924,
+        0.16792690617851402
+      ]
+    ],
+    "x": -3.2800024695892924,
+    "y": 0.16792690617851402,
+    "yaw": 0.06499620526871125,
+    "pitch": 0.0,
+    "travel_yaw": 0.06499620526871125
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -0.704989479014239,
+      0.0
+    ],
+    [
+      -1.2891261059609922,
+      0.4712622082907645
+    ],
+    [
+      -3.101956194854749,
+      0.26983664285812503
+    ],
+    [
+      -3.303381760287389,
+      0.1691238601418051
+    ]
+  ],
+  "final": {
+    "x": -3.303381760287389,
+    "y": 0.1691238601418051,
+    "yaw_deg": -176.2759917537369,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "forward",
+        "amount": "default"
+      },
+      "x": -0.7000000000000001,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left",
+        "amount": "slight"
+      },
+      "x": -0.7000000000000001,
+      "y": 0.0,
+      "yaw": -0.6108652381980155,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "target": "the stacked white washing machine and dryer",
+        "relation": "near"
+      },
+      "x": -3.2800024695892924,
+      "y": 0.16792690617851402,
+      "yaw": 0.06499620526871125,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left",
+        "amount": "around"
+      },
+      "x": -3.2800024695892924,
+      "y": 0.16792690617851402,
+      "yaw": -3.076596448321082,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -0.704989479014239,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -0.704989479014239,
+      "y": 0.0,
+      "yaw": -0.6108652381980155,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -0.704989479014239,
+      "y": 0.0,
+      "yaw": 0.678853618994864,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.2891261059609922,
+      "y": 0.4712622082907645,
+      "yaw": 0.678853618994864,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.2891261059609922,
+      "y": 0.4712622082907645,
+      "yaw": -0.11065722117389551,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.101956194854749,
+      "y": 0.26983664285812503,
+      "yaw": -0.11065722117389551,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.101956194854749,
+      "y": 0.26983664285812503,
+      "yaw": -0.4636476090008061,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.303381760287389,
+      "y": 0.1691238601418051,
+      "yaw": -0.4636476090008061,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.303381760287389,
+      "y": 0.1691238601418051,
+      "yaw": 0.06499620526871125,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.303381760287389,
+      "y": 0.1691238601418051,
+      "yaw": -3.076596448321082,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "move_yaw_deg": 0.0,
+      "requested_m": 2.0,
+      "end": [
+        -0.7000000000000001,
+        0.0
+      ],
+      "blocked": true
+    },
+    {
+      "ground": "the stacked white washing machine and dryer",
+      "method": "initial_photo",
+      "box": [
+        473,
+        416,
+        816,
+        527
+      ],
+      "point_m": [
+        -4.466259101140891,
+        -0.12829431596408616,
+        -0.7435127266195436
+      ]
+    },
+    {
+      "overlap": "the stacked white washing machine and dryer",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 3.4000000000000004,
+          "stop_m": 1.2226822188728357,
+          "visible_frac": 0.9644444444444444,
+          "center_deg": -0.08027468679718845,
+          "width_deg": 22.714406692651224,
+          "distance_m": 1.2947735530669433
+        },
+        {
+          "sector": 3,
+          "path_m": 3.9000000000000004,
+          "stop_m": 0.9862638705952892,
+          "visible_frac": 0.9644444444444444,
+          "center_deg": -0.21212829707363653,
+          "width_deg": 28.47778406938101,
+          "distance_m": 1.0647698104972216
+        },
+        {
+          "sector": 2,
+          "path_m": 4.9,
+          "stop_m": 0.700170385511557,
+          "visible_frac": 0.6355555555555555,
+          "center_deg": -0.6524179859244195,
+          "width_deg": 38.26548745105455,
+          "distance_m": 0.688864006063942
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 2.2018303871154785,
+  "seconds": 10.922504186630249,
+  "planning_m_per_unit": 2.186247194973679,
+  "scale_source": "moge",
+  "scale_factor_applied": 1.0071278271631985
+}

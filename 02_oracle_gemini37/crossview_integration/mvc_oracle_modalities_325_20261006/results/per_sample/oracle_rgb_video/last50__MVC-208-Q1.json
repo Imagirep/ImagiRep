@@ -1,0 +1,52 @@
+{
+  "uid": "last50__MVC-208-Q1",
+  "cohort": "last50",
+  "question_id": "MVC-208-Q1",
+  "resource_id": "MVC-208",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to framed paintings in Image 1?",
+  "answer_choices": {
+    "A": "tv",
+    "B": "long sofa",
+    "C": "fireplace",
+    "D": "glass table"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "124373228974d10202c07e90fad667c1c1e1082ca6f77a0a441a4330e8ba7f70",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-208\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7886,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 284
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      }
+    ],
+    "thoughts_token_count": 670,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8557,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.999814900002093,
+  "completed_at": "2026-10-06T17:35:57-04:00"
+}

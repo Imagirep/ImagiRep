@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB4-0132-Q6",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the table and slightly turn left, where is the weighing scale relative to me?",
+  "answer_choices": {
+    "B": "right",
+    "A": "front",
+    "C": "behind",
+    "D": "left"
+  },
+  "gold_answer": "B",
+  "show_lookback": false,
+  "prediction": "B",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0132/start_view.png",
+      "sha256": "c7960694ced171317e33ed7df7a870bbf3bad6dc696f0189feef068a3d96434b"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0132/step_01_rgb.png",
+      "sha256": "a7d0e37ae7ce933541a53213ca1e29dd0b1e63c96304c2c434d9b28a355a32e1"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0132/step_02_rgb.png",
+      "sha256": "2de4d46c0cc9a5fd6daff04c3d1e76f277a72b32d36efb2a260c8bb52513efbb"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3328,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 136
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 451,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3780,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 4.471598099989933,
+  "completed_at": "2026-10-06T15:12:11-04:00"
+}

@@ -1,0 +1,147 @@
+{
+  "question_id": "FO-0076-Q6",
+  "motion_text": "I walk to the round table, then look back to face where I come from.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the small round table between the two red chairs",
+      "relation": "to"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "shared_walk_from": "FO-0076-Q1",
+  "walk_state": {
+    "question_id": "FO-0076-Q6",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.096896087021077,
+        "y": -0.015966222529296106,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -6.018215158592522,
+        -0.023453892998574588
+      ]
+    ],
+    "x": -6.018215158592522,
+    "y": -0.023453892998574588,
+    "yaw": -0.0038971312331039032,
+    "pitch": 0.0,
+    "travel_yaw": -0.0038971312331039032
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -4.096896087021077,
+      -0.015966222529296106
+    ]
+  ],
+  "final": {
+    "x": -4.096896087021077,
+    "y": -0.015966222529296106,
+    "yaw_deg": 179.77671082813453,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -6.018215158592522,
+      "y": -0.023453892998574588,
+      "yaw": 3.1376955223566894,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.096896087021077,
+      "y": -0.015966222529296106,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.096896087021077,
+      "y": -0.015966222529296106,
+      "yaw": 3.1376955223566894,
+      "pitch": 0.0
+    }
+  ],
+  "events": [],
+  "m_per_unit": 2.158400297164917,
+  "seconds": 7.43737268447876,
+  "planning_m_per_unit": 3.170624079985771,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.6807493549265554
+}

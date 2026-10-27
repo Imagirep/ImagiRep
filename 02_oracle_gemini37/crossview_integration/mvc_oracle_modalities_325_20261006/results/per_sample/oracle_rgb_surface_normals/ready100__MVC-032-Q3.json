@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-032-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-032-Q3",
+  "resource_id": "MVC-032",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_surface_normals",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "painting under the light, dining table, decorative metal pot, book shelf",
+    "B": "decorative metal pot, book shelf, dining table, painting under the light",
+    "C": "book shelf, dining table, painting under the light, decorative metal pot",
+    "D": "book shelf, decorative metal pot, painting under the light, dining table"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "24551dfacc31e73ad072d7a15c188bb4eca72ee55f8b786dddd0ffbaec79683c",
+  "caption": "ORACLE SURFACE NORMAL MAP (same camera pose and field of view as Oracle RGB):\nColors encode surface orientation, not object color or distance. RGB channels encode normal components along camera-right (R), camera-up (G), and camera-forward (B): 0 = -1, about 128 = 0, and 255 = +1. Higher R/G/B means a stronger rightward/upward/forward component; a surface facing the camera has low B. Black means missing geometry. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-032\\oracle_surface_normals_sv.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4668,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 412
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 4141,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8810,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 16.38578110000526,
+  "completed_at": "2026-10-06T17:40:36-04:00"
+}

@@ -1,0 +1,146 @@
+{
+  "row_index": 188,
+  "question_id": "FOB4-0140-Q2",
+  "trajectory_id": "FOB4-0140",
+  "scan_id": "Vt2qJdWjCF2",
+  "route_variant": "new_straight",
+  "question_type": 2,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk past the white pillar and slightly turn left, which direction would have the closest obstacle?",
+  "answer_choices": {
+    "D": "left",
+    "A": "front",
+    "B": "behind",
+    "C": "right"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "D": "B",
+    "A": "A",
+    "B": "D",
+    "C": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0140\\start_view.png",
+      "sha256": "0430532fbf0c5b33ec729ea3aa825810adc5ec746d1735c8fedecc377df78314"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0140\\step_01_rgb.png",
+      "sha256": "b614bc9054d20c7632b471b043c9a948a182185f7d5b76c9a08812c8c84fa833"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0140\\step_02_rgb.png",
+      "sha256": "df3442d3f0184e48bf55ca51f1b7f508c782ece89bd6c611f298386d482deed2"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "category": "nearest_obstacle_direction",
+  "category_label": "Nearest-obstacle direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0140\\step_02_depth.png",
+      "sha256": "d18a111f35354ce28b4f6e652a742b62eeb2bcbe506e8f5c23dee4c0666544f6",
+      "color_scale": {
+        "near_m": 1.73475,
+        "far_m": 5.71825
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0140\\step_02_surface_normals.png",
+      "sha256": "fad4352d261216538436c11742a232fa5f699a76181bb520334930a055ad9146"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0140\\step_02_panorama.png",
+      "sha256": "14f2c51ed268d9f4eda0c1d773903f5f77f68de69bcf2174e6a6871175e2d5e9"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0140\\topdown_with_path.png",
+      "sha256": "509f82925109273cffc543373df6e2f11615a19957d85a6d34d80a52f3c5a3be"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0140\\trajectory.txt",
+      "sha256": "33142c6658c5a8d3c44334b2748501c49fc1f572894d72abd08967eb881f7a2e"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0140\\trajectory.mp4",
+      "sha256": "cb0f0d4fa95ae6b14a926c9715c5fd6c41ed7ebd60f4d731c06519867be65e43"
+    }
+  },
+  "condition": "start_final_panorama",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT PANORAMA (360-degree RGB at the FINAL VIEW position):\nThe panorama is centered on the final camera's facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. This is one position, not a sequence of movement frames. Combine it with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch4_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": false,
+  "input_signature": "17c5feb65a958242ac80e415f1f33746b0117b0ad6efad8b5e77fbf8394d9bf9",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "panorama"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3449,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 240
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3209
+      }
+    ],
+    "thoughts_token_count": 4372,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7822,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-10-05T01:05:54.156-04:00",
+  "request_duration_seconds": 21.04136909999943,
+  "completed_at": "2026-10-05T01:06:15.197-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

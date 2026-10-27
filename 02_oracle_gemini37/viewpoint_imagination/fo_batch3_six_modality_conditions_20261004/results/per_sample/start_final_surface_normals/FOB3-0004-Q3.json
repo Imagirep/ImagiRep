@@ -1,0 +1,150 @@
+{
+  "row_index": 190,
+  "question_id": "FOB3-0004-Q3",
+  "trajectory_id": "FOB3-0004",
+  "scan_id": "mJXqzFtmKg4",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk to the bed and face the same direction I go, then turn to face my starting point, would the towel still be directly visible?",
+  "answer_choices": {
+    "D": "completely blocked",
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "outside of view"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "D": "C",
+    "A": "A",
+    "B": "B",
+    "C": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0004\\start_view.png",
+      "sha256": "2aae3c3401e71e11c87695b4ff306078eee6e39afe1dd9833afdf634a2c05aa3"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0004\\step_01_rgb.png",
+      "sha256": "34d2e446b9e27a7742f5a40e7a1bf02e46cfecc56701aa0f1edf7b00a6b0e01a"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0004\\step_02_rgb.png",
+      "sha256": "9cd5420dcdc147fc2c5f42980abee0c2311d9d82e848739f15979a1761867998"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0004\\oracle_lookback.png",
+      "sha256": "ffb0030b1ac1ff0d17142c1885920297d35519f9e84223374f911fae3d96be7f"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "category": "visibility",
+  "category_label": "Visibility (incl. object selection by visibility)",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0004\\oracle_lookback_depth.png",
+      "sha256": "5bdf716caffbd4ed656c7f9f55863903cac6aeb3e58533676c1ea0d766073dc9",
+      "color_scale": {
+        "near_m": 1.028,
+        "far_m": 5.07575
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0004\\oracle_lookback_surface_normals.png",
+      "sha256": "463a7fb99e3db2f09f2918899c4eecd3ec389c986d6de70dbbd95f775907f69b"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0004\\oracle_lookback_panorama.png",
+      "sha256": "9a065f02a542b385bc509a28b7e5fd5cd17f797d86f5c23a70c1fb2bc7f87478"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0004\\topdown_lookback_with_path.png",
+      "sha256": "241977ad4807ecc6a000dfa52c13c09dc1dc519aa4d7e7bed27c1799c28624f6"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0004\\trajectory_lookback.txt",
+      "sha256": "715327f2e386900e8127725554c6a40985b238a1aac4d028938eb79d574b8593"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0004\\trajectory_lookback.mp4",
+      "sha256": "8ede42dac63756880e28d2463a86bcb9ab575593c14aef9f166fc754a6e58177"
+    }
+  },
+  "condition": "start_final_surface_normals",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT SURFACE NORMAL MAP (same camera pose and field of view as FINAL VIEW):\nColors encode surface orientation, not object color or distance. RGB channels encode normal components along camera-right (R), camera-up (G), and camera-forward (B): 0 = -1, about 128 = 0, and 255 = +1. Higher R/G/B means a stronger rightward/upward/forward component; a surface facing the camera has low B. Black means missing geometry. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch3_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "D",
+  "correct": true,
+  "input_signature": "188a1a0ddc310f99385963102f050cdaafd0e6a2117ab9bf74d5d65e102d8e0e",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "surface_normals"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3464,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 272
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 2636,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6101,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T19:19:26.406-04:00",
+  "request_duration_seconds": 10.781528500010609,
+  "completed_at": "2026-10-04T19:19:37.188-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

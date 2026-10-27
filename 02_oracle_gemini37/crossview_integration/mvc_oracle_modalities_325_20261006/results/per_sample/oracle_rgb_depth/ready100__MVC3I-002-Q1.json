@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC3I-002-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC3I-002-Q1",
+  "resource_id": "MVC3I-002",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Images 3 and 2 is closest to white decorative cabinet in Image 1?",
+  "answer_choices": {
+    "A": "bed",
+    "B": "lamp",
+    "C": "toilet",
+    "D": "sink"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "269ec9537dbf130d84e4171899ed55c7ebc1a3266429966dd7b0200b52dafaed",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.932 m (near/red) to 8.663 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC3I-002\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 5672,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 352
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 5320
+      }
+    ],
+    "thoughts_token_count": 2411,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8084,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 34.16343529999722,
+  "completed_at": "2026-10-06T17:39:07-04:00"
+}

@@ -1,0 +1,308 @@
+{
+  "question_id": "FOB3-0182-Q4",
+  "motion_text": "I walk to the bed and face the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "relation": "to",
+      "target": "the bed with white bedding inside the bedroom"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0182-Q4",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0629491987282458,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.9973734091330506,
+        "y": 0.2519643525262065,
+        "yaw": 0.0629491987282458,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -3.9973734091330506,
+        "y": 0.2519643525262065,
+        "yaw": -0.6107259643892085,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -5.997373409133051,
+        "y": -1.148035647473793,
+        "yaw": -0.6107259643892085,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -5.997373409133051,
+        "y": -1.148035647473793,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -6.097373409133051,
+        "y": -1.148035647473793,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -3.9973734091330506,
+        0.2519643525262065
+      ],
+      [
+        -5.997373409133051,
+        -1.148035647473793
+      ],
+      [
+        -6.097373409133051,
+        -1.148035647473793
+      ]
+    ],
+    "x": -6.097373409133051,
+    "y": -1.148035647473793,
+    "yaw": -0.18610486625380382,
+    "pitch": 0.0,
+    "travel_yaw": -0.18610486625380382
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -3.9973734091330506,
+      0.2519643525262065
+    ],
+    [
+      -5.997373409133051,
+      -1.148035647473793
+    ],
+    [
+      -6.097373409133051,
+      -1.148035647473793
+    ]
+  ],
+  "final": {
+    "x": -6.097373409133051,
+    "y": -1.148035647473793,
+    "yaw_deg": -10.663023383189618,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "relation": "to",
+        "target": "the bed with white bedding inside the bedroom"
+      },
+      "x": -6.097373409133051,
+      "y": -1.148035647473793,
+      "yaw": -0.18610486625380382,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -6.097373409133051,
+      "y": -1.148035647473793,
+      "yaw": -0.18610486625380382,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0629491987282458,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.9973734091330506,
+      "y": 0.2519643525262065,
+      "yaw": 0.0629491987282458,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.9973734091330506,
+      "y": 0.2519643525262065,
+      "yaw": -0.6107259643892085,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -5.997373409133051,
+      "y": -1.148035647473793,
+      "yaw": -0.6107259643892085,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -5.997373409133051,
+      "y": -1.148035647473793,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -6.097373409133051,
+      "y": -1.148035647473793,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -6.097373409133051,
+      "y": -1.148035647473793,
+      "yaw": -0.18610486625380382,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the bed with white bedding inside the bedroom",
+      "method": "initial_photo",
+      "box": [
+        508,
+        206,
+        729,
+        446
+      ],
+      "point_m": [
+        -6.905880843018192,
+        -1.8597440814766901,
+        -1.1602892844919757
+      ]
+    },
+    {
+      "overlap": "the bed with white bedding inside the bedroom",
+      "n_points": 156,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 7.800000000000001,
+          "stop_m": 1.0771319165628654,
+          "visible_frac": 0.7243589743589743,
+          "center_deg": -4.926232621047742,
+          "width_deg": 57.55429753171495,
+          "distance_m": 1.2353879953440339
+        },
+        {
+          "sector": 5,
+          "path_m": 7.800000000000001,
+          "stop_m": 1.0961266193855048,
+          "visible_frac": 0.6923076923076923,
+          "center_deg": -4.289480524349506,
+          "width_deg": 45.16035599464272,
+          "distance_m": 1.3133958561222645
+        },
+        {
+          "sector": 3,
+          "path_m": 8.4,
+          "stop_m": 1.0123648773183573,
+          "visible_frac": 0.7435897435897436,
+          "center_deg": 1.6894172782145493,
+          "width_deg": 64.68426826611997,
+          "distance_m": 1.0878917308348588
+        },
+        {
+          "sector": 6,
+          "path_m": 8.4,
+          "stop_m": 1.0158370169898694,
+          "visible_frac": 0.5641025641025641,
+          "center_deg": -1.7103361016124974,
+          "width_deg": 21.29798383495011,
+          "distance_m": 1.291650621963658
+        },
+        {
+          "sector": 2,
+          "path_m": 9.4,
+          "stop_m": 1.059899229593395,
+          "visible_frac": 0.5192307692307693,
+          "center_deg": 3.283367323201464,
+          "width_deg": 35.639633929464935,
+          "distance_m": 1.199183022516939
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 2.8320619655543284,
+  "seconds": 8.857886791229248
+}

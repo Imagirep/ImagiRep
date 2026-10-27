@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB3-0094-Q4",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk through the room, walk to the tv and slightly turn left, which object(s) would be closest to me?",
+  "answer_choices": {
+    "A": "potted plant",
+    "B": "small white and red painting",
+    "C": "large red and black painting",
+    "D": "table with Union Jack design"
+  },
+  "gold_answer": "A",
+  "show_lookback": false,
+  "prediction": "A",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0094/start_view.png",
+      "sha256": "c47cee9140d4d08123003b4c080d1bb37cf5ec4213129cc6d4dbdd283837fc12"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0094/step_01_rgb.png",
+      "sha256": "bb01e41a6742ca9f3212c3c319fb673db47bbc07ea13bdbe6a99b521a5cda7ed"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0094/step_02_rgb.png",
+      "sha256": "407c9fb6f79284344518ee606eb4059b5764291cb0103673c19eb6032fed8d86"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3348,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 156
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 514,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3863,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_duration_seconds": 4.580106800000067,
+  "completed_at": "2026-10-06T14:50:22-04:00"
+}

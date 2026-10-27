@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-170-Q3", "method": "mj", "variant": "top3+label", "prediction": "ovens, microwave, refrigerator, sink", "gold": "ovens, microwave, refrigerator, sink", "correct": true, "n_imagined": 1, "category": "ordering", "stored_result": "correct"}

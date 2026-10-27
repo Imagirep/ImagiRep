@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "row_index": 45,
+  "question_id": "MVP-004-003-Q3",
+  "condition": "oracle_rgb",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "response_format": "dynamic option enum",
+  "system_prompt": "Solve this multi-view spatial reasoning multiple-choice question using the provided evidence. Reason carefully. Return only A, B, C, or D.",
+  "condition_prompt": "Use the numbered images together with Oracle RGB to answer the question. Oracle RGB is an additional view of the same scene; it supplies evidence but does not replace the reference viewpoint named in the question. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.",
+  "prompt_hash": "6081a614a0f6cb42e9e9a7c7a2b6dc2eeb134a675830c8f1e28059be83a75030",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "gray sofa, tv, striped pillow, blue painting",
+    "B": "blue painting, gray sofa, tv, striped pillow",
+    "C": "gray sofa, striped pillow, tv, blue painting",
+    "D": "tv, gray sofa, striped pillow, blue painting"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "image_paths": [
+    "outputs\\mvc_panorama_farthest_ordering300_20260927\\candidates\\MVP-004-003\\left.png",
+    "outputs\\mvc_panorama_farthest_ordering300_20260927\\candidates\\MVP-004-003\\right.png",
+    "outputs\\mvc_panorama_farthest_ordering300_20260927\\candidates\\MVP-004-003\\oracle.png"
+  ],
+  "image_count": 3,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3466,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 274
+      }
+    ],
+    "thoughts_token_count": 2097,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5564,
+    "traffic_type": null
+  },
+  "completed_at": "2026-10-01T12:19:21"
+}

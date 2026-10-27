@@ -1,0 +1,52 @@
+{
+  "uid": "last50__MVP-005-009-Q3",
+  "cohort": "last50",
+  "question_id": "MVP-005-009-Q3",
+  "resource_id": "MVP-005-009",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "ovens, blue vase, painting, refrigerator",
+    "B": "refrigerator, ovens, blue vase, painting",
+    "C": "painting, blue vase, refrigerator, ovens",
+    "D": "painting, ovens, refrigerator, blue vase"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "af2d4766ef74a4439af27d3922c62e602046e07aa729df7433892386a11a39af",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVP-005-009\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7919,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 317
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1236,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9156,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.30484909999359,
+  "completed_at": "2026-10-06T17:36:10-04:00"
+}

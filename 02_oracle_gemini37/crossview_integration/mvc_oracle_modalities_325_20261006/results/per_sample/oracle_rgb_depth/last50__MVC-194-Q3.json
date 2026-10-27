@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-194-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-194-Q3",
+  "resource_id": "MVC-194",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "wooden building, green umbrella, wooden door frame, black armchair",
+    "B": "wooden building, wooden door frame, black armchair, green umbrella",
+    "C": "green umbrella, black armchair, wooden building, wooden door frame",
+    "D": "black armchair, wooden door frame, green umbrella, wooden building"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "2f023e80a63ccd60b7ada31177655764c32ff83ad1c90fb68cdead063a610282",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.470 m (near/red) to 8.239 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-194\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4650,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 394
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 2149,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6800,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 12.605197899989435,
+  "completed_at": "2026-10-06T17:39:36-04:00"
+}

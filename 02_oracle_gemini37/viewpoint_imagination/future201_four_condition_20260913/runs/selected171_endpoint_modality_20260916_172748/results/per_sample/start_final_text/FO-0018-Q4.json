@@ -1,0 +1,122 @@
+{
+  "row_index": 132,
+  "question_id": "FO-0018-Q4",
+  "trajectory_id": "FO-0018",
+  "scan_id": "1pXnuDYAj8r",
+  "question_type": 4,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk past the small dotted ottomans, move to a position between the sofa and the black table, then face the sofa, which object(s) would be closest to me?",
+  "answer_choices": {
+    "D": "potted plant",
+    "A": "glass windows",
+    "B": "tv",
+    "C": "ottomans"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "ottomans",
+    "B": "tv",
+    "C": "glass windows",
+    "D": "potted plant"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "D": "D",
+    "A": "C",
+    "B": "B",
+    "C": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0018\\image_1.png"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0018\\modalities\\step_01_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "bbe67b4908cfd140ce664006785548c415dd5a4f840fa051fb6c45043868f127",
+    "d98d569b2bcce204f62a02102d1df57d1ca295213a7b09426bba57d990d1ffc0"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0018\\modalities\\topdown_with_path.png",
+      "sha256": "aa19fb47b4fbfef18242ce644babbb40e37383719bac8a6b5ae62a045906bf35"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0018\\modalities\\trajectory.txt",
+      "sha256": "e72a7799675e0fb18a6fdd5fc2e50cc2e5155617502d01a6102a68a9524a47b3"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0018\\modalities\\trajectory.mp4",
+      "sha256": "beefe5469de82bfb6b8574ee1c522f4fc3c0c86f20ecbeff7ddf087f22aab13e",
+      "frame_count": 50,
+      "fps": 12.0,
+      "duration_seconds": 4.166666666666667,
+      "bytes": 411335,
+      "final_rgb_correlation": 0.9996253952370238
+    }
+  },
+  "condition": "start_final_text",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "modality_prompt": "ADDITIONAL TEXT TRAJECTORY:\nThe description gives the movement and camera poses from start to final state. Headings are in degrees: 0 faces +Y; positive rotation is clockwise toward +X. Use it together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": false,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "additional_modality": {
+    "kind": "text",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0018\\modalities\\trajectory.txt",
+    "sha256": "e72a7799675e0fb18a6fdd5fc2e50cc2e5155617502d01a6102a68a9524a47b3"
+  },
+  "input_signature": "d355f3158762fb65bfe82392cfc4d9f053ab8d7648dbf52e64272e18482d2555",
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2516,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 388
+      }
+    ],
+    "thoughts_token_count": 1272,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3789,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-16T17:41:57-04:00"
+}

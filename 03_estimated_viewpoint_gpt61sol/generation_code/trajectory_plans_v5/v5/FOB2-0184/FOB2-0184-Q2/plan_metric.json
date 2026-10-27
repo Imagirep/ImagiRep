@@ -1,0 +1,275 @@
+{
+  "question_id": "FOB2-0184-Q2",
+  "motion_text": "I walk to the round table and face the way I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "round dining table with vase of red flowers",
+      "relation": "to"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0184-Q2",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.5698710120784504,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.5130476086622109,
+        "y": 0.9695406106222733,
+        "yaw": 0.5698710120784504,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -1.5130476086622109,
+        "y": 0.9695406106222733,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.444814350460567,
+        "y": 0.9695406106222733,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -1.8797892013653659,
+        1.2045437035152897
+      ],
+      [
+        -4.279789201365366,
+        1.2045437035152897
+      ]
+    ],
+    "x": -4.279789201365366,
+    "y": 1.2045437035152897,
+    "yaw": 0.2743521384046528,
+    "pitch": 0.0,
+    "travel_yaw": 0.2743521384046528
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.5130476086622109,
+      0.9695406106222733
+    ],
+    [
+      -3.444814350460567,
+      0.9695406106222733
+    ]
+  ],
+  "final": {
+    "x": -3.444814350460567,
+    "y": 0.9695406106222733,
+    "yaw_deg": 15.71921963097563,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "round dining table with vase of red flowers",
+        "relation": "to"
+      },
+      "x": -4.279789201365366,
+      "y": 1.2045437035152897,
+      "yaw": 0.2743521384046528,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -4.279789201365366,
+      "y": 1.2045437035152897,
+      "yaw": 0.2743521384046528,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.5698710120784504,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.5130476086622109,
+      "y": 0.9695406106222733,
+      "yaw": 0.5698710120784504,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.5130476086622109,
+      "y": 0.9695406106222733,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.444814350460567,
+      "y": 0.9695406106222733,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.444814350460567,
+      "y": 0.9695406106222733,
+      "yaw": 0.2743521384046528,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "round dining table with vase of red flowers",
+      "method": "initial_photo",
+      "box": [
+        587,
+        621,
+        757,
+        806
+      ],
+      "point_m": [
+        -5.136933930582027,
+        1.760653804936795,
+        -0.893251442188527
+      ]
+    },
+    {
+      "overlap": "round dining table with vase of red flowers",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 5.5,
+          "stop_m": 1.0217414211663047,
+          "visible_frac": 0.7022222222222222,
+          "center_deg": -0.5301741393420543,
+          "width_deg": 44.603916318714724,
+          "distance_m": 1.2398982686582407
+        },
+        {
+          "sector": 2,
+          "path_m": 5.9,
+          "stop_m": 0.8607500882841934,
+          "visible_frac": 0.6977777777777778,
+          "center_deg": 2.574613892075012,
+          "width_deg": 57.93780705892895,
+          "distance_m": 1.0716749343697787
+        },
+        {
+          "sector": 4,
+          "path_m": 5.9,
+          "stop_m": 1.0580554341374544,
+          "visible_frac": 0.5866666666666667,
+          "center_deg": 1.8718228181706391,
+          "width_deg": 38.10903976883992,
+          "distance_m": 1.091421691259361
+        },
+        {
+          "sector": 1,
+          "path_m": 6.4,
+          "stop_m": 0.557758925645256,
+          "visible_frac": 0.11555555555555555,
+          "center_deg": 3.4840367924467293,
+          "width_deg": 65.15149850210183,
+          "distance_m": 0.8638719150489417
+        },
+        {
+          "sector": 5,
+          "path_m": 7.0,
+          "stop_m": 0.7104910451415268,
+          "visible_frac": 0.25333333333333335,
+          "center_deg": -9.270911422608735,
+          "width_deg": 70.46726728199127,
+          "distance_m": 0.9465697545016344
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 1.9578728079795837,
+  "seconds": 8.402851819992065,
+  "planning_m_per_unit": 2.432433811743037,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.8049028090826482
+}

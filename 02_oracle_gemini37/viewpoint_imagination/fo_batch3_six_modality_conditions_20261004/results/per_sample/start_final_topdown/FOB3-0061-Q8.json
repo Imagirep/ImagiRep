@@ -1,0 +1,150 @@
+{
+  "row_index": 193,
+  "question_id": "FOB3-0061-Q8",
+  "trajectory_id": "FOB3-0061",
+  "scan_id": "rPc6DW4iMge",
+  "question_type": 8,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk to the sink and turn to face my starting point, which object(s) would be directly to my left?",
+  "answer_choices": {
+    "B": "three-tier tray",
+    "A": "two-tier tray",
+    "C": "faucet",
+    "D": "sofa"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "three-tier tray",
+    "B": "two-tier tray",
+    "C": "faucet",
+    "D": "sofa"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "B": "A",
+    "A": "B",
+    "C": "C",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0061\\start_view.png",
+      "sha256": "28e462d88daaf6218edb9f16206ec911fe388c05b612b7094085518b56ec18dd"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0061\\step_01_rgb.png",
+      "sha256": "92f5f87c97189431d46cb5f4f5e7e62255a3114752dd92982443b3d42fe909e3"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0061\\step_02_rgb.png",
+      "sha256": "d9342b6b0add81fae354c8c085239243851a9634893d41af075d8cb46814442c"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0061\\oracle_lookback.png",
+      "sha256": "b34cc1e2822a294d35e68c8a03cd1d78e1384d8a7deb00457289912bf6d779ea"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "category": "object_selection_by_direction",
+  "category_label": "Object selection by direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0061\\oracle_lookback_depth.png",
+      "sha256": "76ae594e6cfeb9338aa84c247862239630cdf31012ce56a2daecb3bbc4a3a048",
+      "color_scale": {
+        "near_m": 0.96375,
+        "far_m": 7.13175
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0061\\oracle_lookback_surface_normals.png",
+      "sha256": "8e33d144a5bbf16e364100bdb405d4d9d4aeb7f5045c451187a2e95bf3b4d12d"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0061\\oracle_lookback_panorama.png",
+      "sha256": "b1804757caa2dfd0f36c3f362f3c95736a934544f2e2ccf63883f17acf11348b"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0061\\topdown_lookback_with_path.png",
+      "sha256": "24d2b9072cd3d66b9f2fb08df8de06918449ceaaf7eb5b1d1f6809c346ed38c4"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0061\\trajectory_lookback.txt",
+      "sha256": "c0708db9a58ab9027ffc7693cbefc307e965bd3b8413d2f9c3c78c7ca7bc219a"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0061\\trajectory_lookback.mp4",
+      "sha256": "ade28e8e005fba002c2d2e5d1c0376e1c09dcdb2d99616ef6196514b1e7c7179"
+    }
+  },
+  "condition": "start_final_topdown",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch3_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "C",
+  "correct": false,
+  "input_signature": "68fc6faa7b80686a6ed0a383cd050e9bd57e56d26648774ddaea3a4793b9e0e0",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "topdown"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3409,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 192
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3217
+      }
+    ],
+    "thoughts_token_count": 2430,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5840,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T17:17:13.547-04:00",
+  "request_duration_seconds": 10.239138499993715,
+  "completed_at": "2026-10-04T17:17:23.786-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

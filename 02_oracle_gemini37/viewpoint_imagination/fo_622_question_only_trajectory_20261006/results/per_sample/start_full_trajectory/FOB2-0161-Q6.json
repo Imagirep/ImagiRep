@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB2-0161-Q6",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk near the counter, then turn right, walk into the hallway and turn around to face where I come from, where is the counter relative to me?",
+  "answer_choices": {
+    "D": "front",
+    "A": "behind",
+    "B": "left",
+    "C": "right"
+  },
+  "gold_answer": "D",
+  "show_lookback": false,
+  "prediction": "D",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_bent100_20260917/items/FOB2-0161/start_view.png",
+      "sha256": "b7395ee5b449d4e7e7e4642c8fdc67a20c47282bd6b05d43ac3c0f69301b0c09"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_bent100_20260917/items/FOB2-0161/step_01_rgb.png",
+      "sha256": "59ab80ab8ca10c18562a464f5c96bd2472469d39fe26d0616714b4fd55e626ed"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_bent100_20260917/items/FOB2-0161/step_02_rgb.png",
+      "sha256": "bd2c9974fdbd58fd6f05c25b26e12268132562cb1399fd6335b20ed8a3c388ec"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3341,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 149
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 811,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4153,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 5.219567100008135,
+  "completed_at": "2026-10-06T14:31:41-04:00"
+}

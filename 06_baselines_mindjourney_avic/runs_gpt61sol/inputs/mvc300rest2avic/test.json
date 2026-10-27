@@ -1,0 +1,2258 @@
+[
+ {
+  "database_idx": "last50__MVC-163-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 2 is closest to tv in Image 1?",
+  "answer_choices": [
+   "white pillow",
+   "lamp",
+   "black pillow",
+   "bed"
+  ],
+  "correct_answer": "white pillow",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-163-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-163-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-163"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-163-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "white pillow, bed, tv, black pillow",
+   "tv, white pillow, black pillow, bed",
+   "black pillow, white pillow, bed, tv",
+   "tv, white pillow, bed, black pillow"
+  ],
+  "correct_answer": "tv, white pillow, black pillow, bed",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-163-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-163-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-163"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-165-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 1 is closest to white sofa in Image 2?",
+  "answer_choices": [
+   "round table",
+   "fireplace",
+   "red armchair",
+   "white decoratvie stone"
+  ],
+  "correct_answer": "red armchair",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-165-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-165-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-165"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-167-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "doorway, black table, wooden wall decoration, white tall vase",
+   "wooden wall decoration, white tall vase, doorway, black table",
+   "wooden wall decoration, doorway, white tall vase, black table",
+   "white tall vase, doorway, wooden wall decoration, black table"
+  ],
+  "correct_answer": "wooden wall decoration, doorway, white tall vase, black table",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-167-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-167-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-167"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-169-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 1 is closest to tv in Image 2?",
+  "answer_choices": [
+   "white shelf",
+   "mirror",
+   "stool",
+   "tub"
+  ],
+  "correct_answer": "tub",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-169-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-169-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-169"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-169-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "stool, tub, mirror, tv",
+   "mirror, stool, tv, tub",
+   "tv, tub, stool, mirror",
+   "stool, tub, tv, mirror"
+  ],
+  "correct_answer": "stool, tub, mirror, tv",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-169-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-169-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-169"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-174-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 2 is closest to tv in Image 1?",
+  "answer_choices": [
+   "painting",
+   "lamp",
+   "monitor",
+   "printer"
+  ],
+  "correct_answer": "monitor",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-174-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-174-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-174"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-175-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 1 is farthest from fireplace in Image 2?",
+  "answer_choices": [
+   "framed painting",
+   "wooden chair",
+   "mirror",
+   "alarm clock"
+  ],
+  "correct_answer": "alarm clock",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-175-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-175-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-175"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-180-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 2 is farthest from potted plant in Image 1?",
+  "answer_choices": [
+   "gray long chair",
+   "black table",
+   "statue",
+   "yellow sofa"
+  ],
+  "correct_answer": "black table",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-180-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-180-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-180"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-180-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "tv, statue, potted tall plant, black table",
+   "statue, potted tall plant, black table, tv",
+   "potted tall plant, black table, tv, statue",
+   "potted tall plant, tv, statue, black table"
+  ],
+  "correct_answer": "potted tall plant, tv, statue, black table",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-180-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-180-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-180"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-183-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "mirror, toilet, shower stall, hanged towel",
+   "hanged towel, toilet, shower stall, mirror",
+   "shower stall, hanged towel, mirror, toilet",
+   "mirror, hanged towel, shower stall, toilet"
+  ],
+  "correct_answer": "shower stall, hanged towel, mirror, toilet",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-183-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-183-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-183"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-184-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 2 is farthest from colorful table in Image 1?",
+  "answer_choices": [
+   "coffee maker",
+   "stove",
+   "blue and white cup",
+   "knife shelf"
+  ],
+  "correct_answer": "knife shelf",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-184-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-184-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-184"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-185-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 1 is closest to toilet in Image 2?",
+  "answer_choices": [
+   "black cabinet",
+   "fireplace",
+   "black chair",
+   "doorway"
+  ],
+  "correct_answer": "black cabinet",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-185-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-185-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-185"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-187-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "tv, silver pot, fireplace, metal box",
+   "silver pot, metal box, fireplace, tv",
+   "silver pot, tv, metal box, fireplace",
+   "fireplace, silver pot, tv, metal box"
+  ],
+  "correct_answer": "tv, silver pot, fireplace, metal box",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-187-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-187-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-187"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-188-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 2 is closest to fireplace in Image 1?",
+  "answer_choices": [
+   "brown long sofa",
+   "round yellow table",
+   "tall lamp",
+   "low black table"
+  ],
+  "correct_answer": "low black table",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-188-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-188-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-188"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-189-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 2 is closest to refrigerator in Image 1?",
+  "answer_choices": [
+   "stove",
+   "black armchair",
+   "sink",
+   "black large painting"
+  ],
+  "correct_answer": "sink",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-189-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-189-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-189"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-189-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 2 is farthest from refrigerator in Image 1?",
+  "answer_choices": [
+   "sink",
+   "stove",
+   "black large painting",
+   "black armchair"
+  ],
+  "correct_answer": "black large painting",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-189-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-189-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-189"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-189-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "refrigerator, large black painting, sink, black armchair",
+   "large black painting, sink, refrigerator, black armchair",
+   "black armchair, sink, refrigerator, large black painting",
+   "black armchair, refrigerator, large black painting, sink"
+  ],
+  "correct_answer": "refrigerator, large black painting, sink, black armchair",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-189-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-189-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-189"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-190-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 1 is farthest from sink in Image 2?",
+  "answer_choices": [
+   "blue cups",
+   "framed painting",
+   "sink",
+   "glass pot"
+  ],
+  "correct_answer": "sink",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-190-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-190-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-190"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-190-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "fireplace, stove, blue cups, framed painting",
+   "fireplace, framed painting, blue cups, stove",
+   "stove, framed painting, blue cups, fireplace",
+   "stove, blue cups, framed painting, fireplace"
+  ],
+  "correct_answer": "stove, framed painting, blue cups, fireplace",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-190-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-190-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-190"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-195-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 2 is closest to flowers in Image 1?",
+  "answer_choices": [
+   "round table",
+   "fireplace",
+   "black pot",
+   "wooden table"
+  ],
+  "correct_answer": "round table",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-195-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-195-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-195"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-195-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "fireplace, wooden table, round glass table, flowers",
+   "flowers, fireplace, round glass table, wooden table",
+   "flowers, round glass table, wooden table, fireplace",
+   "round glass table, fireplace, wooden table, flowers"
+  ],
+  "correct_answer": "fireplace, wooden table, round glass table, flowers",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-195-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-195-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-195"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-196-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 1 is farthest from bed in Image 2?",
+  "answer_choices": [
+   "white chair",
+   "fireplace",
+   "tv",
+   "white cup set"
+  ],
+  "correct_answer": "white cup set",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-196-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-196-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-196"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-196-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "glass door, bed, white chair, tv",
+   "tv, glass door, white chair, bed",
+   "tv, white chair, bed, glass door",
+   "bed, white chair, tv, glass door"
+  ],
+  "correct_answer": "tv, glass door, white chair, bed",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-196-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-196-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-196"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-201-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 2 is closest to large painting in Image 1?",
+  "answer_choices": [
+   "black table",
+   "parallel yellow statues",
+   "sink",
+   "tv"
+  ],
+  "correct_answer": "black table",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-201-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-201-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-201"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-201-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 2 is farthest from painting in Image 1?",
+  "answer_choices": [
+   "black table",
+   "sink",
+   "tv",
+   "parallel yellow statues"
+  ],
+  "correct_answer": "sink",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-201-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-201-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-201"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-201-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "large painting, lamp, tv, black table",
+   "tv, black table, large painting, lamp",
+   "lamp, large painting, tv, black table",
+   "large painting, lamp, black table, tv"
+  ],
+  "correct_answer": "large painting, lamp, black table, tv",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-201-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-201-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-201"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-203-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "bed, armchair, white doorway, wooden desk",
+   "bed, white doorway, wooden desk, armchair",
+   "armchair, white doorway, wooden desk, bed",
+   "armchair, wooden desk, bed, white doorway"
+  ],
+  "correct_answer": "armchair, wooden desk, bed, white doorway",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-203-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-203-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-203"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-212-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "hallway, yellow and black painting, tall potted plant, tv",
+   "yellow and black painting, hallway, tall potted plant, tv",
+   "hallway, tv, yellow and black painting, tall potted plant",
+   "tv, yellow and black painting, tall potted plant, hallway"
+  ],
+  "correct_answer": "hallway, tv, yellow and black painting, tall potted plant",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-212-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-212-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-212"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-213-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 2 is farthest from fireplace in Image 1?",
+  "answer_choices": [
+   "black sofa",
+   "framed painting",
+   "square low table",
+   "large dining table"
+  ],
+  "correct_answer": "framed painting",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-213-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-213-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-213"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-216-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 2 is closest to small marble table in Image 1?",
+  "answer_choices": [
+   "stoves",
+   "dining table",
+   "small framed painting",
+   "ovens"
+  ],
+  "correct_answer": "dining table",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-216-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-216-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-216"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-216-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 2 is farthest from small marble table in Image 1?",
+  "answer_choices": [
+   "dining table",
+   "ovens",
+   "stoves",
+   "small framed painting"
+  ],
+  "correct_answer": "ovens",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-216-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-216-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-216"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-220-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "fireplace, wooden cabinet, tall lamp, bed",
+   "wooden cabinet, tall lamp, fireplace, bed",
+   "bed, fireplace, tall lamp, wooden cabinet",
+   "wooden cabinet, tall lamp, bed, fireplace"
+  ],
+  "correct_answer": "wooden cabinet, tall lamp, fireplace, bed",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-220-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-220-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-220"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-221-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "wooden table, framed painting, red pot, glass vase",
+   "glass vase, framed painting, red pot, wooden table",
+   "red pot, glass vase, framed painting, wooden table",
+   "framed painting, wooden table, glass vase, red pot"
+  ],
+  "correct_answer": "glass vase, framed painting, red pot, wooden table",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-221-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-221-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-221"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-001-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 2 is closest to lamp in Image 1?",
+  "answer_choices": [
+   "table",
+   "gray chair",
+   "painting",
+   "potted plant"
+  ],
+  "correct_answer": "table",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-001-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-001-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-001"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-003-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "long sofa, white lamp, table, cabinet",
+   "table, cabinet, long sofa, white lamp",
+   "long sofa, cabinet, white lamp, table",
+   "cabinet, white lamp, long sofa, table"
+  ],
+  "correct_answer": "long sofa, white lamp, table, cabinet",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-003-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-003-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-003"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-004-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 2 is closest to small white pillar in Image 1?",
+  "answer_choices": [
+   "potted flower",
+   "round table",
+   "white bowl",
+   "wooden cabinet"
+  ],
+  "correct_answer": "wooden cabinet",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-004-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-004-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-004"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-004-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 2 is farthest from small white pillar in Image 1?",
+  "answer_choices": [
+   "wooden cabinet",
+   "white bowl",
+   "potted flower",
+   "framed painting"
+  ],
+  "correct_answer": "white bowl",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-004-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-004-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-004"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-005-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 2 is farthest from white ottoman in Image 1?",
+  "answer_choices": [
+   "black chairs",
+   "framed paintings",
+   "laptop",
+   "wooden box"
+  ],
+  "correct_answer": "framed paintings",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-005-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-005-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-005"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-007-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "stove, glass vase, refrigerator, dishwasher",
+   "glass vase, dishwasher, stove, refrigerator",
+   "glass vase, dishwasher, refrigerator, stove",
+   "dishwasher, glass vase, stove, refrigerator"
+  ],
+  "correct_answer": "dishwasher, glass vase, stove, refrigerator",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-007-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-007-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-007"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-009-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 1 is closest to mirror in Image 2?",
+  "answer_choices": [
+   "painting",
+   "white decorative vase",
+   "black ottoman",
+   "fireplace"
+  ],
+  "correct_answer": "fireplace",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-009-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-009-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-009"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-010-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "sink, dishwasher, refrigerator, stove",
+   "stove, dishwasher, sink, refrigerator",
+   "sink, dishwasher, stove, refrigerator",
+   "sink, stove, refrigerator, dishwasher"
+  ],
+  "correct_answer": "sink, dishwasher, refrigerator, stove",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-010-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-010-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-010"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-012-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 2 is closest to dining table in Image 1?",
+  "answer_choices": [
+   "black table",
+   "gray armchair",
+   "fireplace",
+   "painting"
+  ],
+  "correct_answer": "black table",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-012-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-012-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-012"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-015-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 2 is farthest from shelf in Image 1?",
+  "answer_choices": [
+   "black armchairs",
+   "bed",
+   "framed painting",
+   "lamp with a wooden stem"
+  ],
+  "correct_answer": "framed painting",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-015-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-015-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-015"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-015-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "sofa, small lamp, bed, shelf",
+   "shelf, small lamp, bed, sofa",
+   "sofa, bed, small lamp, shelf",
+   "small lamp, sofa, shelf, bed"
+  ],
+  "correct_answer": "shelf, small lamp, bed, sofa",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-015-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-015-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-015"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-020-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "glass door, cup set, chandelier, tv",
+   "tv, glass door, cup set, chandelier",
+   "chandelier, tv, glass door, cup set",
+   "chandelier, cup set, glass door, tv"
+  ],
+  "correct_answer": "chandelier, cup set, glass door, tv",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-020-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-020-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-020"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-025-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "piano, purple sofa, dining table, green decorative cup",
+   "piano, dining table, purple sofa, green decorative cup",
+   "green decorative cup, piano, purple sofa, dining table",
+   "green decorative cup, piano, dining table, purple sofa"
+  ],
+  "correct_answer": "green decorative cup, piano, dining table, purple sofa",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-025-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-025-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-025"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-039-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "door, white shelf, white cabinet, safe",
+   "white shelf, door, safe, white cabinet",
+   "white shelf, safe, door, white cabinet",
+   "door, safe, white cabinet, white shelf"
+  ],
+  "correct_answer": "door, safe, white cabinet, white shelf",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-039-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-039-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-039"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-041-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 1 is farthest from sink in Image 2?",
+  "answer_choices": [
+   "microwave",
+   "refrigerator",
+   "wooden desk",
+   "green bottles"
+  ],
+  "correct_answer": "wooden desk",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-041-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-041-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-041"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-044-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 1 is closest to stools in Image 2?",
+  "answer_choices": [
+   "round table",
+   "potted plant",
+   "fireplace",
+   "framed painting"
+  ],
+  "correct_answer": "potted plant",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-044-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-044-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-044"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-044-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 1 is farthest from stools in Image 2?",
+  "answer_choices": [
+   "round table",
+   "potted plant",
+   "fireplace",
+   "framed painting"
+  ],
+  "correct_answer": "fireplace",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-044-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-044-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-044"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-048-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 1 is farthest from alarm clock in Image 2?",
+  "answer_choices": [
+   "tv",
+   "lamp",
+   "yellow basket",
+   "wooden cabinet"
+  ],
+  "correct_answer": "tv",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-048-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-048-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-048"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-049-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "wheelchair, window, black and white painting, gray long ottoman",
+   "black and white painting, window, gray long ottoman, wheelchair",
+   "black and white painting, wheelchair, window, gray long ottoman",
+   "black and white painting, window, wheelchair, gray long ottoman"
+  ],
+  "correct_answer": "black and white painting, wheelchair, window, gray long ottoman",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-049-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-049-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-049"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-051-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 2 is closest to painting in Image 1?",
+  "answer_choices": [
+   "black armchair",
+   "decorative paintings",
+   "sink",
+   "long black sofa"
+  ],
+  "correct_answer": "black armchair",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-051-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-051-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-051"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-052-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 1 is closest to white vases in Image 2?",
+  "answer_choices": [
+   "sink",
+   "white bowls",
+   "refrigerator",
+   "ovens"
+  ],
+  "correct_answer": "white bowls",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-052-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-052-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-052"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-052-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 1 is farthest from white vases in Image 2?",
+  "answer_choices": [
+   "sink",
+   "ovens",
+   "refrigerator",
+   "white bowls"
+  ],
+  "correct_answer": "refrigerator",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-052-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-052-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-052"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-052-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "sink, ovens, refrigerator, white bowls",
+   "sink, refrigerator, ovens, white bowls",
+   "sink, white bowls, ovens, refrigerator",
+   "refrigerator, ovens, white bowls, sink"
+  ],
+  "correct_answer": "sink, ovens, refrigerator, white bowls",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-052-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-052-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-052"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-054-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 1 is farthest from bed in Image 2?",
+  "answer_choices": [
+   "chair",
+   "doorway",
+   "white basin",
+   "metal pot"
+  ],
+  "correct_answer": "doorway",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-054-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-054-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-054"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-055-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "wooden cabinet, pool table, tv, potted plant",
+   "wooden cabinet, pool table, potted plant, tv",
+   "potted plant, pool table, wooden cabinet, tv",
+   "potted plant, tv, wooden cabinet, pool table"
+  ],
+  "correct_answer": "potted plant, pool table, wooden cabinet, tv",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-055-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-055-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-055"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-056-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "potted plant, black chair, white sofa, white chair",
+   "white chair, white sofa, potted plant, black chair",
+   "black chair, potted plant, white chair, white sofa",
+   "white sofa, potted plant, black chair, white chair"
+  ],
+  "correct_answer": "white sofa, potted plant, black chair, white chair",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-056-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-056-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-056"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-062-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 1 is closest to trash can in Image 2?",
+  "answer_choices": [
+   "blue purse",
+   "doorway",
+   "orange purse",
+   "pink purse"
+  ],
+  "correct_answer": "blue purse",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-062-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-062-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-062"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-062-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "sink, trash can, blue purse, orange purse",
+   "blue purse, orange purse, sink, trash can",
+   "orange purse, sink, blue purse, trash can",
+   "orange purse, blue purse, sink, trash can"
+  ],
+  "correct_answer": "orange purse, blue purse, sink, trash can",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-062-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-062-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-062"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-065-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "potted plant, bed, wooden desk, black chair",
+   "potted plant, bed, black chair, wooden desk",
+   "black chair, potted plant, bed, wooden desk",
+   "bed, wooden desk, black chair, potted plant"
+  ],
+  "correct_answer": "potted plant, bed, black chair, wooden desk",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-065-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-065-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-065"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-068-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 1 is farthest from toilet in Image 2?",
+  "answer_choices": [
+   "bed",
+   "framed white paper",
+   "wooden door",
+   "framed black painting"
+  ],
+  "correct_answer": "framed black painting",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-068-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-068-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-068"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-069-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 1 is closest to white statue in Image 2?",
+  "answer_choices": [
+   "red statue",
+   "yellow armchair",
+   "potted plant",
+   "refrigerator"
+  ],
+  "correct_answer": "red statue",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-069-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-069-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-069"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-069-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 1 is farthest from white statue in Image 2?",
+  "answer_choices": [
+   "refrigerator",
+   "red statue",
+   "potted plant",
+   "yellow armchair"
+  ],
+  "correct_answer": "refrigerator",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-069-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-069-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-069"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-069-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "refrigerator, white statue, potted plant, red statue",
+   "white statue, potted plant, red statue, refrigerator",
+   "potted plant, red statue, white statue, refrigerator",
+   "red statue, potted plant, refrigerator, white statue"
+  ],
+  "correct_answer": "red statue, potted plant, refrigerator, white statue",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-069-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-069-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-069"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-072-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 2 is closest to round table in Image 1?",
+  "answer_choices": [
+   "yellow painting",
+   "black pillows",
+   "fireplace",
+   "potted tall plant"
+  ],
+  "correct_answer": "potted tall plant",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-072-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-072-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-072"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-075-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 1 is farthest from towel in Image 2?",
+  "answer_choices": [
+   "tissue box",
+   "painting",
+   "sink",
+   "glass cup"
+  ],
+  "correct_answer": "painting",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-075-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-075-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-075"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-076-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 1 is farthest from pink statue in Image 2?",
+  "answer_choices": [
+   "deer-shaped statue",
+   "round table",
+   "fireplace",
+   "wooden small table"
+  ],
+  "correct_answer": "round table",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-076-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-076-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-076"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-082-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "sink, refrigerator, silver wall decoration, blender",
+   "silver wall decoration, refrigerator, blender, sink",
+   "blender, sink, refrigerator, silver wall decoration",
+   "sink, blender, silver wall decoration, refrigerator"
+  ],
+  "correct_answer": "silver wall decoration, refrigerator, blender, sink",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-082-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-082-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-082"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-084-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 1 is closest to lamp in Image 2?",
+  "answer_choices": [
+   "white armchair",
+   "black armchair",
+   "painting",
+   "tv"
+  ],
+  "correct_answer": "painting",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-084-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-084-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-084"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-085-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 2 is closest to fireplace in Image 1?",
+  "answer_choices": [
+   "potted plant",
+   "white armchair",
+   "brown armchair",
+   "white lamp"
+  ],
+  "correct_answer": "brown armchair",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-085-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-085-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-085"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-088-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "white ottoman, white armchair, tv, colorful painting",
+   "tv, white armchair, white ottoman, colorful painting",
+   "white armchair, colorful painting, tv, white ottoman",
+   "tv, colorful painting, white armchair, white ottoman"
+  ],
+  "correct_answer": "tv, white armchair, white ottoman, colorful painting",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-088-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-088-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-088"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-089-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 1 is farthest from large potted plant in Image 2?",
+  "answer_choices": [
+   "small wooden desk",
+   "mirror",
+   "framed painting",
+   "low hallway"
+  ],
+  "correct_answer": "mirror",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-089-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-089-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-089"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-093-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "orange armchair, fireplace, tablet, yellow painting",
+   "orange armchair, yellow painting, fireplace, tablet",
+   "fireplace, tablet, yellow painting, orange armchair",
+   "orange armchair, yellow painting, tablet, fireplace"
+  ],
+  "correct_answer": "orange armchair, yellow painting, fireplace, tablet",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-093-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-093-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-093"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-099-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 1 is closest to potted plant in Image 2?",
+  "answer_choices": [
+   "lamp",
+   "gray chair",
+   "wooden desk",
+   "bed"
+  ],
+  "correct_answer": "gray chair",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-099-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-099-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-099"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-099-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 1 is farthest from potted plant in Image 2?",
+  "answer_choices": [
+   "gray chair",
+   "lamp",
+   "wooden desk",
+   "bed"
+  ],
+  "correct_answer": "lamp",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-099-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-099-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-099"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-099-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "wooden desk, bed, tall potted plant, yellow and red painting",
+   "bed, wooden desk, yellow and red painting, tall potted plant",
+   "tall potted plant, yellow and red painting, bed, wooden desk",
+   "tall potted plant, wooden desk, yellow and red painting, bed"
+  ],
+  "correct_answer": "bed, wooden desk, yellow and red painting, tall potted plant",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-099-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-099-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-099"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-100-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 2 is closest to potted plant in Image 1?",
+  "answer_choices": [
+   "wooden door",
+   "gramophone",
+   "wooden cabinet",
+   "framed picture"
+  ],
+  "correct_answer": "wooden cabinet",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-100-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-100-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-100"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-100-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 2 is farthest from potted plant in Image 1?",
+  "answer_choices": [
+   "framed picture",
+   "wooden door",
+   "wooden cabinet",
+   "gramophone"
+  ],
+  "correct_answer": "gramophone",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-100-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-100-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-100"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-101-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 1 is farthest from yellow pillow in Image 2?",
+  "answer_choices": [
+   "yellow bottles",
+   "metal cup",
+   "white and brown box",
+   "plant in a blue pot"
+  ],
+  "correct_answer": "yellow bottles",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-101-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-101-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-101"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-101-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "yellow pillow, yellow bottles, glass large table, plant in a blue pot",
+   "yellow bottles, plant in a blue pot, yellow pillow, glass large table",
+   "yellow bottles, glass large table, yellow pillow, plant in a blue pot",
+   "yellow pillow, glass large table, plant in a blue pot, yellow bottles"
+  ],
+  "correct_answer": "yellow pillow, glass large table, plant in a blue pot, yellow bottles",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-101-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-101-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-101"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-105-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 1 is farthest from round table in Image 2?",
+  "answer_choices": [
+   "empty vase",
+   "flowers in a vase",
+   "blue cup",
+   "white sofa"
+  ],
+  "correct_answer": "blue cup",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-105-Q2_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-105-Q2_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-105"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-109-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 2 is closest to round table in Image 1?",
+  "answer_choices": [
+   "lamp",
+   "white flower",
+   "fireplace",
+   "painting"
+  ],
+  "correct_answer": "white flower",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-109-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-109-Q1_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-109"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-109-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "round table, painting, white flower, white bowl",
+   "white bowl, painting, white flower, round table",
+   "round table, white flower, painting, white bowl",
+   "white bowl, painting, round table, white flower"
+  ],
+  "correct_answer": "white bowl, painting, white flower, round table",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-109-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-109-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-109"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-125-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "painting, long sofa, armchair, bed",
+   "painting, armchair, bed, long sofa",
+   "painting, bed, armchair, long sofa",
+   "bed, painting, armchair, long sofa"
+  ],
+  "correct_answer": "bed, painting, armchair, long sofa",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-125-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-125-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-125"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-133-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "tall potted plant, fireplace, statue, glass table",
+   "tall potted plant, statue, fireplace, glass table",
+   "glass table, fireplace, tall potted plant, statue",
+   "tall potted plant, glass table, fireplace, statue"
+  ],
+  "correct_answer": "tall potted plant, fireplace, statue, glass table",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-133-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-133-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-133"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-140-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "tall potted painting, fireplace, hallway, long sofa",
+   "tall potted painting, hallway, fireplace, long sofa",
+   "fireplace, long sofa, tall potted painting, hallway",
+   "tall potted painting, long sofa, fireplace, hallway"
+  ],
+  "correct_answer": "tall potted painting, fireplace, hallway, long sofa",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-140-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-140-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-140"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-142-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "gray doors, blue pot, dining table, lamp",
+   "blue pot, lamp, dining table, gray doors",
+   "dining table, blue pot, lamp, gray doors",
+   "gray doors, dining table, blue pot, lamp"
+  ],
+  "correct_answer": "gray doors, dining table, blue pot, lamp",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-142-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-142-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-142"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-146-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "campfire, swing, green umbrella, white table",
+   "swing, campfire, green umbrella, white table",
+   "swing, white table, green umbrella, campfire",
+   "white table, green umbrella, campfire, swing"
+  ],
+  "correct_answer": "campfire, swing, green umbrella, white table",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-146-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-146-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-146"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC-154-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "window, bed, white ottoman, mirror",
+   "bed, white ottoman, mirror, window",
+   "mirror, window, bed, white ottoman",
+   "bed, white ottoman, window, mirror"
+  ],
+  "correct_answer": "mirror, window, bed, white ottoman",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-154-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC-154-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC-154"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC3I-004-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Images 1 and 3 is closest to podium  in Image 2?",
+  "answer_choices": [
+   "framed black and white painting",
+   "piles of books",
+   "white pillar",
+   "black desk"
+  ],
+  "correct_answer": "white pillar",
+  "gold_letter": "C",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC3I-004-Q1_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC3I-004-Q1_img2.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC3I-004-Q1_img3.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC3I-004"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "ready100__MVC3I-007-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": [
+   "black statue, fireplace, white pot, yellow painting",
+   "black statue, fireplace, yellow painting, white pot",
+   "black statue, yellow painting, fireplace, white pot",
+   "white pot, fireplace, black statue, yellow painting"
+  ],
+  "correct_answer": "white pot, fireplace, black statue, yellow painting",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC3I-007-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC3I-007-Q3_img2.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_ready100__MVC3I-007-Q3_img3.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "ready100",
+   "resource_id": "MVC3I-007"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "mvc131__MVC-131-Q1",
+  "question_type": "cross_view_closest",
+  "question": "Which object in Image 1 is closest to wooden box in Image 2?",
+  "answer_choices": [
+   "green potted plant",
+   "window",
+   "mirror",
+   "gray door"
+  ],
+  "correct_answer": "green potted plant",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_mvc131__MVC-131_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_mvc131__MVC-131_img2.png"
+  ],
+  "camera_pitch_deg": -15.0,
+  "source": {
+   "benchmark": "MVC300",
+   "cohort": "mvc131_supplement",
+   "resource_id": "MVC-131"
+  }
+ },
+ {
+  "database_idx": "mvc131__MVC-131-Q2",
+  "question_type": "cross_view_farthest",
+  "question": "Which object in Image 1 is farthest from wooden box in Image 2?",
+  "answer_choices": [
+   "window",
+   "green potted plant",
+   "gray door",
+   "mirror"
+  ],
+  "correct_answer": "mirror",
+  "gold_letter": "D",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_mvc131__MVC-131_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_mvc131__MVC-131_img2.png"
+  ],
+  "camera_pitch_deg": -15.0,
+  "source": {
+   "benchmark": "MVC300",
+   "cohort": "mvc131_supplement",
+   "resource_id": "MVC-131"
+  }
+ },
+ {
+  "database_idx": "last50__MVC-174-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "lamp, monitor, painting, printer",
+   "printer, lamp, monitor, painting",
+   "painting, lamp, printer, monitor",
+   "monitor, printer, lamp, painting"
+  ],
+  "correct_answer": "printer, lamp, monitor, painting",
+  "gold_letter": "B",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-174-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-174-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-174"
+  },
+  "camera_pitch_deg": -15.0
+ },
+ {
+  "database_idx": "last50__MVC-205-Q3",
+  "question_type": "ordering",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": [
+   "stove, yellow pot, fireplace, pillows",
+   "fireplace, pillows, yellow pot, stove",
+   "pillows, yellow pot, fireplace, stove",
+   "yellow pot, fireplace, stove, pillows"
+  ],
+  "correct_answer": "stove, yellow pot, fireplace, pillows",
+  "gold_letter": "A",
+  "img_paths": [
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-205-Q3_img1.png",
+   "<external>/imagination_baselines_mj_avic_20261006/inputs/images/mvc_last50__MVC-205-Q3_img2.png"
+  ],
+  "source": {
+   "benchmark": "MVC325",
+   "cohort": "last50",
+   "resource_id": "MVC-205"
+  },
+  "camera_pitch_deg": -15.0
+ }
+]

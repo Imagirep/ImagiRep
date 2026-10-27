@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB3-0139-Q3",
+  "motion_text": "I walk forward, turn right to walk to the other side of the table, then turn left, then turn to face my starting point.",
+  "view_variant": "lookback",
+  "frames": 146,
+  "fps": 12,
+  "total_distance_m": 3.144826265174175,
+  "depth_display_range_scene_units": [
+    1.4213181352615356,
+    6.996952991485595
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.196071454905259,
+    "far_m": 5.888094675503407
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.4561993974954532 m over generated floor distance",
+  "m_per_unit": 1.4238978624343872,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 35.43760704994202
+}

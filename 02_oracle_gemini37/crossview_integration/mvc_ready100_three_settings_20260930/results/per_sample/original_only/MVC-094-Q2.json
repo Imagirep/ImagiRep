@@ -1,0 +1,51 @@
+{
+  "status": "ok",
+  "row_index": 133,
+  "question_id": "MVC-094-Q2",
+  "condition": "original_only",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "response_format": "dynamic option enum",
+  "system_prompt": "Solve this multi-view spatial reasoning multiple-choice question using the provided evidence. Reason carefully. Return only A, B, C, or D.",
+  "condition_prompt": "Use the numbered images to answer the question. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.",
+  "prompt_hash": "1859789fd066bd8df3c6855de311b1b017ff124e8b3adfe50d2e682090c84ac6",
+  "question": "Which object in Image 1 is farthest from white armchair in Image 2?",
+  "answer_choices": {
+    "A": "lamp",
+    "B": "white ottoman",
+    "C": "potted plant",
+    "D": "bed"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "image_paths": [
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-094\\image_1.png",
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-094\\image_2.png"
+  ],
+  "image_count": 2,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2327,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 199
+      }
+    ],
+    "thoughts_token_count": 5606,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7934,
+    "traffic_type": null
+  },
+  "completed_at": "2026-09-30T18:53:15"
+}

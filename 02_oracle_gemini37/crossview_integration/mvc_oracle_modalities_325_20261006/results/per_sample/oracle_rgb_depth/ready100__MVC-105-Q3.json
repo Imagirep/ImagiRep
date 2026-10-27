@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-105-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-105-Q3",
+  "resource_id": "MVC-105",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "round table, empty vase, tv, flowers in a vase",
+    "B": "round table, tv, empty vase, flowers in a vase",
+    "C": "tv, flowers in a vase, empty vase, round table",
+    "D": "round table, flowers in a vase, tv, empty vase"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "1287111fff2e3ba67f46d591d24d3b9773809688e4a9cefc4bf3118caa5ab0c7",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.761 m (near/red) to 10.417 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-105\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4651,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 395
+      }
+    ],
+    "thoughts_token_count": 1363,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6015,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 33.22744220000459,
+  "completed_at": "2026-10-06T17:38:34-04:00"
+}

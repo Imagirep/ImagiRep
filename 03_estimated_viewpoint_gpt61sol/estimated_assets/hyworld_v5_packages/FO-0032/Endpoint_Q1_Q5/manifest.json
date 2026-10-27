@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FO-0032-Q1",
+  "motion_text": "I walk to the window on the right and turn right.",
+  "view_variant": "endpoint",
+  "frames": 92,
+  "fps": 12,
+  "total_distance_m": 2.901719680487293,
+  "depth_display_range_scene_units": [
+    0.9510626578330994,
+    1.6645662927627565
+  ],
+  "depth_color_scale_m": {
+    "near_m": 0.7430799415667318,
+    "far_m": 1.3005513499796806
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.6059376636231413 m over generated floor distance",
+  "m_per_unit": 1.7476893067359924,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 21.076390981674194
+}

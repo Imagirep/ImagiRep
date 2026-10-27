@@ -1,0 +1,106 @@
+{
+  "row_index": 216,
+  "question_id": "FOB3-0127-Q1",
+  "trajectory_id": "FOB3-0127",
+  "scan_id": "ZMojNkEp431",
+  "question_type": 1,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk to the white shelf and walk past it by its left side, then turn to face my starting point, which direction would have the most open space?",
+  "answer_choices": {
+    "D": "left",
+    "A": "behind",
+    "B": "front",
+    "C": "right"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "D": "B",
+    "A": "D",
+    "B": "A",
+    "C": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0127\\start_view.png",
+      "sha256": "f42596f4bf4ad6dfa7d2c2f68b44108dc0d553cc5df7a9d53dcad52798c47ce2"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0127\\step_01_rgb.png",
+      "sha256": "85161e74ba11c59df6eb3d4bb5c804052cdd83d8f445f7fe027682d6a39c5bc3"
+    },
+    {
+      "label": "Step 2",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0127\\step_02_rgb.png",
+      "sha256": "11332e429e13b1ca2d5eff86e10ebe9934d003d929971df4dd27bb3cf9a9733a"
+    },
+    {
+      "label": "Step 3 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0127\\step_03_rgb.png",
+      "sha256": "40dda47356bd39c9cef47d9e2c9ba58a3d3fd3779010c6ead64af84ae5db0ce1"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0127\\oracle_lookback.png",
+      "sha256": "c28cf4684bb8d2c6577dbfee2559767998283444324819668cbcaf094c160452"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": false,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1155,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 91
+      }
+    ],
+    "thoughts_token_count": 756,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1912,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-21T11:43:56-04:00"
+}

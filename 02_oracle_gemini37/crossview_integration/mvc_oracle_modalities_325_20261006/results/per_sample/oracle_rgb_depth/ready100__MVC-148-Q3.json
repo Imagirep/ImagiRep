@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-148-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-148-Q3",
+  "resource_id": "MVC-148",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "green and white potted plant, red and yellow potted plant, yellow sofa, fireplace",
+    "B": "yellow sofa, green and white potted plant, red and yellow potted plant, fireplace",
+    "C": "yellow sofa, green and white potted plant, fireplace, red and yellow potted plant",
+    "D": "fireplace, red and yellow potted plant, green and white potted plant, yellow sofa"
+  },
+  "gold_answer": "A",
+  "prediction": "B",
+  "correct": false,
+  "signature": "805fb3d9719b7a31af2dfee811f92b7418a4ae1cba3ff71a5759faf4b8ae4f46",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.729 m (near/red) to 3.887 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-148\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4666,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 410
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 2569,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7236,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 29.9834572999971,
+  "completed_at": "2026-10-06T17:38:58-04:00"
+}

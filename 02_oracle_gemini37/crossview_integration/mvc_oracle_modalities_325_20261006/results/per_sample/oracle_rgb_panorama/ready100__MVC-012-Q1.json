@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-012-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-012-Q1",
+  "resource_id": "MVC-012",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to dining table in Image 1?",
+  "answer_choices": {
+    "A": "black table",
+    "B": "gray armchair",
+    "C": "fireplace",
+    "D": "painting"
+  },
+  "gold_answer": "A",
+  "prediction": "B",
+  "correct": false,
+  "signature": "52cf0c3618d0bfc196b5f563f29e9c77b08ad8f95a98ae46a8ea805b0795e4aa",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-012\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4597,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 324
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      }
+    ],
+    "thoughts_token_count": 655,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5253,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.658722200008924,
+  "completed_at": "2026-10-06T17:43:23-04:00"
+}

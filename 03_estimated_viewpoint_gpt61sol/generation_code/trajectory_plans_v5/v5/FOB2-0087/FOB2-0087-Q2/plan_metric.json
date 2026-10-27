@@ -1,0 +1,193 @@
+{
+  "question_id": "FOB2-0087-Q2",
+  "motion_text": "I walk near the brown sofas and keep facing forward.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "relation": "near",
+      "target": "the brown armchairs in the back right"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0087-Q2",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.07843354599715528,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -5.376949882753833,
+        "y": 0.42260018849169617,
+        "yaw": 0.07843354599715528,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -6.683539654540534,
+        0.5252913230342386
+      ]
+    ],
+    "x": -6.683539654540534,
+    "y": 0.5252913230342386,
+    "yaw": 0.07843354599715528,
+    "pitch": 0.0,
+    "travel_yaw": 0.07843354599715528
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -5.376949882753833,
+      0.42260018849169617
+    ]
+  ],
+  "final": {
+    "x": -5.376949882753833,
+    "y": 0.42260018849169617,
+    "yaw_deg": 4.493911157882209,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "relation": "near",
+        "target": "the brown armchairs in the back right"
+      },
+      "x": -6.683539654540534,
+      "y": 0.5252913230342386,
+      "yaw": 0.07843354599715528,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.07843354599715528,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -5.376949882753833,
+      "y": 0.42260018849169617,
+      "yaw": 0.07843354599715528,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the brown armchairs in the back right",
+      "method": "initial_photo",
+      "box": [
+        576,
+        506,
+        703,
+        699
+      ],
+      "point_m": [
+        -7.803262900244048,
+        1.1451164822941942,
+        -1.4743846613080414
+      ]
+    },
+    {
+      "overlap": "the brown armchairs in the back right",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 7.2,
+          "stop_m": 1.2798294320027341,
+          "visible_frac": 0.8355555555555556,
+          "center_deg": 0.9936884205200223,
+          "width_deg": 58.751042974516174,
+          "distance_m": 1.6679150597267411
+        },
+        {
+          "sector": 4,
+          "path_m": 7.800000000000001,
+          "stop_m": 1.2223554316143916,
+          "visible_frac": 0.8533333333333334,
+          "center_deg": 2.657670410138386,
+          "width_deg": 66.79128038476361,
+          "distance_m": 1.5206993171978125
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 2.5768957138061523,
+  "seconds": 9.38227367401123,
+  "planning_m_per_unit": 3.203077035194201,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.8045063186093233
+}

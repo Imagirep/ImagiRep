@@ -1,0 +1,151 @@
+{
+  "row_index": 23,
+  "question_id": "FOB4-0222-Q3",
+  "trajectory_id": "FOB4-0222",
+  "scan_id": "PuKPg4mmafe",
+  "batch": 4,
+  "question_type": 3,
+  "question_set": "lookback",
+  "show_lookback": true,
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "question": "If I walk forward, walk past the white long sofa, then turn to face my starting point, would the glass cup on the table still be directly visible?",
+  "answer_choices": {
+    "B": "clearly visible",
+    "A": "completely blocked",
+    "C": "partially visible",
+    "D": "outside of view"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "B": "A",
+    "A": "C",
+    "C": "B",
+    "D": "D"
+  },
+  "shuffle_origin": "balanced_seed_20261005",
+  "rerun_reasons": [
+    "no_oracle_run"
+  ],
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0222\\start_view.png",
+      "sha256": "bc21b44d6b3dc1f5d3debbcc638a990d01079b20145febb5b84c516d98935b7a"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0222\\step_01_rgb.png",
+      "sha256": "fab102a03e97d69cd8bb59fa553d75f0c62eb10ca8daa7773b73c19322f1caf3"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0222\\oracle_lookback.png",
+      "sha256": "486efc293ddae5d5122b0529d06d3fbf1f8d34592136ad586727b16fc2c7be0b"
+    }
+  ],
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\geometry\\FOB4-0222\\oracle_lookback_depth.png",
+      "sha256": "470b2b75753c6072007c8f9f4ae1819a4c6547975a0136b5b47f7f33131bd6ce",
+      "color_scale": {
+        "near_m": 1.60625,
+        "far_m": 9.766
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\geometry\\FOB4-0222\\oracle_lookback_surface_normals.png",
+      "sha256": "929c51283b1dbe88e39249e884995b085aa0bdce4a8dad868d5db337ac813eee"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\geometry\\FOB4-0222\\oracle_lookback_panorama.png",
+      "sha256": "1e9904d239b8305fd42cf7a872d19466d3d6b6f382962b6ffa4e1adb0d656f3c"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\trajectory\\FOB4-0222\\topdown_lookback_with_path.png",
+      "sha256": "8fc62f22e43485bed29e4115864e26aaa098126ef3ec1045bdc7fff99e179228"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\trajectory\\FOB4-0222\\trajectory_lookback.txt",
+      "sha256": "d46d2a164bab1533a4c194e5d414b3a6cde75dd1a3e057b876ada9c978d36982"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\trajectory\\FOB4-0222\\trajectory_lookback.mp4",
+      "sha256": "2155a4917b9c74bd93a9595bc93d7a96f4dca813e03da5a2948766ab4f24e6e1"
+    }
+  },
+  "modality_source": "fo_622_supplement_modalities_20261005",
+  "manifest_seed": 20261005,
+  "source": "622_freeze_labels_20261002",
+  "category": "visibility",
+  "subtype": "specified_object_visibility_state",
+  "category_label": "Visibility (incl. object selection by visibility)",
+  "condition": "start_final_depth",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT DEPTH MAP (same camera pose and field of view as FINAL VIEW):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.606 m (near/red) to 9.766 m (far/purple), with values outside this range clipped. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_622supplement_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "B",
+  "correct": true,
+  "input_signature": "f78f89909774e0b4350dbdfbd90ac8b3a809f05b58eb70e5743a01c735d45ac4",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "depth"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3456,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 264
+      }
+    ],
+    "thoughts_token_count": 840,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4297,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_started_at": "2026-10-05T12:43:10.154-04:00",
+  "request_duration_seconds": 8.454713700004504,
+  "completed_at": "2026-10-05T12:43:18.609-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

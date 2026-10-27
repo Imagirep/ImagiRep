@@ -1,0 +1,100 @@
+{
+  "row_index": 190,
+  "question_id": "FOB3-0004-Q3",
+  "trajectory_id": "FOB3-0004",
+  "scan_id": "mJXqzFtmKg4",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk to the bed and face the same direction I go, then turn to face my starting point, would the towel still be directly visible?",
+  "answer_choices": {
+    "D": "completely blocked",
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "outside of view"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "D": "C",
+    "A": "A",
+    "B": "B",
+    "C": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0004\\start_view.png",
+      "sha256": "2aae3c3401e71e11c87695b4ff306078eee6e39afe1dd9833afdf634a2c05aa3"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0004\\step_01_rgb.png",
+      "sha256": "34d2e446b9e27a7742f5a40e7a1bf02e46cfecc56701aa0f1edf7b00a6b0e01a"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0004\\step_02_rgb.png",
+      "sha256": "9cd5420dcdc147fc2c5f42980abee0c2311d9d82e848739f15979a1761867998"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0004\\oracle_lookback.png",
+      "sha256": "ffb0030b1ac1ff0d17142c1885920297d35519f9e84223374f911fae3d96be7f"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1157,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 93
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 2231,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3389,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-21T11:43:23-04:00"
+}

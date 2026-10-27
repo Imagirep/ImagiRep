@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-053-Q3", "method": "avic", "variant": "label", "prediction": "podium, monitor, piano, framed painting", "gold": "piano, podium, monitor, framed painting", "correct": false, "n_imagined": 2, "category": "ordering", "stored_result": "correct"}

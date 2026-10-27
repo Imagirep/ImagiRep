@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-053-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-053-Q2",
+  "resource_id": "MVC-053",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is farthest from closest lamp in Image 1?",
+  "answer_choices": {
+    "A": "round table",
+    "B": "bookshelf",
+    "C": "podium",
+    "D": "piano"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "cec5dfb0fbb683e44582b1591ae3f21046916b02b72e1485131dad2f5f6af648",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-053\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7885,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 283
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 3843,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 11728,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 21.882308900007047,
+  "completed_at": "2026-10-06T17:34:08-04:00"
+}

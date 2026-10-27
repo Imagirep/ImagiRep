@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-034-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-034-Q3",
+  "resource_id": "MVC-034",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "gray armchair, round desk, white armchair, globe",
+    "B": "white armchair, gray armchair, globe, round desk",
+    "C": "round desk, white armchair, gray armchair, globe",
+    "D": "globe, white armchair, round desk, gray armchair"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "f1ab988d69c67e68806f821206eafb320a9649004f5b0b8ccf422279dfbea8ec",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.226 m (near/red) to 4.609 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-034\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4642,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 386
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 2327,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6970,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 25.750142099990626,
+  "completed_at": "2026-10-06T17:37:12-04:00"
+}

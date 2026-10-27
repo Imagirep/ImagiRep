@@ -1,0 +1,44 @@
+{
+  "status": "ok",
+  "row_index": 45,
+  "question_id": "MVC-182-Q3",
+  "condition": "text_only",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "response_format": "dynamic option enum",
+  "system_prompt": "Solve this spatial reasoning multiple-choice question from the provided text. Reason carefully. Return only A, B, C, or D.",
+  "condition_prompt": "No images are provided. Choose the best answer using only the question and answer choices. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.",
+  "prompt_hash": "b58ffda458edf0cc5462b363d84c1d20d401cf09058a9a32b6a0f6b75eb3d20c",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "white statue, green plant, white decorative pot, yellow cushions",
+    "B": "yellow cushions, green plant, white decorative pot, white statue",
+    "C": "white decorative pot, yellow cushions, green plant, white statue",
+    "D": "white decorative pot, green plant, white statue, yellow cushions"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "image_paths": [],
+  "image_count": 0,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 243,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 243
+      }
+    ],
+    "thoughts_token_count": 2342,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2586,
+    "traffic_type": null
+  },
+  "completed_at": "2026-10-01T12:58:24"
+}

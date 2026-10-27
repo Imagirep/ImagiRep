@@ -1,0 +1,204 @@
+{
+  "question_id": "FO-0009-Q1",
+  "motion_text": "I walk to the open glass doors and turn slightly to the right.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "relation": "to",
+      "target": "open sliding glass doors on the left leading to the balcony"
+    },
+    {
+      "op": "turn",
+      "amount": "slight",
+      "direction": "right"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FO-0009-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.27773590962950073,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.663497369162522,
+        "y": -1.3295846178728774,
+        "yaw": -0.27773590962950073,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -4.663497369162522,
+        -1.3295846178728774
+      ]
+    ],
+    "x": -4.663497369162522,
+    "y": -1.3295846178728774,
+    "yaw": -0.27773590962950073,
+    "pitch": 0.0,
+    "travel_yaw": -0.27773590962950073
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -4.663497369162522,
+      -1.3295846178728774
+    ]
+  ],
+  "final": {
+    "x": -4.663497369162522,
+    "y": -1.3295846178728774,
+    "yaw_deg": 19.08690455900277,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "relation": "to",
+        "target": "open sliding glass doors on the left leading to the balcony"
+      },
+      "x": -4.663497369162522,
+      "y": -1.3295846178728774,
+      "yaw": -0.27773590962950073,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "amount": "slight",
+        "direction": "right"
+      },
+      "x": -4.663497369162522,
+      "y": -1.3295846178728774,
+      "yaw": 0.3331293285685146,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.27773590962950073,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.663497369162522,
+      "y": -1.3295846178728774,
+      "yaw": -0.27773590962950073,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.663497369162522,
+      "y": -1.3295846178728774,
+      "yaw": 0.3331293285685146,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "open sliding glass doors on the left leading to the balcony",
+      "method": "initial_photo",
+      "box": [
+        415,
+        150,
+        781,
+        356
+      ],
+      "point_m": [
+        -5.269681325427369,
+        -2.210891475726513,
+        -0.5735369823442714
+      ]
+    },
+    {
+      "overlap": "open sliding glass doors on the left leading to the balcony",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 5,
+          "path_m": 6.0,
+          "stop_m": 1.06965450802245,
+          "visible_frac": 0.8133333333333334,
+          "center_deg": 8.282306484534404,
+          "width_deg": 60.569613225290524,
+          "distance_m": 1.2090934339913826
+        }
+      ],
+      "chosen_sector": 5
+    }
+  ],
+  "m_per_unit": 2.1435528766777647,
+  "seconds": 6.1742095947265625
+}

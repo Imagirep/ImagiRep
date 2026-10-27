@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-100-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-100-Q1",
+  "resource_id": "MVC-100",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to potted plant in Image 1?",
+  "answer_choices": {
+    "A": "wooden door",
+    "B": "gramophone",
+    "C": "wooden cabinet",
+    "D": "framed picture"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "e52b866c6d9fbb61da3f3f5a8c1102b0e4d8f6b5e491f155fc4df863967acef2",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-100\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7888,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 286
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      }
+    ],
+    "thoughts_token_count": 846,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8734,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 6.753347999998368,
+  "completed_at": "2026-10-06T17:34:32-04:00"
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-109-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-109-Q3",
+  "resource_id": "MVC-109",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_surface_normals",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "round table, painting, white flower, white bowl",
+    "B": "white bowl, painting, white flower, round table",
+    "C": "round table, white flower, painting, white bowl",
+    "D": "white bowl, painting, round table, white flower"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "128b6d5f05f84ea0b8bda5620fe1536ca27255df142d5e5ea40883afbf561e22",
+  "caption": "ORACLE SURFACE NORMAL MAP (same camera pose and field of view as Oracle RGB):\nColors encode surface orientation, not object color or distance. RGB channels encode normal components along camera-right (R), camera-up (G), and camera-forward (B): 0 = -1, about 128 = 0, and 255 = +1. Higher R/G/B means a stronger rightward/upward/forward component; a surface facing the camera has low B. Black means missing geometry. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-109\\oracle_surface_normals_sv.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4652,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 396
+      }
+    ],
+    "thoughts_token_count": 1356,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6009,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.186693900002865,
+  "completed_at": "2026-10-06T17:41:30-04:00"
+}

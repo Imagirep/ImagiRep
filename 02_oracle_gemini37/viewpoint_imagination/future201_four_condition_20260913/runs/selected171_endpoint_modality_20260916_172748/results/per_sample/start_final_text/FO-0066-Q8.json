@@ -1,0 +1,127 @@
+{
+  "row_index": 12,
+  "question_id": "FO-0066-Q8",
+  "trajectory_id": "FO-0066",
+  "scan_id": "ARNzJeq3xxb",
+  "question_type": 8,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk into the room and face the way I move, which object(s) would be furthest to my left?",
+  "answer_choices": {
+    "B": "desk",
+    "A": "bed",
+    "C": "painting",
+    "D": "pillows"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "bed",
+    "B": "desk",
+    "C": "pillows",
+    "D": "painting"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "B": "B",
+    "A": "A",
+    "C": "D",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0066\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0066\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0066\\modalities\\step_02_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "c3d25f9ca560db8a1cda71a7bcaf70d6d1ba57514cc44fe77990de26101852a9",
+    "63b5609a22d096904a8389b66594c01bd9fbf02a32714799ff2e6910b06763fb"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0066\\modalities\\topdown_with_path.png",
+      "sha256": "0ba62e53933800048a92340bdbe14e38b91a6f3efa65f8e399a1e4b311aa2de7"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0066\\modalities\\trajectory.txt",
+      "sha256": "ce79580a1685dd91328860bce91244a8d4c706478a9d3695b376c0f4fbc9734b"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0066\\modalities\\trajectory.mp4",
+      "sha256": "087c9df49d9257978bf1833845013ee2f682148703905d73e2a77240fb8a473b",
+      "frame_count": 73,
+      "fps": 12.0,
+      "duration_seconds": 6.083333333333333,
+      "bytes": 363398,
+      "final_rgb_correlation": 0.9996785232472547
+    }
+  },
+  "condition": "start_final_text",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "modality_prompt": "ADDITIONAL TEXT TRAJECTORY:\nThe description gives the movement and camera poses from start to final state. Headings are in degrees: 0 faces +Y; positive rotation is clockwise toward +X. Use it together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": false,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "additional_modality": {
+    "kind": "text",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0066\\modalities\\trajectory.txt",
+    "sha256": "ce79580a1685dd91328860bce91244a8d4c706478a9d3695b376c0f4fbc9734b"
+  },
+  "input_signature": "56fdf39496dce005d856c1d05dd317a85612351ebd768bdcc7af4c107d95dae3",
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2606,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 478
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 5448,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8055,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-16T17:34:14-04:00"
+}

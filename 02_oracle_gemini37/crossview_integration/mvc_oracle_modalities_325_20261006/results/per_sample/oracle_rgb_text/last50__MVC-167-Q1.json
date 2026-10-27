@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-167-Q1",
+  "cohort": "last50",
+  "question_id": "MVC-167-Q1",
+  "resource_id": "MVC-167",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to black desk in Image 2?",
+  "answer_choices": {
+    "A": "white tall vase",
+    "B": "doorway",
+    "C": "wooden wall decoration",
+    "D": "mirror"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "268f3f541e489ebbaad4ccee7d59dcd17db712a9e9c79d5cfc0fc2ed25748d78",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-167\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3553,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 361
+      }
+    ],
+    "thoughts_token_count": 1152,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4706,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 6.9557763000048,
+  "completed_at": "2026-10-06T17:32:08-04:00"
+}

@@ -1,0 +1,335 @@
+{
+  "question_id": "FOB2-0178-Q3",
+  "motion_text": "I walk to the chair far from me, then take one step to the right, then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "relation": "to",
+      "target": "the wooden armchair further away in the background"
+    },
+    {
+      "op": "turn",
+      "direction": "right",
+      "amount": "normal"
+    },
+    {
+      "op": "forward"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0178-Q3",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.06042556948660385,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.2376785792469707,
+        "y": -0.13537780864941207,
+        "yaw": -0.06042556948660385,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.2376785792469707,
+        "y": -0.13537780864941207,
+        "yaw": 0.5880026035475681,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.077537961250075,
+        "y": 0.4245284460193246,
+        "yaw": 0.5880026035475681,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -3.077537961250075,
+        "y": 0.4245284460193246,
+        "yaw": 0.7853981633974461,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.170855670361531,
+        "y": 0.5178461551307803,
+        "yaw": 0.7853981633974461,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.3979141800130894,
+        -0.14507193751158276
+      ],
+      [
+        -3.2979141800130893,
+        0.4549280624884178
+      ],
+      [
+        -3.3979141800130894,
+        0.5549280624884174
+      ]
+    ],
+    "x": -3.3979141800130894,
+    "y": 0.5549280624884174,
+    "yaw": 0.16188517755051327,
+    "pitch": 0.0,
+    "travel_yaw": 0.16188517755051327
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.2376785792469707,
+      -0.13537780864941207
+    ],
+    [
+      -3.077537961250075,
+      0.4245284460193246
+    ],
+    [
+      -3.170855670361531,
+      0.5178461551307803
+    ]
+  ],
+  "final": {
+    "x": -3.170855670361531,
+    "y": 0.5178461551307803,
+    "yaw_deg": -170.7246625606296,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "relation": "to",
+        "target": "the wooden armchair further away in the background"
+      },
+      "x": -3.3979141800130894,
+      "y": 0.5549280624884174,
+      "yaw": 0.16188517755051327,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "right",
+        "amount": "normal"
+      },
+      "x": -3.3979141800130894,
+      "y": 0.5549280624884174,
+      "yaw": 1.5581485791459766,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "forward"
+      },
+      "x": -3.3979141800130894,
+      "y": 0.5549280624884174,
+      "yaw": 1.5581485791459766,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -3.3979141800130894,
+      "y": 0.5549280624884174,
+      "yaw": -2.97970747603928,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.06042556948660385,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.2376785792469707,
+      "y": -0.13537780864941207,
+      "yaw": -0.06042556948660385,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.2376785792469707,
+      "y": -0.13537780864941207,
+      "yaw": 0.5880026035475681,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.077537961250075,
+      "y": 0.4245284460193246,
+      "yaw": 0.5880026035475681,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.077537961250075,
+      "y": 0.4245284460193246,
+      "yaw": 0.7853981633974461,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.170855670361531,
+      "y": 0.5178461551307803,
+      "yaw": 0.7853981633974461,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.170855670361531,
+      "y": 0.5178461551307803,
+      "yaw": 0.16188517755051327,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.170855670361531,
+      "y": 0.5178461551307803,
+      "yaw": 1.5581485791459766,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.170855670361531,
+      "y": 0.5178461551307803,
+      "yaw": -2.97970747603928,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the wooden armchair further away in the background",
+      "method": "initial_photo",
+      "box": [
+        523,
+        540,
+        707,
+        627
+      ],
+      "point_m": [
+        -4.304474319129958,
+        0.5031536324682085,
+        -0.6594969974506432
+      ]
+    },
+    {
+      "overlap": "the wooden armchair further away in the background",
+      "n_points": 207,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 3.6,
+          "stop_m": 1.0347635708643048,
+          "visible_frac": 0.8454106280193237,
+          "center_deg": -4.017519910491483,
+          "width_deg": 16.532455338821663,
+          "distance_m": 1.135534454837282
+        },
+        {
+          "sector": 4,
+          "path_m": 4.2,
+          "stop_m": 0.9080373766753842,
+          "visible_frac": 0.9468599033816425,
+          "center_deg": 1.3111261369874294,
+          "width_deg": 27.635981431575438,
+          "distance_m": 0.9444805135198928
+        }
+      ],
+      "chosen_sector": 4
+    },
+    {
+      "move_yaw_deg": 89.27533743937038,
+      "requested_m": 2.0,
+      "end": [
+        -3.3979141800130894,
+        0.5549280624884174
+      ],
+      "blocked": true
+    }
+  ],
+  "m_per_unit": 2.472848892211914,
+  "seconds": 13.446183204650879,
+  "planning_m_per_unit": 2.6499245596121668,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.9331770911145603
+}

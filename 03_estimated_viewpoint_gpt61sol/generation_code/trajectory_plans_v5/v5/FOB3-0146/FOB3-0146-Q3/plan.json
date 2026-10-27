@@ -1,0 +1,178 @@
+{
+  "question_id": "FOB3-0146-Q3",
+  "motion_text": "I slightly turn left and walk near the left side of the dining table, then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "turn",
+      "direction": "left",
+      "amount": "slight"
+    },
+    {
+      "op": "go",
+      "target": "dining table",
+      "relation": "near",
+      "side": "left"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "shared_walk_from": "FOB3-0146-Q1",
+  "walk_state": {
+    "question_id": "FOB3-0146-Q3",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.6108652381980155,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.15458894292085873,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.340363493165706,
+        "y": -0.6763687025382001,
+        "yaw": -0.15458894292085873,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -4.340363493165706,
+        -0.6763687025382001
+      ]
+    ],
+    "x": -4.340363493165706,
+    "y": -0.6763687025382001,
+    "yaw": -0.15458894292085873,
+    "pitch": 0.0,
+    "travel_yaw": -0.15458894292085873
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -4.340363493165706,
+      -0.6763687025382001
+    ]
+  ],
+  "final": {
+    "x": -4.340363493165706,
+    "y": -0.6763687025382001,
+    "yaw_deg": 171.14270601124602,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -4.340363493165706,
+      "y": -0.6763687025382001,
+      "yaw": 2.9870037106689344,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.6108652381980155,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.15458894292085873,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.340363493165706,
+      "y": -0.6763687025382001,
+      "yaw": -0.15458894292085873,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.340363493165706,
+      "y": -0.6763687025382001,
+      "yaw": 2.9870037106689344,
+      "pitch": 0.0
+    }
+  ],
+  "events": [],
+  "m_per_unit": 2.7699130264309497,
+  "seconds": 7.095506906509399
+}

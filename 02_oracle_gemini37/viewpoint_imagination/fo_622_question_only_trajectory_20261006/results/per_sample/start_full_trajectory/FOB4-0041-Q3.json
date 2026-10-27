@@ -1,0 +1,76 @@
+{
+  "question_id": "FOB4-0041-Q3",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk forward, walk to the door and turn to face my starting point, then turn to face my starting point, would the wooden table still be directly visible?",
+  "answer_choices": {
+    "C": "partially visible",
+    "A": "completely blocked",
+    "B": "clearly visible",
+    "D": "outside of view"
+  },
+  "gold_answer": "C",
+  "show_lookback": true,
+  "prediction": "B",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0041/start_view.png",
+      "sha256": "b7f1b5f2c595603faf736eea916de6c755c902a84240c04e37bdd5cd24c35907"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0041/step_01_rgb.png",
+      "sha256": "1087494b0e17e399810be9a6870ef8f1291ff9282800f6196d234d9781c80aee"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0041/step_02_rgb.png",
+      "sha256": "42bb558be36f13d5aa7671896b0a1685d322f312cc003ad7422ede04bf2c3b08"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0041/oracle_lookback.png",
+      "sha256": "9056077832ff793bb41939c670f6fa1eac7c2bf828bbedf97bf0e13915abab9b"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4418,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 162
+      }
+    ],
+    "thoughts_token_count": 792,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5211,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 5.15634040000441,
+  "completed_at": "2026-10-06T15:02:51-04:00"
+}

@@ -1,0 +1,94 @@
+{
+  "row_index": 158,
+  "question_id": "FOB3-0034-Q6",
+  "trajectory_id": "FOB3-0034",
+  "scan_id": "VFuaQ6m2Qom",
+  "question_type": 6,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk forward, then walk to the fireplace, facing the direction I go, where is the white console table relative to me?",
+  "answer_choices": {
+    "D": "behind",
+    "A": "right",
+    "B": "left",
+    "C": "front"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "D": "D",
+    "A": "C",
+    "B": "B",
+    "C": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0034\\start_view.png",
+      "sha256": "a9c219385c930b012aba5f12f8294ece61712a1a006c4d48cf55c666cad1a822"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0034\\step_01_rgb.png",
+      "sha256": "5fb9c91be603130b07975f50b3796fa0dd4cbf3cd00c8d9c1bf31622f2200efa"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0034\\step_02_rgb.png",
+      "sha256": "32d0681686d56767d6b88bfe903321680c6f3e3e21dbf7309cfba31b358afa9d"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "B",
+  "correct": false,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1149,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 85
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 1337,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2486,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "completed_at": "2026-09-21T11:42:29-04:00"
+}

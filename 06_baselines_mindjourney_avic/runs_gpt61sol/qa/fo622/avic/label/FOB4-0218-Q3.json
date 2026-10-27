@@ -1,0 +1,1 @@
+{"qid": "FOB4-0218-Q3", "method": "avic", "variant": "label", "prediction": "outside of view", "gold": "partially visible", "correct": false, "n_imagined": 4, "category": "visibility", "stored_result": "correct"}

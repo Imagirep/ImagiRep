@@ -1,0 +1,254 @@
+{
+  "question_id": "FOB2-0288-Q2",
+  "motion_text": "I walk into the room with blue wall paper and stop, facing the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the room with blue floral wallpaper on the left",
+      "relation": "into"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0288-Q2",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.5447685264542983,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -0.6064585520732569,
+        "y": -0.3674715440606389,
+        "yaw": -0.5447685264542983,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -0.6064585520732569,
+        "y": -0.3674715440606389,
+        "yaw": -0.5880026035475674,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.989507268921445,
+        "y": -1.2895040219594307,
+        "yaw": -0.5880026035475674,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.027866138652682,
+        "y": -1.3150766017802555,
+        "yaw": -0.5880026035475674,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -0.657740987015238,
+        -0.3985451194713501
+      ],
+      [
+        -2.1577409870152384,
+        -1.39854511947135
+      ],
+      [
+        -2.199343501732131,
+        -1.4262801292826115
+      ]
+    ],
+    "x": -2.199343501732131,
+    "y": -1.4262801292826115,
+    "yaw": -0.5753218945052037,
+    "pitch": 0.0,
+    "travel_yaw": -0.5753218945052037
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -0.6064585520732569,
+      -0.3674715440606389
+    ],
+    [
+      -1.989507268921445,
+      -1.2895040219594307
+    ],
+    [
+      -2.027866138652682,
+      -1.3150766017802555
+    ]
+  ],
+  "final": {
+    "x": -2.027866138652682,
+    "y": -1.3150766017802555,
+    "yaw_deg": -32.96351641661896,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the room with blue floral wallpaper on the left",
+        "relation": "into"
+      },
+      "x": -2.199343501732131,
+      "y": -1.4262801292826115,
+      "yaw": -0.5753218945052037,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -2.199343501732131,
+      "y": -1.4262801292826115,
+      "yaw": -0.5753218945052037,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.5447685264542983,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -0.6064585520732569,
+      "y": -0.3674715440606389,
+      "yaw": -0.5447685264542983,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -0.6064585520732569,
+      "y": -0.3674715440606389,
+      "yaw": -0.5880026035475674,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.989507268921445,
+      "y": -1.2895040219594307,
+      "yaw": -0.5880026035475674,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.027866138652682,
+      "y": -1.3150766017802555,
+      "yaw": -0.5880026035475674,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.027866138652682,
+      "y": -1.3150766017802555,
+      "yaw": -0.5753218945052037,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the room with blue floral wallpaper on the left",
+      "method": "initial_photo",
+      "box": [
+        323,
+        137,
+        987,
+        348
+      ],
+      "point_m": [
+        -3.6500023646300668,
+        -1.3878452593023423,
+        -1.2145718664677425
+      ]
+    },
+    {
+      "move_yaw_deg": -33.69006752597978,
+      "requested_m": 1.0,
+      "end": [
+        -2.199343501732131,
+        -1.4262801292826115
+      ],
+      "blocked": true
+    }
+  ],
+  "m_per_unit": 1.2329843044281006,
+  "seconds": 7.395087957382202,
+  "planning_m_per_unit": 1.337246066687296,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.9220324778987918
+}

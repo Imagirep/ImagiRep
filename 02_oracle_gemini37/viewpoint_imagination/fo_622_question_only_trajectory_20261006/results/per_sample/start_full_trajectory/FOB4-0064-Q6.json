@@ -1,0 +1,82 @@
+{
+  "question_id": "FOB4-0064-Q6",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk forward, walk to the left side of the white table, then turn to face my starting point, where is the stove relative to me?",
+  "answer_choices": {
+    "D": "front",
+    "A": "right",
+    "B": "left",
+    "C": "behind"
+  },
+  "gold_answer": "D",
+  "show_lookback": true,
+  "prediction": "D",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2:",
+    "Step 3 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0064/start_view.png",
+      "sha256": "6a58346a6b18ab264c8fa7d2fd2f4f5bc4f353fa28ceed9af2d711e3b6e53ab7"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0064/step_01_rgb.png",
+      "sha256": "b2299177081c8957c1bcb4aa4310d0fdfcbc7c8fb1e17bfa27e19f2b315ce703"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0064/step_02_rgb.png",
+      "sha256": "7022ff611aca198b1aca60254db97bbcb7a18dee3ef93f7163efd01f1168d7c3"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0064/step_03_rgb.png",
+      "sha256": "1b9572e06c72f2e42ae49f8f8c7e8f8c5617be64a0fab3b987d676f873462910"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0064/oracle_lookback.png",
+      "sha256": "d1034601da52bbb5fca14296d50f2c639c591da539fa7c0e4c3122f192561337"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 5479,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 5320
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 159
+      }
+    ],
+    "thoughts_token_count": 2297,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7777,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 10.667799899994861,
+  "completed_at": "2026-10-06T15:06:03-04:00"
+}

@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-100-Q2", "method": "avic", "variant": "label", "prediction": "gramophone", "gold": "gramophone", "correct": true, "n_imagined": 2, "category": "cross_view_farthest", "stored_result": "correct"}

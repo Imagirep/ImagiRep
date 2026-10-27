@@ -1,0 +1,1 @@
+{"qid": "FOB3-0034-Q4", "method": "mj", "variant": "top3+label", "prediction": "painting", "gold": "painting", "correct": true, "n_imagined": 3, "category": "nearest_object", "stored_result": "correct"}

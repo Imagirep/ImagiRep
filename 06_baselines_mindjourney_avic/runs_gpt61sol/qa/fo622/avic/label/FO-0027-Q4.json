@@ -1,0 +1,1 @@
+{"qid": "FO-0027-Q4", "method": "avic", "variant": "label", "prediction": "counter", "gold": "white vases", "correct": false, "n_imagined": 2, "category": "nearest_object", "stored_result": "wrong"}

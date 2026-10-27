@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB3-0143-Q2",
+  "motion_text": "I walk forward, walk to the red chairs and keep facing the same direction.",
+  "view_variant": "endpoint",
+  "frames": 112,
+  "fps": 12,
+  "total_distance_m": 6.039891558592608,
+  "depth_display_range_scene_units": [
+    1.2916562461853027,
+    3.3792108726501473
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.8420085613756167,
+    "far_m": 4.819033993369595
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.3897964179482187 m over generated floor distance",
+  "m_per_unit": 2.4229965209960938,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 27.35106348991394
+}

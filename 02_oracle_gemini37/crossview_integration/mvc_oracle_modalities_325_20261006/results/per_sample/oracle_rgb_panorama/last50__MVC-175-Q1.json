@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-175-Q1",
+  "cohort": "last50",
+  "question_id": "MVC-175-Q1",
+  "resource_id": "MVC-175",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to fireplace in Image 2?",
+  "answer_choices": {
+    "A": "framed painting",
+    "B": "wooden chair",
+    "C": "mirror",
+    "D": "alarm clock"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "f1b44aa1cb01d69fa93a1e7116ccf21d3c6b5bd2886965ce8f7e65848bae7d4f",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-175\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4597,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 324
+      }
+    ],
+    "thoughts_token_count": 1016,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5614,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.329024099992239,
+  "completed_at": "2026-10-06T17:45:32-04:00"
+}

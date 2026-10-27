@@ -1,0 +1,221 @@
+{
+  "question_id": "FO-0019-Q1",
+  "motion_text": "I walk to the glass doors then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the sliding glass doors straight ahead leading outside",
+      "relation": "to"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FO-0019-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.030153236970439517,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -7.110978445193753,
+        "y": 0.21448402631450494,
+        "yaw": 0.030153236970439517,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -9.319860929824372,
+        0.28110917679283043
+      ]
+    ],
+    "x": -9.319860929824372,
+    "y": 0.28110917679283043,
+    "yaw": 0.030153236970439517,
+    "pitch": 0.0,
+    "travel_yaw": 0.030153236970439517
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -7.110978445193753,
+      0.21448402631450494
+    ]
+  ],
+  "final": {
+    "x": -7.110978445193753,
+    "y": 0.21448402631450494,
+    "yaw_deg": -178.27234678293598,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the sliding glass doors straight ahead leading outside",
+        "relation": "to"
+      },
+      "x": -9.319860929824372,
+      "y": 0.28110917679283043,
+      "yaw": 0.030153236970439517,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -9.319860929824372,
+      "y": 0.28110917679283043,
+      "yaw": -3.1114394166193535,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.030153236970439517,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -7.110978445193753,
+      "y": 0.21448402631450494,
+      "yaw": 0.030153236970439517,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -7.110978445193753,
+      "y": 0.21448402631450494,
+      "yaw": -3.1114394166193535,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the sliding glass doors straight ahead leading outside",
+      "method": "initial_photo",
+      "box": [
+        356,
+        489,
+        678,
+        690
+      ],
+      "point_m": [
+        -9.968101307105728,
+        1.1217648728277345,
+        -0.9195085623377466
+      ]
+    },
+    {
+      "overlap": "the sliding glass doors straight ahead leading outside",
+      "n_points": 224,
+      "candidates": [
+        {
+          "sector": 2,
+          "path_m": 9.600000000000001,
+          "stop_m": 1.0615637456195477,
+          "visible_frac": 0.6383928571428571,
+          "center_deg": -1.4051156270830483,
+          "width_deg": 44.172899087781424,
+          "distance_m": 1.529774264415013
+        },
+        {
+          "sector": 3,
+          "path_m": 9.600000000000001,
+          "stop_m": 1.0528221702942493,
+          "visible_frac": 0.6205357142857143,
+          "center_deg": -0.0704575881571029,
+          "width_deg": 46.49231443751947,
+          "distance_m": 1.5047505342783385
+        },
+        {
+          "sector": 4,
+          "path_m": 10.100000000000001,
+          "stop_m": 1.0499188706638536,
+          "visible_frac": 0.5848214285714286,
+          "center_deg": 0.834479311452229,
+          "width_deg": 68.97295031215393,
+          "distance_m": 1.2731927485938617
+        }
+      ],
+      "chosen_sector": 2
+    }
+  ],
+  "m_per_unit": 1.8570656776428223,
+  "seconds": 7.348140001296997,
+  "planning_m_per_unit": 2.433925793275215,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.7629919050012859
+}

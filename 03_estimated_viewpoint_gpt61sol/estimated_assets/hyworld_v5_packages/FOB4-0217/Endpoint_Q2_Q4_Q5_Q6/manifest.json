@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB4-0217-Q2",
+  "motion_text": "I walk near the dining table, facing the direction I go.",
+  "view_variant": "endpoint",
+  "frames": 59,
+  "fps": 12,
+  "total_distance_m": 2.1181538982139507,
+  "depth_display_range_scene_units": [
+    1.6075016975402832,
+    4.927526187896729
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.1533733633747028,
+    "far_m": 3.5354721311633064
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.382752389148635 m over generated floor distance",
+  "m_per_unit": 1.3140668272972107,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 23.215515613555908
+}

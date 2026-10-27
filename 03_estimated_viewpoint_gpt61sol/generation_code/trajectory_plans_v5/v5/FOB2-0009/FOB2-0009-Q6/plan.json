@@ -1,0 +1,243 @@
+{
+  "question_id": "FOB2-0009-Q6",
+  "motion_text": "I walk forward till I'm near the sink, then stop and look back to face where I come from.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the sink with faucet on the kitchen counter",
+      "relation": "near"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0009-Q6",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.09070700645966948,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -0.8783676439886055,
+        "y": 0.0798933342600523,
+        "yaw": 0.09070700645966948,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -0.8783676439886055,
+        "y": 0.0798933342600523,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.8783676439886055,
+        "y": 0.0798933342600523,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -0.8783676439886055,
+        0.0798933342600523
+      ],
+      [
+        -2.8783676439886055,
+        0.0798933342600523
+      ]
+    ],
+    "x": -2.8783676439886055,
+    "y": 0.0798933342600523,
+    "yaw": 0.02774934839089189,
+    "pitch": 0.0,
+    "travel_yaw": 0.02774934839089189
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -0.8783676439886055,
+      0.0798933342600523
+    ],
+    [
+      -2.8783676439886055,
+      0.0798933342600523
+    ]
+  ],
+  "final": {
+    "x": -2.8783676439886055,
+    "y": 0.0798933342600523,
+    "yaw_deg": -178.41007945296377,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the sink with faucet on the kitchen counter",
+        "relation": "near"
+      },
+      "x": -2.8783676439886055,
+      "y": 0.0798933342600523,
+      "yaw": 0.02774934839089189,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -2.8783676439886055,
+      "y": 0.0798933342600523,
+      "yaw": -3.1138433051989014,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.09070700645966948,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -0.8783676439886055,
+      "y": 0.0798933342600523,
+      "yaw": 0.09070700645966948,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -0.8783676439886055,
+      "y": 0.0798933342600523,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.8783676439886055,
+      "y": 0.0798933342600523,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.8783676439886055,
+      "y": 0.0798933342600523,
+      "yaw": 0.02774934839089189,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.8783676439886055,
+      "y": 0.0798933342600523,
+      "yaw": -3.1138433051989014,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the sink with faucet on the kitchen counter",
+      "method": "initial_photo",
+      "box": [
+        525,
+        484,
+        633,
+        572
+      ],
+      "point_m": [
+        -4.8577549653592405,
+        0.2319153635695729,
+        -0.5440467350668299
+      ]
+    },
+    {
+      "overlap": "the sink with faucet on the kitchen counter",
+      "n_points": 191,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 3.0,
+          "stop_m": 1.9852165789651774,
+          "visible_frac": 1.0,
+          "center_deg": 0.45843298628542745,
+          "width_deg": 14.630371752046042,
+          "distance_m": 2.362672923708473
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 1.336889370701232,
+  "seconds": 8.383359909057617
+}

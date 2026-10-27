@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB2-0001-Q6",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk forward past the bar stools, then walk to the right and stop beside the round dining table, and turn to face the table, where is the cabinet relative to me?",
+  "answer_choices": {
+    "C": "left",
+    "A": "front",
+    "B": "right",
+    "D": "behind"
+  },
+  "gold_answer": "C",
+  "show_lookback": false,
+  "prediction": "C",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0001/start_view.png",
+      "sha256": "26ee5f161909c86b1c4696112dd76c30750b1360288dc4cd7755d4c3ad0fd92c"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0001/step_01_rgb.png",
+      "sha256": "d50193505ab6cfaf02445df72d1a1f43ae87720baa5ea1eb2c5b3952407c9bd6"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0001/step_02_rgb.png",
+      "sha256": "590ad9b59c9c488d808092a60a411c9b466fbac05802e1365d316a8e63510254"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3345,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 153
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 4018,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7363,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_duration_seconds": 17.65633759999764,
+  "completed_at": "2026-10-06T14:13:49-04:00"
+}

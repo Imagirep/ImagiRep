@@ -1,0 +1,1 @@
+{"qid": "FO-0005-Q3", "method": "mj", "variant": "top3+label", "prediction": "partially visible", "gold": "partially visible", "correct": true, "n_imagined": 3, "category": "visibility", "stored_result": "correct"}

@@ -1,0 +1,184 @@
+{
+  "question_id": "FOB3-0191-Q6",
+  "motion_text": "I walk past the glass table, turn left and walk to the end.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the glass coffee table",
+      "relation": "past"
+    },
+    {
+      "op": "turn",
+      "direction": "left"
+    },
+    {
+      "op": "forward"
+    }
+  ],
+  "shared_walk_from": "FOB3-0191-Q1",
+  "walk_state": {
+    "question_id": "FOB3-0191-Q6",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.0735569751267042,
+        "y": -0.015340839206658295,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -3.0735569751267042,
+        "y": -0.015340839206658295,
+        "yaw": -0.004991191619448455,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -3.0735569751267042,
+        "y": -0.015340839206658295,
+        "yaw": -1.401254593214912,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.1566418735487245,
+        "y": -0.50069209646891,
+        "yaw": -1.401254593214912,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -3.4330165553227427,
+        -0.01713498574947714
+      ],
+      [
+        -3.525818424326113,
+        -0.5592491924527153
+      ]
+    ],
+    "x": -3.525818424326113,
+    "y": -0.5592491924527153,
+    "yaw": -1.401254593214912,
+    "pitch": 0.0,
+    "travel_yaw": -1.401254593214912
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -3.0735569751267042,
+      -0.015340839206658295
+    ],
+    [
+      -3.1566418735487245,
+      -0.50069209646891
+    ]
+  ],
+  "final": {
+    "x": -3.1566418735487245,
+    "y": -0.50069209646891,
+    "yaw_deg": -80.28597421453546,
+    "pitch_deg": 0.0
+  },
+  "step_states": [],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.0735569751267042,
+      "y": -0.015340839206658295,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.0735569751267042,
+      "y": -0.015340839206658295,
+      "yaw": -0.004991191619448455,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.0735569751267042,
+      "y": -0.015340839206658295,
+      "yaw": -1.401254593214912,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.1566418735487245,
+      "y": -0.50069209646891,
+      "yaw": -1.401254593214912,
+      "pitch": 0.0
+    }
+  ],
+  "events": [],
+  "m_per_unit": 2.1385159492492676,
+  "seconds": 4.901983022689819,
+  "planning_m_per_unit": 2.3886203239462698,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.8952933740914497
+}

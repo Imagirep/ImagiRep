@@ -1,0 +1,96 @@
+{
+  "row_index": 49,
+  "question_id": "FOB4-0167-Q4",
+  "trajectory_id": "FOB4-0167",
+  "scan_id": "X7HyMhZNoso",
+  "route_variant": "old_bent",
+  "question_type": 4,
+  "question_set": "lookback",
+  "endpoint_is_lookback": true,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk forward, walk near the stove and turn around, which object(s) would be closest to me?",
+  "answer_choices": {
+    "D": "blue book",
+    "A": "potted plant",
+    "B": "sink",
+    "C": "wooden plate"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "sink",
+    "B": "wooden plate",
+    "C": "blue book",
+    "D": "potted plant"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "D": "C",
+    "A": "D",
+    "B": "A",
+    "C": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0167\\start_view.png",
+      "sha256": "e3499488a609b3b7f93f2214f83dcd89dacb4d0ada0f146f5d567f5688807a9e"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0167\\step_01_rgb.png",
+      "sha256": "a624e50ecc6bd0e79c7bf29350b87ae3638aa58ac5bf88e1a5b62c4d12e5f76d"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0167\\step_02_back180_rgb.png",
+      "sha256": "015f4d153f1f62e6d76553c9b11de221b4be08e0b78c62b6aa5a023ae03066e8"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1149,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 85
+      }
+    ],
+    "thoughts_token_count": 974,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2124,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-24T17:29:16-04:00"
+}

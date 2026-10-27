@@ -1,0 +1,145 @@
+{
+  "row_index": 22,
+  "question_id": "FOB4-0217-Q6",
+  "trajectory_id": "FOB4-0217",
+  "scan_id": "oLBMNvg9in8",
+  "batch": 4,
+  "question_type": 6,
+  "question_set": "non-lookback",
+  "show_lookback": false,
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "question": "If I walk near the dining table, facing the direction I go, where is the refrigerator relative to me?",
+  "answer_choices": {
+    "B": "right",
+    "A": "left",
+    "C": "behind",
+    "D": "front"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "B": "C",
+    "A": "B",
+    "C": "D",
+    "D": "A"
+  },
+  "shuffle_origin": "balanced_seed_20261005",
+  "rerun_reasons": [
+    "no_oracle_run"
+  ],
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0217\\start_view.png",
+      "sha256": "6a58346a6b18ab264c8fa7d2fd2f4f5bc4f353fa28ceed9af2d711e3b6e53ab7"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0217\\step_01_rgb.png",
+      "sha256": "da80ecf17433b5a9329056c81cd4638183afefbc50e3c03fd330e74d5d627586"
+    }
+  ],
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\geometry\\FOB4-0217\\step_01_depth.png",
+      "sha256": "c147a33bac14ad2bdd4c2ca497914e207a17576e05eb65a998fb113ab81b6181",
+      "color_scale": {
+        "near_m": 1.34925,
+        "far_m": 4.7545
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\geometry\\FOB4-0217\\step_01_surface_normals.png",
+      "sha256": "ab5bace1544c5a2c6149d45a6ca317e6a517276f87c1ebca59ca3ccf25551295"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\geometry\\FOB4-0217\\step_01_panorama.png",
+      "sha256": "45ff46da1bfc2d89c7ceb3461311ab04b37dde01fc3d8797e758ba2e0fbf0f66"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\trajectory\\FOB4-0217\\topdown_with_path.png",
+      "sha256": "87566adafdee0af63bc9d76209ed7bb3aa07954b9f782f483d8aab412facb8bf"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\trajectory\\FOB4-0217\\trajectory.txt",
+      "sha256": "cf9eb9619a0c32d9b9c49df027cf2c6923cfddb1b216e7a47a3dcc502281d42d"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\trajectory\\FOB4-0217\\trajectory.mp4",
+      "sha256": "2d9f48b8d0f1b05217fe4a034369dfcc3221e262518cda4d6c3a833bd93fc723"
+    }
+  },
+  "modality_source": "fo_622_supplement_modalities_20261005",
+  "manifest_seed": 20261005,
+  "source": "622_freeze_labels_20261002",
+  "category": "object_relative_direction",
+  "subtype": "specified_object_observer_relative_direction",
+  "category_label": "Object-relative direction",
+  "condition": "start_final_topdown",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_622supplement_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "B",
+  "correct": true,
+  "input_signature": "4d59fabf84cf32385115cafc74834ebd95037e83e84700a5a57c9166b0ad49a7",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "topdown"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3399,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 182
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3217
+      }
+    ],
+    "thoughts_token_count": 373,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3773,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_started_at": "2026-10-05T12:11:15.782-04:00",
+  "request_duration_seconds": 9.192096099999617,
+  "completed_at": "2026-10-05T12:11:24.974-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

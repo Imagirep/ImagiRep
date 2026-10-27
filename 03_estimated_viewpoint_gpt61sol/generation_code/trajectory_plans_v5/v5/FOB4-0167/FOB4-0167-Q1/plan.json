@@ -1,0 +1,258 @@
+{
+  "question_id": "FOB4-0167-Q1",
+  "motion_text": "I walk forward, walk near the stove and turn around.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "forward",
+      "amount": "default"
+    },
+    {
+      "op": "go",
+      "target": "the stove and oven under the white cabinets",
+      "relation": "near"
+    },
+    {
+      "op": "turn",
+      "direction": "left",
+      "amount": "around"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0167-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.0,
+        "y": 0.0,
+        "yaw": 0.08747463987174534,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.242329817094845,
+        "y": 0.02125194645601436,
+        "yaw": 0.08747463987174534,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.0,
+        0.0
+      ],
+      [
+        -2.242329817094845,
+        0.02125194645601436
+      ]
+    ],
+    "x": -2.242329817094845,
+    "y": 0.02125194645601436,
+    "yaw": 0.08747463987174534,
+    "pitch": 0.0,
+    "travel_yaw": 0.08747463987174534
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.0,
+      0.0
+    ],
+    [
+      -2.242329817094845,
+      0.02125194645601436
+    ]
+  ],
+  "final": {
+    "x": -2.242329817094845,
+    "y": 0.02125194645601436,
+    "yaw_deg": -174.9880723209222,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "forward",
+        "amount": "default"
+      },
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "target": "the stove and oven under the white cabinets",
+        "relation": "near"
+      },
+      "x": -2.242329817094845,
+      "y": 0.02125194645601436,
+      "yaw": 0.08747463987174534,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left",
+        "amount": "around"
+      },
+      "x": -2.242329817094845,
+      "y": 0.02125194645601436,
+      "yaw": -3.054118013718048,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.0,
+      "y": 0.0,
+      "yaw": 0.08747463987174534,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.242329817094845,
+      "y": 0.02125194645601436,
+      "yaw": 0.08747463987174534,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.242329817094845,
+      "y": 0.02125194645601436,
+      "yaw": -3.054118013718048,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "move_yaw_deg": 0.0,
+      "requested_m": 2.0,
+      "end": [
+        -2.0,
+        0.0
+      ],
+      "blocked": false
+    },
+    {
+      "ground": "the stove and oven under the white cabinets",
+      "method": "initial_photo",
+      "box": [
+        641,
+        288,
+        881,
+        444
+      ],
+      "point_m": [
+        -3.2872974096426812,
+        -0.6039489899232886,
+        -1.0805745180682338
+      ]
+    },
+    {
+      "overlap": "the stove and oven under the white cabinets",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 0.2,
+          "stop_m": 1.2177165024441354,
+          "visible_frac": 0.9955555555555555,
+          "center_deg": 0.02002401477253043,
+          "width_deg": 22.803457883760323,
+          "distance_m": 1.2922555230254176
+        },
+        {
+          "sector": 5,
+          "path_m": 0.7000000000000001,
+          "stop_m": 0.8293768068718474,
+          "visible_frac": 0.9155555555555556,
+          "center_deg": -1.179990158977892,
+          "width_deg": 25.895755561944217,
+          "distance_m": 0.9462513073084937
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 1.9136384469666357,
+  "seconds": 10.45722246170044
+}

@@ -1,0 +1,144 @@
+{
+  "row_index": 137,
+  "question_id": "FOB3-0146-Q5",
+  "trajectory_id": "FOB3-0146",
+  "scan_id": "JmbYfDe2QKZ",
+  "question_type": 5,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I slightly turn left and walk near the left side of the dining table, facing the direction I go, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "A": "decorative stone",
+    "B": "cabinet",
+    "C": "blue and yellow painting",
+    "D": "decorative cup"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "blue and yellow painting",
+    "B": "decorative cup",
+    "C": "decorative stone",
+    "D": "cabinet"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "A": "C",
+    "B": "D",
+    "C": "A",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0146\\start_view.png",
+      "sha256": "b773731e9ee9d7bb50683d59bac6d24363767872d8177be271126e98f94c9545"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0146\\step_01_rgb.png",
+      "sha256": "fddb7fae5b27e73fb335cca2c9daa2cadb6c7a156145c385e4ade3380066486c"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0146\\step_02_rgb.png",
+      "sha256": "6cce7d111b2da661a2e1e64b3f0291c1d349cd507a8bae9528e06f299725978d"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "category": "farthest_object",
+  "category_label": "Farthest object",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0146\\step_02_depth.png",
+      "sha256": "3cd00bfe75965b966748f65bf6a3f503adbdac8d9a86acb90467304b95cae83c",
+      "color_scale": {
+        "near_m": 1.285,
+        "far_m": 7.5815
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0146\\step_02_surface_normals.png",
+      "sha256": "f7bbe5eae234d17effc81da8fae2c8679676025ef7b210b0cbf4c2610b8c38ee"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0146\\step_02_panorama.png",
+      "sha256": "ca926ecc46cde6216735bb8dc685901af1be238cdca16a8f85c97acdbb3c1722"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0146\\topdown_with_path.png",
+      "sha256": "423420739064d51fd304bc2a0455455de278209bbb0e26daeaf7fd72f925962e"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0146\\trajectory.txt",
+      "sha256": "7e0331d5bc2902b21d5d9d4692226abf57c3ab05c42c320b223c8869578ec319"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0146\\trajectory.mp4",
+      "sha256": "ba49dc33b3b2b7129473ebef0c29892111c476f097bb9f6777a203376f12ec7c"
+    }
+  },
+  "condition": "start_final_surface_normals",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT SURFACE NORMAL MAP (same camera pose and field of view as FINAL VIEW):\nColors encode surface orientation, not object color or distance. RGB channels encode normal components along camera-right (R), camera-up (G), and camera-forward (B): 0 = -1, about 128 = 0, and 255 = +1. Higher R/G/B means a stronger rightward/upward/forward component; a surface facing the camera has low B. Black means missing geometry. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch3_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": true,
+  "input_signature": "3ce5915cbe28967d6a8dd9085765f8414b8e186d84adacef37b7e45a6f1b2595",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "surface_normals"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3467,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 275
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1977,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5445,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T19:07:15.896-04:00",
+  "request_duration_seconds": 9.325575700000627,
+  "completed_at": "2026-10-04T19:07:25.221-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

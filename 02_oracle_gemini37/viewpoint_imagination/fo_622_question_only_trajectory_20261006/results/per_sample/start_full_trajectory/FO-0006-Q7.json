@@ -1,0 +1,70 @@
+{
+  "question_id": "FO-0006-Q7",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk past the chair and continue to the glass door, then turn right, would the kitchen counter still be directly visible?",
+  "answer_choices": {
+    "A": "outside of view",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "clearly visible"
+  },
+  "gold_answer": "A",
+  "show_lookback": false,
+  "prediction": "B",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "benchmark_release/items/FO-0006/image_1.png",
+      "sha256": "8e5be9b6b2eb867ec4b0e2b9d31fe26000b7a28351cc4fc7dd2d428effab4aed"
+    },
+    {
+      "path": "benchmark_release/items/FO-0006/modalities/step_01_rgb.png",
+      "sha256": "e5ad583d236ae4dc5f6cb4474736a6c01bed25ba634193fd3f35e2481196e5d8"
+    },
+    {
+      "path": "benchmark_release/items/FO-0006/modalities/step_02_rgb.png",
+      "sha256": "7badb8762c40674f9c918c28acc58a3d206f23bf02aaceb474f5ff3ffceae80b"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3339,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 147
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1231,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4571,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 7.421114700002363,
+  "completed_at": "2026-10-06T14:11:34-04:00"
+}

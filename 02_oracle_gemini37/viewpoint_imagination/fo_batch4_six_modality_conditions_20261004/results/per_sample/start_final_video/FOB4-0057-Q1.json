@@ -1,0 +1,148 @@
+{
+  "row_index": 172,
+  "question_id": "FOB4-0057-Q1",
+  "trajectory_id": "FOB4-0057",
+  "scan_id": "jh4fc5c5qoQ",
+  "route_variant": "old_bent",
+  "question_type": 1,
+  "question_set": "lookback",
+  "endpoint_is_lookback": true,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk forward, slightly turn left and walk near the washing machines, then turn around, which direction would have the most open space?",
+  "answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0057\\start_view.png",
+      "sha256": "aa5ea3ceeb58a2a63d4838dc874318b4de282a3776c295b481411604e71543c7"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0057\\step_01_rgb.png",
+      "sha256": "43d3413b44f0da8c467786ab68af89649cd0894265ed9426db3b8c9f2fd8fd4f"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0057\\step_02_rgb.png",
+      "sha256": "087862f6e3126d1a84f95127d558efee6942462bac1ba050342d7d080706baf8"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "category": "open_space_direction",
+  "category_label": "Open-space direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0057\\step_02_depth.png",
+      "sha256": "de19659671c3b518cf5e4e23a09d77eb18cc1d8ffc66a76575de77911125654e",
+      "color_scale": {
+        "near_m": 0.6425,
+        "far_m": 5.07575
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0057\\step_02_surface_normals.png",
+      "sha256": "d9bb286f222201dfbd795b66984376b37edb14ca03339c17311450ee7fef29d3"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0057\\step_02_panorama.png",
+      "sha256": "b32bb89d583cfca82f3a3466a7cb9ad357d53ec004a524db7e42eab44d3aa150"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0057\\topdown_with_path.png",
+      "sha256": "b1869963443c5ad877f1cd74983a9ecbf6063be2e8381cbf833ef58150a0262f"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0057\\trajectory.txt",
+      "sha256": "ce23f7a52ea005d1adee8433113ad4ac7606a344e35400fea84686500448e3d2"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0057\\trajectory.mp4",
+      "sha256": "e343642ae33ce15661caf47663a990d4f04053e47990de9b473dfb5a51db7016"
+    }
+  },
+  "condition": "start_final_video",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch4_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": true,
+  "input_signature": "f0d98b748a6666c9da597b4a252217da45a5ba9a57de92213e9d35f35bb35b0d",
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "video_sampling_fps": 12,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 8169,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 182
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 5859
+      }
+    ],
+    "thoughts_token_count": 1140,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9310,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T22:32:37.841-04:00",
+  "request_duration_seconds": 6.168876900002942,
+  "completed_at": "2026-10-04T22:32:44.010-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "video/mp4"
+  ]
+}

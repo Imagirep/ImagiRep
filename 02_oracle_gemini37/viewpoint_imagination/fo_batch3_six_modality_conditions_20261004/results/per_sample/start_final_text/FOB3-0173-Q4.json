@@ -1,0 +1,147 @@
+{
+  "row_index": 186,
+  "question_id": "FOB3-0173-Q4",
+  "trajectory_id": "FOB3-0173",
+  "scan_id": "e9zR4mvMWw7",
+  "question_type": 4,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk past the table and walk to the right till I reach the sofa, then slightly turn left, which object(s) would be closest to me?",
+  "answer_choices": {
+    "A": "lamp",
+    "B": "blue bottles",
+    "C": "table",
+    "D": "carpet"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "carpet",
+    "B": "lamp",
+    "C": "table",
+    "D": "blue bottles"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "A": "B",
+    "B": "D",
+    "C": "C",
+    "D": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0173\\start_view.png",
+      "sha256": "f26a5bc5ff5a4fde62b706c524d889b1a3ee326f89bc96d9b70bb811fbffb315"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0173\\step_01_rgb.png",
+      "sha256": "f8d016472124c8b09da0040f2174750e742bfde0d5c070ca2a768eb058bf87cb"
+    },
+    {
+      "label": "Step 2",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0173\\step_02_rgb.png",
+      "sha256": "b349074b2659de5681b643b8d06f3d6a5a5898c0245eefc2989441e6dacd646d"
+    },
+    {
+      "label": "Step 3 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0173\\step_03_rgb.png",
+      "sha256": "2a429313e76f4eed34433c705e662a262e5c14ec1ba42f6138d23e3e7a315aa9"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "category": "nearest_object",
+  "category_label": "Nearest object",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0173\\step_03_depth.png",
+      "sha256": "4e7996475a5316061ab98ca9918c0b80b156c60c7673dd87201b7142b78556bf",
+      "color_scale": {
+        "near_m": 0.96375,
+        "far_m": 4.69025
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0173\\step_03_surface_normals.png",
+      "sha256": "9a3a85fde093989e12f3d4b3843400663ff7ccecee77b341f0daab057d55fd55"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0173\\step_03_panorama.png",
+      "sha256": "a9b1e1573d464fd05b102c01a7c0e67c96592968f07208cf180b8a787cec726f"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0173\\topdown_with_path.png",
+      "sha256": "58eb0ab24767c5c5f1d1837d644b3d7ffa2a5087b3cf5a20777794bd4277146e"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0173\\trajectory.txt",
+      "sha256": "c531dc5ae7cc4db2595ab94ee82a2e7414682fdbb0b42b12bda05ac984970400"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0173\\trajectory.mp4",
+      "sha256": "b5eb8acd66a2db4b0ba9e13e8c31300a4b4c3c7c3af9dcad2b8b9ad588c1fb50"
+    }
+  },
+  "condition": "start_final_text",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch3_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": true,
+  "input_signature": "0ed98f5852d6a6be5807d971f4d3d66abecbaca059dd4940b00bdd3ab4c36a4e",
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2608,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 480
+      }
+    ],
+    "thoughts_token_count": 625,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3234,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T17:37:46.561-04:00",
+  "request_duration_seconds": 4.473505699999805,
+  "completed_at": "2026-10-04T17:37:51.034-04:00",
+  "request_part_count": 6,
+  "request_mime_types": [
+    "image/png",
+    "image/png"
+  ]
+}

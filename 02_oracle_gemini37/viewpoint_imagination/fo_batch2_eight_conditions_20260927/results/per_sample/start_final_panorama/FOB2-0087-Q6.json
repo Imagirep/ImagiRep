@@ -1,0 +1,165 @@
+{
+  "row_index": 124,
+  "question_id": "FOB2-0087-Q6",
+  "trajectory_id": "FOB2-0087",
+  "scan_id": "r1Q1Z4BcV1o",
+  "question_type": 6,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk near the brown sofas and turn back to face where I come from, where is the white table relative to me?",
+  "answer_choices": {
+    "D": "left",
+    "A": "right",
+    "B": "behind",
+    "C": "front"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "D": "B",
+    "A": "C",
+    "B": "D",
+    "C": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0087\\start_view.png",
+      "sha256": "55f798ea777f188764bc6d8d8d08594f1ab55ad6df922f165f3054b440b4e96b"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0087\\step_01_rgb.png",
+      "sha256": "92945cdf4ce96d1dd860b289eb4908c7303c9dc48ff81f54e69cf86b02a21c66"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0087\\step_02_rgb.png",
+      "sha256": "1b6aa83b45eda13ff1462541c691587d964b27003a436a2a04a0252083cb52d2"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0087\\oracle_lookback.png",
+      "sha256": "68ed1eba824ef26e5ed36a02630e431aa48ece14df019eeb8803175770080462"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "lookback_correction": {
+    "audit": "source_snapshot/lookback_audit.json",
+    "original": {
+      "show_lookback": false,
+      "endpoint_is_lookback": false,
+      "requires_separate_lookback": false
+    },
+    "corrected": {
+      "show_lookback": true,
+      "endpoint_is_lookback": false,
+      "requires_separate_lookback": true
+    },
+    "basis": "lookback_wording_with_distinct_route_lookback_pose",
+    "endpoint_to_lookback_angle_degrees": 169.59494740345409
+  },
+  "category": "object_relative_direction",
+  "category_label": "Object-relative direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0087\\oracle_lookback_depth.png",
+      "sha256": "56a70747ebf726ee2bf8cbf28bfe31fa83a33f30b998855eb38c98eddb2745a9",
+      "color_scale": {
+        "near_m": 2.50575,
+        "far_m": 7.13175
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0087\\oracle_lookback_surface_normals.png",
+      "sha256": "b5851409edb941eab2ad8664c02a2a317c5a598b79a9032cb4c1d8fab673e6f4"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0087\\oracle_lookback_panorama.png",
+      "sha256": "57c9e72967ceeea7f55d48369d8609f0eee1771b9922a55abcb3228cd6efe7e8"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0087\\topdown_lookback_with_path.png",
+      "sha256": "5ea1c53450059bc5129d6bd103f91f48f157b272b63b39fee87597213502d169"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0087\\trajectory_lookback.txt",
+      "sha256": "a2a7d2b4335abc384f1d804e130ead59c6c05d062390a3ce797e120c17033b63"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0087\\trajectory_lookback.mp4",
+      "sha256": "ccf94222425b1bfff8780af0382ea053791c6d78d1bb320ba8732652306977bc"
+    }
+  },
+  "condition": "start_final_panorama",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT PANORAMA (360-degree RGB at the FINAL VIEW position):\nThe panorama is centered on the final camera's facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. This is one position, not a sequence of movement frames. Combine it with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "D",
+  "correct": true,
+  "input_signature": "e1acc944cf785b4ed6b07a65dca01a583bc2aafb28a5c4f24f7c8391f788c2f5",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "panorama"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3455,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 246
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3209
+      }
+    ],
+    "thoughts_token_count": 2507,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5963,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_started_at": "2026-09-28T03:49:33.818-04:00",
+  "request_duration_seconds": 12.800862099975348,
+  "completed_at": "2026-09-28T03:49:46.619-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

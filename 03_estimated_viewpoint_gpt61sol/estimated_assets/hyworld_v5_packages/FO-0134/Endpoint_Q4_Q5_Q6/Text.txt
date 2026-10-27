@@ -1,0 +1,17 @@
+Begin at the position and viewing direction shown in the starting image. Use that starting direction as 0°. All left and right turns below are relative to your current view.
+
+Your initial view is level.
+
+Step 1: Turn left 15.3° in place. Move forward 2.14 m to the next position, keeping that viewing direction during the movement. After arriving, turn right 15.3° in place.
+
+Step 2: Keep your current viewing direction. Move forward 0.28 m to the next position, keeping that viewing direction during the movement. After arriving, turn right 33.7° in place.
+
+Step 3: Keep your current viewing direction. Move forward 0.26 m to the next position, keeping that viewing direction during the movement. After arriving, turn right 7.9° in place.
+
+Step 4: Keep your current viewing direction. Move forward 1.71 m to the next position, keeping that viewing direction during the movement. After arriving, turn right 40.2° in place.
+
+Step 5: Keep your current viewing direction. Move forward 1.01 m to the next position, keeping that viewing direction during the movement. After arriving, turn left 18.4° in place.
+
+Step 6: Keep your current viewing direction. Move forward 0.64 m to the next position, keeping that viewing direction during the movement. After arriving, turn right 144.7° in place.
+
+Stop here. You have traveled 6.03 m in total across 6 movement segment(s). You are now facing 151.9° to the left of your starting direction, with your view level.

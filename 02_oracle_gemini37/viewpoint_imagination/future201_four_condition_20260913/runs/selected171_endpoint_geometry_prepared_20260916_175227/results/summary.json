@@ -1,0 +1,58 @@
+{
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "question_count": 171,
+  "by_condition": {
+    "start_final_depth": {
+      "n": 171,
+      "correct": 128,
+      "accuracy": 0.7485380116959064,
+      "by_set": {
+        "lookback": {
+          "n": 86,
+          "correct": 67,
+          "accuracy": 0.7790697674418605
+        },
+        "non-lookback": {
+          "n": 85,
+          "correct": 61,
+          "accuracy": 0.7176470588235294
+        }
+      }
+    },
+    "start_final_surface_normals": {
+      "n": 171,
+      "correct": 119,
+      "accuracy": 0.695906432748538,
+      "by_set": {
+        "lookback": {
+          "n": 86,
+          "correct": 59,
+          "accuracy": 0.686046511627907
+        },
+        "non-lookback": {
+          "n": 85,
+          "correct": 60,
+          "accuracy": 0.7058823529411765
+        }
+      }
+    },
+    "start_final_panorama": {
+      "n": 171,
+      "correct": 104,
+      "accuracy": 0.6081871345029239,
+      "by_set": {
+        "lookback": {
+          "n": 86,
+          "correct": 55,
+          "accuracy": 0.6395348837209303
+        },
+        "non-lookback": {
+          "n": 85,
+          "correct": 49,
+          "accuracy": 0.5764705882352941
+        }
+      }
+    }
+  }
+}

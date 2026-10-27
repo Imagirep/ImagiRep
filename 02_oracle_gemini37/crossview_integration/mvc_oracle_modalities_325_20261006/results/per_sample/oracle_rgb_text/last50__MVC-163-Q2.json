@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-163-Q2",
+  "cohort": "last50",
+  "question_id": "MVC-163-Q2",
+  "resource_id": "MVC-163",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is farthest from tv in Image 1?",
+  "answer_choices": {
+    "A": "black pillow",
+    "B": "lamp",
+    "C": "white pillow",
+    "D": "bed"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "9cbb66a14bf2e4c107db2a84b6d5eb27fc3a064e7cfd41d9aa09a58b93b19ffe",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-163\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3550,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 358
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 640,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4190,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 11.377232799990452,
+  "completed_at": "2026-10-06T17:32:07-04:00"
+}

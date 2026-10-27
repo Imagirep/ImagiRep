@@ -1,0 +1,233 @@
+{
+  "question_id": "FOB4-0142-Q1",
+  "motion_text": "I walk to the curtain and slightly turn left.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the white curtain next to the open sliding door",
+      "relation": "to"
+    },
+    {
+      "op": "turn",
+      "direction": "left",
+      "amount": "slight"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0142-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.362153175302065,
+        "y": 0.04781354073612665,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -4.362153175302065,
+        0.04781354073612665
+      ]
+    ],
+    "x": -4.362153175302065,
+    "y": 0.04781354073612665,
+    "yaw": 0.010960556432870009,
+    "pitch": 0.0,
+    "travel_yaw": 0.010960556432870009
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -4.362153175302065,
+      0.04781354073612665
+    ]
+  ],
+  "final": {
+    "x": -4.362153175302065,
+    "y": 0.04781354073612665,
+    "yaw_deg": -34.37200637528158,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the white curtain next to the open sliding door",
+        "relation": "to"
+      },
+      "x": -4.362153175302065,
+      "y": 0.04781354073612665,
+      "yaw": 0.010960556432870009,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left",
+        "amount": "slight"
+      },
+      "x": -4.362153175302065,
+      "y": 0.04781354073612665,
+      "yaw": -0.5999046817651452,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.362153175302065,
+      "y": 0.04781354073612665,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.362153175302065,
+      "y": 0.04781354073612665,
+      "yaw": 0.010960556432870009,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.362153175302065,
+      "y": 0.04781354073612665,
+      "yaw": -0.5999046817651452,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the white curtain next to the open sliding door",
+      "method": "initial_photo",
+      "box": [
+        224,
+        486,
+        810,
+        630
+      ],
+      "point_m": [
+        -5.251462422910616,
+        0.6694562445937381,
+        -0.10782149562744027
+      ]
+    },
+    {
+      "overlap": "the white curtain next to the open sliding door",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 4.4,
+          "stop_m": 1.0850394412838134,
+          "visible_frac": 1.0,
+          "center_deg": 1.5280409841190739,
+          "width_deg": 54.64783722667016,
+          "distance_m": 1.1413583440359345
+        },
+        {
+          "sector": 2,
+          "path_m": 4.7,
+          "stop_m": 0.8565775158013191,
+          "visible_frac": 0.8266666666666667,
+          "center_deg": -3.291929838901635,
+          "width_deg": 62.11339576003576,
+          "distance_m": 0.9075503603202475
+        },
+        {
+          "sector": 4,
+          "path_m": 4.9,
+          "stop_m": 1.0921238495629764,
+          "visible_frac": 0.9911111111111112,
+          "center_deg": 0.030564792721668652,
+          "width_deg": 30.986360069694193,
+          "distance_m": 1.2763022150459382
+        },
+        {
+          "sector": 1,
+          "path_m": 5.6000000000000005,
+          "stop_m": 0.9217047063787099,
+          "visible_frac": 0.68,
+          "center_deg": 12.842753266445255,
+          "width_deg": 56.53344998514645,
+          "distance_m": 0.8711422220320695
+        },
+        {
+          "sector": 5,
+          "path_m": 6.0,
+          "stop_m": 1.0397054002441064,
+          "visible_frac": 0.1111111111111111,
+          "center_deg": -6.811316974462835,
+          "width_deg": 4.196140933291045,
+          "distance_m": 0.7511561853555428
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 2.930275905831563,
+  "seconds": 15.315600872039795
+}

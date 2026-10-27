@@ -1,0 +1,142 @@
+{
+  "row_index": 25,
+  "question_id": "FOB4-0222-Q5",
+  "trajectory_id": "FOB4-0222",
+  "scan_id": "PuKPg4mmafe",
+  "batch": 4,
+  "question_type": 5,
+  "question_set": "non-lookback",
+  "show_lookback": false,
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "question": "If I walk forward, walk past the white long sofa, facing the direction I go, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "A": "tv",
+    "B": "gold statue",
+    "C": "lamp",
+    "D": "glass cup"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "lamp",
+    "B": "glass cup",
+    "C": "tv",
+    "D": "gold statue"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "A": "C",
+    "B": "D",
+    "C": "A",
+    "D": "B"
+  },
+  "shuffle_origin": "balanced_seed_20261005",
+  "rerun_reasons": [
+    "no_oracle_run"
+  ],
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0222\\start_view.png",
+      "sha256": "bc21b44d6b3dc1f5d3debbcc638a990d01079b20145febb5b84c516d98935b7a"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0222\\step_01_rgb.png",
+      "sha256": "fab102a03e97d69cd8bb59fa553d75f0c62eb10ca8daa7773b73c19322f1caf3"
+    }
+  ],
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\geometry\\FOB4-0222\\step_01_depth.png",
+      "sha256": "ecce3140548e3de63ef0af349a1780eef7dd22bb0e789f89756dc6dd5d077dcf",
+      "color_scale": {
+        "near_m": 1.6705,
+        "far_m": 9.1235
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\geometry\\FOB4-0222\\step_01_surface_normals.png",
+      "sha256": "050e6df5aa92e4d693da07ca54bc4965896a9b7ed0379384d5507c1b1d9a5227"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\geometry\\FOB4-0222\\step_01_panorama.png",
+      "sha256": "ca1cbd20e14da9a96673ddd1311289af462e6c60c6d57f21b59a735d9c4dc892"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\trajectory\\FOB4-0222\\topdown_with_path.png",
+      "sha256": "f4122e96f50c99e2e55036613e4c9f7a20c113b07c5013ac18465eca0b21a7f1"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\trajectory\\FOB4-0222\\trajectory.txt",
+      "sha256": "4c349513f9f73604be3aec3f24bf4c214adcc789fa92ba95f80624100a1e15b2"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_622_supplement_modalities_20261005\\trajectory\\FOB4-0222\\trajectory.mp4",
+      "sha256": "ef66f9a39ba3bfe31f90686ff773d4cf8f4a0736b4292e7aacde5f61f44d1197"
+    }
+  },
+  "modality_source": "fo_622_supplement_modalities_20261005",
+  "manifest_seed": 20261005,
+  "source": "622_freeze_labels_20261002",
+  "category": "farthest_object",
+  "subtype": "maximum_distance_from_observer",
+  "category_label": "Farthest object",
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_622supplement_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": true,
+  "input_signature": "141c56c2cdc401f1ca768435036c4bebcf4fa3d810642b571d03b976993dcf46",
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2270,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 142
+      }
+    ],
+    "thoughts_token_count": 2134,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4405,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-10-05T12:04:02.494-04:00",
+  "request_duration_seconds": 23.91152150000562,
+  "completed_at": "2026-10-05T12:04:26.405-04:00",
+  "request_part_count": 5,
+  "request_mime_types": [
+    "image/png",
+    "image/png"
+  ]
+}

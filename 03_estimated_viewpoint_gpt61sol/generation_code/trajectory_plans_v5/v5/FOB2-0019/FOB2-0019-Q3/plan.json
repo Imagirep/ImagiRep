@@ -1,0 +1,270 @@
+{
+  "question_id": "FOB2-0019-Q3",
+  "motion_text": "I walk forward and stop near the sofa, then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "relation": "near",
+      "target": "the brown curved sofa on the left"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0019-Q3",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.03451682550556658,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.8008698901751288,
+        "y": 0.09671554964514328,
+        "yaw": 0.03451682550556658,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.8008698901751288,
+        "y": 0.09671554964514328,
+        "yaw": -0.06442683942555331,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -5.900869890175129,
+        "y": -0.103284450354856,
+        "yaw": -0.06442683942555331,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.8008698901751288,
+        0.09671554964514328
+      ],
+      [
+        -5.900869890175129,
+        -0.103284450354856
+      ]
+    ],
+    "x": -5.900869890175129,
+    "y": -0.103284450354856,
+    "yaw": -0.017501471252158264,
+    "pitch": 0.0,
+    "travel_yaw": -0.017501471252158264
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.8008698901751288,
+      0.09671554964514328
+    ],
+    [
+      -5.900869890175129,
+      -0.103284450354856
+    ]
+  ],
+  "final": {
+    "x": -5.900869890175129,
+    "y": -0.103284450354856,
+    "yaw_deg": 178.99723956198181,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "relation": "near",
+        "target": "the brown curved sofa on the left"
+      },
+      "x": -5.900869890175129,
+      "y": -0.103284450354856,
+      "yaw": -0.017501471252158264,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -5.900869890175129,
+      "y": -0.103284450354856,
+      "yaw": 3.124091182337635,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.03451682550556658,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.8008698901751288,
+      "y": 0.09671554964514328,
+      "yaw": 0.03451682550556658,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.8008698901751288,
+      "y": 0.09671554964514328,
+      "yaw": -0.06442683942555331,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -5.900869890175129,
+      "y": -0.103284450354856,
+      "yaw": -0.06442683942555331,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -5.900869890175129,
+      "y": -0.103284450354856,
+      "yaw": -0.017501471252158264,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -5.900869890175129,
+      "y": -0.103284450354856,
+      "yaw": 3.124091182337635,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the brown curved sofa on the left",
+      "method": "initial_photo",
+      "box": [
+        581,
+        376,
+        760,
+        544
+      ],
+      "point_m": [
+        -6.987891399281148,
+        -0.5582367796318195,
+        -1.588484225045758
+      ]
+    },
+    {
+      "overlap": "the brown curved sofa on the left",
+      "n_points": 220,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 6.2,
+          "stop_m": 1.1783876200867271,
+          "visible_frac": 0.7318181818181818,
+          "center_deg": 5.022853203683522,
+          "width_deg": 43.01589528867724,
+          "distance_m": 1.990327166569003
+        },
+        {
+          "sector": 3,
+          "path_m": 6.5,
+          "stop_m": 1.2878096355980202,
+          "visible_frac": 0.8045454545454546,
+          "center_deg": 2.457538075113359,
+          "width_deg": 40.858448446394284,
+          "distance_m": 2.0527485905816465
+        },
+        {
+          "sector": 5,
+          "path_m": 6.9,
+          "stop_m": 0.7383508909060991,
+          "visible_frac": 0.5136363636363637,
+          "center_deg": 8.526543964593609,
+          "width_deg": 57.63573360709145,
+          "distance_m": 1.7096093607116558
+        },
+        {
+          "sector": 6,
+          "path_m": 7.6000000000000005,
+          "stop_m": 0.7550638785603491,
+          "visible_frac": 0.3090909090909091,
+          "center_deg": 5.869373285962015,
+          "width_deg": 51.62269234159157,
+          "distance_m": 1.3552941615146588
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 2.651299072184824,
+  "seconds": 8.533270359039307
+}

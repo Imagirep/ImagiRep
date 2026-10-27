@@ -1,0 +1,193 @@
+{
+  "question_id": "FOB4-0056-Q1",
+  "motion_text": "I walk near the doorway and turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the open black doorway at the far end of the room",
+      "relation": "near"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0056-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -8.17008110235651,
+        "y": -0.03915844187932116,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -8.17008110235651,
+        -0.03915844187932116
+      ]
+    ],
+    "x": -8.17008110235651,
+    "y": -0.03915844187932116,
+    "yaw": -0.004792870663600426,
+    "pitch": 0.0,
+    "travel_yaw": -0.004792870663600426
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -8.17008110235651,
+      -0.03915844187932116
+    ]
+  ],
+  "final": {
+    "x": -8.17008110235651,
+    "y": -0.03915844187932116,
+    "yaw_deg": 179.72538873922363,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the open black doorway at the far end of the room",
+        "relation": "near"
+      },
+      "x": -8.17008110235651,
+      "y": -0.03915844187932116,
+      "yaw": -0.004792870663600426,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -8.17008110235651,
+      "y": -0.03915844187932116,
+      "yaw": 3.1367997829261927,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -8.17008110235651,
+      "y": -0.03915844187932116,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -8.17008110235651,
+      "y": -0.03915844187932116,
+      "yaw": -0.004792870663600426,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -8.17008110235651,
+      "y": -0.03915844187932116,
+      "yaw": 3.1367997829261927,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the open black doorway at the far end of the room",
+      "method": "initial_photo",
+      "box": [
+        418,
+        424,
+        713,
+        581
+      ],
+      "point_m": [
+        -9.328098857793272,
+        0.3823169953856966,
+        -0.8985946458535992
+      ]
+    },
+    {
+      "overlap": "the open black doorway at the far end of the room",
+      "n_points": 207,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 8.200000000000001,
+          "stop_m": 1.2323338290108456,
+          "visible_frac": 0.6811594202898551,
+          "center_deg": -0.7293825555813472,
+          "width_deg": 60.7282244297203,
+          "distance_m": 2.005917720522969
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 2.3534985974860803,
+  "seconds": 13.89307689666748
+}

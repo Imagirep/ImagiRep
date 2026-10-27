@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-120-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-120-Q3",
+  "resource_id": "MVC-120",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "window, fireplace, framed painting, glass door",
+    "B": "fireplace, framed painting, glass door, window",
+    "C": "window, fireplace, glass door, framed painting",
+    "D": "framed painting, window, fireplace, glass door"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "2d43ec64b87f5ee043f9dc10eddc95b845cca64298c3f7fc0c0b6c45cd7d671d",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.019 m (near/red) to 4.758 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-120\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4638,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 382
+      }
+    ],
+    "thoughts_token_count": 3678,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8316,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 32.57547949999571,
+  "completed_at": "2026-10-06T17:38:46-04:00"
+}

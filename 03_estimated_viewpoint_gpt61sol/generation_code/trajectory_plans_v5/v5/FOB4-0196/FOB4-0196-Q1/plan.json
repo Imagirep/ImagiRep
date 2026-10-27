@@ -1,0 +1,208 @@
+{
+  "question_id": "FOB4-0196-Q1",
+  "motion_text": "I walk into the doorway, then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "doorway leading into the bedroom",
+      "relation": "into"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0196-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.9285269310651385,
+        "y": -0.016577318208649938,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.3285269310651384,
+        "y": -0.016577318208649938,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.9285269310651385,
+        -0.016577318208649938
+      ],
+      [
+        -3.3285269310651384,
+        -0.016577318208649938
+      ]
+    ],
+    "x": -3.3285269310651384,
+    "y": -0.016577318208649938,
+    "yaw": -0.004980335593461401,
+    "pitch": 0.0,
+    "travel_yaw": -0.004980335593461401
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.9285269310651385,
+      -0.016577318208649938
+    ],
+    [
+      -3.3285269310651384,
+      -0.016577318208649938
+    ]
+  ],
+  "final": {
+    "x": -3.3285269310651384,
+    "y": -0.016577318208649938,
+    "yaw_deg": 179.7146477899359,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "doorway leading into the bedroom",
+        "relation": "into"
+      },
+      "x": -3.3285269310651384,
+      "y": -0.016577318208649938,
+      "yaw": -0.004980335593461401,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -3.3285269310651384,
+      "y": -0.016577318208649938,
+      "yaw": 3.136612317996332,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.9285269310651385,
+      "y": -0.016577318208649938,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.3285269310651384,
+      "y": -0.016577318208649938,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.3285269310651384,
+      "y": -0.016577318208649938,
+      "yaw": -0.004980335593461401,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.3285269310651384,
+      "y": -0.016577318208649938,
+      "yaw": 3.136612317996332,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "doorway leading into the bedroom",
+      "method": "initial_photo",
+      "box": [
+        167,
+        345,
+        1000,
+        609
+      ],
+      "point_m": [
+        -4.137060261561575,
+        -0.13186307674170444,
+        -1.20305237560412
+      ]
+    },
+    {
+      "move_yaw_deg": 0.0,
+      "requested_m": 1.0,
+      "end": [
+        -3.3285269310651384,
+        -0.016577318208649938
+      ],
+      "blocked": true
+    }
+  ],
+  "m_per_unit": 2.1256409021916234,
+  "seconds": 15.872591018676758
+}

@@ -1,0 +1,51 @@
+{
+  "status": "ok",
+  "row_index": 4,
+  "question_id": "MVC-162-Q1",
+  "condition": "original_only",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "response_format": "dynamic option enum",
+  "system_prompt": "Solve this multi-view spatial reasoning multiple-choice question using the provided evidence. Reason carefully. Return only A, B, C, or D.",
+  "condition_prompt": "Use the numbered images to answer the question. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.",
+  "prompt_hash": "5e472b4677a4c2955db70ae97396464137b9b5e8a39a5ed5b5542921dcfca77c",
+  "question": "Which object in Image 1 is closest to black and white painting in Image 2?",
+  "answer_choices": {
+    "A": "plant in a white pot",
+    "B": "stove",
+    "C": "white ottoman",
+    "D": "kitchen counter"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "image_paths": [
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-162\\image_2.png",
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-162\\image_1.png"
+  ],
+  "image_count": 2,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2333,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 205
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 863,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3197,
+    "traffic_type": null
+  },
+  "completed_at": "2026-10-01T12:52:40"
+}

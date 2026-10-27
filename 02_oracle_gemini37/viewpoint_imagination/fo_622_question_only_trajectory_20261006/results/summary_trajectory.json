@@ -1,0 +1,8 @@
+{
+  "condition": "start_full_trajectory",
+  "n": 622,
+  "correct": 387,
+  "accuracy": 0.6221864951768489,
+  "reused": 134,
+  "new": 488
+}

@@ -1,0 +1,1 @@
+{"qid": "FO-0068-Q4", "method": "avic", "variant": "label", "prediction": "kitchen counter", "gold": "ovens", "correct": false, "n_imagined": 4, "category": "nearest_object", "stored_result": "correct"}

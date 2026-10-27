@@ -1,0 +1,1 @@
+{"qid": "FOB2-0122-Q4", "method": "avic", "variant": "label", "prediction": "bed", "gold": "white table", "correct": false, "n_imagined": 2, "category": "nearest_object", "stored_result": "wrong"}

@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-159-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-159-Q3",
+  "resource_id": "MVC-159",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "bed, tv, white armchair, painting",
+    "B": "bed, painting, white armchair, tv",
+    "C": "tv, painting, white armchair, bed",
+    "D": "painting, bed, tv, white armchair"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "2b320ea98423ea611765db9b5f61cc8d2ec675b8ee1ed257b8242b5bbb8929b6",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-159\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7919,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 317
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 2467,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 10387,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 14.136582799997996,
+  "completed_at": "2026-10-06T17:35:06-04:00"
+}

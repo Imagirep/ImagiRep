@@ -1,0 +1,76 @@
+{
+  "question_id": "FO-0013-Q3",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk past the chair and turn to face my starting point, would the kitchen counter still be directly visible?",
+  "answer_choices": {
+    "B": "partially visible",
+    "A": "outside of view",
+    "C": "clearly visible",
+    "D": "completely blocked"
+  },
+  "gold_answer": "B",
+  "show_lookback": true,
+  "prediction": "C",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "benchmark_release/items/FO-0013/image_1.png",
+      "sha256": "1edf1ef6dd7704f0c68b9733eb084de7bc8110a7f232a25d6b3d5b121d61725c"
+    },
+    {
+      "path": "benchmark_release/items/FO-0013/modalities/step_01_rgb.png",
+      "sha256": "d1c486ab0b0d82265dc7e0d6b2c84678495b9f537ef09659449546b769ba8a5e"
+    },
+    {
+      "path": "benchmark_release/items/FO-0013/modalities/step_02_rgb.png",
+      "sha256": "ac987ea54d07eb4ee470a4d9d10c3b0e9194b9582088ae68926babcd4850240a"
+    },
+    {
+      "path": "benchmark_release/items/FO-0013/modalities/oracle_lookback.png",
+      "sha256": "5ae9a7c18616e277536a012bd5de3774b9d47fb288385f53da9a299b34843625"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4407,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 151
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 666,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5074,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_duration_seconds": 10.41563170000154,
+  "completed_at": "2026-10-06T14:11:45-04:00"
+}

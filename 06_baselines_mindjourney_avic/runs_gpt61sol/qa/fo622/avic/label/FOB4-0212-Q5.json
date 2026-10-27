@@ -1,0 +1,1 @@
+{"qid": "FOB4-0212-Q5", "method": "avic", "variant": "label", "prediction": "microwave", "gold": "microwave", "correct": true, "n_imagined": 2, "category": "farthest_object", "stored_result": "wrong"}

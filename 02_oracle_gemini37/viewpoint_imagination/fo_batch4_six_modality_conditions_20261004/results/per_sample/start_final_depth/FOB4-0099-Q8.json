@@ -1,0 +1,140 @@
+{
+  "row_index": 166,
+  "question_id": "FOB4-0099-Q8",
+  "trajectory_id": "FOB4-0099",
+  "scan_id": "r47D5H71a5s",
+  "route_variant": "old_straight",
+  "question_type": 8,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk near the sink, then stop and turn left, which object(s) would be on my right?",
+  "answer_choices": {
+    "B": "blue curtain",
+    "A": "hair dryer",
+    "C": "blue hand soap",
+    "D": "mirror"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "blue curtain",
+    "B": "mirror",
+    "C": "blue hand soap",
+    "D": "hair dryer"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "B": "A",
+    "A": "D",
+    "C": "C",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0099\\start_view.png",
+      "sha256": "7a4e4ac6a3481c1ce996e06eef9009928079db61763142064e7d09623fdef9da"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0099\\step_01_rgb.png",
+      "sha256": "61314d701aef6a08dc01b943cae86c9bc0dc04bc8e69e360d616e07cb0acf820"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "category": "object_selection_by_direction",
+  "category_label": "Object selection by direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0099\\step_01_depth.png",
+      "sha256": "0911953be0651ee871634cd99887dd6689856c8f8350676a1f899b315c57500b",
+      "color_scale": {
+        "near_m": 0.83525,
+        "far_m": 4.43325
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0099\\step_01_surface_normals.png",
+      "sha256": "735251b4e397818a3b7b52b567192d506d7b927739fd1a418d2dc7e2aa026c08"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0099\\step_01_panorama.png",
+      "sha256": "2709fb21a541e906362a220061a87a58e067c0a17fd87ef1efc24aa7dd7a0d36"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0099\\topdown_with_path.png",
+      "sha256": "ccd04621f1bea8689fadbb2106b2e86e91b1abdbfc8f6aa3a4891cbc572c1a1f"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0099\\trajectory.txt",
+      "sha256": "8329180c838e6542924466fa8c3f37a826d740982d788c120d05eac34ac0a33c"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0099\\trajectory.mp4",
+      "sha256": "90a838ba28a300d184ca3aa96e6e21672204551e944259cff2436c521dd95e91"
+    }
+  },
+  "condition": "start_final_depth",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT DEPTH MAP (same camera pose and field of view as FINAL VIEW):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.835 m (near/red) to 4.433 m (far/purple), with values outside this range clipped. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch4_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "C",
+  "correct": false,
+  "input_signature": "e3bd041faa23d1f36f798518bd7545e766cb93f67cc683797946f9e099083c74",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "depth"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3447,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 255
+      }
+    ],
+    "thoughts_token_count": 1419,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4867,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T23:38:46.640-04:00",
+  "request_duration_seconds": 6.865414200001396,
+  "completed_at": "2026-10-04T23:38:53.505-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

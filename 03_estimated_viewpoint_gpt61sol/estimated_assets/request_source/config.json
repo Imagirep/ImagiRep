@@ -1,0 +1,7 @@
+{
+ "model": "gemini-3.7-flash",
+ "temperature": 0,
+ "thinking": "HIGH",
+ "max_output_tokens": 8192,
+ "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D."
+}

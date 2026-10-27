@@ -1,0 +1,1 @@
+{"uid": "last50__MVC-195-Q2", "category": "cross_view_farthest", "reason": "Depth would help resolve the farthest-object comparison across the views.", "choice": "depth", "usage": {"input_tokens": 3448, "input_tokens_details": {"cached_tokens": 0, "cache_write_tokens": 3445}, "output_tokens": 119, "output_tokens_details": {"reasoning_tokens": 88}, "total_tokens": 3567}}

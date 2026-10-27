@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB3-0017-Q4",
+  "motion_text": "I walk to the white sofa and face the direction I go.",
+  "view_variant": "endpoint",
+  "frames": 51,
+  "fps": 12,
+  "total_distance_m": 1.5058391677391556,
+  "depth_display_range_scene_units": [
+    2.1300495195388796,
+    5.698034706115723
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.7066502869665967,
+    "far_m": 4.5654114973079265
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.2148441197377906 m over generated floor distance",
+  "m_per_unit": 1.8015213012695312,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 20.354000568389893
+}

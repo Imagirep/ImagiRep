@@ -1,0 +1,76 @@
+{
+  "question_id": "FOB4-0157-Q3",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk forward, walk past the counter by its right side, then turn around, then turn to face my starting point, would the refrigerator still be directly visible?",
+  "answer_choices": {
+    "C": "partially visible",
+    "A": "completely blocked",
+    "B": "clearly visible",
+    "D": "outside of view"
+  },
+  "gold_answer": "C",
+  "show_lookback": true,
+  "prediction": "B",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0157/start_view.png",
+      "sha256": "585b85dc8cde203cd3c6fcbd04a1d198274765f3d5f181198da6ca1795ef7d2b"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0157/step_01_rgb.png",
+      "sha256": "f19ccd7edcd1e40778df5f6e657c346872f5a76a0ec836bdd13d70a082896559"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0157/step_02_back180_rgb.png",
+      "sha256": "58e298ee3beab201d156425438c3a7916d929bf8c0800dd3a897d6cf675f8377"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0157/oracle_lookback.png",
+      "sha256": "5174dff578716f38f22103fa9de6a444448b2cb6c5ba9c9b1d22ed9da756677c"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4418,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 162
+      }
+    ],
+    "thoughts_token_count": 4246,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8665,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 18.67478079999273,
+  "completed_at": "2026-10-06T15:16:06-04:00"
+}

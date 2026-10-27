@@ -1,0 +1,161 @@
+{
+  "question_id": "FOB3-0181-Q3",
+  "motion_text": "I walk near the glass console table on the right, facing the direction I go, then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "glass console table on the right",
+      "relation": "near"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "shared_walk_from": "FOB3-0181-Q2",
+  "walk_state": {
+    "question_id": "FOB3-0181-Q3",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.4136379918627841,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.2059715548479586,
+        "y": 0.9683405482649375,
+        "yaw": 0.4136379918627841,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.8476184834981293,
+        1.25
+      ]
+    ],
+    "x": -2.8476184834981293,
+    "y": 1.25,
+    "yaw": 0.4136379918627841,
+    "pitch": 0.0,
+    "travel_yaw": 0.4136379918627841
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.2059715548479586,
+      0.9683405482649375
+    ]
+  ],
+  "final": {
+    "x": -2.2059715548479586,
+    "y": 0.9683405482649375,
+    "yaw_deg": -156.30028881999579,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -2.8476184834981293,
+      "y": 1.25,
+      "yaw": -2.727954661727009,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.4136379918627841,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.2059715548479586,
+      "y": 0.9683405482649375,
+      "yaw": 0.4136379918627841,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.2059715548479586,
+      "y": 0.9683405482649375,
+      "yaw": -2.727954661727009,
+      "pitch": 0.0
+    }
+  ],
+  "events": [],
+  "m_per_unit": 2.0338058471679688,
+  "seconds": 7.286025047302246,
+  "planning_m_per_unit": 2.625375249972906,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.77467243861195
+}

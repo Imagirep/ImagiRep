@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-208-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-208-Q3",
+  "resource_id": "MVC-208",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "white ottoman, framed paintings, long sofa, tall potted plant",
+    "B": "white ottoman, tall potted plant, long sofa, framed paintings",
+    "C": "long sofa, white ottoman, framed paintings, tall potted plant",
+    "D": "white ottoman, long sofa, tall potted plant, framed paintings"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "b4c865fd05b0b435aae9e91486d87901c9797dab7f52ddfc7b2f620d7a581d5a",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-208\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3600,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 408
+      }
+    ],
+    "thoughts_token_count": 1255,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4855,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 6.848540699997102,
+  "completed_at": "2026-10-06T17:32:46-04:00"
+}

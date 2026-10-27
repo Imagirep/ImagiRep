@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-068-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-068-Q1",
+  "resource_id": "MVC-068",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to toilet in Image 2?",
+  "answer_choices": {
+    "A": "framed white paper",
+    "B": "wooden door",
+    "C": "bed",
+    "D": "framed black painting"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "d6f714c832222fa34d6702d165428bbc971423e0440d47c5df0e5c1beab72003",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-068\\order_21\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4597,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 316
+      }
+    ],
+    "thoughts_token_count": 3586,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8184,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 18.876968299999135,
+  "completed_at": "2026-10-06T16:58:36-04:00"
+}

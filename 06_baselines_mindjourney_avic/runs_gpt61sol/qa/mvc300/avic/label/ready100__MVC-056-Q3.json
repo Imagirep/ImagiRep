@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-056-Q3", "method": "avic", "variant": "label", "prediction": "white sofa, potted plant, black chair, white chair", "gold": "white sofa, potted plant, black chair, white chair", "correct": true, "n_imagined": 2, "category": "ordering", "stored_result": "correct"}

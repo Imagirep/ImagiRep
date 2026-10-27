@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-189-Q1", "method": "mj", "variant": "top3+label", "prediction": "stove", "gold": "sink", "correct": false, "n_imagined": 1, "category": "cross_view_closest", "stored_result": "wrong"}

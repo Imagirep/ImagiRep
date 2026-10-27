@@ -1,0 +1,148 @@
+{
+  "question_id": "FOB4-0140-Q5",
+  "motion_text": "I walk past the white pillar and slightly turn left.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "white pillar on the left",
+      "relation": "past"
+    },
+    {
+      "op": "turn",
+      "direction": "left",
+      "amount": "slight"
+    }
+  ],
+  "shared_walk_from": "FOB4-0140-Q2",
+  "walk_state": {
+    "question_id": "FOB4-0140-Q5",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.746298376740386,
+        "y": -0.021467729895718435,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.746298376740386,
+        -0.021467729895718435
+      ]
+    ],
+    "x": -2.746298376740386,
+    "y": -0.021467729895718435,
+    "yaw": -0.007816810012936055,
+    "pitch": 0.0,
+    "travel_yaw": -0.007816810012936055
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.746298376740386,
+      -0.021467729895718435
+    ]
+  ],
+  "final": {
+    "x": -2.746298376740386,
+    "y": -0.021467729895718435,
+    "yaw_deg": -35.44787022299684,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left",
+        "amount": "slight"
+      },
+      "x": -2.746298376740386,
+      "y": -0.021467729895718435,
+      "yaw": -0.6186820482109514,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.746298376740386,
+      "y": -0.021467729895718435,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.746298376740386,
+      "y": -0.021467729895718435,
+      "yaw": -0.6186820482109514,
+      "pitch": 0.0
+    }
+  ],
+  "events": [],
+  "m_per_unit": 1.6266559434901302,
+  "seconds": 8.238215208053589
+}

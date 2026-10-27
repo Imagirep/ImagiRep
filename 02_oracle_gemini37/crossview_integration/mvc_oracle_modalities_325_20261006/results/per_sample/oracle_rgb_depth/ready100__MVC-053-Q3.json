@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-053-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-053-Q3",
+  "resource_id": "MVC-053",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "podium, framed painting, piano, monitor",
+    "B": "podium, framed painting, monitor, piano",
+    "C": "podium, monitor, piano, framed painting",
+    "D": "piano, podium, monitor, framed painting"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "11d2c1bcaf28ab4b3238386beb87f14b49a0cc6345949ebf25a4116bb4dce3c5",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.071 m (near/red) to 6.955 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-053\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4634,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 378
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 3543,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8178,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 14.466255599996657,
+  "completed_at": "2026-10-06T17:37:15-04:00"
+}

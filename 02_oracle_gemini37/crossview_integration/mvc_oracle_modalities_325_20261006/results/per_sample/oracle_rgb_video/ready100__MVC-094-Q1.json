@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-094-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-094-Q1",
+  "resource_id": "MVC-094",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to white armchair in Image 2?",
+  "answer_choices": {
+    "A": "potted plant",
+    "B": "white ottoman",
+    "C": "lamp",
+    "D": "bed"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "84179af77a4581790d0f64c518e4dea54b7c7fa27b6fa4351282fe43c328da1d",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-094\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7886,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 284
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1408,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9295,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.601965499998187,
+  "completed_at": "2026-10-06T17:34:30-04:00"
+}

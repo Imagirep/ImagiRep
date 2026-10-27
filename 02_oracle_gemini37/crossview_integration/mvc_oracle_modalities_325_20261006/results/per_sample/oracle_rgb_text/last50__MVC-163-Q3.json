@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-163-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-163-Q3",
+  "resource_id": "MVC-163",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "white pillow, bed, tv, black pillow",
+    "B": "tv, white pillow, black pillow, bed",
+    "C": "black pillow, white pillow, bed, tv",
+    "D": "tv, white pillow, bed, black pillow"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "97c82050bae3d453511968bfb4a60bf0243974d4aaf096bd9593ab9e0c2d8e4e",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-163\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3588,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 396
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1801,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5390,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 29.66319079999812,
+  "completed_at": "2026-10-06T17:32:26-04:00"
+}

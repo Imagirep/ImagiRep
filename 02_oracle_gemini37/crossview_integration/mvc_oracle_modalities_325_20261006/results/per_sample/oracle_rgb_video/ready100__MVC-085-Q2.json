@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-085-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-085-Q2",
+  "resource_id": "MVC-085",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is farthest from fireplace in Image 1?",
+  "answer_choices": {
+    "A": "white armchair",
+    "B": "white lamp",
+    "C": "brown armchair",
+    "D": "potted plant"
+  },
+  "gold_answer": "A",
+  "prediction": "B",
+  "correct": false,
+  "signature": "c6dfb78889cb4b926d35ad72400ac64a42ffc634a22ed09c7abfaacfb5c44d9a",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-085\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7887,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 285
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 846,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8733,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.124911499995505,
+  "completed_at": "2026-10-06T17:34:21-04:00"
+}

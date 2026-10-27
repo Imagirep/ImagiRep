@@ -1,0 +1,78 @@
+[
+  {
+    "question_id": "FO-0001-Q2",
+    "planner_version": "geometry-v14-camera-approach-candidate",
+    "evidence_kind": "generated-intermediate geometry replay; Text CLI defect; corrected full preview pending",
+    "endpoint_error_m": 1.3882348160004316,
+    "final_yaw_error_deg": 18.4111003097274,
+    "final_pitch_error_deg": 0.0,
+    "arc_length_correspondence_error_m": 0.6414377340512726,
+    "generated_length_m": 4.682910101553329,
+    "oracle_length_m": 3.2735257569854177,
+    "length_ratio": 1.4305401726442533,
+    "provisional_geometric_pass": false,
+    "scale_is_camera_height_prior": true,
+    "semantic_success_certified": false,
+    "generated_target_projection": {
+      "status": "diagnostic",
+      "gt_metadata_used": [],
+      "semantic_success_certified": false,
+      "occlusion_tested": false,
+      "camera_assumption": {
+        "width": 320,
+        "height": 240,
+        "vfov_degrees": 60
+      },
+      "target_id": "chair_1",
+      "target_center_projection": {
+        "in_frustum": true,
+        "behind_camera": false,
+        "normalized_x": -2.681052160188104e-16,
+        "normalized_y": -0.9487183152388592
+      },
+      "horizontal_facing_error_degrees": 0.0,
+      "target_vertical_angle_degrees": -28.711405841597443,
+      "camera_pitch_degrees": 0.0,
+      "robust_bounds_corners_in_frustum": 4,
+      "robust_bounds_corner_count": 8
+    }
+  },
+  {
+    "question_id": "FO-0001-Q7",
+    "planner_version": "geometry-v14-camera-approach-candidate",
+    "evidence_kind": "generated-intermediate geometry replay; Text CLI defect; corrected full preview pending",
+    "endpoint_error_m": 1.1555612190210849,
+    "final_yaw_error_deg": 4.923768891758108,
+    "final_pitch_error_deg": 0.0,
+    "arc_length_correspondence_error_m": 0.6041199904784493,
+    "generated_length_m": 4.648345788322219,
+    "oracle_length_m": 3.2735257569854177,
+    "length_ratio": 1.4199814308480865,
+    "provisional_geometric_pass": false,
+    "scale_is_camera_height_prior": true,
+    "semantic_success_certified": false,
+    "generated_target_projection": {
+      "status": "diagnostic",
+      "gt_metadata_used": [],
+      "semantic_success_certified": false,
+      "occlusion_tested": false,
+      "camera_assumption": {
+        "width": 320,
+        "height": 240,
+        "vfov_degrees": 60
+      },
+      "target_id": "brown_chair",
+      "target_center_projection": {
+        "in_frustum": true,
+        "behind_camera": false,
+        "normalized_x": -3.0323877817060193e-16,
+        "normalized_y": -0.9001573275255741
+      },
+      "horizontal_facing_error_degrees": 0.0,
+      "target_vertical_angle_degrees": -27.46117385911739,
+      "camera_pitch_degrees": 0.0,
+      "robust_bounds_corners_in_frustum": 4,
+      "robust_bounds_corner_count": 8
+    }
+  }
+]

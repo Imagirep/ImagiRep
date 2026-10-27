@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC3I-007-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC3I-007-Q1",
+  "resource_id": "MVC3I-007",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Images 2 and 3 is closest to red sofa in Image 1?",
+  "answer_choices": {
+    "A": "black statue",
+    "B": "white pot",
+    "C": "fireplace",
+    "D": "yellow painting"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "6f4d21a6aef23fbb88978dede3b87744850e0cc28b2da00630bb7319656c8f76",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC3I-007\\order_312\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4662,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 406
+      }
+    ],
+    "thoughts_token_count": 1418,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6081,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 26.030749099998502,
+  "completed_at": "2026-10-06T17:32:06-04:00"
+}

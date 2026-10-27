@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-004-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-004-Q1",
+  "resource_id": "MVC-004",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to small white pillar in Image 1?",
+  "answer_choices": {
+    "A": "potted flower",
+    "B": "round table",
+    "C": "white bowl",
+    "D": "wooden cabinet"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "60b9be9917da21c7decbdcfad3c246f5b4ea9208587472bca3b950135fc8816f",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.756 m (near/red) to 5.163 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-004\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4604,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 348
+      }
+    ],
+    "thoughts_token_count": 1594,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6199,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 77.55292500001087,
+  "completed_at": "2026-10-06T17:37:24-04:00"
+}

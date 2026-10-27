@@ -1,0 +1,1 @@
+{"uid": "last50__MVC-195-Q2", "category": "cross_view_farthest", "reason": "Depth helps compare the objects\u2019 distances from the flowers across views.", "choice": "depth", "usage": {"input_tokens": 3423, "input_tokens_details": {"cache_write_tokens": 3420, "cached_tokens": 0}, "output_tokens": 93, "output_tokens_details": {"reasoning_tokens": 62}, "total_tokens": 3516}}

@@ -1,0 +1,1 @@
+{"qid": "FOB4-0002-Q4", "method": "mj", "variant": "top3+label", "prediction": "blue and black chairs", "gold": "small black table", "correct": false, "n_imagined": 3, "category": "nearest_object", "stored_result": "correct"}

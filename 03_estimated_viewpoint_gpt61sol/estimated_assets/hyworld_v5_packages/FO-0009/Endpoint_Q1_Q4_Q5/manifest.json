@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FO-0009-Q1",
+  "motion_text": "I walk to the open glass doors and turn slightly to the right.",
+  "view_variant": "endpoint",
+  "frames": 95,
+  "fps": 12,
+  "total_distance_m": 4.371941100625615,
+  "depth_display_range_scene_units": [
+    0.7832536113262176,
+    1.8542620468139648
+  ],
+  "depth_color_scale_m": {
+    "near_m": 0.8020312650049607,
+    "far_m": 1.8987159631971324
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.5777224232899059 m over generated floor distance",
+  "m_per_unit": 1.932532250881195,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 20.424891233444214
+}

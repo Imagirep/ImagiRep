@@ -1,0 +1,94 @@
+{
+  "row_index": 225,
+  "question_id": "FOB3-0094-Q4",
+  "trajectory_id": "FOB3-0094",
+  "scan_id": "UwV83HsGsw3",
+  "question_type": 4,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk through the room, walk to the tv and slightly turn left, which object(s) would be closest to me?",
+  "answer_choices": {
+    "A": "potted plant",
+    "B": "small white and red painting",
+    "C": "large red and black painting",
+    "D": "table with Union Jack design"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "large red and black painting",
+    "B": "small white and red painting",
+    "C": "table with Union Jack design",
+    "D": "potted plant"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "A": "D",
+    "B": "B",
+    "C": "A",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0094\\start_view.png",
+      "sha256": "c47cee9140d4d08123003b4c080d1bb37cf5ec4213129cc6d4dbdd283837fc12"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0094\\step_01_rgb.png",
+      "sha256": "bb01e41a6742ca9f3212c3c319fb673db47bbc07ea13bdbe6a99b521a5cda7ed"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0094\\step_02_rgb.png",
+      "sha256": "407c9fb6f79284344518ee606eb4059b5764291cb0103673c19eb6032fed8d86"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1162,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 98
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 951,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2114,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-21T11:44:08-04:00"
+}

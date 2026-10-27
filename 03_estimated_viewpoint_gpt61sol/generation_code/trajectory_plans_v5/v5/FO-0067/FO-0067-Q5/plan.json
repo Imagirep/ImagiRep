@@ -1,0 +1,146 @@
+{
+  "question_id": "FO-0067-Q5",
+  "motion_text": "I walk near the carpet and turn left.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the patterned carpet on the floor",
+      "relation": "near"
+    },
+    {
+      "op": "turn",
+      "direction": "left"
+    }
+  ],
+  "shared_walk_from": "FO-0067-Q1",
+  "walk_state": {
+    "question_id": "FO-0067-Q5",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.7551216143606823,
+        "y": 0.0413289345906378,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -3.7551216143606823,
+        0.0413289345906378
+      ]
+    ],
+    "x": -3.7551216143606823,
+    "y": 0.0413289345906378,
+    "yaw": 0.011005573240520846,
+    "pitch": 0.0,
+    "travel_yaw": 0.011005573240520846
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -3.7551216143606823,
+      0.0413289345906378
+    ]
+  ],
+  "final": {
+    "x": -3.7551216143606823,
+    "y": 0.0413289345906378,
+    "yaw_deg": -79.36942710219604,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left"
+      },
+      "x": -3.7551216143606823,
+      "y": 0.0413289345906378,
+      "yaw": -1.3852578283549428,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.7551216143606823,
+      "y": 0.0413289345906378,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.7551216143606823,
+      "y": 0.0413289345906378,
+      "yaw": -1.3852578283549428,
+      "pitch": 0.0
+    }
+  ],
+  "events": [],
+  "m_per_unit": 2.629486934345956,
+  "seconds": 4.4727630615234375
+}

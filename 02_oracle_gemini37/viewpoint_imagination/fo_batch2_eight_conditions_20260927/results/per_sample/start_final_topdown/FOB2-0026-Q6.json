@@ -1,0 +1,138 @@
+{
+  "row_index": 227,
+  "question_id": "FOB2-0026-Q6",
+  "trajectory_id": "FOB2-0026",
+  "scan_id": "Pm6F8kyY3z2",
+  "question_type": 6,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk to the two chairs side by side, facing the way I go, where is the pot on the floor?",
+  "answer_choices": {
+    "B": "right",
+    "A": "left",
+    "C": "behind",
+    "D": "front"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "B": "C",
+    "A": "B",
+    "C": "D",
+    "D": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0026\\start_view.png",
+      "sha256": "d77b27dc2c7209975f859ced012329ac6b9ec0df80d5f726cea45654dbc191b8"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0026\\step_01_rgb.png",
+      "sha256": "37a293d288ad38b5362f4622a9502019f5d92d20258fbf6c40c51fa8c15e20ce"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "category": "object_relative_direction",
+  "category_label": "Object-relative direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0026\\step_01_depth.png",
+      "sha256": "8ebda148a1050d89fce7dbab230f75a32ce931eaa166114c9695bc5049c13ebd",
+      "color_scale": {
+        "near_m": 1.47775,
+        "far_m": 8.3525
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0026\\step_01_surface_normals.png",
+      "sha256": "c790c74f94327694042fe2d6d8e3a0991570e04ed5c300c73be8e4c8b4cb0693"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0026\\step_01_panorama.png",
+      "sha256": "31add2ae390242d2d01109a43a0f12f2a14919e0c58f99dbb6e01351256f999f"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0026\\topdown_with_path.png",
+      "sha256": "d82aa7f8f03aaee3415f96aeba0ebed7d651ebb3a5817ef4a4fc6a2be59f07fb"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0026\\trajectory.txt",
+      "sha256": "d2189f97264ce32a82d3fa7f5ad7ec98c07622db05601a736d1f1a6b7aa8e9b2"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0026\\trajectory.mp4",
+      "sha256": "39787e0a49143de20926952e3e2091d2c62561be38befb4fe088a165a3b60746"
+    }
+  },
+  "condition": "start_final_topdown",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "C",
+  "correct": false,
+  "input_signature": "97b1fbf57dd44b754287a106ead9c9f62f9a1750d17140022a50ca4715679dea",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "topdown"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3402,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3217
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 185
+      }
+    ],
+    "thoughts_token_count": 4367,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7770,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_started_at": "2026-09-28T00:30:18.782-04:00",
+  "request_duration_seconds": 20.049139899900183,
+  "completed_at": "2026-09-28T00:30:38.831-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC3I-007-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC3I-007-Q1",
+  "resource_id": "MVC3I-007",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Images 2 and 3 is closest to red sofa in Image 1?",
+  "answer_choices": {
+    "A": "black statue",
+    "B": "white pot",
+    "C": "fireplace",
+    "D": "yellow painting"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "e0fbf36237cd98eb46e5b43d63378af3250cbc58db2d93f92ad5579e6c140683",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC3I-007\\order_312\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 5668,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 323
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 5345
+      }
+    ],
+    "thoughts_token_count": 1241,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6910,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.414753499993822,
+  "completed_at": "2026-10-06T17:29:16-04:00"
+}

@@ -1,0 +1,4657 @@
+[
+ {
+  "asset": "c97738815141e77a.png",
+  "uids": [
+   "FO-0001-Q2",
+   "FO-0001-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0001/Endpoint_Q2_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/c97738815141e77a.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0001/FO-0001-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0001",
+  "eye": 1.3383643391442064,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "834c35177df89517.png",
+  "uids": [
+   "FO-0003-Q2",
+   "FO-0003-Q5",
+   "FO-0003-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0003/Endpoint_Q2_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/834c35177df89517.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0003/FO-0003-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0003",
+  "eye": 1.5096234784039666,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "2d1cbb100d4b63e0.png",
+  "uids": [
+   "FO-0003-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0003/Lookback_Q3_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/2d1cbb100d4b63e0.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0003/FO-0003-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0003",
+  "eye": 1.5096234784039666,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "b0eab197a210ca79.png",
+  "uids": [
+   "FO-0003-Q4"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/variants/FO-0003__Endpoint_FO-0003-Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/b0eab197a210ca79.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/plans/FO-0003__Endpoint_FO-0003-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0003",
+  "eye": 1.5096234784039666,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "d33d321572c65365.png",
+  "uids": [
+   "FO-0005-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0005/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/d33d321572c65365.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0005/FO-0005-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0005",
+  "eye": 1.6667917816013826,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "9dbb1350fb0cb275.png",
+  "uids": [
+   "FO-0005-Q5",
+   "FO-0005-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0005/Endpoint_Q5/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0005/Endpoint_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/9dbb1350fb0cb275.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0005/FO-0005-Q5.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0005",
+  "eye": 1.6667917816013826,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "db819d550960a026.png",
+  "uids": [
+   "FO-0006-Q2",
+   "FO-0006-Q4",
+   "FO-0006-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0006/Endpoint_Q2_Q4_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/db819d550960a026.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0006/FO-0006-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0006",
+  "eye": 1.284796320734273,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "0f0da43057c977ce.png",
+  "uids": [
+   "FO-0006-Q3",
+   "FO-0006-Q6"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0006/Lookback_Q3_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0006/Lookback_Q3_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/0f0da43057c977ce.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0006/FO-0006-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0006",
+  "eye": 1.284796320734273,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "72beb96680be5fea.png",
+  "uids": [
+   "FO-0007-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0007/Endpoint_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/72beb96680be5fea.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0007/FO-0007-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0007",
+  "eye": 1.9136249710434754,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "d0581aedfd6db3ae.png",
+  "uids": [
+   "FO-0009-Q1",
+   "FO-0009-Q4",
+   "FO-0009-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0009/Endpoint_Q1_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/d0581aedfd6db3ae.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0009/FO-0009-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0009",
+  "eye": 1.5777224232899059,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "300609f3a8567d93.png",
+  "uids": [
+   "FO-0013-Q2",
+   "FO-0013-Q3",
+   "FO-0013-Q4",
+   "FO-0013-Q5",
+   "FO-0013-Q6"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0013/Lookback_Q2_Q3_Q4_Q5_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0013/Lookback_Q2_Q3_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/300609f3a8567d93.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0013/FO-0013-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0013",
+  "eye": 1.8804266220090966,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "150e8e54c6f05916.png",
+  "uids": [
+   "FO-0014-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0014/Endpoint_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/150e8e54c6f05916.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0014/FO-0014-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0014",
+  "eye": 1.5777224232899059,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "5285d2895fa5219b.png",
+  "uids": [
+   "FO-0018-Q4",
+   "FO-0018-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0018/Endpoint_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/5285d2895fa5219b.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0018/FO-0018-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0018",
+  "eye": 1.3352358337522503,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "7bd704e7518ec612.png",
+  "uids": [
+   "FO-0019-Q1",
+   "FO-0019-Q2",
+   "FO-0019-Q4",
+   "FO-0019-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0019/Lookback_Q1_Q2_Q4_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/7bd704e7518ec612.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0019/FO-0019-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0019",
+  "eye": 1.3352358337522503,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "0782f6b4a4b75db9.png",
+  "uids": [
+   "FO-0020-Q2"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0020/Endpoint_Q2/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/0782f6b4a4b75db9.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0020/FO-0020-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0020",
+  "eye": 1.585480175876441,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "3d1784e5def61db6.png",
+  "uids": [
+   "FO-0020-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0020/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/3d1784e5def61db6.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0020/FO-0020-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0020",
+  "eye": 1.585480175876441,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "c2e5dd5b2377ba80.png",
+  "uids": [
+   "FO-0021-Q1",
+   "FO-0021-Q2",
+   "FO-0021-Q3",
+   "FO-0021-Q4"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0021/Endpoint_Q1_Q2_Q3_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/c2e5dd5b2377ba80.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0021/FO-0021-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0021",
+  "eye": 1.3529501494273504,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "7adb213f37cccf83.png",
+  "uids": [
+   "FO-0023-Q2",
+   "FO-0023-Q4",
+   "FO-0023-Q5",
+   "FO-0023-Q6",
+   "FO-0023-Q8"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0023/Endpoint_Q2_Q4_Q5_Q6_Q8/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0023/Endpoint_Q2_Q4_Q5_Q6_Q8/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/7adb213f37cccf83.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0023/FO-0023-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0023",
+  "eye": 1.39647476019519,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "2ddb7bbdaaa12688.png",
+  "uids": [
+   "FO-0023-Q3"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0023/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0023/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/2ddb7bbdaaa12688.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0023/FO-0023-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0023",
+  "eye": 1.39647476019519,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "1840f0761596697b.png",
+  "uids": [
+   "FO-0024-Q6"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0024/Endpoint_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0024/Endpoint_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/1840f0761596697b.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0024/FO-0024-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0024",
+  "eye": 1.3427242939089865,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "75f3e21cafb0c808.png",
+  "uids": [
+   "FO-0027-Q4",
+   "FO-0027-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0027/Endpoint_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/75f3e21cafb0c808.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0027/FO-0027-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0027",
+  "eye": 0.9532553183972112,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "0987c2cb8ceca4f2.png",
+  "uids": [
+   "FO-0027-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0027/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/0987c2cb8ceca4f2.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0027/FO-0027-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0027",
+  "eye": 0.9532553183972112,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "a21e31c37a8de534.png",
+  "uids": [
+   "FO-0028-Q3",
+   "FO-0028-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0028/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0028/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/a21e31c37a8de534.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0028/FO-0028-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0028",
+  "eye": 1.4072764408325185,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "8bc562d18ca9f574.png",
+  "uids": [
+   "FO-0029-Q1",
+   "FO-0029-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0029/Endpoint_Q1_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/8bc562d18ca9f574.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0029/FO-0029-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0029",
+  "eye": 1.3238192174553092,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "28ea350d7f474d52.png",
+  "uids": [
+   "FO-0029-Q3",
+   "FO-0029-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0029/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0029/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/28ea350d7f474d52.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0029/FO-0029-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0029",
+  "eye": 1.3238192174553092,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "c1f8b8ccd75dd981.png",
+  "uids": [
+   "FO-0031-Q3"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0031/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0031/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/c1f8b8ccd75dd981.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0031/FO-0031-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0031",
+  "eye": 1.5416519454768896,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "50cda6a8022f431a.png",
+  "uids": [
+   "FO-0031-Q4",
+   "FO-0031-Q5"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0031/Endpoint_Q4_Q5/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0031/Endpoint_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/50cda6a8022f431a.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0031/FO-0031-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0031",
+  "eye": 1.5416519454768896,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "e751cbfd8ab91b3d.png",
+  "uids": [
+   "FO-0032-Q1",
+   "FO-0032-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0032/Endpoint_Q1_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/e751cbfd8ab91b3d.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0032/FO-0032-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0032",
+  "eye": 1.6059376636231413,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "99a4c5763df3df4f.png",
+  "uids": [
+   "FO-0032-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0032/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/99a4c5763df3df4f.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0032/FO-0032-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0032",
+  "eye": 1.6059376636231413,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ee9aab3393843970.png",
+  "uids": [
+   "FO-0033-Q1",
+   "FO-0033-Q3",
+   "FO-0033-Q4",
+   "FO-0033-Q5",
+   "FO-0033-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0033/Endpoint_Q1_Q4_Q5_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0033/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ee9aab3393843970.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0033/FO-0033-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0033",
+  "eye": 1.3186369310848747,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "79169ecb7215f2af.png",
+  "uids": [
+   "FO-0034-Q3",
+   "FO-0034-Q6"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0034/Lookback_Q3/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0034/Lookback_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0034/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0034/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/79169ecb7215f2af.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0034/FO-0034-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0034",
+  "eye": 1.4894905423514615,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "75de2a6a412f4647.png",
+  "uids": [
+   "FO-0034-Q5"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0034/Endpoint_Q5/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0034/Endpoint_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/75de2a6a412f4647.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0034/FO-0034-Q5.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0034",
+  "eye": 1.4894905423514615,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "3e171b6617f5247f.png",
+  "uids": [
+   "FO-0037-Q2",
+   "FO-0037-Q4",
+   "FO-0037-Q5"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0037/Endpoint_Q2_Q4_Q5/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0037/Endpoint_Q2_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/3e171b6617f5247f.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0037/FO-0037-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0037",
+  "eye": 1.5096234784039666,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "d61186d281e05869.png",
+  "uids": [
+   "FO-0038-Q3"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0038/Endpoint_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0038/Endpoint_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/d61186d281e05869.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0038/FO-0038-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0038",
+  "eye": 1.4460667093869688,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "1b993b5d7e276ad8.png",
+  "uids": [
+   "FO-0039-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0039/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/1b993b5d7e276ad8.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0039/FO-0039-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0039",
+  "eye": 1.4280395656424005,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "4ed206eef8c06696.png",
+  "uids": [
+   "FO-0039-Q4",
+   "FO-0039-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0039/Endpoint_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/4ed206eef8c06696.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0039/FO-0039-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0039",
+  "eye": 1.4280395656424005,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "c72a5f34bcb49b7a.png",
+  "uids": [
+   "FO-0040-Q4",
+   "FO-0040-Q5",
+   "FO-0040-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0040/Endpoint_Q4_Q5/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0040/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/c72a5f34bcb49b7a.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0040/FO-0040-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0040",
+  "eye": 1.379053309619831,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "12b706e53d9a8d60.png",
+  "uids": [
+   "FO-0042-Q1"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0042/Endpoint_Q1/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/12b706e53d9a8d60.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0042/FO-0042-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0042",
+  "eye": 1.191311371121472,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "758578e685f7a8e1.png",
+  "uids": [
+   "FO-0044-Q1",
+   "FO-0044-Q5"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0044/Endpoint_Q1_Q5/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0044/Endpoint_Q1_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/758578e685f7a8e1.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0044/FO-0044-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0044",
+  "eye": 1.191311371121472,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "a044d8e8e8d4ad0c.png",
+  "uids": [
+   "FO-0046-Q1",
+   "FO-0046-Q4",
+   "FO-0046-Q5"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0046/Endpoint_Q1_Q4_Q5/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0046/Endpoint_Q1_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/a044d8e8e8d4ad0c.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0046/FO-0046-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0046",
+  "eye": 2.013942641377561,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "4b0f1e8e66e56cc4.png",
+  "uids": [
+   "FO-0046-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0046/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/4b0f1e8e66e56cc4.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0046/FO-0046-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0046",
+  "eye": 2.013942641377561,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "9e92c9cf1d14bff0.png",
+  "uids": [
+   "FO-0049-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0049/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/9e92c9cf1d14bff0.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0049/FO-0049-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0049",
+  "eye": 1.391872370260856,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ad563fe5ae0b0959.png",
+  "uids": [
+   "FO-0049-Q4",
+   "FO-0049-Q5",
+   "FO-0049-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0049/Endpoint_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ad563fe5ae0b0959.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0049/FO-0049-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0049",
+  "eye": 1.391872370260856,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "8be4c76a5037bc30.png",
+  "uids": [
+   "FO-0050-Q1",
+   "FO-0050-Q2",
+   "FO-0050-Q4",
+   "FO-0050-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0050/Endpoint_Q1_Q2_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/8be4c76a5037bc30.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0050/FO-0050-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0050",
+  "eye": 1.39647476019519,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "16d83cb30abecefc.png",
+  "uids": [
+   "FO-0052-Q4",
+   "FO-0052-Q5",
+   "FO-0052-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0052/Endpoint_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/16d83cb30abecefc.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0052/FO-0052-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0052",
+  "eye": 1.4772335672611234,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "fe7c38903722e8d8.png",
+  "uids": [
+   "FO-0056-Q1",
+   "FO-0056-Q2",
+   "FO-0056-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0056/Endpoint_Q1_Q2_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/fe7c38903722e8d8.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0056/FO-0056-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0056",
+  "eye": 1.614548099109939,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "edaf90a4d990198c.png",
+  "uids": [
+   "FO-0056-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0056/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/edaf90a4d990198c.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0056/FO-0056-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0056",
+  "eye": 1.614548099109939,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "d18039cfe20dbee0.png",
+  "uids": [
+   "FO-0057-Q1",
+   "FO-0057-Q3",
+   "FO-0057-Q6"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0057/Endpoint_Q1_Q6/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0057/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0057/Endpoint_Q1_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0057/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/d18039cfe20dbee0.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0057/FO-0057-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0057",
+  "eye": 1.5542080051049112,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "f4fa5725e7368bc3.png",
+  "uids": [
+   "FO-0059-Q2",
+   "FO-0059-Q4"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0059/Endpoint_Q2_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/f4fa5725e7368bc3.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0059/FO-0059-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0059",
+  "eye": 1.616893549622283,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "49f22dfda2733bad.png",
+  "uids": [
+   "FO-0059-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0059/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/49f22dfda2733bad.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0059/FO-0059-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0059",
+  "eye": 1.616893549622283,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "7a36f9a65abb8ae9.png",
+  "uids": [
+   "FO-0059-Q6"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0059/Lookback_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0059/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/7a36f9a65abb8ae9.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0059/FO-0059-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0059",
+  "eye": 1.616893549622283,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "6072dc9adcb5ec98.png",
+  "uids": [
+   "FO-0064-Q1"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0064/Endpoint_Q1/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/6072dc9adcb5ec98.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0064/FO-0064-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0064",
+  "eye": 1.3404868585152485,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "c14fbe8555084f61.png",
+  "uids": [
+   "FO-0065-Q1"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0065/Endpoint_Q1/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/c14fbe8555084f61.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0065/FO-0065-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0065",
+  "eye": 1.9136249710434754,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "8442204a063b7823.png",
+  "uids": [
+   "FO-0066-Q2",
+   "FO-0066-Q4"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0066/Endpoint_Q2_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/8442204a063b7823.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0066/FO-0066-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0066",
+  "eye": 1.612987300049916,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "f9ed412dd603d3e1.png",
+  "uids": [
+   "FO-0066-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0066/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/f9ed412dd603d3e1.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0066/FO-0066-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0066",
+  "eye": 1.612987300049916,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ac82731153b72591.png",
+  "uids": [
+   "FO-0067-Q1",
+   "FO-0067-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0067/Endpoint_Q1_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ac82731153b72591.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0067/FO-0067-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0067",
+  "eye": 1.5214364392861057,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "da8d7e8d8ba3be6e.png",
+  "uids": [
+   "FO-0068-Q4"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0068/Lookback_Q4/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0068/Lookback_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/da8d7e8d8ba3be6e.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0068/FO-0068-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0068",
+  "eye": 1.4600218414224315,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "b35739079e2a649f.png",
+  "uids": [
+   "FO-0076-Q1",
+   "FO-0076-Q6"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_b12_v5_20261004/variants/FO-0076__Endpoint_FO-0076-Q1/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_b12_v5_20261004/variants/FO-0076__Endpoint_FO-0076-Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/b35739079e2a649f.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_b12_v5_20261004/plans/FO-0076__Endpoint_FO-0076-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0076",
+  "eye": 1.191311371121472,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "902539e431b9fc12.png",
+  "uids": [
+   "FO-0080-Q1",
+   "FO-0080-Q2",
+   "FO-0080-Q3",
+   "FO-0080-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0080/Lookback_Q1_Q2_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0080/Lookback_Q3/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_pilot20_v5_20261003/variants/FO-0080__Lookback_FO-0080-Q1/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_b12_v5_20261004/variants/FO-0080__Lookback_FO-0080-Q1/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/902539e431b9fc12.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0080/FO-0080-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0080",
+  "eye": 1.284796320734273,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "f862ad0e13af1321.png",
+  "uids": [
+   "FO-0081-Q4"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0081/Endpoint_Q4/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0081/Endpoint_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/f862ad0e13af1321.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0081/FO-0081-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0081",
+  "eye": 1.3973356128194823,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "d30a84c769222a03.png",
+  "uids": [
+   "FO-0081-Q6"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0081/Lookback_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0081/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/d30a84c769222a03.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0081/FO-0081-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0081",
+  "eye": 1.3973356128194823,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "45e16ad61ea8a6ef.png",
+  "uids": [
+   "FO-0085-Q3",
+   "FO-0085-Q8"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0085/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0085/Lookback_Q8/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/45e16ad61ea8a6ef.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0085/FO-0085-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0085",
+  "eye": 1.3435356720514449,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "95d8597b61bea543.png",
+  "uids": [
+   "FO-0090-Q3",
+   "FO-0090-Q5",
+   "FO-0090-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0090/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0090/Endpoint_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/95d8597b61bea543.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0090/FO-0090-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0090",
+  "eye": 1.3633393927910404,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "0fc79820f072bfee.png",
+  "uids": [
+   "FO-0102-Q2",
+   "FO-0102-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0102/Endpoint_Q2_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/0fc79820f072bfee.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0102/FO-0102-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0102",
+  "eye": 1.4894905423514615,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "59a290f8b0adacf7.png",
+  "uids": [
+   "FO-0102-Q3",
+   "FO-0102-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0102/Lookback_Q3_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/59a290f8b0adacf7.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0102/FO-0102-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0102",
+  "eye": 1.4894905423514615,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "acb4dfab7e20d520.png",
+  "uids": [
+   "FO-0123-Q1",
+   "FO-0123-Q4",
+   "FO-0123-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0123/Endpoint_Q1_Q4_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/acb4dfab7e20d520.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0123/FO-0123-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0123",
+  "eye": 1.538380574183435,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ef03ff45a362a42b.png",
+  "uids": [
+   "FO-0123-Q3"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FO-0123/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0123/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ef03ff45a362a42b.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FO-0123/FO-0123-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0123",
+  "eye": 1.538380574183435,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ef257a9090e9cde0.png",
+  "uids": [
+   "FO-0124-Q1",
+   "FO-0124-Q3",
+   "FO-0124-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0124/Lookback_Q1_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0124/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ef257a9090e9cde0.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0124/FO-0124-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0124",
+  "eye": 1.3310011575445593,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "0a5da59b90c3c383.png",
+  "uids": [
+   "FO-0134-Q3",
+   "FO-0134-Q4",
+   "FO-0134-Q5",
+   "FO-0134-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0134/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0134/Endpoint_Q4_Q5_Q6/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_b12_v5_20261004/variants/FO-0134__Lookback_from_FO-0134-Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/0a5da59b90c3c383.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0134/FO-0134-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0134",
+  "eye": 1.244681688763933,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "10c349fcddf9018b.png",
+  "uids": [
+   "FO-0197-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0197/Endpoint_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/10c349fcddf9018b.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0197/FO-0197-Q5.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0197",
+  "eye": 1.0154421322880864,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "fd0adfeb7b9949e5.png",
+  "uids": [
+   "FO-0199-Q5",
+   "FO-0199-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FO-0199/Endpoint_Q5_Q6/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_b12_v5_20261004/variants/FO-0199__Lookback_from_FO-0199-Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/fd0adfeb7b9949e5.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FO-0199/FO-0199-Q5.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FO-0199",
+  "eye": 1.1761221103895352,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "7c167bd772d82438.png",
+  "uids": [
+   "FOB2-0001-Q2",
+   "FOB2-0001-Q5",
+   "FOB2-0001-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0001/Endpoint_Q2_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/7c167bd772d82438.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0001/FOB2-0001-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0001",
+  "eye": 1.1950959755030226,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "92421a661e0a76b2.png",
+  "uids": [
+   "FOB2-0001-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0001/Lookback_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/92421a661e0a76b2.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0001/FOB2-0001-Q7.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0001",
+  "eye": 1.1950959755030226,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "97a546fa9cbdc751.png",
+  "uids": [
+   "FOB2-0002-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0002/Endpoint_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/97a546fa9cbdc751.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0002/FOB2-0002-Q5.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0002",
+  "eye": 1.3589761407563543,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "4880dc4b83f6412e.png",
+  "uids": [
+   "FOB2-0003-Q2",
+   "FOB2-0003-Q6"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FOB2-0003/Endpoint_Q2_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0003/Endpoint_Q2_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/4880dc4b83f6412e.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FOB2-0003/FOB2-0003-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0003",
+  "eye": 1.3972462293465497,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "90c037147d6ca56e.png",
+  "uids": [
+   "FOB2-0003-Q3"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FOB2-0003/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0003/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/90c037147d6ca56e.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FOB2-0003/FOB2-0003-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0003",
+  "eye": 1.3972462293465497,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "20426b64072fb818.png",
+  "uids": [
+   "FOB2-0009-Q1",
+   "FOB2-0009-Q2",
+   "FOB2-0009-Q4",
+   "FOB2-0009-Q5",
+   "FOB2-0009-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0009/Endpoint_Q1_Q2_Q4_Q5/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/variants/FOB2-0009__Endpoint_FOB2-0009-Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/20426b64072fb818.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0009/FOB2-0009-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0009",
+  "eye": 1.27283588839272,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "0dbe39ffec5af91d.png",
+  "uids": [
+   "FOB2-0010-Q1",
+   "FOB2-0010-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0010/Endpoint_Q1_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/0dbe39ffec5af91d.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0010/FOB2-0010-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0010",
+  "eye": 1.3477324547567662,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "7736f52cc13df270.png",
+  "uids": [
+   "FOB2-0010-Q3",
+   "FOB2-0010-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0010/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0010/Lookback_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/7736f52cc13df270.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0010/FOB2-0010-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0010",
+  "eye": 1.3477324547567662,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "0d6a8a29250b35ab.png",
+  "uids": [
+   "FOB2-0011-Q1",
+   "FOB2-0011-Q4",
+   "FOB2-0011-Q5",
+   "FOB2-0011-Q6",
+   "FOB2-0011-Q7"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FOB2-0011/Endpoint_Q1_Q4_Q5_Q6_Q7/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0011/Endpoint_Q1_Q4_Q5_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/0d6a8a29250b35ab.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FOB2-0011/FOB2-0011-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0011",
+  "eye": 1.4526524137766899,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "3cb375686376010c.png",
+  "uids": [
+   "FOB2-0019-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0019/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/3cb375686376010c.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0019/FOB2-0019-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0019",
+  "eye": 1.3310271841003285,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ce73a45901979e19.png",
+  "uids": [
+   "FOB2-0019-Q4"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0019/Endpoint_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ce73a45901979e19.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0019/FOB2-0019-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0019",
+  "eye": 1.3310271841003285,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "44f4008e6634e426.png",
+  "uids": [
+   "FOB2-0024-Q3",
+   "FOB2-0024-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0024/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0024/Endpoint_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/44f4008e6634e426.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0024/FOB2-0024-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0024",
+  "eye": 1.3540735380096294,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "978076e26bb4c1d2.png",
+  "uids": [
+   "FOB2-0026-Q2",
+   "FOB2-0026-Q3",
+   "FOB2-0026-Q4",
+   "FOB2-0026-Q5",
+   "FOB2-0026-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0026/Endpoint_Q2_Q4_Q5_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0026/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/978076e26bb4c1d2.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0026/FOB2-0026-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0026",
+  "eye": 1.2609716131191817,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "5145d4400d7c2c46.png",
+  "uids": [
+   "FOB2-0027-Q1"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0027/Endpoint_Q1/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/5145d4400d7c2c46.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0027/FOB2-0027-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0027",
+  "eye": 1.099337578325006,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "4c3bcad859887883.png",
+  "uids": [
+   "FOB2-0027-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0027/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/4c3bcad859887883.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0027/FOB2-0027-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0027",
+  "eye": 1.099337578325006,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ba23a8e9d7eeba53.png",
+  "uids": [
+   "FOB2-0031-Q2",
+   "FOB2-0031-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0031/Endpoint_Q2_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ba23a8e9d7eeba53.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0031/FOB2-0031-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0031",
+  "eye": 1.2531487533016303,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "10b14484e42b8af2.png",
+  "uids": [
+   "FOB2-0034-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0034/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/10b14484e42b8af2.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0034/FOB2-0034-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0034",
+  "eye": 1.3906765476945537,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "35428608a7d9e5d4.png",
+  "uids": [
+   "FOB2-0034-Q4"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0034/Endpoint_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/35428608a7d9e5d4.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0034/FOB2-0034-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0034",
+  "eye": 1.3906765476945537,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "a3c4f6810617b433.png",
+  "uids": [
+   "FOB2-0039-Q1",
+   "FOB2-0039-Q2",
+   "FOB2-0039-Q4",
+   "FOB2-0039-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0039/Endpoint_Q1_Q2_Q4_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/a3c4f6810617b433.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0039/FOB2-0039-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0039",
+  "eye": 1.308915122993639,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "9f00a542d96e6087.png",
+  "uids": [
+   "FOB2-0039-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0039/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/9f00a542d96e6087.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0039/FOB2-0039-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0039",
+  "eye": 1.308915122993639,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "fe172ee77a042442.png",
+  "uids": [
+   "FOB2-0040-Q1",
+   "FOB2-0040-Q2",
+   "FOB2-0040-Q4",
+   "FOB2-0040-Q5",
+   "FOB2-0040-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0040/Endpoint_Q1_Q2_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/fe172ee77a042442.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0040/FOB2-0040-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0040",
+  "eye": 1.2609711664002,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "f633f0b1bbff5574.png",
+  "uids": [
+   "FOB2-0041-Q1",
+   "FOB2-0041-Q4",
+   "FOB2-0041-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0041/Endpoint_Q1_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/f633f0b1bbff5574.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0041/FOB2-0041-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0041",
+  "eye": 1.719139604762855,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ea746b05d53dacc6.png",
+  "uids": [
+   "FOB2-0041-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0041/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ea746b05d53dacc6.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0041/FOB2-0041-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0041",
+  "eye": 1.719139604762855,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "e150a5315dfbeb18.png",
+  "uids": [
+   "FOB2-0042-Q2",
+   "FOB2-0042-Q4",
+   "FOB2-0042-Q5"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FOB2-0042/Endpoint_Q2_Q4_Q5/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0042/Endpoint_Q2_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/e150a5315dfbeb18.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FOB2-0042/FOB2-0042-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0042",
+  "eye": 1.4186821084941315,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ec7c13fc5d8c2d94.png",
+  "uids": [
+   "FOB2-0042-Q3"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FOB2-0042/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0042/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ec7c13fc5d8c2d94.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FOB2-0042/FOB2-0042-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0042",
+  "eye": 1.4186821084941315,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "f73876cb46075a55.png",
+  "uids": [
+   "FOB2-0050-Q1",
+   "FOB2-0050-Q4",
+   "FOB2-0050-Q5",
+   "FOB2-0050-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0050/Endpoint_Q1_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/f73876cb46075a55.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0050/FOB2-0050-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0050",
+  "eye": 1.4262788942906148,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "d1cd23b18805a6e8.png",
+  "uids": [
+   "FOB2-0050-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0050/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/d1cd23b18805a6e8.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0050/FOB2-0050-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0050",
+  "eye": 1.4262788942906148,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "3e8efbc2743f90ef.png",
+  "uids": [
+   "FOB2-0055-Q1",
+   "FOB2-0055-Q4",
+   "FOB2-0055-Q5",
+   "FOB2-0055-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0055/Endpoint_Q1_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/3e8efbc2743f90ef.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0055/FOB2-0055-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0055",
+  "eye": 1.3730876888806165,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "b522ce2c53bf03da.png",
+  "uids": [
+   "FOB2-0057-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0057/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/b522ce2c53bf03da.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0057/FOB2-0057-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0057",
+  "eye": 1.669509392605562,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "fb7a4fbd2fc89f70.png",
+  "uids": [
+   "FOB2-0057-Q5",
+   "FOB2-0057-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0057/Endpoint_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/fb7a4fbd2fc89f70.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0057/FOB2-0057-Q5.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0057",
+  "eye": 1.669509392605562,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "4aa6e23636cae601.png",
+  "uids": [
+   "FOB2-0058-Q2",
+   "FOB2-0058-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0058/Endpoint_Q2_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/4aa6e23636cae601.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0058/FOB2-0058-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0058",
+  "eye": 1.5794457706839182,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "d41947b2155f4482.png",
+  "uids": [
+   "FOB2-0058-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0058/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/d41947b2155f4482.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0058/FOB2-0058-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0058",
+  "eye": 1.5794457706839182,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "95597ea258d46148.png",
+  "uids": [
+   "FOB2-0071-Q1",
+   "FOB2-0071-Q4",
+   "FOB2-0071-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0071/Endpoint_Q1_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/95597ea258d46148.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0071/FOB2-0071-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0071",
+  "eye": 1.5943725493750804,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "2e48da2267642c7e.png",
+  "uids": [
+   "FOB2-0071-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0071/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/2e48da2267642c7e.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0071/FOB2-0071-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0071",
+  "eye": 1.5943725493750804,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "c2fa517782dd439f.png",
+  "uids": [
+   "FOB2-0072-Q2",
+   "FOB2-0072-Q4",
+   "FOB2-0072-Q5"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FOB2-0072/Endpoint_Q2_Q4_Q5/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0072/Endpoint_Q2_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/c2fa517782dd439f.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FOB2-0072/FOB2-0072-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0072",
+  "eye": 1.5774163060402415,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "efe460bbae7ed6e0.png",
+  "uids": [
+   "FOB2-0073-Q2",
+   "FOB2-0073-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0073/Endpoint_Q2_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/efe460bbae7ed6e0.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0073/FOB2-0073-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0073",
+  "eye": 1.2118222056415746,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "fecb71ba6f96adfc.png",
+  "uids": [
+   "FOB2-0087-Q2"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v3/FOB2-0087/Endpoint_Q2/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FOB2-0087/Endpoint_Q2/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0087/Endpoint_Q2/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/fecb71ba6f96adfc.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v3/FOB2-0087/FOB2-0087-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0087",
+  "eye": 1.4078860575663157,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "64804117d8b07b7c.png",
+  "uids": [
+   "FOB2-0087-Q3",
+   "FOB2-0087-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0087/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0087/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/64804117d8b07b7c.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0087/FOB2-0087-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0087",
+  "eye": 1.4078860575663157,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "8f45eb32a2840356.png",
+  "uids": [
+   "FOB2-0095-Q1",
+   "FOB2-0095-Q2",
+   "FOB2-0095-Q4"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FOB2-0095/Endpoint_Q1_Q2_Q4/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0095/Endpoint_Q1_Q2_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/8f45eb32a2840356.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FOB2-0095/FOB2-0095-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0095",
+  "eye": 1.3266338403326472,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "d534075ccb9e894e.png",
+  "uids": [
+   "FOB2-0095-Q3"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FOB2-0095/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0095/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/d534075ccb9e894e.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FOB2-0095/FOB2-0095-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0095",
+  "eye": 1.3266338403326472,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "869929d8ccdb6916.png",
+  "uids": [
+   "FOB2-0103-Q1",
+   "FOB2-0103-Q4",
+   "FOB2-0103-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0103/Endpoint_Q1_Q4_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/869929d8ccdb6916.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0103/FOB2-0103-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0103",
+  "eye": 1.3682350947565354,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "43d418c54d6179b6.png",
+  "uids": [
+   "FOB2-0104-Q1",
+   "FOB2-0104-Q2"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0104/Endpoint_Q1_Q2/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/43d418c54d6179b6.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0104/FOB2-0104-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0104",
+  "eye": 1.538211542516862,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "21795bf7455b29fd.png",
+  "uids": [
+   "FOB2-0105-Q4",
+   "FOB2-0105-Q5",
+   "FOB2-0105-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0105/Endpoint_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/21795bf7455b29fd.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0105/FOB2-0105-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0105",
+  "eye": 1.536831447971565,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "813adb08ebcddb51.png",
+  "uids": [
+   "FOB2-0114-Q1",
+   "FOB2-0114-Q4",
+   "FOB2-0114-Q5",
+   "FOB2-0114-Q6"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v3/FOB2-0114/Endpoint_Q1_Q4_Q5_Q6/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FOB2-0114/Endpoint_Q1_Q4_Q5_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0114/Endpoint_Q1_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/813adb08ebcddb51.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v3/FOB2-0114/FOB2-0114-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0114",
+  "eye": 1.6568034539170071,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "72a83091e13f932d.png",
+  "uids": [
+   "FOB2-0114-Q3",
+   "FOB2-0114-Q7"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v3/FOB2-0114/Lookback_Q3/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v3/FOB2-0114/Lookback_Q7/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FOB2-0114/Lookback_Q3/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FOB2-0114/Lookback_Q7/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0114/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0114/Lookback_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/72a83091e13f932d.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v3/FOB2-0114/FOB2-0114-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0114",
+  "eye": 1.6568034539170071,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ddcb88bdced71f65.png",
+  "uids": [
+   "FOB2-0122-Q4",
+   "FOB2-0122-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0122/Endpoint_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ddcb88bdced71f65.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0122/FOB2-0122-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0122",
+  "eye": 1.304983555716035,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "80e993da4e523a60.png",
+  "uids": [
+   "FOB2-0129-Q2",
+   "FOB2-0129-Q4",
+   "FOB2-0129-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0129/Endpoint_Q2_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/80e993da4e523a60.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0129/FOB2-0129-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0129",
+  "eye": 1.1872002017558998,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "64b89fd87414c164.png",
+  "uids": [
+   "FOB2-0129-Q3",
+   "FOB2-0129-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0129/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0129/Endpoint_Q6/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_b12_v5_20261004/variants/FOB2-0129__Lookback_from_FOB2-0129-Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/64b89fd87414c164.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0129/FOB2-0129-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0129",
+  "eye": 1.1872002017558998,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ce8bb38eb264a766.png",
+  "uids": [
+   "FOB2-0131-Q1",
+   "FOB2-0131-Q2",
+   "FOB2-0131-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0131/Endpoint_Q1_Q2_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ce8bb38eb264a766.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0131/FOB2-0131-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0131",
+  "eye": 1.6130622667861871,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "99c9535ae5263462.png",
+  "uids": [
+   "FOB2-0139-Q1",
+   "FOB2-0139-Q4",
+   "FOB2-0139-Q5",
+   "FOB2-0139-Q6",
+   "FOB2-0139-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0139/Endpoint_Q1_Q4_Q5_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/99c9535ae5263462.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0139/FOB2-0139-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0139",
+  "eye": 1.4642334837623778,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "dae14624183368c8.png",
+  "uids": [
+   "FOB2-0146-Q1",
+   "FOB2-0146-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0146/Endpoint_Q1_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/dae14624183368c8.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0146/FOB2-0146-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0146",
+  "eye": 1.3574077934687807,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "82ed554cf2713a5d.png",
+  "uids": [
+   "FOB2-0153-Q1",
+   "FOB2-0153-Q4",
+   "FOB2-0153-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0153/Endpoint_Q1_Q4_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/82ed554cf2713a5d.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0153/FOB2-0153-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0153",
+  "eye": 1.5354767976971289,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "c971e0b6fe65d760.png",
+  "uids": [
+   "FOB2-0153-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0153/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/c971e0b6fe65d760.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0153/FOB2-0153-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0153",
+  "eye": 1.5354767976971289,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "12ec44e59e531909.png",
+  "uids": [
+   "FOB2-0155-Q4",
+   "FOB2-0155-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0155/Endpoint_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/12ec44e59e531909.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0155/FOB2-0155-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0155",
+  "eye": 1.165047407286309,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "d09a957e55166ff0.png",
+  "uids": [
+   "FOB2-0155-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0155/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/d09a957e55166ff0.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0155/FOB2-0155-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0155",
+  "eye": 1.165047407286309,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "7be54f99dc295ee8.png",
+  "uids": [
+   "FOB2-0161-Q1",
+   "FOB2-0161-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0161/Endpoint_Q1_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/7be54f99dc295ee8.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0161/FOB2-0161-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0161",
+  "eye": 1.3589761407563543,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "b2b10015b4a0f3e2.png",
+  "uids": [
+   "FOB2-0161-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0161/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/b2b10015b4a0f3e2.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0161/FOB2-0161-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0161",
+  "eye": 1.3589761407563543,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "5ac62743648d0c94.png",
+  "uids": [
+   "FOB2-0161-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0161/Endpoint_Q6/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_b12_v5_20261004/variants/FOB2-0161__Lookback_FOB2-0161-Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/5ac62743648d0c94.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0161/FOB2-0161-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0161",
+  "eye": 1.3589761407563543,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "462d497268e92223.png",
+  "uids": [
+   "FOB2-0177-Q1",
+   "FOB2-0177-Q2"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0177/Endpoint_Q1_Q2/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/462d497268e92223.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0177/FOB2-0177-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0177",
+  "eye": 1.096574488900501,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "3acc95f98a2dcba8.png",
+  "uids": [
+   "FOB2-0178-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0178/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/3acc95f98a2dcba8.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0178/FOB2-0178-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0178",
+  "eye": 1.6330599094504805,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "1a90a240cb7d77ea.png",
+  "uids": [
+   "FOB2-0181-Q1",
+   "FOB2-0181-Q4",
+   "FOB2-0181-Q5",
+   "FOB2-0181-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0181/Endpoint_Q1_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/1a90a240cb7d77ea.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0181/FOB2-0181-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0181",
+  "eye": 1.2531487533016303,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "a531c283011cc73a.png",
+  "uids": [
+   "FOB2-0181-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0181/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/a531c283011cc73a.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0181/FOB2-0181-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0181",
+  "eye": 1.2531487533016303,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "20746934008d87a5.png",
+  "uids": [
+   "FOB2-0184-Q2"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0184/Endpoint_Q2/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/20746934008d87a5.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0184/FOB2-0184-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0184",
+  "eye": 1.4085799158946344,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "98d2de637bc01ea7.png",
+  "uids": [
+   "FOB2-0184-Q3",
+   "FOB2-0184-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0184/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0184/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/98d2de637bc01ea7.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0184/FOB2-0184-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0184",
+  "eye": 1.4085799158946344,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "5470c5cec740f553.png",
+  "uids": [
+   "FOB2-0187-Q1",
+   "FOB2-0187-Q5",
+   "FOB2-0187-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0187/Endpoint_Q1_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/5470c5cec740f553.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0187/FOB2-0187-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0187",
+  "eye": 1.5235258044782825,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "a0baebf2fe2eb249.png",
+  "uids": [
+   "FOB2-0187-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0187/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/a0baebf2fe2eb249.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0187/FOB2-0187-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0187",
+  "eye": 1.5235258044782825,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "838da634badabffd.png",
+  "uids": [
+   "FOB2-0226-Q1",
+   "FOB2-0226-Q2",
+   "FOB2-0226-Q4",
+   "FOB2-0226-Q5",
+   "FOB2-0226-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0226/Endpoint_Q1_Q2_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/838da634badabffd.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0226/FOB2-0226-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0226",
+  "eye": 1.3682350947565354,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "a48d19bbc1c1b9f0.png",
+  "uids": [
+   "FOB2-0241-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0241/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/a48d19bbc1c1b9f0.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0241/FOB2-0241-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0241",
+  "eye": 1.3386102254452936,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "26629fad24d2ca8e.png",
+  "uids": [
+   "FOB2-0241-Q4",
+   "FOB2-0241-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0241/Endpoint_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/26629fad24d2ca8e.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0241/FOB2-0241-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0241",
+  "eye": 1.3386102254452936,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "c9076b3e64ba3564.png",
+  "uids": [
+   "FOB2-0251-Q1",
+   "FOB2-0251-Q4",
+   "FOB2-0251-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0251/Endpoint_Q1_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/c9076b3e64ba3564.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0251/FOB2-0251-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0251",
+  "eye": 1.352899896748255,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "f5a7f31c1584aa0c.png",
+  "uids": [
+   "FOB2-0269-Q1",
+   "FOB2-0269-Q4",
+   "FOB2-0269-Q5",
+   "FOB2-0269-Q6"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FOB2-0269/Endpoint_Q1_Q4_Q5_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0269/Endpoint_Q1_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/f5a7f31c1584aa0c.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FOB2-0269/FOB2-0269-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0269",
+  "eye": 1.5368831673310979,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "921cf7cfccbebe94.png",
+  "uids": [
+   "FOB2-0270-Q1",
+   "FOB2-0270-Q3",
+   "FOB2-0270-Q4",
+   "FOB2-0270-Q5",
+   "FOB2-0270-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0270/Endpoint_Q1_Q4_Q5_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0270/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/921cf7cfccbebe94.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0270/FOB2-0270-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0270",
+  "eye": 1.5564616878387483,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "9279a8aa5c0d6797.png",
+  "uids": [
+   "FOB2-0279-Q2",
+   "FOB2-0279-Q4",
+   "FOB2-0279-Q6"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FOB2-0279/Endpoint_Q2_Q4_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0279/Endpoint_Q2_Q4_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/9279a8aa5c0d6797.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FOB2-0279/FOB2-0279-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0279",
+  "eye": 1.394118626463758,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "78c43be7f8d4c941.png",
+  "uids": [
+   "FOB2-0279-Q3"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FOB2-0279/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0279/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/78c43be7f8d4c941.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FOB2-0279/FOB2-0279-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0279",
+  "eye": 1.394118626463758,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "0ae87cef1c7d8753.png",
+  "uids": [
+   "FOB2-0288-Q2"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FOB2-0288/Endpoint_Q2/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0288/Endpoint_Q2/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/0ae87cef1c7d8753.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FOB2-0288/FOB2-0288-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0288",
+  "eye": 1.6135568363228856,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "7a26e6f3adfc8ea1.png",
+  "uids": [
+   "FOB2-0288-Q3"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/packages/v4/FOB2-0288/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0288/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/7a26e6f3adfc8ea1.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v4/FOB2-0288/FOB2-0288-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0288",
+  "eye": 1.6135568363228856,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "958515acb6fc9a13.png",
+  "uids": [
+   "FOB2-0291-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0291/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/958515acb6fc9a13.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0291/FOB2-0291-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0291",
+  "eye": 1.245951884365013,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "cae102cf2ed81c78.png",
+  "uids": [
+   "FOB2-0291-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB2-0291/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/cae102cf2ed81c78.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB2-0291/FOB2-0291-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB2-0291",
+  "eye": 1.245951884365013,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "fd969d670653f9a7.png",
+  "uids": [
+   "FOB3-0002-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0002/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/fd969d670653f9a7.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0002/FOB3-0002-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0002",
+  "eye": 1.5652455696711698,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "8ed3283aea198989.png",
+  "uids": [
+   "FOB3-0004-Q1",
+   "FOB3-0004-Q4",
+   "FOB3-0004-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0004/Endpoint_Q1_Q4_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/8ed3283aea198989.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0004/FOB3-0004-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0004",
+  "eye": 1.4473621224497748,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "3839504c56638614.png",
+  "uids": [
+   "FOB3-0004-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0004/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/3839504c56638614.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0004/FOB3-0004-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0004",
+  "eye": 1.4473621224497748,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "7804c7370f0f5c74.png",
+  "uids": [
+   "FOB3-0009-Q1",
+   "FOB3-0009-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0009/Endpoint_Q1_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/7804c7370f0f5c74.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0009/FOB3-0009-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0009",
+  "eye": 1.1125150229366412,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "b94430a55242af4a.png",
+  "uids": [
+   "FOB3-0011-Q4"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0011/Endpoint_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/b94430a55242af4a.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0011/FOB3-0011-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0011",
+  "eye": 1.5027799533577806,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "be8af502899db7a6.png",
+  "uids": [
+   "FOB3-0011-Q5",
+   "FOB3-0011-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0011/Lookback_Q5/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0011/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/be8af502899db7a6.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0011/FOB3-0011-Q5.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0011",
+  "eye": 1.5027799533577806,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "cea206a1a4dc9aa4.png",
+  "uids": [
+   "FOB3-0012-Q6"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/variants/FOB3-0012__Endpoint_FOB3-0012-Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/cea206a1a4dc9aa4.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/plans/FOB3-0012__Endpoint_FOB3-0012-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0012",
+  "eye": 1.3696646625623288,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "8cb293acbcf7b55d.png",
+  "uids": [
+   "FOB3-0013-Q6",
+   "FOB3-0013-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0013/Endpoint_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/8cb293acbcf7b55d.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0013/FOB3-0013-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0013",
+  "eye": 1.5586281687429704,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "7fe4014d452eb255.png",
+  "uids": [
+   "FOB3-0017-Q4"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0017/Endpoint_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/7fe4014d452eb255.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0017/FOB3-0017-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0017",
+  "eye": 1.2148441197377906,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "03883d982acde086.png",
+  "uids": [
+   "FOB3-0019-Q1",
+   "FOB3-0019-Q4"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0019/Endpoint_Q1_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/03883d982acde086.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0019/FOB3-0019-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0019",
+  "eye": 1.4497515858144538,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "3852e1493377bfd2.png",
+  "uids": [
+   "FOB3-0019-Q3",
+   "FOB3-0019-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0019/Lookback_Q3_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/3852e1493377bfd2.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0019/FOB3-0019-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0019",
+  "eye": 1.4497515858144538,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "bbacfccccbe4a297.png",
+  "uids": [
+   "FOB3-0021-Q3",
+   "FOB3-0021-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0021/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0021/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/bbacfccccbe4a297.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0021/FOB3-0021-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0021",
+  "eye": 1.4130506351932866,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "da31b3c94a08c8ea.png",
+  "uids": [
+   "FOB3-0028-Q6",
+   "FOB3-0028-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0028/Endpoint_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/da31b3c94a08c8ea.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0028/FOB3-0028-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0028",
+  "eye": 1.3768657063344563,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "a213b965f588d251.png",
+  "uids": [
+   "FOB3-0030-Q1"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0030/Endpoint_Q1/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/a213b965f588d251.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0030/FOB3-0030-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0030",
+  "eye": 1.3553674021863742,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "64980a3d57eea69e.png",
+  "uids": [
+   "FOB3-0030-Q3",
+   "FOB3-0030-Q6",
+   "FOB3-0030-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0030/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0030/Lookback_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/64980a3d57eea69e.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0030/FOB3-0030-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0030",
+  "eye": 1.3553674021863742,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "b4c042682da3cadc.png",
+  "uids": [
+   "FOB3-0031-Q1",
+   "FOB3-0031-Q5",
+   "FOB3-0031-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0031/Endpoint_Q1_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/b4c042682da3cadc.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0031/FOB3-0031-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0031",
+  "eye": 1.4310107756902823,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ede71a9a1811532c.png",
+  "uids": [
+   "FOB3-0033-Q1",
+   "FOB3-0033-Q4",
+   "FOB3-0033-Q5",
+   "FOB3-0033-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0033/Endpoint_Q1_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ede71a9a1811532c.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0033/FOB3-0033-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0033",
+  "eye": 1.6909517691238847,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "e62e1af78f04336d.png",
+  "uids": [
+   "FOB3-0034-Q1",
+   "FOB3-0034-Q4",
+   "FOB3-0034-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0034/Endpoint_Q1_Q4_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/e62e1af78f04336d.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0034/FOB3-0034-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0034",
+  "eye": 1.5049738519469997,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "0046014883d9d145.png",
+  "uids": [
+   "FOB3-0037-Q2",
+   "FOB3-0037-Q5",
+   "FOB3-0037-Q6",
+   "FOB3-0037-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0037/Endpoint_Q2_Q5_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/0046014883d9d145.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0037/FOB3-0037-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0037",
+  "eye": 1.4317808782945534,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "74ad6ff4289cf973.png",
+  "uids": [
+   "FOB3-0038-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0038/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/74ad6ff4289cf973.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0038/FOB3-0038-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0038",
+  "eye": 1.3876359276321537,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "0d8d84b232e29fb1.png",
+  "uids": [
+   "FOB3-0038-Q4",
+   "FOB3-0038-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0038/Endpoint_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/0d8d84b232e29fb1.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0038/FOB3-0038-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0038",
+  "eye": 1.3876359276321537,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "335e96ff5fc6d4ac.png",
+  "uids": [
+   "FOB3-0041-Q4",
+   "FOB3-0041-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0041/Endpoint_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/335e96ff5fc6d4ac.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0041/FOB3-0041-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0041",
+  "eye": 1.6877524116969624,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "501c2ceaf6da59e9.png",
+  "uids": [
+   "FOB3-0046-Q4"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0046/Endpoint_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/501c2ceaf6da59e9.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0046/FOB3-0046-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0046",
+  "eye": 1.0646247793443564,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "04af028cf89fd4f5.png",
+  "uids": [
+   "FOB3-0051-Q1",
+   "FOB3-0051-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0051/Endpoint_Q1_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/04af028cf89fd4f5.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0051/FOB3-0051-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0051",
+  "eye": 1.3208059390732885,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "c6d7d64b0079a9a9.png",
+  "uids": [
+   "FOB3-0051-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0051/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/c6d7d64b0079a9a9.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0051/FOB3-0051-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0051",
+  "eye": 1.3208059390732885,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "9e5c90df65d5995f.png",
+  "uids": [
+   "FOB3-0053-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0053/Endpoint_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/9e5c90df65d5995f.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0053/FOB3-0053-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0053",
+  "eye": 1.4042539567147259,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ddae6f3d65a3f53f.png",
+  "uids": [
+   "FOB3-0056-Q1",
+   "FOB3-0056-Q4"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0056/Endpoint_Q1_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ddae6f3d65a3f53f.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0056/FOB3-0056-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0056",
+  "eye": 1.6234346103749289,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "12255729f069cd52.png",
+  "uids": [
+   "FOB3-0057-Q4",
+   "FOB3-0057-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0057/Endpoint_Q4_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/12255729f069cd52.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0057/FOB3-0057-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0057",
+  "eye": 1.5665591942494927,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "c718bf07c312ce5e.png",
+  "uids": [
+   "FOB3-0059-Q1",
+   "FOB3-0059-Q2",
+   "FOB3-0059-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0059/Endpoint_Q1_Q2_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/c718bf07c312ce5e.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0059/FOB3-0059-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0059",
+  "eye": 1.5693412142024101,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "9dcbab98e9e0582e.png",
+  "uids": [
+   "FOB3-0061-Q1"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0061/Endpoint_Q1/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/9dcbab98e9e0582e.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0061/FOB3-0061-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0061",
+  "eye": 1.3449975055586982,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "108a41ca9a527480.png",
+  "uids": [
+   "FOB3-0061-Q3",
+   "FOB3-0061-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0061/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0061/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/108a41ca9a527480.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0061/FOB3-0061-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0061",
+  "eye": 1.3449975055586982,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ad4f615eb4feb36b.png",
+  "uids": [
+   "FOB3-0069-Q1",
+   "FOB3-0069-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0069/Endpoint_Q1_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ad4f615eb4feb36b.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0069/FOB3-0069-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0069",
+  "eye": 1.5070449459557835,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "6e8385338b948c5a.png",
+  "uids": [
+   "FOB3-0069-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0069/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/6e8385338b948c5a.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0069/FOB3-0069-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0069",
+  "eye": 1.5070449459557835,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "6e11570566e3b00c.png",
+  "uids": [
+   "FOB3-0071-Q3",
+   "FOB3-0071-Q4",
+   "FOB3-0071-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0071/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0071/Lookback_Q4_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/6e11570566e3b00c.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0071/FOB3-0071-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0071",
+  "eye": 1.4201661124484417,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "9601f8024b5c7633.png",
+  "uids": [
+   "FOB3-0072-Q1",
+   "FOB3-0072-Q4",
+   "FOB3-0072-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0072/Endpoint_Q1_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/9601f8024b5c7633.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0072/FOB3-0072-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0072",
+  "eye": 1.4622559240664685,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "a9670837b65a22c7.png",
+  "uids": [
+   "FOB3-0072-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0072/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/a9670837b65a22c7.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0072/FOB3-0072-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0072",
+  "eye": 1.4622559240664685,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "30f8dd886253fab8.png",
+  "uids": [
+   "FOB3-0077-Q1",
+   "FOB3-0077-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0077/Endpoint_Q1_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/30f8dd886253fab8.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0077/FOB3-0077-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0077",
+  "eye": 1.7882055402108108,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "2ebb1c0132d75973.png",
+  "uids": [
+   "FOB3-0079-Q1",
+   "FOB3-0079-Q2",
+   "FOB3-0079-Q4",
+   "FOB3-0079-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0079/Endpoint_Q1_Q2_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/2ebb1c0132d75973.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0079/FOB3-0079-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0079",
+  "eye": 1.383739320955101,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "866b4948529b03be.png",
+  "uids": [
+   "FOB3-0079-Q3",
+   "FOB3-0079-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0079/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0079/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/866b4948529b03be.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0079/FOB3-0079-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0079",
+  "eye": 1.383739320955101,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "86da5d4c0b31026e.png",
+  "uids": [
+   "FOB3-0081-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0081/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/86da5d4c0b31026e.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0081/FOB3-0081-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0081",
+  "eye": 1.2843208341193844,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "fc2392d8de816998.png",
+  "uids": [
+   "FOB3-0081-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0081/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/fc2392d8de816998.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0081/FOB3-0081-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0081",
+  "eye": 1.2843208341193844,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "6de225dbe71fde52.png",
+  "uids": [
+   "FOB3-0094-Q4"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0094/Endpoint_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/6de225dbe71fde52.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0094/FOB3-0094-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0094",
+  "eye": 1.6438747529575721,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "45e2315e100d2242.png",
+  "uids": [
+   "FOB3-0096-Q1",
+   "FOB3-0096-Q4"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0096/Endpoint_Q1_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/45e2315e100d2242.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0096/FOB3-0096-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0096",
+  "eye": 1.333400416904766,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "8db8bd77978ad6cf.png",
+  "uids": [
+   "FOB3-0096-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0096/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/8db8bd77978ad6cf.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0096/FOB3-0096-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0096",
+  "eye": 1.333400416904766,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "08ccb81e9ad4d282.png",
+  "uids": [
+   "FOB3-0098-Q4",
+   "FOB3-0098-Q5",
+   "FOB3-0098-Q6",
+   "FOB3-0098-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0098/Endpoint_Q4_Q5_Q6/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/variants/FOB3-0098__Endpoint_FOB3-0098-Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/08ccb81e9ad4d282.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0098/FOB3-0098-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0098",
+  "eye": 1.3440322142704133,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "d557fac6b065d544.png",
+  "uids": [
+   "FOB3-0116-Q6"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/variants/FOB3-0116__Endpoint_FOB3-0116-Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/d557fac6b065d544.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/plans/FOB3-0116__Endpoint_FOB3-0116-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0116",
+  "eye": 1.2718625385806206,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "0df63be399a46afe.png",
+  "uids": [
+   "FOB3-0116-Q7"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/variants/FOB3-0116__Endpoint_FOB3-0116-Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/0df63be399a46afe.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/plans/FOB3-0116__Endpoint_FOB3-0116-Q7.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0116",
+  "eye": 1.2718625385806206,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "90c6e4593cc8b6b6.png",
+  "uids": [
+   "FOB3-0126-Q3",
+   "FOB3-0126-Q5",
+   "FOB3-0126-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0126/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0126/Lookback_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/90c6e4593cc8b6b6.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0126/FOB3-0126-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0126",
+  "eye": 1.3151916179674998,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "59e3dad8276a642a.png",
+  "uids": [
+   "FOB3-0126-Q4",
+   "FOB3-0126-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0126/Endpoint_Q4_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/59e3dad8276a642a.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0126/FOB3-0126-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0126",
+  "eye": 1.3151916179674998,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "e393df83469fac51.png",
+  "uids": [
+   "FOB3-0127-Q1",
+   "FOB3-0127-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0127/Lookback_Q1_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/e393df83469fac51.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0127/FOB3-0127-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0127",
+  "eye": 1.3418273254635693,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "07a11ee1ed4b27c9.png",
+  "uids": [
+   "FOB3-0139-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0139/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/07a11ee1ed4b27c9.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0139/FOB3-0139-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0139",
+  "eye": 1.4561993974954532,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "2fe88a929b1cbd6c.png",
+  "uids": [
+   "FOB3-0139-Q4",
+   "FOB3-0139-Q5",
+   "FOB3-0139-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0139/Endpoint_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/2fe88a929b1cbd6c.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0139/FOB3-0139-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0139",
+  "eye": 1.4561993974954532,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "1473c835d3cd9390.png",
+  "uids": [
+   "FOB3-0143-Q2"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0143/Endpoint_Q2/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/1473c835d3cd9390.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0143/FOB3-0143-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0143",
+  "eye": 1.3897964179482187,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "eb34f5502668a4d0.png",
+  "uids": [
+   "FOB3-0143-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0143/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/eb34f5502668a4d0.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0143/FOB3-0143-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0143",
+  "eye": 1.3897964179482187,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "24dc608246c91875.png",
+  "uids": [
+   "FOB3-0146-Q1",
+   "FOB3-0146-Q5",
+   "FOB3-0146-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0146/Endpoint_Q1_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/24dc608246c91875.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0146/FOB3-0146-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0146",
+  "eye": 1.0646247793443564,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "0f2c262f6fb8353c.png",
+  "uids": [
+   "FOB3-0146-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0146/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/0f2c262f6fb8353c.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0146/FOB3-0146-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0146",
+  "eye": 1.0646247793443564,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "f35d48646da13439.png",
+  "uids": [
+   "FOB3-0149-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0149/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/f35d48646da13439.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0149/FOB3-0149-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0149",
+  "eye": 1.3607858733676856,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "bf25cc7445251e27.png",
+  "uids": [
+   "FOB3-0161-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0161/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/bf25cc7445251e27.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0161/FOB3-0161-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0161",
+  "eye": 1.4727693605543521,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "5ba1204b3e8d4fff.png",
+  "uids": [
+   "FOB3-0161-Q4",
+   "FOB3-0161-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0161/Endpoint_Q4_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/5ba1204b3e8d4fff.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0161/FOB3-0161-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0161",
+  "eye": 1.4727693605543521,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "beb1dcd3a0c1f5fa.png",
+  "uids": [
+   "FOB3-0173-Q4",
+   "FOB3-0173-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0173/Endpoint_Q4_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/beb1dcd3a0c1f5fa.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0173/FOB3-0173-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0173",
+  "eye": 1.6670913947930543,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "3807edf5e1322592.png",
+  "uids": [
+   "FOB3-0176-Q4",
+   "FOB3-0176-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0176/Endpoint_Q4_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/3807edf5e1322592.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0176/FOB3-0176-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0176",
+  "eye": 1.6426090503715685,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "da119ed5d4187ebc.png",
+  "uids": [
+   "FOB3-0181-Q2",
+   "FOB3-0181-Q3",
+   "FOB3-0181-Q4",
+   "FOB3-0181-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0181/Endpoint_Q2_Q4_Q7/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0181/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/da119ed5d4187ebc.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0181/FOB3-0181-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0181",
+  "eye": 1.3556767675709125,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "2068c242bc17dde0.png",
+  "uids": [
+   "FOB3-0182-Q4",
+   "FOB3-0182-Q5",
+   "FOB3-0182-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0182/Endpoint_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/2068c242bc17dde0.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0182/FOB3-0182-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0182",
+  "eye": 1.2204287106609257,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "a351e1e68e0143db.png",
+  "uids": [
+   "FOB3-0183-Q1",
+   "FOB3-0183-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0183/Endpoint_Q1_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/a351e1e68e0143db.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0183/FOB3-0183-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0183",
+  "eye": 1.5245349214256265,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "042ab389112ca376.png",
+  "uids": [
+   "FOB3-0183-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0183/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/042ab389112ca376.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0183/FOB3-0183-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0183",
+  "eye": 1.5245349214256265,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "27fae2145609896f.png",
+  "uids": [
+   "FOB3-0191-Q1",
+   "FOB3-0191-Q4",
+   "FOB3-0191-Q5",
+   "FOB3-0191-Q6",
+   "FOB3-0191-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0191/Endpoint_Q1_Q4_Q5_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/27fae2145609896f.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0191/FOB3-0191-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0191",
+  "eye": 1.566763404660037,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "94f3063c605cb498.png",
+  "uids": [
+   "FOB3-0196-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB3-0196/Endpoint_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/94f3063c605cb498.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB3-0196/FOB3-0196-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB3-0196",
+  "eye": 1.4371275867068505,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "bc469716dc954250.png",
+  "uids": [
+   "FOB4-0002-Q4"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0002/Endpoint_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/bc469716dc954250.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0002/FOB4-0002-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0002",
+  "eye": 0.8720514212689281,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "a2275286febbd8ac.png",
+  "uids": [
+   "FOB4-0006-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0006/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/a2275286febbd8ac.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0006/FOB4-0006-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0006",
+  "eye": 1.3557681085262274,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "b81f1c3f84fd3cd5.png",
+  "uids": [
+   "FOB4-0021-Q3",
+   "FOB4-0021-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0021/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0021/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/b81f1c3f84fd3cd5.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0021/FOB4-0021-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0021",
+  "eye": 1.1864676407592043,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "eff7969abcdfcd5e.png",
+  "uids": [
+   "FOB4-0022-Q4",
+   "FOB4-0022-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0022/Endpoint_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/eff7969abcdfcd5e.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0022/FOB4-0022-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0022",
+  "eye": 1.4611225787078865,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "99e8bc25d33e5471.png",
+  "uids": [
+   "FOB4-0027-Q1",
+   "FOB4-0027-Q2"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0027/Endpoint_Q1_Q2/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/99e8bc25d33e5471.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0027/FOB4-0027-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0027",
+  "eye": 1.6035378155583686,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "244c9a5be2478c20.png",
+  "uids": [
+   "FOB4-0030-Q1",
+   "FOB4-0030-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0030/Lookback_Q1_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/244c9a5be2478c20.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0030/FOB4-0030-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0030",
+  "eye": 1.280772877792998,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "cf70c6dcf8f18bc3.png",
+  "uids": [
+   "FOB4-0033-Q4",
+   "FOB4-0033-Q5",
+   "FOB4-0033-Q6",
+   "FOB4-0033-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0033/Lookback_Q4_Q5_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/cf70c6dcf8f18bc3.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0033/FOB4-0033-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0033",
+  "eye": 1.1898159402259978,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "b8d20f7596958bcd.png",
+  "uids": [
+   "FOB4-0035-Q1",
+   "FOB4-0035-Q2",
+   "FOB4-0035-Q4",
+   "FOB4-0035-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0035/Lookback_Q1_Q2_Q4_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/b8d20f7596958bcd.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0035/FOB4-0035-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0035",
+  "eye": 1.465011344071634,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "5795d70fee0b4664.png",
+  "uids": [
+   "FOB4-0041-Q1",
+   "FOB4-0041-Q3",
+   "FOB4-0041-Q4",
+   "FOB4-0041-Q5",
+   "FOB4-0041-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0041/Lookback_Q1_Q4_Q5_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0041/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/5795d70fee0b4664.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0041/FOB4-0041-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0041",
+  "eye": 1.409362523565708,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "e273884d373be5ff.png",
+  "uids": [
+   "FOB4-0044-Q3",
+   "FOB4-0044-Q4",
+   "FOB4-0044-Q5",
+   "FOB4-0044-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0044/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0044/Lookback_Q4_Q5_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/e273884d373be5ff.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0044/FOB4-0044-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0044",
+  "eye": 1.3606700522666237,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "e418767463ff11fc.png",
+  "uids": [
+   "FOB4-0047-Q3",
+   "FOB4-0047-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0047/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0047/Endpoint_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/e418767463ff11fc.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0047/FOB4-0047-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0047",
+  "eye": 1.6747220512635153,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "813d78eabea1ba71.png",
+  "uids": [
+   "FOB4-0056-Q1",
+   "FOB4-0056-Q6",
+   "FOB4-0056-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0056/Lookback_Q1_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/813d78eabea1ba71.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0056/FOB4-0056-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0056",
+  "eye": 1.416696381342522,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "93d947de40e338b4.png",
+  "uids": [
+   "FOB4-0057-Q1",
+   "FOB4-0057-Q3",
+   "FOB4-0057-Q4",
+   "FOB4-0057-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0057/Endpoint_Q1_Q4_Q5/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0057/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/93d947de40e338b4.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0057/FOB4-0057-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0057",
+  "eye": 1.7624736975355972,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "619528778313cfc3.png",
+  "uids": [
+   "FOB4-0064-Q3",
+   "FOB4-0064-Q5",
+   "FOB4-0064-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0064/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0064/Lookback_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/619528778313cfc3.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0064/FOB4-0064-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0064",
+  "eye": 1.382752389148635,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "8903b27372086201.png",
+  "uids": [
+   "FOB4-0065-Q3",
+   "FOB4-0065-Q4",
+   "FOB4-0065-Q6",
+   "FOB4-0065-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0065/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0065/Lookback_Q4_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/8903b27372086201.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0065/FOB4-0065-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0065",
+  "eye": 1.3267395566433322,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "c832d61a6c2d7bfd.png",
+  "uids": [
+   "FOB4-0066-Q1",
+   "FOB4-0066-Q4",
+   "FOB4-0066-Q5",
+   "FOB4-0066-Q6",
+   "FOB4-0066-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0066/Endpoint_Q1_Q4_Q5_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/c832d61a6c2d7bfd.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0066/FOB4-0066-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0066",
+  "eye": 1.224265020423445,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "05900429adabce04.png",
+  "uids": [
+   "FOB4-0066-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0066/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/05900429adabce04.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0066/FOB4-0066-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0066",
+  "eye": 1.224265020423445,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "086c65ddbce923d9.png",
+  "uids": [
+   "FOB4-0067-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0067/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/086c65ddbce923d9.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0067/FOB4-0067-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0067",
+  "eye": 1.382696310870685,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "a872f88b1b1d919a.png",
+  "uids": [
+   "FOB4-0067-Q6",
+   "FOB4-0067-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0067/Endpoint_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/a872f88b1b1d919a.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0067/FOB4-0067-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0067",
+  "eye": 1.382696310870685,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "8a8138a3ca922f14.png",
+  "uids": [
+   "FOB4-0069-Q4",
+   "FOB4-0069-Q6",
+   "FOB4-0069-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0069/Endpoint_Q4_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/8a8138a3ca922f14.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0069/FOB4-0069-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0069",
+  "eye": 1.2709765486465656,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "9560e631f336d2e2.png",
+  "uids": [
+   "FOB4-0084-Q2",
+   "FOB4-0084-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0084/Lookback_Q2/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0084/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/9560e631f336d2e2.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0084/FOB4-0084-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0084",
+  "eye": 1.5111980692199722,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "494bf782098f0818.png",
+  "uids": [
+   "FOB4-0092-Q3",
+   "FOB4-0092-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0092/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0092/Lookback_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/494bf782098f0818.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0092/FOB4-0092-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0092",
+  "eye": 1.4011635433118528,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "41edd37719229e95.png",
+  "uids": [
+   "FOB4-0096-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0096/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/41edd37719229e95.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0096/FOB4-0096-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0096",
+  "eye": 1.4396698388098272,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "7596920e92792aeb.png",
+  "uids": [
+   "FOB4-0096-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0096/Endpoint_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/7596920e92792aeb.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0096/FOB4-0096-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0096",
+  "eye": 1.4396698388098272,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "380b9a26e0fa8fdb.png",
+  "uids": [
+   "FOB4-0099-Q1",
+   "FOB4-0099-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0099/Endpoint_Q1_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/380b9a26e0fa8fdb.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0099/FOB4-0099-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0099",
+  "eye": 1.3011219431042242,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ba03506caf11ad58.png",
+  "uids": [
+   "FOB4-0102-Q3",
+   "FOB4-0102-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0102/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0102/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ba03506caf11ad58.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0102/FOB4-0102-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0102",
+  "eye": 1.0021939964130588,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "471b9a288507e1ef.png",
+  "uids": [
+   "FOB4-0102-Q4",
+   "FOB4-0102-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0102/Endpoint_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/471b9a288507e1ef.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0102/FOB4-0102-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0102",
+  "eye": 1.0021939964130588,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "08e27e3ea8217fc0.png",
+  "uids": [
+   "FOB4-0112-Q1",
+   "FOB4-0112-Q2"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0112/Endpoint_Q1_Q2/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/08e27e3ea8217fc0.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0112/FOB4-0112-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0112",
+  "eye": 1.1715541481081004,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "917e295ace5ac4f1.png",
+  "uids": [
+   "FOB4-0112-Q3",
+   "FOB4-0112-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0112/Lookback_Q3_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/917e295ace5ac4f1.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0112/FOB4-0112-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0112",
+  "eye": 1.1715541481081004,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "fc241af262d81cba.png",
+  "uids": [
+   "FOB4-0118-Q6",
+   "FOB4-0118-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0118/Lookback_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/fc241af262d81cba.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0118/FOB4-0118-Q6.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0118",
+  "eye": 1.177279432750879,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "fa6971afee2eef0f.png",
+  "uids": [
+   "FOB4-0126-Q3",
+   "FOB4-0126-Q4",
+   "FOB4-0126-Q5",
+   "FOB4-0126-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0126/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0126/Lookback_Q4_Q5_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/fa6971afee2eef0f.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0126/FOB4-0126-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0126",
+  "eye": 1.1542746538196695,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "d5fb525aa941b5a9.png",
+  "uids": [
+   "FOB4-0132-Q1",
+   "FOB4-0132-Q5",
+   "FOB4-0132-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0132/Endpoint_Q1_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/d5fb525aa941b5a9.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0132/FOB4-0132-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0132",
+  "eye": 1.57280063427973,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "fc40fbfa2115bc0b.png",
+  "uids": [
+   "FOB4-0135-Q4"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0135/Endpoint_Q4/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/fc40fbfa2115bc0b.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0135/FOB4-0135-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0135",
+  "eye": 1.6833004412108892,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "0e4f3f0b7e363e25.png",
+  "uids": [
+   "FOB4-0136-Q1",
+   "FOB4-0136-Q2",
+   "FOB4-0136-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0136/Endpoint_Q1_Q2_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/0e4f3f0b7e363e25.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0136/FOB4-0136-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0136",
+  "eye": 1.9184031033895792,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "2b86fb0e61aa8155.png",
+  "uids": [
+   "FOB4-0140-Q2",
+   "FOB4-0140-Q4",
+   "FOB4-0140-Q5",
+   "FOB4-0140-Q6",
+   "FOB4-0140-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0140/Endpoint_Q2_Q4_Q5_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/2b86fb0e61aa8155.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0140/FOB4-0140-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0140",
+  "eye": 2.0482753264271167,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "bfea51bb5796a8d8.png",
+  "uids": [
+   "FOB4-0142-Q1",
+   "FOB4-0142-Q5",
+   "FOB4-0142-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0142/Endpoint_Q1_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/bfea51bb5796a8d8.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0142/FOB4-0142-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0142",
+  "eye": 1.1959572191465924,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "2a0bb58d7480c83d.png",
+  "uids": [
+   "FOB4-0146-Q1",
+   "FOB4-0146-Q3",
+   "FOB4-0146-Q4",
+   "FOB4-0146-Q5",
+   "FOB4-0146-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0146/Lookback_Q1_Q4_Q5_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0146/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/2a0bb58d7480c83d.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0146/FOB4-0146-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0146",
+  "eye": 1.2160659474753288,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ef7805c826d37369.png",
+  "uids": [
+   "FOB4-0154-Q1",
+   "FOB4-0154-Q4",
+   "FOB4-0154-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0154/Endpoint_Q1_Q4_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ef7805c826d37369.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0154/FOB4-0154-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0154",
+  "eye": 1.4951784549536562,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "b551718621150213.png",
+  "uids": [
+   "FOB4-0154-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0154/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/b551718621150213.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0154/FOB4-0154-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0154",
+  "eye": 1.4951784549536562,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ec2e9e9dff1e282c.png",
+  "uids": [
+   "FOB4-0156-Q1",
+   "FOB4-0156-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0156/Endpoint_Q1_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ec2e9e9dff1e282c.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0156/FOB4-0156-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0156",
+  "eye": 1.402798983496723,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "55496d386ae6e6f3.png",
+  "uids": [
+   "FOB4-0157-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0157/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/55496d386ae6e6f3.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0157/FOB4-0157-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0157",
+  "eye": 1.4835153452348493,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "d18e3a896a0a5fda.png",
+  "uids": [
+   "FOB4-0157-Q4",
+   "FOB4-0157-Q5",
+   "FOB4-0157-Q6",
+   "FOB4-0157-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0157/Endpoint_Q4_Q5_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/d18e3a896a0a5fda.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0157/FOB4-0157-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0157",
+  "eye": 1.4835153452348493,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ef21562de0bf0c7c.png",
+  "uids": [
+   "FOB4-0158-Q1",
+   "FOB4-0158-Q2",
+   "FOB4-0158-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0158/Endpoint_Q1_Q2_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ef21562de0bf0c7c.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0158/FOB4-0158-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0158",
+  "eye": 1.788263218619477,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "863c8eb347fc353b.png",
+  "uids": [
+   "FOB4-0166-Q1",
+   "FOB4-0166-Q2",
+   "FOB4-0166-Q6",
+   "FOB4-0166-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0166/Endpoint_Q1_Q2_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/863c8eb347fc353b.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0166/FOB4-0166-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0166",
+  "eye": 1.5567491181352722,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "8d3d09c8cabfd206.png",
+  "uids": [
+   "FOB4-0166-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0166/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/8d3d09c8cabfd206.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0166/FOB4-0166-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0166",
+  "eye": 1.5567491181352722,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "0e372501dd9acd69.png",
+  "uids": [
+   "FOB4-0167-Q1",
+   "FOB4-0167-Q4",
+   "FOB4-0167-Q5",
+   "FOB4-0167-Q6",
+   "FOB4-0167-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0167/Endpoint_Q1_Q4_Q5_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/0e372501dd9acd69.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0167/FOB4-0167-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0167",
+  "eye": 1.6163042288713143,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "432bd470d136334e.png",
+  "uids": [
+   "FOB4-0171-Q1",
+   "FOB4-0171-Q4",
+   "FOB4-0171-Q5",
+   "FOB4-0171-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0171/Endpoint_Q1_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/432bd470d136334e.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0171/FOB4-0171-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0171",
+  "eye": 1.4120482058789037,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "49d73e1dbdf06c6a.png",
+  "uids": [
+   "FOB4-0172-Q1",
+   "FOB4-0172-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0172/Lookback_Q1_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/49d73e1dbdf06c6a.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0172/FOB4-0172-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0172",
+  "eye": 1.589563311936523,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "05727f4c6d0b093d.png",
+  "uids": [
+   "FOB4-0173-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0173/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0173/Lookback_Q4_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/05727f4c6d0b093d.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0173/FOB4-0173-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0173",
+  "eye": 1.5134363960433745,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "e3fe21a5c0826b08.png",
+  "uids": [
+   "FOB4-0173-Q4",
+   "FOB4-0173-Q6",
+   "FOB4-0173-Q7"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/variants/FOB4-0173__Endpoint_FOB4-0173-Q4/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/variants/FOB4-0173__Endpoint_FOB4-0173-Q6/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/variants/FOB4-0173__Endpoint_FOB4-0173-Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/e3fe21a5c0826b08.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/plans/FOB4-0173__Endpoint_FOB4-0173-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0173",
+  "eye": 1.5134363960433745,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "8af0efeb53fff912.png",
+  "uids": [
+   "FOB4-0180-Q2",
+   "FOB4-0180-Q4",
+   "FOB4-0180-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0180/Endpoint_Q2_Q4_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/8af0efeb53fff912.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0180/FOB4-0180-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0180",
+  "eye": 2.3436706420686306,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "5125c7911bb4bfa1.png",
+  "uids": [
+   "FOB4-0192-Q3",
+   "FOB4-0192-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0192/Lookback_Q3/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0192/Lookback_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/5125c7911bb4bfa1.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0192/FOB4-0192-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0192",
+  "eye": 1.3822380447127145,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "4a1daf8ab50b4da4.png",
+  "uids": [
+   "FOB4-0196-Q1",
+   "FOB4-0196-Q2",
+   "FOB4-0196-Q3",
+   "FOB4-0196-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0196/Lookback_Q1_Q2_Q6/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0196/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/4a1daf8ab50b4da4.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0196/FOB4-0196-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0196",
+  "eye": 1.399392975099314,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ea89e1b0f5b97b4d.png",
+  "uids": [
+   "FOB4-0198-Q1",
+   "FOB4-0198-Q5",
+   "FOB4-0198-Q6",
+   "FOB4-0198-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0198/Endpoint_Q1_Q5_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ea89e1b0f5b97b4d.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0198/FOB4-0198-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0198",
+  "eye": 1.4870400322159156,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "7fd74905008d15e5.png",
+  "uids": [
+   "FOB4-0198-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0198/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/7fd74905008d15e5.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0198/FOB4-0198-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0198",
+  "eye": 1.4870400322159156,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "68ee4c8e619394d1.png",
+  "uids": [
+   "FOB4-0200-Q1",
+   "FOB4-0200-Q2",
+   "FOB4-0200-Q5",
+   "FOB4-0200-Q6",
+   "FOB4-0200-Q7"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0200/Endpoint_Q1_Q2_Q5_Q6_Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/68ee4c8e619394d1.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0200/FOB4-0200-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0200",
+  "eye": 1.4459801556483072,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "fa446b753ccb8cdb.png",
+  "uids": [
+   "FOB4-0212-Q1",
+   "FOB4-0212-Q4",
+   "FOB4-0212-Q5",
+   "FOB4-0212-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0212/Endpoint_Q1_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/fa446b753ccb8cdb.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0212/FOB4-0212-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0212",
+  "eye": 1.5023168248423922,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "ab7aaf20df3031fc.png",
+  "uids": [
+   "FOB4-0214-Q1",
+   "FOB4-0214-Q4",
+   "FOB4-0214-Q5"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0214/Endpoint_Q1_Q4_Q5/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/ab7aaf20df3031fc.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0214/FOB4-0214-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0214",
+  "eye": 1.4074798623371976,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "c54514e6f4c13b39.png",
+  "uids": [
+   "FOB4-0217-Q2",
+   "FOB4-0217-Q4",
+   "FOB4-0217-Q5",
+   "FOB4-0217-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0217/Endpoint_Q2_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/c54514e6f4c13b39.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0217/FOB4-0217-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0217",
+  "eye": 1.382752389148635,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "b612761c92e5bc15.png",
+  "uids": [
+   "FOB4-0218-Q2",
+   "FOB4-0218-Q6",
+   "FOB4-0218-Q7"
+  ],
+  "package_topdowns": [
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/variants/FOB4-0218__Endpoint_FOB4-0218-Q2/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/variants/FOB4-0218__Endpoint_FOB4-0218-Q6/Topdown.png",
+   "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/variants/FOB4-0218__Endpoint_FOB4-0218-Q7/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/b612761c92e5bc15.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/fo_estimated_622_v5_20261005/plans/FOB4-0218__Endpoint_FOB4-0218-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0218",
+  "eye": 1.5267483854861439,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "789afc8af3463962.png",
+  "uids": [
+   "FOB4-0218-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0218/Endpoint_Q2_Q6_Q7/Topdown.png",
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0218/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/789afc8af3463962.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0218/FOB4-0218-Q2.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0218",
+  "eye": 1.5267483854861439,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "3fbf4836fb8b0b91.png",
+  "uids": [
+   "FOB4-0222-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0222/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/3fbf4836fb8b0b91.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0222/FOB4-0222-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0222",
+  "eye": 1.4318155200162437,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "c668370efa209b0b.png",
+  "uids": [
+   "FOB4-0222-Q4",
+   "FOB4-0222-Q5",
+   "FOB4-0222-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0222/Endpoint_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/c668370efa209b0b.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0222/FOB4-0222-Q4.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0222",
+  "eye": 1.4318155200162437,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "4d581fab8f05dce9.png",
+  "uids": [
+   "FOB4-0227-Q1",
+   "FOB4-0227-Q2",
+   "FOB4-0227-Q4",
+   "FOB4-0227-Q5",
+   "FOB4-0227-Q6"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0227/Endpoint_Q1_Q2_Q4_Q5_Q6/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/4d581fab8f05dce9.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0227/FOB4-0227-Q1.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0227",
+  "eye": 1.502522467369488,
+  "plan_exists": true,
+  "scene_exists": true
+ },
+ {
+  "asset": "04ac07e10433fa44.png",
+  "uids": [
+   "FOB4-0227-Q3"
+  ],
+  "package_topdowns": [
+   "03_estimated_viewpoint_gpt61sol/estimated_assets/hyworld_v5_packages/FOB4-0227/Lookback_Q3/Topdown.png"
+  ],
+  "ref": "03_estimated_viewpoint_gpt61sol/estimated_assets/request_source/assets/04ac07e10433fa44.png",
+  "plan": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_nav_pilot_20261002/plans/v5/FOB4-0227/FOB4-0227-Q3.json",
+  "scene": "<external>/hyworld2_nlp26_full_20261001/outputs/hy_latest_scenes_20261002/FOB4-0227",
+  "eye": 1.502522467369488,
+  "plan_exists": true,
+  "scene_exists": true
+ }
+]

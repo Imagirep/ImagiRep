@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB3-0146-Q1",
+  "motion_text": "I slightly turn left and walk near the left side of the dining table, facing the direction I go.",
+  "view_variant": "endpoint",
+  "frames": 72,
+  "fps": 12,
+  "total_distance_m": 2.6723587143698713,
+  "depth_display_range_scene_units": [
+    1.0288899517059327,
+    5.889575643539429
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.0030890562773656,
+    "far_m": 5.741886063088528
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.0646247793443564 m over generated floor distance",
+  "m_per_unit": 1.685096025466919,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 19.214584350585938
+}

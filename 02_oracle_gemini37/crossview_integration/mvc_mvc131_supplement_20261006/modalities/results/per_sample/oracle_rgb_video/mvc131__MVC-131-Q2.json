@@ -1,0 +1,52 @@
+{
+  "uid": "mvc131__MVC-131-Q2",
+  "cohort": "mvc131",
+  "question_id": "MVC-131-Q2",
+  "resource_id": "MVC-131",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from wooden box in Image 2?",
+  "answer_choices": {
+    "A": "window",
+    "B": "green potted plant",
+    "C": "gray door",
+    "D": "mirror"
+  },
+  "gold_answer": "D",
+  "prediction": "C",
+  "correct": false,
+  "signature": "add0fc38db4787f4e8aa951d7a2a8f76dfbb50e55486714e2baf265931255ca1",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-131\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7887,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 285
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1018,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8906,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 6.613012300003902,
+  "completed_at": "2026-10-06T19:41:57-04:00"
+}

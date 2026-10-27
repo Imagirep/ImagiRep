@@ -1,0 +1,158 @@
+{
+  "row_index": 73,
+  "question_id": "FOB4-0126-Q5",
+  "trajectory_id": "FOB4-0126",
+  "scan_id": "sT4fr6TAbpF",
+  "route_variant": "new_straight",
+  "question_type": 5,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "final_image_kind": "lookback",
+  "question": "If I walk to the open doorway, then turn to face my starting point, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "C": "tv",
+    "A": "bed",
+    "B": "white chair",
+    "D": "white stool"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "tv",
+    "B": "white stool",
+    "C": "bed",
+    "D": "white chair"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "C": "A",
+    "A": "C",
+    "B": "D",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0126\\start_view.png",
+      "sha256": "3f320142dba42a842cfd9449f9d644beaddb763ba74ba403112b3f33292542ba"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0126\\step_01_rgb.png",
+      "sha256": "79d35833de1a80fff6014b9df63ba79348f0c2429b69af676d5aa688329f9d0f"
+    },
+    {
+      "label": "Step 2",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0126\\step_02_rgb.png",
+      "sha256": "6660dc3465ac15d8a3b94e1ce8a1dae70600c31f5599b318689ac1c5a97c19b2"
+    },
+    {
+      "label": "Step 3 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0126\\step_03_rgb.png",
+      "sha256": "6cd307a3fb6b5c170f9f73d8304e424c1ff996d113eac11c9c13aadbddeadcbd"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0126\\oracle_lookback.png",
+      "sha256": "186451608e335cba6d3a3506dd5a65f500fab0f7e237b2b7bb2414ac45f43cea"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "category": "farthest_object",
+  "category_label": "Farthest object",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0126\\oracle_lookback_depth.png",
+      "sha256": "c2fea21565e3028a3b8aae6aeda73d1ab180d800fe7fd155fc9295513ef4166a",
+      "color_scale": {
+        "near_m": 1.47775,
+        "far_m": 7.51725
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0126\\oracle_lookback_surface_normals.png",
+      "sha256": "898d82ee671d82f33e916eb51d3dbdbbce852f83067b868288129ad2c834850b"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0126\\oracle_lookback_panorama.png",
+      "sha256": "c275739e6b2baad8ceb53e32ddb6a468e710bcd545904ac3e90de0862f2b72b7"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0126\\topdown_lookback_with_path.png",
+      "sha256": "726f83f79f46a97d77a5d082cb87828c4158854c1c2483a864a350266696a4c4"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0126\\trajectory_lookback.txt",
+      "sha256": "f7030d25be8f31f1ced8e76a50bfe43fc248828e1789d79a9fada81fb64ca6bb"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0126\\trajectory_lookback.mp4",
+      "sha256": "149f1d248becc225db4c7a8e287a64bc11bc03c9ed24485c799c24336ecd5d86"
+    }
+  },
+  "condition": "start_final_panorama",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT PANORAMA (360-degree RGB at the FINAL VIEW position):\nThe panorama is centered on the final camera's facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. This is one position, not a sequence of movement frames. Combine it with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch4_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "C",
+  "correct": true,
+  "input_signature": "9caeac4843ebf61df751316d8f4555dfdbcd9c66303882969b954925e4edfd26",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "panorama"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3458,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 249
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3209
+      }
+    ],
+    "thoughts_token_count": 2978,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6437,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_started_at": "2026-10-05T00:46:42.665-04:00",
+  "request_duration_seconds": 14.150076899997657,
+  "completed_at": "2026-10-05T00:46:56.815-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

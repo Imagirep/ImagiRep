@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-105-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-105-Q1",
+  "resource_id": "MVC-105",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to round table in Image 2?",
+  "answer_choices": {
+    "A": "white sofa",
+    "B": "flowers in a vase",
+    "C": "tv",
+    "D": "empty vase"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "90ee18038c11e808cf75bc7bb129296eb92081b7eb8750cc49216edc9c66b6bf",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-105\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7889,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 287
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 529,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8419,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 7.096619199990528,
+  "completed_at": "2026-10-06T17:34:38-04:00"
+}

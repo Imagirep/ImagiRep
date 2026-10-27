@@ -1,0 +1,265 @@
+{
+  "question_id": "FO-0052-Q4",
+  "motion_text": "I walk near the chairs and turn slightly left.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the white upholstered dining chairs around the round table in the center",
+      "relation": "near"
+    },
+    {
+      "op": "turn",
+      "direction": "left",
+      "amount": "slight"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FO-0052-Q4",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.15469759144236636,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.324189410665408,
+        "y": 0.20649881128277503,
+        "yaw": 0.15469759144236636,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -1.324189410665408,
+        "y": 0.20649881128277503,
+        "yaw": 0.04164257909858866,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.7241894106654074,
+        "y": 0.30649881128277556,
+        "yaw": 0.04164257909858866,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -1.324189410665408,
+        0.20649881128277503
+      ],
+      [
+        -3.7241894106654074,
+        0.30649881128277556
+      ]
+    ],
+    "x": -3.7241894106654074,
+    "y": 0.30649881128277556,
+    "yaw": 0.08211441024662772,
+    "pitch": 0.0,
+    "travel_yaw": 0.08211441024662772
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.324189410665408,
+      0.20649881128277503
+    ],
+    [
+      -3.7241894106654074,
+      0.30649881128277556
+    ]
+  ],
+  "final": {
+    "x": -3.7241894106654074,
+    "y": 0.30649881128277556,
+    "yaw_deg": -30.295190855662423,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the white upholstered dining chairs around the round table in the center",
+        "relation": "near"
+      },
+      "x": -3.7241894106654074,
+      "y": 0.30649881128277556,
+      "yaw": 0.08211441024662772,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left",
+        "amount": "slight"
+      },
+      "x": -3.7241894106654074,
+      "y": 0.30649881128277556,
+      "yaw": -0.5287508279513875,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.15469759144236636,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.324189410665408,
+      "y": 0.20649881128277503,
+      "yaw": 0.15469759144236636,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.324189410665408,
+      "y": 0.20649881128277503,
+      "yaw": 0.04164257909858866,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.7241894106654074,
+      "y": 0.30649881128277556,
+      "yaw": 0.04164257909858866,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.7241894106654074,
+      "y": 0.30649881128277556,
+      "yaw": 0.08211441024662772,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.7241894106654074,
+      "y": 0.30649881128277556,
+      "yaw": -0.5287508279513875,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the white upholstered dining chairs around the round table in the center",
+      "method": "initial_photo",
+      "box": [
+        540,
+        445,
+        830,
+        881
+      ],
+      "point_m": [
+        -4.707207068251241,
+        1.1448054965120282,
+        -1.2374961835961982
+      ]
+    },
+    {
+      "overlap": "the white upholstered dining chairs around the round table in the center",
+      "n_points": 187,
+      "candidates": [
+        {
+          "sector": 2,
+          "path_m": 4.0,
+          "stop_m": 1.288464054273258,
+          "visible_frac": 0.5294117647058824,
+          "center_deg": 6.084218855399574,
+          "width_deg": 64.91637657970625,
+          "distance_m": 1.4631994142413363
+        },
+        {
+          "sector": 3,
+          "path_m": 4.0,
+          "stop_m": 1.29192949251327,
+          "visible_frac": 0.5614973262032086,
+          "center_deg": 5.520963959502609,
+          "width_deg": 64.4193192241047,
+          "distance_m": 1.4662337027796262
+        },
+        {
+          "sector": 4,
+          "path_m": 4.6000000000000005,
+          "stop_m": 1.284500048565371,
+          "visible_frac": 0.6363636363636364,
+          "center_deg": 0.9953494501281837,
+          "width_deg": 65.50651248545304,
+          "distance_m": 1.4304883909839885
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 2.4296994037993844,
+  "seconds": 6.946183204650879
+}

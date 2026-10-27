@@ -1,0 +1,216 @@
+{
+  "row_index": 9,
+  "question_id": "FO-0050-Q1",
+  "trajectory_id": "FO-0050",
+  "scan_id": "759xd9YjKW5",
+  "batch": 1,
+  "question_type": 1,
+  "question_set": "non-lookback",
+  "show_lookback": false,
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "question": "If I walk through the doors, walk forward till I'm near the white chair, and face the direction I move, which direction would have the most open space?",
+  "answer_choices": {
+    "D": "right",
+    "A": "left",
+    "B": "behind",
+    "C": "front"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "D": "C",
+    "A": "B",
+    "B": "D",
+    "C": "A"
+  },
+  "shuffle_origin": "balanced_seed_20261005",
+  "rerun_reasons": [
+    "no_oracle_run"
+  ],
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0050\\image_1.png",
+      "sha256": "0adac49c8666e18ff447b72612d9e650ce88405b936769a0ae030616b2d8d278"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0050\\modalities\\step_01_rgb.png",
+      "sha256": "50279d1cdb091bbbcef747afb80be57b0f3c01229a0d241be97006a6591a535c"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0050\\modalities\\step_02_rgb.png",
+      "sha256": "3843ce8742880499a4970ad88dad79f45bedd3cf7f7270ada2b7b3335be15329"
+    }
+  ],
+  "endpoint_modalities": {
+    "depth": {
+      "kind": "depth",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0050\\modalities\\step_02_depth.png",
+      "sha256": "41f66aae6e7c0f9a6e57b82885d2fa52a842e9d959f758dee737d783a286718f",
+      "final_image_kind": "endpoint",
+      "pose": {
+        "viewpoint_id": "aaef0e13feb84a9a8cb567429c9fb8d7",
+        "heading_rad": 1.5537685473733625,
+        "elevation_rad": 0.0,
+        "vfov_degrees": 60.0,
+        "width": 320,
+        "height": 240
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0050\\modalities\\step_02_aligned_manifest.json",
+      "color_scale": {
+        "near_m": 1.9275,
+        "far_m": 6.61775,
+        "colormap": "reversed OpenCV TURBO",
+        "normalization": "2nd to 98th percentile per image; clipped",
+        "black": "invalid depth",
+        "measurement": "camera-forward z-depth, not radial range"
+      }
+    },
+    "surface_normals": {
+      "kind": "surface_normals",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0050\\modalities\\step_02_surface_normals.png",
+      "sha256": "31641d7f5c7183679c2701788013b53e6bcb2e20cd19547264d2b605cda4c8bb",
+      "final_image_kind": "endpoint",
+      "pose": {
+        "viewpoint_id": "aaef0e13feb84a9a8cb567429c9fb8d7",
+        "heading_rad": 1.5537685473733625,
+        "elevation_rad": 0.0,
+        "vfov_degrees": 60.0,
+        "width": 320,
+        "height": 240
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0050\\modalities\\step_02_aligned_manifest.json",
+      "encoding": {
+        "rgb_axes": [
+          "camera-right",
+          "camera-up",
+          "camera-forward"
+        ],
+        "channel_formula": "uint8(clip((component + 1) * 127.5, 0, 255))",
+        "black": "missing geometry"
+      }
+    },
+    "panorama": {
+      "kind": "panorama",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0050\\modalities\\step_02_panorama.png",
+      "sha256": "c66d29889d8d1a0e9ee5f587bfaa37d2a7a92a0526534ce507faefbee858e238",
+      "final_image_kind": "endpoint",
+      "pose": {
+        "viewpoint_id": "aaef0e13feb84a9a8cb567429c9fb8d7",
+        "heading_rad": 1.5537685473733625,
+        "elevation_rad": 0.0,
+        "vfov_degrees": 60.0,
+        "width": 320,
+        "height": 240
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0050\\modalities\\step_02_aligned_manifest.json",
+      "orientation": {
+        "center": "front",
+        "quarter_width": "left",
+        "three_quarter_width": "right",
+        "edges": "behind; horizontal wrap",
+        "pose_alignment": "source RGB camera-centered spherical rotation"
+      },
+      "sha256_at_source_run": "b519e48e27da38422bcb67d5949dc62474ce1d7a63126e00715a2bdc11b24ed4",
+      "changed_since_source_run": true
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0050\\modalities\\topdown_with_path.png",
+      "sha256": "2076e746463eedbb9693192ffe6520b04cc5ddc45d355c430031d51606c8d6f7"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0050\\modalities\\trajectory.txt",
+      "sha256": "23b4d065e1b75deae873b7883c17ccfb5393479411a59010bf717705396d5db4",
+      "sha256_at_source_run": "3bf0837f087fcfb927142060e2cbd3c81be1350dde2b7f00fffd4736901cf8ce",
+      "changed_since_source_run": true
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0050\\modalities\\trajectory.mp4",
+      "sha256": "80372963a67939a7e5b7675fa92c5278c46372b381ff442ac836b0dfb45c01d8",
+      "frame_count": 68,
+      "fps": 12.0,
+      "duration_seconds": 5.666666666666667,
+      "bytes": 383940,
+      "final_rgb_correlation": 0.999591633357937
+    }
+  },
+  "modality_source": "batch1_20260916",
+  "manifest_seed": 20261005,
+  "source": "622_freeze_labels_20261002",
+  "category": "open_space_direction",
+  "subtype": "direction_maximum_open_space",
+  "category_label": "Open-space direction",
+  "condition": "start_final_surface_normals",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT SURFACE NORMAL MAP (same camera pose and field of view as FINAL VIEW):\nColors encode surface orientation, not object color or distance. RGB channels encode normal components along camera-right (R), camera-up (G), and camera-forward (B): 0 = -1, about 128 = 0, and 255 = +1. Higher R/G/B means a stronger rightward/upward/forward component; a surface facing the camera has low B. Black means missing geometry. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_622supplement_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "C",
+  "correct": false,
+  "input_signature": "e2c54ad7dc9a905605a8519dace93507c0d735c262504a4e8a1326d3bf03c5d8",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "surface_normals"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3463,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 271
+      }
+    ],
+    "thoughts_token_count": 1900,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5364,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_started_at": "2026-10-05T12:46:55.235-04:00",
+  "request_duration_seconds": 10.811380200000713,
+  "completed_at": "2026-10-05T12:47:06.047-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

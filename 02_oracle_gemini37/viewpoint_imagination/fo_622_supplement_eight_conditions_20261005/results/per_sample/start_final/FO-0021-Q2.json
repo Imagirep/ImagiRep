@@ -1,0 +1,211 @@
+{
+  "row_index": 5,
+  "question_id": "FO-0021-Q2",
+  "trajectory_id": "FO-0021",
+  "scan_id": "17DRP5sb8fy",
+  "batch": 1,
+  "question_type": 2,
+  "question_set": "non-lookback",
+  "show_lookback": false,
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "question": "If I walk to the little wooden table and turn right, which direction would have the closest obstacle, other than the little wooden table?",
+  "answer_choices": {
+    "B": "front",
+    "A": "behind",
+    "C": "right",
+    "D": "left"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "B": "A",
+    "A": "D",
+    "C": "C",
+    "D": "B"
+  },
+  "shuffle_origin": "balanced_seed_20261005",
+  "rerun_reasons": [
+    "no_oracle_run"
+  ],
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0021\\image_1.png",
+      "sha256": "963e7f2612f1c735984c77856ebdc4ae2c27f4b7b7a76d9db066f4d8c80a0957"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0021\\modalities\\step_01_rgb.png",
+      "sha256": "967d77cd25770b3c1aa29c9c2a6de962f790bc588c7bda8a6fa161d0c59178cf"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0021\\modalities\\step_02_rgb.png",
+      "sha256": "e49b47098867fbcbc0f02c51de0fcdc6df35886cd248759411a2349e563ac774"
+    }
+  ],
+  "endpoint_modalities": {
+    "depth": {
+      "kind": "depth",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0021\\modalities\\step_02_depth.png",
+      "sha256": "652ee8d6f1eb6503881e6989927d93322961c62e4c52b3d64a524cf3c8dcd556",
+      "final_image_kind": "endpoint",
+      "pose": {
+        "viewpoint_id": "3a6d2322867f40d9a3d2758ab88df288",
+        "heading_rad": -2.01298447052506,
+        "elevation_rad": 0.0,
+        "vfov_degrees": 60.0,
+        "width": 320,
+        "height": 240
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0021\\modalities\\step_02_aligned_manifest.json",
+      "color_scale": {
+        "near_m": 1.1565,
+        "far_m": 3.084,
+        "colormap": "reversed OpenCV TURBO",
+        "normalization": "2nd to 98th percentile per image; clipped",
+        "black": "invalid depth",
+        "measurement": "camera-forward z-depth, not radial range"
+      }
+    },
+    "surface_normals": {
+      "kind": "surface_normals",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0021\\modalities\\step_02_surface_normals.png",
+      "sha256": "fa9d332b8fc3e0bb1c8c6eb7db79f8beface26148d7f7b5a022ed6e512a66f96",
+      "final_image_kind": "endpoint",
+      "pose": {
+        "viewpoint_id": "3a6d2322867f40d9a3d2758ab88df288",
+        "heading_rad": -2.01298447052506,
+        "elevation_rad": 0.0,
+        "vfov_degrees": 60.0,
+        "width": 320,
+        "height": 240
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0021\\modalities\\step_02_aligned_manifest.json",
+      "encoding": {
+        "rgb_axes": [
+          "camera-right",
+          "camera-up",
+          "camera-forward"
+        ],
+        "channel_formula": "uint8(clip((component + 1) * 127.5, 0, 255))",
+        "black": "missing geometry"
+      }
+    },
+    "panorama": {
+      "kind": "panorama",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0021\\modalities\\step_02_panorama.png",
+      "sha256": "48801b05f6c414d2bf5289f2749c57b6556f62ac107df10795db5b584f7846c7",
+      "final_image_kind": "endpoint",
+      "pose": {
+        "viewpoint_id": "3a6d2322867f40d9a3d2758ab88df288",
+        "heading_rad": -2.01298447052506,
+        "elevation_rad": 0.0,
+        "vfov_degrees": 60.0,
+        "width": 320,
+        "height": 240
+      },
+      "aligned_manifest": "<authors_workspace>\\benchmark_release\\items\\FO-0021\\modalities\\step_02_aligned_manifest.json",
+      "orientation": {
+        "center": "front",
+        "quarter_width": "left",
+        "three_quarter_width": "right",
+        "edges": "behind; horizontal wrap",
+        "pose_alignment": "source RGB camera-centered spherical rotation"
+      }
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0021\\modalities\\topdown_with_path.png",
+      "sha256": "65c702ec23ae40a74ca367f1f4ae41cb6dabd9dc2d04b65e934beee2b7329a97"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0021\\modalities\\trajectory.txt",
+      "sha256": "0f2bbd6ffef5c4c3413f8c1ff9dcfe7a2f40d2cb9e77193f5b67b635ba244f4e",
+      "sha256_at_source_run": "2902a81684864029b72d5cceb7c25fe31b5f5e861c13f22d053117a21fb7f0ed",
+      "changed_since_source_run": true
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0021\\modalities\\trajectory.mp4",
+      "sha256": "47ba96786d2d89aca3dc411cc71c24f1d9eaeb0ba2a36be28cf6de4aa14bf8e6",
+      "frame_count": 77,
+      "fps": 12.0,
+      "duration_seconds": 6.416666666666667,
+      "bytes": 398257,
+      "final_rgb_correlation": 0.9997424070166478
+    }
+  },
+  "modality_source": "batch1_20260916",
+  "manifest_seed": 20261005,
+  "source": "622_freeze_labels_20261002",
+  "category": "nearest_obstacle_direction",
+  "subtype": "direction_nearest_obstacle",
+  "category_label": "Nearest-obstacle direction",
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_622supplement_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "D",
+  "correct": false,
+  "input_signature": "3339f91759d27568a5343545d8d8dc42d83d5157490ea0496257f55026c34e48",
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2266,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 138
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 1984,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4251,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_started_at": "2026-10-05T11:56:27.646-04:00",
+  "request_duration_seconds": 10.789398900000378,
+  "completed_at": "2026-10-05T11:56:38.435-04:00",
+  "request_part_count": 5,
+  "request_mime_types": [
+    "image/png",
+    "image/png"
+  ]
+}

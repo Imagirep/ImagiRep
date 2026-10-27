@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-134-Q3", "method": "avic", "variant": "label", "prediction": "doorway, window, large painting, fireplace", "gold": "doorway, window, large painting, fireplace", "correct": true, "n_imagined": 2, "category": "ordering", "stored_result": "correct"}

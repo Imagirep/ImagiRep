@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-084-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-084-Q3",
+  "resource_id": "MVC-084",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "painting, white armchair, tv, black chair",
+    "B": "white armchair, tv, painting, black chair",
+    "C": "tv, painting, white armchair, black chair",
+    "D": "white armchair, black chair, tv, painting"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "474398b106739ecaeb9eb410ce28fff64f213d4deea0de133f2a8e8220cd8f69",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.776 m (near/red) to 5.305 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-084\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4638,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 382
+      }
+    ],
+    "thoughts_token_count": 494,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5132,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 41.712831799988635,
+  "completed_at": "2026-10-06T17:38:12-04:00"
+}

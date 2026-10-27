@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-117-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-117-Q3",
+  "resource_id": "MVC-117",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "fireplace, bed, wooden table, wooden cabinet",
+    "B": "wooden table, bed, wooden cabinet, fireplace",
+    "C": "wooden cabinet, fireplace, bed, wooden table",
+    "D": "bed, wooden cabinet, wooden table, fireplace"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "47e6c23d9512b089cbc467a02994a9c67e1bbe417f8511cad98d4b9e506e2066",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-117\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3588,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 396
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 843,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4432,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 5.124645700008841,
+  "completed_at": "2026-10-06T17:31:29-04:00"
+}

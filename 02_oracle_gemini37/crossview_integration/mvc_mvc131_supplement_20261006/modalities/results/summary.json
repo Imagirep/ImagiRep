@@ -1,0 +1,303 @@
+{
+  "accuracy": {
+    "all": {
+      "original_only": {
+        "n": 3,
+        "correct": 2,
+        "accuracy": 0.6666666666666666
+      },
+      "oracle_rgb": {
+        "n": 3,
+        "correct": 2,
+        "accuracy": 0.6666666666666666
+      },
+      "oracle_rgb_topdown": {
+        "n": 3,
+        "correct": 2,
+        "accuracy": 0.6666666666666666
+      },
+      "oracle_rgb_text": {
+        "n": 3,
+        "correct": 2,
+        "accuracy": 0.6666666666666666
+      },
+      "oracle_rgb_video": {
+        "n": 3,
+        "correct": 2,
+        "accuracy": 0.6666666666666666
+      },
+      "oracle_rgb_depth": {
+        "n": 3,
+        "correct": 2,
+        "accuracy": 0.6666666666666666
+      },
+      "oracle_rgb_surface_normals": {
+        "n": 3,
+        "correct": 2,
+        "accuracy": 0.6666666666666666
+      },
+      "oracle_rgb_panorama": {
+        "n": 3,
+        "correct": 2,
+        "accuracy": 0.6666666666666666
+      }
+    },
+    "cross_view_closest": {
+      "original_only": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_topdown": {
+        "n": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "oracle_rgb_text": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_video": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_depth": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_surface_normals": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_panorama": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      }
+    },
+    "cross_view_farthest": {
+      "original_only": {
+        "n": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "oracle_rgb": {
+        "n": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "oracle_rgb_topdown": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_text": {
+        "n": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "oracle_rgb_video": {
+        "n": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "oracle_rgb_depth": {
+        "n": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "oracle_rgb_surface_normals": {
+        "n": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "oracle_rgb_panorama": {
+        "n": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      }
+    },
+    "ordering": {
+      "original_only": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_topdown": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_text": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_video": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_depth": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_surface_normals": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_panorama": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      }
+    }
+  },
+  "positive_only": {
+    "all": {
+      "oracle_rgb_topdown": {
+        "n": 3,
+        "correct": 3,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_text": {
+        "n": 3,
+        "correct": 2,
+        "accuracy": 0.6666666666666666
+      },
+      "oracle_rgb_video": {
+        "n": 3,
+        "correct": 2,
+        "accuracy": 0.6666666666666666
+      },
+      "oracle_rgb_depth": {
+        "n": 3,
+        "correct": 2,
+        "accuracy": 0.6666666666666666
+      },
+      "oracle_rgb_surface_normals": {
+        "n": 3,
+        "correct": 2,
+        "accuracy": 0.6666666666666666
+      },
+      "oracle_rgb_panorama": {
+        "n": 3,
+        "correct": 2,
+        "accuracy": 0.6666666666666666
+      }
+    },
+    "cross_view_closest": {
+      "oracle_rgb_topdown": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_text": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_video": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_depth": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_surface_normals": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_panorama": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      }
+    },
+    "cross_view_farthest": {
+      "oracle_rgb_topdown": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_text": {
+        "n": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "oracle_rgb_video": {
+        "n": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "oracle_rgb_depth": {
+        "n": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "oracle_rgb_surface_normals": {
+        "n": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "oracle_rgb_panorama": {
+        "n": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      }
+    },
+    "ordering": {
+      "oracle_rgb_topdown": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_text": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_video": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_depth": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_surface_normals": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "oracle_rgb_panorama": {
+        "n": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      }
+    }
+  },
+  "complete": true
+}

@@ -1,0 +1,144 @@
+{
+  "row_index": 95,
+  "question_id": "FOB3-0051-Q1",
+  "trajectory_id": "FOB3-0051",
+  "scan_id": "QUCTc6BB5sX",
+  "question_type": 1,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk forward and walk near the vanity table, then slightly turn right, which direction would have the most open space?",
+  "answer_choices": {
+    "C": "right",
+    "A": "front",
+    "B": "left",
+    "D": "behind"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "C": "C",
+    "A": "A",
+    "B": "B",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0051\\start_view.png",
+      "sha256": "3dbad7c31c8ea124187ddb1dc6d1adc1b68b4ad6d9f6cb2b68edc385d984f473"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0051\\step_01_rgb.png",
+      "sha256": "00fe35418ef39c85356f0c12dd7ba97a7dcde18201a87e53beed34ee8c7a55f2"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0051\\step_02_rgb.png",
+      "sha256": "32ed67039fd6d0902279279e8a80b49e9d194b19adbe921267146a48234dde8f"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "category": "open_space_direction",
+  "category_label": "Open-space direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0051\\step_02_depth.png",
+      "sha256": "89e373ea9157d2a9c14815c81d6dd7d1c7323f59b4ba0dba13da421a3231f785",
+      "color_scale": {
+        "near_m": 1.1565,
+        "far_m": 5.397
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0051\\step_02_surface_normals.png",
+      "sha256": "d26178249f8661b8a5b9779d4ac38fd72719559052c66aae8094d9636d365528"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0051\\step_02_panorama.png",
+      "sha256": "92c1b07a4b66b99415a8462dc9b54a7d0676d78213e27965c357435953f524fe"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0051\\topdown_with_path.png",
+      "sha256": "bd3354b2e7b5c4d6768f4bb42c9938f4b82e97285475cef0063275256017695d"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0051\\trajectory.txt",
+      "sha256": "8b816d9db00cdc7986aac2ff3bf0a6ab749833c615b2b73399584371697e195c"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0051\\trajectory.mp4",
+      "sha256": "6cecebdafb75d85448eb59b3e244557dd480078783ae5ca65f905f3b4cf57255"
+    }
+  },
+  "condition": "start_final_panorama",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT PANORAMA (360-degree RGB at the FINAL VIEW position):\nThe panorama is centered on the final camera's facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. This is one position, not a sequence of movement frames. Combine it with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch3_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "C",
+  "correct": true,
+  "input_signature": "3b39ad5b159f42f4b7712f4828ce636b3786eabf3f35db7c26744cd256c475d8",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "panorama"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3454,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3209
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 245
+      }
+    ],
+    "thoughts_token_count": 1045,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4500,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T19:33:34.595-04:00",
+  "request_duration_seconds": 5.281103400004213,
+  "completed_at": "2026-10-04T19:33:39.876-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

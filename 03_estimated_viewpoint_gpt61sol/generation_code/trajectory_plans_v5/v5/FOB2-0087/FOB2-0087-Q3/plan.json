@@ -1,0 +1,209 @@
+{
+  "question_id": "FOB2-0087-Q3",
+  "motion_text": "I walk near the brown sofas, then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the brown leather armchairs in the background",
+      "relation": "near"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0087-Q3",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.06354697029788935,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -6.683539654540534,
+        "y": 0.425291323034239,
+        "yaw": 0.06354697029788935,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -6.683539654540534,
+        0.425291323034239
+      ]
+    ],
+    "x": -6.683539654540534,
+    "y": 0.425291323034239,
+    "yaw": 0.06354697029788935,
+    "pitch": 0.0,
+    "travel_yaw": 0.06354697029788935
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -6.683539654540534,
+      0.425291323034239
+    ]
+  ],
+  "final": {
+    "x": -6.683539654540534,
+    "y": 0.425291323034239,
+    "yaw_deg": -176.35902680108774,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the brown leather armchairs in the background",
+        "relation": "near"
+      },
+      "x": -6.683539654540534,
+      "y": 0.425291323034239,
+      "yaw": 0.06354697029788935,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -6.683539654540534,
+      "y": 0.425291323034239,
+      "yaw": -3.078045683291904,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.06354697029788935,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -6.683539654540534,
+      "y": 0.425291323034239,
+      "yaw": 0.06354697029788935,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -6.683539654540534,
+      "y": 0.425291323034239,
+      "yaw": -3.078045683291904,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the brown leather armchairs in the background",
+      "method": "initial_photo",
+      "box": [
+        575,
+        502,
+        705,
+        699
+      ],
+      "point_m": [
+        -7.807548612964321,
+        1.0254443663574764,
+        -1.4857386877141563
+      ]
+    },
+    {
+      "overlap": "the brown leather armchairs in the background",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 7.1000000000000005,
+          "stop_m": 1.2741977138682477,
+          "visible_frac": 0.8222222222222222,
+          "center_deg": -0.5932979914387677,
+          "width_deg": 58.55748008912181,
+          "distance_m": 1.7003593403391029
+        },
+        {
+          "sector": 4,
+          "path_m": 7.800000000000001,
+          "stop_m": 1.2402164070817019,
+          "visible_frac": 0.8311111111111111,
+          "center_deg": 2.010246139242772,
+          "width_deg": 66.86183028601997,
+          "distance_m": 1.5547422829215984
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 3.203077035194201,
+  "seconds": 8.809157848358154
+}

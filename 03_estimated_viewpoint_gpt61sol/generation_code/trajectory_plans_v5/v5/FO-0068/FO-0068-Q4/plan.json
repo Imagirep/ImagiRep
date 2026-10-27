@@ -1,0 +1,236 @@
+{
+  "question_id": "FO-0068-Q4",
+  "motion_text": "I walk through the arched doorway on the left, then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the arched doorway on the left",
+      "relation": "through"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FO-0068-Q4",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.019793599755544157,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.7244561907243323,
+        "y": -0.053933839093013525,
+        "yaw": -0.019793599755544157,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.7244561907243323,
+        "y": -0.053933839093013525,
+        "yaw": -0.7531512809621945,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.324456190724332,
+        "y": -1.5539338390930135,
+        "yaw": -0.7531512809621945,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.7244561907243323,
+        -0.053933839093013525
+      ],
+      [
+        -4.324456190724332,
+        -1.5539338390930135
+      ]
+    ],
+    "x": -4.324456190724332,
+    "y": -1.5539338390930135,
+    "yaw": -0.3449678524393404,
+    "pitch": 0.0,
+    "travel_yaw": -0.3449678524393404
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.7244561907243323,
+      -0.053933839093013525
+    ],
+    [
+      -4.324456190724332,
+      -1.5539338390930135
+    ]
+  ],
+  "final": {
+    "x": -4.324456190724332,
+    "y": -1.5539338390930135,
+    "yaw_deg": 160.23479798753402,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the arched doorway on the left",
+        "relation": "through"
+      },
+      "x": -4.324456190724332,
+      "y": -1.5539338390930135,
+      "yaw": -0.3449678524393404,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -4.324456190724332,
+      "y": -1.5539338390930135,
+      "yaw": 2.7966248011504526,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.019793599755544157,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.7244561907243323,
+      "y": -0.053933839093013525,
+      "yaw": -0.019793599755544157,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.7244561907243323,
+      "y": -0.053933839093013525,
+      "yaw": -0.7531512809621945,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.324456190724332,
+      "y": -1.5539338390930135,
+      "yaw": -0.7531512809621945,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.324456190724332,
+      "y": -1.5539338390930135,
+      "yaw": -0.3449678524393404,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.324456190724332,
+      "y": -1.5539338390930135,
+      "yaw": 2.7966248011504526,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the arched doorway on the left",
+      "method": "initial_photo",
+      "box": [
+        295,
+        161,
+        779,
+        330
+      ],
+      "point_m": [
+        -4.55962603483138,
+        -1.9778786596799174,
+        -0.21177276982227206
+      ]
+    },
+    {
+      "move_yaw_deg": -43.15238973400541,
+      "requested_m": 1.0,
+      "end": [
+        -4.324456190724332,
+        -1.5539338390930135
+      ],
+      "blocked": true
+    }
+  ],
+  "m_per_unit": 1.960672919244936,
+  "seconds": 8.301251888275146
+}

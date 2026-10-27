@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-069-Q3", "method": "mj", "variant": "top3+label", "prediction": "refrigerator, white statue, potted plant, red statue", "gold": "red statue, potted plant, refrigerator, white statue", "correct": false, "n_imagined": 2, "category": "ordering", "stored_result": "wrong"}

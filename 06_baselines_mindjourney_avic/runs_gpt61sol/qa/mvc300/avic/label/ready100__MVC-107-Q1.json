@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-107-Q1", "method": "avic", "variant": "label", "prediction": "stove", "gold": "fruits", "correct": false, "n_imagined": 1, "category": "cross_view_closest", "stored_result": "wrong"}

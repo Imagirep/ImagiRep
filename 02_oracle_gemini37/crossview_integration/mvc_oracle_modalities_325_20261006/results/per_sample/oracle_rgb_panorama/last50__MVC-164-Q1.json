@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-164-Q1",
+  "cohort": "last50",
+  "question_id": "MVC-164-Q1",
+  "resource_id": "MVC-164",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to potted small plant in Image 1?",
+  "answer_choices": {
+    "A": "tall potted plant",
+    "B": "sofa",
+    "C": "red cabinet",
+    "D": "lamp"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "b784130627e051f79dc7f32c25d29b5900a5898225f12921b10e4a6a8d7caace",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-164\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4599,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 326
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      }
+    ],
+    "thoughts_token_count": 428,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5028,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 5.495425100001739,
+  "completed_at": "2026-10-06T17:45:17-04:00"
+}

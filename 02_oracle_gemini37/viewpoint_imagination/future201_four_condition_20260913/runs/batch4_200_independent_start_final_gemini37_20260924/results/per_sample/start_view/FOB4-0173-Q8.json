@@ -1,0 +1,96 @@
+{
+  "row_index": 129,
+  "question_id": "FOB4-0173-Q8",
+  "trajectory_id": "FOB4-0173",
+  "scan_id": "x8F5xyUWy9e",
+  "route_variant": "old_bent",
+  "question_type": 8,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk through the hallway with yellow light on the right, then turn to face the starting point, which object(s) would be on my right?",
+  "answer_choices": {
+    "B": "tv",
+    "A": "dark green chair",
+    "C": "wooden table",
+    "D": "counter"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "tv",
+    "B": "counter",
+    "C": "wooden table",
+    "D": "dark green chair"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "B": "A",
+    "A": "D",
+    "C": "C",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0173\\start_view.png",
+      "sha256": "2339dbc78eaa81776bbb96014aa64e95aca2e2853f127da1907b13a2bdd605a9"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0173\\step_01_rgb.png",
+      "sha256": "72158bbedaeb92893b0422b6c275e26d1d6f99c5715ae95040f22c20c2f1a230"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0173\\step_02_back180_rgb.png",
+      "sha256": "4c38730d5b663f4c2642e846aef1cd371a5db030df68a5b1b7bf9336dc597f1f"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": false,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1157,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 93
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 4179,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5337,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-24T17:31:37-04:00"
+}

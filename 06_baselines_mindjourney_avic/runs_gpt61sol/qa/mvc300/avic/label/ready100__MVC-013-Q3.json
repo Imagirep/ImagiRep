@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-013-Q3", "method": "avic", "variant": "label", "prediction": "sofa, wooden chair, yellow pot, stools", "gold": "wooden chair, sofa, stools, yellow pot", "correct": false, "n_imagined": 2, "category": "ordering", "stored_result": "wrong"}

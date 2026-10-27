@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-185-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-185-Q3",
+  "resource_id": "MVC-185",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "sink, toilet, black cabinet, fireplace",
+    "B": "fireplace, toilet, sink, black cabinet",
+    "C": "toilet, fireplace, sink, black cabinet",
+    "D": "black cabinet, sink, toilet, fireplace"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "4a9c62ff0a23e31245a9172680ec6d83ffd3cba9fb6a2cf032a22e3246b7dee7",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.838 m (near/red) to 3.877 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-185\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4634,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 378
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 1154,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5789,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.82679819999612,
+  "completed_at": "2026-10-06T17:39:24-04:00"
+}

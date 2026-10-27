@@ -1,0 +1,145 @@
+[
+  {
+    "purpose": "parse",
+    "model": "gemini-3.7-flash",
+    "inputs": [
+      {
+        "image_sha256": "b7395ee5b449d4e7e7e4642c8fdc67a20c47282bd6b05d43ac3c0f69301b0c09",
+        "kind": "initial"
+      },
+      {
+        "text": "You will control a camera that starts at the viewpoint of this photo, at standing eye height. Convert the movement instruction into primitive steps, in order. Use ONLY what the instruction says.\nInstruction: \"I walk near the counter, then turn right, walk into the hallway and face the way I go.\"\nPrimitives (JSON objects):\n- {\"op\":\"forward\",\"amount\":\"default|few_steps\"}  walk straight ahead without a named target\n- {\"op\":\"back\",\"direction\":\"left|right|null\"}  step backwards (optionally back-left/right)\n- {\"op\":\"turn\",\"direction\":\"left|right\",\"amount\":\"slight|normal|around\"}  turn in place; \"turn around\" is amount around\n- {\"op\":\"go\",\"target\":\"...\",\"relation\":\"to|near|next_to|beside|into|through|past\",\"side\":\"left|right|null\"}  walk to/near/past/through a target\n- {\"op\":\"face\",\"target\":\"...\"}  turn in place to face an object (also \"look at\"/\"look through\")\n- {\"op\":\"face_start\"}  turn in place to face the starting point\n- {\"op\":\"face_motion\"}  keep facing the walking direction\nTarget descriptions must uniquely identify the object as seen in the photo when possible: include color, material, relative position in the photo (left/right/center, near/far) exactly as implied by the instruction. If the target is not visible in the photo, still describe it from the instruction. Return {\"steps\":[...]}"
+      }
+    ],
+    "response": {
+      "steps": [
+        {
+          "op": "go",
+          "relation": "near",
+          "target": "the counter with bar stools on the right"
+        },
+        {
+          "op": "turn",
+          "direction": "right"
+        },
+        {
+          "op": "go",
+          "relation": "into",
+          "target": "the hallway"
+        },
+        {
+          "op": "face_motion"
+        }
+      ]
+    }
+  },
+  {
+    "purpose": "ground_initial",
+    "model": "gemini-3.7-flash",
+    "inputs": [
+      {
+        "image_sha256": "b7395ee5b449d4e7e7e4642c8fdc67a20c47282bd6b05d43ac3c0f69301b0c09",
+        "kind": "initial"
+      },
+      {
+        "text": "Movement instruction: \"I walk near the counter, then turn right, walk into the hallway and face the way I go.\"\nTarget: \"the counter with bar stools on the right\".\nIs this target visible in the photo? If yes give its tight bounding box [ymin, xmin, ymax, xmax] in 0-1000 normalized coordinates (only the target object itself). Return {\"visible\":true|false,\"box\":[ymin,xmin,ymax,xmax],\"confidence\":0-1}"
+      }
+    ],
+    "response": {
+      "visible": true,
+      "box": [
+        561,
+        693,
+        993,
+        1000
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "purpose": "ground_initial",
+    "model": "gemini-3.7-flash",
+    "inputs": [
+      {
+        "image_sha256": "b7395ee5b449d4e7e7e4642c8fdc67a20c47282bd6b05d43ac3c0f69301b0c09",
+        "kind": "initial"
+      },
+      {
+        "text": "Movement instruction: \"I walk near the counter, then turn right, walk into the hallway and face the way I go.\"\nTarget: \"the hallway\".\nIs this target visible in the photo? If yes give its tight bounding box [ymin, xmin, ymax, xmax] in 0-1000 normalized coordinates (only the target object itself). Return {\"visible\":true|false,\"box\":[ymin,xmin,ymax,xmax],\"confidence\":0-1}"
+      }
+    ],
+    "response": {
+      "visible": false,
+      "box": [],
+      "confidence": 0.9
+    }
+  },
+  {
+    "purpose": "ground_lookaround",
+    "model": "gemini-3.7-flash",
+    "inputs": [
+      {
+        "image_sha256": "b7395ee5b449d4e7e7e4642c8fdc67a20c47282bd6b05d43ac3c0f69301b0c09",
+        "kind": "initial"
+      },
+      {
+        "text": "Above: the original starting photo. Below: six views from the camera's CURRENT position in a blurry 3D reconstruction of the same place. View k is rotated 60*k degrees to the right of the current facing direction."
+      },
+      {
+        "text": "View 0:"
+      },
+      {
+        "image_sha256": "0d3cec40dc4b77667a4f754492901e6662f1b1fea0ae33f37838b85684801758",
+        "kind": "render"
+      },
+      {
+        "text": "View 1:"
+      },
+      {
+        "image_sha256": "3c010f8b3b135f3579b05d1da3927d60d2bdb131c79f5dc06d916455007aa1ac",
+        "kind": "render"
+      },
+      {
+        "text": "View 2:"
+      },
+      {
+        "image_sha256": "5864a257ff855b891cb6de3875052f45eded0c566ad981a1c362316374bbdf33",
+        "kind": "render"
+      },
+      {
+        "text": "View 3:"
+      },
+      {
+        "image_sha256": "9b50170adc7fe3f0855fca52464c122feb1a0e3ded99a91c840a56ee3b8fc0ae",
+        "kind": "render"
+      },
+      {
+        "text": "View 4:"
+      },
+      {
+        "image_sha256": "5e328d0263b69b0fd4040c83272ac87980b339a8fa40d51f20f15e21dfa2d9e0",
+        "kind": "render"
+      },
+      {
+        "text": "View 5:"
+      },
+      {
+        "image_sha256": "6aaceda7f59c4290e9836b4ba72f4b9109429b01e359937863e502951d336551",
+        "kind": "render"
+      },
+      {
+        "text": "Movement instruction: \"I walk near the counter, then turn right, walk into the hallway and face the way I go.\"\nTarget: \"the hallway\".\nWhich view shows this target most clearly? Give its tight bounding box [ymin, xmin, ymax, xmax] in 0-1000 normalized coordinates of that view. Return {\"view\":k or -1,\"box\":[ymin,xmin,ymax,xmax],\"confidence\":0-1}"
+      }
+    ],
+    "response": {
+      "view": 0,
+      "box": [
+        330,
+        140,
+        1000,
+        595
+      ],
+      "confidence": 0.82
+    }
+  }
+]

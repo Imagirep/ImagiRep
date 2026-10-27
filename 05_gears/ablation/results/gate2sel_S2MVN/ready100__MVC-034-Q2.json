@@ -1,0 +1,1 @@
+{"uid": "ready100__MVC-034-Q2", "category": "cross_view_farthest", "reason": "Depth information helps compare distances from the gray chair across the views.", "choice": "depth", "usage": {"input_tokens": 3422, "input_tokens_details": {"cache_write_tokens": 3419, "cached_tokens": 0}, "output_tokens": 110, "output_tokens_details": {"reasoning_tokens": 79}, "total_tokens": 3532}}

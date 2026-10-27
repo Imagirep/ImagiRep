@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB3-0161-Q7",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk near the sink, facing the direction I go, where is the two-tier tray relative to me?",
+  "answer_choices": {
+    "C": "behind",
+    "A": "front",
+    "B": "right",
+    "D": "left"
+  },
+  "gold_answer": "C",
+  "show_lookback": false,
+  "prediction": "C",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch3_bent100_20260920/items/FOB3-0161/start_view.png",
+      "sha256": "79ef7d9388d2597d239ab687f6bfe91e86d82f801857a0090bc5038c99d3877b"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_bent100_20260920/items/FOB3-0161/step_01_rgb.png",
+      "sha256": "972060eba17a2c9ba04130e6c6c604a20844d5a29076fb399002606951375807"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_bent100_20260920/items/FOB3-0161/step_02_rgb.png",
+      "sha256": "7008bcdfccc80be2930123973d6d0157ffc264d675709bdb883988b64f8e38b5"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3332,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 140
+      }
+    ],
+    "thoughts_token_count": 927,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4260,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_duration_seconds": 5.211265099991579,
+  "completed_at": "2026-10-06T14:54:54-04:00"
+}

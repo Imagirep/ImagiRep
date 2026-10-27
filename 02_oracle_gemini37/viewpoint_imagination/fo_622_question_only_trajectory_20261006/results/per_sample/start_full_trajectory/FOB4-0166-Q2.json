@@ -1,0 +1,64 @@
+{
+  "question_id": "FOB4-0166-Q2",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the blue table, facing the direction I go, which direction would have the closest obstacle, besides the blue table?",
+  "answer_choices": {
+    "A": "right",
+    "B": "front",
+    "C": "left",
+    "D": "behind"
+  },
+  "gold_answer": "A",
+  "show_lookback": false,
+  "prediction": "B",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0166/start_view.png",
+      "sha256": "720bbb4678db684adb21fdc5017699e575e958556ef79b2509d6b32523fcf7ab"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0166/step_01_rgb.png",
+      "sha256": "2c8b75b126e484b305626cdba71b31f9f78330078b83afcc2d611b68b33fb3c5"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2266,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 138
+      }
+    ],
+    "thoughts_token_count": 2204,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4471,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 9.014655399994808,
+  "completed_at": "2026-10-06T15:17:11-04:00"
+}

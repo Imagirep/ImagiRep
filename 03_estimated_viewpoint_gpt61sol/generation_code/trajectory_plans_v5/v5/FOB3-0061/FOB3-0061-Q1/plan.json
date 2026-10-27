@@ -1,0 +1,265 @@
+{
+  "question_id": "FOB3-0061-Q1",
+  "motion_text": "I walk to the sink and slightly turn left.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the white kitchen sink on the island",
+      "relation": "to"
+    },
+    {
+      "op": "turn",
+      "direction": "left",
+      "amount": "slight"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0061-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.04906466128196542,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.937106564828129,
+        "y": 0.1442238893570562,
+        "yaw": 0.04906466128196542,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.937106564828129,
+        "y": 0.1442238893570562,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.737106564828129,
+        "y": 0.1442238893570562,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.937106564828129,
+        0.1442238893570562
+      ],
+      [
+        -3.737106564828129,
+        0.1442238893570562
+      ]
+    ],
+    "x": -3.737106564828129,
+    "y": 0.1442238893570562,
+    "yaw": 0.03857325171837766,
+    "pitch": 0.0,
+    "travel_yaw": 0.03857325171837766
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.937106564828129,
+      0.1442238893570562
+    ],
+    [
+      -3.737106564828129,
+      0.1442238893570562
+    ]
+  ],
+  "final": {
+    "x": -3.737106564828129,
+    "y": 0.1442238893570562,
+    "yaw_deg": -32.789915474441194,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the white kitchen sink on the island",
+        "relation": "to"
+      },
+      "x": -3.737106564828129,
+      "y": 0.1442238893570562,
+      "yaw": 0.03857325171837766,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left",
+        "amount": "slight"
+      },
+      "x": -3.737106564828129,
+      "y": 0.1442238893570562,
+      "yaw": -0.5722919864796374,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.04906466128196542,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.937106564828129,
+      "y": 0.1442238893570562,
+      "yaw": 0.04906466128196542,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.937106564828129,
+      "y": 0.1442238893570562,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.737106564828129,
+      "y": 0.1442238893570562,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.737106564828129,
+      "y": 0.1442238893570562,
+      "yaw": 0.03857325171837766,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.737106564828129,
+      "y": 0.1442238893570562,
+      "yaw": -0.5722919864796374,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the white kitchen sink on the island",
+      "method": "initial_photo",
+      "box": [
+        615,
+        529,
+        712,
+        652
+      ],
+      "point_m": [
+        -4.6063382099893255,
+        0.792989030174988,
+        -0.8666924239109529
+      ]
+    },
+    {
+      "overlap": "the white kitchen sink on the island",
+      "n_points": 210,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 3.8000000000000003,
+          "stop_m": 1.0846473440202355,
+          "visible_frac": 1.0,
+          "center_deg": 1.0687716350352585,
+          "width_deg": 51.2037556712981,
+          "distance_m": 1.348060493953932
+        },
+        {
+          "sector": 2,
+          "path_m": 4.1000000000000005,
+          "stop_m": 0.863087987283703,
+          "visible_frac": 0.8714285714285714,
+          "center_deg": -1.2060805920719984,
+          "width_deg": 54.410244278823,
+          "distance_m": 1.1301912132871075
+        },
+        {
+          "sector": 1,
+          "path_m": 4.7,
+          "stop_m": 0.6494943414688056,
+          "visible_frac": 0.5238095238095238,
+          "center_deg": -13.566227737343608,
+          "width_deg": 70.27601241963774,
+          "distance_m": 0.7274845748189089
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 2.3076736495235926,
+  "seconds": 6.343695163726807
+}

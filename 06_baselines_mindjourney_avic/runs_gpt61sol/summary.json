@@ -1,0 +1,201 @@
+{
+ "tables": {
+  "mj_fo622": {
+   "farthest_object": {
+    "n": 98,
+    "observed": 68.4,
+    "raw": 65.3,
+    "base": null,
+    "final": 69.4,
+    "imagination_used": 98
+   },
+   "nearest_object": {
+    "n": 104,
+    "observed": 51.0,
+    "raw": 52.9,
+    "base": null,
+    "final": 53.8,
+    "imagination_used": 104
+   },
+   "nearest_obstacle_direction": {
+    "n": 55,
+    "observed": 38.2,
+    "raw": 56.4,
+    "base": null,
+    "final": 52.7,
+    "imagination_used": 55
+   },
+   "object_relative_direction": {
+    "n": 170,
+    "observed": 70.0,
+    "raw": 65.3,
+    "base": null,
+    "final": 67.1,
+    "imagination_used": 170
+   },
+   "open_space_direction": {
+    "n": 91,
+    "observed": 60.4,
+    "raw": 42.9,
+    "base": null,
+    "final": 53.8,
+    "imagination_used": 91
+   },
+   "visibility": {
+    "n": 104,
+    "observed": 39.4,
+    "raw": 40.4,
+    "base": null,
+    "final": 45.2,
+    "imagination_used": 104
+   },
+   "All": {
+    "n": 622,
+    "observed": 57.2,
+    "raw": 55.0,
+    "base": null,
+    "final": 58.4,
+    "imagination_used": 622
+   }
+  },
+  "avic_fo622": {
+   "farthest_object": {
+    "n": 98,
+    "observed": 68.4,
+    "raw": 53.1,
+    "base": null,
+    "final": 63.3,
+    "imagination_used": 98
+   },
+   "nearest_object": {
+    "n": 104,
+    "observed": 51.0,
+    "raw": 44.2,
+    "base": null,
+    "final": 51.0,
+    "imagination_used": 104
+   },
+   "nearest_obstacle_direction": {
+    "n": 55,
+    "observed": 38.2,
+    "raw": 47.3,
+    "base": null,
+    "final": 49.1,
+    "imagination_used": 55
+   },
+   "object_relative_direction": {
+    "n": 170,
+    "observed": 70.0,
+    "raw": 58.8,
+    "base": null,
+    "final": 62.4,
+    "imagination_used": 170
+   },
+   "open_space_direction": {
+    "n": 91,
+    "observed": 60.4,
+    "raw": 44.0,
+    "base": null,
+    "final": 51.6,
+    "imagination_used": 91
+   },
+   "visibility": {
+    "n": 104,
+    "observed": 39.4,
+    "raw": 38.5,
+    "base": null,
+    "final": 46.2,
+    "imagination_used": 104
+   },
+   "All": {
+    "n": 622,
+    "observed": 57.2,
+    "raw": 48.9,
+    "base": null,
+    "final": 55.1,
+    "imagination_used": 622
+   }
+  },
+  "mj_mvc300": {
+   "cross_view_closest": {
+    "n": 81,
+    "observed": 56.8,
+    "raw": 65.4,
+    "base": null,
+    "final": 62.5,
+    "imagination_used": 75
+   },
+   "cross_view_farthest": {
+    "n": 82,
+    "observed": 59.8,
+    "raw": 58.5,
+    "base": null,
+    "final": 62.2,
+    "imagination_used": 62
+   },
+   "ordering": {
+    "n": 137,
+    "observed": 79.6,
+    "raw": 77.4,
+    "base": null,
+    "final": 81.8,
+    "imagination_used": 117
+   },
+   "All": {
+    "n": 300,
+    "observed": 68.0,
+    "raw": 69.0,
+    "base": null,
+    "final": 71.2,
+    "imagination_used": 254
+   }
+  },
+  "avic_mvc300": {
+   "cross_view_closest": {
+    "n": 81,
+    "observed": 56.8,
+    "raw": 58.0,
+    "base": null,
+    "final": 59.3,
+    "imagination_used": 77
+   },
+   "cross_view_farthest": {
+    "n": 82,
+    "observed": 59.8,
+    "raw": 56.1,
+    "base": null,
+    "final": 51.2,
+    "imagination_used": 82
+   },
+   "ordering": {
+    "n": 137,
+    "observed": 79.6,
+    "raw": 77.4,
+    "base": null,
+    "final": 85.4,
+    "imagination_used": 131
+   },
+   "All": {
+    "n": 300,
+    "observed": 68.0,
+    "raw": 66.3,
+    "base": null,
+    "final": 69.0,
+    "imagination_used": 290
+   }
+  }
+ },
+ "usd": {
+  "A_avic_fo622": 10.663357999999977,
+  "A_mj_fo622": 17.931388000000016,
+  "qa_fo622_avic_label.jsonl": 5.036990000000001,
+  "qa_fo622_mj_top3+label.jsonl": 3.6323300000000045,
+  "A_avic_mvc300": 8.801575999999999,
+  "A_mj_mvc300": 13.842267999999986,
+  "A_avic_fo622restavic": 15.35608599999999,
+  "A_mj_fo622restmj": 25.529118000000082,
+  "A_avic_mvc300rest2avic": 4.308359999999992,
+  "A_mj_mvc300rest2mj": 0.04542,
+  "qa_mvc300_mj_top3+label.jsonl": 0.540882
+ }
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-034-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-034-Q1",
+  "resource_id": "MVC-034",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to gray chair in Image 1?",
+  "answer_choices": {
+    "A": "globe",
+    "B": "potted plant",
+    "C": "framed painting",
+    "D": "lamp"
+  },
+  "gold_answer": "D",
+  "prediction": "B",
+  "correct": false,
+  "signature": "1164fc0c6443c3aa6fd10e878229862f5ba4c284609dd0d00e2ffa05d85fc7af",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-034\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4597,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 324
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      }
+    ],
+    "thoughts_token_count": 2058,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6656,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 27.773707000000286,
+  "completed_at": "2026-10-06T17:43:57-04:00"
+}

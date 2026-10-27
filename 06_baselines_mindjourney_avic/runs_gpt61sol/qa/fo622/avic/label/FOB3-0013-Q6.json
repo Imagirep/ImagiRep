@@ -1,0 +1,1 @@
+{"qid": "FOB3-0013-Q6", "method": "avic", "variant": "label", "prediction": "front", "gold": "front", "correct": true, "n_imagined": 2, "category": "object_relative_direction", "stored_result": "correct"}

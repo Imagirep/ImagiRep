@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC3I-012-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC3I-012-Q1",
+  "resource_id": "MVC3I-012",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Images 2 and 3 is closest to deer statue in Image 1?",
+  "answer_choices": {
+    "A": "gray doorway",
+    "B": "lamp",
+    "C": "wooden desk",
+    "D": "black chair"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "1a1721d04c1f4f418548f04b0d13a7bcd7da960e518c129e9167a718ea60b7a3",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC3I-012\\order_123\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 5668,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 5345
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 323
+      }
+    ],
+    "thoughts_token_count": 4726,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 10394,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 25.432959700003266,
+  "completed_at": "2026-10-06T17:29:31-04:00"
+}

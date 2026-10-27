@@ -1,0 +1,150 @@
+{
+  "row_index": 215,
+  "question_id": "FOB2-0034-Q3",
+  "trajectory_id": "FOB2-0034",
+  "scan_id": "JeFG25nYj2p",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk to the round table, then turn back to face where I come from, would the armchair still be directly visible?",
+  "answer_choices": {
+    "D": "outside of view",
+    "A": "clearly visible",
+    "B": "completely blocked",
+    "C": "partially visible"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "D": "D",
+    "A": "A",
+    "B": "C",
+    "C": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0034\\start_view.png",
+      "sha256": "316c24fb224f3875254bf17eee3ccdeda9d37be03b8fc261a74ada8c2a1fbd64"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0034\\step_01_rgb.png",
+      "sha256": "743c7b9557dbe050eca0b776b252935bedd3882910d714c2e9c6648b83952d96"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0034\\step_02_rgb.png",
+      "sha256": "43083f07f7c91ced38632641906563dc90b789cbbfea9f5d6499cb4ba6d54e1b"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0034\\oracle_lookback.png",
+      "sha256": "ec0b77bef8083a59ae1af4ecf336cffac830f7d1714760a2240e3924482ae108"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "category": "visibility",
+  "category_label": "Visibility (incl. object selection by visibility)",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0034\\oracle_lookback_depth.png",
+      "sha256": "66b1e7cb26e9e17716bc44db37e2fde621717c7af4df288e0028691cba0ecc5b",
+      "color_scale": {
+        "near_m": 1.34925,
+        "far_m": 8.80225
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0034\\oracle_lookback_surface_normals.png",
+      "sha256": "262322a863a944c2b3178e9fddd345d6f6c9f0d25486dccde408fb0d8b1fb856"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0034\\oracle_lookback_panorama.png",
+      "sha256": "bf6c50eeb4b58c6b00dd79d26630888f41a1349c2d4c9c36af13dccc45f78d46"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0034\\topdown_lookback_with_path.png",
+      "sha256": "a71eb39bd2b17e684001e279e7e4726046dfcbc208a96d5bcc3e3601e773940a"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0034\\trajectory_lookback.txt",
+      "sha256": "7d3b92393345ddd2e6730c71e77a62ce5cf7de10b3cceb2977c3c7a9a0a2aad2"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0034\\trajectory_lookback.mp4",
+      "sha256": "2cc71018824dc7f800fe4655bce5b6475c6d1760cc839ecb870ebdb7f8f32cff"
+    }
+  },
+  "condition": "start_final_panorama",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT PANORAMA (360-degree RGB at the FINAL VIEW position):\nThe panorama is centered on the final camera's facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. This is one position, not a sequence of movement frames. Combine it with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "D",
+  "correct": true,
+  "input_signature": "6f30cd49132ef0165fed676b9f100fb480779c1821009ae2b4337f866842c8a6",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "panorama"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3460,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 251
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3209
+      }
+    ],
+    "thoughts_token_count": 2701,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6162,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_started_at": "2026-09-28T04:02:06.755-04:00",
+  "request_duration_seconds": 11.93470189999789,
+  "completed_at": "2026-09-28T04:02:18.690-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

@@ -1,0 +1,115 @@
+% Benchmark result tables (2026-10-06). Requires: \usepackage{booktabs,multirow,makecell}
+% Single-view: 622-question freeze (2026-10-02), oracle inputs, 8 conditions.
+% Multi-view (MVC): Ready100 (210 Qs) + Last50 (115 Qs, round 1) = 325 Qs, 3 settings.
+% Model: Gemini 3.7 Flash, temperature 0, HIGH thinking, A--D constrained answer, shuffled options.
+
+%% ---------------------------------------------------------------- Table 1
+\begin{table}[t]
+\centering
+\caption{Benchmark overview.}
+\label{tab:overview}
+\begin{tabular}{llrr}
+\toprule
+Task & Question type & \#Q & \% \\
+\midrule
+\multirow{7}{*}{\makecell[l]{Single-view\\(future observation)\\622 Q / 200 traj.\\73 MP3D scans}}
+ & Open-space direction        &  91 & 14.6 \\
+ & Closest-obstacle direction  &  55 &  8.8 \\
+ & Visibility                  & 104 & 16.7 \\
+ & Closest object              & 104 & 16.7 \\
+ & Farthest object             &  98 & 15.8 \\
+ & Object relative direction   & 170 & 27.3 \\
+ \cmidrule(l){2-4}
+ & \multicolumn{3}{l}{\emph{Final view: endpoint 421 / lookback 201}} \\
+\midrule
+\multirow{3}{*}{\makecell[l]{Multi-view (MVC)\\325 Q / 150 view sets\\23 MP3D scans}}
+ & Cross-view closest   &  90 & 27.7 \\
+ & Cross-view farthest  &  87 & 26.8 \\
+ & Left--right ordering & 148 & 45.5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%% ---------------------------------------------------------------- Table 2
+\begin{table}[t]
+\centering
+\caption{Main results (accuracy, \%). Single-view: oracle inputs on 622 questions.
+Multi-view: 325 questions. $\Delta$: change vs.\ the row marked $\dagger$.}
+\label{tab:main}
+\begin{tabular}{lrr}
+\toprule
+Setting & Acc. & $\Delta$ (pp) \\
+\midrule
+\multicolumn{3}{l}{\emph{Single-view (n=622)}} \\
+Start view only                           & 53.7 & $-10.0$ \\
+Start + final RGB$^\dagger$               & 63.7 & --      \\
+Per-type best modality (oracle selection) & 74.4 & $+10.8$ \\
+Any condition correct (upper bound)       & 83.0 & $+19.3$ \\
+\midrule
+\multicolumn{3}{l}{\emph{Multi-view (n=325)}} \\
+Text only                                 & 32.0 & $-36.3$ \\
+Observed images$^\dagger$                 & 68.3 & --      \\
+Observed + oracle RGB                     & \textbf{80.6} & $+12.3$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%% ---------------------------------------------------------------- Table 4
+\begin{table*}[t]
+\centering
+\caption{Single-view accuracy (\%) by question type and condition (n=622). Best per row in bold.}
+\label{tab:sv_type}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Question type & n & Start & +Final & +Top-down & +Text & +Video & +Depth & +Normals & +Pano \\
+\midrule
+Open-space direction       &  91 & 52.7 & 58.2 & 44.0 & 51.6 & 47.3 & \textbf{61.5} & 56.0 & 40.7 \\
+Closest-obstacle direction &  55 & 36.4 & 45.5 & 50.9 & 45.5 & 49.1 & 47.3 & \textbf{52.7} & 41.8 \\
+Visibility                 & 104 & 32.7 & 49.0 & \textbf{52.9} & 51.9 & 47.1 & 50.0 & 42.3 & 44.2 \\
+Closest object             & 104 & 51.9 & 65.4 & 66.3 & 64.4 & 61.5 & \textbf{67.3} & 65.4 & 58.7 \\
+Farthest object            &  98 & 66.3 & 65.3 & 61.2 & 56.1 & 59.2 & \textbf{67.3} & 62.2 & 58.2 \\
+Object relative direction  & 170 & 66.5 & 79.4 & 77.6 & 73.5 & \textbf{81.8} & 80.0 & 77.6 & 74.1 \\
+\midrule
+All                        & 622 & 53.7 & 63.7 & 61.7 & 60.0 & 61.1 & \textbf{65.3} & 61.9 & 56.3 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+%% ---------------------------------------------------------------- Table 5
+\begin{table}[t]
+\centering
+\caption{Single-view: selecting the best additional modality per question type.}
+\label{tab:sv_best}
+\begin{tabular}{llrrrr}
+\toprule
+Question type & Best modality & Final corr. & Rescued & Total & Gain (pp) \\
+\midrule
+Open-space direction       & Panorama           &  53 & 15 &  68/91  & 16.48 \\
+Closest-obstacle direction & Top-down           &  25 &  9 &  34/55  & 16.36 \\
+Visibility                 & Text               &  51 &  9 &  60/104 &  8.65 \\
+Closest object             & Top-down           &  68 & 10 &  78/104 &  9.62 \\
+Farthest object            & Top-down           &  64 & 10 &  74/98  & 10.20 \\
+Object relative direction  & Video              & 135 & 14 & 149/170 &  8.24 \\
+\midrule
+All                        &                    & 396 & 67 & 463/622 & 10.77 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%% ---------------------------------------------------------------- Table 6
+\begin{table}[t]
+\centering
+\caption{Multi-view accuracy (\%) by question type and setting.}
+\label{tab:mvc}
+\begin{tabular}{lrrrr}
+\toprule
+Question type & n & Text & Observed & +Oracle \\
+\midrule
+Cross-view closest  &  90 & 33.3 & 64.4 & 77.8 \\
+Cross-view farthest &  87 & 40.2 & 63.2 & 65.5 \\
+Ordering            & 148 & 26.4 & 73.6 & \textbf{91.2} \\
+\midrule
+All                 & 325 & 32.0 & 68.3 & \textbf{80.6} \\
+\bottomrule
+\end{tabular}
+\end{table}

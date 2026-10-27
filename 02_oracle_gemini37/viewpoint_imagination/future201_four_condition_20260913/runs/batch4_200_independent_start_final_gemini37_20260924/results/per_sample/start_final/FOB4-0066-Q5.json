@@ -1,0 +1,92 @@
+{
+  "row_index": 233,
+  "question_id": "FOB4-0066-Q5",
+  "trajectory_id": "FOB4-0066",
+  "scan_id": "oLBMNvg9in8",
+  "route_variant": "new_straight",
+  "question_type": 5,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk to the large painting, then slightly turn left, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "D": "small statue",
+    "A": "dining table",
+    "B": "glass vase",
+    "C": "black console table"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "glass vase",
+    "B": "dining table",
+    "C": "black console table",
+    "D": "small statue"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "D": "D",
+    "A": "B",
+    "B": "A",
+    "C": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0066\\start_view.png",
+      "sha256": "20ecb9ba886bbe8ee3caf85f098aff12203b3e6ca8c3f84080050486eef032ef"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0066\\step_01_rgb.png",
+      "sha256": "85b8dcf65841a96055c254f46e57842e24a7560ecded5eba929cd80907ac92e3"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": false,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2268,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 140
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 786,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3055,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-24T17:34:26-04:00"
+}

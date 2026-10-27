@@ -1,0 +1,20 @@
+{
+  "seed": 20260930,
+  "questions": 210,
+  "resources": 100,
+  "question_types": {
+    "cross_view_closest": 58,
+    "cross_view_farthest": 54,
+    "ordering": 98
+  },
+  "ordering_questions": 98,
+  "right_to_left_questions": 49,
+  "source_sha256": {
+    "resources.json": "062f57e57697a5f122e9f11d3938b3a67336445989fd8caa9cb4e8c0713943ed",
+    "labels.json": "8191250391195da02978b3887b8e57927ae725b99f073b4d2018d791fd12ccaf",
+    "skips.json": "6f7f9c4fe198551d140789d75c539a509bbf4fffd7322f3c701da512f53dd666"
+  },
+  "model_calls": 0,
+  "prompt_version": "mvc_spatial_reference_v2",
+  "randomization_policy": "Uniform image permutation per resource; uniform option permutation per question; 49 of98 ordering questions RTL; frozen plan reused for all settings/rounds. Gold letters are not constrained to exact balance."
+}

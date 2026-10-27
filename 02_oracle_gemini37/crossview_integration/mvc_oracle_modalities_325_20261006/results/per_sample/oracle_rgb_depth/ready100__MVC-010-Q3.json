@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-010-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-010-Q3",
+  "resource_id": "MVC-010",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "sink, dishwasher, refrigerator, stove",
+    "B": "stove, dishwasher, sink, refrigerator",
+    "C": "sink, dishwasher, stove, refrigerator",
+    "D": "sink, stove, refrigerator, dishwasher"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "602e9dafa9d4325bbf7f471df50fe022e8a923ca6e693bc48feb4a447259cadc",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.602 m (near/red) to 5.980 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-010\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4630,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 374
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 1911,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6542,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 11.299266799993347,
+  "completed_at": "2026-10-06T17:36:27-04:00"
+}

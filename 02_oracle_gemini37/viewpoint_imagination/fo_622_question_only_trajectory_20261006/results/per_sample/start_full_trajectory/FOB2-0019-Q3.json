@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB2-0019-Q3",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk forward and stop near the sofa, then turn back to face where I come from, would the little statue still be directly visible?",
+  "answer_choices": {
+    "B": "outside of view",
+    "A": "completely blocked",
+    "C": "clearly visible",
+    "D": "partially visible"
+  },
+  "gold_answer": "B",
+  "show_lookback": true,
+  "prediction": "B",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0019/start_view.png",
+      "sha256": "91ba16544508df200c780e8df7d0123cd54059191349312aaa24bd98a68c969c"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0019/step_01_rgb.png",
+      "sha256": "8c093730fd982ef02550cacb6bcb0bdf6d3584be7f3fdb6e3137fe234fa7d1d4"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0019/oracle_lookback.png",
+      "sha256": "1be9938f1d8e12411772ecdc8687748128b5630398bb416f4ee155f65afb8aec"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3344,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 152
+      }
+    ],
+    "thoughts_token_count": 3297,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6642,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 16.050387399998726,
+  "completed_at": "2026-10-06T14:16:57-04:00"
+}

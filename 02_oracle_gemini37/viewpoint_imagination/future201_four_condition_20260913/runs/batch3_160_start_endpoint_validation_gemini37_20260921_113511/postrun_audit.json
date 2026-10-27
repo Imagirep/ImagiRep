@@ -1,0 +1,30 @@
+{
+  "status": "complete_verified",
+  "verified_at": "2026-09-21T11:45:16-04:00",
+  "manifest_rows": 160,
+  "result_rows": 320,
+  "per_condition_rows": {
+    "start_view": 160,
+    "start_final": 160
+  },
+  "per_condition_unique_questions": {
+    "start_view": 160,
+    "start_final": 160
+  },
+  "per_condition_sample_files": {
+    "start_view": 160,
+    "start_final": 160
+  },
+  "frozen_hashes_checked": 179,
+  "frozen_hash_mismatches": [],
+  "per_sample_mismatches": [],
+  "result_contract_errors": [],
+  "errors": [],
+  "expected_image_counts": {
+    "start_view": 1,
+    "start_final": 2
+  },
+  "ordinary_endpoint_questions": 115,
+  "oracle_lookback_questions": 45,
+  "no_modality_inputs": true
+}

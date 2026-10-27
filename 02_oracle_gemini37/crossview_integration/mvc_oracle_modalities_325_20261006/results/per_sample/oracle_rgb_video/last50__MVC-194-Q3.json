@@ -1,0 +1,52 @@
+{
+  "uid": "last50__MVC-194-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-194-Q3",
+  "resource_id": "MVC-194",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "wooden building, green umbrella, wooden door frame, black armchair",
+    "B": "wooden building, wooden door frame, black armchair, green umbrella",
+    "C": "green umbrella, black armchair, wooden building, wooden door frame",
+    "D": "black armchair, wooden door frame, green umbrella, wooden building"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "c8656ca9195322888455d14d5461d46eabef713fa8ee49557e9aa3765ca215e4",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-194\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7935,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 333
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 730,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8666,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.67919319999055,
+  "completed_at": "2026-10-06T17:35:47-04:00"
+}

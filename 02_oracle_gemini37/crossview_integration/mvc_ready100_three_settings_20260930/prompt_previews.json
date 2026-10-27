@@ -1,0 +1,259 @@
+[
+  {
+    "question_id": "MVC-001-Q1",
+    "condition": "text_only",
+    "system": "Solve this spatial reasoning multiple-choice question from the provided text. Reason carefully. Return only A, B, C, or D.",
+    "user_parts": [
+      {
+        "text": "No images are provided. Choose the best answer using only the question and answer choices. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.\n\nQuestion: Which object in Image 2 is closest to lamp in Image 1?\nA. table\nB. gray chair\nC. painting\nD. potted plant\nAnswer:"
+      }
+    ],
+    "image_paths": []
+  },
+  {
+    "question_id": "MVC-001-Q1",
+    "condition": "original_only",
+    "system": "Solve this multi-view spatial reasoning multiple-choice question using the provided evidence. Reason carefully. Return only A, B, C, or D.",
+    "user_parts": [
+      {
+        "text": "Image 1:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "69a1925e6b0ca7e0408ed9b21e8f6b9df90ee7d505dd52da9532455c50a25edf"
+      },
+      {
+        "text": "Image 2:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "3be6789fb0d1fe789aee2c1211d39138102c30f4291f5bf2c1e07583eb69a6c2"
+      },
+      {
+        "text": "Use the numbered images to answer the question. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.\n\nQuestion: Which object in Image 2 is closest to lamp in Image 1?\nA. table\nB. gray chair\nC. painting\nD. potted plant\nAnswer:"
+      }
+    ],
+    "image_paths": [
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-001\\image_1.png",
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-001\\image_2.png"
+    ]
+  },
+  {
+    "question_id": "MVC-001-Q1",
+    "condition": "oracle_rgb",
+    "system": "Solve this multi-view spatial reasoning multiple-choice question using the provided evidence. Reason carefully. Return only A, B, C, or D.",
+    "user_parts": [
+      {
+        "text": "Image 1:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "69a1925e6b0ca7e0408ed9b21e8f6b9df90ee7d505dd52da9532455c50a25edf"
+      },
+      {
+        "text": "Image 2:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "3be6789fb0d1fe789aee2c1211d39138102c30f4291f5bf2c1e07583eb69a6c2"
+      },
+      {
+        "text": "Oracle RGB:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "d984220aec973efc2675717d8bfe21487d33cb8975860754f7f6c620d7378d87"
+      },
+      {
+        "text": "Use the numbered images together with Oracle RGB to answer the question. Oracle RGB is an additional view of the same scene; it supplies evidence but does not replace the reference viewpoint named in the question. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.\n\nQuestion: Which object in Image 2 is closest to lamp in Image 1?\nA. table\nB. gray chair\nC. painting\nD. potted plant\nAnswer:"
+      }
+    ],
+    "image_paths": [
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-001\\image_1.png",
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-001\\image_2.png",
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-001\\oracle.png"
+    ]
+  },
+  {
+    "question_id": "MVC3I-002-Q1",
+    "condition": "text_only",
+    "system": "Solve this spatial reasoning multiple-choice question from the provided text. Reason carefully. Return only A, B, C, or D.",
+    "user_parts": [
+      {
+        "text": "No images are provided. Choose the best answer using only the question and answer choices. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.\n\nQuestion: Which object in Images 3 and 2 is closest to white decorative cabinet in Image 1?\nA. bed\nB. lamp\nC. toilet\nD. sink\nAnswer:"
+      }
+    ],
+    "image_paths": []
+  },
+  {
+    "question_id": "MVC3I-002-Q1",
+    "condition": "original_only",
+    "system": "Solve this multi-view spatial reasoning multiple-choice question using the provided evidence. Reason carefully. Return only A, B, C, or D.",
+    "user_parts": [
+      {
+        "text": "Image 1:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "a0163bbc9cb14f34f08b3bf8449fcd344bdf6000238a25f73fa005ec74721da5"
+      },
+      {
+        "text": "Image 2:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "04a62c92384511589ae903d7038c54edb57bf7799b7e72e6ba8ac0ce47ad7575"
+      },
+      {
+        "text": "Image 3:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "8619ec32a9e53a9df1f4d96514b1f6c9efabaf0bb537f766c998c6343e6dddef"
+      },
+      {
+        "text": "Use the numbered images to answer the question. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.\n\nQuestion: Which object in Images 3 and 2 is closest to white decorative cabinet in Image 1?\nA. bed\nB. lamp\nC. toilet\nD. sink\nAnswer:"
+      }
+    ],
+    "image_paths": [
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-002\\image_1.png",
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-002\\image_3.png",
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-002\\image_2.png"
+    ]
+  },
+  {
+    "question_id": "MVC3I-002-Q1",
+    "condition": "oracle_rgb",
+    "system": "Solve this multi-view spatial reasoning multiple-choice question using the provided evidence. Reason carefully. Return only A, B, C, or D.",
+    "user_parts": [
+      {
+        "text": "Image 1:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "a0163bbc9cb14f34f08b3bf8449fcd344bdf6000238a25f73fa005ec74721da5"
+      },
+      {
+        "text": "Image 2:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "04a62c92384511589ae903d7038c54edb57bf7799b7e72e6ba8ac0ce47ad7575"
+      },
+      {
+        "text": "Image 3:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "8619ec32a9e53a9df1f4d96514b1f6c9efabaf0bb537f766c998c6343e6dddef"
+      },
+      {
+        "text": "Oracle RGB:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "13f2d378ece03ba7107dfbc2a12fef1964d77c69c4ade7ee06737eeb6ed18d82"
+      },
+      {
+        "text": "Use the numbered images together with Oracle RGB to answer the question. Oracle RGB is an additional view of the same scene; it supplies evidence but does not replace the reference viewpoint named in the question. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.\n\nQuestion: Which object in Images 3 and 2 is closest to white decorative cabinet in Image 1?\nA. bed\nB. lamp\nC. toilet\nD. sink\nAnswer:"
+      }
+    ],
+    "image_paths": [
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-002\\image_1.png",
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-002\\image_3.png",
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-002\\image_2.png",
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-002\\oracle_native_pose.png"
+    ]
+  },
+  {
+    "question_id": "MVC3I-002-Q3",
+    "condition": "text_only",
+    "system": "Solve this spatial reasoning multiple-choice question from the provided text. Reason carefully. Return only A, B, C, or D.",
+    "user_parts": [
+      {
+        "text": "No images are provided. Choose the best answer using only the question and answer choices. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.\n\nQuestion: From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?\nA. lamp, toilet, decorative white cabinet, bed\nB. lamp, bed, toilet, decorative white cabinet\nC. decorative white cabinet, lamp, toilet, bed\nD. decorative white cabinet, toilet, lamp, bed\nAnswer:"
+      }
+    ],
+    "image_paths": []
+  },
+  {
+    "question_id": "MVC3I-002-Q3",
+    "condition": "original_only",
+    "system": "Solve this multi-view spatial reasoning multiple-choice question using the provided evidence. Reason carefully. Return only A, B, C, or D.",
+    "user_parts": [
+      {
+        "text": "Image 1:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "a0163bbc9cb14f34f08b3bf8449fcd344bdf6000238a25f73fa005ec74721da5"
+      },
+      {
+        "text": "Image 2:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "04a62c92384511589ae903d7038c54edb57bf7799b7e72e6ba8ac0ce47ad7575"
+      },
+      {
+        "text": "Image 3:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "8619ec32a9e53a9df1f4d96514b1f6c9efabaf0bb537f766c998c6343e6dddef"
+      },
+      {
+        "text": "Use the numbered images to answer the question. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.\n\nQuestion: From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?\nA. lamp, toilet, decorative white cabinet, bed\nB. lamp, bed, toilet, decorative white cabinet\nC. decorative white cabinet, lamp, toilet, bed\nD. decorative white cabinet, toilet, lamp, bed\nAnswer:"
+      }
+    ],
+    "image_paths": [
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-002\\image_1.png",
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-002\\image_3.png",
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-002\\image_2.png"
+    ]
+  },
+  {
+    "question_id": "MVC3I-002-Q3",
+    "condition": "oracle_rgb",
+    "system": "Solve this multi-view spatial reasoning multiple-choice question using the provided evidence. Reason carefully. Return only A, B, C, or D.",
+    "user_parts": [
+      {
+        "text": "Image 1:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "a0163bbc9cb14f34f08b3bf8449fcd344bdf6000238a25f73fa005ec74721da5"
+      },
+      {
+        "text": "Image 2:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "04a62c92384511589ae903d7038c54edb57bf7799b7e72e6ba8ac0ce47ad7575"
+      },
+      {
+        "text": "Image 3:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "8619ec32a9e53a9df1f4d96514b1f6c9efabaf0bb537f766c998c6343e6dddef"
+      },
+      {
+        "text": "Oracle RGB:\n"
+      },
+      {
+        "image_mime": "image/png",
+        "image_sha256": "13f2d378ece03ba7107dfbc2a12fef1964d77c69c4ade7ee06737eeb6ed18d82"
+      },
+      {
+        "text": "Use the numbered images together with Oracle RGB to answer the question. Oracle RGB is an additional view of the same scene; it supplies evidence but does not replace the reference viewpoint named in the question. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.\n\nQuestion: From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?\nA. lamp, toilet, decorative white cabinet, bed\nB. lamp, bed, toilet, decorative white cabinet\nC. decorative white cabinet, lamp, toilet, bed\nD. decorative white cabinet, toilet, lamp, bed\nAnswer:"
+      }
+    ],
+    "image_paths": [
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-002\\image_1.png",
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-002\\image_3.png",
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-002\\image_2.png",
+      "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC3I-002\\oracle_native_pose.png"
+    ]
+  }
+]

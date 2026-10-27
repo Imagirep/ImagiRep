@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-093-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-093-Q3",
+  "resource_id": "MVC-093",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "orange armchair, fireplace, tablet, yellow painting",
+    "B": "orange armchair, yellow painting, fireplace, tablet",
+    "C": "fireplace, tablet, yellow painting, orange armchair",
+    "D": "orange armchair, yellow painting, tablet, fireplace"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "a6985a3cf9e6dbed222ab939d159a9e9614c6e2d771e3e8d3619dc26be93b903",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-093\\order_21\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7923,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 321
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1417,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9341,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.891584899989539,
+  "completed_at": "2026-10-06T17:34:28-04:00"
+}

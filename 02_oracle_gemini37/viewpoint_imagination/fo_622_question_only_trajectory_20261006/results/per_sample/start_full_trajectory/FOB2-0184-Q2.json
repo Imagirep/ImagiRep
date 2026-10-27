@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB2-0184-Q2",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the round table and face the way I go, which direction would have the closest obstacle, besides the round table?",
+  "answer_choices": {
+    "B": "front",
+    "A": "left",
+    "C": "behind",
+    "D": "right"
+  },
+  "gold_answer": "B",
+  "show_lookback": false,
+  "prediction": "A",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_bent100_20260917/items/FOB2-0184/start_view.png",
+      "sha256": "d620f29ced986fbde8535e4fbbac859518ab59f3c0849b4f97ef3c03c90ff0f6"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_bent100_20260917/items/FOB2-0184/step_01_rgb.png",
+      "sha256": "bd42a32b8bafb720622502b5edf3215502ffac6896b07803bb6806eeec7f04f8"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_bent100_20260917/items/FOB2-0184/step_02_rgb.png",
+      "sha256": "de259fc13aa8e099abfaae45dd1e2888e119f079fda6fa3ec97690d86669ee61"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3335,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 143
+      }
+    ],
+    "thoughts_token_count": 1845,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5181,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_duration_seconds": 9.468503300013253,
+  "completed_at": "2026-10-06T14:33:21-04:00"
+}

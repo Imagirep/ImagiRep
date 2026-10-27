@@ -1,0 +1,76 @@
+{
+  "question_id": "FOB2-0177-Q2",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk upstairs, walk near the coffee table and face the way I go, which direction would have the closest obstacle?",
+  "answer_choices": {
+    "D": "front",
+    "A": "left",
+    "B": "right",
+    "C": "behind"
+  },
+  "gold_answer": "D",
+  "show_lookback": false,
+  "prediction": "D",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_bent100_20260917/items/FOB2-0177/start_view.png",
+      "sha256": "9ca816f3dfb69ae3f58add3229306d1968e961e1d69be015968f5196a872d37e"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_bent100_20260917/items/FOB2-0177/step_01_rgb.png",
+      "sha256": "56761bed0ab32066a2f3f89e1ed47d902d2825de514c69897b2a67936a09cb93"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_bent100_20260917/items/FOB2-0177/step_02_rgb.png",
+      "sha256": "a6774b791310977fb85f1c14ad1857bb36f4c44349d6783f07826fc4770d60fd"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_bent100_20260917/items/FOB2-0177/step_03_rgb.png",
+      "sha256": "3f8b71f8a172c69a440e6b190979969fa6ad57a8ce34effd7fd1997b4258ffb2"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4402,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 146
+      }
+    ],
+    "thoughts_token_count": 1029,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5432,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 7.745237999988603,
+  "completed_at": "2026-10-06T14:31:56-04:00"
+}

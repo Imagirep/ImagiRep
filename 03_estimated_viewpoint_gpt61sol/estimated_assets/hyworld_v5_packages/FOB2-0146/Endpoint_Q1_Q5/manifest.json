@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB2-0146-Q1",
+  "motion_text": "I walk near the counter and slightly turn left.",
+  "view_variant": "endpoint",
+  "frames": 70,
+  "fps": 12,
+  "total_distance_m": 2.5082792531454943,
+  "depth_display_range_scene_units": [
+    1.1975423312187194,
+    3.3667208766937256
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.2252650973137031,
+    "far_m": 3.4446595122964383
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.3574077934687807 m over generated floor distance",
+  "m_per_unit": 1.8547945618629456,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 15.494420051574707
+}

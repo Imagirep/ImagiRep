@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-009-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-009-Q2",
+  "resource_id": "MVC-009",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from mirror in Image 2?",
+  "answer_choices": {
+    "A": "painting",
+    "B": "white decorative vase",
+    "C": "fireplace",
+    "D": "black ottoman"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "1360dc3597b5e68a423ef22189ec80a97f0416e5a7efa86af73392a6a8e3a469",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-009\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3551,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 359
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 929,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4481,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 5.816740499998559,
+  "completed_at": "2026-10-06T17:30:22-04:00"
+}

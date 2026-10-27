@@ -1,0 +1,64 @@
+{
+  "question_id": "FOB2-0073-Q6",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the center of the room and slightly turn right, where is the white chair relative to me?",
+  "answer_choices": {
+    "C": "front",
+    "A": "right",
+    "B": "behind",
+    "D": "left"
+  },
+  "gold_answer": "C",
+  "show_lookback": false,
+  "prediction": "C",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0073/start_view.png",
+      "sha256": "90a890da9b52a982a38117f186bc73104678e98c2d36a88befc90c4f8581758d"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0073/step_01_rgb.png",
+      "sha256": "cd5f687638014b17807eb82860d6e74c88907cf9856da4ad163666a875051e9d"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2262,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 134
+      }
+    ],
+    "thoughts_token_count": 3253,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5516,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_duration_seconds": 13.840546699997503,
+  "completed_at": "2026-10-06T14:25:01-04:00"
+}

@@ -1,0 +1,52 @@
+{
+  "uid": "last50__MVC-169-Q2",
+  "cohort": "last50",
+  "question_id": "MVC-169-Q2",
+  "resource_id": "MVC-169",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from tv in Image 2?",
+  "answer_choices": {
+    "A": "mirror",
+    "B": "stool",
+    "C": "white shelf",
+    "D": "tub"
+  },
+  "gold_answer": "C",
+  "prediction": "A",
+  "correct": false,
+  "signature": "c0aff22a629feaec16d21c26ee1d498da712f2ed81cd0eaac63c05d48bd3d081",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-169\\order_21\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7884,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 282
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      }
+    ],
+    "thoughts_token_count": 3625,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 11510,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 17.19645909999963,
+  "completed_at": "2026-10-06T17:35:34-04:00"
+}

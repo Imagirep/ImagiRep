@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB2-0155-Q6",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the sink and turn back to face where I come from, where is the table relative to me?",
+  "answer_choices": {
+    "A": "right",
+    "B": "left",
+    "C": "behind",
+    "D": "front"
+  },
+  "gold_answer": "A",
+  "show_lookback": true,
+  "prediction": "A",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0155/start_view.png",
+      "sha256": "ef4c01cb1b70bb2bafd8061e493bdc08c25cf44586ff70dbcff2a304003c5626"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0155/step_01_rgb.png",
+      "sha256": "3d710bb4ecd5ad0729672473bb52a05fa9f36a88b80ae0c8ceb04851e0fcaefb"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0155/oracle_lookback.png",
+      "sha256": "5da9d8129d9671155ba1e0b9f005ae2dfcf978b97d5672a54449fee24388f264"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3334,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 142
+      }
+    ],
+    "thoughts_token_count": 737,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4072,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_duration_seconds": 5.183650500010117,
+  "completed_at": "2026-10-06T14:30:42-04:00"
+}

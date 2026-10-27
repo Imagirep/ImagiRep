@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-015-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-015-Q3",
+  "resource_id": "MVC-015",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "sofa, small lamp, bed, shelf",
+    "B": "shelf, small lamp, bed, sofa",
+    "C": "sofa, bed, small lamp, shelf",
+    "D": "small lamp, sofa, shelf, bed"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "fcd18197596ea3abc8cb16cc30311390d3d1aa7a1cbe474447b9f11c4953ef03",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-015\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3584,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 392
+      }
+    ],
+    "thoughts_token_count": 1821,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5405,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.44366999999329,
+  "completed_at": "2026-10-06T17:30:29-04:00"
+}

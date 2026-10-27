@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB4-0200-Q1",
+  "motion_text": "I walk near the gray armchair, and slightly turn right.",
+  "view_variant": "endpoint",
+  "frames": 106,
+  "fps": 12,
+  "total_distance_m": 5.186885099675252,
+  "depth_display_range_scene_units": [
+    0.6713949179649353,
+    2.127407183647156
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.6854352787178548,
+    "far_m": 5.34053360187033
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.4459801556483072 m over generated floor distance",
+  "m_per_unit": 2.3479470014572144,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 18.75646448135376
+}

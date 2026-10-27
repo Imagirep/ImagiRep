@@ -1,0 +1,1 @@
+{"uid": "last50__MVC-163-Q1", "category": "cross_view_closest", "reason": "The Estimated RGB connects the views and helps judge proximity to the TV.", "choice": "est_rgb", "usage": {"input_tokens": 3419, "input_tokens_details": {"cache_write_tokens": 3416, "cached_tokens": 0}, "output_tokens": 130, "output_tokens_details": {"reasoning_tokens": 97}, "total_tokens": 3549}}

@@ -1,0 +1,152 @@
+{
+  "row_index": 196,
+  "question_id": "FOB4-0056-Q8",
+  "trajectory_id": "FOB4-0056",
+  "scan_id": "jh4fc5c5qoQ",
+  "route_variant": "new_straight",
+  "question_type": 8,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "final_image_kind": "lookback",
+  "question": "If I walk near the doorway and turn to face my starting point, which object(s) would be in front of me and on my left?",
+  "answer_choices": {
+    "A": "refrigerator",
+    "B": "armchair",
+    "C": "white bowl",
+    "D": "square table"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "refrigerator",
+    "B": "armchair",
+    "C": "square table",
+    "D": "white bowl"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "A": "A",
+    "B": "B",
+    "C": "D",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0056\\start_view.png",
+      "sha256": "88de3533d9ebd1ac2182e3d8673797ca50c3e23c437b61caea086a754dd6c3ba"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0056\\step_01_rgb.png",
+      "sha256": "22c5425651707055eda04a0a710d5a6b7324b013f466233dc4a4235c4e98195c"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0056\\step_02_rgb.png",
+      "sha256": "e5d6b46688270b9f4b018ed647236fc8b231f9d0338cd180708374323ea616d9"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0056\\oracle_lookback.png",
+      "sha256": "5b5aeb32577eb6df185082f70b8423bf43277509edbaa092bc61783f63317e89"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "category": "object_selection_by_direction",
+  "category_label": "Object selection by direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0056\\oracle_lookback_depth.png",
+      "sha256": "118dc5ab535bd1c6e74639220a107ed69f2b600cc10fcb045f4f21f552e77ce2",
+      "color_scale": {
+        "near_m": 1.542,
+        "far_m": 7.967
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0056\\oracle_lookback_surface_normals.png",
+      "sha256": "8c8cf169b2cb8cf8af5e486e33f4601b4a39634da34d5d2c3278986728d8d3a5"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0056\\oracle_lookback_panorama.png",
+      "sha256": "2d9cbb1409cd277e66ee1c0d462e05cd16a2f20dfcd3a39968221e108c7eadd5"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0056\\topdown_lookback_with_path.png",
+      "sha256": "e487e94e9a70c7cb3ae05de8c140c7a6e130351800219d0f55bf93d68b36fa90"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0056\\trajectory_lookback.txt",
+      "sha256": "e8306f993151e3d65b06854c175f4fd59b4c4d36c17660aecd0d2e97a0a3609d"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0056\\trajectory_lookback.mp4",
+      "sha256": "e5127b2d991d5192bd9ad071aaf502292403465c81bcbb6b8a3315aeae01ee6e"
+    }
+  },
+  "condition": "start_final_depth",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT DEPTH MAP (same camera pose and field of view as FINAL VIEW):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.542 m (near/red) to 7.967 m (far/purple), with values outside this range clipped. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch4_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": true,
+  "input_signature": "ce390dc8a161525911ea8c9373688ebd07ff09e0d143af8da211cabd763e7158",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "depth"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3451,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 259
+      }
+    ],
+    "thoughts_token_count": 979,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4431,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T23:49:20.520-04:00",
+  "request_duration_seconds": 5.21494679999887,
+  "completed_at": "2026-10-04T23:49:25.735-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

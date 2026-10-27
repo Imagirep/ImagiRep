@@ -1,0 +1,135 @@
+{
+  "row_index": 153,
+  "question_id": "FOB2-0073-Q2",
+  "trajectory_id": "FOB2-0073",
+  "scan_id": "Vvot9Ly1tCj",
+  "question_type": 2,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk to the center of the room and slightly turn right, which direction would have the closest obstacle?",
+  "answer_choices": {
+    "C": "behind",
+    "A": "left",
+    "B": "right",
+    "D": "front"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "C": "D",
+    "A": "B",
+    "B": "C",
+    "D": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0073\\start_view.png",
+      "sha256": "90a890da9b52a982a38117f186bc73104678e98c2d36a88befc90c4f8581758d"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0073\\step_01_rgb.png",
+      "sha256": "cd5f687638014b17807eb82860d6e74c88907cf9856da4ad163666a875051e9d"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "category": "nearest_obstacle_direction",
+  "category_label": "Nearest-obstacle direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0073\\step_01_depth.png",
+      "sha256": "a68c74527c01a029cccb3385c755445bd6b207a96c90848ab01e1706f573d9fc",
+      "color_scale": {
+        "near_m": 1.285,
+        "far_m": 2.827
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0073\\step_01_surface_normals.png",
+      "sha256": "b8323216933b94ac428c94de13c3a95e3ed8ac2adbecbb294c29c50e98707bac"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0073\\step_01_panorama.png",
+      "sha256": "cd47735ceb307f1f6b2b4a9a0a381bd6bc7ea8cdcc2ada09e983e64339f6f740"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0073\\topdown_with_path.png",
+      "sha256": "f002b048a010d0ebdee614098d405f0d7927976f18dc18a6751632a72330f0c9"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0073\\trajectory.txt",
+      "sha256": "2a92a31f6365c848d5f379c576f2d445a1dcfcc4fc1071a1756a3b4c28df9e00"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0073\\trajectory.mp4",
+      "sha256": "4c4b3d723421129e5cf99433d7531238aa694dee25dc06a0903748ac928343d6"
+    }
+  },
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "D",
+  "correct": false,
+  "input_signature": "f6770cf68340dc088e1f3fd192d1c044772e59ba8e81c62a7371d50d78721836",
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2261,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 133
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 3341,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5603,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_started_at": "2026-09-27T23:51:17.954-04:00",
+  "request_duration_seconds": 14.695264799986035,
+  "completed_at": "2026-09-27T23:51:32.650-04:00",
+  "request_part_count": 5,
+  "request_mime_types": [
+    "image/png",
+    "image/png"
+  ]
+}

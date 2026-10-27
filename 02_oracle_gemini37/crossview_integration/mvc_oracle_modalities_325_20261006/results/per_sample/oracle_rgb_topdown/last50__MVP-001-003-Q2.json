@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVP-001-003-Q2",
+  "cohort": "last50",
+  "question_id": "MVP-001-003-Q2",
+  "resource_id": "MVP-001-003",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from bed in Image 2?",
+  "answer_choices": {
+    "A": "tv",
+    "B": "glass round tables",
+    "C": "white sofa",
+    "D": "gray chair"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "18041d182a1cd8250f84ce162b3b7e6103f38e26683e9ae16311dc2b4aa7890c",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVP-001-003\\order_21\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4596,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 315
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      }
+    ],
+    "thoughts_token_count": 4727,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9324,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 18.737735600007,
+  "completed_at": "2026-10-06T17:30:23-04:00"
+}

@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-075-Q1", "method": "avic", "variant": "label", "prediction": "sink", "gold": "glass cup", "correct": false, "n_imagined": 2, "category": "cross_view_closest", "stored_result": "wrong"}

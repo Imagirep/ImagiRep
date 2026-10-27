@@ -1,0 +1,100 @@
+{
+  "row_index": 240,
+  "question_id": "FOB3-0002-Q3",
+  "trajectory_id": "FOB3-0002",
+  "scan_id": "mJXqzFtmKg4",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk near the left side of the sofa, then turn to face my starting point, would the cabinet with glass doors still be directly visible?",
+  "answer_choices": {
+    "B": "completely blocked",
+    "A": "clearly visible",
+    "C": "outside of view",
+    "D": "partially visible"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "B": "C",
+    "A": "A",
+    "C": "D",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0002\\start_view.png",
+      "sha256": "a18d66a2ac87c0b9d620d00017f50539a7198515b73a6aeb865b539557a8bdac"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0002\\step_01_rgb.png",
+      "sha256": "907795396e407de8eb8e90a0c1a719bb876471bfe414238993ed865df5d38614"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0002\\step_02_rgb.png",
+      "sha256": "b496824bbd78408180b9d7ab71f1924573a9fcd4753c2704d1c11772f8566317"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0002\\oracle_lookback.png",
+      "sha256": "8423424dc0b6c5e824845d85b2ca3399bf078a4462b2efabbce32e1a374ef755"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "B",
+  "correct": true,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1157,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 93
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 2814,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3972,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "completed_at": "2026-09-21T11:44:36-04:00"
+}

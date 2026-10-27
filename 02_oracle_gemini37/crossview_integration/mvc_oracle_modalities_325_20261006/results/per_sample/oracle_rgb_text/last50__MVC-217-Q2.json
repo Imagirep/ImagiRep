@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-217-Q2",
+  "cohort": "last50",
+  "question_id": "MVC-217-Q2",
+  "resource_id": "MVC-217",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from blue vase in Image 2?",
+  "answer_choices": {
+    "A": "white bowl",
+    "B": "refrigerator",
+    "C": "sink",
+    "D": "painting"
+  },
+  "gold_answer": "D",
+  "prediction": "B",
+  "correct": false,
+  "signature": "ac622b4b57b38b85ccb6474712eb5093adb3d440bcf21598314d430688ed8f1d",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-217\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3550,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 358
+      }
+    ],
+    "thoughts_token_count": 2144,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5695,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.047009900008561,
+  "completed_at": "2026-10-06T17:32:53-04:00"
+}

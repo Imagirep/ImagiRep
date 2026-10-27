@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-054-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-054-Q1",
+  "resource_id": "MVC-054",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to bed in Image 2?",
+  "answer_choices": {
+    "A": "white basin",
+    "B": "doorway",
+    "C": "metal pot",
+    "D": "chair"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "c9de7bfe4b45705c7f2520d5f2f2cf8a7a88e0617e5ee538951b2727cc095fdb",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-054\\order_21\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4594,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 313
+      }
+    ],
+    "thoughts_token_count": 596,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5191,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 6.071539399999892,
+  "completed_at": "2026-10-06T16:55:08-04:00"
+}

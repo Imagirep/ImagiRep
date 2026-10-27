@@ -1,0 +1,137 @@
+{
+  "row_index": 79,
+  "question_id": "FO-0040-Q6",
+  "trajectory_id": "FO-0040",
+  "scan_id": "2azQ1b91cZZ",
+  "question_type": 6,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": true,
+  "question": "If I walk through the doorway on the left and turn back to face where I come from, where is the fireplace relative to me?",
+  "answer_choices": {
+    "C": "left",
+    "A": "front",
+    "B": "behind",
+    "D": "right"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "behind",
+    "C": "left",
+    "D": "right"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "C": "C",
+    "A": "A",
+    "B": "B",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0040\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0040\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0040\\modalities\\step_02_rgb.png"
+    },
+    {
+      "label": "Step 3 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0040\\modalities\\step_03_rgb.png"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0040\\modalities\\oracle_lookback.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "b6f34fc15e26e0caa3533afe91dac13d075911d7007110080a2afa665085dcfa",
+    "0995b23442c78494282560c5bf26b1959efeb95bc61bca28d103cc31fc6a7ae1"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0040\\modalities\\topdown_lookback_with_path.png",
+      "sha256": "0ece6a91f0b95dc96bde8b2b34c216b34620c23e47ab05d1bbd4e4746650c125"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0040\\modalities\\trajectory_lookback.txt",
+      "sha256": "4df4d42d894575611681216a6caec1560b93f7563a1585014744ea547e5e2ac6"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0040\\modalities\\trajectory_lookback.mp4",
+      "sha256": "ded2b275e23ab6220063aacd11dbe27e813ba97c72ca6e240752ef69ce0e45d6",
+      "frame_count": 130,
+      "fps": 12.0,
+      "duration_seconds": 10.833333333333334,
+      "bytes": 929795,
+      "final_rgb_correlation": 0.9995524492098943
+    }
+  },
+  "condition": "start_final_text",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "modality_prompt": "ADDITIONAL TEXT TRAJECTORY:\nThe description gives the movement and camera poses from start to final state. Headings are in degrees: 0 faces +Y; positive rotation is clockwise toward +X. Use it together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "additional_modality": {
+    "kind": "text",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0040\\modalities\\trajectory_lookback.txt",
+    "sha256": "4df4d42d894575611681216a6caec1560b93f7563a1585014744ea547e5e2ac6"
+  },
+  "input_signature": "28cb340bbccc6377316f871fca493d9a10332c16ffe7f7b1aa06a91779f880a2",
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2751,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 623
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 1336,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4088,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-16T17:38:30-04:00"
+}

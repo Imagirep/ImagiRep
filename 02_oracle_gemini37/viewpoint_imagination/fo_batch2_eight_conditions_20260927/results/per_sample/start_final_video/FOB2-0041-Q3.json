@@ -1,0 +1,146 @@
+{
+  "row_index": 132,
+  "question_id": "FOB2-0041-Q3",
+  "trajectory_id": "FOB2-0041",
+  "scan_id": "WYY7iVyf5p8",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk near the low table, then turn back to face where I come from, would the paintings still be directly visible?",
+  "answer_choices": {
+    "B": "outside of view",
+    "A": "partially visible",
+    "C": "clearly visible",
+    "D": "completely blocked"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "B": "D",
+    "A": "B",
+    "C": "A",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0041\\start_view.png",
+      "sha256": "ae289432f999414fb93a9a778ae2c467d0b870a23b4e5ca7adb1492b3082f612"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0041\\step_01_rgb.png",
+      "sha256": "1a320d8805b1a6796eeae954c3a5cc8b8a2779ab530ac5db8ce835633e045299"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0041\\oracle_lookback.png",
+      "sha256": "fbcef4e888b07f66752f88d4f2b381fda1dc34a6a76ba669eb0a207ed0b509c4"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "category": "visibility",
+  "category_label": "Visibility (incl. object selection by visibility)",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0041\\oracle_lookback_depth.png",
+      "sha256": "37d2c738d951d22cd21c1d5e1645a1720165ab904d130cc1dbcdbc2a942c659f",
+      "color_scale": {
+        "near_m": 1.028,
+        "far_m": 7.13175
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0041\\oracle_lookback_surface_normals.png",
+      "sha256": "feffcc0f5602546907e272448ba53fe7956e94ff516a83a74ffedf641e4beb42"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0041\\oracle_lookback_panorama.png",
+      "sha256": "2dc233ff336cf6315bf5c7aaa23d3f8e9cd01729d9dbb7a3a155025e2f0ef1fa"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0041\\topdown_lookback_with_path.png",
+      "sha256": "3e9e05a6f00f6712c71340e89a7760689f8e15c150ad42acd9241e22cd2640d3"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0041\\trajectory_lookback.txt",
+      "sha256": "da8508dd420361135974e3ccf7baf81b9d2b589c3a3ec4730b18f33d5a5fa44e"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0041\\trajectory_lookback.mp4",
+      "sha256": "73e61f4666a492f2226c4702e480a4be68975f90c199382de18b8180813e7c8a"
+    }
+  },
+  "condition": "start_final_video",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": false,
+  "input_signature": "4e4fbc9c4ab1da0340529079d4d7755b3b6702d5ae648f120f9ba7c0c9eb6a10",
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "video_sampling_fps": 12,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 6345,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4032
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 185
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 3637,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9983,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-09-28T01:44:27.013-04:00",
+  "request_duration_seconds": 16.233917900011875,
+  "completed_at": "2026-09-28T01:44:43.247-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "video/mp4"
+  ]
+}

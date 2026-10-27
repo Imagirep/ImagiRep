@@ -1,0 +1,152 @@
+{
+  "row_index": 212,
+  "question_id": "FOB4-0218-Q2",
+  "trajectory_id": "FOB4-0218",
+  "scan_id": "oLBMNvg9in8",
+  "route_variant": "new_bent",
+  "question_type": 2,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk forward, then turn left to walk past the dining table, then turn to facing my starting point, which direction would have the closest obstacle?",
+  "answer_choices": {
+    "B": "left",
+    "A": "behind",
+    "C": "right",
+    "D": "front"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "B": "B",
+    "A": "D",
+    "C": "C",
+    "D": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0218\\start_view.png",
+      "sha256": "a61737879f94c9e9ba3b113423b32033be46bd0f69e25112f3375f9a2d64c57e"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0218\\step_01_rgb.png",
+      "sha256": "80c9cf1303c0663097c82469ab6fd55fff8b0d8e9ee7383b4d1c4e1da11004f9"
+    },
+    {
+      "label": "Step 2",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0218\\step_02_rgb.png",
+      "sha256": "871f42be4bba1fde8b6fbf2d5e1978bd7e350a7f9962c238f4a92453fe3ce20d"
+    },
+    {
+      "label": "Step 3 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0218\\step_03_back180_rgb.png",
+      "sha256": "da42b6ac80190024c413d98f7f6ebee1688a310b634f446df725ce19eeb963c2"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "category": "nearest_obstacle_direction",
+  "category_label": "Nearest-obstacle direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0218\\step_03_depth.png",
+      "sha256": "138c79b6770d2d8ee45f10735678b5db2be9dc81186fe7b2b986aefaf20fb926",
+      "color_scale": {
+        "near_m": 1.09225,
+        "far_m": 3.79075
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0218\\step_03_surface_normals.png",
+      "sha256": "b6abc247f0bb1e86059b750487ec5d462e9f39cfcc96b4bb305db014085475e8"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0218\\step_03_panorama.png",
+      "sha256": "ddb2c4d3e9723f48c0b2a088d050b7c9e04e676a40afdc51e5e02d28bf9d59a3"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0218\\topdown_with_path.png",
+      "sha256": "a0d8ea6676e1a17b2abf287927d974e8901609c9222b30b7177fd1ee85a8b611"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0218\\trajectory.txt",
+      "sha256": "33eb5cf8fee85003d0cac19336f9dfa7b6dfe2b3196dd537d9bfa3b9fbca12b8"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0218\\trajectory.mp4",
+      "sha256": "02e9210653a6eddf1ad43615791b2c8244d180bedf9bedc43868becb481b46a7"
+    }
+  },
+  "condition": "start_final_panorama",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT PANORAMA (360-degree RGB at the FINAL VIEW position):\nThe panorama is centered on the final camera's facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. This is one position, not a sequence of movement frames. Combine it with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch4_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": false,
+  "input_signature": "6465b7f7a0c20d2ef039e59d15663418aa2e68eecd80990d985f254f519d0dc1",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "panorama"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3460,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3209
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 251
+      }
+    ],
+    "thoughts_token_count": 6545,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 10005,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-10-05T01:11:37.153-04:00",
+  "request_duration_seconds": 27.188521799995215,
+  "completed_at": "2026-10-05T01:12:04.341-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

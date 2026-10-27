@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "row_index": 40,
+  "question_id": "MVC-026-Q1",
+  "condition": "oracle_rgb",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "response_format": "dynamic option enum",
+  "system_prompt": "Solve this multi-view spatial reasoning multiple-choice question using the provided evidence. Reason carefully. Return only A, B, C, or D.",
+  "condition_prompt": "Use the numbered images together with Oracle RGB to answer the question. Oracle RGB is an additional view of the same scene; it supplies evidence but does not replace the reference viewpoint named in the question. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.",
+  "prompt_hash": "de945714087200036515a37a844a8666df3a2084dd8a4c265f46f0ee5026e213",
+  "question": "Which object in Image 2 is closest to silver pot in Image 1?",
+  "answer_choices": {
+    "A": "microwave",
+    "B": "black pot",
+    "C": "ovens",
+    "D": "yellow clock"
+  },
+  "gold_answer": "C",
+  "prediction": "A",
+  "correct": false,
+  "image_paths": [
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-026\\image_2.png",
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-026\\image_1.png",
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-026\\oracle.png"
+  ],
+  "image_count": 3,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3425,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 233
+      }
+    ],
+    "thoughts_token_count": 2867,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6293,
+    "traffic_type": null
+  },
+  "completed_at": "2026-09-30T18:39:27"
+}

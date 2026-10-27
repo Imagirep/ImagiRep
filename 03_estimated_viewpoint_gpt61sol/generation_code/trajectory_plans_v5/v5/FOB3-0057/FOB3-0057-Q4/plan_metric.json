@@ -1,0 +1,231 @@
+{
+  "question_id": "FOB3-0057-Q4",
+  "motion_text": "I walk near the small white table, facing the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "small white round table in the middle of the room",
+      "relation": "near"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0057-Q4",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.664979121228923,
+        "y": -0.027855518634306825,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.9770426034778135,
+        -0.031117341616567984
+      ]
+    ],
+    "x": -2.9770426034778135,
+    "y": -0.031117341616567984,
+    "yaw": -0.01045205346728866,
+    "pitch": 0.0,
+    "travel_yaw": -0.01045205346728866
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.664979121228923,
+      -0.027855518634306825
+    ]
+  ],
+  "final": {
+    "x": -2.664979121228923,
+    "y": -0.027855518634306825,
+    "yaw_deg": -0.5988585509207187,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "small white round table in the middle of the room",
+        "relation": "near"
+      },
+      "x": -2.9770426034778135,
+      "y": -0.031117341616567984,
+      "yaw": -0.01045205346728866,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.664979121228923,
+      "y": -0.027855518634306825,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.664979121228923,
+      "y": -0.027855518634306825,
+      "yaw": -0.01045205346728866,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "small white round table in the middle of the room",
+      "method": "initial_photo",
+      "box": [
+        746,
+        532,
+        917,
+        633
+      ],
+      "point_m": [
+        -4.125126295692253,
+        0.5236847299304924,
+        -1.735754660159866
+      ]
+    },
+    {
+      "overlap": "small white round table in the middle of the room",
+      "n_points": 204,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 3.0,
+          "stop_m": 1.275108427907858,
+          "visible_frac": 0.8921568627450981,
+          "center_deg": 0.18380735138088536,
+          "width_deg": 23.808138784436927,
+          "distance_m": 1.5480605114795962
+        },
+        {
+          "sector": 2,
+          "path_m": 3.6,
+          "stop_m": 0.7798724717954353,
+          "visible_frac": 0.49019607843137253,
+          "center_deg": -4.637616199494715,
+          "width_deg": 30.669696225801594,
+          "distance_m": 1.285316241919032
+        },
+        {
+          "sector": 1,
+          "path_m": 4.4,
+          "stop_m": 0.7565854018059158,
+          "visible_frac": 0.23529411764705882,
+          "center_deg": -14.064096668108302,
+          "width_deg": 35.42493474617967,
+          "distance_m": 1.1575246733414386
+        },
+        {
+          "sector": 4,
+          "path_m": 4.6000000000000005,
+          "stop_m": 0.7061139633021013,
+          "visible_frac": 0.4019607843137255,
+          "center_deg": 8.289417886148165,
+          "width_deg": 30.179215350316706,
+          "distance_m": 1.2168209749306627
+        },
+        {
+          "sector": 0,
+          "path_m": 4.800000000000001,
+          "stop_m": 0.8560375055741817,
+          "visible_frac": 0.11274509803921569,
+          "center_deg": 17.6206723362718,
+          "width_deg": 21.957408084276842,
+          "distance_m": 1.1450400284919604
+        },
+        {
+          "sector": 5,
+          "path_m": 4.9,
+          "stop_m": 0.9250490182914443,
+          "visible_frac": 0.5490196078431373,
+          "center_deg": 7.217616328474941,
+          "width_deg": 37.115795803674175,
+          "distance_m": 1.2341359594424597
+        },
+        {
+          "sector": 7,
+          "path_m": 5.9,
+          "stop_m": 1.152802686012986,
+          "visible_frac": 0.47058823529411764,
+          "center_deg": 1.387159452405792,
+          "width_deg": 21.688796214383927,
+          "distance_m": 1.236205595657541
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 1.366309940814972,
+  "seconds": 8.836989164352417,
+  "planning_m_per_unit": 1.5263019777377143,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.8951766824282815
+}

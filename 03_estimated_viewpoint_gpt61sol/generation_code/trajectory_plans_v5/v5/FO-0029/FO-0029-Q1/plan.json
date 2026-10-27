@@ -1,0 +1,265 @@
+{
+  "question_id": "FO-0029-Q1",
+  "motion_text": "I walk to the door and turn right.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the door on the right",
+      "relation": "to"
+    },
+    {
+      "op": "turn",
+      "direction": "right",
+      "amount": "normal"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FO-0029-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.748919320711273,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -0.3876326246370656,
+        "y": 0.3603355037267191,
+        "yaw": 0.748919320711273,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -0.3876326246370656,
+        "y": 0.3603355037267191,
+        "yaw": 0.4411794804149808,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.9876326246370657,
+        "y": 2.0603355037267197,
+        "yaw": 0.4411794804149808,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -0.3876326246370656,
+        0.3603355037267191
+      ],
+      [
+        -3.9876326246370657,
+        2.0603355037267197
+      ]
+    ],
+    "x": -3.9876326246370657,
+    "y": 2.0603355037267197,
+    "yaw": 0.47690347614676115,
+    "pitch": 0.0,
+    "travel_yaw": 0.47690347614676115
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -0.3876326246370656,
+      0.3603355037267191
+    ],
+    [
+      -3.9876326246370657,
+      2.0603355037267197
+    ]
+  ],
+  "final": {
+    "x": -3.9876326246370657,
+    "y": 2.0603355037267197,
+    "yaw_deg": 107.32455641832736,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the door on the right",
+        "relation": "to"
+      },
+      "x": -3.9876326246370657,
+      "y": 2.0603355037267197,
+      "yaw": 0.47690347614676115,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "right",
+        "amount": "normal"
+      },
+      "x": -3.9876326246370657,
+      "y": 2.0603355037267197,
+      "yaw": 1.873166877742225,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.748919320711273,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -0.3876326246370656,
+      "y": 0.3603355037267191,
+      "yaw": 0.748919320711273,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -0.3876326246370656,
+      "y": 0.3603355037267191,
+      "yaw": 0.4411794804149808,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.9876326246370657,
+      "y": 2.0603355037267197,
+      "yaw": 0.4411794804149808,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.9876326246370657,
+      "y": 2.0603355037267197,
+      "yaw": 0.47690347614676115,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.9876326246370657,
+      "y": 2.0603355037267197,
+      "yaw": 1.873166877742225,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the door on the right",
+      "method": "initial_photo",
+      "box": [
+        427,
+        822,
+        893,
+        948
+      ],
+      "point_m": [
+        -4.68113224097176,
+        2.8906935816478767,
+        -1.1294879134598488
+      ]
+    },
+    {
+      "overlap": "the door on the right",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 2,
+          "path_m": 6.1000000000000005,
+          "stop_m": 1.0818670229863216,
+          "visible_frac": 0.8755555555555555,
+          "center_deg": -0.8625507231548113,
+          "width_deg": 31.806106074301045,
+          "distance_m": 1.1528099882550804
+        },
+        {
+          "sector": 3,
+          "path_m": 6.1000000000000005,
+          "stop_m": 1.078454710735687,
+          "visible_frac": 0.88,
+          "center_deg": -0.23213201018150373,
+          "width_deg": 30.7238206215519,
+          "distance_m": 1.1568002645609343
+        },
+        {
+          "sector": 1,
+          "path_m": 6.6000000000000005,
+          "stop_m": 1.0303785827185936,
+          "visible_frac": 0.7244444444444444,
+          "center_deg": -0.6671381637950571,
+          "width_deg": 30.074943152824375,
+          "distance_m": 1.0170368482593246
+        }
+      ],
+      "chosen_sector": 2
+    }
+  ],
+  "m_per_unit": 1.4177372644917372,
+  "seconds": 7.313817024230957
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FO-0023-Q2",
+  "motion_text": "I move a few steps back and to the left, then look through the doors.",
+  "view_variant": "endpoint",
+  "frames": 36,
+  "fps": 12,
+  "total_distance_m": 0.3191942309017577,
+  "depth_display_range_scene_units": [
+    2.0149508237838747,
+    9.049339294433596
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.6791382754313462,
+    "far_m": 7.541172616864908
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.39647476019519 m over generated floor distance",
+  "m_per_unit": 1.5534567832946777,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 17.02247190475464
+}

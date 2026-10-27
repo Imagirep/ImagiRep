@@ -1,0 +1,138 @@
+{
+  "row_index": 227,
+  "question_id": "FOB3-0013-Q7",
+  "trajectory_id": "FOB3-0013",
+  "scan_id": "sKLMLpTHeUy",
+  "question_type": 7,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk to the left side of the blue sofa and turn right, where is the leather chair relative to me?",
+  "answer_choices": {
+    "A": "right",
+    "B": "left",
+    "C": "front",
+    "D": "behind"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "A": "C",
+    "B": "B",
+    "C": "A",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0013\\start_view.png",
+      "sha256": "fcf87ecf288363ee732704ebe3bb5c4cb47b6b302f37f792fa7a88c0f07f339a"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0013\\step_01_rgb.png",
+      "sha256": "db42eebc4d1ad2f2bfd607c595c1558198251ce690063c8d6db98b3b90560fad"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "category": "object_relative_direction",
+  "category_label": "Object-relative direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0013\\step_01_depth.png",
+      "sha256": "f803cef006b8095d190ce9a56e7bd64beb3a77202780e430609442ee67cfe366",
+      "color_scale": {
+        "near_m": 1.799,
+        "far_m": 5.397
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0013\\step_01_surface_normals.png",
+      "sha256": "83e3849e100223f320084f1b0cfee948fc9aa0c323a5e61f199238a05f73b1bf"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0013\\step_01_panorama.png",
+      "sha256": "4225e6b1b3eec9c13cf009d2f91f6aed683c6e2222af8827783d681d149c636a"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0013\\topdown_with_path.png",
+      "sha256": "c7d218070e0aa54b162fa9f6f0f9a263d32581fbc43b573e0760e6d08fae0c24"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0013\\trajectory.txt",
+      "sha256": "b5910231f7d9c791af03a89cb755bcf761ae9f2d57cabf6be9db396ac25c92e9"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0013\\trajectory.mp4",
+      "sha256": "d6baa17730bdda19d1f06e065bd0937e6a85b62a2960cc38056ce2876678ad4b"
+    }
+  },
+  "condition": "start_final_panorama",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT PANORAMA (360-degree RGB at the FINAL VIEW position):\nThe panorama is centered on the final camera's facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. This is one position, not a sequence of movement frames. Combine it with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch3_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "C",
+  "correct": false,
+  "input_signature": "8f60933f98b3a0ae5154aab959b2a992eadc1f3a4869199ace5f1552e2aaffa6",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "panorama"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3453,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 244
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3209
+      }
+    ],
+    "thoughts_token_count": 3062,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6516,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T19:46:51.822-04:00",
+  "request_duration_seconds": 12.37499409999873,
+  "completed_at": "2026-10-04T19:47:04.197-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

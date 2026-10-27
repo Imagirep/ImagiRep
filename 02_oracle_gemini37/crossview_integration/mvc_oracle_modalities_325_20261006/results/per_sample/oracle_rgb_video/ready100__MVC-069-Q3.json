@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-069-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-069-Q3",
+  "resource_id": "MVC-069",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "refrigerator, white statue, potted plant, red statue",
+    "B": "white statue, potted plant, red statue, refrigerator",
+    "C": "potted plant, red statue, white statue, refrigerator",
+    "D": "red statue, potted plant, refrigerator, white statue"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "9630ba8ff1632764dd3fb904a9b6501633e982769784f33d3fbf4f14bab9b7a8",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-069\\order_21\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7927,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 325
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 2692,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 10620,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 13.269965599989519,
+  "completed_at": "2026-10-06T17:34:14-04:00"
+}

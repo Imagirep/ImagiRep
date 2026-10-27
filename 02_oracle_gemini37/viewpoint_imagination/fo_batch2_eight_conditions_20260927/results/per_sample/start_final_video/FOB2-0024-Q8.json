@@ -1,0 +1,146 @@
+{
+  "row_index": 85,
+  "question_id": "FOB2-0024-Q8",
+  "trajectory_id": "FOB2-0024",
+  "scan_id": "Pm6F8kyY3z2",
+  "question_type": 8,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk to the cabinet and turn right, which object(s) would be on my right?",
+  "answer_choices": {
+    "A": "brown pot",
+    "B": "chair",
+    "C": "potted plant",
+    "D": "sink"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "brown pot",
+    "B": "chair",
+    "C": "sink",
+    "D": "potted plant"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "A": "A",
+    "B": "B",
+    "C": "D",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0024\\start_view.png",
+      "sha256": "5db8fe0f1758eaf58385cae6887d8f7e99561ac73a9112a1267985dfe8be69cc"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0024\\step_01_rgb.png",
+      "sha256": "77aef68a134dce5783aa303d44cb9386db5e0a1906de900d3633f04e416546a4"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0024\\step_02_rgb.png",
+      "sha256": "8af4d3fa0e015dc16573396ee85a5873e17e93f1ad308122a073ccf722753bbc"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "category": "object_selection_by_direction",
+  "category_label": "Object selection by direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0024\\step_02_depth.png",
+      "sha256": "3e22b9b26567e31043beb76f3dd28c2c3175d32402f0913aa27c11123ebf3875",
+      "color_scale": {
+        "near_m": 0.83525,
+        "far_m": 1.542
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0024\\step_02_surface_normals.png",
+      "sha256": "34443d86e0d0250d23b8bf599a01c4fcb3686f71a405817c9c0812183294730a"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0024\\step_02_panorama.png",
+      "sha256": "7726c29bf3008174c17fc8ff777e9704fd40b8479171e567ed303828b10c3599"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0024\\topdown_with_path.png",
+      "sha256": "40f3e67fc5810161289d945970da2a5143feff05b936d301a499e00f15db254c"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0024\\trajectory.txt",
+      "sha256": "e7e5a3058a45a56c69925d15da2e7d0f8255f79f0752d2b2987dd1387198c470"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0024\\trajectory.mp4",
+      "sha256": "2fbe211cf484e4e2d05467b57472a77cfab998b18c5366a7c65a1ed04ad50eef"
+    }
+  },
+  "condition": "start_final_video",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "B",
+  "correct": false,
+  "input_signature": "e59bde319813244b5507410f4613b02c399832d618b943ca5cd1198d6fb5ebb8",
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "video_sampling_fps": 12,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7156,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 177
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 4851
+      }
+    ],
+    "thoughts_token_count": 881,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8038,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_started_at": "2026-09-28T01:35:38.383-04:00",
+  "request_duration_seconds": 6.563175600022078,
+  "completed_at": "2026-09-28T01:35:44.946-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "video/mp4"
+  ]
+}

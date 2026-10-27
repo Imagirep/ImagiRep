@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB2-0055-Q1",
+  "motion_text": "I walk near the two chairs keep facing forward.",
+  "view_variant": "endpoint",
+  "frames": 104,
+  "fps": 12,
+  "total_distance_m": 3.6586644937296704,
+  "depth_display_range_scene_units": [
+    0.922896192073822,
+    2.191452374458313
+  ],
+  "depth_color_scale_m": {
+    "near_m": 0.936907362277042,
+    "far_m": 2.224722435029036
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.3730876888806165 m over generated floor distance",
+  "m_per_unit": 1.3408676385879517,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 20.868804693222046
+}

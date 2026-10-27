@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB3-0034-Q6",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk forward, then walk to the fireplace, facing the direction I go, where is the white console table relative to me?",
+  "answer_choices": {
+    "D": "behind",
+    "A": "right",
+    "B": "left",
+    "C": "front"
+  },
+  "gold_answer": "D",
+  "show_lookback": false,
+  "prediction": "D",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0034/start_view.png",
+      "sha256": "a9c219385c930b012aba5f12f8294ece61712a1a006c4d48cf55c666cad1a822"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0034/step_01_rgb.png",
+      "sha256": "5fb9c91be603130b07975f50b3796fa0dd4cbf3cd00c8d9c1bf31622f2200efa"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0034/step_02_rgb.png",
+      "sha256": "32d0681686d56767d6b88bfe903321680c6f3e3e21dbf7309cfba31b358afa9d"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3335,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 143
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 3172,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6508,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 14.205548300000373,
+  "completed_at": "2026-10-06T14:43:32-04:00"
+}

@@ -1,0 +1,58 @@
+{
+ "schema_version": 1,
+ "source": "Unified editable multi-view workspace",
+ "source_sha256": "cefceadbeda1cc4c9f2d0578b124074ddeb300bc04fb7a1a52671fee0671d6b4",
+ "item_count": 461,
+ "direction_seed": 20260926,
+ "items": [
+  {
+   "id": "MVC-131",
+   "scan_id": "cV4RVeZvu5T",
+   "view_count": 2,
+   "order_direction": "left_to_right",
+   "images": [
+    {
+     "label": "Image 1",
+     "kind": "observed",
+     "path": "outputs/mvc_labeler_low_overlap_panorama_20260929/MVC-131/image_1.png"
+    },
+    {
+     "label": "Image 2",
+     "kind": "observed",
+     "path": "outputs/mvc_labeler_low_overlap_panorama_20260929/MVC-131/image_2.png"
+    },
+    {
+     "label": "Oracle RGB",
+     "kind": "oracle",
+     "path": "outputs/mvc_labeler_low_overlap_panorama_20260929/MVC-131/oracle.png"
+    },
+    {
+     "label": "Top-down (View 1 / View 2)",
+     "kind": "topdown",
+     "path": "outputs/mvc_labeler_low_overlap_panorama_20260929/MVC-131/topdown_geometry.png"
+    }
+   ],
+   "source_dataset": "original",
+   "viewpoint_id": "f0fa3bc756854f7280ca118d658bdaee",
+   "observed_asset_version": "native_pose_erp_low_overlap_20260929",
+   "render_manifest": "outputs/mvc_labeler_low_overlap_panorama_20260929/MVC-131/render_manifest.json",
+   "camera_poses_source": "outputs/mvc_labeler_low_overlap_panorama_20260929/MVC-131/render_manifest.json",
+   "asset_replaced_at": "2026-09-29T16:01:07.960614+00:00",
+   "annotations_require_image_review": false
+  }
+ ],
+ "asset_updates": {
+  "saved20": "fixed18 outward RGB; native topdown arrows use new headings",
+  "updated_at": "2026-09-28T19:06:26.785391+00:00",
+  "manifest": "outputs/mvc_labeler_rotated_saved20_20260928/manifest.json",
+  "low_overlap_panorama_20260929": {
+   "manifest": "outputs/mvc_labeler_low_overlap_panorama_20260929/plan.json",
+   "rendered": 186,
+   "already_panorama": 61,
+   "saved": 47,
+   "unsaved": 200,
+   "updated_at": "2026-09-29T16:01:07.960614+00:00"
+  }
+ },
+ "workspace_version": 3
+}

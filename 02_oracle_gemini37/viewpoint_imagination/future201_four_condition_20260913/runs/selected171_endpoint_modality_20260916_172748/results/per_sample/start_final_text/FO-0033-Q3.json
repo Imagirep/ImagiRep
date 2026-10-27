@@ -1,0 +1,127 @@
+{
+  "row_index": 42,
+  "question_id": "FO-0033-Q3",
+  "trajectory_id": "FO-0033",
+  "scan_id": "1pXnuDYAj8r",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": false,
+  "question": "If I walk through the doorway on the left, walk a few steps, then turn back to face where I come from, would the black chair still be directly visible?",
+  "answer_choices": {
+    "B": "completely blocked",
+    "A": "clearly visible",
+    "C": "outside of view",
+    "D": "partially visible"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "B": "C",
+    "A": "A",
+    "C": "D",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0033\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0033\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0033\\modalities\\step_02_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "20a7b52c16d8e0232387cdcba10815479bd52c32ee0a583f71a4295f26e90d3f",
+    "8041bdabccca4216202d874d9c28f0a20d03015a555fdbc211f8c91a9dfcb2cb"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0033\\modalities\\topdown_with_path.png",
+      "sha256": "95c97777ff7c3b1478db8f1ea0dad5eb8d732553ae1c53b79d5860e45a8ebb0f"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0033\\modalities\\trajectory.txt",
+      "sha256": "c8d3a9ab0985ffa1e76faba372ead67333fbae0de1378558a021fcbea7bb2788"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0033\\modalities\\trajectory.mp4",
+      "sha256": "0f751e6c07750b4faae3af2b78efbd8dbf181add7739f5c8b374b61a7795e32f",
+      "frame_count": 96,
+      "fps": 12.0,
+      "duration_seconds": 8.0,
+      "bytes": 515519,
+      "final_rgb_correlation": 0.9994761756587481
+    }
+  },
+  "condition": "start_final_text",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "modality_prompt": "ADDITIONAL TEXT TRAJECTORY:\nThe description gives the movement and camera poses from start to final state. Headings are in degrees: 0 faces +Y; positive rotation is clockwise toward +X. Use it together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": false,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "additional_modality": {
+    "kind": "text",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0033\\modalities\\trajectory.txt",
+    "sha256": "c8d3a9ab0985ffa1e76faba372ead67333fbae0de1378558a021fcbea7bb2788"
+  },
+  "input_signature": "13d8f60d6995c6b37498a6aee162edcbd68c3d5952ed95bc2fa3a7184cf4790e",
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2614,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 486
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 2752,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5367,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-16T17:35:59-04:00"
+}

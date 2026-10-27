@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-038-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-038-Q2",
+  "resource_id": "MVC-038",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from piano in Image 2?",
+  "answer_choices": {
+    "A": "white pillar",
+    "B": "monitor",
+    "C": "podium",
+    "D": "piles of books"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "aa64f30839d278587cc6abcf262125ee4cfcfbb7568d0425c47d36d0f3de195a",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-038\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7886,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 284
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1186,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9073,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 9.401349499996286,
+  "completed_at": "2026-10-06T17:33:42-04:00"
+}

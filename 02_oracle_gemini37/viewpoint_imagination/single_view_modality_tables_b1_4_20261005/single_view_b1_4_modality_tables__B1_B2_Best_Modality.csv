@@ -1,0 +1,16 @@
+"Batch1 + Batch2, Select best modality for each question type (308 questions):",,,,,,
+Category,Best Additional Modality,Endpoint Correct,Rescued Questions,Final Correct,Total,Accuracy Gain (pp)
+Open Space Direction,Panorama,29,9,38,44,20.454545454545457
+Closest Obstacle Direction,Topdown,17,5,22,35,14.285714285714285
+Visibility,Text,31,6,37,55,10.909090909090908
+Closest Object,Topdown,33,4,37,50,8
+Farthest Object,Topdown,34,6,40,57,10.526315789473683
+Direction of a Given Object,Video or Depth (tied),54,6,60,67,8.955223880597014
+,,,,,,
+Total,,198,36,234,308,11.688311688311687
+,,,,,,
+Upper bound accuracy:,0.7597402597402597,,,,,
+Start + Endpoint baseline:,0.6428571428571429,,,,,
+Improvement:,11.688311688311687,,,,,
+,,,,,,
+"Best modality = most rescued questions per category, selected on the same data (retrospective upper bound).",,,,,,

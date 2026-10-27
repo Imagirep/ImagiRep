@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-166-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-166-Q3",
+  "resource_id": "MVC-166",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "red bowl, dog shaped statue, white shelf, white statue",
+    "B": "white shelf, red bowl, dog shaped statue, white statue",
+    "C": "white shelf, dog shaped statue, white statue, red bowl",
+    "D": "dog shaped statue, white shelf, white statue, red bowl"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "4797604b562f8f17309d155f6059544a23b52a2e25f283a73dd59abf4086af4e",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-166\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4646,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 373
+      }
+    ],
+    "thoughts_token_count": 1472,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6119,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 7.971948599995812,
+  "completed_at": "2026-10-06T17:45:22-04:00"
+}

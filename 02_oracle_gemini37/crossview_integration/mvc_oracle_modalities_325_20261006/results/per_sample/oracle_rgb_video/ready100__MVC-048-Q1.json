@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-048-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-048-Q1",
+  "resource_id": "MVC-048",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to alarm clock in Image 2?",
+  "answer_choices": {
+    "A": "tv",
+    "B": "wooden cabinet",
+    "C": "lamp",
+    "D": "fireplace"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "26f447921a551af33f7b445e7ffe878d83c17bffe2e94d16365ffba85b67c580",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-048\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7885,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 283
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      }
+    ],
+    "thoughts_token_count": 4193,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 12079,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 17.480101699999068,
+  "completed_at": "2026-10-06T17:33:59-04:00"
+}

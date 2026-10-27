@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-003-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-003-Q3",
+  "resource_id": "MVC-003",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "long sofa, white lamp, table, cabinet",
+    "B": "table, cabinet, long sofa, white lamp",
+    "C": "long sofa, cabinet, white lamp, table",
+    "D": "cabinet, white lamp, long sofa, table"
+  },
+  "gold_answer": "A",
+  "prediction": "B",
+  "correct": false,
+  "signature": "19ae8f81a8ac12d92a2345408e56a467346a099ed65b4c6804ac14f4f236c400",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.068 m (near/red) to 6.001 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-003\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4638,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 382
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 2868,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7507,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 12.845031499993638,
+  "completed_at": "2026-10-06T17:36:19-04:00"
+}

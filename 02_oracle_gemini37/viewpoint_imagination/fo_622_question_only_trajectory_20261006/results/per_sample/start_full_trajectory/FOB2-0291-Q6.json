@@ -1,0 +1,76 @@
+{
+  "question_id": "FOB2-0291-Q6",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk into the hallway on the right and stop, then turn back to face where I come from, where is the wooden chair relative to me?",
+  "answer_choices": {
+    "D": "right",
+    "A": "behind",
+    "B": "front",
+    "C": "left"
+  },
+  "gold_answer": "D",
+  "show_lookback": true,
+  "prediction": "A",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_old40_20260917/items/FOB2-0291/start_view.png",
+      "sha256": "b273b7144f7351c2002bd1d7203e6beeabac730ebc1e04f74fddb4b6fb8e4965"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_old40_20260917/items/FOB2-0291/step_01_rgb.png",
+      "sha256": "280277b79bcd206ff0ea887364b06628742ddc6c9fbc5f17792f2b61ee1509af"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_old40_20260917/items/FOB2-0291/step_02_rgb.png",
+      "sha256": "b88886a2c89464379ab6aecc4ccd9f5ba029135fbfd7fc630835d6473fd2c766"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_old40_20260917/items/FOB2-0291/oracle_lookback.png",
+      "sha256": "ba66dcbf0184e6da64a2bbb699f4b33cf3f5a841dae126f767df081fd5000e4a"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4410,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 154
+      }
+    ],
+    "thoughts_token_count": 2112,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6523,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_duration_seconds": 9.556964899995364,
+  "completed_at": "2026-10-06T14:38:47-04:00"
+}

@@ -1,0 +1,64 @@
+{
+  "question_id": "FOB2-0026-Q2",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the two chairs side by side, facing the way I go, which direction would have the closest obstacle, besides the two chairs?",
+  "answer_choices": {
+    "D": "left",
+    "A": "front",
+    "B": "behind",
+    "C": "right"
+  },
+  "gold_answer": "D",
+  "show_lookback": false,
+  "prediction": "D",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0026/start_view.png",
+      "sha256": "d77b27dc2c7209975f859ced012329ac6b9ec0df80d5f726cea45654dbc191b8"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0026/step_01_rgb.png",
+      "sha256": "37a293d288ad38b5362f4622a9502019f5d92d20258fbf6c40c51fa8c15e20ce"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2269,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 141
+      }
+    ],
+    "thoughts_token_count": 1844,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4114,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 9.642644200008363,
+  "completed_at": "2026-10-06T14:17:31-04:00"
+}

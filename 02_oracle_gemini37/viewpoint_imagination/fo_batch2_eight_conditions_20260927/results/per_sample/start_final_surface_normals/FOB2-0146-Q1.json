@@ -1,0 +1,144 @@
+{
+  "row_index": 164,
+  "question_id": "FOB2-0146-Q1",
+  "trajectory_id": "FOB2-0146",
+  "scan_id": "gTV8FGcVJC9",
+  "question_type": 1,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk near the counter and slightly turn left, which direction would have the most open space?",
+  "answer_choices": {
+    "C": "left",
+    "A": "right",
+    "B": "behind",
+    "D": "front"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "C": "B",
+    "A": "C",
+    "B": "D",
+    "D": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0146\\start_view.png",
+      "sha256": "563b0ae129d9f78e50ea075e6e9cee0090de50ddc601a247f6b4f6e525bcd52d"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0146\\step_01_rgb.png",
+      "sha256": "cc118b4739c49093866e764529e606d6a601fc9337fb6b4f901f3fb04bd6fb1d"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0146\\step_02_rgb.png",
+      "sha256": "f26d5358c59bed12c3ea4033f0c340b7b9740c0b802a1b0c567fa8eea763f71a"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "category": "open_space_direction",
+  "category_label": "Open-space direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0146\\step_02_depth.png",
+      "sha256": "d3db58d329a3e89ef716e46d0ce306e5c6183d16188fe14686d1e9690020b416",
+      "color_scale": {
+        "near_m": 0.8995,
+        "far_m": 7.77425
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0146\\step_02_surface_normals.png",
+      "sha256": "a6cdf76e78ccd8318e7172186f8f237f801e38e4919424b66c32f1e1208192b4"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0146\\step_02_panorama.png",
+      "sha256": "37e21034303b1add3e985e6fbd5bcb3a0df3687a2a9faf56679a532c57a7a17f"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0146\\topdown_with_path.png",
+      "sha256": "a4935e030d7a0ada7d625051b70ec85369e5127cbae0b84027e65f6c40deea6a"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0146\\trajectory.txt",
+      "sha256": "000106b88cf572ffdbcf662285b58a251029ae9fc26ee7fcdbfefb425fb9b3da"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0146\\trajectory.mp4",
+      "sha256": "c45832c7181e44f2e56db043f9752e6fca6868e00d94b1435323d2fd2c8f3b3f"
+    }
+  },
+  "condition": "start_final_surface_normals",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT SURFACE NORMAL MAP (same camera pose and field of view as FINAL VIEW):\nColors encode surface orientation, not object color or distance. RGB channels encode normal components along camera-right (R), camera-up (G), and camera-forward (B): 0 = -1, about 128 = 0, and 255 = +1. Higher R/G/B means a stronger rightward/upward/forward component; a surface facing the camera has low B. Black means missing geometry. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": false,
+  "input_signature": "e6f037eb97a7f9d8eba17f470c5ee93cffb7e494b19aa9a8e01c608b037dd5cb",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "surface_normals"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3449,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 257
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 830,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4279,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-09-28T03:19:37.058-04:00",
+  "request_duration_seconds": 7.582931300043128,
+  "completed_at": "2026-09-28T03:19:44.641-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

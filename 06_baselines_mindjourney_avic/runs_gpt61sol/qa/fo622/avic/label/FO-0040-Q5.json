@@ -1,0 +1,1 @@
+{"qid": "FO-0040-Q5", "method": "avic", "variant": "label", "prediction": "yellow sofa", "gold": "mirror", "correct": false, "n_imagined": 4, "category": "farthest_object", "stored_result": "wrong"}

@@ -1,0 +1,220 @@
+{
+  "question_id": "FOB3-0037-Q2",
+  "motion_text": "I walk to the black table at the center of the room, facing the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the black table at the center of the room",
+      "relation": "to"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0037-Q2",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.058533388715264215,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.4867084806319326,
+        "y": -0.08712160558699862,
+        "yaw": -0.058533388715264215,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -1.8171354852880208,
+        -0.10648473665806435
+      ]
+    ],
+    "x": -1.8171354852880208,
+    "y": -0.10648473665806435,
+    "yaw": -0.058533388715264215,
+    "pitch": 0.0,
+    "travel_yaw": -0.058533388715264215
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.4867084806319326,
+      -0.08712160558699862
+    ]
+  ],
+  "final": {
+    "x": -1.4867084806319326,
+    "y": -0.08712160558699862,
+    "yaw_deg": -3.3537161339833195,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the black table at the center of the room",
+        "relation": "to"
+      },
+      "x": -1.8171354852880208,
+      "y": -0.10648473665806435,
+      "yaw": -0.058533388715264215,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.058533388715264215,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.4867084806319326,
+      "y": -0.08712160558699862,
+      "yaw": -0.058533388715264215,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the black table at the center of the room",
+      "method": "initial_photo",
+      "box": [
+        719,
+        171,
+        831,
+        430
+      ],
+      "point_m": [
+        -2.597481049703018,
+        -0.7864286315425596,
+        -0.8869918393662701
+      ]
+    },
+    {
+      "overlap": "the black table at the center of the room",
+      "n_points": 216,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 1.9000000000000001,
+          "stop_m": 1.0350183090616598,
+          "visible_frac": 1.0,
+          "center_deg": -2.43780744139995,
+          "width_deg": 37.56739882953828,
+          "distance_m": 1.1838890471190957
+        },
+        {
+          "sector": 5,
+          "path_m": 1.9000000000000001,
+          "stop_m": 1.0349795003703015,
+          "visible_frac": 1.0,
+          "center_deg": -2.453678468923184,
+          "width_deg": 37.354340851913506,
+          "distance_m": 1.155096546859383
+        },
+        {
+          "sector": 3,
+          "path_m": 2.3000000000000003,
+          "stop_m": 1.0805317144367221,
+          "visible_frac": 0.9907407407407407,
+          "center_deg": 1.1872726477996827,
+          "width_deg": 34.236955646157064,
+          "distance_m": 1.2329520040617619
+        },
+        {
+          "sector": 6,
+          "path_m": 2.7,
+          "stop_m": 0.8801633683485476,
+          "visible_frac": 0.9583333333333334,
+          "center_deg": -0.832393806149084,
+          "width_deg": 38.32230827197484,
+          "distance_m": 0.9255660780204383
+        },
+        {
+          "sector": 2,
+          "path_m": 3.4000000000000004,
+          "stop_m": 0.9906315569036109,
+          "visible_frac": 0.9583333333333334,
+          "center_deg": 1.992653382594388,
+          "width_deg": 33.42725770002204,
+          "distance_m": 1.0258452992261502
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 1.3852222561836243,
+  "seconds": 9.297857761383057,
+  "planning_m_per_unit": 1.69309353482135,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.8181605018826019
+}

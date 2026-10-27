@@ -1,0 +1,197 @@
+{
+  "question_id": "FOB4-0192-Q6",
+  "motion_text": "I walk past the hallway, then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "relation": "past",
+      "target": "the hallway"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "shared_walk_from": "FOB4-0192-Q3",
+  "walk_state": {
+    "question_id": "FOB4-0192-Q6",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.17628164775611502,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.560368817174644,
+        "y": -0.27794948222042387,
+        "yaw": -0.17628164775611502,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -1.560368817174644,
+        "y": -0.27794948222042387,
+        "yaw": -0.0996686524911619,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.1400694397034603,
+        "y": -0.43591954447330533,
+        "yaw": -0.0996686524911619,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -1.9755247227500288,
+        -0.351901465703643
+      ],
+      [
+        -3.9755247227500288,
+        -0.5519014657036427
+      ]
+    ],
+    "x": -3.9755247227500288,
+    "y": -0.5519014657036427,
+    "yaw": -0.13794315726623962,
+    "pitch": 0.0,
+    "travel_yaw": -0.13794315726623962
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.560368817174644,
+      -0.27794948222042387
+    ],
+    [
+      -3.1400694397034603,
+      -0.43591954447330533
+    ]
+  ],
+  "final": {
+    "x": -3.1400694397034603,
+    "y": -0.43591954447330533,
+    "yaw_deg": 172.0964392759351,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -3.9755247227500288,
+      "y": -0.5519014657036427,
+      "yaw": 3.0036494963235536,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.17628164775611502,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.560368817174644,
+      "y": -0.27794948222042387,
+      "yaw": -0.17628164775611502,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.560368817174644,
+      "y": -0.27794948222042387,
+      "yaw": -0.0996686524911619,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.1400694397034603,
+      "y": -0.43591954447330533,
+      "yaw": -0.0996686524911619,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.1400694397034603,
+      "y": -0.43591954447330533,
+      "yaw": 3.0036494963235536,
+      "pitch": 0.0
+    }
+  ],
+  "events": [],
+  "m_per_unit": 1.1835306286811829,
+  "seconds": 6.748491525650024,
+  "planning_m_per_unit": 1.4984239567957671,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.7898503112644082
+}

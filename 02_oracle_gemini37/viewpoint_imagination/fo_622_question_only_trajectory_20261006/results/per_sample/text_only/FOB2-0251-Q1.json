@@ -1,0 +1,41 @@
+{
+  "question_id": "FOB2-0251-Q1",
+  "condition": "text_only",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk into the room, walk near the blue sofa and face the way I go, which direction would have the most open space?",
+  "answer_choices": {
+    "A": "left",
+    "B": "right",
+    "C": "front",
+    "D": "behind"
+  },
+  "gold_answer": "D",
+  "prediction": "A",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 83,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 83
+      }
+    ],
+    "thoughts_token_count": 1756,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1840,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_duration_seconds": 7.714569999996456,
+  "completed_at": "2026-10-06T12:23:35-04:00"
+}

@@ -1,0 +1,263 @@
+{
+  "question_id": "FO-0067-Q1",
+  "motion_text": "I walk near the carpet and turn left.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the grey carpet under the dining table",
+      "relation": "near"
+    },
+    {
+      "op": "turn",
+      "direction": "left",
+      "amount": "normal"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FO-0067-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.264673633165262,
+        "y": 0.03593105547603905,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -3.7551216143606823,
+        0.0413289345906378
+      ]
+    ],
+    "x": -3.7551216143606823,
+    "y": 0.0413289345906378,
+    "yaw": 0.011005573240520846,
+    "pitch": 0.0,
+    "travel_yaw": 0.011005573240520846
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -3.264673633165262,
+      0.03593105547603905
+    ]
+  ],
+  "final": {
+    "x": -3.264673633165262,
+    "y": 0.03593105547603905,
+    "yaw_deg": -79.36942710219604,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the grey carpet under the dining table",
+        "relation": "near"
+      },
+      "x": -3.7551216143606823,
+      "y": 0.0413289345906378,
+      "yaw": 0.011005573240520846,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left",
+        "amount": "normal"
+      },
+      "x": -3.7551216143606823,
+      "y": 0.0413289345906378,
+      "yaw": -1.3852578283549428,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.264673633165262,
+      "y": 0.03593105547603905,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.264673633165262,
+      "y": 0.03593105547603905,
+      "yaw": 0.011005573240520846,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.264673633165262,
+      "y": 0.03593105547603905,
+      "yaw": -1.3852578283549428,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the grey carpet under the dining table",
+      "method": "initial_photo",
+      "box": [
+        688,
+        318,
+        891,
+        784
+      ],
+      "point_m": [
+        -4.934674379714745,
+        0.36709719289726184,
+        -1.8461000536983383
+      ]
+    },
+    {
+      "overlap": "the grey carpet under the dining table",
+      "n_points": 192,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 3.8000000000000003,
+          "stop_m": 1.2237114383605918,
+          "visible_frac": 0.5729166666666666,
+          "center_deg": 0.646452376112215,
+          "width_deg": 65.1519883923176,
+          "distance_m": 2.1911036056244333
+        },
+        {
+          "sector": 4,
+          "path_m": 4.1000000000000005,
+          "stop_m": 1.281704190053251,
+          "visible_frac": 0.6041666666666666,
+          "center_deg": -2.244704012313214,
+          "width_deg": 65.91300224671895,
+          "distance_m": 2.187163030974843
+        },
+        {
+          "sector": 2,
+          "path_m": 4.7,
+          "stop_m": 0.7116200645017758,
+          "visible_frac": 0.3489583333333333,
+          "center_deg": 6.062495104541783,
+          "width_deg": 66.81094261946954,
+          "distance_m": 1.7932279089649839
+        },
+        {
+          "sector": 1,
+          "path_m": 5.4,
+          "stop_m": 0.7260562334765105,
+          "visible_frac": 0.2916666666666667,
+          "center_deg": 4.925315421501155,
+          "width_deg": 59.483317555354674,
+          "distance_m": 1.733497598102247
+        },
+        {
+          "sector": 5,
+          "path_m": 5.4,
+          "stop_m": 0.7481396580364765,
+          "visible_frac": 0.3489583333333333,
+          "center_deg": -5.879465310487191,
+          "width_deg": 63.780203964479,
+          "distance_m": 1.7738830186226766
+        },
+        {
+          "sector": 0,
+          "path_m": 5.6000000000000005,
+          "stop_m": 0.7007708106791568,
+          "visible_frac": 0.19270833333333334,
+          "center_deg": -1.2148553528167114,
+          "width_deg": 51.38285299548568,
+          "distance_m": 1.5561926000582689
+        },
+        {
+          "sector": 6,
+          "path_m": 6.1000000000000005,
+          "stop_m": 0.7745016973836945,
+          "visible_frac": 0.328125,
+          "center_deg": -0.8720048376365207,
+          "width_deg": 57.56471818674501,
+          "distance_m": 1.878169975752718
+        },
+        {
+          "sector": 7,
+          "path_m": 6.300000000000001,
+          "stop_m": 0.7041030243367344,
+          "visible_frac": 0.2604166666666667,
+          "center_deg": -5.646699104582289,
+          "width_deg": 61.34102397137169,
+          "distance_m": 1.6759068811065179
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 2.286055564880371,
+  "seconds": 7.532019853591919,
+  "planning_m_per_unit": 2.629486934345956,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.8693922510206318
+}

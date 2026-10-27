@@ -1,0 +1,1 @@
+{"uid": "mvc131__MVC-131-Q2", "category": "cross_view_farthest", "reason": "Depth information helps compare object distances across the views.", "choice": "depth", "usage": {"input_tokens": 3448, "input_tokens_details": {"cached_tokens": 0, "cache_write_tokens": 3445}, "output_tokens": 113, "output_tokens_details": {"reasoning_tokens": 85}, "total_tokens": 3561}}

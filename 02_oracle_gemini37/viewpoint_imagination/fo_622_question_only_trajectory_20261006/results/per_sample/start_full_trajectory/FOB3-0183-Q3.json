@@ -1,0 +1,76 @@
+{
+  "question_id": "FOB3-0183-Q3",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk into the room and walk to the right side of the bed, then turn left, then turn to face my starting point, would the round table still be directly visible?",
+  "answer_choices": {
+    "C": "partially visible",
+    "A": "clearly visible",
+    "B": "outside of view",
+    "D": "completely blocked"
+  },
+  "gold_answer": "C",
+  "show_lookback": true,
+  "prediction": "A",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch3_bent100_20260920/items/FOB3-0183/start_view.png",
+      "sha256": "b38bd92a03b58b4833396fdad2feed4d127f4eee6940da6fe05e375db13e1a86"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_bent100_20260920/items/FOB3-0183/step_01_rgb.png",
+      "sha256": "4980f83da708a0da3351676edcdb32df617e3abd418c3f3fadc282c3ac77982c"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_bent100_20260920/items/FOB3-0183/step_02_rgb.png",
+      "sha256": "0a806a0ce22246025793fa2b255ae988126c7933ec9fe1b255a619304558f04b"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_bent100_20260920/items/FOB3-0183/oracle_lookback.png",
+      "sha256": "2abc4761e853afeb67ba385d9ea0bf39a7e3d3db9c877812f2e3940adcce3c6b"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4421,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 165
+      }
+    ],
+    "thoughts_token_count": 942,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5364,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_duration_seconds": 6.759558499994455,
+  "completed_at": "2026-10-06T14:57:22-04:00"
+}

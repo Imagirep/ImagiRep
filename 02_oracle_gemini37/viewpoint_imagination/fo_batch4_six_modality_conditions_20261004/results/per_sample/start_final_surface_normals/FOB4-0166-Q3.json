@@ -1,0 +1,146 @@
+{
+  "row_index": 20,
+  "question_id": "FOB4-0166-Q3",
+  "trajectory_id": "FOB4-0166",
+  "scan_id": "X7HyMhZNoso",
+  "route_variant": "new_straight",
+  "question_type": 3,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "final_image_kind": "lookback",
+  "question": "If I walk to the blue table, facing the direction I go, then turn to face my starting point, would the gray sofa on the right still be directly visible?",
+  "answer_choices": {
+    "C": "outside of view",
+    "A": "clearly visible",
+    "B": "completely blocked",
+    "D": "partially visible"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "clearly visible",
+    "B": "partially visible",
+    "C": "completely blocked",
+    "D": "outside of view"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "C": "D",
+    "A": "A",
+    "B": "C",
+    "D": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0166\\start_view.png",
+      "sha256": "720bbb4678db684adb21fdc5017699e575e958556ef79b2509d6b32523fcf7ab"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0166\\step_01_rgb.png",
+      "sha256": "2c8b75b126e484b305626cdba71b31f9f78330078b83afcc2d611b68b33fb3c5"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0166\\oracle_lookback.png",
+      "sha256": "004a3781faf2a89320d22dd5fb64e16eb0530404834f7576060980757c16c9f7"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "category": "visibility",
+  "category_label": "Visibility (incl. object selection by visibility)",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0166\\oracle_lookback_depth.png",
+      "sha256": "31dea94d37c0b78ab055d955f9c995ce4f08a81d78d1f5b44857b32a0a456087",
+      "color_scale": {
+        "near_m": 2.24875,
+        "far_m": 6.8105
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0166\\oracle_lookback_surface_normals.png",
+      "sha256": "7d1e7f54f6537dcdbbea19402f1e77854b5107b6b4892eaf9413594bd9e4ab3b"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0166\\oracle_lookback_panorama.png",
+      "sha256": "213e4f9fae6a7cdff2272729a37df24cd738fa3ae2f7d15c8c9897789183a291"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0166\\topdown_lookback_with_path.png",
+      "sha256": "3557a72fa5fba508e7e6752123806c15c201635ebc5b5ff679fdba6ab68aa90b"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0166\\trajectory_lookback.txt",
+      "sha256": "fd1c276f826e2f6607177114b8c4ef626b976d38349eecf8fb1649a79c18463d"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0166\\trajectory_lookback.mp4",
+      "sha256": "450195486665ce13872459fa991d4c7ed69cfac56993fbb543b90e9c90ef2cc1"
+    }
+  },
+  "condition": "start_final_surface_normals",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT SURFACE NORMAL MAP (same camera pose and field of view as FINAL VIEW):\nColors encode surface orientation, not object color or distance. RGB channels encode normal components along camera-right (R), camera-up (G), and camera-forward (B): 0 = -1, about 128 = 0, and 255 = +1. Higher R/G/B means a stronger rightward/upward/forward component; a surface facing the camera has low B. Black means missing geometry. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch4_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "C",
+  "correct": true,
+  "input_signature": "1ad8df27f73445dc4be3b3d691b65e985b0720b79df0af11a483dcb3fea742c8",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "surface_normals"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3468,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 276
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 2383,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5852,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T23:55:59.219-04:00",
+  "request_duration_seconds": 11.434666500004823,
+  "completed_at": "2026-10-04T23:56:10.654-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

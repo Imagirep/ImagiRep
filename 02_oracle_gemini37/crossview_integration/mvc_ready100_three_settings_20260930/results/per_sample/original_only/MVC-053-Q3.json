@@ -1,0 +1,51 @@
+{
+  "status": "ok",
+  "row_index": 75,
+  "question_id": "MVC-053-Q3",
+  "condition": "original_only",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "response_format": "dynamic option enum",
+  "system_prompt": "Solve this multi-view spatial reasoning multiple-choice question using the provided evidence. Reason carefully. Return only A, B, C, or D.",
+  "condition_prompt": "Use the numbered images to answer the question. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.",
+  "prompt_hash": "4a9a10a8e562aafac4f5788fe391183004dea7c0481bb9cc0a04db8f415127d8",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "podium, framed painting, piano, monitor",
+    "B": "podium, framed painting, monitor, piano",
+    "C": "podium, monitor, piano, framed painting",
+    "D": "piano, podium, monitor, framed painting"
+  },
+  "gold_answer": "D",
+  "prediction": "A",
+  "correct": false,
+  "image_paths": [
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-053\\image_1.png",
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-053\\image_2.png"
+  ],
+  "image_count": 2,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2360,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 232
+      }
+    ],
+    "thoughts_token_count": 7860,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 10221,
+    "traffic_type": null
+  },
+  "completed_at": "2026-09-30T18:44:42"
+}

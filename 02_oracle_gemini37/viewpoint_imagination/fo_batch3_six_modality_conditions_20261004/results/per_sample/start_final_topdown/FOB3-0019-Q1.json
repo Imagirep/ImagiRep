@@ -1,0 +1,144 @@
+{
+  "row_index": 138,
+  "question_id": "FOB3-0019-Q1",
+  "trajectory_id": "FOB3-0019",
+  "scan_id": "qoiz87JEwZ2",
+  "question_type": 1,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk into the room, then walk near the right side of the table, facing the direction I go, which direction would have the most open space?",
+  "answer_choices": {
+    "D": "behind",
+    "A": "left",
+    "B": "front",
+    "C": "right"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "D": "D",
+    "A": "B",
+    "B": "A",
+    "C": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0019\\start_view.png",
+      "sha256": "3503d9b92c926bc3c653d26a35886713d1811ca62be9d334f40f648094bdb787"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0019\\step_01_rgb.png",
+      "sha256": "6905d7e8929568929492f8ec1dc60f579f296222cdd09dc9dfab6df0de3f3785"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0019\\step_02_rgb.png",
+      "sha256": "3d93900d48af6ecbbd1eb05f4cea8286b6a412190cce95439babd25c793311cf"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "category": "open_space_direction",
+  "category_label": "Open-space direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0019\\step_02_depth.png",
+      "sha256": "70c524626b5990c6417d2259834d27a123cf7ab7c15128df9fcca1f14212a796",
+      "color_scale": {
+        "near_m": 0.70675,
+        "far_m": 3.855
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0019\\step_02_surface_normals.png",
+      "sha256": "a969ab272cdd6981e26061064e87d6813783dcfa76721471e75b7249c2e25187"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0019\\step_02_panorama.png",
+      "sha256": "2e3e5e9afb4d7ca2c7762964bb134110cf1acf0f55dd04b359ef61b454e8199c"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0019\\topdown_with_path.png",
+      "sha256": "43d1696fd2ff917be8daabd980957d2c32367b7b67cf6e3c5ba199e36dc79be8"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0019\\trajectory.txt",
+      "sha256": "993b53d4d4bb8499c4779730cb61a5323567d94947443f329bb3d084170718e3"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0019\\trajectory.mp4",
+      "sha256": "2ca6d386d98bd9f26b1ab8756de52cb17039c89205078906372b9f1daa2d9de1"
+    }
+  },
+  "condition": "start_final_topdown",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch3_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": false,
+  "input_signature": "005268b507c5d1015094c81069b3fee6190a9aaa33ce18973c60b0fe678f0faf",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "topdown"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3409,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3217
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 192
+      }
+    ],
+    "thoughts_token_count": 2207,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5617,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T17:13:18.268-04:00",
+  "request_duration_seconds": 10.143490800001018,
+  "completed_at": "2026-10-04T17:13:28.412-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

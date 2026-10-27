@@ -1,0 +1,242 @@
+{
+  "question_id": "FOB3-0033-Q1",
+  "motion_text": "I walk to the mirror, facing where I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "round mirror on the wall above the wooden credenza",
+      "relation": "to"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0033-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.11458929836964851,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.260129958025371,
+        "y": -0.37521974413298587,
+        "yaw": -0.11458929836964851,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -3.260129958025371,
+        "y": -0.37521974413298587,
+        "yaw": 0.3487710035839064,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.360129958025372,
+        "y": 0.0247802558670136,
+        "yaw": 0.3487710035839064,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -3.260129958025371,
+        -0.37521974413298587
+      ],
+      [
+        -4.360129958025372,
+        0.0247802558670136
+      ]
+    ],
+    "x": -4.360129958025372,
+    "y": 0.0247802558670136,
+    "yaw": 0.005683314328639084,
+    "pitch": 0.0,
+    "travel_yaw": 0.005683314328639084
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -3.260129958025371,
+      -0.37521974413298587
+    ],
+    [
+      -4.360129958025372,
+      0.0247802558670136
+    ]
+  ],
+  "final": {
+    "x": -4.360129958025372,
+    "y": 0.0247802558670136,
+    "yaw_deg": 0.32562992467724644,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "round mirror on the wall above the wooden credenza",
+        "relation": "to"
+      },
+      "x": -4.360129958025372,
+      "y": 0.0247802558670136,
+      "yaw": 0.005683314328639084,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.11458929836964851,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.260129958025371,
+      "y": -0.37521974413298587,
+      "yaw": -0.11458929836964851,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.260129958025371,
+      "y": -0.37521974413298587,
+      "yaw": 0.3487710035839064,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.360129958025372,
+      "y": 0.0247802558670136,
+      "yaw": 0.3487710035839064,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.360129958025372,
+      "y": 0.0247802558670136,
+      "yaw": 0.005683314328639084,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "round mirror on the wall above the wooden credenza",
+      "method": "initial_photo",
+      "box": [
+        398,
+        482,
+        582,
+        622
+      ],
+      "point_m": [
+        -5.43074542946112,
+        0.22993243794397863,
+        0.06251147714793649
+      ]
+    },
+    {
+      "overlap": "round mirror on the wall above the wooden credenza",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 3,
+          "path_m": 5.2,
+          "stop_m": 1.0900939892910748,
+          "visible_frac": 1.0,
+          "center_deg": -0.20245914042881047,
+          "width_deg": 37.87649838838627,
+          "distance_m": 1.209362354000198
+        },
+        {
+          "sector": 4,
+          "path_m": 5.6000000000000005,
+          "stop_m": 1.0882018010584977,
+          "visible_frac": 1.0,
+          "center_deg": -0.31803390337643417,
+          "width_deg": 45.82874403723031,
+          "distance_m": 1.1376550167587687
+        },
+        {
+          "sector": 5,
+          "path_m": 6.6000000000000005,
+          "stop_m": 1.0399558472291033,
+          "visible_frac": 1.0,
+          "center_deg": -0.49487053048326546,
+          "width_deg": 55.452608714486544,
+          "distance_m": 0.9451637194449919
+        }
+      ],
+      "chosen_sector": 3
+    }
+  ],
+  "m_per_unit": 2.4864137474368495,
+  "seconds": 9.07326078414917
+}

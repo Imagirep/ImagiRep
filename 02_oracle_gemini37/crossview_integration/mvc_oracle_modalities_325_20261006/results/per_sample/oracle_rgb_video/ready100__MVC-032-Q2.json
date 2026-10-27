@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-032-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-032-Q2",
+  "resource_id": "MVC-032",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is farthest from silver pot in Image 1?",
+  "answer_choices": {
+    "A": "framed painting under the light",
+    "B": "black cabinet",
+    "C": "black chairs",
+    "D": "potted flower"
+  },
+  "gold_answer": "D",
+  "prediction": "A",
+  "correct": false,
+  "signature": "8cf0ec02bfdce588e158558d813bb2d5890780afda1d4c9b973770b8003dba1d",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-032\\order_21\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7891,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 289
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      }
+    ],
+    "thoughts_token_count": 3069,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 10960,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 16.367865599997458,
+  "completed_at": "2026-10-06T17:33:45-04:00"
+}

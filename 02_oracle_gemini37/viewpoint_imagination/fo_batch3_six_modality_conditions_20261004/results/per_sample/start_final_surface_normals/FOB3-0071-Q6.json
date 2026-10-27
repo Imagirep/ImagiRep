@@ -1,0 +1,150 @@
+{
+  "row_index": 32,
+  "question_id": "FOB3-0071-Q6",
+  "trajectory_id": "FOB3-0071",
+  "scan_id": "e9zR4mvMWw7",
+  "question_type": 6,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk to the hallway on the left and turn to face my starting point, where is the potted plant relative to me?",
+  "answer_choices": {
+    "B": "left",
+    "A": "front",
+    "C": "behind",
+    "D": "right"
+  },
+  "gold_answer": "B",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "B": "B",
+    "A": "A",
+    "C": "D",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0071\\start_view.png",
+      "sha256": "9b49bda123e0fa18ca076829462e9403dd614c3132dad5e66a81328af127666c"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0071\\step_01_rgb.png",
+      "sha256": "eb18c1e7a911245238c2bfa5a33972d45a0a829d0fd10871607594c56adf1ef0"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0071\\step_02_rgb.png",
+      "sha256": "bcea6e1b3fad76412586ececef925e0ab44c0ddc731e4930eeb233da2e12478f"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0071\\oracle_lookback.png",
+      "sha256": "878f8aed2c3249a228c90a3652895a2b0583f6b78c5fe97212a9642c029ee944"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "category": "object_relative_direction",
+  "category_label": "Object-relative direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0071\\oracle_lookback_depth.png",
+      "sha256": "ff0d082faf19100808dc7f3f29e9817dc7f77aef98b85d5ba207911104dcfd85",
+      "color_scale": {
+        "near_m": 0.70675,
+        "far_m": 4.69025
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0071\\oracle_lookback_surface_normals.png",
+      "sha256": "5c6970a6ecfc16394e4de6eb21eddc2006a79e8831b9f1f4799ecd9c290355ad"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0071\\oracle_lookback_panorama.png",
+      "sha256": "f02787641fa9ce4aeb81a5ef37e908956db7c8f5efd058bccfdf592bf7f36873"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0071\\topdown_lookback_with_path.png",
+      "sha256": "0bae05fe0466325a8cb17462270e5c9cf14d6ddd9092761ea4cdb7b4d3ba6c90"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0071\\trajectory_lookback.txt",
+      "sha256": "28b99cdbfd7fa0f9dd35458b4fd064170eb5694cf6b8d4851c6f6cf37c54c610"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0071\\trajectory_lookback.mp4",
+      "sha256": "bf3b7247f5240eb90cde965fc545e6714575cbe86d5925df810a9084c73d92cd"
+    }
+  },
+  "condition": "start_final_surface_normals",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT SURFACE NORMAL MAP (same camera pose and field of view as FINAL VIEW):\nColors encode surface orientation, not object color or distance. RGB channels encode normal components along camera-right (R), camera-up (G), and camera-forward (B): 0 = -1, about 128 = 0, and 255 = +1. Higher R/G/B means a stronger rightward/upward/forward component; a surface facing the camera has low B. Black means missing geometry. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch3_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": false,
+  "input_signature": "de46efdb9c0e282a4fa0ecaf95fb6340bb96f8bc9976616b46565485923be50f",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "surface_normals"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3455,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 263
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1867,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5322,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T18:58:26.773-04:00",
+  "request_duration_seconds": 9.246875500000897,
+  "completed_at": "2026-10-04T18:58:36.020-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-005-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-005-Q2",
+  "resource_id": "MVC-005",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is farthest from white ottoman in Image 1?",
+  "answer_choices": {
+    "A": "black chairs",
+    "B": "framed paintings",
+    "C": "laptop",
+    "D": "wooden box"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "773b34b6ff58d8077321ec86d748a35b3a9d8b260f44d1e2fc271413a4cf65b5",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-005\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3552,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 360
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 2136,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5689,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.9828206999955,
+  "completed_at": "2026-10-06T17:30:21-04:00"
+}

@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC-041-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-041-Q3",
+  "resource_id": "MVC-041",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "wooden desk, microwave, refrigerator, green bottles",
+    "B": "green bottles, wooden desk, refrigerator, microwave",
+    "C": "green bottles, microwave, refrigerator, wooden desk",
+    "D": "wooden desk, refrigerator, microwave, green bottles"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "19999f4a53a914889d6a2bfab41650c41ff908e75c4d29ffe51bd8678537c8b5",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-041\\order_12\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 7923,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 4410
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 321
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 698,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8622,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.163383200007956,
+  "completed_at": "2026-10-06T17:33:45-04:00"
+}

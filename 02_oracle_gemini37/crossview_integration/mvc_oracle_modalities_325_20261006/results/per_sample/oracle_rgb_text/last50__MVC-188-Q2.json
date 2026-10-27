@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-188-Q2",
+  "cohort": "last50",
+  "question_id": "MVC-188-Q2",
+  "resource_id": "MVC-188",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is farthest from fireplace in Image 1?",
+  "answer_choices": {
+    "A": "tall lamp",
+    "B": "low black table",
+    "C": "brown long sofa",
+    "D": "white chair"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "ac5a8bb8d93ffadbd39c4a6de59a0a49a3d1d95d05e6626c7c14294106c40c75",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-188\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3554,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 362
+      }
+    ],
+    "thoughts_token_count": 3286,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6841,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 14.975875899996026,
+  "completed_at": "2026-10-06T17:32:39-04:00"
+}

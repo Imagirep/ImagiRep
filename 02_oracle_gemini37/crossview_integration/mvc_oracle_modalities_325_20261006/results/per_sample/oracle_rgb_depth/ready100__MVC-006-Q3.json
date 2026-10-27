@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-006-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-006-Q3",
+  "resource_id": "MVC-006",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "small white table, painting, large potted plant, small potted plant",
+    "B": "painting, large potted plant, small white table, small potted plant",
+    "C": "small white table, small potted plant, painting, large potted plant",
+    "D": "small potted plant, small white table, painting, large potted plant"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "653bd11cdafa559bcccad293578be6bbe1d1566f99a2c24abde9786e97f2aa8c",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.835 m (near/red) to 4.234 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-006\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4654,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 398
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 5223,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9878,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 46.01185190000979,
+  "completed_at": "2026-10-06T17:36:57-04:00"
+}

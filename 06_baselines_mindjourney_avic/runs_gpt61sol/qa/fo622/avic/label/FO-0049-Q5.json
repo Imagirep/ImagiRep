@@ -1,0 +1,1 @@
+{"qid": "FO-0049-Q5", "method": "avic", "variant": "label", "prediction": "fireplace", "gold": "painting", "correct": false, "n_imagined": 4, "category": "farthest_object", "stored_result": "wrong"}

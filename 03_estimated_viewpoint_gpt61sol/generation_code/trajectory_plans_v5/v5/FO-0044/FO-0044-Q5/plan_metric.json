@@ -1,0 +1,151 @@
+{
+  "question_id": "FO-0044-Q5",
+  "motion_text": "I walk past the black chair, then turn around.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "relation": "past",
+      "target": "the black armchair on the right"
+    },
+    {
+      "op": "turn",
+      "direction": "left",
+      "amount": "around"
+    }
+  ],
+  "shared_walk_from": "FO-0044-Q1",
+  "walk_state": {
+    "question_id": "FO-0044-Q5",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.143846990123899,
+        "y": -0.015966222529296106,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -4.6182151585925215,
+        -0.023453892998574588
+      ]
+    ],
+    "x": -4.6182151585925215,
+    "y": -0.023453892998574588,
+    "yaw": -0.0050785185525041715,
+    "pitch": 0.0,
+    "travel_yaw": -0.0050785185525041715
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -3.143846990123899,
+      -0.015966222529296106
+    ]
+  ],
+  "final": {
+    "x": -3.143846990123899,
+    "y": -0.015966222529296106,
+    "yaw_deg": 179.7090223207626,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "turn",
+        "direction": "left",
+        "amount": "around"
+      },
+      "x": -4.6182151585925215,
+      "y": -0.023453892998574588,
+      "yaw": 3.136514135037289,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.143846990123899,
+      "y": -0.015966222529296106,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.143846990123899,
+      "y": -0.015966222529296106,
+      "yaw": 3.136514135037289,
+      "pitch": 0.0
+    }
+  ],
+  "events": [],
+  "m_per_unit": 2.158400297164917,
+  "seconds": 5.965328216552734,
+  "planning_m_per_unit": 3.170624079985771,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.6807493549265554
+}

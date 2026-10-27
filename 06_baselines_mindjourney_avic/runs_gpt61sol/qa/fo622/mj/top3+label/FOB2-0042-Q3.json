@@ -1,0 +1,1 @@
+{"qid": "FOB2-0042-Q3", "method": "mj", "variant": "top3+label", "prediction": "outside of view", "gold": "partially visible", "correct": false, "n_imagined": 3, "category": "visibility", "stored_result": "wrong"}

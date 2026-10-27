@@ -1,0 +1,144 @@
+{
+  "row_index": 225,
+  "question_id": "FOB3-0094-Q4",
+  "trajectory_id": "FOB3-0094",
+  "scan_id": "UwV83HsGsw3",
+  "question_type": 4,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk through the room, walk to the tv and slightly turn left, which object(s) would be closest to me?",
+  "answer_choices": {
+    "A": "potted plant",
+    "B": "small white and red painting",
+    "C": "large red and black painting",
+    "D": "table with Union Jack design"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "large red and black painting",
+    "B": "small white and red painting",
+    "C": "table with Union Jack design",
+    "D": "potted plant"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "A": "D",
+    "B": "B",
+    "C": "A",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0094\\start_view.png",
+      "sha256": "c47cee9140d4d08123003b4c080d1bb37cf5ec4213129cc6d4dbdd283837fc12"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0094\\step_01_rgb.png",
+      "sha256": "bb01e41a6742ca9f3212c3c319fb673db47bbc07ea13bdbe6a99b521a5cda7ed"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0094\\step_02_rgb.png",
+      "sha256": "407c9fb6f79284344518ee606eb4059b5764291cb0103673c19eb6032fed8d86"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "category": "nearest_object",
+  "category_label": "Nearest object",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0094\\step_02_depth.png",
+      "sha256": "d9697e1fd73befa2eef1ba0a6a3fab559d3278d6c5a8e336453e028da254b203",
+      "color_scale": {
+        "near_m": 0.8995,
+        "far_m": 3.66225
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0094\\step_02_surface_normals.png",
+      "sha256": "6df7e02f6972e1ba49d2e40031f1e859068f2b6a0477d7ff4dece30ac8b848b3"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0094\\step_02_panorama.png",
+      "sha256": "dda28f7754f2e0defc1777a9dc72dd14cc1a711b0b07c66e59fe5d61c864df2e"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0094\\topdown_with_path.png",
+      "sha256": "27d2bdb8885cad3a667705904c50d6334a82cbb19393832df0dfba496d488f21"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0094\\trajectory.txt",
+      "sha256": "caf5a68eaaa5693e7b1f5e690101f8b050249583dcf966d5783886e6137364bb"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0094\\trajectory.mp4",
+      "sha256": "09dbe9bed26132757f0cf5babd0e0bd72ad3d8ad9df81ea9ce5aa7df29042fdb"
+    }
+  },
+  "condition": "start_final_topdown",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch3_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": true,
+  "input_signature": "80aba8ef1f420ce93ac0317b3e67b99affe098fc435ff1de38823c6561f8bbbf",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "topdown"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3417,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3217
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 200
+      }
+    ],
+    "thoughts_token_count": 464,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3882,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T17:19:45.821-04:00",
+  "request_duration_seconds": 3.6596733999977005,
+  "completed_at": "2026-10-04T17:19:49.481-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

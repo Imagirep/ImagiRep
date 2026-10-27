@@ -1,0 +1,82 @@
+{
+  "question_id": "FOB3-0127-Q6",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the white shelf and walk past it by its left side, then turn to face my starting point, where is the wooden table relative to me?",
+  "answer_choices": {
+    "D": "front",
+    "A": "right",
+    "B": "behind",
+    "C": "left"
+  },
+  "gold_answer": "D",
+  "show_lookback": true,
+  "prediction": "D",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2:",
+    "Step 3 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch3_bent100_20260920/items/FOB3-0127/start_view.png",
+      "sha256": "f42596f4bf4ad6dfa7d2c2f68b44108dc0d553cc5df7a9d53dcad52798c47ce2"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_bent100_20260920/items/FOB3-0127/step_01_rgb.png",
+      "sha256": "85161e74ba11c59df6eb3d4bb5c804052cdd83d8f445f7fe027682d6a39c5bc3"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_bent100_20260920/items/FOB3-0127/step_02_rgb.png",
+      "sha256": "11332e429e13b1ca2d5eff86e10ebe9934d003d929971df4dd27bb3cf9a9733a"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_bent100_20260920/items/FOB3-0127/step_03_rgb.png",
+      "sha256": "40dda47356bd39c9cef47d9e2c9ba58a3d3fd3779010c6ead64af84ae5db0ce1"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_bent100_20260920/items/FOB3-0127/oracle_lookback.png",
+      "sha256": "c28cf4684bb8d2c6577dbfee2559767998283444324819668cbcaf094c160452"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 5481,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 5320
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 161
+      }
+    ],
+    "thoughts_token_count": 1338,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6820,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 7.750217299995711,
+  "completed_at": "2026-10-06T14:52:30-04:00"
+}

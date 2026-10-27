@@ -1,0 +1,299 @@
+{
+  "question_id": "FOB3-0098-Q4",
+  "motion_text": "I walk to the stove and face the same direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "relation": "to",
+      "target": "the stainless steel stove with green cabinets"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0098-Q4",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.018106569308276615,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.7750313171186862,
+        "y": -0.05025178864307023,
+        "yaw": -0.018106569308276615,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.7750313171186862,
+        "y": -0.05025178864307023,
+        "yaw": -0.7853981633974505,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.9750313171186864,
+        "y": -0.2502517886430713,
+        "yaw": -0.7853981633974505,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.9750313171186864,
+        "y": -0.2502517886430713,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -6.175031317118687,
+        "y": -0.2502517886430713,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.7750313171186862,
+        -0.05025178864307023
+      ],
+      [
+        -2.9750313171186864,
+        -0.2502517886430713
+      ],
+      [
+        -6.175031317118687,
+        -0.2502517886430713
+      ]
+    ],
+    "x": -6.175031317118687,
+    "y": -0.2502517886430713,
+    "yaw": -0.040504235046868134,
+    "pitch": 0.0,
+    "travel_yaw": -0.040504235046868134
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.7750313171186862,
+      -0.05025178864307023
+    ],
+    [
+      -2.9750313171186864,
+      -0.2502517886430713
+    ],
+    [
+      -6.175031317118687,
+      -0.2502517886430713
+    ]
+  ],
+  "final": {
+    "x": -6.175031317118687,
+    "y": -0.2502517886430713,
+    "yaw_deg": -2.3207217205914183,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "relation": "to",
+        "target": "the stainless steel stove with green cabinets"
+      },
+      "x": -6.175031317118687,
+      "y": -0.2502517886430713,
+      "yaw": -0.040504235046868134,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -6.175031317118687,
+      "y": -0.2502517886430713,
+      "yaw": -0.040504235046868134,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.018106569308276615,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.7750313171186862,
+      "y": -0.05025178864307023,
+      "yaw": -0.018106569308276615,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.7750313171186862,
+      "y": -0.05025178864307023,
+      "yaw": -0.7853981633974505,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.9750313171186864,
+      "y": -0.2502517886430713,
+      "yaw": -0.7853981633974505,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.9750313171186864,
+      "y": -0.2502517886430713,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -6.175031317118687,
+      "y": -0.2502517886430713,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -6.175031317118687,
+      "y": -0.2502517886430713,
+      "yaw": -0.040504235046868134,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the stainless steel stove with green cabinets",
+      "method": "initial_photo",
+      "box": [
+        538,
+        326,
+        746,
+        530
+      ],
+      "point_m": [
+        -7.20797464644805,
+        -0.6017701754541473,
+        -1.336668064339704
+      ]
+    },
+    {
+      "overlap": "the stainless steel stove with green cabinets",
+      "n_points": 213,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 6.5,
+          "stop_m": 1.0911173620982715,
+          "visible_frac": 0.7934272300469484,
+          "center_deg": -4.762600973200853,
+          "width_deg": 44.03795323753161,
+          "distance_m": 1.6263833099915925
+        },
+        {
+          "sector": 3,
+          "path_m": 6.9,
+          "stop_m": 1.034080455488561,
+          "visible_frac": 0.7370892018779343,
+          "center_deg": -6.399624846458491,
+          "width_deg": 56.95114586828994,
+          "distance_m": 1.5308127768795323
+        },
+        {
+          "sector": 2,
+          "path_m": 7.9,
+          "stop_m": 0.6233583911196926,
+          "visible_frac": 0.2300469483568075,
+          "center_deg": -3.808908352594731,
+          "width_deg": 63.85147487822838,
+          "distance_m": 0.9660344977459377
+        },
+        {
+          "sector": 1,
+          "path_m": 8.700000000000001,
+          "stop_m": 0.7514794224483621,
+          "visible_frac": 0.3755868544600939,
+          "center_deg": 27.484238314656036,
+          "width_deg": 58.33907266150192,
+          "distance_m": 1.2377997101695464
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 3.3739598774026,
+  "seconds": 8.780532598495483
+}

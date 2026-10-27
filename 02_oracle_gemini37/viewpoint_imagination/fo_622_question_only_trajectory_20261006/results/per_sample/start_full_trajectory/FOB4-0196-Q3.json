@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB4-0196-Q3",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk into the doorway, then turn to face my starting point, then turn to face my starting point, would the sink still be directly visible?",
+  "answer_choices": {
+    "C": "partially visible",
+    "A": "clearly visible",
+    "B": "completely blocked",
+    "D": "outside of view"
+  },
+  "gold_answer": "C",
+  "show_lookback": true,
+  "prediction": "A",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0196/start_view.png",
+      "sha256": "e58163114fd2b632de7b5a3b0da7d7fd26e31eecadee0b40ab485d98193c35b0"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0196/step_01_rgb.png",
+      "sha256": "4a18923d2a4d918908e3343bceab25df3fac416d43562b8149fec23d08ac3a81"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0196/oracle_lookback.png",
+      "sha256": "77c84cdd4941c598c4a9eb3f2e8544974fa2ffe190d20f68e781de2deb8caf60"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3346,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 154
+      }
+    ],
+    "thoughts_token_count": 689,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4036,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_duration_seconds": 4.322280199994566,
+  "completed_at": "2026-10-06T15:20:34-04:00"
+}

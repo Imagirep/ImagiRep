@@ -1,0 +1,154 @@
+{
+  "question_id": "FOB2-0114-Q5",
+  "motion_text": "I walk near the bar stools and face the way I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the two bar stools at the kitchen island",
+      "relation": "near"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "shared_walk_from": "FOB2-0114-Q1",
+  "walk_state": {
+    "question_id": "FOB2-0114-Q5",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.20150316935724064,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -0.9981185821666204,
+        "y": 0.20389112283439748,
+        "yaw": 0.20150316935724064,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -1.0542635667870126,
+        0.2153601648503498
+      ]
+    ],
+    "x": -1.0542635667870126,
+    "y": 0.2153601648503498,
+    "yaw": 0.20150316935724064,
+    "pitch": 0.0,
+    "travel_yaw": 0.20150316935724064
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -0.9981185821666204,
+      0.20389112283439748
+    ]
+  ],
+  "final": {
+    "x": -0.9981185821666204,
+    "y": 0.20389112283439748,
+    "yaw_deg": 11.545281162679746,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -1.0542635667870126,
+      "y": 0.2153601648503498,
+      "yaw": 0.20150316935724064,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.20150316935724064,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -0.9981185821666204,
+      "y": 0.20389112283439748,
+      "yaw": 0.20150316935724064,
+      "pitch": 0.0
+    }
+  ],
+  "events": [],
+  "m_per_unit": 2.0746158361434937,
+  "seconds": 4.671338319778442,
+  "planning_m_per_unit": 2.191314669623436,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.9467448308097183
+}

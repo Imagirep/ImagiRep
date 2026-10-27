@@ -1,0 +1,1134 @@
+{
+  "status": "complete_verified",
+  "questions": 160,
+  "trajectories": 50,
+  "model": "gemini-3.7-flash",
+  "conditions": {
+    "start_view": {
+      "overall": {
+        "n": 160,
+        "correct": 91,
+        "accuracy": 0.56875
+      },
+      "by_question_type": {
+        "1": {
+          "n": 20,
+          "correct": 10,
+          "accuracy": 0.5
+        },
+        "2": {
+          "n": 5,
+          "correct": 2,
+          "accuracy": 0.4
+        },
+        "3": {
+          "n": 21,
+          "correct": 6,
+          "accuracy": 0.2857142857142857
+        },
+        "4": {
+          "n": 25,
+          "correct": 16,
+          "accuracy": 0.64
+        },
+        "5": {
+          "n": 17,
+          "correct": 12,
+          "accuracy": 0.7058823529411765
+        },
+        "6": {
+          "n": 32,
+          "correct": 19,
+          "accuracy": 0.59375
+        },
+        "7": {
+          "n": 12,
+          "correct": 8,
+          "accuracy": 0.6666666666666666
+        },
+        "8": {
+          "n": 28,
+          "correct": 18,
+          "accuracy": 0.6428571428571429
+        }
+      },
+      "by_question_set": {
+        "lookback": {
+          "n": 51,
+          "correct": 23,
+          "accuracy": 0.45098039215686275
+        },
+        "non-lookback": {
+          "n": 109,
+          "correct": 68,
+          "accuracy": 0.6238532110091743
+        }
+      },
+      "by_show_lookback": {
+        "false": {
+          "n": 115,
+          "correct": 72,
+          "accuracy": 0.6260869565217392
+        },
+        "true": {
+          "n": 45,
+          "correct": 19,
+          "accuracy": 0.4222222222222222
+        }
+      },
+      "by_cohort": {
+        "bent": {
+          "n": 48,
+          "correct": 22,
+          "accuracy": 0.4583333333333333
+        },
+        "straight": {
+          "n": 112,
+          "correct": 69,
+          "accuracy": 0.6160714285714286
+        }
+      },
+      "prediction_counts": {
+        "A": 49,
+        "B": 39,
+        "C": 40,
+        "D": 32
+      }
+    },
+    "start_final": {
+      "overall": {
+        "n": 160,
+        "correct": 99,
+        "accuracy": 0.61875
+      },
+      "by_question_type": {
+        "1": {
+          "n": 20,
+          "correct": 9,
+          "accuracy": 0.45
+        },
+        "2": {
+          "n": 5,
+          "correct": 2,
+          "accuracy": 0.4
+        },
+        "3": {
+          "n": 21,
+          "correct": 5,
+          "accuracy": 0.23809523809523808
+        },
+        "4": {
+          "n": 25,
+          "correct": 17,
+          "accuracy": 0.68
+        },
+        "5": {
+          "n": 17,
+          "correct": 14,
+          "accuracy": 0.8235294117647058
+        },
+        "6": {
+          "n": 32,
+          "correct": 22,
+          "accuracy": 0.6875
+        },
+        "7": {
+          "n": 12,
+          "correct": 10,
+          "accuracy": 0.8333333333333334
+        },
+        "8": {
+          "n": 28,
+          "correct": 20,
+          "accuracy": 0.7142857142857143
+        }
+      },
+      "by_question_set": {
+        "lookback": {
+          "n": 51,
+          "correct": 23,
+          "accuracy": 0.45098039215686275
+        },
+        "non-lookback": {
+          "n": 109,
+          "correct": 76,
+          "accuracy": 0.6972477064220184
+        }
+      },
+      "by_show_lookback": {
+        "false": {
+          "n": 115,
+          "correct": 80,
+          "accuracy": 0.6956521739130435
+        },
+        "true": {
+          "n": 45,
+          "correct": 19,
+          "accuracy": 0.4222222222222222
+        }
+      },
+      "by_cohort": {
+        "bent": {
+          "n": 48,
+          "correct": 27,
+          "accuracy": 0.5625
+        },
+        "straight": {
+          "n": 112,
+          "correct": 72,
+          "accuracy": 0.6428571428571429
+        }
+      },
+      "prediction_counts": {
+        "A": 47,
+        "B": 41,
+        "C": 35,
+        "D": 37
+      }
+    }
+  },
+  "paired": {
+    "n": 160,
+    "both_correct": 79,
+    "wrong_to_correct": 20,
+    "correct_to_wrong": 12,
+    "both_wrong": 49,
+    "net_correct": 8,
+    "same_answer": 117,
+    "answer_agreement": 0.73125,
+    "exact_mcnemar_p_two_sided": 0.21532714972272515,
+    "ids": {
+      "both_correct": [
+        "FOB3-0004-Q3",
+        "FOB3-0004-Q6",
+        "FOB3-0009-Q1",
+        "FOB3-0009-Q8",
+        "FOB3-0011-Q4",
+        "FOB3-0011-Q6",
+        "FOB3-0012-Q6",
+        "FOB3-0013-Q6",
+        "FOB3-0013-Q7",
+        "FOB3-0013-Q8",
+        "FOB3-0017-Q4",
+        "FOB3-0019-Q1",
+        "FOB3-0019-Q4",
+        "FOB3-0019-Q8",
+        "FOB3-0021-Q6",
+        "FOB3-0028-Q6",
+        "FOB3-0028-Q7",
+        "FOB3-0028-Q8",
+        "FOB3-0030-Q7",
+        "FOB3-0031-Q6",
+        "FOB3-0031-Q8",
+        "FOB3-0033-Q1",
+        "FOB3-0033-Q4",
+        "FOB3-0033-Q5",
+        "FOB3-0033-Q6",
+        "FOB3-0033-Q8",
+        "FOB3-0034-Q4",
+        "FOB3-0034-Q8",
+        "FOB3-0037-Q2",
+        "FOB3-0037-Q5",
+        "FOB3-0037-Q6",
+        "FOB3-0037-Q7",
+        "FOB3-0037-Q8",
+        "FOB3-0038-Q3",
+        "FOB3-0038-Q4",
+        "FOB3-0038-Q8",
+        "FOB3-0041-Q5",
+        "FOB3-0041-Q8",
+        "FOB3-0046-Q4",
+        "FOB3-0047-Q8",
+        "FOB3-0056-Q4",
+        "FOB3-0057-Q8",
+        "FOB3-0059-Q8",
+        "FOB3-0069-Q5",
+        "FOB3-0069-Q6",
+        "FOB3-0071-Q4",
+        "FOB3-0072-Q3",
+        "FOB3-0072-Q4",
+        "FOB3-0072-Q5",
+        "FOB3-0077-Q1",
+        "FOB3-0077-Q7",
+        "FOB3-0079-Q1",
+        "FOB3-0079-Q2",
+        "FOB3-0079-Q5",
+        "FOB3-0079-Q8",
+        "FOB3-0081-Q6",
+        "FOB3-0094-Q4",
+        "FOB3-0094-Q8",
+        "FOB3-0098-Q4",
+        "FOB3-0098-Q6",
+        "FOB3-0098-Q7",
+        "FOB3-0126-Q5",
+        "FOB3-0126-Q6",
+        "FOB3-0126-Q7",
+        "FOB3-0139-Q5",
+        "FOB3-0139-Q8",
+        "FOB3-0146-Q1",
+        "FOB3-0146-Q5",
+        "FOB3-0146-Q6",
+        "FOB3-0149-Q3",
+        "FOB3-0161-Q8",
+        "FOB3-0173-Q4",
+        "FOB3-0173-Q6",
+        "FOB3-0176-Q4",
+        "FOB3-0181-Q7",
+        "FOB3-0182-Q5",
+        "FOB3-0182-Q6",
+        "FOB3-0183-Q1",
+        "FOB3-0191-Q4"
+      ],
+      "wrong_to_correct": [
+        "FOB3-0004-Q4",
+        "FOB3-0019-Q3",
+        "FOB3-0019-Q6",
+        "FOB3-0031-Q1",
+        "FOB3-0031-Q5",
+        "FOB3-0051-Q5",
+        "FOB3-0053-Q6",
+        "FOB3-0059-Q5",
+        "FOB3-0077-Q8",
+        "FOB3-0096-Q1",
+        "FOB3-0096-Q4",
+        "FOB3-0127-Q6",
+        "FOB3-0139-Q6",
+        "FOB3-0161-Q7",
+        "FOB3-0176-Q6",
+        "FOB3-0183-Q8",
+        "FOB3-0191-Q5",
+        "FOB3-0191-Q6",
+        "FOB3-0191-Q7",
+        "FOB3-0191-Q8"
+      ],
+      "correct_to_wrong": [
+        "FOB3-0002-Q3",
+        "FOB3-0011-Q5",
+        "FOB3-0030-Q6",
+        "FOB3-0057-Q4",
+        "FOB3-0059-Q1",
+        "FOB3-0072-Q1",
+        "FOB3-0096-Q3",
+        "FOB3-0098-Q5",
+        "FOB3-0169-Q8",
+        "FOB3-0183-Q6",
+        "FOB3-0191-Q1",
+        "FOB3-0196-Q6"
+      ],
+      "both_wrong": [
+        "FOB3-0004-Q1",
+        "FOB3-0004-Q8",
+        "FOB3-0009-Q6",
+        "FOB3-0021-Q3",
+        "FOB3-0030-Q1",
+        "FOB3-0030-Q3",
+        "FOB3-0034-Q1",
+        "FOB3-0034-Q6",
+        "FOB3-0038-Q5",
+        "FOB3-0041-Q4",
+        "FOB3-0041-Q7",
+        "FOB3-0051-Q1",
+        "FOB3-0051-Q3",
+        "FOB3-0056-Q1",
+        "FOB3-0057-Q6",
+        "FOB3-0059-Q2",
+        "FOB3-0061-Q1",
+        "FOB3-0061-Q3",
+        "FOB3-0061-Q6",
+        "FOB3-0061-Q8",
+        "FOB3-0069-Q1",
+        "FOB3-0069-Q8",
+        "FOB3-0071-Q3",
+        "FOB3-0071-Q6",
+        "FOB3-0071-Q8",
+        "FOB3-0072-Q8",
+        "FOB3-0079-Q3",
+        "FOB3-0079-Q4",
+        "FOB3-0079-Q6",
+        "FOB3-0081-Q3",
+        "FOB3-0081-Q8",
+        "FOB3-0096-Q8",
+        "FOB3-0116-Q6",
+        "FOB3-0116-Q7",
+        "FOB3-0126-Q3",
+        "FOB3-0126-Q4",
+        "FOB3-0127-Q1",
+        "FOB3-0139-Q3",
+        "FOB3-0139-Q4",
+        "FOB3-0143-Q2",
+        "FOB3-0143-Q3",
+        "FOB3-0146-Q3",
+        "FOB3-0161-Q3",
+        "FOB3-0161-Q4",
+        "FOB3-0181-Q2",
+        "FOB3-0181-Q3",
+        "FOB3-0181-Q4",
+        "FOB3-0182-Q4",
+        "FOB3-0183-Q3"
+      ]
+    }
+  },
+  "transitions_by_question_type": {
+    "1": {
+      "n": 20,
+      "both_correct": 7,
+      "wrong_to_correct": 2,
+      "correct_to_wrong": 3,
+      "both_wrong": 8,
+      "net_correct": -1,
+      "same_answer": 13,
+      "answer_agreement": 0.65,
+      "exact_mcnemar_p_two_sided": 1.0,
+      "ids": {
+        "both_correct": [
+          "FOB3-0009-Q1",
+          "FOB3-0019-Q1",
+          "FOB3-0033-Q1",
+          "FOB3-0077-Q1",
+          "FOB3-0079-Q1",
+          "FOB3-0146-Q1",
+          "FOB3-0183-Q1"
+        ],
+        "wrong_to_correct": [
+          "FOB3-0031-Q1",
+          "FOB3-0096-Q1"
+        ],
+        "correct_to_wrong": [
+          "FOB3-0059-Q1",
+          "FOB3-0072-Q1",
+          "FOB3-0191-Q1"
+        ],
+        "both_wrong": [
+          "FOB3-0004-Q1",
+          "FOB3-0030-Q1",
+          "FOB3-0034-Q1",
+          "FOB3-0051-Q1",
+          "FOB3-0056-Q1",
+          "FOB3-0061-Q1",
+          "FOB3-0069-Q1",
+          "FOB3-0127-Q1"
+        ]
+      }
+    },
+    "2": {
+      "n": 5,
+      "both_correct": 2,
+      "wrong_to_correct": 0,
+      "correct_to_wrong": 0,
+      "both_wrong": 3,
+      "net_correct": 0,
+      "same_answer": 5,
+      "answer_agreement": 1.0,
+      "exact_mcnemar_p_two_sided": 1.0,
+      "ids": {
+        "both_correct": [
+          "FOB3-0037-Q2",
+          "FOB3-0079-Q2"
+        ],
+        "wrong_to_correct": [],
+        "correct_to_wrong": [],
+        "both_wrong": [
+          "FOB3-0059-Q2",
+          "FOB3-0143-Q2",
+          "FOB3-0181-Q2"
+        ]
+      }
+    },
+    "3": {
+      "n": 21,
+      "both_correct": 4,
+      "wrong_to_correct": 1,
+      "correct_to_wrong": 2,
+      "both_wrong": 14,
+      "net_correct": -1,
+      "same_answer": 13,
+      "answer_agreement": 0.6190476190476191,
+      "exact_mcnemar_p_two_sided": 1.0,
+      "ids": {
+        "both_correct": [
+          "FOB3-0004-Q3",
+          "FOB3-0038-Q3",
+          "FOB3-0072-Q3",
+          "FOB3-0149-Q3"
+        ],
+        "wrong_to_correct": [
+          "FOB3-0019-Q3"
+        ],
+        "correct_to_wrong": [
+          "FOB3-0002-Q3",
+          "FOB3-0096-Q3"
+        ],
+        "both_wrong": [
+          "FOB3-0021-Q3",
+          "FOB3-0030-Q3",
+          "FOB3-0051-Q3",
+          "FOB3-0061-Q3",
+          "FOB3-0071-Q3",
+          "FOB3-0079-Q3",
+          "FOB3-0081-Q3",
+          "FOB3-0126-Q3",
+          "FOB3-0139-Q3",
+          "FOB3-0143-Q3",
+          "FOB3-0146-Q3",
+          "FOB3-0161-Q3",
+          "FOB3-0181-Q3",
+          "FOB3-0183-Q3"
+        ]
+      }
+    },
+    "4": {
+      "n": 25,
+      "both_correct": 15,
+      "wrong_to_correct": 2,
+      "correct_to_wrong": 1,
+      "both_wrong": 7,
+      "net_correct": 1,
+      "same_answer": 21,
+      "answer_agreement": 0.84,
+      "exact_mcnemar_p_two_sided": 1.0,
+      "ids": {
+        "both_correct": [
+          "FOB3-0011-Q4",
+          "FOB3-0017-Q4",
+          "FOB3-0019-Q4",
+          "FOB3-0033-Q4",
+          "FOB3-0034-Q4",
+          "FOB3-0038-Q4",
+          "FOB3-0046-Q4",
+          "FOB3-0056-Q4",
+          "FOB3-0071-Q4",
+          "FOB3-0072-Q4",
+          "FOB3-0094-Q4",
+          "FOB3-0098-Q4",
+          "FOB3-0173-Q4",
+          "FOB3-0176-Q4",
+          "FOB3-0191-Q4"
+        ],
+        "wrong_to_correct": [
+          "FOB3-0004-Q4",
+          "FOB3-0096-Q4"
+        ],
+        "correct_to_wrong": [
+          "FOB3-0057-Q4"
+        ],
+        "both_wrong": [
+          "FOB3-0041-Q4",
+          "FOB3-0079-Q4",
+          "FOB3-0126-Q4",
+          "FOB3-0139-Q4",
+          "FOB3-0161-Q4",
+          "FOB3-0181-Q4",
+          "FOB3-0182-Q4"
+        ]
+      }
+    },
+    "5": {
+      "n": 17,
+      "both_correct": 10,
+      "wrong_to_correct": 4,
+      "correct_to_wrong": 2,
+      "both_wrong": 1,
+      "net_correct": 2,
+      "same_answer": 10,
+      "answer_agreement": 0.5882352941176471,
+      "exact_mcnemar_p_two_sided": 0.6875,
+      "ids": {
+        "both_correct": [
+          "FOB3-0033-Q5",
+          "FOB3-0037-Q5",
+          "FOB3-0041-Q5",
+          "FOB3-0069-Q5",
+          "FOB3-0072-Q5",
+          "FOB3-0079-Q5",
+          "FOB3-0126-Q5",
+          "FOB3-0139-Q5",
+          "FOB3-0146-Q5",
+          "FOB3-0182-Q5"
+        ],
+        "wrong_to_correct": [
+          "FOB3-0031-Q5",
+          "FOB3-0051-Q5",
+          "FOB3-0059-Q5",
+          "FOB3-0191-Q5"
+        ],
+        "correct_to_wrong": [
+          "FOB3-0011-Q5",
+          "FOB3-0098-Q5"
+        ],
+        "both_wrong": [
+          "FOB3-0038-Q5"
+        ]
+      }
+    },
+    "6": {
+      "n": 32,
+      "both_correct": 16,
+      "wrong_to_correct": 6,
+      "correct_to_wrong": 3,
+      "both_wrong": 7,
+      "net_correct": 3,
+      "same_answer": 23,
+      "answer_agreement": 0.71875,
+      "exact_mcnemar_p_two_sided": 0.5078125,
+      "ids": {
+        "both_correct": [
+          "FOB3-0004-Q6",
+          "FOB3-0011-Q6",
+          "FOB3-0012-Q6",
+          "FOB3-0013-Q6",
+          "FOB3-0021-Q6",
+          "FOB3-0028-Q6",
+          "FOB3-0031-Q6",
+          "FOB3-0033-Q6",
+          "FOB3-0037-Q6",
+          "FOB3-0069-Q6",
+          "FOB3-0081-Q6",
+          "FOB3-0098-Q6",
+          "FOB3-0126-Q6",
+          "FOB3-0146-Q6",
+          "FOB3-0173-Q6",
+          "FOB3-0182-Q6"
+        ],
+        "wrong_to_correct": [
+          "FOB3-0019-Q6",
+          "FOB3-0053-Q6",
+          "FOB3-0127-Q6",
+          "FOB3-0139-Q6",
+          "FOB3-0176-Q6",
+          "FOB3-0191-Q6"
+        ],
+        "correct_to_wrong": [
+          "FOB3-0030-Q6",
+          "FOB3-0183-Q6",
+          "FOB3-0196-Q6"
+        ],
+        "both_wrong": [
+          "FOB3-0009-Q6",
+          "FOB3-0034-Q6",
+          "FOB3-0057-Q6",
+          "FOB3-0061-Q6",
+          "FOB3-0071-Q6",
+          "FOB3-0079-Q6",
+          "FOB3-0116-Q6"
+        ]
+      }
+    },
+    "7": {
+      "n": 12,
+      "both_correct": 8,
+      "wrong_to_correct": 2,
+      "correct_to_wrong": 0,
+      "both_wrong": 2,
+      "net_correct": 2,
+      "same_answer": 10,
+      "answer_agreement": 0.8333333333333334,
+      "exact_mcnemar_p_two_sided": 0.5,
+      "ids": {
+        "both_correct": [
+          "FOB3-0013-Q7",
+          "FOB3-0028-Q7",
+          "FOB3-0030-Q7",
+          "FOB3-0037-Q7",
+          "FOB3-0077-Q7",
+          "FOB3-0098-Q7",
+          "FOB3-0126-Q7",
+          "FOB3-0181-Q7"
+        ],
+        "wrong_to_correct": [
+          "FOB3-0161-Q7",
+          "FOB3-0191-Q7"
+        ],
+        "correct_to_wrong": [],
+        "both_wrong": [
+          "FOB3-0041-Q7",
+          "FOB3-0116-Q7"
+        ]
+      }
+    },
+    "8": {
+      "n": 28,
+      "both_correct": 17,
+      "wrong_to_correct": 3,
+      "correct_to_wrong": 1,
+      "both_wrong": 7,
+      "net_correct": 2,
+      "same_answer": 22,
+      "answer_agreement": 0.7857142857142857,
+      "exact_mcnemar_p_two_sided": 0.625,
+      "ids": {
+        "both_correct": [
+          "FOB3-0009-Q8",
+          "FOB3-0013-Q8",
+          "FOB3-0019-Q8",
+          "FOB3-0028-Q8",
+          "FOB3-0031-Q8",
+          "FOB3-0033-Q8",
+          "FOB3-0034-Q8",
+          "FOB3-0037-Q8",
+          "FOB3-0038-Q8",
+          "FOB3-0041-Q8",
+          "FOB3-0047-Q8",
+          "FOB3-0057-Q8",
+          "FOB3-0059-Q8",
+          "FOB3-0079-Q8",
+          "FOB3-0094-Q8",
+          "FOB3-0139-Q8",
+          "FOB3-0161-Q8"
+        ],
+        "wrong_to_correct": [
+          "FOB3-0077-Q8",
+          "FOB3-0183-Q8",
+          "FOB3-0191-Q8"
+        ],
+        "correct_to_wrong": [
+          "FOB3-0169-Q8"
+        ],
+        "both_wrong": [
+          "FOB3-0004-Q8",
+          "FOB3-0061-Q8",
+          "FOB3-0069-Q8",
+          "FOB3-0071-Q8",
+          "FOB3-0072-Q8",
+          "FOB3-0081-Q8",
+          "FOB3-0096-Q8"
+        ]
+      }
+    }
+  },
+  "comparisons": {
+    "source_selection_run": {
+      "conditions": {
+        "start_view": {
+          "prior": {
+            "n": 160,
+            "correct": 80,
+            "accuracy": 0.5
+          },
+          "current": {
+            "n": 160,
+            "correct": 91,
+            "accuracy": 0.56875
+          },
+          "correct_delta": 11,
+          "accuracy_delta_points": 6.874999999999998,
+          "prediction_agreement": 134,
+          "prediction_agreement_rate": 0.8375
+        },
+        "start_final": {
+          "prior": {
+            "n": 160,
+            "correct": 114,
+            "accuracy": 0.7125
+          },
+          "current": {
+            "n": 160,
+            "correct": 99,
+            "accuracy": 0.61875
+          },
+          "correct_delta": -15,
+          "accuracy_delta_points": -9.375,
+          "prediction_agreement": 133,
+          "prediction_agreement_rate": 0.83125
+        }
+      },
+      "paired": {
+        "n": 160,
+        "both_correct": 79,
+        "wrong_to_correct": 35,
+        "correct_to_wrong": 1,
+        "both_wrong": 45,
+        "net_correct": 34,
+        "same_answer": 114,
+        "answer_agreement": 0.7125,
+        "exact_mcnemar_p_two_sided": 1.076841726899147e-09,
+        "ids": {
+          "both_correct": [
+            "FOB3-0004-Q3",
+            "FOB3-0004-Q6",
+            "FOB3-0009-Q1",
+            "FOB3-0009-Q8",
+            "FOB3-0011-Q4",
+            "FOB3-0011-Q5",
+            "FOB3-0011-Q6",
+            "FOB3-0012-Q6",
+            "FOB3-0013-Q6",
+            "FOB3-0013-Q7",
+            "FOB3-0013-Q8",
+            "FOB3-0017-Q4",
+            "FOB3-0019-Q1",
+            "FOB3-0019-Q8",
+            "FOB3-0021-Q6",
+            "FOB3-0028-Q6",
+            "FOB3-0028-Q8",
+            "FOB3-0030-Q6",
+            "FOB3-0030-Q7",
+            "FOB3-0031-Q5",
+            "FOB3-0031-Q6",
+            "FOB3-0031-Q8",
+            "FOB3-0033-Q1",
+            "FOB3-0033-Q4",
+            "FOB3-0033-Q5",
+            "FOB3-0033-Q6",
+            "FOB3-0033-Q8",
+            "FOB3-0034-Q4",
+            "FOB3-0034-Q6",
+            "FOB3-0034-Q8",
+            "FOB3-0037-Q2",
+            "FOB3-0037-Q5",
+            "FOB3-0037-Q6",
+            "FOB3-0037-Q7",
+            "FOB3-0037-Q8",
+            "FOB3-0038-Q4",
+            "FOB3-0038-Q8",
+            "FOB3-0041-Q5",
+            "FOB3-0041-Q8",
+            "FOB3-0046-Q4",
+            "FOB3-0047-Q8",
+            "FOB3-0056-Q4",
+            "FOB3-0057-Q8",
+            "FOB3-0059-Q1",
+            "FOB3-0059-Q8",
+            "FOB3-0069-Q1",
+            "FOB3-0069-Q5",
+            "FOB3-0069-Q6",
+            "FOB3-0071-Q4",
+            "FOB3-0072-Q3",
+            "FOB3-0072-Q4",
+            "FOB3-0072-Q5",
+            "FOB3-0077-Q1",
+            "FOB3-0079-Q1",
+            "FOB3-0079-Q2",
+            "FOB3-0079-Q5",
+            "FOB3-0079-Q8",
+            "FOB3-0081-Q6",
+            "FOB3-0094-Q4",
+            "FOB3-0094-Q8",
+            "FOB3-0096-Q3",
+            "FOB3-0098-Q6",
+            "FOB3-0098-Q7",
+            "FOB3-0126-Q5",
+            "FOB3-0126-Q6",
+            "FOB3-0126-Q7",
+            "FOB3-0139-Q5",
+            "FOB3-0139-Q8",
+            "FOB3-0146-Q5",
+            "FOB3-0146-Q6",
+            "FOB3-0161-Q8",
+            "FOB3-0173-Q4",
+            "FOB3-0173-Q6",
+            "FOB3-0176-Q4",
+            "FOB3-0181-Q7",
+            "FOB3-0182-Q5",
+            "FOB3-0182-Q6",
+            "FOB3-0183-Q6",
+            "FOB3-0191-Q4"
+          ],
+          "wrong_to_correct": [
+            "FOB3-0004-Q4",
+            "FOB3-0009-Q6",
+            "FOB3-0019-Q3",
+            "FOB3-0019-Q4",
+            "FOB3-0019-Q6",
+            "FOB3-0028-Q7",
+            "FOB3-0030-Q1",
+            "FOB3-0031-Q1",
+            "FOB3-0038-Q3",
+            "FOB3-0053-Q6",
+            "FOB3-0059-Q2",
+            "FOB3-0059-Q5",
+            "FOB3-0071-Q3",
+            "FOB3-0071-Q6",
+            "FOB3-0071-Q8",
+            "FOB3-0072-Q1",
+            "FOB3-0077-Q7",
+            "FOB3-0096-Q1",
+            "FOB3-0096-Q4",
+            "FOB3-0098-Q4",
+            "FOB3-0126-Q3",
+            "FOB3-0127-Q6",
+            "FOB3-0139-Q6",
+            "FOB3-0143-Q3",
+            "FOB3-0161-Q7",
+            "FOB3-0176-Q6",
+            "FOB3-0181-Q2",
+            "FOB3-0181-Q3",
+            "FOB3-0183-Q1",
+            "FOB3-0183-Q8",
+            "FOB3-0191-Q1",
+            "FOB3-0191-Q5",
+            "FOB3-0191-Q6",
+            "FOB3-0191-Q7",
+            "FOB3-0191-Q8"
+          ],
+          "correct_to_wrong": [
+            "FOB3-0149-Q3"
+          ],
+          "both_wrong": [
+            "FOB3-0002-Q3",
+            "FOB3-0004-Q1",
+            "FOB3-0004-Q8",
+            "FOB3-0021-Q3",
+            "FOB3-0030-Q3",
+            "FOB3-0034-Q1",
+            "FOB3-0038-Q5",
+            "FOB3-0041-Q4",
+            "FOB3-0041-Q7",
+            "FOB3-0051-Q1",
+            "FOB3-0051-Q3",
+            "FOB3-0051-Q5",
+            "FOB3-0056-Q1",
+            "FOB3-0057-Q4",
+            "FOB3-0057-Q6",
+            "FOB3-0061-Q1",
+            "FOB3-0061-Q3",
+            "FOB3-0061-Q6",
+            "FOB3-0061-Q8",
+            "FOB3-0069-Q8",
+            "FOB3-0072-Q8",
+            "FOB3-0077-Q8",
+            "FOB3-0079-Q3",
+            "FOB3-0079-Q4",
+            "FOB3-0079-Q6",
+            "FOB3-0081-Q3",
+            "FOB3-0081-Q8",
+            "FOB3-0096-Q8",
+            "FOB3-0098-Q5",
+            "FOB3-0116-Q6",
+            "FOB3-0116-Q7",
+            "FOB3-0126-Q4",
+            "FOB3-0127-Q1",
+            "FOB3-0139-Q3",
+            "FOB3-0139-Q4",
+            "FOB3-0143-Q2",
+            "FOB3-0146-Q1",
+            "FOB3-0146-Q3",
+            "FOB3-0161-Q3",
+            "FOB3-0161-Q4",
+            "FOB3-0169-Q8",
+            "FOB3-0181-Q4",
+            "FOB3-0182-Q4",
+            "FOB3-0183-Q3",
+            "FOB3-0196-Q6"
+          ]
+        }
+      }
+    },
+    "first_validation_run": {
+      "conditions": {
+        "start_view": {
+          "prior": {
+            "n": 160,
+            "correct": 86,
+            "accuracy": 0.5375
+          },
+          "current": {
+            "n": 160,
+            "correct": 91,
+            "accuracy": 0.56875
+          },
+          "correct_delta": 5,
+          "accuracy_delta_points": 3.125,
+          "prediction_agreement": 140,
+          "prediction_agreement_rate": 0.875
+        },
+        "start_final": {
+          "prior": {
+            "n": 160,
+            "correct": 105,
+            "accuracy": 0.65625
+          },
+          "current": {
+            "n": 160,
+            "correct": 99,
+            "accuracy": 0.61875
+          },
+          "correct_delta": -6,
+          "accuracy_delta_points": -3.749999999999998,
+          "prediction_agreement": 134,
+          "prediction_agreement_rate": 0.8375
+        }
+      },
+      "paired": {
+        "n": 160,
+        "both_correct": 85,
+        "wrong_to_correct": 20,
+        "correct_to_wrong": 1,
+        "both_wrong": 54,
+        "net_correct": 19,
+        "same_answer": 130,
+        "answer_agreement": 0.8125,
+        "exact_mcnemar_p_two_sided": 2.09808349609375e-05,
+        "ids": {
+          "both_correct": [
+            "FOB3-0004-Q3",
+            "FOB3-0004-Q6",
+            "FOB3-0009-Q1",
+            "FOB3-0009-Q8",
+            "FOB3-0011-Q4",
+            "FOB3-0011-Q5",
+            "FOB3-0011-Q6",
+            "FOB3-0012-Q6",
+            "FOB3-0013-Q6",
+            "FOB3-0013-Q7",
+            "FOB3-0013-Q8",
+            "FOB3-0017-Q4",
+            "FOB3-0019-Q1",
+            "FOB3-0019-Q4",
+            "FOB3-0019-Q8",
+            "FOB3-0021-Q6",
+            "FOB3-0028-Q6",
+            "FOB3-0028-Q7",
+            "FOB3-0028-Q8",
+            "FOB3-0030-Q6",
+            "FOB3-0030-Q7",
+            "FOB3-0031-Q1",
+            "FOB3-0031-Q6",
+            "FOB3-0031-Q8",
+            "FOB3-0033-Q1",
+            "FOB3-0033-Q4",
+            "FOB3-0033-Q5",
+            "FOB3-0033-Q6",
+            "FOB3-0033-Q8",
+            "FOB3-0034-Q4",
+            "FOB3-0034-Q8",
+            "FOB3-0037-Q2",
+            "FOB3-0037-Q5",
+            "FOB3-0037-Q6",
+            "FOB3-0037-Q7",
+            "FOB3-0037-Q8",
+            "FOB3-0038-Q4",
+            "FOB3-0038-Q8",
+            "FOB3-0041-Q5",
+            "FOB3-0041-Q7",
+            "FOB3-0041-Q8",
+            "FOB3-0046-Q4",
+            "FOB3-0047-Q8",
+            "FOB3-0056-Q4",
+            "FOB3-0057-Q8",
+            "FOB3-0059-Q1",
+            "FOB3-0059-Q8",
+            "FOB3-0069-Q5",
+            "FOB3-0069-Q6",
+            "FOB3-0071-Q4",
+            "FOB3-0072-Q1",
+            "FOB3-0072-Q3",
+            "FOB3-0072-Q4",
+            "FOB3-0072-Q5",
+            "FOB3-0077-Q7",
+            "FOB3-0079-Q1",
+            "FOB3-0079-Q2",
+            "FOB3-0079-Q5",
+            "FOB3-0079-Q8",
+            "FOB3-0081-Q6",
+            "FOB3-0094-Q4",
+            "FOB3-0094-Q8",
+            "FOB3-0096-Q1",
+            "FOB3-0096-Q3",
+            "FOB3-0098-Q4",
+            "FOB3-0098-Q6",
+            "FOB3-0098-Q7",
+            "FOB3-0126-Q5",
+            "FOB3-0126-Q6",
+            "FOB3-0126-Q7",
+            "FOB3-0139-Q5",
+            "FOB3-0146-Q5",
+            "FOB3-0146-Q6",
+            "FOB3-0149-Q3",
+            "FOB3-0161-Q8",
+            "FOB3-0173-Q4",
+            "FOB3-0173-Q6",
+            "FOB3-0176-Q4",
+            "FOB3-0176-Q6",
+            "FOB3-0181-Q7",
+            "FOB3-0182-Q5",
+            "FOB3-0182-Q6",
+            "FOB3-0183-Q6",
+            "FOB3-0191-Q4",
+            "FOB3-0191-Q6"
+          ],
+          "wrong_to_correct": [
+            "FOB3-0004-Q4",
+            "FOB3-0009-Q6",
+            "FOB3-0031-Q5",
+            "FOB3-0053-Q6",
+            "FOB3-0069-Q1",
+            "FOB3-0077-Q1",
+            "FOB3-0077-Q8",
+            "FOB3-0096-Q4",
+            "FOB3-0127-Q6",
+            "FOB3-0139-Q6",
+            "FOB3-0139-Q8",
+            "FOB3-0161-Q4",
+            "FOB3-0161-Q7",
+            "FOB3-0181-Q2",
+            "FOB3-0181-Q3",
+            "FOB3-0183-Q8",
+            "FOB3-0191-Q1",
+            "FOB3-0191-Q5",
+            "FOB3-0191-Q7",
+            "FOB3-0191-Q8"
+          ],
+          "correct_to_wrong": [
+            "FOB3-0002-Q3"
+          ],
+          "both_wrong": [
+            "FOB3-0004-Q1",
+            "FOB3-0004-Q8",
+            "FOB3-0019-Q3",
+            "FOB3-0019-Q6",
+            "FOB3-0021-Q3",
+            "FOB3-0030-Q1",
+            "FOB3-0030-Q3",
+            "FOB3-0034-Q1",
+            "FOB3-0034-Q6",
+            "FOB3-0038-Q3",
+            "FOB3-0038-Q5",
+            "FOB3-0041-Q4",
+            "FOB3-0051-Q1",
+            "FOB3-0051-Q3",
+            "FOB3-0051-Q5",
+            "FOB3-0056-Q1",
+            "FOB3-0057-Q4",
+            "FOB3-0057-Q6",
+            "FOB3-0059-Q2",
+            "FOB3-0059-Q5",
+            "FOB3-0061-Q1",
+            "FOB3-0061-Q3",
+            "FOB3-0061-Q6",
+            "FOB3-0061-Q8",
+            "FOB3-0069-Q8",
+            "FOB3-0071-Q3",
+            "FOB3-0071-Q6",
+            "FOB3-0071-Q8",
+            "FOB3-0072-Q8",
+            "FOB3-0079-Q3",
+            "FOB3-0079-Q4",
+            "FOB3-0079-Q6",
+            "FOB3-0081-Q3",
+            "FOB3-0081-Q8",
+            "FOB3-0096-Q8",
+            "FOB3-0098-Q5",
+            "FOB3-0116-Q6",
+            "FOB3-0116-Q7",
+            "FOB3-0126-Q3",
+            "FOB3-0126-Q4",
+            "FOB3-0127-Q1",
+            "FOB3-0139-Q3",
+            "FOB3-0139-Q4",
+            "FOB3-0143-Q2",
+            "FOB3-0143-Q3",
+            "FOB3-0146-Q1",
+            "FOB3-0146-Q3",
+            "FOB3-0161-Q3",
+            "FOB3-0169-Q8",
+            "FOB3-0181-Q4",
+            "FOB3-0182-Q4",
+            "FOB3-0183-Q1",
+            "FOB3-0183-Q3",
+            "FOB3-0196-Q6"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "row_index": 76,
+  "question_id": "FOB4-0112-Q2",
+  "trajectory_id": "FOB4-0112",
+  "scan_id": "s8pcmisQ38h",
+  "route_variant": "new_straight",
+  "question_type": 2,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk near the wooden table, facing the direction I go, which direction would have the closest obstacle, besides the wooden table?",
+  "answer_choices": {
+    "D": "right",
+    "A": "behind",
+    "B": "front",
+    "C": "left"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "D": "C",
+    "A": "D",
+    "B": "A",
+    "C": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0112\\start_view.png",
+      "sha256": "78143a94730a040dd4eb00ddb41b6faff03520f5d4daead213310b185c5842be"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0112\\step_01_rgb.png",
+      "sha256": "d57f77fbe46f2e33f6a24dae01fb7d7874b298a3ea747fd9356b2c19a46b1fb3"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "category": "nearest_obstacle_direction",
+  "category_label": "Nearest-obstacle direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0112\\step_01_depth.png",
+      "sha256": "d974c0cf6e81bc8d7cacb1074f5c391be8226907c73b0f1c42600c8698eb8aa3",
+      "color_scale": {
+        "near_m": 1.799,
+        "far_m": 10.1515
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0112\\step_01_surface_normals.png",
+      "sha256": "d3b0403b1b295de8075f4de9ec17a27296d023271449a8e29e443f22df54f53c"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\geometry\\FOB4-0112\\step_01_panorama.png",
+      "sha256": "afad41db4946a694b6a4f3d5695ec340d79ae0c50481ea6c55fc760baaa8e9e9"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0112\\topdown_with_path.png",
+      "sha256": "093193adf0da50128897887977b4b4901cc63b1f0aadf0a029fa079754dccf9e"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0112\\trajectory.txt",
+      "sha256": "8466f30f416cb91f57297f6bb1b192ffb4905c6b572772ccac6eac5f3fbbba0e"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch4_modalities_20261004\\trajectory\\FOB4-0112\\trajectory.mp4",
+      "sha256": "927566d1f37dbf0605618eeb985abe5fa49db866c9c3cc2aa81cc559d25df6c0"
+    }
+  },
+  "condition": "start_final_text",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch4_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "B",
+  "correct": false,
+  "input_signature": "cf62ff0bb70a9c4eaab316e3903a37d732bc9543dfc9946ffbfe1b43fe4c0bbc",
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2483,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 355
+      }
+    ],
+    "thoughts_token_count": 4318,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6802,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T20:35:43.958-04:00",
+  "request_duration_seconds": 15.206341200013412,
+  "completed_at": "2026-10-04T20:35:59.164-04:00",
+  "request_part_count": 6,
+  "request_mime_types": [
+    "image/png",
+    "image/png"
+  ]
+}

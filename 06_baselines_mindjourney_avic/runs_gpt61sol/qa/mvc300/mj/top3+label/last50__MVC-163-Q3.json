@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-163-Q3", "method": "mj", "variant": "top3+label", "prediction": "tv, white pillow, black pillow, bed", "gold": "tv, white pillow, black pillow, bed", "correct": true, "n_imagined": 1, "category": "ordering", "stored_result": "correct"}

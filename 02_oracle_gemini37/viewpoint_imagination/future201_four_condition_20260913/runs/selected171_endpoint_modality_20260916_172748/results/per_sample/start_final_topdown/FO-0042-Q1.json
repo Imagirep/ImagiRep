@@ -1,0 +1,124 @@
+{
+  "row_index": 118,
+  "question_id": "FO-0042-Q1",
+  "trajectory_id": "FO-0042",
+  "scan_id": "cV4RVeZvu5T",
+  "question_type": 1,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk forward till I'm near the black chair, then face the way I move, which direction would have the most open space?",
+  "answer_choices": {
+    "A": "left",
+    "B": "front",
+    "C": "right",
+    "D": "behind"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "A": "B",
+    "B": "A",
+    "C": "C",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0042\\image_1.png"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0042\\modalities\\step_01_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "d864cc06d96dbbf4480b7cb794299737c1c2cd764432c218ade46602d4143217",
+    "36a4abb379de6f9df60c7b7016d0daabe99daadd85a1e41855a67383d5846b48"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0042\\modalities\\topdown_with_path.png",
+      "sha256": "49b89b341837d4f2473811135b5e4844e4965107412fe7ae6f7c57e7bb3b989d"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0042\\modalities\\trajectory.txt",
+      "sha256": "ce1b2482e050cd4f629f661d4a0eb89091c3174e0c415e7853ce65bcd410f127"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0042\\modalities\\trajectory.mp4",
+      "sha256": "88afb9cd0cb552ace627da9abebbaee9ce2d43984d6e67538aa0eb18abcf7833",
+      "frame_count": 45,
+      "fps": 12.0,
+      "duration_seconds": 3.75,
+      "bytes": 272071,
+      "final_rgb_correlation": 0.9996901795280717
+    }
+  },
+  "condition": "start_final_topdown",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+  ],
+  "modality_prompt": "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "C",
+  "correct": false,
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "topdown"
+  ],
+  "additional_modality": {
+    "kind": "topdown",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0042\\modalities\\topdown_with_path.png",
+    "sha256": "49b89b341837d4f2473811135b5e4844e4965107412fe7ae6f7c57e7bb3b989d"
+  },
+  "input_signature": "0ce48b7484aa059fd34f203a7d987972179c2668f08991e9b1795848f2c3bfde",
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3406,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3217
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 189
+      }
+    ],
+    "thoughts_token_count": 3422,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6829,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "completed_at": "2026-09-16T17:41:22-04:00"
+}

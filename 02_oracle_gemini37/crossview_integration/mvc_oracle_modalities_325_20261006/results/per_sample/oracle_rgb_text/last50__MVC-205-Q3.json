@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-205-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-205-Q3",
+  "resource_id": "MVC-205",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "stove, yellow pot, fireplace, pillows",
+    "B": "fireplace, pillows, yellow pot, stove",
+    "C": "pillows, yellow pot, fireplace, stove",
+    "D": "yellow pot, fireplace, stove, pillows"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "012f43dcb725488a09b1457049b88020687cbb3d3e406f1d76d72a96ed96b52b",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-205\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3584,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 392
+      }
+    ],
+    "thoughts_token_count": 561,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4146,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 4.593055599994841,
+  "completed_at": "2026-10-06T17:32:41-04:00"
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-006-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-006-Q1",
+  "resource_id": "MVC-006",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is closest to tall potted plant in Image 2?",
+  "answer_choices": {
+    "A": "small white table",
+    "B": "wooden cabinet",
+    "C": "white flower",
+    "D": "patterned yellow armchair"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "c37df8a1c3b8a2a43e1202dba4b3b7ac0bcc403dea41b0432303d6cac209d017",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-006\\order_21\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3556,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 364
+      }
+    ],
+    "thoughts_token_count": 1523,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5080,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.325214600001345,
+  "completed_at": "2026-10-06T17:30:22-04:00"
+}

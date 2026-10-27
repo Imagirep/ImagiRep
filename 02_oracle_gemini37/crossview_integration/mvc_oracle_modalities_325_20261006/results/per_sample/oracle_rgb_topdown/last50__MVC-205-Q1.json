@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-205-Q1",
+  "cohort": "last50",
+  "question_id": "MVC-205-Q1",
+  "resource_id": "MVC-205",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to pillows in Image 1?",
+  "answer_choices": {
+    "A": "yellow pot",
+    "B": "sink",
+    "C": "fireplace",
+    "D": "stove"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "e4df09b470336bf4bdda6d366cc938a12e4826ba3913e6466d72a83548885eb0",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-205\\order_21\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4593,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 312
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      }
+    ],
+    "thoughts_token_count": 373,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4967,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 4.101127200003248,
+  "completed_at": "2026-10-06T17:29:55-04:00"
+}

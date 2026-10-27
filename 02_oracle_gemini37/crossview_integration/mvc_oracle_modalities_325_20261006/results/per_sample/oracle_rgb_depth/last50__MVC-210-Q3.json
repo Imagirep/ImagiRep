@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-210-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-210-Q3",
+  "resource_id": "MVC-210",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "tv, small gray table, long sofa, tall potted plant",
+    "B": "small gray table, long sofa, tv, tall potted plant",
+    "C": "tall potted plant, tv, long sofa, small gray table",
+    "D": "tv, long sofa, tall potted plant, small gray table"
+  },
+  "gold_answer": "C",
+  "prediction": "B",
+  "correct": false,
+  "signature": "9d308bb3a40ae54d8a6182db61d71566f89210fb02a034c2906247d9f27e4465",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.243 m (near/red) to 4.617 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-210\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4650,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 394
+      }
+    ],
+    "thoughts_token_count": 1200,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5851,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 16.726809700005106,
+  "completed_at": "2026-10-06T17:39:53-04:00"
+}

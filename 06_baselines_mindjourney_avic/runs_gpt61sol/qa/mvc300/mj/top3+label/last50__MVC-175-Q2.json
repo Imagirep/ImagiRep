@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-175-Q2", "method": "mj", "variant": "top3+label", "prediction": "wooden chair", "gold": "alarm clock", "correct": false, "n_imagined": 3, "category": "cross_view_farthest", "stored_result": "wrong"}

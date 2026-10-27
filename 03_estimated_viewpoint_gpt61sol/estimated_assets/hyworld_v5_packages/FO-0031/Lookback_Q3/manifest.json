@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FO-0031-Q3",
+  "motion_text": "I walk to the windows farthest from me, then turn to face my starting point.",
+  "view_variant": "lookback",
+  "frames": 138,
+  "fps": 12,
+  "total_distance_m": 4.711059687555181,
+  "depth_display_range_scene_units": [
+    1.2115584087371827,
+    6.412775192260741
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.2295602994456563,
+    "far_m": 6.508059148293382
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.5416519454768896 m over generated floor distance",
+  "m_per_unit": 1.6840067505836487,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 22.197712898254395
+}

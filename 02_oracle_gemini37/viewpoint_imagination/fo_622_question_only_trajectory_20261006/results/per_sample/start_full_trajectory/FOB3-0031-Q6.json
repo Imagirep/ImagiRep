@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB3-0031-Q6",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk near the long sofa on the right and face the direction I go, where is the piano relative to me?",
+  "answer_choices": {
+    "D": "behind",
+    "A": "left",
+    "B": "right",
+    "C": "front"
+  },
+  "gold_answer": "D",
+  "show_lookback": false,
+  "prediction": "D",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0031/start_view.png",
+      "sha256": "5c5bb3b34c2ae82006f8f59e9e4a9a93a54cf9e72e76b34976a759a8383a09c7"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0031/step_01_rgb.png",
+      "sha256": "fc7ccc5c70525821677c421cf8f176f5a8a50581ea1ca4a773063715b676846b"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0031/step_02_rgb.png",
+      "sha256": "a222c0ff577e620c5ce6eb2e8ccd5eb50f244cfdf9b7ba83a48406f374bdedb5"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3333,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 141
+      }
+    ],
+    "thoughts_token_count": 838,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4172,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 5.443243100002292,
+  "completed_at": "2026-10-06T14:42:34-04:00"
+}

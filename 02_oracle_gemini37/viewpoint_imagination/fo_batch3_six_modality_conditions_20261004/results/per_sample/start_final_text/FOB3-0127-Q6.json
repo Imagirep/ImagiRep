@@ -1,0 +1,153 @@
+{
+  "row_index": 114,
+  "question_id": "FOB3-0127-Q6",
+  "trajectory_id": "FOB3-0127",
+  "scan_id": "ZMojNkEp431",
+  "question_type": 6,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk to the white shelf and walk past it by its left side, then turn to face my starting point, where is the wooden table relative to me?",
+  "answer_choices": {
+    "D": "front",
+    "A": "right",
+    "B": "behind",
+    "C": "left"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "D": "A",
+    "A": "C",
+    "B": "D",
+    "C": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0127\\start_view.png",
+      "sha256": "f42596f4bf4ad6dfa7d2c2f68b44108dc0d553cc5df7a9d53dcad52798c47ce2"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0127\\step_01_rgb.png",
+      "sha256": "85161e74ba11c59df6eb3d4bb5c804052cdd83d8f445f7fe027682d6a39c5bc3"
+    },
+    {
+      "label": "Step 2",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0127\\step_02_rgb.png",
+      "sha256": "11332e429e13b1ca2d5eff86e10ebe9934d003d929971df4dd27bb3cf9a9733a"
+    },
+    {
+      "label": "Step 3 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0127\\step_03_rgb.png",
+      "sha256": "40dda47356bd39c9cef47d9e2c9ba58a3d3fd3779010c6ead64af84ae5db0ce1"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_bent100_20260920\\items\\FOB3-0127\\oracle_lookback.png",
+      "sha256": "c28cf4684bb8d2c6577dbfee2559767998283444324819668cbcaf094c160452"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "category": "object_relative_direction",
+  "category_label": "Object-relative direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0127\\oracle_lookback_depth.png",
+      "sha256": "a73ac45c424875bb43de489b740616ed0e5638005d272e9db5dd169dfb27bd72",
+      "color_scale": {
+        "near_m": 1.34925,
+        "far_m": 10.08725
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0127\\oracle_lookback_surface_normals.png",
+      "sha256": "83ebea8f65982fc33b1ba3ecff3c4c4f873c394050330d9ef2d9918fd3374cad"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0127\\oracle_lookback_panorama.png",
+      "sha256": "2375b900119bdefae35767b4b77bdfd1e66a82902c3405a2c577009a59528767"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0127\\topdown_lookback_with_path.png",
+      "sha256": "7d3603a4625845f7ba9263add706c3a22f6cd720f3820f22b53b16c2b4258b5f"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0127\\trajectory_lookback.txt",
+      "sha256": "369f15ac49da87e6300873645763783570beb8c0bbd1aeb4abe39f0c9cb5c5de"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0127\\trajectory_lookback.mp4",
+      "sha256": "1a023258c65c2551f7ab825a951225881ed6c4f08683487a0d9b616e97e140e8"
+    }
+  },
+  "condition": "start_final_text",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch3_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "A",
+  "correct": false,
+  "input_signature": "f8c7814fb071751a8709e980ad65e862718d2946fa85c6bc1a4409d9b06fb18a",
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2666,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 538
+      }
+    ],
+    "thoughts_token_count": 1692,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4359,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T17:32:07.045-04:00",
+  "request_duration_seconds": 7.425892300001578,
+  "completed_at": "2026-10-04T17:32:14.470-04:00",
+  "request_part_count": 6,
+  "request_mime_types": [
+    "image/png",
+    "image/png"
+  ]
+}

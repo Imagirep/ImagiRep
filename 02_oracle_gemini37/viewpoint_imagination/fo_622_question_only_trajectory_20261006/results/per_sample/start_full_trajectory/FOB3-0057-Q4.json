@@ -1,0 +1,64 @@
+{
+  "question_id": "FOB3-0057-Q4",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk near the small white table, facing the direction I go, which object(s) would be closest to me?",
+  "answer_choices": {
+    "D": "bed",
+    "A": "picture frames",
+    "B": "tv",
+    "C": "purple cabinet"
+  },
+  "gold_answer": "D",
+  "show_lookback": false,
+  "prediction": "A",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0057/start_view.png",
+      "sha256": "838049c5d1dca8a3c771749bed08b64f531d8103d1c78a7dc2a35a9e498a73e8"
+    },
+    {
+      "path": "outputs/future_trajectory_batch3_straight100_20260920/items/FOB3-0057/step_01_rgb.png",
+      "sha256": "65f5d10567be3c5fb29b76b2df5e359f28029a2bb7b957b56462ca6e21b9bad7"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2267,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 139
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      }
+    ],
+    "thoughts_token_count": 1673,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3940,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_duration_seconds": 10.532008900001529,
+  "completed_at": "2026-10-06T14:45:47-04:00"
+}

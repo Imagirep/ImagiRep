@@ -1,0 +1,241 @@
+{
+  "question_id": "FOB4-0171-Q1",
+  "motion_text": "I walk forward till I'm near the pool, then turn right.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "relation": "near",
+      "target": "the indoor pool on the left"
+    },
+    {
+      "op": "turn",
+      "direction": "right"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB4-0171-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.5651167801705669,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -1.826406077128606,
+        "y": -1.1581250956515479,
+        "yaw": -0.5651167801705669,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.2635279883986943,
+        -1.4353043394355751
+      ]
+    ],
+    "x": -2.2635279883986943,
+    "y": -1.4353043394355751,
+    "yaw": -0.5651167801705669,
+    "pitch": 0.0,
+    "travel_yaw": -0.5651167801705669
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.826406077128606,
+      -1.1581250956515479
+    ]
+  ],
+  "final": {
+    "x": -1.826406077128606,
+    "y": -1.1581250956515479,
+    "yaw_deg": 47.62119356420419,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "relation": "near",
+        "target": "the indoor pool on the left"
+      },
+      "x": -2.2635279883986943,
+      "y": -1.4353043394355751,
+      "yaw": -0.5651167801705669,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "turn",
+        "direction": "right"
+      },
+      "x": -2.2635279883986943,
+      "y": -1.4353043394355751,
+      "yaw": 0.8311466214248968,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.5651167801705669,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -1.826406077128606,
+      "y": -1.1581250956515479,
+      "yaw": -0.5651167801705669,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -1.826406077128606,
+      "y": -1.1581250956515479,
+      "yaw": 0.8311466214248968,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the indoor pool on the left",
+      "method": "initial_photo",
+      "box": [
+        599,
+        0,
+        997,
+        549
+      ],
+      "point_m": [
+        -3.459278040452376,
+        -1.5819064876408278,
+        -1.3620978418252814
+      ]
+    },
+    {
+      "overlap": "the indoor pool on the left",
+      "n_points": 166,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 3.7,
+          "stop_m": 1.2047034393761717,
+          "visible_frac": 0.6506024096385542,
+          "center_deg": -12.847371481195456,
+          "width_deg": 57.1813395957322,
+          "distance_m": 2.1139953450228397
+        },
+        {
+          "sector": 3,
+          "path_m": 4.1000000000000005,
+          "stop_m": 0.997180774353981,
+          "visible_frac": 0.5240963855421686,
+          "center_deg": -12.4663706632743,
+          "width_deg": 57.492228175010254,
+          "distance_m": 2.148510889956362
+        },
+        {
+          "sector": 5,
+          "path_m": 5.2,
+          "stop_m": 0.7527169721568527,
+          "visible_frac": 0.45180722891566266,
+          "center_deg": -5.609807906720496,
+          "width_deg": 64.96372600867778,
+          "distance_m": 1.5030464877720837
+        },
+        {
+          "sector": 6,
+          "path_m": 5.4,
+          "stop_m": 0.7538453550639596,
+          "visible_frac": 0.39156626506024095,
+          "center_deg": -1.428684151846097,
+          "width_deg": 60.037132241841846,
+          "distance_m": 1.4019780605699022
+        },
+        {
+          "sector": 7,
+          "path_m": 5.6000000000000005,
+          "stop_m": 0.7513797165046928,
+          "visible_frac": 0.13855421686746988,
+          "center_deg": 18.913492421985975,
+          "width_deg": 25.436792986726932,
+          "distance_m": 1.2272837090816962
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 2.113846182823181,
+  "seconds": 27.600805282592773,
+  "planning_m_per_unit": 2.619762416424054,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.8068846890736593
+}

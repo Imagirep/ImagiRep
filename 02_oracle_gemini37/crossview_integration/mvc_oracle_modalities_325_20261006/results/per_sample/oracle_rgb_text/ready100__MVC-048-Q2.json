@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-048-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-048-Q2",
+  "resource_id": "MVC-048",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from alarm clock in Image 2?",
+  "answer_choices": {
+    "A": "tv",
+    "B": "lamp",
+    "C": "yellow basket",
+    "D": "wooden cabinet"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "a1d4e66fd087552ac04202c7aaeafedde6eadc8d60221904d857b810b88640ed",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-048\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3551,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 359
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 3787,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7339,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 16.326111400005175,
+  "completed_at": "2026-10-06T17:30:52-04:00"
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-076-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC-076-Q2",
+  "resource_id": "MVC-076",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 1 is farthest from pink statue in Image 2?",
+  "answer_choices": {
+    "A": "deer-shaped statue",
+    "B": "round table",
+    "C": "fireplace",
+    "D": "wooden small table"
+  },
+  "gold_answer": "B",
+  "prediction": "A",
+  "correct": false,
+  "signature": "d6bf7557f25dba5b085a16caf475d3047e523ed6ff7e462aed26eceed5e34d5e",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-076\\order_12\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3555,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 363
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1028,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4584,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 6.190295799999149,
+  "completed_at": "2026-10-06T17:30:59-04:00"
+}

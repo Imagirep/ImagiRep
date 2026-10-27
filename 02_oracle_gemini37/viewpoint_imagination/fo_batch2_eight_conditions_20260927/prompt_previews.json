@@ -1,0 +1,207 @@
+[
+  {
+    "question_id": "FOB2-0178-Q8",
+    "condition": "start_view",
+    "image_prompts": [
+      "Start:"
+    ],
+    "evidence": [
+      {
+        "label": "Start",
+        "kind": "start",
+        "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0178\\start_view.png",
+        "sha256": "b2be9b8f98f631d25fd8babafed0fb86ce932175fcecc2568c457afee19c760b"
+      }
+    ],
+    "input_signature": "5ea5f86ef5b942ef18defeecfcae8296e8b336414efeba749c397067e543a423"
+  },
+  {
+    "question_id": "FOB2-0178-Q8",
+    "condition": "start_final",
+    "image_prompts": [
+      "Start:",
+      "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+    ],
+    "evidence": [
+      {
+        "label": "Start",
+        "kind": "start",
+        "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0178\\start_view.png",
+        "sha256": "b2be9b8f98f631d25fd8babafed0fb86ce932175fcecc2568c457afee19c760b"
+      },
+      {
+        "label": "Step 3 (Endpoint)",
+        "kind": "endpoint",
+        "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0178\\step_03_rgb.png",
+        "sha256": "5a663db04cdbff5e8bffda8df0d887edc3cb02cc91ef1c3f64cf296e4ac81cdf"
+      }
+    ],
+    "input_signature": "cd179281c9222cfc3c476491db0165116fccb7a511d334e80773131e010dc49d"
+  },
+  {
+    "question_id": "FOB2-0178-Q8",
+    "condition": "start_final_topdown",
+    "image_prompts": [
+      "Start:",
+      "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+      "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+    ],
+    "evidence": [
+      {
+        "label": "Start",
+        "kind": "start",
+        "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0178\\start_view.png",
+        "sha256": "b2be9b8f98f631d25fd8babafed0fb86ce932175fcecc2568c457afee19c760b"
+      },
+      {
+        "label": "Step 3 (Endpoint)",
+        "kind": "endpoint",
+        "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0178\\step_03_rgb.png",
+        "sha256": "5a663db04cdbff5e8bffda8df0d887edc3cb02cc91ef1c3f64cf296e4ac81cdf"
+      },
+      {
+        "kind": "topdown",
+        "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0178\\topdown_with_path.png",
+        "sha256": "8b388e336134b72a2721d990f233be81472b860ca41993db3f12c6dc27449506"
+      }
+    ],
+    "input_signature": "345d06b7367ede589ff2412bf0a1bbe321b68cb0d8fadf3e523ef0add611cee4"
+  },
+  {
+    "question_id": "FOB2-0178-Q8",
+    "condition": "start_final_text",
+    "image_prompts": [
+      "Start:",
+      "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+    ],
+    "evidence": [
+      {
+        "label": "Start",
+        "kind": "start",
+        "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0178\\start_view.png",
+        "sha256": "b2be9b8f98f631d25fd8babafed0fb86ce932175fcecc2568c457afee19c760b"
+      },
+      {
+        "label": "Step 3 (Endpoint)",
+        "kind": "endpoint",
+        "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0178\\step_03_rgb.png",
+        "sha256": "5a663db04cdbff5e8bffda8df0d887edc3cb02cc91ef1c3f64cf296e4ac81cdf"
+      }
+    ],
+    "input_signature": "0c2c26ad7690f12fbca488b66802cf7932f30816d685f372e66ede40f6dada67"
+  },
+  {
+    "question_id": "FOB2-0178-Q8",
+    "condition": "start_final_video",
+    "image_prompts": [
+      "Start:",
+      "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+    ],
+    "evidence": [
+      {
+        "label": "Start",
+        "kind": "start",
+        "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0178\\start_view.png",
+        "sha256": "b2be9b8f98f631d25fd8babafed0fb86ce932175fcecc2568c457afee19c760b"
+      },
+      {
+        "label": "Step 3 (Endpoint)",
+        "kind": "endpoint",
+        "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0178\\step_03_rgb.png",
+        "sha256": "5a663db04cdbff5e8bffda8df0d887edc3cb02cc91ef1c3f64cf296e4ac81cdf"
+      }
+    ],
+    "input_signature": "ff95d28bf13007534eab8567f41d7f245a656717365348f7f71243dfe6c9d3f7"
+  },
+  {
+    "question_id": "FOB2-0178-Q8",
+    "condition": "start_final_depth",
+    "image_prompts": [
+      "Start:",
+      "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+      "ENDPOINT DEPTH MAP (same camera pose and field of view as FINAL VIEW):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.542 m (near/red) to 4.305 m (far/purple), with values outside this range clipped. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+    ],
+    "evidence": [
+      {
+        "label": "Start",
+        "kind": "start",
+        "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0178\\start_view.png",
+        "sha256": "b2be9b8f98f631d25fd8babafed0fb86ce932175fcecc2568c457afee19c760b"
+      },
+      {
+        "label": "Step 3 (Endpoint)",
+        "kind": "endpoint",
+        "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0178\\step_03_rgb.png",
+        "sha256": "5a663db04cdbff5e8bffda8df0d887edc3cb02cc91ef1c3f64cf296e4ac81cdf"
+      },
+      {
+        "kind": "depth",
+        "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0178\\step_03_depth.png",
+        "sha256": "a1bf1abfd60878e75b07bc65dcddb23632c0f9045cf3fb0c3517b6ff0166c51e",
+        "color_scale": {
+          "near_m": 1.542,
+          "far_m": 4.30475
+        }
+      }
+    ],
+    "input_signature": "59999d25f9306e6401f50d5de7bd6e19d398e600574355cebe682414fa6f940a"
+  },
+  {
+    "question_id": "FOB2-0178-Q8",
+    "condition": "start_final_surface_normals",
+    "image_prompts": [
+      "Start:",
+      "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+      "ENDPOINT SURFACE NORMAL MAP (same camera pose and field of view as FINAL VIEW):\nColors encode surface orientation, not object color or distance. RGB channels encode normal components along camera-right (R), camera-up (G), and camera-forward (B): 0 = -1, about 128 = 0, and 255 = +1. Higher R/G/B means a stronger rightward/upward/forward component; a surface facing the camera has low B. Black means missing geometry. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+    ],
+    "evidence": [
+      {
+        "label": "Start",
+        "kind": "start",
+        "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0178\\start_view.png",
+        "sha256": "b2be9b8f98f631d25fd8babafed0fb86ce932175fcecc2568c457afee19c760b"
+      },
+      {
+        "label": "Step 3 (Endpoint)",
+        "kind": "endpoint",
+        "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0178\\step_03_rgb.png",
+        "sha256": "5a663db04cdbff5e8bffda8df0d887edc3cb02cc91ef1c3f64cf296e4ac81cdf"
+      },
+      {
+        "kind": "surface_normals",
+        "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0178\\step_03_surface_normals.png",
+        "sha256": "6995c90fb39babd5a05e335aeae73198055fdf3a13b9483782b9c4fb7ad9a243"
+      }
+    ],
+    "input_signature": "13379f0b346bb342478ed3093c8689ce3a37379c47f139ffcd1471628d6567f4"
+  },
+  {
+    "question_id": "FOB2-0178-Q8",
+    "condition": "start_final_panorama",
+    "image_prompts": [
+      "Start:",
+      "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+      "ENDPOINT PANORAMA (360-degree RGB at the FINAL VIEW position):\nThe panorama is centered on the final camera's facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. This is one position, not a sequence of movement frames. Combine it with START and FINAL VIEW RGB to reason about the final state."
+    ],
+    "evidence": [
+      {
+        "label": "Start",
+        "kind": "start",
+        "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0178\\start_view.png",
+        "sha256": "b2be9b8f98f631d25fd8babafed0fb86ce932175fcecc2568c457afee19c760b"
+      },
+      {
+        "label": "Step 3 (Endpoint)",
+        "kind": "endpoint",
+        "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_bent100_20260917\\items\\FOB2-0178\\step_03_rgb.png",
+        "sha256": "5a663db04cdbff5e8bffda8df0d887edc3cb02cc91ef1c3f64cf296e4ac81cdf"
+      },
+      {
+        "kind": "panorama",
+        "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0178\\step_03_panorama.png",
+        "sha256": "02b7ef47ca3cd395c084312a822cb38212c659b43910917fe88bc9adde06c331"
+      }
+    ],
+    "input_signature": "0f22308bb4e807c02f5d9edd1d09ad5bf722fbef63c882bd3de8bde1a3f1a153"
+  }
+]

@@ -1,0 +1,1 @@
+{"qid": "FO-0052-Q4", "method": "avic", "variant": "label", "prediction": "painting on the left", "gold": "painting on the left", "correct": true, "n_imagined": 3, "category": "nearest_object", "stored_result": "wrong"}

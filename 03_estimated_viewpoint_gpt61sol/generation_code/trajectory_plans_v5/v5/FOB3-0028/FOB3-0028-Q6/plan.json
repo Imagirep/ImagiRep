@@ -1,0 +1,387 @@
+{
+  "question_id": "FOB3-0028-Q6",
+  "motion_text": "I walk to the doorway, then walk to the photo display wall ahead, facing where I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the arched doorway on the left",
+      "relation": "to"
+    },
+    {
+      "op": "go",
+      "target": "the photo display wall with the world map ahead",
+      "relation": "to"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB3-0028-Q6",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.04355420663393789,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -5.038312111193685,
+        "y": 0.2195785488998876,
+        "yaw": 0.04355420663393789,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -5.038312111193685,
+        "y": 0.2195785488998876,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -5.1383121111936845,
+        "y": 0.2195785488998876,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -5.1383121111936845,
+        "y": 0.2195785488998876,
+        "yaw": 0.04270761069943755,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -5.1383121111936845,
+        "y": 0.2195785488998876,
+        "yaw": 0.4636476090008061,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -6.938312111193685,
+        "y": 1.119578548899888,
+        "yaw": 0.4636476090008061,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -6.938312111193685,
+        "y": 1.119578548899888,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -7.038312111193685,
+        "y": 1.119578548899888,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -5.038312111193685,
+        0.2195785488998876
+      ],
+      [
+        -5.1383121111936845,
+        0.2195785488998876
+      ],
+      [
+        -6.938312111193685,
+        1.119578548899888
+      ],
+      [
+        -7.038312111193685,
+        1.119578548899888
+      ]
+    ],
+    "x": -7.038312111193685,
+    "y": 1.119578548899888,
+    "yaw": 0.442374222976745,
+    "pitch": 0.0,
+    "travel_yaw": 0.442374222976745
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -5.038312111193685,
+      0.2195785488998876
+    ],
+    [
+      -5.1383121111936845,
+      0.2195785488998876
+    ],
+    [
+      -6.938312111193685,
+      1.119578548899888
+    ],
+    [
+      -7.038312111193685,
+      1.119578548899888
+    ]
+  ],
+  "final": {
+    "x": -7.038312111193685,
+    "y": 1.119578548899888,
+    "yaw_deg": 25.346175941946697,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the arched doorway on the left",
+        "relation": "to"
+      },
+      "x": -5.1383121111936845,
+      "y": 0.2195785488998876,
+      "yaw": 0.04270761069943755,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "target": "the photo display wall with the world map ahead",
+        "relation": "to"
+      },
+      "x": -7.038312111193685,
+      "y": 1.119578548899888,
+      "yaw": 0.442374222976745,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -7.038312111193685,
+      "y": 1.119578548899888,
+      "yaw": 0.442374222976745,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.04355420663393789,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -5.038312111193685,
+      "y": 0.2195785488998876,
+      "yaw": 0.04355420663393789,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -5.038312111193685,
+      "y": 0.2195785488998876,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -5.1383121111936845,
+      "y": 0.2195785488998876,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -5.1383121111936845,
+      "y": 0.2195785488998876,
+      "yaw": 0.04270761069943755,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -5.1383121111936845,
+      "y": 0.2195785488998876,
+      "yaw": 0.4636476090008061,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -6.938312111193685,
+      "y": 1.119578548899888,
+      "yaw": 0.4636476090008061,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -6.938312111193685,
+      "y": 1.119578548899888,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -7.038312111193685,
+      "y": 1.119578548899888,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -7.038312111193685,
+      "y": 1.119578548899888,
+      "yaw": 0.442374222976745,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the arched doorway on the left",
+      "method": "initial_photo",
+      "box": [
+        61,
+        410,
+        735,
+        507
+      ],
+      "point_m": [
+        -6.07836268952252,
+        -0.3099377398848407,
+        1.6658490725302728
+      ]
+    },
+    {
+      "overlap": "the arched doorway on the left",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 5.300000000000001,
+          "stop_m": 1.078926591527306,
+          "visible_frac": 0.7688888888888888,
+          "center_deg": 3.3532077717182602,
+          "width_deg": 35.62337081237095,
+          "distance_m": 1.218916492923042
+        },
+        {
+          "sector": 5,
+          "path_m": 5.800000000000001,
+          "stop_m": 0.6884998268524798,
+          "visible_frac": 0.6177777777777778,
+          "center_deg": 7.816594172516151,
+          "width_deg": 43.676170890240726,
+          "distance_m": 0.9010722798803802
+        }
+      ],
+      "chosen_sector": 4
+    },
+    {
+      "ground": "the photo display wall with the world map ahead",
+      "method": "initial_photo",
+      "box": [
+        238,
+        602,
+        606,
+        852
+      ],
+      "point_m": [
+        -7.8096171561471825,
+        2.7369987352942533,
+        1.3397712643037694
+      ]
+    },
+    {
+      "overlap": "the photo display wall with the world map ahead",
+      "n_points": 225,
+      "candidates": [
+        {
+          "sector": 2,
+          "path_m": 2.8000000000000003,
+          "stop_m": 1.7919150459010886,
+          "visible_frac": 0.92,
+          "center_deg": 2.755516978890832,
+          "width_deg": 50.03447673816463,
+          "distance_m": 1.851929559912976
+        },
+        {
+          "sector": 3,
+          "path_m": 2.8000000000000003,
+          "stop_m": 1.7712073016508576,
+          "visible_frac": 1.0,
+          "center_deg": 0.5477065625012921,
+          "width_deg": 65.04937644961808,
+          "distance_m": 1.8604422772878955
+        }
+      ],
+      "chosen_sector": 2
+    }
+  ],
+  "m_per_unit": 2.6948812898952674,
+  "seconds": 11.59645962715149
+}

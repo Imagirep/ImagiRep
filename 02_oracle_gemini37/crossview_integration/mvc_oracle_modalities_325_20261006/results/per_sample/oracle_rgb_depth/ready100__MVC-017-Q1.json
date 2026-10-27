@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-017-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-017-Q1",
+  "resource_id": "MVC-017",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to stove in Image 1?",
+  "answer_choices": {
+    "A": "refrigerator",
+    "B": "dining table",
+    "C": "white chairs",
+    "D": "sink"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "65d07f35ea7459b60a8ba4f97525baf47f56ba3f8e7c75ea17324bfab5e279d4",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 0.634 m (near/red) to 4.530 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-017\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4600,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 344
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 555,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5156,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 11.634779400003026,
+  "completed_at": "2026-10-06T17:36:38-04:00"
+}

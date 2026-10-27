@@ -1,0 +1,76 @@
+{
+  "question_id": "FOB2-0050-Q3",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the far cabinets, then turn back to face where I come from, would the sink still be directly visible?",
+  "answer_choices": {
+    "D": "clearly visible",
+    "A": "partially visible",
+    "B": "outside of view",
+    "C": "completely blocked"
+  },
+  "gold_answer": "D",
+  "show_lookback": true,
+  "prediction": "D",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0050/start_view.png",
+      "sha256": "a583302d85837a0496d450607eb2718bb4d7fae6987964e742d8ad1b5f631342"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0050/step_01_rgb.png",
+      "sha256": "00ba2124c370f8be988f8c94c0ceac5c9da2364bdb0c4d7f61b9d4fab0999ca7"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0050/step_02_rgb.png",
+      "sha256": "513d4b73ca4cce9838216419596e5367a377e7de1328ae89350991090916d736"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0050/oracle_lookback.png",
+      "sha256": "307127ffebdd0e2c5d2ebec1e5e08b909cf74501ccc719435d6af84356485537"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4410,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 154
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 433,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4844,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 4.946802199992817,
+  "completed_at": "2026-10-06T14:21:48-04:00"
+}

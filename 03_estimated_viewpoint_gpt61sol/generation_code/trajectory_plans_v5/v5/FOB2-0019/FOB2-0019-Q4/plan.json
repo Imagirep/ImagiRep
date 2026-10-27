@@ -1,0 +1,263 @@
+{
+  "question_id": "FOB2-0019-Q4",
+  "motion_text": "I walk forward and stop near the brown sofa, facing the direction I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the brown sofa in the living area",
+      "relation": "near"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0019-Q4",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.03451682550556658,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.8008698901751288,
+        "y": 0.09671554964514328,
+        "yaw": 0.03451682550556658,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -2.8008698901751288,
+        "y": 0.09671554964514328,
+        "yaw": -0.06442683942555331,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -5.900869890175129,
+        "y": -0.103284450354856,
+        "yaw": -0.06442683942555331,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -2.8008698901751288,
+        0.09671554964514328
+      ],
+      [
+        -5.900869890175129,
+        -0.103284450354856
+      ]
+    ],
+    "x": -5.900869890175129,
+    "y": -0.103284450354856,
+    "yaw": -0.017501471252158264,
+    "pitch": 0.0,
+    "travel_yaw": -0.017501471252158264
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.8008698901751288,
+      0.09671554964514328
+    ],
+    [
+      -5.900869890175129,
+      -0.103284450354856
+    ]
+  ],
+  "final": {
+    "x": -5.900869890175129,
+    "y": -0.103284450354856,
+    "yaw_deg": -1.0027604380182087,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the brown sofa in the living area",
+        "relation": "near"
+      },
+      "x": -5.900869890175129,
+      "y": -0.103284450354856,
+      "yaw": -0.017501471252158264,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -5.900869890175129,
+      "y": -0.103284450354856,
+      "yaw": -0.017501471252158264,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.03451682550556658,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.8008698901751288,
+      "y": 0.09671554964514328,
+      "yaw": 0.03451682550556658,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -2.8008698901751288,
+      "y": 0.09671554964514328,
+      "yaw": -0.06442683942555331,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -5.900869890175129,
+      "y": -0.103284450354856,
+      "yaw": -0.06442683942555331,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -5.900869890175129,
+      "y": -0.103284450354856,
+      "yaw": -0.017501471252158264,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the brown sofa in the living area",
+      "method": "initial_photo",
+      "box": [
+        583,
+        377,
+        758,
+        546
+      ],
+      "point_m": [
+        -7.004604107877695,
+        -0.5456633865918233,
+        -1.5854321893356285
+      ]
+    },
+    {
+      "overlap": "the brown sofa in the living area",
+      "n_points": 220,
+      "candidates": [
+        {
+          "sector": 4,
+          "path_m": 6.2,
+          "stop_m": 1.1890871904758058,
+          "visible_frac": 0.740909090909091,
+          "center_deg": 4.850790081917954,
+          "width_deg": 43.053839251552716,
+          "distance_m": 1.9805639422461312
+        },
+        {
+          "sector": 3,
+          "path_m": 6.6000000000000005,
+          "stop_m": 1.2051125482116556,
+          "visible_frac": 0.7681818181818182,
+          "center_deg": 2.816587247282884,
+          "width_deg": 42.35865993605563,
+          "distance_m": 1.9967707840615574
+        },
+        {
+          "sector": 5,
+          "path_m": 6.9,
+          "stop_m": 0.7402182600814161,
+          "visible_frac": 0.5136363636363637,
+          "center_deg": 8.225351604032118,
+          "width_deg": 57.891246562134185,
+          "distance_m": 1.6751419588298777
+        },
+        {
+          "sector": 6,
+          "path_m": 7.7,
+          "stop_m": 0.748594406744846,
+          "visible_frac": 0.2727272727272727,
+          "center_deg": 5.840311980370499,
+          "width_deg": 49.89399247352574,
+          "distance_m": 1.2801668757482987
+        }
+      ],
+      "chosen_sector": 4
+    }
+  ],
+  "m_per_unit": 2.651299072184824,
+  "seconds": 8.680491209030151
+}

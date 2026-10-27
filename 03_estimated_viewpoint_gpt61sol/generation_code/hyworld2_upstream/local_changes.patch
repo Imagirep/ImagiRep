@@ -1,0 +1,40 @@
+diff --git a/hyworld2/panogen/hunyuan_image_3/siglip2.py b/hyworld2/panogen/hunyuan_image_3/siglip2.py
+index 0f76746..a033685 100755
+--- a/hyworld2/panogen/hunyuan_image_3/siglip2.py
++++ b/hyworld2/panogen/hunyuan_image_3/siglip2.py
+@@ -207,7 +207,7 @@ class Siglip2Attention(nn.Module):
+                     f"Attention mask should be of size {(batch_size, 1, q_len, k_v_seq_len)}, "
+                     f"but is {attention_mask.size()}"
+                 )
+-            attn_weights = attn_weights + attention_mask
++            attn_weights = attn_weights + attention_mask.to(device=attn_weights.device, dtype=attn_weights.dtype)
+ 
+         # upcast attention to fp32
+         attn_weights = nn.functional.softmax(attn_weights, dim=-1, dtype=torch.float32).to(query_states.dtype)
+diff --git a/hyworld2/worldgen/models/worldstereo_wrapper.py b/hyworld2/worldgen/models/worldstereo_wrapper.py
+index 4789e88..5b5eaae 100644
+--- a/hyworld2/worldgen/models/worldstereo_wrapper.py
++++ b/hyworld2/worldgen/models/worldstereo_wrapper.py
+@@ -165,6 +165,9 @@ class WorldStereo:
+             )
+ 
+         cfg = OmegaConf.create(cls._load_hf_config(json_cfg_path))
++        if local_files_only:
++            from huggingface_hub import snapshot_download
++            cfg.base_model = snapshot_download(cfg.base_model, local_files_only=True)
+         model_weights_path = safetensors_path
+ 
+         model_type = subfolder
+diff --git a/hyworld2/worldgen/traj_generate.py b/hyworld2/worldgen/traj_generate.py
+index 20516c2..fb93888 100755
+--- a/hyworld2/worldgen/traj_generate.py
++++ b/hyworld2/worldgen/traj_generate.py
+@@ -73,7 +73,7 @@ LLM_PORT = 8000
+ 
+ SAM_BATCH_SIZE = 4
+ MAX_MASK_COUNT = 5
+-HF_CACHE_DIR = os.path.expanduser("~/.cache/huggingface/hub")
++HF_CACHE_DIR = os.environ["HF_HUB_CACHE"]
+ ZIM_REPO_ID = "naver-iv/zim-anything-vitl"
+ ZIM_SUBFOLDER = "zim_vit_l_2092"
+ GD_REPO_ID = "IDEA-Research/grounding-dino-tiny"

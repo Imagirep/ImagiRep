@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-152-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-152-Q3",
+  "resource_id": "MVC-152",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "wooden cabinet, large screen, monitor, white pillar",
+    "B": "white pillar, wooden cabinet, large screen, monitor",
+    "C": "monitor, white pillar, large screen, wooden cabinet",
+    "D": "monitor, wooden cabinet, white pillar, large screen"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "a469ef17452b8f6edbd87219e3e10c4b30f024903db86cbf099bbbda28cf453e",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-152\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4638,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 365
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      }
+    ],
+    "thoughts_token_count": 1490,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6129,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 11.019987500010757,
+  "completed_at": "2026-10-06T17:45:04-04:00"
+}

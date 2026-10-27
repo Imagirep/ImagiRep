@@ -1,0 +1,218 @@
+{
+  "question_id": "FO-0028-Q3",
+  "motion_text": "I walk through the door then turn to face my starting point.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "target": "the open wooden door with decorative wrought iron scrollwork on the right",
+      "relation": "through"
+    },
+    {
+      "op": "face_start"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FO-0028-Q3",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.12027035580498882,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.142903588432403,
+        "y": 0.3798313161069234,
+        "yaw": 0.12027035580498882,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -3.2626559260968033,
+        "y": 0.3943038211463277,
+        "yaw": 0.12027035580498882,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -3.9083161773837127,
+        0.472334208049336
+      ],
+      [
+        -4.057232612585829,
+        0.49033130022262267
+      ]
+    ],
+    "x": -4.057232612585829,
+    "y": 0.49033130022262267,
+    "yaw": 0.12027035580498882,
+    "pitch": 0.0,
+    "travel_yaw": 0.12027035580498882
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -3.142903588432403,
+      0.3798313161069234
+    ],
+    [
+      -3.2626559260968033,
+      0.3943038211463277
+    ]
+  ],
+  "final": {
+    "x": -3.2626559260968033,
+    "y": 0.3943038211463277,
+    "yaw_deg": -173.1090162118374,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "target": "the open wooden door with decorative wrought iron scrollwork on the right",
+        "relation": "through"
+      },
+      "x": -4.057232612585829,
+      "y": 0.49033130022262267,
+      "yaw": 0.12027035580498882,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_start"
+      },
+      "x": -4.057232612585829,
+      "y": 0.49033130022262267,
+      "yaw": -3.0213222977848044,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.12027035580498882,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.142903588432403,
+      "y": 0.3798313161069234,
+      "yaw": 0.12027035580498882,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -3.2626559260968033,
+      "y": 0.3943038211463277,
+      "yaw": 0.12027035580498882,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -3.2626559260968033,
+      "y": 0.3943038211463277,
+      "yaw": -3.0213222977848044,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the open wooden door with decorative wrought iron scrollwork on the right",
+      "method": "initial_photo",
+      "box": [
+        490,
+        518,
+        1000,
+        714
+      ],
+      "point_m": [
+        -4.375310600874107,
+        0.5623190564483505,
+        -1.5049258386832245
+      ]
+    },
+    {
+      "move_yaw_deg": 6.8909837881626,
+      "requested_m": 1.0,
+      "end": [
+        -4.057232612585829,
+        0.49033130022262267
+      ],
+      "blocked": true
+    }
+  ],
+  "m_per_unit": 1.4691298007965088,
+  "seconds": 7.489772319793701,
+  "planning_m_per_unit": 1.8269169274751365,
+  "scale_source": "moge",
+  "scale_factor_applied": 0.8041579661900106
+}

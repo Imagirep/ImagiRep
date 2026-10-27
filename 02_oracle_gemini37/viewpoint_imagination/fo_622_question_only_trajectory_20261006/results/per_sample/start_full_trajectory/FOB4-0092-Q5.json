@@ -1,0 +1,76 @@
+{
+  "question_id": "FOB4-0092-Q5",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk through the door and turn to face my starting point, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "A": "black wall hooks",
+    "B": "white ottoman",
+    "C": "glass shelf",
+    "D": "vase"
+  },
+  "gold_answer": "A",
+  "show_lookback": true,
+  "prediction": "B",
+  "correct": false,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "Step 2 (Endpoint):",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint",
+    "lookback"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0092/start_view.png",
+      "sha256": "b7a913ae582210cc00c8133dca8c4500f56d542b836e7c876dcca7ed08eba8be"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0092/step_01_rgb.png",
+      "sha256": "641eeb336a4acb956e9376d802cab69a20b57d0d282acb3578ce909d120bb902"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0092/step_02_rgb.png",
+      "sha256": "8d68fb08026974b0aad7510e92fd518c0a363f711220eb26b045b1da60e5285f"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0092/oracle_lookback.png",
+      "sha256": "e0fac27ad317083fbec6c3d9ccf799dc07633e24a64947da5106070f622634d9"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4408,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 152
+      }
+    ],
+    "thoughts_token_count": 2171,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6580,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 9.561160700002802,
+  "completed_at": "2026-10-06T15:09:00-04:00"
+}

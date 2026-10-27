@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB4-0102-Q5",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk forward, walk to the black counter, facing the direction I go, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "A": "black stool",
+    "B": "stove",
+    "C": "microwave",
+    "D": "refrigerator"
+  },
+  "gold_answer": "A",
+  "show_lookback": false,
+  "prediction": "A",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0102/start_view.png",
+      "sha256": "05bf427e158a7adda6ba8941730d67656f1879e82d303af53fc1b048edcda416"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0102/step_01_rgb.png",
+      "sha256": "8e3e3fe0ee5ee77832a7e0df85b666b5b73da99df2751bb9b12bd7e0c86221ee"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0102/step_02_rgb.png",
+      "sha256": "20bd12c0c39ebd15b88af8bab571f7ae05a6414f1ac4ee327e5f79d824afb91a"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3337,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 145
+      }
+    ],
+    "thoughts_token_count": 1970,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5308,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "attempts": 1,
+  "request_duration_seconds": 10.487220700000762,
+  "completed_at": "2026-10-06T15:10:01-04:00"
+}

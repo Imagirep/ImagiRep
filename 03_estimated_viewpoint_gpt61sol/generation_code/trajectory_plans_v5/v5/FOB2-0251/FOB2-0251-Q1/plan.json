@@ -1,0 +1,305 @@
+{
+  "question_id": "FOB2-0251-Q1",
+  "motion_text": "I walk into the room, walk near the blue sofa and face the way I go.",
+  "constants": {
+    "eye_m": 1.75,
+    "slight_deg": 35.0,
+    "turn_deg": 80.0,
+    "around_deg": 180.0,
+    "forward_m": 2.0,
+    "forward_alone_m": 2.0,
+    "few_steps_m": 1.0,
+    "back_m": 1.0,
+    "const_set": "v1",
+    "stop_m": {
+      "to": 0.8,
+      "near": 1.0,
+      "next_to": 0.8,
+      "beside": 0.8,
+      "into": 0.0,
+      "through": 0.0,
+      "past": 0.0
+    },
+    "past_beyond_m": 0.5,
+    "past_side_m": 0.9,
+    "through_beyond_m": 1.0,
+    "face_low_threshold_deg": -20.0,
+    "face_low_pitch_deg": -25.0,
+    "arrive_facing_target": false,
+    "leg_heading": true,
+    "use_overlap": true,
+    "overlap_min": 0.2,
+    "use_candidates": false,
+    "max_candidates": 6,
+    "refine_shift_m": 0.7,
+    "view_w": 384,
+    "view_h": 288
+  },
+  "model": "gemini-3.7-flash",
+  "inputs_allowed": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "gt_metadata_used": [],
+  "steps": [
+    {
+      "op": "go",
+      "relation": "into",
+      "target": "the room"
+    },
+    {
+      "op": "go",
+      "relation": "near",
+      "target": "the blue sofa on the right"
+    },
+    {
+      "op": "face_motion"
+    }
+  ],
+  "walk_state": {
+    "question_id": "FOB2-0251-Q1",
+    "keyframes": [
+      {
+        "kind": "start",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": -0.0577976458561113,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -4.162354919434916,
+        "y": -0.2408425589434242,
+        "yaw": -0.0577976458561113,
+        "pitch": 0.0
+      },
+      {
+        "kind": "turn",
+        "x": -4.162354919434916,
+        "y": -0.2408425589434242,
+        "yaw": 2.6476512846702125,
+        "pitch": 0.0
+      },
+      {
+        "kind": "walk",
+        "x": -2.8623549194349156,
+        "y": 0.4591574410565755,
+        "yaw": 2.6476512846702125,
+        "pitch": 0.0
+      }
+    ],
+    "route": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -4.162354919434916,
+        -0.2408425589434242
+      ],
+      [
+        -2.8623549194349156,
+        0.4591574410565755
+      ]
+    ],
+    "x": -2.8623549194349156,
+    "y": 0.4591574410565755,
+    "yaw": 2.6476512846702125,
+    "pitch": 0.0,
+    "travel_yaw": 2.6476512846702125
+  },
+  "status": "complete",
+  "route_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -4.162354919434916,
+      -0.2408425589434242
+    ],
+    [
+      -2.8623549194349156,
+      0.4591574410565755
+    ]
+  ],
+  "final": {
+    "x": -2.8623549194349156,
+    "y": 0.4591574410565755,
+    "yaw_deg": 151.69924423399365,
+    "pitch_deg": 0.0
+  },
+  "step_states": [
+    {
+      "after": {
+        "op": "go",
+        "relation": "into",
+        "target": "the room"
+      },
+      "x": -4.162354919434916,
+      "y": -0.2408425589434242,
+      "yaw": -0.0577976458561113,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "go",
+        "relation": "near",
+        "target": "the blue sofa on the right"
+      },
+      "x": -2.8623549194349156,
+      "y": 0.4591574410565755,
+      "yaw": 2.6476512846702125,
+      "pitch": 0.0
+    },
+    {
+      "after": {
+        "op": "face_motion"
+      },
+      "x": -2.8623549194349156,
+      "y": 0.4591574410565755,
+      "yaw": 2.6476512846702125,
+      "pitch": 0.0
+    }
+  ],
+  "keyframes": [
+    {
+      "kind": "start",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": -0.0577976458561113,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -4.162354919434916,
+      "y": -0.2408425589434242,
+      "yaw": -0.0577976458561113,
+      "pitch": 0.0
+    },
+    {
+      "kind": "turn",
+      "x": -4.162354919434916,
+      "y": -0.2408425589434242,
+      "yaw": 2.6476512846702125,
+      "pitch": 0.0
+    },
+    {
+      "kind": "walk",
+      "x": -2.8623549194349156,
+      "y": 0.4591574410565755,
+      "yaw": 2.6476512846702125,
+      "pitch": 0.0
+    }
+  ],
+  "events": [
+    {
+      "ground": "the room",
+      "method": "initial_photo",
+      "box": [
+        0,
+        109,
+        1000,
+        964
+      ],
+      "point_m": [
+        -4.650770076978897,
+        -0.27607969281085853,
+        -1.0595511329808605
+      ]
+    },
+    {
+      "move_yaw_deg": -3.3115611733469694,
+      "requested_m": 1.0,
+      "end": [
+        -4.162354919434916,
+        -0.2408425589434242
+      ],
+      "blocked": true
+    },
+    {
+      "ground": "the blue sofa on the right",
+      "method": "initial_photo",
+      "box": [
+        638,
+        801,
+        812,
+        963
+      ],
+      "point_m": [
+        -1.7849098746098122,
+        1.1276617119166272,
+        -0.5711801322088687
+      ]
+    },
+    {
+      "overlap": "the blue sofa on the right",
+      "n_points": 135,
+      "candidates": [
+        {
+          "sector": 0,
+          "path_m": 2.0,
+          "stop_m": 1.2679849308159377,
+          "visible_frac": 0.9629629629629629,
+          "center_deg": 6.861290878794277,
+          "width_deg": 35.83652415312506,
+          "distance_m": 1.2657541246307957
+        },
+        {
+          "sector": 1,
+          "path_m": 2.0,
+          "stop_m": 1.2419425592181257,
+          "visible_frac": 0.9925925925925926,
+          "center_deg": 8.148605994182574,
+          "width_deg": 43.520008963088934,
+          "distance_m": 1.24034347287213
+        },
+        {
+          "sector": 2,
+          "path_m": 2.5,
+          "stop_m": 1.2687047770041433,
+          "visible_frac": 1.0,
+          "center_deg": 7.267259511689316,
+          "width_deg": 36.6546261721294,
+          "distance_m": 1.269019948748764
+        },
+        {
+          "sector": 3,
+          "path_m": 3.8000000000000003,
+          "stop_m": 0.8430728190369653,
+          "visible_frac": 1.0,
+          "center_deg": 4.131359005524135,
+          "width_deg": 23.737361900594635,
+          "distance_m": 0.845414818084521
+        },
+        {
+          "sector": 4,
+          "path_m": 4.9,
+          "stop_m": 1.1229967089630182,
+          "visible_frac": 0.0,
+          "center_deg": null,
+          "width_deg": null,
+          "distance_m": null
+        }
+      ],
+      "chosen_sector": 0
+    }
+  ],
+  "m_per_unit": 2.638215754428472,
+  "seconds": 11.414497375488281
+}

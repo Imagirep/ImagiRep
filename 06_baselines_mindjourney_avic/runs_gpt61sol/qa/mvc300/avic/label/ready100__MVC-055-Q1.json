@@ -1,0 +1,1 @@
+{"qid": "ready100__MVC-055-Q1", "method": "avic", "variant": "label", "prediction": "sofa", "gold": "pool table", "correct": false, "n_imagined": 2, "category": "cross_view_closest", "stored_result": "wrong"}

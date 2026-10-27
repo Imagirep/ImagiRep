@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-196-Q3", "method": "mj", "variant": "top3+label", "prediction": "tv, glass door, white chair, bed", "gold": "tv, glass door, white chair, bed", "correct": true, "n_imagined": 3, "category": "ordering", "stored_result": "correct"}

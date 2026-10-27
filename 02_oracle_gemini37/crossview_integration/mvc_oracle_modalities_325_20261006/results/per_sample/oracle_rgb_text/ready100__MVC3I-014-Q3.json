@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC3I-014-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC3I-014-Q3",
+  "resource_id": "MVC3I-014",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_text",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "glass water pitcher, sink, ovens, tissue box",
+    "B": "sink, tissue box, ovens, glass water pitcher",
+    "C": "glass water pitcher, sink, tissue box, ovens",
+    "D": "tissue box, sink, ovens, glass water pitcher"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "7a1eb528359e0c80b173d850223eaab7c21f1b279971b892b643492f706b4d3f",
+  "caption": "ADDITIONAL TEXT VIEW TRANSITION:\nThe description gives the in-place camera rotations between the numbered images and Oracle RGB. Turns are relative to the current view. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC3I-014\\order_132\\view_transition.txt",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4699,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 443
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 5254,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9954,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 20.610394499992253,
+  "completed_at": "2026-10-06T17:32:06-04:00"
+}

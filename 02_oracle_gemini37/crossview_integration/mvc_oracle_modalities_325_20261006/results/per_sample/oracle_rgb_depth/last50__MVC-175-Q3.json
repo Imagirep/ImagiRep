@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-175-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-175-Q3",
+  "resource_id": "MVC-175",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "mirror, wooden chair, alarm clock, framed painting",
+    "B": "mirror, framed painting, alarm clock, wooden chair",
+    "C": "alarm clock, framed painting, mirror, wooden chair",
+    "D": "wooden chair, mirror, framed painting, alarm clock"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "07f61d1848f8955e6ce0e93884def04f6d5fdda87962039a6b6e7a4df6682cb4",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.466 m (near/red) to 5.561 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-175\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4642,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 386
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 806,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5449,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 6.760352700002841,
+  "completed_at": "2026-10-06T17:39:12-04:00"
+}

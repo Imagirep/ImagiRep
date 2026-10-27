@@ -1,0 +1,1 @@
+{"uid": "FO-0046-Q4", "category": "nearest_object", "ver": "S2E", "reason": "A panorama shows nearby objects in every direction from the final position.", "choice": "panorama", "usage": {"input_tokens": 1099, "input_tokens_details": {"cache_write_tokens": 1096, "cached_tokens": 0}, "output_tokens": 97, "output_tokens_details": {"reasoning_tokens": 66}, "total_tokens": 1196}}

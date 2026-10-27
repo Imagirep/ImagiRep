@@ -1,0 +1,96 @@
+{
+  "row_index": 29,
+  "question_id": "FOB4-0198-Q5",
+  "trajectory_id": "FOB4-0198",
+  "scan_id": "zsNo4HB9uLZ",
+  "route_variant": "new_bent",
+  "question_type": 5,
+  "question_set": "lookback",
+  "endpoint_is_lookback": true,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "final_image_kind": "endpoint",
+  "question": "If I walk forward, then turn left, walk a few steps and turn around, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "C": "painting",
+    "A": "potted plant",
+    "B": "white plate",
+    "D": "black cabinet"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "painting",
+    "B": "potted plant",
+    "C": "white plate",
+    "D": "black cabinet"
+  },
+  "original_gold_answer": "A",
+  "shuffle_target_to_source": {
+    "C": "A",
+    "A": "B",
+    "B": "C",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0198\\start_view.png",
+      "sha256": "a415c3ed865be3b7af087def12db213ed9db8a0f1563e4dd1806ec00e4a5c5f9"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0198\\step_01_rgb.png",
+      "sha256": "3e047420b56540f843fd55cdc141af9aecce693facae09549cdb98a058c3e62f"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch4_20260922\\items\\FOB4-0198\\step_02_back180_rgb.png",
+      "sha256": "edba2c36a85dffc3aa853ea7051daa9e482f2f47d140dcfc8eb21f3246b4800d"
+    }
+  ],
+  "manifest_seed": 20260924,
+  "source": "frozen_batch4_labeler_20260924",
+  "condition": "start_view",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3",
+  "image_prompts": [
+    "Start:"
+  ],
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "B",
+  "correct": false,
+  "image_count": 1,
+  "evidence_kinds": [
+    "start"
+  ],
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1153,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 89
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": 995,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2149,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "completed_at": "2026-09-24T17:28:53-04:00"
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-009-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-009-Q3",
+  "resource_id": "MVC-009",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "white carpet, decorative floor lamp, mirror, fireplace",
+    "B": "decorative floor lamp, fireplace, white carpet, mirror",
+    "C": "mirror, fireplace, white carpet, decorative floor lamp",
+    "D": "decorative floor lamp, white carpet, mirror, fireplace"
+  },
+  "gold_answer": "B",
+  "prediction": "B",
+  "correct": true,
+  "signature": "44e2dcfe3495ed0473de194d87f9da24bc3f6154067bdf846df63129ac14735c",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-009\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4638,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 365
+      }
+    ],
+    "thoughts_token_count": 1761,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6399,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 11.196270000000368,
+  "completed_at": "2026-10-06T17:43:22-04:00"
+}

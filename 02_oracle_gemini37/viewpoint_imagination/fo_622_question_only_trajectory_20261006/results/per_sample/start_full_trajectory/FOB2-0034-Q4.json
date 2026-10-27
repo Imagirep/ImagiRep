@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB2-0034-Q4",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the round table and face the way I go, which object(s) would be closest to me?",
+  "answer_choices": {
+    "D": "potted plant",
+    "A": "small cabinet",
+    "B": "carpet",
+    "C": "armchair"
+  },
+  "gold_answer": "D",
+  "show_lookback": false,
+  "prediction": "D",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0034/start_view.png",
+      "sha256": "316c24fb224f3875254bf17eee3ccdeda9d37be03b8fc261a74ada8c2a1fbd64"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0034/step_01_rgb.png",
+      "sha256": "743c7b9557dbe050eca0b776b252935bedd3882910d714c2e9c6648b83952d96"
+    },
+    {
+      "path": "outputs/future_trajectory_batch2_20260917/items/FOB2-0034/step_02_rgb.png",
+      "sha256": "43083f07f7c91ced38632641906563dc90b789cbbfea9f5d6499cb4ba6d54e1b"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3335,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 143
+      }
+    ],
+    "thoughts_token_count": 5881,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 9217,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_duration_seconds": 26.32888119999552,
+  "completed_at": "2026-10-06T14:18:57-04:00"
+}

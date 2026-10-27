@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-067-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-067-Q3",
+  "resource_id": "MVC-067",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "potted plant, lamp, tv, black armchair",
+    "B": "black armchair, tv, lamp, potted plant",
+    "C": "lamp, potted plant, black armchair, tv",
+    "D": "black armchair, potted plant, tv, lamp"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "3df3a5c4a1e1fe3b1b03fe4d076b5b36b27b22f3bce64ac7d3459609320be816",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-067\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4634,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 361
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      }
+    ],
+    "thoughts_token_count": 1189,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5824,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 10.297834700002568,
+  "completed_at": "2026-10-06T17:44:09-04:00"
+}

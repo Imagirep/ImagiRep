@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-097-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-097-Q3",
+  "resource_id": "MVC-097",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_depth",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "white ottoman near me, white chair, bed, potted plant",
+    "B": "white chair, potted plant, white ottoman near me, bed",
+    "C": "potted plant, white ottoman near me, bed, white chair",
+    "D": "white chair, white ottoman near me, potted plant, bed"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "c8163c7a1e4b0b0dc482db61a2033d1528ca9b16a5d4992314dd8d05df03b6ab",
+  "caption": "ORACLE DEPTH MAP (same camera pose and field of view as Oracle RGB):\nColors encode camera-forward distance (z-depth), not object color. Red/orange is nearer, green is intermediate, and blue/purple is farther; black means missing depth, not a nearby surface. This image's color scale runs from 1.453 m (near/red) to 8.534 m (far/purple), with values outside this range clipped. Combine this map with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-097\\oracle_depth.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4650,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 394
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 1259,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5910,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 29.78645270000561,
+  "completed_at": "2026-10-06T17:38:20-04:00"
+}

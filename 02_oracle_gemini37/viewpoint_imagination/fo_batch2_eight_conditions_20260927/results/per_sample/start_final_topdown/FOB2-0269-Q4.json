@@ -1,0 +1,144 @@
+{
+  "row_index": 157,
+  "question_id": "FOB2-0269-Q4",
+  "trajectory_id": "FOB2-0269",
+  "scan_id": "JeFG25nYj2p",
+  "question_type": 4,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk near the sink, then stop and turn right, which object(s) would be closest to me?",
+  "answer_choices": {
+    "C": "metal rack",
+    "A": "mirror with a wooden frame",
+    "B": "wooden shelf",
+    "D": "dark green bottle"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "wooden shelf",
+    "B": "metal rack",
+    "C": "dark green bottle",
+    "D": "mirror with a wooden frame"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "C": "B",
+    "A": "D",
+    "B": "A",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_old40_20260917\\items\\FOB2-0269\\start_view.png",
+      "sha256": "e03e24c4d96b4f24cd5f9f68522c5bc7e22865cd06de601b43be9a1ad7e43e89"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_old40_20260917\\items\\FOB2-0269\\step_01_rgb.png",
+      "sha256": "9ec8dc48a28327e35febf59a134a1fc78fe0633769d687aaae1e972081b1eb6b"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_old40_20260917\\items\\FOB2-0269\\step_02_rgb.png",
+      "sha256": "99761da8c961b44105f94193a0d166eb0e6aba655d001aac69f352769b272b89"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "category": "nearest_object",
+  "category_label": "Nearest object",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0269\\step_02_depth.png",
+      "sha256": "148491680940f761f5beb2d0b3ba5411aa12819f96990cae21ee0f616dfb159e",
+      "color_scale": {
+        "near_m": 0.8995,
+        "far_m": 3.855
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0269\\step_02_surface_normals.png",
+      "sha256": "428c099acda45c136e316042522680ca9ab11f935a7193a9eaa99ec0e763805b"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0269\\step_02_panorama.png",
+      "sha256": "9cc35f6afee26fa47a6acaa7438c322fc8e62009220ab515de74ecd99943d0e9"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0269\\topdown_with_path.png",
+      "sha256": "eb37bcbe50f31a1be8f25dc95e3f555aa0935fa5cf34df4985be1123a2cc1fb7"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0269\\trajectory.txt",
+      "sha256": "db5a5cbe1ec9790f07be1825fb1b617e461909bd860212364c5a3a2ecea84555"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0269\\trajectory.mp4",
+      "sha256": "270ee88b853443b4050dd609541c6ce8eb312ad12039597ca6e92cb0dddeb987"
+    }
+  },
+  "condition": "start_final_topdown",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "B",
+  "correct": false,
+  "input_signature": "a1c5185e6957bca2aecee0dfc39e6b6c31d0616005167e437e79bd0a1a2aeb54",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "topdown"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3409,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3217
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 192
+      }
+    ],
+    "thoughts_token_count": 1424,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4834,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_started_at": "2026-09-28T00:22:09.254-04:00",
+  "request_duration_seconds": 6.982514399918728,
+  "completed_at": "2026-09-28T00:22:16.237-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

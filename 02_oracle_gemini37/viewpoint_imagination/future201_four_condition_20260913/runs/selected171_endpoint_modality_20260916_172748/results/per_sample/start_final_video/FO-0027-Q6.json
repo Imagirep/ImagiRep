@@ -1,0 +1,141 @@
+{
+  "row_index": 96,
+  "question_id": "FO-0027-Q6",
+  "trajectory_id": "FO-0027",
+  "scan_id": "7y3sRwLe3Va",
+  "question_type": 6,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk past the kitchen counter and stop near the windows, then turn back to face where I come from, where is the glass vase relative to me?",
+  "answer_choices": {
+    "A": "right",
+    "B": "left",
+    "C": "front",
+    "D": "behind"
+  },
+  "gold_answer": "A",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "right",
+    "C": "left",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "A": "B",
+    "B": "C",
+    "C": "A",
+    "D": "D"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0027\\image_1.png"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0027\\modalities\\step_01_rgb.png"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0027\\modalities\\step_02_rgb.png"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0027\\modalities\\oracle_lookback.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "f09ac2060dd272e40b157eb48a1c4c8034cdf0387cc52585602e28fbd03512c7",
+    "7f1c0001246124380b5f8f01fffc283636419fcc6906c450cf2abb4dd5ddf94b"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0027\\modalities\\topdown_lookback_with_path.png",
+      "sha256": "3ae0ff8500efe5bb23061d883fb7abcbfdd02c690b43e6ae58fb0b4fcce5ec4d"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0027\\modalities\\trajectory_lookback.txt",
+      "sha256": "946daa303e05cbe0c7abef289f1544f421070b0f31b2be9f7dab4bbdc51fe001"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0027\\modalities\\trajectory_lookback.mp4",
+      "sha256": "906a1946fe58d13230a012617589b9c74ecaed6dc1203587a76594cb5df20389",
+      "frame_count": 91,
+      "fps": 12.0,
+      "duration_seconds": 7.583333333333333,
+      "bytes": 514205,
+      "final_rgb_correlation": 0.9991486992596502
+    }
+  },
+  "condition": "start_final_video",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "modality_prompt": "ADDITIONAL TRAJECTORY VIDEO:\nThe video shows the movement from start to the final state, including camera turns. Translation uses discrete connectivity hops. Use it together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "A",
+  "correct": true,
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "lookback"
+  ],
+  "additional_modality": {
+    "kind": "video",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0027\\modalities\\trajectory_lookback.mp4",
+    "sha256": "906a1946fe58d13230a012617589b9c74ecaed6dc1203587a76594cb5df20389",
+    "frame_count": 91,
+    "fps": 12.0,
+    "duration_seconds": 7.583333333333333,
+    "bytes": 514205,
+    "final_rgb_correlation": 0.9991486992596502
+  },
+  "input_signature": "119d8272f3e5601ce8916750c05ed1dd6718643571f82dde68e3ba57735f1655",
+  "video_sampling_fps": 12,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 8047,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 186
+      },
+      {
+        "modality": "VIDEO",
+        "token_count": 5733
+      }
+    ],
+    "thoughts_token_count": 771,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8819,
+    "traffic_type": null
+  },
+  "raw_response": "A",
+  "completed_at": "2026-09-16T17:39:39-04:00"
+}

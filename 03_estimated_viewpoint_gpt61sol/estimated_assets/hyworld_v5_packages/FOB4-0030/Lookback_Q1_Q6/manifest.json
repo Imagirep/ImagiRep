@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB4-0030-Q1",
+  "motion_text": "I walk to the long yellow chair, then turn to face my starting point.",
+  "view_variant": "lookback",
+  "frames": 145,
+  "fps": 12,
+  "total_distance_m": 4.900874541910365,
+  "depth_display_range_scene_units": [
+    0.9297354757785797,
+    11.095128803253173
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.4252852691192042,
+    "far_m": 17.008841820319045
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.280772877792998 m over generated floor distance",
+  "m_per_unit": 3.105231761932373,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 37.88579845428467
+}

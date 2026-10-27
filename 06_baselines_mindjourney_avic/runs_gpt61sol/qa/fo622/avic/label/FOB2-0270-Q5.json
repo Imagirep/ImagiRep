@@ -1,0 +1,1 @@
+{"qid": "FOB2-0270-Q5", "method": "avic", "variant": "label", "prediction": "grey chair", "gold": "grey chair", "correct": true, "n_imagined": 3, "category": "farthest_object", "stored_result": "correct"}

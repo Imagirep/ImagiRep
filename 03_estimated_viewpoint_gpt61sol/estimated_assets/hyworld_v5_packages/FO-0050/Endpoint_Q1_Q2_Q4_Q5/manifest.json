@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FO-0050-Q1",
+  "motion_text": "I walk through the doors, walk forward till I'm near the white chair, and face the direction I move.",
+  "view_variant": "endpoint",
+  "frames": 127,
+  "fps": 12,
+  "total_distance_m": 3.885616066552041,
+  "depth_display_range_scene_units": [
+    0.42852424740791323,
+    3.758587551116941
+  ],
+  "depth_color_scale_m": {
+    "near_m": 0.3571062168265694,
+    "far_m": 3.132179775379556
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.39647476019519 m over generated floor distance",
+  "m_per_unit": 1.5534567832946777,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 23.57067036628723
+}

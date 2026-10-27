@@ -1,0 +1,141 @@
+{
+  "row_index": 72,
+  "question_id": "FOB2-0072-Q2",
+  "trajectory_id": "FOB2-0072",
+  "scan_id": "Vvot9Ly1tCj",
+  "question_type": 2,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk past the left side of the sofa and slightly turn right, which direction would have the closest obstacle, besides the sofa?",
+  "answer_choices": {
+    "D": "left",
+    "A": "behind",
+    "B": "right",
+    "C": "front"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "front",
+    "B": "left",
+    "C": "right",
+    "D": "behind"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "D": "B",
+    "A": "D",
+    "B": "C",
+    "C": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0072\\start_view.png",
+      "sha256": "358d579281d365d4fbec777114ab2ba539897dbdacde5aeb7178f4a5af8f9cb9"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0072\\step_01_rgb.png",
+      "sha256": "b7f7d2e758d2364aa4028e99b313e7334e515ccce62344440c81d61e5270c464"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch2_20260917\\items\\FOB2-0072\\step_02_rgb.png",
+      "sha256": "90745f70d1620861a1bfa2a80e5f8efb8c0dea0b413e5cdc78f2dc2beeb7b777"
+    }
+  ],
+  "manifest_seed": 20260919,
+  "source": "frozen_batch2_230_corrected_lookback_20260919",
+  "category": "nearest_obstacle_direction",
+  "category_label": "Nearest-obstacle direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0072\\step_02_depth.png",
+      "sha256": "4d7f67978a613b29e98cab10e29629b50b45db5c16e2b8fb36e148dc9a35fe86",
+      "color_scale": {
+        "near_m": 1.99175,
+        "far_m": 8.28825
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0072\\step_02_surface_normals.png",
+      "sha256": "425c3f468016cd70550fc904c129ab67f910655da1390f733110bc5731a7266c"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\geometry\\FOB2-0072\\step_02_panorama.png",
+      "sha256": "be5405e9a6976446a89e8acba02f144e162983dd6cd4514dc16fd80c0c66ab5f"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0072\\topdown_with_path.png",
+      "sha256": "0e96ea43713e125f3343000f1e09fb592bc5b5c352d52dfcc50a65987465c658"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0072\\trajectory.txt",
+      "sha256": "af86901c4c0ccec617d1313c6bce8781605cd57fc6c87221c78d7c2e3806da19"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch2_modalities_20260927\\trajectory\\FOB2-0072\\trajectory.mp4",
+      "sha256": "96525db6e63cb45709e51fd59fca0a2f7061eb32419393df2e38c97f1b708f03"
+    }
+  },
+  "condition": "start_final",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch2_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "C",
+  "correct": false,
+  "input_signature": "f852b28e377f6b9a7ee8ee0c8368da6a3d3af447c92260e32f0ae6b744026b56",
+  "image_count": 2,
+  "evidence_kinds": [
+    "start",
+    "endpoint"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2266,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 138
+      }
+    ],
+    "thoughts_token_count": 1192,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3459,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_started_at": "2026-09-27T23:43:12.647-04:00",
+  "request_duration_seconds": 6.85371659998782,
+  "completed_at": "2026-09-27T23:43:19.500-04:00",
+  "request_part_count": 5,
+  "request_mime_types": [
+    "image/png",
+    "image/png"
+  ]
+}

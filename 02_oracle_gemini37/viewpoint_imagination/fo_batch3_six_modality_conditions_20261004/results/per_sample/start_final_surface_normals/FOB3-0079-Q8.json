@@ -1,0 +1,150 @@
+{
+  "row_index": 211,
+  "question_id": "FOB3-0079-Q8",
+  "trajectory_id": "FOB3-0079",
+  "scan_id": "RPmz2sHmrrY",
+  "question_type": 8,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk forward to the end and turn to face my starting point, which object(s) would not be in front of me?",
+  "answer_choices": {
+    "C": "sink",
+    "A": "decorative statue",
+    "B": "pink lamp",
+    "D": "chair"
+  },
+  "gold_answer": "C",
+  "original_answer_choices": {
+    "A": "pink lamp",
+    "B": "decorative statue",
+    "C": "chair",
+    "D": "sink"
+  },
+  "original_gold_answer": "D",
+  "shuffle_target_to_source": {
+    "C": "D",
+    "A": "B",
+    "B": "A",
+    "D": "C"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0079\\start_view.png",
+      "sha256": "aa80dd6f30318f26aafa8c8e1a92012300e5a5ef38cb566f9d9f8535f002e280"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0079\\step_01_rgb.png",
+      "sha256": "11b1b0d767aa72f19f48cd8fcc251556627c6555a17b1de514d53e7829f43e81"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0079\\step_02_rgb.png",
+      "sha256": "66ab38c68e554233a75a9f28199bd546f2bc8d9e56d15ea0bd3e108a96aa079c"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0079\\oracle_lookback.png",
+      "sha256": "d52e06da8a55f737a37f5eae7889c1d9168ed5735d6de7305f55172918506b6e"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "category": "object_selection_by_direction",
+  "category_label": "Object selection by direction",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0079\\oracle_lookback_depth.png",
+      "sha256": "cbd920a31e72470fa8ec718109db8e6fd6c80b0a5870a13103d9809d036c2415",
+      "color_scale": {
+        "near_m": 0.6425,
+        "far_m": 6.10375
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0079\\oracle_lookback_surface_normals.png",
+      "sha256": "b9e8f12eaaf50a7817d5296f863525b23ae1e7181baa837ea84234ca8248c0bf"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0079\\oracle_lookback_panorama.png",
+      "sha256": "a5238e9a70a357b1ff55ba7663cd9f1b0a637307dda076d5505462aaa24dd1f4"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0079\\topdown_lookback_with_path.png",
+      "sha256": "e34f5a81e8a965b1e0d66dd41d6af9c9920f53d88e66df820f19ce1a9644c9e8"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0079\\trajectory_lookback.txt",
+      "sha256": "768e26dd0f15e385aa7f9456cc3f8d96fdc9085a7e4c5e684c060278ee10e2f6"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0079\\trajectory_lookback.mp4",
+      "sha256": "620e0e65477a2ed3a0e0ba2e16ba465eb15248b6b1a8d3c7a33ce8d274febfda"
+    }
+  },
+  "condition": "start_final_surface_normals",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT SURFACE NORMAL MAP (same camera pose and field of view as FINAL VIEW):\nColors encode surface orientation, not object color or distance. RGB channels encode normal components along camera-right (R), camera-up (G), and camera-forward (B): 0 = -1, about 128 = 0, and 255 = +1. Higher R/G/B means a stronger rightward/upward/forward component; a surface facing the camera has low B. Black means missing geometry. Combine this map with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch3_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "C",
+  "correct": true,
+  "input_signature": "5d25eb7a56ef6e4216d1dc9dbccb2160cfcfa9d97fdfa4a2f92d704a105df5f2",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "surface_normals"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3459,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 267
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 904,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4364,
+    "traffic_type": null
+  },
+  "raw_response": "C",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T19:21:34.108-04:00",
+  "request_duration_seconds": 4.8270217000099365,
+  "completed_at": "2026-10-04T19:21:38.935-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

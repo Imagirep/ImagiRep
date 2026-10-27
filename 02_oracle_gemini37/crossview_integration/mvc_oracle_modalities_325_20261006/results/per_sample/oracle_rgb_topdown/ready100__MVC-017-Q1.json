@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-017-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC-017-Q1",
+  "resource_id": "MVC-017",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Image 2 is closest to stove in Image 1?",
+  "answer_choices": {
+    "A": "refrigerator",
+    "B": "dining table",
+    "C": "white chairs",
+    "D": "sink"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "1988fbcfc901c208415b33f4157d58d0b8f170abc4e30e1c56e1f0038e0dbb8b",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-017\\order_12\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4594,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 313
+      }
+    ],
+    "thoughts_token_count": 457,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5052,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 6.4635788000014145,
+  "completed_at": "2026-10-06T16:45:31-04:00"
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC3I-004-Q2",
+  "cohort": "ready100",
+  "question_id": "MVC3I-004-Q2",
+  "resource_id": "MVC3I-004",
+  "question_type": "cross_view_farthest",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Images 1 and 3 is farthest from podium in Image 2?",
+  "answer_choices": {
+    "A": "black desk",
+    "B": "piles of books",
+    "C": "bull statue",
+    "D": "white pillar"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "a6dc88b683a0524bce3685bd49b001e1d1ec67f096a01e06c509bb7c078d7f2a",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC3I-004\\order_213\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 5669,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 5345
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 324
+      }
+    ],
+    "thoughts_token_count": 895,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6565,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 8.70215849998931,
+  "completed_at": "2026-10-06T17:29:14-04:00"
+}

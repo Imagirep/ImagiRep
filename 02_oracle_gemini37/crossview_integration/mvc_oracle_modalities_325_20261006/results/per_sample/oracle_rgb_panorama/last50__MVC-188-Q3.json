@@ -1,0 +1,48 @@
+{
+  "uid": "last50__MVC-188-Q3",
+  "cohort": "last50",
+  "question_id": "MVC-188-Q3",
+  "resource_id": "MVC-188",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_panorama",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 1, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "brown armchair, long sofa, fireplace, wooden round table",
+    "B": "brown armchair, fireplace, long sofa, wooden round table",
+    "C": "fireplace, wooden round table, brown armchair, long sofa",
+    "D": "fireplace, brown armchair, long sofa, wooden round table"
+  },
+  "gold_answer": "D",
+  "prediction": "D",
+  "correct": true,
+  "signature": "edca91b758e1872652382eb5dd0c6b6b3749f4354a1824187f266236eee207fe",
+  "caption": "ORACLE PANORAMA (360-degree RGB at the Oracle RGB position):\nThe panorama is centered on the Oracle RGB facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. Combine it with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-188\\oracle_panorama.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": null,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4642,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4273
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 369
+      }
+    ],
+    "thoughts_token_count": 1605,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6247,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 11.571190200003912,
+  "completed_at": "2026-10-06T17:45:46-04:00"
+}

@@ -1,0 +1,1 @@
+{"qid": "last50__MVC-221-Q3", "method": "mj", "variant": "top3+label", "prediction": "glass vase, framed painting, red pot, wooden table", "gold": "glass vase, framed painting, red pot, wooden table", "correct": true, "n_imagined": 1, "category": "ordering", "stored_result": "correct"}

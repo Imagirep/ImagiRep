@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "row_index": 19,
+  "question_id": "MVC-167-Q3",
+  "condition": "oracle_rgb",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "response_format": "dynamic option enum",
+  "system_prompt": "Solve this multi-view spatial reasoning multiple-choice question using the provided evidence. Reason carefully. Return only A, B, C, or D.",
+  "condition_prompt": "Use the numbered images together with Oracle RGB to answer the question. Oracle RGB is an additional view of the same scene; it supplies evidence but does not replace the reference viewpoint named in the question. Image numbers identify the explicitly labeled views; they do not imply temporal order, a movement sequence, or left-to-right camera order. For closest/farthest questions, compare physical distances between objects in the scene, not distances between pixels or distance to the camera. When candidates are named as being in more than one image, consider candidates across those images. For ordering questions, use the position and facing direction of the image named in the question, and follow the requested left-to-right or right-to-left direction.",
+  "prompt_hash": "618c05b80b33674bf38f5ef6457fbd8e3bd9b065fe954ad0a34eaeabe83049e0",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from left to right?",
+  "answer_choices": {
+    "A": "doorway, black table, wooden wall decoration, white tall vase",
+    "B": "wooden wall decoration, white tall vase, doorway, black table",
+    "C": "wooden wall decoration, doorway, white tall vase, black table",
+    "D": "white tall vase, doorway, wooden wall decoration, black table"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "image_paths": [
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-167\\image_2.png",
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-167\\image_1.png",
+    "outputs\\mvc_labeler_low_overlap_panorama_20260929\\MVC-167\\oracle.png"
+  ],
+  "image_count": 3,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3474,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 282
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 3916,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 7391,
+    "traffic_type": null
+  },
+  "completed_at": "2026-10-01T12:54:43"
+}

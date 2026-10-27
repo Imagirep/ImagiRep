@@ -1,0 +1,48 @@
+{
+  "uid": "ready100__MVC-140-Q3",
+  "cohort": "ready100",
+  "question_id": "MVC-140-Q3",
+  "resource_id": "MVC-140",
+  "question_type": "ordering",
+  "condition": "oracle_rgb_topdown",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "From the viewpoint and facing direction of Image 2, which sequence correctly orders the four objects from right to left?",
+  "answer_choices": {
+    "A": "tall potted painting, fireplace, hallway, long sofa",
+    "B": "tall potted painting, hallway, fireplace, long sofa",
+    "C": "fireplace, long sofa, tall potted painting, hallway",
+    "D": "tall potted painting, long sofa, fireplace, hallway"
+  },
+  "gold_answer": "A",
+  "prediction": "A",
+  "correct": true,
+  "signature": "d9d81962fa06032c3dd935ada1d7df9a836e19a56306b33373e336cf8db704f4",
+  "caption": "ADDITIONAL TOP-DOWN MAP:\nThe circle marks the camera position of the numbered images. Arrows labeled View 1, View 2 (and View 3) show the facing directions of Image 1, Image 2 (and Image 3); the arrow labeled Oracle shows the facing direction of Oracle RGB from its camera position. Use this map together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC-140\\order_21\\topdown.png",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 4636,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 4281
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 355
+      }
+    ],
+    "thoughts_token_count": 1732,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 6369,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 12.398082100000465,
+  "completed_at": "2026-10-06T17:29:07-04:00"
+}

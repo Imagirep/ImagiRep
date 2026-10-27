@@ -1,0 +1,150 @@
+{
+  "row_index": 160,
+  "question_id": "FOB3-0011-Q5",
+  "trajectory_id": "FOB3-0011",
+  "scan_id": "sKLMLpTHeUy",
+  "question_type": 5,
+  "question_set": "lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": true,
+  "show_lookback": true,
+  "question": "If I walk near the sink and turn to face my starting point, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "D": "books",
+    "A": "stove",
+    "B": "glass container",
+    "C": "potted plant"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "glass container",
+    "B": "potted plant",
+    "C": "books",
+    "D": "stove"
+  },
+  "original_gold_answer": "C",
+  "shuffle_target_to_source": {
+    "D": "C",
+    "A": "D",
+    "B": "A",
+    "C": "B"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0011\\start_view.png",
+      "sha256": "792647285cbd09bd65adf0f2c8fd32f9bf660bb4763aa1f2c3d7b2108b95bca6"
+    },
+    {
+      "label": "Step 1",
+      "kind": "step",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0011\\step_01_rgb.png",
+      "sha256": "b12904de7f76664683f38b62f50fa72a07f0f0e3a25d4977705a0c53d506ce3a"
+    },
+    {
+      "label": "Step 2 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0011\\step_02_rgb.png",
+      "sha256": "42d477a4b5adb96a3321f923017544fbcac7c295b547b34dedd5f741b06b850c"
+    },
+    {
+      "label": "Oracle lookback",
+      "kind": "lookback",
+      "path": "<authors_workspace>\\outputs\\future_trajectory_batch3_straight100_20260920\\items\\FOB3-0011\\oracle_lookback.png",
+      "sha256": "605bedf93e350732722cb1499d508ff2c94388d5b3224261521e554a13912d2e"
+    }
+  ],
+  "manifest_seed": 20260921,
+  "source": "frozen_batch3_labeler_20260921_100726",
+  "category": "farthest_object",
+  "category_label": "Farthest object",
+  "endpoint_modalities": {
+    "depth": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0011\\oracle_lookback_depth.png",
+      "sha256": "a318c5f214cb56fee5ddc0334be58b70b38a9eb41b906741b484123f1ae8803c",
+      "color_scale": {
+        "near_m": 1.4135,
+        "far_m": 4.4975
+      }
+    },
+    "surface_normals": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0011\\oracle_lookback_surface_normals.png",
+      "sha256": "f89cd238d96a568e4dc316c4283b6452c60336e4e6384fbb151d85d2fb7ee67c"
+    },
+    "panorama": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\geometry\\FOB3-0011\\oracle_lookback_panorama.png",
+      "sha256": "c8f7466ea394bc7c00826e1e97cfd6adb048d613f57c40e97db640549a93bc43"
+    }
+  },
+  "additional_modalities": {
+    "topdown": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0011\\topdown_lookback_with_path.png",
+      "sha256": "ee37720df08d495c4a949f3365ba04e596f94078b0e5c88cd4a23d8f79354863"
+    },
+    "text": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0011\\trajectory_lookback.txt",
+      "sha256": "ca70298954ee8559e60a27ebdd6e3d21c8076f478fafbe2a993d0e73a4ba7263"
+    },
+    "video": {
+      "path": "<authors_workspace>\\outputs\\fo_batch3_modalities_20261004\\trajectory\\FOB3-0011\\trajectory_lookback.mp4",
+      "sha256": "e691b0aa771ecee26f35988279d31e851021ff036b1ca6488e645d6042bdeb2b"
+    }
+  },
+  "condition": "start_final_panorama",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ENDPOINT PANORAMA (360-degree RGB at the FINAL VIEW position):\nThe panorama is centered on the final camera's facing direction. At mid-height, the center is forward, one-quarter of the width is left, three-quarters is right, and the two joined edges are behind. Top/bottom look up/down; colors are natural RGB, not geometric labels. This is one position, not a sequence of movement frames. Combine it with START and FINAL VIEW RGB to reason about the final state."
+  ],
+  "prompt_version": "historical_final_state_balanced_v3_eight_conditions_batch3_v1",
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "prediction": "D",
+  "correct": true,
+  "input_signature": "9567ca81c37ac439ac0265630474bd8a99b3fde8783c4fdc80f13c3127507ae1",
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "lookback",
+    "panorama"
+  ],
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3456,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3209
+      }
+    ],
+    "thoughts_token_count": 4914,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 8371,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "attempts": 1,
+  "request_started_at": "2026-10-04T19:39:30.435-04:00",
+  "request_duration_seconds": 18.861238199999207,
+  "completed_at": "2026-10-04T19:39:49.296-04:00",
+  "request_part_count": 7,
+  "request_mime_types": [
+    "image/png",
+    "image/png",
+    "image/png"
+  ]
+}

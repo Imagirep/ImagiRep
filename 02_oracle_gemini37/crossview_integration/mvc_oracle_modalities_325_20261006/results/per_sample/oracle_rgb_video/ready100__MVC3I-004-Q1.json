@@ -1,0 +1,52 @@
+{
+  "uid": "ready100__MVC3I-004-Q1",
+  "cohort": "ready100",
+  "question_id": "MVC3I-004-Q1",
+  "resource_id": "MVC3I-004",
+  "question_type": "cross_view_closest",
+  "condition": "oracle_rgb_video",
+  "model": "gemini-3.7-flash",
+  "temperature": 0,
+  "thinking_level": "HIGH",
+  "question": "Which object in Images 1 and 3 is closest to podium  in Image 2?",
+  "answer_choices": {
+    "A": "framed black and white painting",
+    "B": "piles of books",
+    "C": "white pillar",
+    "D": "black desk"
+  },
+  "gold_answer": "C",
+  "prediction": "C",
+  "correct": true,
+  "signature": "ce3e27f4df124fa7fe63c9a3c618cd5a60012832b3c5a70db7d0882af53e8950",
+  "caption": "ADDITIONAL VIEW-TRANSITION VIDEO:\nThe video shows the camera rotating in place from Image 1 to the last numbered image, passing through the Oracle RGB view when it lies between them. Use it together with the numbered images and Oracle RGB.",
+  "modality_asset": "outputs\\mvc_modalities_20261005\\eval_assets\\MVC3I-004\\order_213\\view_transition.mp4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 12366,
+    "prompt_tokens_details": [
+      {
+        "modality": "VIDEO",
+        "token_count": 7812
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 298
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 4256
+      }
+    ],
+    "thoughts_token_count": 1048,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 13415,
+    "traffic_type": null
+  },
+  "request_duration_seconds": 13.365372599990224,
+  "completed_at": "2026-10-06T17:35:07-04:00"
+}

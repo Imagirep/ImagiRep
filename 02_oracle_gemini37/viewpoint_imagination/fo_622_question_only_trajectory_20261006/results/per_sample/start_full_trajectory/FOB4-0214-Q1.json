@@ -1,0 +1,70 @@
+{
+  "question_id": "FOB4-0214-Q1",
+  "condition": "start_full_trajectory",
+  "model": "gemini-3.7-flash",
+  "question": "If I walk to the door, then turn right, which direction would have the most open space?",
+  "answer_choices": {
+    "B": "right",
+    "A": "behind",
+    "C": "left",
+    "D": "front"
+  },
+  "gold_answer": "B",
+  "show_lookback": false,
+  "prediction": "B",
+  "correct": true,
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "image_prompts": [
+    "Start:",
+    "Step 1:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships."
+  ],
+  "evidence_kinds": [
+    "start",
+    "step",
+    "endpoint"
+  ],
+  "evidence": [
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0214/start_view.png",
+      "sha256": "5458341646d2111dee15c77a93aee4c6ceb223cca6152cf35c85a7774a2d707f"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0214/step_01_rgb.png",
+      "sha256": "0e142c33d2571e2e0a4fea3ce56d6a9b7344511e4fca0318d8dae9099a4141dd"
+    },
+    {
+      "path": "outputs/future_trajectory_batch4_20260922/items/FOB4-0214/step_02_rgb.png",
+      "sha256": "1865d4a10dab0c8f7b81b8b4a78cf6c1d0263a01f68a320bac4f05ebb3fc0aa7"
+    }
+  ],
+  "temperature": 0,
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3328,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 136
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 3192
+      }
+    ],
+    "thoughts_token_count": 1230,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4559,
+    "traffic_type": null
+  },
+  "raw_response": "B",
+  "attempts": 1,
+  "request_duration_seconds": 6.958484699993278,
+  "completed_at": "2026-10-06T15:22:46-04:00"
+}

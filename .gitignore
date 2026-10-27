@@ -1,0 +1,23 @@
+# Data from the Hugging Face dataset (Matterport3D-derived, gated): download into the repository root, never commit
+benchmark/benchmark922/images/
+benchmark/benchmark922/videos/
+benchmark/benchmark922/*.jsonl
+benchmark/benchmark922/*.json
+benchmark/benchmark922/SHA256SUMS
+benchmark/camera_poses/*.json*
+benchmark/randomization/*.json*
+benchmark/uid_lists_and_index/*.json
+benchmark/uid_lists_and_index/*.tsv
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.mp4
+*.zip
+*.tar
+.cache/
+# Local outputs
+outputs/
+__pycache__/
+*.pyc
+.env

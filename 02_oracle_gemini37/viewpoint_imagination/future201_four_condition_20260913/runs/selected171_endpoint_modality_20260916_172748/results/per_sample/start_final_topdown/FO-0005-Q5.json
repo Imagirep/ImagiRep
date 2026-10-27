@@ -1,0 +1,124 @@
+{
+  "row_index": 182,
+  "question_id": "FO-0005-Q5",
+  "trajectory_id": "FO-0005",
+  "scan_id": "7y3sRwLe3Va",
+  "question_type": 5,
+  "question_set": "non-lookback",
+  "endpoint_is_lookback": false,
+  "requires_separate_lookback": false,
+  "show_lookback": false,
+  "question": "If I walk to the refrigerator and turn right, which object(s) would be farthest from me?",
+  "answer_choices": {
+    "D": "stove",
+    "A": "faucet",
+    "B": "sink",
+    "C": "oven"
+  },
+  "gold_answer": "D",
+  "original_answer_choices": {
+    "A": "oven",
+    "B": "stove",
+    "C": "sink",
+    "D": "faucet"
+  },
+  "original_gold_answer": "B",
+  "shuffle_target_to_source": {
+    "D": "B",
+    "A": "D",
+    "B": "C",
+    "C": "A"
+  },
+  "evidence_images": [
+    {
+      "label": "Start",
+      "kind": "start",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0005\\image_1.png"
+    },
+    {
+      "label": "Step 1 (Endpoint)",
+      "kind": "endpoint",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0005\\modalities\\step_01_rgb.png"
+    }
+  ],
+  "manifest_seed": 20260916,
+  "source": "active_future_question_labeler",
+  "rgb_pair_sha256": [
+    "8bd2e12513438321a1830bdb9ea824ef18a5247313eada3f649dc6cc94f402ad",
+    "4cc217b4cb9acf6bb5b2d22588b0166143f5f85ab69e914003aa31c4e55ebf96"
+  ],
+  "additional_modalities": {
+    "topdown": {
+      "kind": "topdown",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0005\\modalities\\topdown_with_path.png",
+      "sha256": "c957fe0f3013f51c1f8ef4ca220efe42a1203ac8d6cf28cf410561e027e56081"
+    },
+    "text": {
+      "kind": "text",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0005\\modalities\\trajectory.txt",
+      "sha256": "fb14c088239dfa2c53b652fe66ed2189600e4bd4460aae52bda5b5cf6905c020"
+    },
+    "video": {
+      "kind": "video",
+      "path": "<authors_workspace>\\benchmark_release\\items\\FO-0005\\modalities\\trajectory.mp4",
+      "sha256": "8f143014c6b94e883231eb3b753f4ec5c06aed175d5b5fe032593b6a9a2a074a",
+      "frame_count": 56,
+      "fps": 12.0,
+      "duration_seconds": 4.666666666666667,
+      "bytes": 328819,
+      "final_rgb_correlation": 0.9988288524281208
+    }
+  },
+  "condition": "start_final_topdown",
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "system_prompt": "Solve the multiple-choice embodied spatial reasoning question using only the provided evidence. Images are labeled and chronological. Return only A, B, C, or D.",
+  "prompt_version": "final_state_balanced_v3_plus_single_modality_v1",
+  "image_prompts": [
+    "Start:",
+    "FINAL VIEW (after completing the movement):\nThis frame shows your final position and facing direction after completing the movement in the question. Use this frame to ground your reasoning about the final state, and combine it with earlier frames to understand the movement and spatial relationships.",
+    "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images."
+  ],
+  "modality_prompt": "ADDITIONAL TOP-DOWN MAP:\nNumbered markers show the start (0) and successive movement positions. Lines show the path; the final arrow shows the final facing direction. Use this map together with the START and FINAL VIEW RGB images.",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "prediction": "D",
+  "correct": true,
+  "image_count": 3,
+  "evidence_kinds": [
+    "start",
+    "endpoint",
+    "topdown"
+  ],
+  "additional_modality": {
+    "kind": "topdown",
+    "path": "<authors_workspace>\\benchmark_release\\items\\FO-0005\\modalities\\topdown_with_path.png",
+    "sha256": "c957fe0f3013f51c1f8ef4ca220efe42a1203ac8d6cf28cf410561e027e56081"
+  },
+  "input_signature": "f34fe9e93ff61aa6c22789a54fa92179f6ad35818dbeca3d3853e7d2e42999ac",
+  "video_sampling_fps": null,
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3398,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 3217
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 181
+      }
+    ],
+    "thoughts_token_count": 1418,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4817,
+    "traffic_type": null
+  },
+  "raw_response": "D",
+  "completed_at": "2026-09-16T17:45:02-04:00"
+}

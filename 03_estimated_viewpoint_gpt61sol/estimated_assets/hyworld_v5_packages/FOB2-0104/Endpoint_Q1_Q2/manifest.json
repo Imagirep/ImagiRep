@@ -1,0 +1,29 @@
+{
+  "schema": "hy-estimated-modalities/desktop-v1",
+  "question_id": "FOB2-0104-Q1",
+  "motion_text": "I walk near the sink and face the way I go.",
+  "view_variant": "endpoint",
+  "frames": 73,
+  "fps": 12,
+  "total_distance_m": 3.198929416996273,
+  "depth_display_range_scene_units": [
+    1.3051323890686035,
+    4.06514310836792
+  ],
+  "depth_color_scale_m": {
+    "near_m": 1.1339471694496206,
+    "far_m": 3.531946306559044
+  },
+  "depth_source": "CPU GS expected depth",
+  "normals_source": "GS expected depth gradients",
+  "scale": "eye height prior 1.538211542516862 m over generated floor distance",
+  "m_per_unit": 1.5577029585838318,
+  "render_backend": "CPU anisotropic Gaussian splatting (degree-0 SH)",
+  "oracle_used": false,
+  "planner_inputs": [
+    "initial_image",
+    "motion_text",
+    "generated_scene_renders"
+  ],
+  "seconds": 18.323411226272583
+}
