@@ -1,6 +1,6 @@
 """GPT-6.1-sol on MVC300 with estimated (generated) evidence (2026-10-10).
 
-Generated data: Dylan_MultiView_Generated_RGB_Depth_143_Scenes.zip , one folder per scene
+Generated data: inputs/estimated_rgb_depth/, one folder per scene
 (<MVC-xxx-Qn>/rgb.png, depth.png). MVC300 has 143 scenes; all questions of a scene share the same observed images (same
 order), the same Oracle RGB and the same oracle depth, so each scene's generated pair applies to all its questions.
 

@@ -16,8 +16,7 @@ The pipeline and its options are documented in `multiview_pipeline/README.md`
 
 ## Outputs used in the paper
 
-`../gpt_runs/inputs/Dylan_MultiView_Generated_RGB_Depth_143_Scenes.zip`, unpacked as
-`../gpt_runs/inputs/Dylan_MultiView_Generated_RGB_Depth/<view group>/{rgb.png, depth.png}`:
+`../gpt_runs/inputs/estimated_rgb_depth/<view group>/{rgb.png, depth.png}` (in the Hugging Face dataset):
 143 view groups (138 with two observed images, 5 with three), 512 x 384 RGB and depth.
 All questions of a view group share the same observed images, so one estimated RGB/depth pair serves all of them.
 `../gpt_runs/build_tasks.py` builds the GPT-6.1-sol requests from these images.
